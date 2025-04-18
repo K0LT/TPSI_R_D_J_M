@@ -63,6 +63,56 @@ namespace Monster.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap c61a36e9_a982_4c28_97e9_ba90dea83ce2 {
+            get {
+                object obj = ResourceManager.GetObject("c61a36e9-a982-4c28-97e9-ba90dea83ce2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragao1semback {
+            get {
+                object obj = ResourceManager.GetObject("dragao1semback", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragao1sembackpequeno {
+            get {
+                object obj = ResourceManager.GetObject("dragao1sembackpequeno", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragao1sembackpequeno1 {
+            get {
+                object obj = ResourceManager.GetObject("dragao1sembackpequeno1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragao2_1sem_back {
+            get {
+                object obj = ResourceManager.GetObject("dragao2.1sem back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dragao3 {
             get {
                 object obj = ResourceManager.GetObject("dragao3", resourceCulture);
@@ -73,9 +123,29 @@ namespace Monster.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ed4d4ed1_1032_44f8_9ae9_ca7c61211950 {
+            get {
+                object obj = ResourceManager.GetObject("ed4d4ed1-1032-44f8-9ae9-ca7c61211950", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap four_eyed_mythical_creature_0oiithr40b2pxx7m {
             get {
                 object obj = ResourceManager.GetObject("four-eyed-mythical-creature-0oiithr40b2pxx7m", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap four_eyed_mythical_creature_0oiithr40b2pxx7m1 {
+            get {
+                object obj = ResourceManager.GetObject("four-eyed-mythical-creature-0oiithr40b2pxx7m1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
