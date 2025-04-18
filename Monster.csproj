@@ -88,5 +88,23 @@
   <ItemGroup>
     <None Include="Resources\four-eyed-mythical-creature-0oiithr40b2pxx7m.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c61a36e9-a982-4c28-97e9-ba90dea83ce2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragao1semback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragao1sembackpequeno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragao1sembackpequeno1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragao2.1sem back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ed4d4ed1-1032-44f8-9ae9-ca7c61211950.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
