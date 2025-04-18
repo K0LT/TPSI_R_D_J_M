@@ -82,6 +82,12 @@
             this.Inventory1 = new System.Windows.Forms.Button();
             this.MyMonsters2 = new System.Windows.Forms.Button();
             this.tabPageMyMonster = new System.Windows.Forms.TabPage();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label33 = new System.Windows.Forms.Label();
             this.button37 = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.tabPageDraco = new System.Windows.Forms.TabPage();
@@ -170,12 +176,6 @@
             this.label27 = new System.Windows.Forms.Label();
             this.player3 = new System.Windows.Forms.Button();
             this.myMonsters3 = new System.Windows.Forms.Button();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label33 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.button8 = new System.Windows.Forms.Button();
             this.Monsters.SuspendLayout();
             this.tabPageHome.SuspendLayout();
             this.tabPageNewGame.SuspendLayout();
@@ -193,6 +193,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel7.SuspendLayout();
             this.tabPageMyMonster.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.tabPageDraco.SuspendLayout();
             this.sideMenuPanel.SuspendLayout();
@@ -212,8 +214,6 @@
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // Monsters
@@ -497,7 +497,7 @@
             // grifo
             // 
             this.grifo.BackColor = System.Drawing.Color.DarkKhaki;
-            this.grifo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grifo.BackgroundImage")));
+            this.grifo.BackgroundImage = global::Monster.Properties.Resources.dragao1sembackpequeno;
             this.grifo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.grifo.Location = new System.Drawing.Point(699, 207);
             this.grifo.Name = "grifo";
@@ -509,7 +509,7 @@
             // tauro
             // 
             this.tauro.BackColor = System.Drawing.Color.DarkKhaki;
-            this.tauro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tauro.BackgroundImage")));
+            this.tauro.BackgroundImage = global::Monster.Properties.Resources.dragao1sembackpequeno;
             this.tauro.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tauro.Location = new System.Drawing.Point(1070, 207);
             this.tauro.Name = "tauro";
@@ -521,7 +521,7 @@
             // siren
             // 
             this.siren.BackColor = System.Drawing.Color.DarkKhaki;
-            this.siren.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("siren.BackgroundImage")));
+            this.siren.BackgroundImage = global::Monster.Properties.Resources.dragao1sembackpequeno;
             this.siren.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.siren.Location = new System.Drawing.Point(1442, 207);
             this.siren.Name = "siren";
@@ -533,7 +533,7 @@
             // draco
             // 
             this.draco.BackColor = System.Drawing.Color.DarkKhaki;
-            this.draco.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("draco.BackgroundImage")));
+            this.draco.BackgroundImage = global::Monster.Properties.Resources.dragao1sembackpequeno;
             this.draco.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.draco.Location = new System.Drawing.Point(323, 207);
             this.draco.Name = "draco";
@@ -768,7 +768,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.BackgroundImage = global::Monster.Properties.Resources.ed4d4ed1_1032_44f8_9ae9_ca7c61211950;
             this.pictureBox6.Location = new System.Drawing.Point(919, 109);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(392, 367);
@@ -895,6 +895,82 @@
             this.tabPageMyMonster.TabIndex = 9;
             this.tabPageMyMonster.Text = "myMonster";
             // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.button8);
+            this.panel10.Controls.Add(this.button2);
+            this.panel10.Controls.Add(this.pictureBox8);
+            this.panel10.Controls.Add(this.button3);
+            this.panel10.Controls.Add(this.label33);
+            this.panel10.Controls.Add(this.button37);
+            this.panel10.Controls.Add(this.pictureBox9);
+            this.panel10.Location = new System.Drawing.Point(394, 52);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1225, 687);
+            this.panel10.TabIndex = 27;
+            // 
+            // button8
+            // 
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.Peru;
+            this.button8.Location = new System.Drawing.Point(395, 452);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(216, 45);
+            this.button8.TabIndex = 29;
+            this.button8.Text = "Chosen Name";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Peru;
+            this.button2.Location = new System.Drawing.Point(704, 633);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(377, 47);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Exit";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.DarkKhaki;
+            this.pictureBox8.BackgroundImage = global::Monster.Properties.Resources.dragao1sembackpequeno;
+            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox8.Location = new System.Drawing.Point(370, 160);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(217, 206);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox8.TabIndex = 28;
+            this.pictureBox8.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Peru;
+            this.button3.Location = new System.Drawing.Point(164, 633);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(377, 51);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Save";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.Peru;
+            this.label33.Location = new System.Drawing.Point(494, 36);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(277, 71);
+            this.label33.TabIndex = 4;
+            this.label33.Text = "My Monsters";
+            // 
             // button37
             // 
             this.button37.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -911,7 +987,7 @@
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.DarkKhaki;
-            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
+            this.pictureBox9.BackgroundImage = global::Monster.Properties.Resources.dragao1sembackpequeno;
             this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox9.Location = new System.Drawing.Point(23, 160);
             this.pictureBox9.Name = "pictureBox9";
@@ -1139,7 +1215,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImage = global::Monster.Properties.Resources.dragao2_1sem_back;
             this.pictureBox1.Location = new System.Drawing.Point(856, 59);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(392, 367);
@@ -1364,7 +1440,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImage = global::Monster.Properties.Resources.dragao2_1sem_back;
             this.pictureBox2.Location = new System.Drawing.Point(882, 23);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(392, 367);
@@ -1589,7 +1665,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImage = global::Monster.Properties.Resources.dragao2_1sem_back;
             this.pictureBox3.Location = new System.Drawing.Point(882, 23);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(392, 367);
@@ -1814,7 +1890,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImage = global::Monster.Properties.Resources.dragao2_1sem_back;
             this.pictureBox4.Location = new System.Drawing.Point(882, 23);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(392, 367);
@@ -1905,7 +1981,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImage = global::Monster.Properties.Resources.dragao1sembackpequeno1;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox7.Location = new System.Drawing.Point(644, 280);
             this.pictureBox7.Name = "pictureBox7";
@@ -1916,7 +1992,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
+            this.pictureBox5.BackgroundImage = global::Monster.Properties.Resources.c61a36e9_a982_4c28_97e9_ba90dea83ce2;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox5.Location = new System.Drawing.Point(488, 280);
             this.pictureBox5.Name = "pictureBox5";
@@ -1989,83 +2065,6 @@
             this.myMonsters3.UseVisualStyleBackColor = true;
             this.myMonsters3.Click += new System.EventHandler(this.myMonsters3_Click);
             // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.button8);
-            this.panel10.Controls.Add(this.button2);
-            this.panel10.Controls.Add(this.pictureBox8);
-            this.panel10.Controls.Add(this.button3);
-            this.panel10.Controls.Add(this.label33);
-            this.panel10.Controls.Add(this.button37);
-            this.panel10.Controls.Add(this.pictureBox9);
-            this.panel10.Location = new System.Drawing.Point(394, 52);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1225, 687);
-            this.panel10.TabIndex = 27;
-            // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Peru;
-            this.button2.Location = new System.Drawing.Point(704, 633);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(377, 47);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Exit";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Peru;
-            this.button3.Location = new System.Drawing.Point(164, 633);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(377, 51);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Save";
-            this.button3.UseVisualStyleBackColor = true;
-
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.Peru;
-            this.label33.Location = new System.Drawing.Point(494, 36);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(277, 71);
-            this.label33.TabIndex = 4;
-            this.label33.Text = "My Monsters";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.DarkKhaki;
-            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox8.Location = new System.Drawing.Point(370, 160);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(217, 206);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox8.TabIndex = 28;
-            this.pictureBox8.TabStop = false;
-            // 
-            // button8
-            // 
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.Peru;
-            this.button8.Location = new System.Drawing.Point(395, 452);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(216, 45);
-            this.button8.TabIndex = 29;
-            this.button8.Text = "Chosen Name";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
             // InicialPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2104,6 +2103,9 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.tabPageMyMonster.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.tabPageDraco.ResumeLayout(false);
             this.tabPageDraco.PerformLayout();
@@ -2133,9 +2135,6 @@
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
