@@ -103,9 +103,9 @@ namespace Monster.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap dragao2_1sem_back {
+        internal static System.Drawing.Bitmap dragao1sembackpequeno11 {
             get {
-                object obj = ResourceManager.GetObject("dragao2.1sem back", resourceCulture);
+                object obj = ResourceManager.GetObject("dragao1sembackpequeno11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace Monster.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap dragao3 {
+        internal static System.Drawing.Bitmap dragao2_1sem_back {
             get {
-                object obj = ResourceManager.GetObject("dragao3", resourceCulture);
+                object obj = ResourceManager.GetObject("dragao2.1sem back", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
