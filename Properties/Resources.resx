@@ -118,31 +118,57 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ed4d4ed1-1032-44f8-9ae9-ca7c61211950" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ed4d4ed1-1032-44f8-9ae9-ca7c61211950.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dragao1semback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragao1semback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="c61a36e9-a982-4c28-97e9-ba90dea83ce2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\c61a36e9-a982-4c28-97e9-ba90dea83ce2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dragao2.1sem back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragao2.1sem back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dragao1sembackpequeno1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dragao1sembackpequeno1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GrifoGrandeSemBackSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrifoGrandeSemBackSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dragao1sembackpequeno11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dragao1sembackpequeno11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SirenGrandeSemBacksmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SirenGrandeSemBacksmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="four-eyed-mythical-creature-0oiithr40b2pxx7m1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\four-eyed-mythical-creature-0oiithr40b2pxx7m.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sirenpequenoSemBacksmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sirenpequenoSemBacksmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1744993266826(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1744993266826(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sirenpequenoSemBackextrasmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sirenpequenoSemBackextrasmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GrifopequenoSemBackSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrifopequenoSemBackSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dragao1sembackpequeno" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dragao1sembackpequeno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dragao1semback" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dragao1semback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+ 
+  <data name="dragao1sembackpequeno1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragao1sembackpequeno1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="four-eyed-mythical-creature-0oiithr40b2pxx7m" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\four-eyed-mythical-creature-0oiithr40b2pxx7m.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GrifopequenoSemBackExtraSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrifopequenoSemBackExtraSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dragao2.1sem back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dragao2.1sem back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TauroGrandeSemBacksmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TauroGrandeSemBacksmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playersembackpage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playersembackpage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playergrandesemback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playergrandesemback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TauropequenoSemBacksmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TauropequenoSemBacksmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+
+  <data name="TauropequenoSemBackextrasmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TauropequenoSemBackextrasmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playersembackextrasmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playersembackextrasmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
