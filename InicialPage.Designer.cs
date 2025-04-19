@@ -40,6 +40,7 @@
             this.newgame = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPageNewGame = new System.Windows.Forms.TabPage();
+            this.grifo = new System.Windows.Forms.PictureBox();
             this.sirenselect = new System.Windows.Forms.Button();
             this.tauroselect = new System.Windows.Forms.Button();
             this.grifoselect = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@
             this.descricao2 = new System.Windows.Forms.TextBox();
             this.descricao1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.grifo = new System.Windows.Forms.PictureBox();
             this.tauro = new System.Windows.Forms.PictureBox();
             this.siren = new System.Windows.Forms.PictureBox();
             this.draco = new System.Windows.Forms.PictureBox();
@@ -79,7 +79,7 @@
             this.label26 = new System.Windows.Forms.Label();
             this.Shop1 = new System.Windows.Forms.Button();
             this.Games1 = new System.Windows.Forms.Button();
-            this.Inventory1 = new System.Windows.Forms.Button();
+            this.MyBackpack1 = new System.Windows.Forms.Button();
             this.MyMonsters2 = new System.Windows.Forms.Button();
             this.tabPageMyMonster = new System.Windows.Forms.TabPage();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -169,6 +169,9 @@
             this.label32 = new System.Windows.Forms.Label();
             this.tabPageBegining = new System.Windows.Forms.TabPage();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label29 = new System.Windows.Forms.Label();
@@ -176,6 +179,10 @@
             this.label27 = new System.Windows.Forms.Label();
             this.player3 = new System.Windows.Forms.Button();
             this.myMonsters3 = new System.Windows.Forms.Button();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.Achievements = new System.Windows.Forms.Button();
+            this.label36 = new System.Windows.Forms.Label();
             this.Monsters.SuspendLayout();
             this.tabPageHome.SuspendLayout();
             this.tabPageNewGame.SuspendLayout();
@@ -212,6 +219,9 @@
             this.panel9.SuspendLayout();
             this.tabPageBegining.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
@@ -235,12 +245,12 @@
             this.Monsters.Location = new System.Drawing.Point(0, 0);
             this.Monsters.Name = "Monsters";
             this.Monsters.SelectedIndex = 0;
-            this.Monsters.Size = new System.Drawing.Size(1712, 820);
+            this.Monsters.Size = new System.Drawing.Size(1712, 928);
             this.Monsters.TabIndex = 0;
             // 
             // tabPageHome
             // 
-            this.tabPageHome.BackgroundImage = global::Monster.Properties.Resources.four_eyed_mythical_creature_0oiithr40b2pxx7m;
+            this.tabPageHome.BackgroundImage = global::Monster.Properties.Resources._1744993266826_1_;
             this.tabPageHome.Controls.Add(this.credit);
             this.tabPageHome.Controls.Add(this.exit);
             this.tabPageHome.Controls.Add(this.settings);
@@ -250,7 +260,7 @@
             this.tabPageHome.Location = new System.Drawing.Point(4, 25);
             this.tabPageHome.Name = "tabPageHome";
             this.tabPageHome.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageHome.Size = new System.Drawing.Size(1704, 791);
+            this.tabPageHome.Size = new System.Drawing.Size(1704, 899);
             this.tabPageHome.TabIndex = 0;
             this.tabPageHome.Text = "home";
             this.tabPageHome.UseVisualStyleBackColor = true;
@@ -263,7 +273,7 @@
             this.credit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.credit.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.credit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.credit.Location = new System.Drawing.Point(822, 561);
+            this.credit.Location = new System.Drawing.Point(183, 492);
             this.credit.Name = "credit";
             this.credit.Size = new System.Drawing.Size(405, 44);
             this.credit.TabIndex = 6;
@@ -278,7 +288,7 @@
             this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.exit.Location = new System.Drawing.Point(822, 511);
+            this.exit.Location = new System.Drawing.Point(183, 442);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(405, 44);
             this.exit.TabIndex = 5;
@@ -293,7 +303,7 @@
             this.settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settings.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settings.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.settings.Location = new System.Drawing.Point(822, 461);
+            this.settings.Location = new System.Drawing.Point(183, 392);
             this.settings.Name = "settings";
             this.settings.Size = new System.Drawing.Size(405, 44);
             this.settings.TabIndex = 4;
@@ -308,7 +318,7 @@
             this.loadgame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loadgame.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loadgame.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.loadgame.Location = new System.Drawing.Point(822, 411);
+            this.loadgame.Location = new System.Drawing.Point(183, 342);
             this.loadgame.Name = "loadgame";
             this.loadgame.Size = new System.Drawing.Size(405, 44);
             this.loadgame.TabIndex = 3;
@@ -323,7 +333,7 @@
             this.newgame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.newgame.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newgame.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.newgame.Location = new System.Drawing.Point(822, 360);
+            this.newgame.Location = new System.Drawing.Point(183, 291);
             this.newgame.Name = "newgame";
             this.newgame.Size = new System.Drawing.Size(405, 45);
             this.newgame.TabIndex = 2;
@@ -334,9 +344,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 49.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(797, 192);
+            this.label1.Location = new System.Drawing.Point(158, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(426, 147);
             this.label1.TabIndex = 0;
@@ -346,6 +357,7 @@
             // tabPageNewGame
             // 
             this.tabPageNewGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.tabPageNewGame.Controls.Add(this.grifo);
             this.tabPageNewGame.Controls.Add(this.sirenselect);
             this.tabPageNewGame.Controls.Add(this.tauroselect);
             this.tabPageNewGame.Controls.Add(this.grifoselect);
@@ -355,7 +367,6 @@
             this.tabPageNewGame.Controls.Add(this.descricao2);
             this.tabPageNewGame.Controls.Add(this.descricao1);
             this.tabPageNewGame.Controls.Add(this.label2);
-            this.tabPageNewGame.Controls.Add(this.grifo);
             this.tabPageNewGame.Controls.Add(this.tauro);
             this.tabPageNewGame.Controls.Add(this.siren);
             this.tabPageNewGame.Controls.Add(this.draco);
@@ -365,6 +376,18 @@
             this.tabPageNewGame.Size = new System.Drawing.Size(1704, 791);
             this.tabPageNewGame.TabIndex = 1;
             this.tabPageNewGame.Text = "newgame";
+            // 
+            // grifo
+            // 
+            this.grifo.BackColor = System.Drawing.Color.DarkKhaki;
+            this.grifo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grifo.BackgroundImage")));
+            this.grifo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.grifo.Location = new System.Drawing.Point(686, 207);
+            this.grifo.Name = "grifo";
+            this.grifo.Size = new System.Drawing.Size(217, 206);
+            this.grifo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.grifo.TabIndex = 17;
+            this.grifo.TabStop = false;
             // 
             // sirenselect
             // 
@@ -494,22 +517,10 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Pick your poison!";
             // 
-            // grifo
-            // 
-            this.grifo.BackColor = System.Drawing.Color.DarkKhaki;
-            this.grifo.BackgroundImage = global::Monster.Properties.Resources.dragao1sembackpequeno;
-            this.grifo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.grifo.Location = new System.Drawing.Point(699, 207);
-            this.grifo.Name = "grifo";
-            this.grifo.Size = new System.Drawing.Size(217, 206);
-            this.grifo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.grifo.TabIndex = 3;
-            this.grifo.TabStop = false;
-            // 
             // tauro
             // 
             this.tauro.BackColor = System.Drawing.Color.DarkKhaki;
-            this.tauro.BackgroundImage = global::Monster.Properties.Resources.dragao1sembackpequeno;
+            this.tauro.BackgroundImage = global::Monster.Properties.Resources.TauropequenoSemBacksmall;
             this.tauro.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tauro.Location = new System.Drawing.Point(1070, 207);
             this.tauro.Name = "tauro";
@@ -521,7 +532,7 @@
             // siren
             // 
             this.siren.BackColor = System.Drawing.Color.DarkKhaki;
-            this.siren.BackgroundImage = global::Monster.Properties.Resources.dragao1sembackpequeno;
+            this.siren.BackgroundImage = global::Monster.Properties.Resources.sirenpequenoSemBacksmall;
             this.siren.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.siren.Location = new System.Drawing.Point(1442, 207);
             this.siren.Name = "siren";
@@ -632,10 +643,12 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(59)))), ((int)(((byte)(42)))));
+            this.panel5.Controls.Add(this.label35);
+            this.panel5.Controls.Add(this.label34);
             this.panel5.Controls.Add(this.label28);
             this.panel5.Location = new System.Drawing.Point(908, 398);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(331, 88);
+            this.panel5.Size = new System.Drawing.Size(331, 229);
             this.panel5.TabIndex = 11;
             // 
             // label28
@@ -758,17 +771,19 @@
             // tabPagePlayer
             // 
             this.tabPagePlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.tabPagePlayer.Controls.Add(this.label36);
             this.tabPagePlayer.Controls.Add(this.pictureBox6);
             this.tabPagePlayer.Controls.Add(this.panel7);
             this.tabPagePlayer.Location = new System.Drawing.Point(4, 25);
             this.tabPagePlayer.Name = "tabPagePlayer";
-            this.tabPagePlayer.Size = new System.Drawing.Size(1704, 791);
+            this.tabPagePlayer.Size = new System.Drawing.Size(1704, 899);
             this.tabPagePlayer.TabIndex = 10;
             this.tabPagePlayer.Text = "player";
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackgroundImage = global::Monster.Properties.Resources.ed4d4ed1_1032_44f8_9ae9_ca7c61211950;
+            this.pictureBox6.BackgroundImage = global::Monster.Properties.Resources.playersembackpage;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox6.Location = new System.Drawing.Point(919, 109);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(392, 367);
@@ -778,12 +793,13 @@
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.Achievements);
             this.panel7.Controls.Add(this.Exit2);
             this.panel7.Controls.Add(this.Save1);
             this.panel7.Controls.Add(this.label26);
             this.panel7.Controls.Add(this.Shop1);
             this.panel7.Controls.Add(this.Games1);
-            this.panel7.Controls.Add(this.Inventory1);
+            this.panel7.Controls.Add(this.MyBackpack1);
             this.panel7.Controls.Add(this.MyMonsters2);
             this.panel7.Location = new System.Drawing.Point(394, 52);
             this.panel7.Name = "panel7";
@@ -796,7 +812,7 @@
             this.Exit2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Exit2.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit2.ForeColor = System.Drawing.Color.Peru;
-            this.Exit2.Location = new System.Drawing.Point(12, 454);
+            this.Exit2.Location = new System.Drawing.Point(12, 510);
             this.Exit2.Name = "Exit2";
             this.Exit2.Size = new System.Drawing.Size(377, 47);
             this.Exit2.TabIndex = 7;
@@ -810,7 +826,7 @@
             this.Save1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Save1.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Save1.ForeColor = System.Drawing.Color.Peru;
-            this.Save1.Location = new System.Drawing.Point(12, 397);
+            this.Save1.Location = new System.Drawing.Point(12, 453);
             this.Save1.Name = "Save1";
             this.Save1.Size = new System.Drawing.Size(377, 51);
             this.Save1.TabIndex = 5;
@@ -823,7 +839,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Peru;
-            this.label26.Location = new System.Drawing.Point(79, 57);
+            this.label26.Location = new System.Drawing.Point(56, 57);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(272, 71);
             this.label26.TabIndex = 4;
@@ -857,19 +873,19 @@
             this.Games1.UseVisualStyleBackColor = true;
             this.Games1.Click += new System.EventHandler(this.Games1_Click);
             // 
-            // Inventory1
+            // MyBackpack1
             // 
-            this.Inventory1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Inventory1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Inventory1.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Inventory1.ForeColor = System.Drawing.Color.Peru;
-            this.Inventory1.Location = new System.Drawing.Point(12, 240);
-            this.Inventory1.Name = "Inventory1";
-            this.Inventory1.Size = new System.Drawing.Size(377, 47);
-            this.Inventory1.TabIndex = 1;
-            this.Inventory1.Text = "Inventory";
-            this.Inventory1.UseVisualStyleBackColor = true;
-            this.Inventory1.Click += new System.EventHandler(this.Inventory1_Click);
+            this.MyBackpack1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MyBackpack1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.MyBackpack1.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyBackpack1.ForeColor = System.Drawing.Color.Peru;
+            this.MyBackpack1.Location = new System.Drawing.Point(12, 240);
+            this.MyBackpack1.Name = "MyBackpack1";
+            this.MyBackpack1.Size = new System.Drawing.Size(377, 47);
+            this.MyBackpack1.TabIndex = 1;
+            this.MyBackpack1.Text = "My Backpack";
+            this.MyBackpack1.UseVisualStyleBackColor = true;
+            this.MyBackpack1.Click += new System.EventHandler(this.Inventory1_Click);
             // 
             // MyMonsters2
             // 
@@ -891,7 +907,7 @@
             this.tabPageMyMonster.Controls.Add(this.panel10);
             this.tabPageMyMonster.Location = new System.Drawing.Point(4, 25);
             this.tabPageMyMonster.Name = "tabPageMyMonster";
-            this.tabPageMyMonster.Size = new System.Drawing.Size(1704, 791);
+            this.tabPageMyMonster.Size = new System.Drawing.Size(1704, 899);
             this.tabPageMyMonster.TabIndex = 9;
             this.tabPageMyMonster.Text = "myMonster";
             // 
@@ -983,11 +999,12 @@
             this.button37.TabIndex = 25;
             this.button37.Text = "Chosen Name";
             this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
             // 
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.DarkKhaki;
-            this.pictureBox9.BackgroundImage = global::Monster.Properties.Resources.dragao1sembackpequeno;
+            this.pictureBox9.BackgroundImage = global::Monster.Properties.Resources.TauropequenoSemBacksmall;
             this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox9.Location = new System.Drawing.Point(23, 160);
             this.pictureBox9.Name = "pictureBox9";
@@ -1011,7 +1028,7 @@
             this.tabPageDraco.Location = new System.Drawing.Point(4, 25);
             this.tabPageDraco.Name = "tabPageDraco";
             this.tabPageDraco.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDraco.Size = new System.Drawing.Size(1704, 791);
+            this.tabPageDraco.Size = new System.Drawing.Size(1704, 899);
             this.tabPageDraco.TabIndex = 2;
             this.tabPageDraco.Text = "Draco";
             this.tabPageDraco.Click += new System.EventHandler(this.tabPageBeginingDraco_Click);
@@ -1022,7 +1039,7 @@
             this.status.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.status.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.status.ForeColor = System.Drawing.Color.Peru;
-            this.status.Location = new System.Drawing.Point(1181, 749);
+            this.status.Location = new System.Drawing.Point(1204, 784);
             this.status.Name = "status";
             this.status.Size = new System.Drawing.Size(126, 55);
             this.status.TabIndex = 7;
@@ -1039,7 +1056,7 @@
             this.sideMenuPanel.Controls.Add(this.play2);
             this.sideMenuPanel.Controls.Add(this.feed2);
             this.sideMenuPanel.Controls.Add(this.changeName2);
-            this.sideMenuPanel.Location = new System.Drawing.Point(346, 59);
+            this.sideMenuPanel.Location = new System.Drawing.Point(394, 52);
             this.sideMenuPanel.Name = "sideMenuPanel";
             this.sideMenuPanel.Size = new System.Drawing.Size(403, 687);
             this.sideMenuPanel.TabIndex = 6;
@@ -1088,7 +1105,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Peru;
-            this.label3.Location = new System.Drawing.Point(132, 70);
+            this.label3.Location = new System.Drawing.Point(114, 66);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(141, 71);
             this.label3.TabIndex = 4;
@@ -1152,7 +1169,7 @@
             this.evolve.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.evolve.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.evolve.ForeColor = System.Drawing.Color.Peru;
-            this.evolve.Location = new System.Drawing.Point(952, 749);
+            this.evolve.Location = new System.Drawing.Point(975, 784);
             this.evolve.Name = "evolve";
             this.evolve.Size = new System.Drawing.Size(126, 55);
             this.evolve.TabIndex = 6;
@@ -1164,7 +1181,7 @@
             this.lblExp.AutoSize = true;
             this.lblExp.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExp.ForeColor = System.Drawing.Color.Peru;
-            this.lblExp.Location = new System.Drawing.Point(928, 705);
+            this.lblExp.Location = new System.Drawing.Point(951, 704);
             this.lblExp.Name = "lblExp";
             this.lblExp.Size = new System.Drawing.Size(71, 41);
             this.lblExp.TabIndex = 5;
@@ -1175,7 +1192,7 @@
             this.lblAttack.AutoSize = true;
             this.lblAttack.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAttack.ForeColor = System.Drawing.Color.Peru;
-            this.lblAttack.Location = new System.Drawing.Point(928, 664);
+            this.lblAttack.Location = new System.Drawing.Point(951, 663);
             this.lblAttack.Name = "lblAttack";
             this.lblAttack.Size = new System.Drawing.Size(94, 41);
             this.lblAttack.TabIndex = 4;
@@ -1186,7 +1203,7 @@
             this.lblStamina.AutoSize = true;
             this.lblStamina.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStamina.ForeColor = System.Drawing.Color.Peru;
-            this.lblStamina.Location = new System.Drawing.Point(928, 623);
+            this.lblStamina.Location = new System.Drawing.Point(951, 622);
             this.lblStamina.Name = "lblStamina";
             this.lblStamina.Size = new System.Drawing.Size(112, 41);
             this.lblStamina.TabIndex = 3;
@@ -1197,7 +1214,7 @@
             this.lblLevel.AutoSize = true;
             this.lblLevel.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLevel.ForeColor = System.Drawing.Color.Peru;
-            this.lblLevel.Location = new System.Drawing.Point(928, 582);
+            this.lblLevel.Location = new System.Drawing.Point(951, 581);
             this.lblLevel.Name = "lblLevel";
             this.lblLevel.Size = new System.Drawing.Size(62, 41);
             this.lblLevel.TabIndex = 2;
@@ -1206,7 +1223,7 @@
             // progressBarDraco
             // 
             this.progressBarDraco.ForeColor = System.Drawing.Color.Chocolate;
-            this.progressBarDraco.Location = new System.Drawing.Point(930, 507);
+            this.progressBarDraco.Location = new System.Drawing.Point(953, 506);
             this.progressBarDraco.Maximum = 10;
             this.progressBarDraco.Name = "progressBarDraco";
             this.progressBarDraco.Size = new System.Drawing.Size(377, 36);
@@ -1216,7 +1233,8 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Monster.Properties.Resources.dragao2_1sem_back;
-            this.pictureBox1.Location = new System.Drawing.Point(856, 59);
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(915, 52);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(392, 367);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1237,7 +1255,7 @@
             this.tabPageGrifo.Controls.Add(this.pictureBox2);
             this.tabPageGrifo.Location = new System.Drawing.Point(4, 25);
             this.tabPageGrifo.Name = "tabPageGrifo";
-            this.tabPageGrifo.Size = new System.Drawing.Size(1704, 791);
+            this.tabPageGrifo.Size = new System.Drawing.Size(1704, 899);
             this.tabPageGrifo.TabIndex = 3;
             this.tabPageGrifo.Text = "Grifo";
             // 
@@ -1247,7 +1265,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Peru;
-            this.button1.Location = new System.Drawing.Point(1207, 713);
+            this.button1.Location = new System.Drawing.Point(1207, 784);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 55);
             this.button1.TabIndex = 16;
@@ -1264,7 +1282,7 @@
             this.panel1.Controls.Add(this.play3);
             this.panel1.Controls.Add(this.feed3);
             this.panel1.Controls.Add(this.changeName3);
-            this.panel1.Location = new System.Drawing.Point(372, 23);
+            this.panel1.Location = new System.Drawing.Point(394, 52);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(403, 687);
             this.panel1.TabIndex = 14;
@@ -1377,7 +1395,7 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.Peru;
-            this.button9.Location = new System.Drawing.Point(978, 713);
+            this.button9.Location = new System.Drawing.Point(975, 784);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(126, 55);
             this.button9.TabIndex = 15;
@@ -1389,7 +1407,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Peru;
-            this.label5.Location = new System.Drawing.Point(954, 669);
+            this.label5.Location = new System.Drawing.Point(954, 690);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 41);
             this.label5.TabIndex = 13;
@@ -1400,7 +1418,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Peru;
-            this.label6.Location = new System.Drawing.Point(954, 628);
+            this.label6.Location = new System.Drawing.Point(954, 649);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(94, 41);
             this.label6.TabIndex = 12;
@@ -1411,7 +1429,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Peru;
-            this.label7.Location = new System.Drawing.Point(954, 587);
+            this.label7.Location = new System.Drawing.Point(954, 608);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(112, 41);
             this.label7.TabIndex = 11;
@@ -1422,7 +1440,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Peru;
-            this.label8.Location = new System.Drawing.Point(954, 546);
+            this.label8.Location = new System.Drawing.Point(954, 567);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(62, 41);
             this.label8.TabIndex = 10;
@@ -1431,7 +1449,7 @@
             // progressBar1
             // 
             this.progressBar1.ForeColor = System.Drawing.Color.Chocolate;
-            this.progressBar1.Location = new System.Drawing.Point(956, 471);
+            this.progressBar1.Location = new System.Drawing.Point(956, 492);
             this.progressBar1.Maximum = 10;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(377, 36);
@@ -1440,8 +1458,9 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::Monster.Properties.Resources.dragao2_1sem_back;
-            this.pictureBox2.Location = new System.Drawing.Point(882, 23);
+            this.pictureBox2.BackgroundImage = global::Monster.Properties.Resources.GrifoGrandeSemBackSmall;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(915, 52);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(392, 367);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1462,7 +1481,7 @@
             this.tabPageTauro.Controls.Add(this.pictureBox3);
             this.tabPageTauro.Location = new System.Drawing.Point(4, 25);
             this.tabPageTauro.Name = "tabPageTauro";
-            this.tabPageTauro.Size = new System.Drawing.Size(1704, 791);
+            this.tabPageTauro.Size = new System.Drawing.Size(1704, 899);
             this.tabPageTauro.TabIndex = 4;
             this.tabPageTauro.Text = "Tauro";
             // 
@@ -1472,7 +1491,7 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button10.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.Peru;
-            this.button10.Location = new System.Drawing.Point(1207, 713);
+            this.button10.Location = new System.Drawing.Point(1207, 784);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(126, 55);
             this.button10.TabIndex = 25;
@@ -1489,7 +1508,7 @@
             this.panel2.Controls.Add(this.play4);
             this.panel2.Controls.Add(this.feed4);
             this.panel2.Controls.Add(this.changeName4);
-            this.panel2.Location = new System.Drawing.Point(372, 23);
+            this.panel2.Location = new System.Drawing.Point(394, 52);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(403, 687);
             this.panel2.TabIndex = 23;
@@ -1602,7 +1621,7 @@
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button18.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button18.ForeColor = System.Drawing.Color.Peru;
-            this.button18.Location = new System.Drawing.Point(978, 713);
+            this.button18.Location = new System.Drawing.Point(975, 784);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(126, 55);
             this.button18.TabIndex = 24;
@@ -1665,8 +1684,9 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackgroundImage = global::Monster.Properties.Resources.dragao2_1sem_back;
-            this.pictureBox3.Location = new System.Drawing.Point(882, 23);
+            this.pictureBox3.BackgroundImage = global::Monster.Properties.Resources.TauroGrandeSemBacksmall;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox3.Location = new System.Drawing.Point(915, 52);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(392, 367);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1687,7 +1707,7 @@
             this.tabPageSiren.Controls.Add(this.pictureBox4);
             this.tabPageSiren.Location = new System.Drawing.Point(4, 25);
             this.tabPageSiren.Name = "tabPageSiren";
-            this.tabPageSiren.Size = new System.Drawing.Size(1704, 791);
+            this.tabPageSiren.Size = new System.Drawing.Size(1704, 899);
             this.tabPageSiren.TabIndex = 5;
             this.tabPageSiren.Text = "Siren";
             // 
@@ -1697,7 +1717,7 @@
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button19.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button19.ForeColor = System.Drawing.Color.Peru;
-            this.button19.Location = new System.Drawing.Point(1207, 713);
+            this.button19.Location = new System.Drawing.Point(1207, 784);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(126, 55);
             this.button19.TabIndex = 25;
@@ -1714,7 +1734,7 @@
             this.panel3.Controls.Add(this.play5);
             this.panel3.Controls.Add(this.feed5);
             this.panel3.Controls.Add(this.changeName5);
-            this.panel3.Location = new System.Drawing.Point(372, 23);
+            this.panel3.Location = new System.Drawing.Point(394, 52);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(403, 687);
             this.panel3.TabIndex = 23;
@@ -1827,7 +1847,7 @@
             this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button27.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button27.ForeColor = System.Drawing.Color.Peru;
-            this.button27.Location = new System.Drawing.Point(978, 713);
+            this.button27.Location = new System.Drawing.Point(975, 784);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(126, 55);
             this.button27.TabIndex = 24;
@@ -1890,8 +1910,9 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackgroundImage = global::Monster.Properties.Resources.dragao2_1sem_back;
-            this.pictureBox4.Location = new System.Drawing.Point(882, 23);
+            this.pictureBox4.BackgroundImage = global::Monster.Properties.Resources.SirenGrandeSemBacksmall;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox4.Location = new System.Drawing.Point(915, 52);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(392, 367);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1967,6 +1988,9 @@
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.pictureBox12);
+            this.panel8.Controls.Add(this.pictureBox11);
+            this.panel8.Controls.Add(this.pictureBox10);
             this.panel8.Controls.Add(this.pictureBox7);
             this.panel8.Controls.Add(this.pictureBox5);
             this.panel8.Controls.Add(this.label29);
@@ -1979,11 +2003,44 @@
             this.panel8.Size = new System.Drawing.Size(1201, 489);
             this.panel8.TabIndex = 25;
             // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImage = global::Monster.Properties.Resources.sirenpequenoSemBackextrasmall;
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox12.Location = new System.Drawing.Point(889, 280);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(100, 109);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox12.TabIndex = 9;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImage = global::Monster.Properties.Resources.TauropequenoSemBackextrasmall;
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox11.Location = new System.Drawing.Point(753, 280);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(100, 109);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox11.TabIndex = 8;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = global::Monster.Properties.Resources.GrifopequenoSemBackExtraSmall;
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox10.Location = new System.Drawing.Point(620, 280);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(100, 109);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox10.TabIndex = 7;
+            this.pictureBox10.TabStop = false;
+            // 
             // pictureBox7
             // 
             this.pictureBox7.BackgroundImage = global::Monster.Properties.Resources.dragao1sembackpequeno1;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox7.Location = new System.Drawing.Point(644, 280);
+            this.pictureBox7.Location = new System.Drawing.Point(489, 280);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(100, 109);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1992,9 +2049,9 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackgroundImage = global::Monster.Properties.Resources.c61a36e9_a982_4c28_97e9_ba90dea83ce2;
+            this.pictureBox5.BackgroundImage = global::Monster.Properties.Resources.playersembackextrasmall;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox5.Location = new System.Drawing.Point(488, 280);
+            this.pictureBox5.Location = new System.Drawing.Point(280, 280);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(100, 109);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -2065,13 +2122,60 @@
             this.myMonsters3.UseVisualStyleBackColor = true;
             this.myMonsters3.Click += new System.EventHandler(this.myMonsters3_Click);
             // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.Transparent;
+            this.label34.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.Peru;
+            this.label34.Location = new System.Drawing.Point(41, 91);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(254, 50);
+            this.label34.TabIndex = 8;
+            this.label34.Text = "View Saved Games";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.Transparent;
+            this.label35.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.Peru;
+            this.label35.Location = new System.Drawing.Point(71, 155);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(195, 50);
+            this.label35.TabIndex = 9;
+            this.label35.Text = "Delete Games";
+            // 
+            // Achievements
+            // 
+            this.Achievements.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Achievements.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Achievements.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Achievements.ForeColor = System.Drawing.Color.Peru;
+            this.Achievements.Location = new System.Drawing.Point(12, 399);
+            this.Achievements.Name = "Achievements";
+            this.Achievements.Size = new System.Drawing.Size(377, 48);
+            this.Achievements.TabIndex = 8;
+            this.Achievements.Text = "Achievements";
+            this.Achievements.UseVisualStyleBackColor = true;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.label36.Location = new System.Drawing.Point(1064, 562);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(209, 41);
+            this.label36.TabIndex = 28;
+            this.label36.Text = "Money: 1051 Coins";
+            // 
             // InicialPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::Monster.Properties.Resources.four_eyed_mythical_creature_0oiithr40b2pxx7m;
-            this.ClientSize = new System.Drawing.Size(1712, 820);
+            this.ClientSize = new System.Drawing.Size(1712, 928);
             this.Controls.Add(this.Monsters);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "InicialPage";
@@ -2133,6 +2237,9 @@
             this.tabPageBegining.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
@@ -2151,7 +2258,6 @@
         private System.Windows.Forms.Button exit;
         private System.Windows.Forms.Button credit;
         private System.Windows.Forms.PictureBox draco;
-        private System.Windows.Forms.PictureBox grifo;
         private System.Windows.Forms.PictureBox tauro;
         private System.Windows.Forms.PictureBox siren;
         private System.Windows.Forms.Label label2;
@@ -2263,7 +2369,7 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Button Shop1;
         private System.Windows.Forms.Button Games1;
-        private System.Windows.Forms.Button Inventory1;
+        private System.Windows.Forms.Button MyBackpack1;
         private System.Windows.Forms.Button MyMonsters2;
         private System.Windows.Forms.Button Exit1;
         private System.Windows.Forms.TabPage tabPageBegining;
@@ -2286,6 +2392,14 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.PictureBox grifo;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Button Achievements;
     }
 }
 

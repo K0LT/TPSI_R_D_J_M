@@ -83,28 +83,55 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\four-eyed-mythical-creature-0oiithr40b2pxx7m.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\c61a36e9-a982-4c28-97e9-ba90dea83ce2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\dragao1semback.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dragao1sembackpequeno1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ed4d4ed1-1032-44f8-9ae9-ca7c61211950.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dragao1sembackpequeno11.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\dragao1sembackpequeno.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dragao2.1sem back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1744993266826%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GrifopequenoSemBackSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TauropequenoSemBacksmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sirenpequenoSemBacksmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GrifoGrandeSemBackSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TauroGrandeSemBacksmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SirenGrandeSemBacksmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GrifopequenoSemBackExtraSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TauropequenoSemBackextrasmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sirenpequenoSemBackextrasmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playergrandesemback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playersembackpage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playersembackextrasmall.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

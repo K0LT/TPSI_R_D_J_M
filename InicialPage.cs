@@ -64,6 +64,17 @@ namespace Monster
             MonsterButtonMenu(status);
 
 
+            //botoes menu player
+
+            MonsterButtonMenu(MyMonsters2);
+            MonsterButtonMenu(MyBackpack1);
+            MonsterButtonMenu(Games1);
+            MonsterButtonMenu(Shop1);
+            MonsterButtonMenu(Achievements);
+            MonsterButtonMenu(Save1);
+            MonsterButtonMenu(Exit2);
+      
+
 
 
             //passar o cursor na imagem e exibir texto em selecionar monstro
@@ -114,7 +125,7 @@ namespace Monster
             };
         }
 
-        //Design de botoes de menu monstro
+        //Design de botoes de menu monstro / player
         private void MonsterButtonMenu(Button button)
         {
             button.BackColor = Color.FromArgb(74, 59, 42);
@@ -398,6 +409,9 @@ namespace Monster
 
         }
 
-       
+        private void button37_Click(object sender, EventArgs e)
+        {
+            Monsters.SelectedTab = tabPageDraco;
+        }
     }
 }
