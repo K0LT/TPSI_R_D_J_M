@@ -36,6 +36,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -132,6 +133,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\playersembackextrasmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playergrandesembacksmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playergirlgrandesembacksmall.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

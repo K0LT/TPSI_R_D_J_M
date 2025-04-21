@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
@@ -23,9 +24,15 @@ namespace Monster
             progressBarDraco.Minimum = 0;
             progressBarDraco.Maximum = 100; // Defina o máximo conforme necessário
             progressBarDraco.Value = 0; // Inicializa a barra de progresso
-            UpdateAttributeLabels();
-            descricao1.Visible = false;
+            descricao1.Visible = false;   // descriçao de monsters seleçao inicial
+            panelFirstRegister.Visible = false;  // registo player escondido
+            nextRegister.Visible = false;   // botao de next em registo de player
+            panelNextMonsterName.Visible = false; // botao next depois de colocar nome do monstro
+            textBoxPassword.PasswordChar = '*'; // Codificar password
 
+
+
+            UpdateAttributeLabels();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -39,9 +46,7 @@ namespace Monster
             Monsters.Appearance = TabAppearance.FlatButtons;
             Monsters.ItemSize = new Size(0, 1);
             Monsters.SizeMode = TabSizeMode.Fixed;
-
-            //Colocar titulo principal sem cor
-            label1.BackColor = Color.Transparent;
+                   
 
 
             //botoes menu inicial
@@ -156,17 +161,17 @@ namespace Monster
         //voids botoes de menu principal
         private void newgame_Click(object sender, EventArgs e)
         {
-            Monsters.SelectedTab = tabPageNewGame;
+            Monsters.SelectedTab = NewGamePlayer;
         }
 
         private void loadgame_Click(object sender, EventArgs e)
         {
-            Monsters.SelectedTab = tabPageLoadGame;
+            Monsters.SelectedTab = LoadGamePage;
         }
 
         private void settings_Click(object sender, EventArgs e)
         {
-            Monsters.SelectedTab = tabPageSettings;
+            Monsters.SelectedTab = SettingsPage;
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -176,92 +181,229 @@ namespace Monster
 
         private void credit_Click(object sender, EventArgs e)
         {
-            Monsters.SelectedTab = tabPageCredits;
+            Monsters.SelectedTab = Credits;
 
         }
 
 
 
 
-       
 
 
-        //voids botoes de clique para selecionar monstro inicial
+        //voids botoes de menu new game player
+
+        private void PlayerBoy_CheckedChanged(object sender, EventArgs e)
+        {
+            panelFirstRegister.Visible = PlayerBoy.Checked;
+
+        }
+
+        private void PlayerGirl_CheckedChanged(object sender, EventArgs e)
+        {
+            panelFirstRegister.Visible = PlayerGirl.Checked;
+
+        }
+
+        private void LoadPlayerType(string user)
+        {
+            string userDirectoryPath = Path.Combine(Application.StartupPath, "Resources", user);
+            string playerTypeFilePath = Path.Combine(userDirectoryPath, "playerType.txt");
+
+            if (File.Exists(playerTypeFilePath))
+            {
+                string playerType = File.ReadAllText(playerTypeFilePath).Trim();
+                if (playerType.Equals("Boy", StringComparison.OrdinalIgnoreCase))
+                {
+                    PlayerBoy.Checked = true;
+                }
+                else if (playerType.Equals("Girl", StringComparison.OrdinalIgnoreCase))
+                {
+                    PlayerGirl.Checked = true;
+                }
+            }
+        }
+
+        private void registerplayer_Click(object sender, EventArgs e)
+        {
+            // Guardar a info de novos users e passwords em um .txt, além de criar arquivo onde vai guardar o nome de todos os monstros,
+            // cria ainda uma pasta onde vai guardar todos os monsters e outras coisas de cada user.
+            string user = textBoxusername.Text.Trim();
+            string pass = textBoxPassword.Text.Trim();
+            string usernameFilePath = Path.Combine(Application.StartupPath, "Resources", "username.txt");
+            string passwordFilePath = Path.Combine(Application.StartupPath, "Resources", "password.txt");
+            string userDirectoryPath = Path.Combine(Application.StartupPath, "Resources", user);
+
+            Message.Text = string.Empty;
+
+            if (string.IsNullOrEmpty(user) || string.IsNullOrEmpty(pass))
+            {
+                Message.Text = "[ERROR] Please insert a username and password";
+                Message.ForeColor = Color.Red;
+                return;
+            }
+
+            var existingUsers = File.Exists(usernameFilePath) ? File.ReadAllLines(usernameFilePath) : new string[0];
+            if (existingUsers.Contains(user))
+            {
+                Message.Text = "     [ERROR] This username already exists!";
+                Message.ForeColor = Color.Red;
+                return;
+            }
+
+            using (StreamWriter swUser = File.AppendText(usernameFilePath))
+            {
+                swUser.WriteLine(user);
+            }
+
+            using (StreamWriter swPass = File.AppendText(passwordFilePath))
+            {
+                swPass.WriteLine(pass);
+            }
+
+            Directory.CreateDirectory(userDirectoryPath);
+
+            string playerType = PlayerBoy.Checked ? "Boy" : PlayerGirl.Checked ? "Girl" : "Unknown";
+            string playerTypeFilePath = Path.Combine(userDirectoryPath, "playerType.txt");
+            File.WriteAllText(playerTypeFilePath, playerType);
+
+         
+            LoadPlayerType(user);
+
+            Message.Text = "                   Registered successfully!";
+            Message.ForeColor = Color.Green;
+
+            nextRegister.Visible = true;
+            registerplayer.Enabled = false;
+        }
+
+        private void nextRegister_Click(object sender, EventArgs e)
+        {
+            Monsters.SelectedTab = NewGameMonster;
+        }
+
+        private string selectedMonsterType;
+
         private void dracoselect_Click(object sender, EventArgs e)
         {
-            Monsters.SelectedTab = tabPageFirstMonster;
-
+            selectedMonsterType = "draco";
+            panelMonsterName.Visible = true;
         }
+
         private void grifoselect_Click(object sender, EventArgs e)
         {
-            Monsters.SelectedTab = tabPageFirstMonster;
-
+            selectedMonsterType = "grifo";
+            panelMonsterName.Visible = true;
         }
+
         private void tauroselect_Click(object sender, EventArgs e)
         {
-            Monsters.SelectedTab = tabPageFirstMonster;
-
+            selectedMonsterType = "tauro";
+            panelMonsterName.Visible = true;
         }
+
         private void sirenselect_Click(object sender, EventArgs e)
         {
-            Monsters.SelectedTab = tabPageFirstMonster;
-
-
+            selectedMonsterType = "siren";
+            panelMonsterName.Visible = true;
         }
 
+        private void MonsterRegister_Click(object sender, EventArgs e)
+        {
+            string monsterName = textBoxMonsterName.Text.Trim();
+            string usernameFilePath = Path.Combine(Application.StartupPath, "Resources", "username.txt");
+            string user = File.ReadAllLines(usernameFilePath).FirstOrDefault()?.Trim();
 
+            if (string.IsNullOrEmpty(monsterName))
+            {
+                Message2.Text = "         Please enter monster's name";
+                Message2.ForeColor = Color.Red;
+                return;
+            }
 
+            if (string.IsNullOrEmpty(selectedMonsterType))
+            {
+                Message2.Text = "         Please select a monster type";
+                Message2.ForeColor = Color.Red;
+                return;
+            }
 
-        //voids botoes First Monster
+       
+            string userDirectoryPath = Path.Combine(Application.StartupPath, "Resources", user);
+            string monstersFilePath = Path.Combine(userDirectoryPath, $"{user}_{selectedMonsterType}_monsters.txt");
+
+           
+            if (!File.Exists(monstersFilePath))
+            {
+          
+                using (File.Create(monstersFilePath)) { }
+            }
+
+            using (StreamWriter sw = File.AppendText(monstersFilePath))
+            {
+                sw.WriteLine(monsterName);
+            }
+
+            Message2.Text = $"   Monster '{monsterName}' saved successfully!";
+            Message2.ForeColor = Color.Green;
+            panelNextMonsterName.Visible = true;
+            MonsterRegister.Enabled = false;
+        }
+
+        private void nextMonsterName_Click(object sender, EventArgs e)
+        {
+            Monsters.SelectedTab = Begining;
+
+        }
 
         private void Next_Click(object sender, EventArgs e)
         {
-            Monsters.SelectedTab = tabPageBegining;
+            Monsters.SelectedTab = Begining;
         }
 
-        //voids botoes Begining
-        private void myMonsters3_Click(object sender, EventArgs e)
-        {
-            Monsters.SelectedTab = tabPageMyMonster;
 
-        }
 
-        private void player3_Click(object sender, EventArgs e)
-        {
-            Monsters.SelectedTab = tabPagePlayer;
 
-        }
+        // voids menu First Monster
 
-        private void exitbutton3_Click(object sender, EventArgs e)
-        {
-            // Fazer confirmaçao se quer sair e se sim, se quer salvar o jogo
-            Monsters.SelectedTab = tabPageHome;
-        }
+
+
+
+
+
+
 
 
         //voids botoes Load Game
         private void myMonsters1_Click(object sender, EventArgs e)
         {
 
-            Monsters.SelectedTab = tabPageMyMonster;
+            Monsters.SelectedTab = MyMonsters;
         }
 
         private void Player1_Click(object sender, EventArgs e)
         {
-            Monsters.SelectedTab = tabPagePlayer;
+            Monsters.SelectedTab = Player;
         }
 
         private void Exit1_Click(object sender, EventArgs e)
         {
             // Fazer confirmaçao se quer sair e se sim, se quer salvar o jogo
-            Monsters.SelectedTab = tabPageHome;
+            Monsters.SelectedTab = Home;
         }
+
+
+
+
+
+
+
+
 
 
         //voids botoes menu Player
         private void MyMonsters2_Click(object sender, EventArgs e)
         {
-            Monsters.SelectedTab = tabPageMyMonster;
+            Monsters.SelectedTab = MyMonsters;
 
         }
 
@@ -288,12 +430,12 @@ namespace Monster
         private void Exit2_Click(object sender, EventArgs e)
         {
             // Fazer confirmaçao se quer sair e se sim, se quer salvar o jogo
-            Monsters.SelectedTab = tabPageHome;
+            Monsters.SelectedTab = Home;
         }
 
 
         //voids botoes menu My Monster
-
+       
 
 
 
@@ -399,19 +541,6 @@ namespace Monster
 
 
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPageBeginingDraco_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button37_Click(object sender, EventArgs e)
-        {
-            Monsters.SelectedTab = tabPageDraco;
-        }
+        
     }
 }
