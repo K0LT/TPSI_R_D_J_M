@@ -143,9 +143,29 @@ namespace Monster.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap playergirlgrandesembacksmall {
+            get {
+                object obj = ResourceManager.GetObject("playergirlgrandesembacksmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap playergrandesemback {
             get {
                 object obj = ResourceManager.GetObject("playergrandesemback", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap playergrandesembacksmall {
+            get {
+                object obj = ResourceManager.GetObject("playergrandesembacksmall", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
