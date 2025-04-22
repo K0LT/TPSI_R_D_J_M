@@ -21,14 +21,12 @@ namespace Monster
         {
             InitializeComponent();
             levelGoals = new LevelGoals();
-            progressBarDraco.Minimum = 0;
-            progressBarDraco.Maximum = 100; // Defina o máximo conforme necessário
-            progressBarDraco.Value = 0; // Inicializa a barra de progresso
             descricao1.Visible = false;   // descriçao de monsters seleçao inicial
             panelFirstRegister.Visible = false;  // registo player escondido
             nextRegister.Visible = false;   // botao de next em registo de player
             panelNextMonsterName.Visible = false; // botao next depois de colocar nome do monstro
             textBoxPassword.PasswordChar = '*'; // Codificar password
+            passwordLogin.PasswordChar = '*'; // Codificar password
 
 
 
@@ -46,7 +44,7 @@ namespace Monster
             Monsters.Appearance = TabAppearance.FlatButtons;
             Monsters.ItemSize = new Size(0, 1);
             Monsters.SizeMode = TabSizeMode.Fixed;
-                   
+
 
 
             //botoes menu inicial
@@ -78,7 +76,7 @@ namespace Monster
             MonsterButtonMenu(Achievements);
             MonsterButtonMenu(Save1);
             MonsterButtonMenu(Exit2);
-      
+
 
 
 
@@ -87,17 +85,6 @@ namespace Monster
             MapearImagemComDescricao(grifo, descricao2);
             MapearImagemComDescricao(tauro, descricao3);
             MapearImagemComDescricao(siren, descricao4);
-
-
-
-            //Barra progresso draco (teste)
-            progressBarDraco.Minimum = 0;
-            progressBarDraco.Maximum = 5;
-            progressBarDraco.Value = 1;
-
-
-         
-
 
 
 
@@ -114,18 +101,18 @@ namespace Monster
             button.FlatAppearance.BorderSize = 0;
             button.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            button.ForeColor = Color.FromArgb(54, 39, 22); 
+            button.ForeColor = Color.FromArgb(54, 39, 22);
 
-   
+
             button.MouseHover += (s, e) =>
             {
                 button.BackColor = Color.FromArgb(102, 255, 255, 255);
-                button.ForeColor = Color.White; 
+                button.ForeColor = Color.White;
             };
 
             button.MouseLeave += (s, e) =>
             {
-                button.BackColor = Color.FromArgb(204, 255, 255, 255); 
+                button.BackColor = Color.FromArgb(204, 255, 255, 255);
                 button.ForeColor = Color.FromArgb(54, 39, 22);
             };
         }
@@ -166,7 +153,7 @@ namespace Monster
 
         private void loadgame_Click(object sender, EventArgs e)
         {
-            Monsters.SelectedTab = LoadGamePage;
+            Monsters.SelectedTab = Login;
         }
 
         private void settings_Click(object sender, EventArgs e)
@@ -266,7 +253,7 @@ namespace Monster
             string playerTypeFilePath = Path.Combine(userDirectoryPath, "playerType.txt");
             File.WriteAllText(playerTypeFilePath, playerType);
 
-         
+
             LoadPlayerType(user);
 
             Message.Text = "                   Registered successfully!";
@@ -312,6 +299,8 @@ namespace Monster
             string monsterName = textBoxMonsterName.Text.Trim();
             string usernameFilePath = Path.Combine(Application.StartupPath, "Resources", "username.txt");
             string user = File.ReadAllLines(usernameFilePath).FirstOrDefault()?.Trim();
+            string userDirectoryPath = Path.Combine(Application.StartupPath, "Resources", user);
+
 
             if (string.IsNullOrEmpty(monsterName))
             {
@@ -327,20 +316,21 @@ namespace Monster
                 return;
             }
 
-       
-            string userDirectoryPath = Path.Combine(Application.StartupPath, "Resources", user);
-            string monstersFilePath = Path.Combine(userDirectoryPath, $"{user}_{selectedMonsterType}_monsters.txt");
 
-           
-            if (!File.Exists(monstersFilePath))
+
+            string monsterNameFilePath = Path.Combine(userDirectoryPath, "monsterName.txt");
+            string monsterStatusFilePath = Path.Combine(userDirectoryPath, $"{monsterName}_monsterStatus.txt");
+
+
+
+            if (!File.Exists(monsterNameFilePath))
             {
-          
-                using (File.Create(monstersFilePath)) { }
+                File.WriteAllText(monsterNameFilePath, monsterName);
             }
 
-            using (StreamWriter sw = File.AppendText(monstersFilePath))
+            if (!File.Exists(monsterStatusFilePath))
             {
-                sw.WriteLine(monsterName);
+                File.WriteAllText(monsterStatusFilePath, $"{selectedMonsterType}\nLvl: 0\nHP: 0\nStamina: 0\nAttack: 0\nExp: 0");
             }
 
             Message2.Text = $"   Monster '{monsterName}' saved successfully!";
@@ -349,16 +339,63 @@ namespace Monster
             MonsterRegister.Enabled = false;
         }
 
+
         private void nextMonsterName_Click(object sender, EventArgs e)
         {
             Monsters.SelectedTab = Begining;
 
         }
 
-        private void Next_Click(object sender, EventArgs e)
+        //cria dentro da pasta do user ficheiros txt com a lista de nome dos monstros para nao haver repetiçoes, 
+        //e um ficheiro onde vai guardar os status do monstro
+
+
+
+
+        // void login com user existente
+
+        private void loginButton_Click(object sender, EventArgs e)
         {
-            Monsters.SelectedTab = Begining;
+            string user = usernameLogin.Text.Trim();
+            string pass = passwordLogin.Text.Trim();
+            string usernameFilePath = Path.Combine(Application.StartupPath, "Resources", "username.txt");
+            string passwordFilePath = Path.Combine(Application.StartupPath, "Resources", "password.txt");
+
+            MessageLogin.Text = string.Empty;
+
+            if (string.IsNullOrEmpty(user) || string.IsNullOrEmpty(pass))
+            {
+                MessageLogin.Text = "[ERROR] Please insert a username and password";
+                MessageLogin.ForeColor = Color.Red;
+                return;
+            }
+
+
+            var usernames = File.ReadAllLines(usernameFilePath).Select(u => u.Trim()).ToArray();
+            var passwords = File.ReadAllLines(passwordFilePath).Select(p => p.Trim()).ToArray();
+
+            int userIndex = Array.IndexOf(usernames, user);
+            int passIndex = Array.IndexOf(passwords, pass);
+
+
+            if (userIndex == -1)
+            {
+                MessageLogin.Text = "[ERROR] Username not found";
+                MessageLogin.ForeColor = Color.Red;
+                return;
+            }
+
+            if (passIndex == -1)
+            {
+                MessageLogin.Text = "[ERROR] Incorrect password";
+                MessageLogin.ForeColor = Color.Red;
+                return;
+            }
+
+
+            Monsters.SelectedTab = LoadedGame;
         }
+
 
 
 
@@ -394,7 +431,38 @@ namespace Monster
 
 
 
+        //voids botoes menu Monster Page
 
+        private void statusPrint_TextChanged(object sender, EventArgs e)
+        {
+            
+            string userDirectoryPath = Path.Combine(Application.StartupPath, "Resources", user);
+            string monsterName = Path.Combine(userDirectoryPath, "monsterName.txt");
+            string usernameFilePath = Path.Combine(Application.StartupPath, "Resources", "username.txt");
+            string user = File.ReadAllLines(usernameFilePath).FirstOrDefault()?.Trim();
+
+            string statusFilePath = Path.Combine(userDirectoryPath, $"{monsterName}_monsterStatus.txt");
+
+            try
+            {
+                if (File.Exists(statusFilePath))
+                {
+                    string[] lines = File.ReadAllLines(statusFilePath);
+                    foreach (string line in lines)
+                    {
+                        Console.WriteLine(line);
+
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("[INFO] Ficheiro de status não encontrado.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("[ERROR] " + ex.Message);
+            }
 
 
 
@@ -435,7 +503,7 @@ namespace Monster
 
 
         //voids botoes menu My Monster
-       
+
 
 
 
@@ -512,35 +580,15 @@ namespace Monster
         private void UpdateAttributeLabels()
         {
 
-            lblLevel.Text = "Lvl: " + levelGoals.Level;
-            lblStamina.Text = "Stamina: " + levelGoals.Stamina;
-            lblAttack.Text = "Attack: " + levelGoals.Attack;
-            lblExp.Text = "Exp: " + levelGoals.Exp;
+
         }
 
+        private void myMonsterFirst_Click(object sender, EventArgs e)
+        {
+            Monsters.SelectedTab = FirstMonster;
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+       
+        }
     }
 }

@@ -42,23 +42,19 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.FirstMonster = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.status = new System.Windows.Forms.Button();
             this.sideMenuPanel = new System.Windows.Forms.Panel();
             this.exitbutton2 = new System.Windows.Forms.Button();
             this.save2 = new System.Windows.Forms.Button();
             this.inventory2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.nameMonsterPage = new System.Windows.Forms.Label();
             this.sleep1 = new System.Windows.Forms.Button();
             this.play2 = new System.Windows.Forms.Button();
             this.feed2 = new System.Windows.Forms.Button();
             this.changeName2 = new System.Windows.Forms.Button();
             this.evolve = new System.Windows.Forms.Button();
-            this.lblExp = new System.Windows.Forms.Label();
-            this.lblAttack = new System.Windows.Forms.Label();
-            this.lblStamina = new System.Windows.Forms.Label();
-            this.lblLevel = new System.Windows.Forms.Label();
-            this.progressBarDraco = new System.Windows.Forms.ProgressBar();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MyMonsters = new System.Windows.Forms.TabPage();
             this.panel10 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
@@ -94,7 +90,7 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.LoadGamePage = new System.Windows.Forms.TabPage();
+            this.LoadedGame = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.Exit1 = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
@@ -144,8 +140,16 @@
             this.newgame = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Monsters = new System.Windows.Forms.TabControl();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblHp = new System.Windows.Forms.Label();
+            this.Login = new System.Windows.Forms.TabPage();
+            this.loginPanel = new System.Windows.Forms.Panel();
+            this.MessageLogin = new System.Windows.Forms.Label();
+            this.passwordLogin = new System.Windows.Forms.TextBox();
+            this.loginButton = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.usernameLogin = new System.Windows.Forms.TextBox();
+            this.myMonsterFirst = new System.Windows.Forms.Button();
+            this.statusPrint = new System.Windows.Forms.TextBox();
             this.Begining.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -153,8 +157,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.FirstMonster.SuspendLayout();
-            this.sideMenuPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.sideMenuPanel.SuspendLayout();
             this.MyMonsters.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -166,7 +171,7 @@
             this.panel4.SuspendLayout();
             this.SettingsPage.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.LoadGamePage.SuspendLayout();
+            this.LoadedGame.SuspendLayout();
             this.panel6.SuspendLayout();
             this.NewGameMonster.SuspendLayout();
             this.panelNextMonsterName.SuspendLayout();
@@ -181,12 +186,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.Home.SuspendLayout();
             this.Monsters.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.Login.SuspendLayout();
+            this.loginPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Begining
             // 
             this.Begining.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.Begining.Controls.Add(this.myMonsterFirst);
             this.Begining.Controls.Add(this.Tutorial);
             this.Begining.Controls.Add(this.letsPlay);
             this.Begining.Controls.Add(this.pictureBox12);
@@ -319,6 +326,26 @@
             this.FirstMonster.TabIndex = 2;
             this.FirstMonster.Text = "FirstMonster";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.statusPrint);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(906, 52);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(468, 696);
+            this.panel1.TabIndex = 8;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Monster.Properties.Resources.dragao2_1sem_back;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(43, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(392, 367);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // status
             // 
             this.status.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -337,7 +364,7 @@
             this.sideMenuPanel.Controls.Add(this.exitbutton2);
             this.sideMenuPanel.Controls.Add(this.save2);
             this.sideMenuPanel.Controls.Add(this.inventory2);
-            this.sideMenuPanel.Controls.Add(this.label3);
+            this.sideMenuPanel.Controls.Add(this.nameMonsterPage);
             this.sideMenuPanel.Controls.Add(this.sleep1);
             this.sideMenuPanel.Controls.Add(this.play2);
             this.sideMenuPanel.Controls.Add(this.feed2);
@@ -386,16 +413,16 @@
             this.inventory2.Text = "Inventory";
             this.inventory2.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // nameMonsterPage
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Peru;
-            this.label3.Location = new System.Drawing.Point(114, 66);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 71);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Draco";
+            this.nameMonsterPage.AutoSize = true;
+            this.nameMonsterPage.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameMonsterPage.ForeColor = System.Drawing.Color.Peru;
+            this.nameMonsterPage.Location = new System.Drawing.Point(122, 59);
+            this.nameMonsterPage.Name = "nameMonsterPage";
+            this.nameMonsterPage.Size = new System.Drawing.Size(162, 71);
+            this.nameMonsterPage.TabIndex = 4;
+            this.nameMonsterPage.Text = "            ";
             // 
             // sleep1
             // 
@@ -461,71 +488,6 @@
             this.evolve.TabIndex = 6;
             this.evolve.Text = "Evolve";
             this.evolve.UseVisualStyleBackColor = true;
-            // 
-            // lblExp
-            // 
-            this.lblExp.AutoSize = true;
-            this.lblExp.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExp.ForeColor = System.Drawing.Color.Peru;
-            this.lblExp.Location = new System.Drawing.Point(51, 646);
-            this.lblExp.Name = "lblExp";
-            this.lblExp.Size = new System.Drawing.Size(71, 41);
-            this.lblExp.TabIndex = 5;
-            this.lblExp.Text = "Exp. :";
-            // 
-            // lblAttack
-            // 
-            this.lblAttack.AutoSize = true;
-            this.lblAttack.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAttack.ForeColor = System.Drawing.Color.Peru;
-            this.lblAttack.Location = new System.Drawing.Point(51, 605);
-            this.lblAttack.Name = "lblAttack";
-            this.lblAttack.Size = new System.Drawing.Size(94, 41);
-            this.lblAttack.TabIndex = 4;
-            this.lblAttack.Text = "Attack: ";
-            // 
-            // lblStamina
-            // 
-            this.lblStamina.AutoSize = true;
-            this.lblStamina.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStamina.ForeColor = System.Drawing.Color.Peru;
-            this.lblStamina.Location = new System.Drawing.Point(51, 564);
-            this.lblStamina.Name = "lblStamina";
-            this.lblStamina.Size = new System.Drawing.Size(112, 41);
-            this.lblStamina.TabIndex = 3;
-            this.lblStamina.Text = "Stamina: ";
-            // 
-            // lblLevel
-            // 
-            this.lblLevel.AutoSize = true;
-            this.lblLevel.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLevel.ForeColor = System.Drawing.Color.Peru;
-            this.lblLevel.Location = new System.Drawing.Point(157, 397);
-            this.lblLevel.Name = "lblLevel";
-            this.lblLevel.Size = new System.Drawing.Size(62, 41);
-            this.lblLevel.TabIndex = 2;
-            this.lblLevel.Text = "Lvl.: ";
-            // 
-            // progressBarDraco
-            // 
-            this.progressBarDraco.ForeColor = System.Drawing.Color.Chocolate;
-            this.progressBarDraco.Location = new System.Drawing.Point(47, 465);
-            this.progressBarDraco.Maximum = 10;
-            this.progressBarDraco.Name = "progressBarDraco";
-            this.progressBarDraco.Size = new System.Drawing.Size(377, 36);
-            this.progressBarDraco.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBarDraco.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Monster.Properties.Resources.dragao2_1sem_back;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(43, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(392, 367);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // MyMonsters
             // 
@@ -958,15 +920,15 @@
             this.label30.TabIndex = 9;
             this.label30.Text = "Settings";
             // 
-            // LoadGamePage
+            // LoadedGame
             // 
-            this.LoadGamePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
-            this.LoadGamePage.Controls.Add(this.panel6);
-            this.LoadGamePage.Location = new System.Drawing.Point(4, 25);
-            this.LoadGamePage.Name = "LoadGamePage";
-            this.LoadGamePage.Size = new System.Drawing.Size(1704, 1026);
-            this.LoadGamePage.TabIndex = 6;
-            this.LoadGamePage.Text = "loadgame";
+            this.LoadedGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.LoadedGame.Controls.Add(this.panel6);
+            this.LoadedGame.Location = new System.Drawing.Point(4, 25);
+            this.LoadedGame.Name = "LoadedGame";
+            this.LoadedGame.Size = new System.Drawing.Size(1704, 1026);
+            this.LoadedGame.TabIndex = 6;
+            this.LoadedGame.Text = "loadedgame";
             // 
             // panel6
             // 
@@ -1625,7 +1587,8 @@
             this.Monsters.Controls.Add(this.NewGameMonster);
             this.Monsters.Controls.Add(this.Begining);
             this.Monsters.Controls.Add(this.FirstMonster);
-            this.Monsters.Controls.Add(this.LoadGamePage);
+            this.Monsters.Controls.Add(this.LoadedGame);
+            this.Monsters.Controls.Add(this.Login);
             this.Monsters.Controls.Add(this.SettingsPage);
             this.Monsters.Controls.Add(this.Credits);
             this.Monsters.Controls.Add(this.Player);
@@ -1638,30 +1601,126 @@
             this.Monsters.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.Monsters.TabIndex = 0;
             // 
-            // panel1
+            // Login
             // 
-            this.panel1.Controls.Add(this.lblHp);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.progressBarDraco);
-            this.panel1.Controls.Add(this.lblLevel);
-            this.panel1.Controls.Add(this.lblStamina);
-            this.panel1.Controls.Add(this.lblExp);
-            this.panel1.Controls.Add(this.lblAttack);
-            this.panel1.Location = new System.Drawing.Point(906, 52);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(468, 696);
-            this.panel1.TabIndex = 8;
+            this.Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.Login.Controls.Add(this.loginPanel);
+            this.Login.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login.ForeColor = System.Drawing.Color.Peru;
+            this.Login.Location = new System.Drawing.Point(4, 25);
+            this.Login.Name = "Login";
+            this.Login.Size = new System.Drawing.Size(1704, 1026);
+            this.Login.TabIndex = 14;
+            this.Login.Text = "Login";
             // 
-            // lblHp
+            // loginPanel
             // 
-            this.lblHp.AutoSize = true;
-            this.lblHp.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHp.ForeColor = System.Drawing.Color.Peru;
-            this.lblHp.Location = new System.Drawing.Point(54, 523);
-            this.lblHp.Name = "lblHp";
-            this.lblHp.Size = new System.Drawing.Size(58, 41);
-            this.lblHp.TabIndex = 6;
-            this.lblHp.Text = "HP :";
+            this.loginPanel.Controls.Add(this.MessageLogin);
+            this.loginPanel.Controls.Add(this.passwordLogin);
+            this.loginPanel.Controls.Add(this.loginButton);
+            this.loginPanel.Controls.Add(this.label5);
+            this.loginPanel.Controls.Add(this.label6);
+            this.loginPanel.Controls.Add(this.usernameLogin);
+            this.loginPanel.Location = new System.Drawing.Point(866, 204);
+            this.loginPanel.Name = "loginPanel";
+            this.loginPanel.Size = new System.Drawing.Size(473, 271);
+            this.loginPanel.TabIndex = 28;
+            // 
+            // MessageLogin
+            // 
+            this.MessageLogin.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.MessageLogin.AutoSize = true;
+            this.MessageLogin.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MessageLogin.ForeColor = System.Drawing.Color.Peru;
+            this.MessageLogin.Location = new System.Drawing.Point(35, 226);
+            this.MessageLogin.Name = "MessageLogin";
+            this.MessageLogin.Size = new System.Drawing.Size(0, 30);
+            this.MessageLogin.TabIndex = 27;
+            this.MessageLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // passwordLogin
+            // 
+            this.passwordLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.passwordLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.passwordLogin.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLogin.ForeColor = System.Drawing.Color.Peru;
+            this.passwordLogin.Location = new System.Drawing.Point(206, 82);
+            this.passwordLogin.Name = "passwordLogin";
+            this.passwordLogin.Size = new System.Drawing.Size(192, 39);
+            this.passwordLogin.TabIndex = 25;
+            // 
+            // loginButton
+            // 
+            this.loginButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.loginButton.AutoSize = true;
+            this.loginButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loginButton.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginButton.ForeColor = System.Drawing.Color.Peru;
+            this.loginButton.Location = new System.Drawing.Point(138, 153);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(216, 53);
+            this.loginButton.TabIndex = 26;
+            this.loginButton.Text = "Login";
+            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Peru;
+            this.label5.Location = new System.Drawing.Point(66, 35);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(120, 36);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Username: ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Peru;
+            this.label6.Location = new System.Drawing.Point(66, 85);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(115, 36);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Password: ";
+            // 
+            // usernameLogin
+            // 
+            this.usernameLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.usernameLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.usernameLogin.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLogin.ForeColor = System.Drawing.Color.Peru;
+            this.usernameLogin.Location = new System.Drawing.Point(206, 26);
+            this.usernameLogin.Name = "usernameLogin";
+            this.usernameLogin.Size = new System.Drawing.Size(192, 39);
+            this.usernameLogin.TabIndex = 24;
+            // 
+            // myMonsterFirst
+            // 
+            this.myMonsterFirst.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.myMonsterFirst.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.myMonsterFirst.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myMonsterFirst.ForeColor = System.Drawing.Color.Peru;
+            this.myMonsterFirst.Location = new System.Drawing.Point(474, 576);
+            this.myMonsterFirst.Name = "myMonsterFirst";
+            this.myMonsterFirst.Size = new System.Drawing.Size(216, 45);
+            this.myMonsterFirst.TabIndex = 17;
+            this.myMonsterFirst.Text = "First Monster";
+            this.myMonsterFirst.UseVisualStyleBackColor = true;
+            this.myMonsterFirst.Click += new System.EventHandler(this.myMonsterFirst_Click);
+            // 
+            // statusPrint
+            // 
+            this.statusPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.statusPrint.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusPrint.Location = new System.Drawing.Point(45, 413);
+            this.statusPrint.Name = "statusPrint";
+            this.statusPrint.Size = new System.Drawing.Size(389, 50);
+            this.statusPrint.TabIndex = 1;
+            this.statusPrint.TextChanged += new System.EventHandler(this.statusPrint_TextChanged);
             // 
             // InicialPage
             // 
@@ -1682,9 +1741,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.FirstMonster.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.sideMenuPanel.ResumeLayout(false);
             this.sideMenuPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.MyMonsters.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
@@ -1703,7 +1764,7 @@
             this.SettingsPage.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.LoadGamePage.ResumeLayout(false);
+            this.LoadedGame.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.NewGameMonster.ResumeLayout(false);
@@ -1724,8 +1785,9 @@
             this.Home.ResumeLayout(false);
             this.Home.PerformLayout();
             this.Monsters.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Login.ResumeLayout(false);
+            this.loginPanel.ResumeLayout(false);
+            this.loginPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1746,17 +1808,12 @@
         private System.Windows.Forms.Button exitbutton2;
         private System.Windows.Forms.Button save2;
         private System.Windows.Forms.Button inventory2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label nameMonsterPage;
         private System.Windows.Forms.Button sleep1;
         private System.Windows.Forms.Button play2;
         private System.Windows.Forms.Button feed2;
         private System.Windows.Forms.Button changeName2;
         private System.Windows.Forms.Button evolve;
-        private System.Windows.Forms.Label lblExp;
-        private System.Windows.Forms.Label lblAttack;
-        private System.Windows.Forms.Label lblStamina;
-        private System.Windows.Forms.Label lblLevel;
-        private System.Windows.Forms.ProgressBar progressBarDraco;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage MyMonsters;
         private System.Windows.Forms.Panel panel10;
@@ -1793,7 +1850,7 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TabPage LoadGamePage;
+        private System.Windows.Forms.TabPage LoadedGame;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button Exit1;
         private System.Windows.Forms.Label label25;
@@ -1846,7 +1903,16 @@
         private System.Windows.Forms.Button Tutorial;
         private System.Windows.Forms.Button letsPlay;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblHp;
+        private System.Windows.Forms.TabPage Login;
+        private System.Windows.Forms.Panel loginPanel;
+        private System.Windows.Forms.Label MessageLogin;
+        private System.Windows.Forms.TextBox passwordLogin;
+        private System.Windows.Forms.Button loginButton;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox usernameLogin;
+        private System.Windows.Forms.Button myMonsterFirst;
+        private System.Windows.Forms.TextBox statusPrint;
     }
 }
 
