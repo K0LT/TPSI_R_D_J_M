@@ -1,0 +1,10 @@
+C:\Users\Slow\source\repos\Holdingbackthefool\Holdingbackthefool\bin\Debug\Holdingbackthefool.exe.config
+C:\Users\Slow\source\repos\Holdingbackthefool\Holdingbackthefool\bin\Debug\Holdingbackthefool.exe
+C:\Users\Slow\source\repos\Holdingbackthefool\Holdingbackthefool\bin\Debug\Holdingbackthefool.pdb
+C:\Users\Slow\source\repos\Holdingbackthefool\Holdingbackthefool\obj\Debug\Holdingbackthefool.csproj.AssemblyReference.cache
+C:\Users\Slow\source\repos\Holdingbackthefool\Holdingbackthefool\obj\Debug\Holdingbackthefool.Form1.resources
+C:\Users\Slow\source\repos\Holdingbackthefool\Holdingbackthefool\obj\Debug\Holdingbackthefool.Properties.Resources.resources
+C:\Users\Slow\source\repos\Holdingbackthefool\Holdingbackthefool\obj\Debug\Holdingbackthefool.csproj.GenerateResource.cache
+C:\Users\Slow\source\repos\Holdingbackthefool\Holdingbackthefool\obj\Debug\Holdingbackthefool.csproj.CoreCompileInputs.cache
+C:\Users\Slow\source\repos\Holdingbackthefool\Holdingbackthefool\obj\Debug\Holdingbackthefool.exe
+C:\Users\Slow\source\repos\Holdingbackthefool\Holdingbackthefool\obj\Debug\Holdingbackthefool.pdb
