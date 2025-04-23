@@ -106,5 +106,35 @@
   <ItemGroup>
     <None Include="Resources\dragao2.1sem back.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aid_8585776_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vitamins_15335083_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_11691862_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_6574691_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gamepad-joystick-svgrepo-com_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sleepy-sleep-svgrepo-com %281%29_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pot-of-food-svgrepo-com_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette_656726_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-logout-svgrepo-com_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_11186705_resized.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

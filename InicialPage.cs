@@ -20,9 +20,9 @@ namespace Monster
         {
             InitializeComponent();
             levelGoals = new LevelGoals();
-            progressBarDraco.Minimum = 0;
-            progressBarDraco.Maximum = 100; // Defina o máximo conforme necessário
-            progressBarDraco.Value = 0; // Inicializa a barra de progresso
+            progressBarhp.Minimum = 0;
+            progressBarhp.Maximum = 100; // Defina o máximo conforme necessário
+            progressBarhp.Value = 0; // Inicializa a barra de progresso
             UpdateAttributeLabels();
             descricao1.Visible = false;
 
@@ -75,9 +75,9 @@ namespace Monster
 
 
             //Barra progresso draco (teste)
-            progressBarDraco.Minimum = 0;
-            progressBarDraco.Maximum = 5;
-            progressBarDraco.Value = 1;
+            progressBarhp.Minimum = 0;
+            progressBarhp.Maximum = 5;
+            progressBarhp.Value = 1;
 
 
          
