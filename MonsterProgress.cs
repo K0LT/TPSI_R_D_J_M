@@ -9,10 +9,7 @@ namespace Monster.Core
         private int _feedCount;
         public int FeedCount 
         {
-            get
-            {
-                return _feedCount;
-            }
+            get => _feedCount;
             set
             {
                 if (_feedCount == value) return;
@@ -24,10 +21,7 @@ namespace Monster.Core
         private int _correctGamesCount;
         public int CorrectGamesCount
         {
-            get
-            {
-                return _correctGamesCount;
-            }
+            get => _correctGamesCount;
             set
             {
                 if (_correctGamesCount == value) return;
@@ -39,10 +33,7 @@ namespace Monster.Core
         private int _level;
         public int Level
         {
-            get
-            {
-                return _level;
-            }
+            get => _level;
             set
             {
                 if (_level == value) return;
@@ -53,10 +44,7 @@ namespace Monster.Core
         private int _attack;
         public int Attack
         {
-            get
-            {
-                return _attack;
-            }
+            get => _attack;
             set
             {
                 if (_attack == value) return;
@@ -67,10 +55,7 @@ namespace Monster.Core
         private int _exp;
         public int Exp
         {
-            get
-            {
-                return _exp;
-            }
+            get => _exp;
             set
             {
                 if (_exp == value) return;
@@ -82,10 +67,7 @@ namespace Monster.Core
         private int _stamina;
         public int Stamina
         {
-            get
-            {
-                return _stamina;
-            }
+            get => _stamina;
             set
             {
                 if (_stamina == value) return;
