@@ -1,26 +1,22 @@
 ﻿using System;
-using System.Drawing;
 using System.Windows.Forms;
-
-// We MUST include our class library
 using Monster.Core;
-
-using static System.Collections.Specialized.BitVector32;
+// We MUST include our class library
 
 namespace Monster
 {
     public partial class StartupForm : Form
     {
-        private MonsterProgress _monsterProgress;
-        
-        private BindingSource _userBindingSource;
+        private readonly MonsterProgress _monsterProgress;
 
-        private BindingSource _monsterTypeBindingSource;
+        private readonly BindingSource _monsterTypeBindingSource;
+
+        private readonly BindingSource _userBindingSource;
 
         public StartupForm()
         {
             InitializeComponent();
-            
+
             _userBindingSource = new BindingSource();
 
             _monsterTypeBindingSource = new BindingSource();
@@ -79,8 +75,8 @@ namespace Monster
 
         private void registerplayer_Click(object sender, EventArgs e)
         {
-            string username = usernameRegister.Text.Trim();
-            string playerType = GetSelectedPlayerType();
+            var username = usernameRegister.Text.Trim();
+            var playerType = GetSelectedPlayerType();
 
             if (string.IsNullOrWhiteSpace(username))
             {
@@ -95,7 +91,7 @@ namespace Monster
             }
 
             // Register the user and bind to the UI
-            User newUser = UserManager.RegisterUserAndReturn(username, playerType);
+            var newUser = UserManager.RegisterUserAndReturn(username, playerType);
             if (newUser != null)
             {
                 BindUserToUI(newUser);
@@ -149,7 +145,7 @@ namespace Monster
         {
             if (sender is Button button)
             {
-                string monsterType = button.Text.Trim().ToLower();
+                var monsterType = button.Text.Trim().ToLower();
 
                 _monsterTypeBindingSource.DataSource = monsterType;
 
@@ -160,7 +156,7 @@ namespace Monster
         // Monster selection handlers
         private void dracoselect_Click(object sender, EventArgs e)
         {
-            monsterTypeSelect(sender,EventArgs.Empty);
+            monsterTypeSelect(sender, EventArgs.Empty);
         }
 
         private void grifoselect_Click(object sender, EventArgs e)
@@ -186,18 +182,20 @@ namespace Monster
 
         private void MonsterRegister_Click(object sender, EventArgs e)
         {
-            string monsterName = monsterNameBox.Text.Trim();
-            string selectedMonsterType = _monsterTypeBindingSource.Current as string;
-            string currentUser = Session.CurrentUser;
+            var monsterName = monsterNameBox.Text.Trim();
+            var selectedMonsterType = _monsterTypeBindingSource.Current as string;
+            var currentUser = Session.CurrentUser;
 
             if (string.IsNullOrWhiteSpace(monsterName) || string.IsNullOrWhiteSpace(selectedMonsterType))
             {
-                MessageBox.Show("Please provide a monster name and select a monster type.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please provide a monster name and select a monster type.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             MonsterManager.RegisterMonster(currentUser, selectedMonsterType, monsterName);
-            MessageBox.Show($"Monster '{monsterName}' of type '{selectedMonsterType}' has been successfully registered!",
+            MessageBox.Show(
+                $"Monster '{monsterName}' of type '{selectedMonsterType}' has been successfully registered!",
                 "Registration Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

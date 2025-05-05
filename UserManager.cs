@@ -1,8 +1,8 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text.Json;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace Monster.Core
@@ -16,8 +16,8 @@ namespace Monster.Core
     // Represents a single user with property change notifications
     public class User : INotifyPropertyChanged
     {
-        private string _username;
         private string _playerType;
+        private string _username;
 
         public string Username
         {
@@ -60,7 +60,7 @@ namespace Monster.Core
         private static readonly string JsonFilePath = Path.Combine(ResourcesPath, "users.json");
 
         /// <summary>
-        /// Registers a new user and returns the created User object.
+        ///     Registers a new user and returns the created User object.
         /// </summary>
         public static User RegisterUserAndReturn(string username, string playerType)
         {
@@ -74,7 +74,7 @@ namespace Monster.Core
         }
 
         /// <summary>
-        /// Registers a new user by saving their data to persistent storage.
+        ///     Registers a new user by saving their data to persistent storage.
         /// </summary>
         public static bool RegisterUser(string username, string playerType)
         {
@@ -98,7 +98,7 @@ namespace Monster.Core
         }
 
         /// <summary>
-        /// Loads the player type for a given username.
+        ///     Loads the player type for a given username.
         /// </summary>
         public static string LoadPlayerType(string username)
         {
@@ -110,7 +110,7 @@ namespace Monster.Core
         }
 
         /// <summary>
-        /// Updates and saves the player type for a given username.
+        ///     Updates and saves the player type for a given username.
         /// </summary>
         public static void SavePlayerType(string username, string playerType)
         {
@@ -129,7 +129,7 @@ namespace Monster.Core
         }
 
         /// <summary>
-        /// Ensures the JSON file and resources directory exist.
+        ///     Ensures the JSON file and resources directory exist.
         /// </summary>
         private static void EnsureJsonFileExists()
         {
@@ -141,7 +141,7 @@ namespace Monster.Core
         }
 
         /// <summary>
-        /// Loads all user data from the JSON file.
+        ///     Loads all user data from the JSON file.
         /// </summary>
         private static UserData LoadUsersData()
         {
@@ -150,7 +150,7 @@ namespace Monster.Core
         }
 
         /// <summary>
-        /// Saves all user data to the JSON file.
+        ///     Saves all user data to the JSON file.
         /// </summary>
         private static void SaveUsersData(UserData data)
         {
@@ -159,15 +159,13 @@ namespace Monster.Core
         }
 
         /// <summary>
-        /// Creates a directory for the user if it doesn't already exist.
+        ///     Creates a directory for the user if it doesn't already exist.
         /// </summary>
         private static void CreateUserDirectory(string username)
         {
-            string userDirectoryPath = Path.Combine(ResourcesPath, username);
+            var userDirectoryPath = Path.Combine(ResourcesPath, username);
             if (!Directory.Exists(userDirectoryPath))
                 Directory.CreateDirectory(userDirectoryPath);
         }
     }
-
 }
-

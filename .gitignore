@@ -55,3 +55,4 @@ artifacts/
 
 # Local application data
 Resources
+/GitIgnoreRules.md

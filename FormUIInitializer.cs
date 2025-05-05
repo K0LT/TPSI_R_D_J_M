@@ -15,7 +15,5 @@ namespace Monster.Core
             foreach (var btn in buttons)
                 UIStyler.StyleMonsterMenuButton(btn);
         }
-
     }
-
 }

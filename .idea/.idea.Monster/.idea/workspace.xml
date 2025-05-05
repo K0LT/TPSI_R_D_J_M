@@ -7,34 +7,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ae30d53-8ff5-4a41-81fe-5946157f9f2c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Monster/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Monster/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Monster/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Monster/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Monster/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProgramEntryPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Monster/FileContentIndex/14273031-dc69-4d6e-9bdb-50971d214271.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Monster/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Monster/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Monster/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Monster/v17/DocumentLayout.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/TPSI_R_D_J_M/v17/.wsuo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/TPSI_R_D_J_M/v17/.wsuo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/TPSI_R_D_J_M/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/TPSI_R_D_J_M/v17/DocumentLayout.backup.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/TPSI_R_D_J_M/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/TPSI_R_D_J_M/v17/DocumentLayout.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+    <list default="true" id="0ae30d53-8ff5-4a41-81fe-5946157f9f2c" name="Changes" comment="Separated functionality away from main form and into a class library (stored in namespace Monster.Core).&#10;&#10;# Conflicts:&#10;#&#9;.vs/TPSI_R_D_J_M/v17/.wsuo&#10;#&#9;.vs/TPSI_R_D_J_M/v17/DocumentLayout.json&#10;#&#9;obj/Debug/Monster.csproj.AssemblyReference.cache">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Monster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Monster/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/App.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrentUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrentUser.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FormUIInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FormUIInitializer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImageDescriptionBinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDescriptionBinder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InicialPage.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InicialPage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InicialPage.resx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelGoals.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monster.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Monster.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MonsterBarProgressManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MonsterBarProgressManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonsterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MonsterManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MonsterProgress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MonsterProgress.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonsterSelection.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MonsterSelection.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonsterSelection.resx" beforeDir="false" afterPath="$PROJECT_DIR$/MonsterSelection.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Resources.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/Resources.resx" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Resources.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/Settings.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Settings.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/Settings.settings" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Settings.settings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StartupForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StartupForm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StartupForm.resx" beforeDir="false" afterPath="$PROJECT_DIR$/StartupForm.resx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TabNavigator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TabNavigator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UIStyler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UIStyler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Monster.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Monster.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/packages.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +50,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "state": "OPEN"
+    }
+  ],
   "lastFilter": {
-    "state": "OPEN",
-    "assignee": "K0LT"
+    "state": "OPEN"
   }
+}]]></component>
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
+    {
+      "id": {
+        "id": "PR_kwDOOZo47s6U-4sb",
+        "number": 4
+      },
+      "lastSeen": 1746473971965
+    }
+  ]
 }]]></component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
@@ -65,49 +77,42 @@
       </list>
     </option>
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/K0LT/TPSI_R_D_J_M",
-    "accountId": "8d6a4703-2374-48fd-ab1d-f7c0c5fadc02"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/K0LT/TPSI_R_D_J_M&quot;,
+    &quot;accountId&quot;: &quot;8d6a4703-2374-48fd-ab1d-f7c0c5fadc02&quot;
   },
-  "recentNewPullRequestHead": {
-    "server": {
-      "useHttp": false,
-      "host": "github.com",
-      "port": null,
-      "suffix": null
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
     },
-    "owner": "K0LT",
-    "repository": "TPSI_R_D_J_M"
+    &quot;owner&quot;: &quot;K0LT&quot;,
+    &quot;repository&quot;: &quot;TPSI_R_D_J_M&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/.vs/VSWorkspaceState.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FormUIInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/MonsterBarProgressManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MonsterManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/MonsterProgress.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/StartupForm.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/StartupForm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/monsters.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="SWEA" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2wevRq1QUFqG0ZtewcgetmGpm3W" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -120,7 +125,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "XThreadsFramesViewSplitterKey": "0.33835617",
-    "git-widget-placeholder": "SecondVisual",
+    "git-widget-placeholder": "#5 on SecondVisual",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -164,12 +169,14 @@
       <option name="presentableId" value="Default" />
       <updated>1746414848381</updated>
       <workItem from="1746414849886" duration="10600000" />
+      <workItem from="1746473921193" duration="739000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

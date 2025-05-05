@@ -13,7 +13,7 @@ namespace Monster.Core
         public string Name { get; set; }
         public string Type { get; set; }
 
-        public int Level { get; set; } = 0;
+        public int Level { get; set; }
         public int MaxLevel { get; set; } = 10;
 
         public int HP { get; set; } = 15;
@@ -22,7 +22,7 @@ namespace Monster.Core
         public int Stamina { get; set; } = 20;
         public int MaxStamina { get; set; } = 20;
 
-        public int Exp { get; set; } = 0;
+        public int Exp { get; set; }
         public int MaxExp { get; set; } = 100;
     }
 
@@ -46,7 +46,7 @@ namespace Monster.Core
             var monsterData = LoadMonstersData();
 
             // Verifica se o monstro já existe para o utilizador
-            bool alreadyExists = monsterData.Monsters.Any(m =>
+            var alreadyExists = monsterData.Monsters.Any(m =>
                 m.User == user && m.Name.Equals(monsterName, StringComparison.OrdinalIgnoreCase));
 
             if (alreadyExists)
@@ -96,5 +96,4 @@ namespace Monster.Core
             File.WriteAllText(MonstersFilePath, json);
         }
     }
-
 }

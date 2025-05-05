@@ -17,10 +17,7 @@ namespace Monster.Core
                 description.BringToFront();
             };
 
-            image.MouseLeave += (s, e) =>
-            {
-                description.Visible = false;
-            };
+            image.MouseLeave += (s, e) => { description.Visible = false; };
         }
     }
 }
