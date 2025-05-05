@@ -171,6 +171,7 @@
     <None Include="Resources\bed.png" />
     <None Include="Resources\botaoExit.png" />
     <None Include="Resources\botaoSave.png" />
+    <None Include="Resources\botaoBattle.png" />
     <Content Include="Resources\GrifoGrandeSemBackSmall.png" />
     <Content Include="Resources\GrifopequenoSemBackExtraSmall.png" />
     <Content Include="Resources\GrifopequenoSemBackSmall.png" />

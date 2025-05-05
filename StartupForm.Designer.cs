@@ -32,13 +32,27 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartupForm));
             this.TutorialTab = new System.Windows.Forms.TabPage();
+            this.exitButtonTutorial = new System.Windows.Forms.PictureBox();
             this.letsPlay = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
             this.myMonster = new System.Windows.Forms.TabPage();
+            this.battleButtonPic = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.boy = new System.Windows.Forms.TabPage();
+            this.boyPixelPic = new System.Windows.Forms.PictureBox();
             this.girl = new System.Windows.Forms.TabPage();
+            this.girlPixelPic = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.expButtonPicture = new System.Windows.Forms.PictureBox();
+            this.staminaButtonPicture = new System.Windows.Forms.PictureBox();
+            this.hpButtonPicture = new System.Windows.Forms.PictureBox();
+            this.exitButtonMyMonster = new System.Windows.Forms.PictureBox();
+            this.saveButtonMyMonster = new System.Windows.Forms.PictureBox();
+            this.backpackPic = new System.Windows.Forms.PictureBox();
+            this.miniGamesPic = new System.Windows.Forms.PictureBox();
+            this.sleepPicture = new System.Windows.Forms.PictureBox();
+            this.foodPicture = new System.Windows.Forms.PictureBox();
             this.staminaBar = new System.Windows.Forms.ProgressBar();
             this.expBar = new System.Windows.Forms.ProgressBar();
             this.evolutionBar = new System.Windows.Forms.ProgressBar();
@@ -46,24 +60,58 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabImagensMonster = new System.Windows.Forms.TabControl();
             this.dracoBaby = new System.Windows.Forms.TabPage();
+            this.dracoBabyPicture = new System.Windows.Forms.PictureBox();
             this.dracoTeen = new System.Windows.Forms.TabPage();
+            this.dracoTeenPicture = new System.Windows.Forms.PictureBox();
             this.dracoAdult = new System.Windows.Forms.TabPage();
+            this.dracoAdultPicture = new System.Windows.Forms.PictureBox();
             this.grifoBaby = new System.Windows.Forms.TabPage();
+            this.grifoBabyPicture = new System.Windows.Forms.PictureBox();
             this.grifoTeen = new System.Windows.Forms.TabPage();
+            this.grifoTeenPicture = new System.Windows.Forms.PictureBox();
             this.grifoAdult = new System.Windows.Forms.TabPage();
+            this.grifoAdultPicture = new System.Windows.Forms.PictureBox();
             this.tauroBaby = new System.Windows.Forms.TabPage();
+            this.tauroBabyPicture = new System.Windows.Forms.PictureBox();
             this.tauroTeen = new System.Windows.Forms.TabPage();
+            this.tauroTeenPicture = new System.Windows.Forms.PictureBox();
             this.tauroAdult = new System.Windows.Forms.TabPage();
+            this.tauroAdultPicture = new System.Windows.Forms.PictureBox();
             this.sirenBaby = new System.Windows.Forms.TabPage();
+            this.sirenBabyPicture = new System.Windows.Forms.PictureBox();
             this.sirenTeen = new System.Windows.Forms.TabPage();
+            this.sirenTeenPicture = new System.Windows.Forms.PictureBox();
             this.sirenAdult = new System.Windows.Forms.TabPage();
+            this.sirenAdultPicture = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Player = new System.Windows.Forms.TabPage();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.tabControl4 = new System.Windows.Forms.TabControl();
+            this.achievGames = new System.Windows.Forms.TabPage();
+            this.achievBattle = new System.Windows.Forms.TabPage();
+            this.monsterNamePlayerMenu2 = new System.Windows.Forms.Label();
+            this.monsterNamePlayerMenu = new System.Windows.Forms.Label();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.dracoPixel = new System.Windows.Forms.TabPage();
+            this.dracoPixelPicture = new System.Windows.Forms.PictureBox();
+            this.grifoPixel = new System.Windows.Forms.TabPage();
+            this.grifoPixelPicture = new System.Windows.Forms.PictureBox();
+            this.tauroPixel = new System.Windows.Forms.TabPage();
+            this.tauroPixelPicture = new System.Windows.Forms.PictureBox();
+            this.sirenPixel = new System.Windows.Forms.TabPage();
+            this.sirenPixelPicture = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.monsterPlayerRoomPic = new System.Windows.Forms.PictureBox();
+            this.exitPlayerMenuPicture = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.playerBoyPicTab = new System.Windows.Forms.TabPage();
+            this.playerRoomPicBoy = new System.Windows.Forms.PictureBox();
             this.playerGirlPicTab = new System.Windows.Forms.TabPage();
+            this.playerRoomPicGirl = new System.Windows.Forms.PictureBox();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.Credits = new System.Windows.Forms.TabPage();
+            this.exitButtonCredits = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -72,12 +120,14 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.SettingsPage = new System.Windows.Forms.TabPage();
+            this.exitButtonSettings = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label35 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.LoadGamePage = new System.Windows.Forms.TabPage();
+            this.exitButtonLoadGame = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -87,6 +137,7 @@
             this.usernameEnterLoad = new System.Windows.Forms.TextBox();
             this.selectUserLabel = new System.Windows.Forms.Label();
             this.NewGameMonster = new System.Windows.Forms.TabPage();
+            this.exitButtonNewGameMonster = new System.Windows.Forms.PictureBox();
             this.panelNextMonsterName = new System.Windows.Forms.Panel();
             this.nextMonsterName = new System.Windows.Forms.Button();
             this.panelMonsterName = new System.Windows.Forms.Panel();
@@ -100,7 +151,12 @@
             this.grifoselect = new System.Windows.Forms.Button();
             this.dracoselect = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.grifo = new System.Windows.Forms.PictureBox();
+            this.tauro = new System.Windows.Forms.PictureBox();
+            this.siren = new System.Windows.Forms.PictureBox();
+            this.draco = new System.Windows.Forms.PictureBox();
             this.NewGamePlayer = new System.Windows.Forms.TabPage();
+            this.exitButtonNewGamePlayer = new System.Windows.Forms.PictureBox();
             this.nextRegister = new System.Windows.Forms.Button();
             this.panelFirstRegister = new System.Windows.Forms.Panel();
             this.usernameRegisterMessage = new System.Windows.Forms.Label();
@@ -109,6 +165,8 @@
             this.usernameRegister = new System.Windows.Forms.TextBox();
             this.PlayerGirl = new System.Windows.Forms.CheckBox();
             this.PlayerBoy = new System.Windows.Forms.CheckBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.label37 = new System.Windows.Forms.Label();
             this.Monsters = new System.Windows.Forms.TabControl();
             this.Home = new System.Windows.Forms.TabPage();
@@ -118,143 +176,123 @@
             this.loadgame = new System.Windows.Forms.Button();
             this.newgame = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.grifo = new System.Windows.Forms.PictureBox();
-            this.tauro = new System.Windows.Forms.PictureBox();
-            this.siren = new System.Windows.Forms.PictureBox();
-            this.draco = new System.Windows.Forms.PictureBox();
-            this.boyPicturemall = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.expButtonPicture = new System.Windows.Forms.PictureBox();
-            this.staminaButtonPicture = new System.Windows.Forms.PictureBox();
-            this.hpButtonPicture = new System.Windows.Forms.PictureBox();
-            this.exitButtonPicture = new System.Windows.Forms.PictureBox();
-            this.saveButtonPicture = new System.Windows.Forms.PictureBox();
-            this.backpackPicture = new System.Windows.Forms.PictureBox();
-            this.controllerPicture = new System.Windows.Forms.PictureBox();
-            this.sleepPicture = new System.Windows.Forms.PictureBox();
-            this.foodPicture = new System.Windows.Forms.PictureBox();
-            this.dracoBabyPicture = new System.Windows.Forms.PictureBox();
-            this.dracoTeenPicture = new System.Windows.Forms.PictureBox();
-            this.dracoAdultPicture = new System.Windows.Forms.PictureBox();
-            this.grifoBabyPicture = new System.Windows.Forms.PictureBox();
-            this.grifoTeenPicture = new System.Windows.Forms.PictureBox();
-            this.grifoAdultPicture = new System.Windows.Forms.PictureBox();
-            this.tauroBabyPicture = new System.Windows.Forms.PictureBox();
-            this.tauroTeenPicture = new System.Windows.Forms.PictureBox();
-            this.tauroAdultPicture = new System.Windows.Forms.PictureBox();
-            this.sirenBabyPicture = new System.Windows.Forms.PictureBox();
-            this.sirenTeenPicture = new System.Windows.Forms.PictureBox();
-            this.sirenAdultPicture = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.monsterPlayerRoomPic = new System.Windows.Forms.PictureBox();
-            this.exitPlayerMenuPicture = new System.Windows.Forms.PictureBox();
-            this.dracoPixelPicture = new System.Windows.Forms.PictureBox();
-            this.playerRoomPicBoy = new System.Windows.Forms.PictureBox();
-            this.playerRoomPicGirl = new System.Windows.Forms.PictureBox();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.dracoPixel = new System.Windows.Forms.TabPage();
-            this.grifoPixel = new System.Windows.Forms.TabPage();
-            this.tauroPixel = new System.Windows.Forms.TabPage();
-            this.sirenPixel = new System.Windows.Forms.TabPage();
-            this.grifoPixelPicture = new System.Windows.Forms.PictureBox();
-            this.tauroPixelPicture = new System.Windows.Forms.PictureBox();
-            this.sirenPixelPicture = new System.Windows.Forms.PictureBox();
+            this.miniGames = new System.Windows.Forms.TabPage();
+            this.inventory = new System.Windows.Forms.TabPage();
+            this.battleMode = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.miniGamesTitleLabel = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.TutorialTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButtonTutorial)).BeginInit();
             this.myMonster.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.battleButtonPic)).BeginInit();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.boy.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.boyPixelPic)).BeginInit();
             this.girl.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.tabImagensMonster.SuspendLayout();
-            this.dracoBaby.SuspendLayout();
-            this.dracoTeen.SuspendLayout();
-            this.dracoAdult.SuspendLayout();
-            this.grifoBaby.SuspendLayout();
-            this.grifoTeen.SuspendLayout();
-            this.grifoAdult.SuspendLayout();
-            this.tauroBaby.SuspendLayout();
-            this.tauroTeen.SuspendLayout();
-            this.tauroAdult.SuspendLayout();
-            this.sirenBaby.SuspendLayout();
-            this.sirenTeen.SuspendLayout();
-            this.sirenAdult.SuspendLayout();
-            this.Player.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.tabControl3.SuspendLayout();
-            this.playerBoyPicTab.SuspendLayout();
-            this.playerGirlPicTab.SuspendLayout();
-            this.Credits.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.SettingsPage.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.LoadGamePage.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.NewGameMonster.SuspendLayout();
-            this.panelNextMonsterName.SuspendLayout();
-            this.panelMonsterName.SuspendLayout();
-            this.NewGamePlayer.SuspendLayout();
-            this.panelFirstRegister.SuspendLayout();
-            this.Monsters.SuspendLayout();
-            this.Home.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grifo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tauro)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.siren)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.draco)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.boyPicturemall)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.girlPixelPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.expButtonPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staminaButtonPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hpButtonPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exitButtonPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.saveButtonPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.backpackPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.controllerPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButtonMyMonster)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saveButtonMyMonster)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backpackPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.miniGamesPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sleepPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foodPicture)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.tabImagensMonster.SuspendLayout();
+            this.dracoBaby.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dracoBabyPicture)).BeginInit();
+            this.dracoTeen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dracoTeenPicture)).BeginInit();
+            this.dracoAdult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dracoAdultPicture)).BeginInit();
+            this.grifoBaby.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grifoBabyPicture)).BeginInit();
+            this.grifoTeen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grifoTeenPicture)).BeginInit();
+            this.grifoAdult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grifoAdultPicture)).BeginInit();
+            this.tauroBaby.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tauroBabyPicture)).BeginInit();
+            this.tauroTeen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tauroTeenPicture)).BeginInit();
+            this.tauroAdult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tauroAdultPicture)).BeginInit();
+            this.sirenBaby.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sirenBabyPicture)).BeginInit();
+            this.sirenTeen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sirenTeenPicture)).BeginInit();
+            this.sirenAdult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sirenAdultPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Player.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.tabControl4.SuspendLayout();
+            this.achievGames.SuspendLayout();
+            this.achievBattle.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.dracoPixel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dracoPixelPicture)).BeginInit();
+            this.grifoPixel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grifoPixelPicture)).BeginInit();
+            this.tauroPixel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tauroPixelPicture)).BeginInit();
+            this.sirenPixel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sirenPixelPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.monsterPlayerRoomPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPlayerMenuPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dracoPixelPicture)).BeginInit();
+            this.panel8.SuspendLayout();
+            this.tabControl3.SuspendLayout();
+            this.playerBoyPicTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playerRoomPicBoy)).BeginInit();
+            this.playerGirlPicTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playerRoomPicGirl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
-            this.tabControl2.SuspendLayout();
-            this.dracoPixel.SuspendLayout();
-            this.grifoPixel.SuspendLayout();
-            this.tauroPixel.SuspendLayout();
-            this.sirenPixel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grifoPixelPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tauroPixelPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sirenPixelPicture)).BeginInit();
+            this.Credits.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButtonCredits)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.SettingsPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButtonSettings)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.LoadGamePage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButtonLoadGame)).BeginInit();
+            this.panel6.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.NewGameMonster.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButtonNewGameMonster)).BeginInit();
+            this.panelNextMonsterName.SuspendLayout();
+            this.panelMonsterName.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grifo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tauro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.siren)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.draco)).BeginInit();
+            this.NewGamePlayer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButtonNewGamePlayer)).BeginInit();
+            this.panelFirstRegister.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            this.Monsters.SuspendLayout();
+            this.Home.SuspendLayout();
+            this.miniGames.SuspendLayout();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // TutorialTab
             // 
             this.TutorialTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.TutorialTab.Controls.Add(this.exitButtonTutorial);
             this.TutorialTab.Controls.Add(this.letsPlay);
             this.TutorialTab.Controls.Add(this.label27);
             this.TutorialTab.Location = new System.Drawing.Point(4, 25);
@@ -263,6 +301,19 @@
             this.TutorialTab.Size = new System.Drawing.Size(1704, 1026);
             this.TutorialTab.TabIndex = 11;
             this.TutorialTab.Text = "tutorial";
+            // 
+            // exitButtonTutorial
+            // 
+            this.exitButtonTutorial.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
+            this.exitButtonTutorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonTutorial.Location = new System.Drawing.Point(3, 2);
+            this.exitButtonTutorial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exitButtonTutorial.Name = "exitButtonTutorial";
+            this.exitButtonTutorial.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonTutorial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.exitButtonTutorial.TabIndex = 31;
+            this.exitButtonTutorial.TabStop = false;
+            this.exitButtonTutorial.Click += new System.EventHandler(this.exitButtonTutorial_Click);
             // 
             // letsPlay
             // 
@@ -293,6 +344,7 @@
             // myMonster
             // 
             this.myMonster.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.myMonster.Controls.Add(this.battleButtonPic);
             this.myMonster.Controls.Add(this.panel2);
             this.myMonster.Controls.Add(this.panel1);
             this.myMonster.Location = new System.Drawing.Point(4, 25);
@@ -303,6 +355,19 @@
             this.myMonster.TabIndex = 2;
             this.myMonster.Text = "myMonster";
             // 
+            // battleButtonPic
+            // 
+            this.battleButtonPic.BackgroundImage = global::Monster.Properties.Resources.botaoBattle;
+            this.battleButtonPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.battleButtonPic.Location = new System.Drawing.Point(1113, 624);
+            this.battleButtonPic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.battleButtonPic.Name = "battleButtonPic";
+            this.battleButtonPic.Size = new System.Drawing.Size(134, 138);
+            this.battleButtonPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.battleButtonPic.TabIndex = 16;
+            this.battleButtonPic.TabStop = false;
+            this.battleButtonPic.Click += new System.EventHandler(this.battleButtonPic_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
@@ -312,10 +377,10 @@
             this.panel2.Controls.Add(this.expButtonPicture);
             this.panel2.Controls.Add(this.staminaButtonPicture);
             this.panel2.Controls.Add(this.hpButtonPicture);
-            this.panel2.Controls.Add(this.exitButtonPicture);
-            this.panel2.Controls.Add(this.saveButtonPicture);
-            this.panel2.Controls.Add(this.backpackPicture);
-            this.panel2.Controls.Add(this.controllerPicture);
+            this.panel2.Controls.Add(this.exitButtonMyMonster);
+            this.panel2.Controls.Add(this.saveButtonMyMonster);
+            this.panel2.Controls.Add(this.backpackPic);
+            this.panel2.Controls.Add(this.miniGamesPic);
             this.panel2.Controls.Add(this.sleepPicture);
             this.panel2.Controls.Add(this.foodPicture);
             this.panel2.Controls.Add(this.staminaBar);
@@ -342,7 +407,7 @@
             // boy
             // 
             this.boy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
-            this.boy.Controls.Add(this.boyPicturemall);
+            this.boy.Controls.Add(this.boyPixelPic);
             this.boy.Location = new System.Drawing.Point(4, 25);
             this.boy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.boy.Name = "boy";
@@ -351,17 +416,165 @@
             this.boy.TabIndex = 0;
             this.boy.Text = "boy";
             // 
+            // boyPixelPic
+            // 
+            this.boyPixelPic.BackgroundImage = global::Monster.Properties.Resources.playerboy;
+            this.boyPixelPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.boyPixelPic.Location = new System.Drawing.Point(4, 2);
+            this.boyPixelPic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.boyPixelPic.Name = "boyPixelPic";
+            this.boyPixelPic.Size = new System.Drawing.Size(134, 138);
+            this.boyPixelPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.boyPixelPic.TabIndex = 9;
+            this.boyPixelPic.TabStop = false;
+            this.boyPixelPic.Click += new System.EventHandler(this.boyPicturemall_Click);
+            // 
             // girl
             // 
             this.girl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
-            this.girl.Controls.Add(this.pictureBox5);
+            this.girl.Controls.Add(this.girlPixelPic);
             this.girl.Location = new System.Drawing.Point(4, 25);
             this.girl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.girl.Name = "girl";
             this.girl.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.girl.Size = new System.Drawing.Size(148, 148);
+            this.girl.Size = new System.Drawing.Size(179, 172);
             this.girl.TabIndex = 1;
             this.girl.Text = "girl";
+            // 
+            // girlPixelPic
+            // 
+            this.girlPixelPic.BackgroundImage = global::Monster.Properties.Resources.playergirl;
+            this.girlPixelPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.girlPixelPic.Location = new System.Drawing.Point(7, 5);
+            this.girlPixelPic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.girlPixelPic.Name = "girlPixelPic";
+            this.girlPixelPic.Size = new System.Drawing.Size(134, 138);
+            this.girlPixelPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.girlPixelPic.TabIndex = 10;
+            this.girlPixelPic.TabStop = false;
+            this.girlPixelPic.Click += new System.EventHandler(this.girlPixelPic_Click);
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackgroundImage = global::Monster.Properties.Resources.botaoLvl;
+            this.pictureBox15.Location = new System.Drawing.Point(35, 214);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox15.TabIndex = 14;
+            this.pictureBox15.TabStop = false;
+            // 
+            // expButtonPicture
+            // 
+            this.expButtonPicture.BackgroundImage = global::Monster.Properties.Resources.botaoExp;
+            this.expButtonPicture.Location = new System.Drawing.Point(35, 149);
+            this.expButtonPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.expButtonPicture.Name = "expButtonPicture";
+            this.expButtonPicture.Size = new System.Drawing.Size(50, 50);
+            this.expButtonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.expButtonPicture.TabIndex = 13;
+            this.expButtonPicture.TabStop = false;
+            // 
+            // staminaButtonPicture
+            // 
+            this.staminaButtonPicture.BackgroundImage = global::Monster.Properties.Resources.botaoStamina;
+            this.staminaButtonPicture.Location = new System.Drawing.Point(35, 81);
+            this.staminaButtonPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.staminaButtonPicture.Name = "staminaButtonPicture";
+            this.staminaButtonPicture.Size = new System.Drawing.Size(50, 50);
+            this.staminaButtonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.staminaButtonPicture.TabIndex = 12;
+            this.staminaButtonPicture.TabStop = false;
+            // 
+            // hpButtonPicture
+            // 
+            this.hpButtonPicture.BackgroundImage = global::Monster.Properties.Resources.botaoHP;
+            this.hpButtonPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.hpButtonPicture.Location = new System.Drawing.Point(35, 18);
+            this.hpButtonPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.hpButtonPicture.Name = "hpButtonPicture";
+            this.hpButtonPicture.Size = new System.Drawing.Size(50, 50);
+            this.hpButtonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.hpButtonPicture.TabIndex = 11;
+            this.hpButtonPicture.TabStop = false;
+            // 
+            // exitButtonMyMonster
+            // 
+            this.exitButtonMyMonster.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
+            this.exitButtonMyMonster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonMyMonster.Location = new System.Drawing.Point(228, 659);
+            this.exitButtonMyMonster.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exitButtonMyMonster.Name = "exitButtonMyMonster";
+            this.exitButtonMyMonster.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonMyMonster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.exitButtonMyMonster.TabIndex = 10;
+            this.exitButtonMyMonster.TabStop = false;
+            this.exitButtonMyMonster.Click += new System.EventHandler(this.exitButtonMyMonster_Click);
+            // 
+            // saveButtonMyMonster
+            // 
+            this.saveButtonMyMonster.BackgroundImage = global::Monster.Properties.Resources.botaoSave;
+            this.saveButtonMyMonster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.saveButtonMyMonster.Location = new System.Drawing.Point(93, 659);
+            this.saveButtonMyMonster.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.saveButtonMyMonster.Name = "saveButtonMyMonster";
+            this.saveButtonMyMonster.Size = new System.Drawing.Size(88, 87);
+            this.saveButtonMyMonster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.saveButtonMyMonster.TabIndex = 9;
+            this.saveButtonMyMonster.TabStop = false;
+            this.saveButtonMyMonster.Click += new System.EventHandler(this.saveButtonMyMonster_Click);
+            // 
+            // backpackPic
+            // 
+            this.backpackPic.BackgroundImage = global::Monster.Properties.Resources.backpack;
+            this.backpackPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.backpackPic.Location = new System.Drawing.Point(228, 456);
+            this.backpackPic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.backpackPic.Name = "backpackPic";
+            this.backpackPic.Size = new System.Drawing.Size(134, 138);
+            this.backpackPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.backpackPic.TabIndex = 8;
+            this.backpackPic.TabStop = false;
+            this.backpackPic.Click += new System.EventHandler(this.backpackPic_Click);
+            // 
+            // miniGamesPic
+            // 
+            this.miniGamesPic.BackgroundImage = global::Monster.Properties.Resources.controller1;
+            this.miniGamesPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.miniGamesPic.Location = new System.Drawing.Point(298, 291);
+            this.miniGamesPic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.miniGamesPic.Name = "miniGamesPic";
+            this.miniGamesPic.Size = new System.Drawing.Size(88, 87);
+            this.miniGamesPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.miniGamesPic.TabIndex = 6;
+            this.miniGamesPic.TabStop = false;
+            this.miniGamesPic.Click += new System.EventHandler(this.controllerPicture_Click);
+            // 
+            // sleepPicture
+            // 
+            this.sleepPicture.BackgroundImage = global::Monster.Properties.Resources.bed;
+            this.sleepPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.sleepPicture.Location = new System.Drawing.Point(165, 291);
+            this.sleepPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sleepPicture.Name = "sleepPicture";
+            this.sleepPicture.Size = new System.Drawing.Size(88, 87);
+            this.sleepPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.sleepPicture.TabIndex = 5;
+            this.sleepPicture.TabStop = false;
+            // 
+            // foodPicture
+            // 
+            this.foodPicture.BackgroundImage = global::Monster.Properties.Resources.noodles;
+            this.foodPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.foodPicture.Location = new System.Drawing.Point(25, 291);
+            this.foodPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.foodPicture.Name = "foodPicture";
+            this.foodPicture.Size = new System.Drawing.Size(88, 87);
+            this.foodPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.foodPicture.TabIndex = 4;
+            this.foodPicture.TabStop = false;
+            this.foodPicture.Click += new System.EventHandler(this.foodPicture_Click);
             // 
             // staminaBar
             // 
@@ -437,9 +650,20 @@
             this.dracoBaby.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dracoBaby.Name = "dracoBaby";
             this.dracoBaby.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dracoBaby.Size = new System.Drawing.Size(571, 531);
+            this.dracoBaby.Size = new System.Drawing.Size(547, 501);
             this.dracoBaby.TabIndex = 0;
             this.dracoBaby.Text = "dracoBaby";
+            // 
+            // dracoBabyPicture
+            // 
+            this.dracoBabyPicture.Image = global::Monster.Properties.Resources.dragao2_1sem_back;
+            this.dracoBabyPicture.Location = new System.Drawing.Point(0, 0);
+            this.dracoBabyPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dracoBabyPicture.Name = "dracoBabyPicture";
+            this.dracoBabyPicture.Size = new System.Drawing.Size(410, 410);
+            this.dracoBabyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dracoBabyPicture.TabIndex = 1;
+            this.dracoBabyPicture.TabStop = false;
             // 
             // dracoTeen
             // 
@@ -448,9 +672,20 @@
             this.dracoTeen.Location = new System.Drawing.Point(4, 25);
             this.dracoTeen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dracoTeen.Name = "dracoTeen";
-            this.dracoTeen.Size = new System.Drawing.Size(571, 531);
+            this.dracoTeen.Size = new System.Drawing.Size(547, 501);
             this.dracoTeen.TabIndex = 12;
             this.dracoTeen.Text = "dracoTeen";
+            // 
+            // dracoTeenPicture
+            // 
+            this.dracoTeenPicture.BackgroundImage = global::Monster.Properties.Resources.dracoteenmedium;
+            this.dracoTeenPicture.Location = new System.Drawing.Point(1, 0);
+            this.dracoTeenPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dracoTeenPicture.Name = "dracoTeenPicture";
+            this.dracoTeenPicture.Size = new System.Drawing.Size(410, 410);
+            this.dracoTeenPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dracoTeenPicture.TabIndex = 2;
+            this.dracoTeenPicture.TabStop = false;
             // 
             // dracoAdult
             // 
@@ -463,6 +698,17 @@
             this.dracoAdult.TabIndex = 2;
             this.dracoAdult.Text = "dracoAdult";
             // 
+            // dracoAdultPicture
+            // 
+            this.dracoAdultPicture.BackgroundImage = global::Monster.Properties.Resources.dracoAdultMedium;
+            this.dracoAdultPicture.Location = new System.Drawing.Point(1, 0);
+            this.dracoAdultPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dracoAdultPicture.Name = "dracoAdultPicture";
+            this.dracoAdultPicture.Size = new System.Drawing.Size(410, 410);
+            this.dracoAdultPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dracoAdultPicture.TabIndex = 3;
+            this.dracoAdultPicture.TabStop = false;
+            // 
             // grifoBaby
             // 
             this.grifoBaby.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
@@ -470,9 +716,20 @@
             this.grifoBaby.Location = new System.Drawing.Point(4, 25);
             this.grifoBaby.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grifoBaby.Name = "grifoBaby";
-            this.grifoBaby.Size = new System.Drawing.Size(423, 424);
+            this.grifoBaby.Size = new System.Drawing.Size(547, 501);
             this.grifoBaby.TabIndex = 3;
             this.grifoBaby.Text = "grifoBaby";
+            // 
+            // grifoBabyPicture
+            // 
+            this.grifoBabyPicture.BackgroundImage = global::Monster.Properties.Resources.GrifoGrandeSemBackSmall;
+            this.grifoBabyPicture.Location = new System.Drawing.Point(3, 2);
+            this.grifoBabyPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grifoBabyPicture.Name = "grifoBabyPicture";
+            this.grifoBabyPicture.Size = new System.Drawing.Size(423, 418);
+            this.grifoBabyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.grifoBabyPicture.TabIndex = 1;
+            this.grifoBabyPicture.TabStop = false;
             // 
             // grifoTeen
             // 
@@ -481,9 +738,20 @@
             this.grifoTeen.Location = new System.Drawing.Point(4, 25);
             this.grifoTeen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grifoTeen.Name = "grifoTeen";
-            this.grifoTeen.Size = new System.Drawing.Size(423, 424);
+            this.grifoTeen.Size = new System.Drawing.Size(547, 501);
             this.grifoTeen.TabIndex = 4;
             this.grifoTeen.Text = "grifoTeen";
+            // 
+            // grifoTeenPicture
+            // 
+            this.grifoTeenPicture.BackgroundImage = global::Monster.Properties.Resources.grifoteenmedium;
+            this.grifoTeenPicture.Location = new System.Drawing.Point(3, 2);
+            this.grifoTeenPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grifoTeenPicture.Name = "grifoTeenPicture";
+            this.grifoTeenPicture.Size = new System.Drawing.Size(423, 418);
+            this.grifoTeenPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.grifoTeenPicture.TabIndex = 1;
+            this.grifoTeenPicture.TabStop = false;
             // 
             // grifoAdult
             // 
@@ -492,9 +760,20 @@
             this.grifoAdult.Location = new System.Drawing.Point(4, 25);
             this.grifoAdult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grifoAdult.Name = "grifoAdult";
-            this.grifoAdult.Size = new System.Drawing.Size(423, 424);
+            this.grifoAdult.Size = new System.Drawing.Size(547, 501);
             this.grifoAdult.TabIndex = 5;
             this.grifoAdult.Text = "grifoAdult";
+            // 
+            // grifoAdultPicture
+            // 
+            this.grifoAdultPicture.BackgroundImage = global::Monster.Properties.Resources.grifoadultmedium;
+            this.grifoAdultPicture.Location = new System.Drawing.Point(3, 2);
+            this.grifoAdultPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grifoAdultPicture.Name = "grifoAdultPicture";
+            this.grifoAdultPicture.Size = new System.Drawing.Size(423, 418);
+            this.grifoAdultPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.grifoAdultPicture.TabIndex = 1;
+            this.grifoAdultPicture.TabStop = false;
             // 
             // tauroBaby
             // 
@@ -503,9 +782,20 @@
             this.tauroBaby.Location = new System.Drawing.Point(4, 25);
             this.tauroBaby.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tauroBaby.Name = "tauroBaby";
-            this.tauroBaby.Size = new System.Drawing.Size(423, 424);
+            this.tauroBaby.Size = new System.Drawing.Size(547, 501);
             this.tauroBaby.TabIndex = 6;
             this.tauroBaby.Text = "tauroBaby";
+            // 
+            // tauroBabyPicture
+            // 
+            this.tauroBabyPicture.BackgroundImage = global::Monster.Properties.Resources.TauroGrandeSemBacksmall;
+            this.tauroBabyPicture.Location = new System.Drawing.Point(3, 2);
+            this.tauroBabyPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tauroBabyPicture.Name = "tauroBabyPicture";
+            this.tauroBabyPicture.Size = new System.Drawing.Size(423, 418);
+            this.tauroBabyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.tauroBabyPicture.TabIndex = 1;
+            this.tauroBabyPicture.TabStop = false;
             // 
             // tauroTeen
             // 
@@ -514,9 +804,20 @@
             this.tauroTeen.Location = new System.Drawing.Point(4, 25);
             this.tauroTeen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tauroTeen.Name = "tauroTeen";
-            this.tauroTeen.Size = new System.Drawing.Size(423, 424);
+            this.tauroTeen.Size = new System.Drawing.Size(547, 501);
             this.tauroTeen.TabIndex = 7;
             this.tauroTeen.Text = "tauroTeen";
+            // 
+            // tauroTeenPicture
+            // 
+            this.tauroTeenPicture.BackgroundImage = global::Monster.Properties.Resources.tauroteenmedium;
+            this.tauroTeenPicture.Location = new System.Drawing.Point(3, 2);
+            this.tauroTeenPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tauroTeenPicture.Name = "tauroTeenPicture";
+            this.tauroTeenPicture.Size = new System.Drawing.Size(423, 418);
+            this.tauroTeenPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.tauroTeenPicture.TabIndex = 1;
+            this.tauroTeenPicture.TabStop = false;
             // 
             // tauroAdult
             // 
@@ -525,9 +826,20 @@
             this.tauroAdult.Location = new System.Drawing.Point(4, 25);
             this.tauroAdult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tauroAdult.Name = "tauroAdult";
-            this.tauroAdult.Size = new System.Drawing.Size(423, 424);
+            this.tauroAdult.Size = new System.Drawing.Size(547, 501);
             this.tauroAdult.TabIndex = 8;
             this.tauroAdult.Text = "tauroAdult";
+            // 
+            // tauroAdultPicture
+            // 
+            this.tauroAdultPicture.BackgroundImage = global::Monster.Properties.Resources.tauroadultmedium;
+            this.tauroAdultPicture.Location = new System.Drawing.Point(3, 2);
+            this.tauroAdultPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tauroAdultPicture.Name = "tauroAdultPicture";
+            this.tauroAdultPicture.Size = new System.Drawing.Size(423, 418);
+            this.tauroAdultPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.tauroAdultPicture.TabIndex = 1;
+            this.tauroAdultPicture.TabStop = false;
             // 
             // sirenBaby
             // 
@@ -536,9 +848,20 @@
             this.sirenBaby.Location = new System.Drawing.Point(4, 25);
             this.sirenBaby.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sirenBaby.Name = "sirenBaby";
-            this.sirenBaby.Size = new System.Drawing.Size(423, 424);
+            this.sirenBaby.Size = new System.Drawing.Size(547, 501);
             this.sirenBaby.TabIndex = 9;
             this.sirenBaby.Text = "sirenBaby";
+            // 
+            // sirenBabyPicture
+            // 
+            this.sirenBabyPicture.BackgroundImage = global::Monster.Properties.Resources.SirenGrandeSemBacksmall;
+            this.sirenBabyPicture.Location = new System.Drawing.Point(3, 2);
+            this.sirenBabyPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sirenBabyPicture.Name = "sirenBabyPicture";
+            this.sirenBabyPicture.Size = new System.Drawing.Size(423, 418);
+            this.sirenBabyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.sirenBabyPicture.TabIndex = 1;
+            this.sirenBabyPicture.TabStop = false;
             // 
             // sirenTeen
             // 
@@ -547,9 +870,20 @@
             this.sirenTeen.Location = new System.Drawing.Point(4, 25);
             this.sirenTeen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sirenTeen.Name = "sirenTeen";
-            this.sirenTeen.Size = new System.Drawing.Size(423, 424);
+            this.sirenTeen.Size = new System.Drawing.Size(547, 501);
             this.sirenTeen.TabIndex = 10;
             this.sirenTeen.Text = "sirenTeen";
+            // 
+            // sirenTeenPicture
+            // 
+            this.sirenTeenPicture.BackgroundImage = global::Monster.Properties.Resources.sirenteenmedium;
+            this.sirenTeenPicture.Location = new System.Drawing.Point(3, 2);
+            this.sirenTeenPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sirenTeenPicture.Name = "sirenTeenPicture";
+            this.sirenTeenPicture.Size = new System.Drawing.Size(423, 418);
+            this.sirenTeenPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.sirenTeenPicture.TabIndex = 1;
+            this.sirenTeenPicture.TabStop = false;
             // 
             // sirenAdult
             // 
@@ -559,9 +893,29 @@
             this.sirenAdult.Location = new System.Drawing.Point(4, 25);
             this.sirenAdult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sirenAdult.Name = "sirenAdult";
-            this.sirenAdult.Size = new System.Drawing.Size(423, 424);
+            this.sirenAdult.Size = new System.Drawing.Size(547, 501);
             this.sirenAdult.TabIndex = 11;
             this.sirenAdult.Text = "sirenAdult";
+            // 
+            // sirenAdultPicture
+            // 
+            this.sirenAdultPicture.BackgroundImage = global::Monster.Properties.Resources.sirentadultmedium;
+            this.sirenAdultPicture.Location = new System.Drawing.Point(3, 2);
+            this.sirenAdultPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sirenAdultPicture.Name = "sirenAdultPicture";
+            this.sirenAdultPicture.Size = new System.Drawing.Size(423, 418);
+            this.sirenAdultPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.sirenAdultPicture.TabIndex = 1;
+            this.sirenAdultPicture.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(423, 418);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Player
             // 
@@ -579,6 +933,9 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel7.Controls.Add(this.tabControl4);
+            this.panel7.Controls.Add(this.monsterNamePlayerMenu2);
+            this.panel7.Controls.Add(this.monsterNamePlayerMenu);
             this.panel7.Controls.Add(this.tabControl2);
             this.panel7.Controls.Add(this.pictureBox3);
             this.panel7.Controls.Add(this.monsterPlayerRoomPic);
@@ -588,6 +945,195 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(427, 777);
             this.panel7.TabIndex = 11;
+            // 
+            // tabControl4
+            // 
+            this.tabControl4.Controls.Add(this.achievGames);
+            this.tabControl4.Controls.Add(this.achievBattle);
+            this.tabControl4.Location = new System.Drawing.Point(30, 251);
+            this.tabControl4.Name = "tabControl4";
+            this.tabControl4.SelectedIndex = 0;
+            this.tabControl4.Size = new System.Drawing.Size(362, 272);
+            this.tabControl4.TabIndex = 16;
+            // 
+            // achievGames
+            // 
+            this.achievGames.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.achievGames.Controls.Add(this.label5);
+            this.achievGames.ForeColor = System.Drawing.Color.Coral;
+            this.achievGames.Location = new System.Drawing.Point(4, 25);
+            this.achievGames.Name = "achievGames";
+            this.achievGames.Padding = new System.Windows.Forms.Padding(3);
+            this.achievGames.Size = new System.Drawing.Size(354, 243);
+            this.achievGames.TabIndex = 0;
+            this.achievGames.Text = "achievGames";
+            this.achievGames.UseVisualStyleBackColor = true;
+            // 
+            // achievBattle
+            // 
+            this.achievBattle.Controls.Add(this.label6);
+            this.achievBattle.Location = new System.Drawing.Point(4, 25);
+            this.achievBattle.Name = "achievBattle";
+            this.achievBattle.Padding = new System.Windows.Forms.Padding(3);
+            this.achievBattle.Size = new System.Drawing.Size(354, 243);
+            this.achievBattle.TabIndex = 1;
+            this.achievBattle.Text = "achievBattle";
+            this.achievBattle.UseVisualStyleBackColor = true;
+            // 
+            // monsterNamePlayerMenu2
+            // 
+            this.monsterNamePlayerMenu2.AutoSize = true;
+            this.monsterNamePlayerMenu2.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monsterNamePlayerMenu2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.monsterNamePlayerMenu2.Location = new System.Drawing.Point(264, 183);
+            this.monsterNamePlayerMenu2.Name = "monsterNamePlayerMenu2";
+            this.monsterNamePlayerMenu2.Size = new System.Drawing.Size(68, 30);
+            this.monsterNamePlayerMenu2.TabIndex = 15;
+            this.monsterNamePlayerMenu2.Text = "nome2";
+            // 
+            // monsterNamePlayerMenu
+            // 
+            this.monsterNamePlayerMenu.AutoSize = true;
+            this.monsterNamePlayerMenu.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monsterNamePlayerMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.monsterNamePlayerMenu.Location = new System.Drawing.Point(93, 183);
+            this.monsterNamePlayerMenu.Name = "monsterNamePlayerMenu";
+            this.monsterNamePlayerMenu.Size = new System.Drawing.Size(68, 30);
+            this.monsterNamePlayerMenu.TabIndex = 14;
+            this.monsterNamePlayerMenu.Text = "nome1";
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.dracoPixel);
+            this.tabControl2.Controls.Add(this.grifoPixel);
+            this.tabControl2.Controls.Add(this.tauroPixel);
+            this.tabControl2.Controls.Add(this.sirenPixel);
+            this.tabControl2.Location = new System.Drawing.Point(63, 577);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(149, 158);
+            this.tabControl2.TabIndex = 13;
+            // 
+            // dracoPixel
+            // 
+            this.dracoPixel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
+            this.dracoPixel.Controls.Add(this.dracoPixelPicture);
+            this.dracoPixel.Location = new System.Drawing.Point(4, 25);
+            this.dracoPixel.Name = "dracoPixel";
+            this.dracoPixel.Padding = new System.Windows.Forms.Padding(3);
+            this.dracoPixel.Size = new System.Drawing.Size(141, 129);
+            this.dracoPixel.TabIndex = 0;
+            this.dracoPixel.Text = "dracoPixel";
+            // 
+            // dracoPixelPicture
+            // 
+            this.dracoPixelPicture.BackgroundImage = global::Monster.Properties.Resources.dragao1sembackpequeno1;
+            this.dracoPixelPicture.Location = new System.Drawing.Point(0, 0);
+            this.dracoPixelPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dracoPixelPicture.Name = "dracoPixelPicture";
+            this.dracoPixelPicture.Size = new System.Drawing.Size(88, 87);
+            this.dracoPixelPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dracoPixelPicture.TabIndex = 9;
+            this.dracoPixelPicture.TabStop = false;
+            // 
+            // grifoPixel
+            // 
+            this.grifoPixel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
+            this.grifoPixel.Controls.Add(this.grifoPixelPicture);
+            this.grifoPixel.Location = new System.Drawing.Point(4, 25);
+            this.grifoPixel.Name = "grifoPixel";
+            this.grifoPixel.Padding = new System.Windows.Forms.Padding(3);
+            this.grifoPixel.Size = new System.Drawing.Size(141, 129);
+            this.grifoPixel.TabIndex = 1;
+            this.grifoPixel.Text = "grifoPixel";
+            // 
+            // grifoPixelPicture
+            // 
+            this.grifoPixelPicture.BackgroundImage = global::Monster.Properties.Resources.GrifopequenoSemBackExtraSmall;
+            this.grifoPixelPicture.Location = new System.Drawing.Point(0, 2);
+            this.grifoPixelPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grifoPixelPicture.Name = "grifoPixelPicture";
+            this.grifoPixelPicture.Size = new System.Drawing.Size(88, 87);
+            this.grifoPixelPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.grifoPixelPicture.TabIndex = 10;
+            this.grifoPixelPicture.TabStop = false;
+            // 
+            // tauroPixel
+            // 
+            this.tauroPixel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
+            this.tauroPixel.Controls.Add(this.tauroPixelPicture);
+            this.tauroPixel.Location = new System.Drawing.Point(4, 25);
+            this.tauroPixel.Name = "tauroPixel";
+            this.tauroPixel.Size = new System.Drawing.Size(141, 129);
+            this.tauroPixel.TabIndex = 2;
+            this.tauroPixel.Text = "tauroPixel";
+            // 
+            // tauroPixelPicture
+            // 
+            this.tauroPixelPicture.BackgroundImage = global::Monster.Properties.Resources.TauropequenoSemBackextrasmall;
+            this.tauroPixelPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.tauroPixelPicture.Location = new System.Drawing.Point(0, 0);
+            this.tauroPixelPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tauroPixelPicture.Name = "tauroPixelPicture";
+            this.tauroPixelPicture.Size = new System.Drawing.Size(100, 99);
+            this.tauroPixelPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.tauroPixelPicture.TabIndex = 10;
+            this.tauroPixelPicture.TabStop = false;
+            // 
+            // sirenPixel
+            // 
+            this.sirenPixel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
+            this.sirenPixel.Controls.Add(this.sirenPixelPicture);
+            this.sirenPixel.Location = new System.Drawing.Point(4, 25);
+            this.sirenPixel.Name = "sirenPixel";
+            this.sirenPixel.Size = new System.Drawing.Size(141, 129);
+            this.sirenPixel.TabIndex = 3;
+            this.sirenPixel.Text = "sirenPixel";
+            // 
+            // sirenPixelPicture
+            // 
+            this.sirenPixelPicture.BackgroundImage = global::Monster.Properties.Resources.sirenpequenoSemBackextrasmall;
+            this.sirenPixelPicture.Location = new System.Drawing.Point(3, 2);
+            this.sirenPixelPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sirenPixelPicture.Name = "sirenPixelPicture";
+            this.sirenPixelPicture.Size = new System.Drawing.Size(88, 87);
+            this.sirenPixelPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.sirenPixelPicture.TabIndex = 10;
+            this.sirenPixelPicture.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox3.Location = new System.Drawing.Point(228, 23);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(134, 138);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 12;
+            this.pictureBox3.TabStop = false;
+            // 
+            // monsterPlayerRoomPic
+            // 
+            this.monsterPlayerRoomPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.monsterPlayerRoomPic.Location = new System.Drawing.Point(49, 23);
+            this.monsterPlayerRoomPic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.monsterPlayerRoomPic.Name = "monsterPlayerRoomPic";
+            this.monsterPlayerRoomPic.Size = new System.Drawing.Size(134, 138);
+            this.monsterPlayerRoomPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.monsterPlayerRoomPic.TabIndex = 11;
+            this.monsterPlayerRoomPic.TabStop = false;
+            // 
+            // exitPlayerMenuPicture
+            // 
+            this.exitPlayerMenuPicture.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
+            this.exitPlayerMenuPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitPlayerMenuPicture.Location = new System.Drawing.Point(228, 613);
+            this.exitPlayerMenuPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exitPlayerMenuPicture.Name = "exitPlayerMenuPicture";
+            this.exitPlayerMenuPicture.Size = new System.Drawing.Size(88, 87);
+            this.exitPlayerMenuPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.exitPlayerMenuPicture.TabIndex = 10;
+            this.exitPlayerMenuPicture.TabStop = false;
             // 
             // panel8
             // 
@@ -621,6 +1167,18 @@
             this.playerBoyPicTab.TabIndex = 0;
             this.playerBoyPicTab.Text = "playerBoyPicTab";
             // 
+            // playerRoomPicBoy
+            // 
+            this.playerRoomPicBoy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.playerRoomPicBoy.Image = global::Monster.Properties.Resources.playergrandesemback;
+            this.playerRoomPicBoy.Location = new System.Drawing.Point(0, 0);
+            this.playerRoomPicBoy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.playerRoomPicBoy.Name = "playerRoomPicBoy";
+            this.playerRoomPicBoy.Size = new System.Drawing.Size(410, 410);
+            this.playerRoomPicBoy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.playerRoomPicBoy.TabIndex = 1;
+            this.playerRoomPicBoy.TabStop = false;
+            // 
             // playerGirlPicTab
             // 
             this.playerGirlPicTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
@@ -633,9 +1191,31 @@
             this.playerGirlPicTab.TabIndex = 11;
             this.playerGirlPicTab.Text = "playerGirlPicTab";
             // 
+            // playerRoomPicGirl
+            // 
+            this.playerRoomPicGirl.BackgroundImage = global::Monster.Properties.Resources.playergirlgmedium;
+            this.playerRoomPicGirl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.playerRoomPicGirl.Location = new System.Drawing.Point(3, 2);
+            this.playerRoomPicGirl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.playerRoomPicGirl.Name = "playerRoomPicGirl";
+            this.playerRoomPicGirl.Size = new System.Drawing.Size(423, 418);
+            this.playerRoomPicGirl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.playerRoomPicGirl.TabIndex = 1;
+            this.playerRoomPicGirl.TabStop = false;
+            // 
+            // pictureBox34
+            // 
+            this.pictureBox34.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(423, 418);
+            this.pictureBox34.TabIndex = 0;
+            this.pictureBox34.TabStop = false;
+            // 
             // Credits
             // 
             this.Credits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.Credits.Controls.Add(this.exitButtonCredits);
             this.Credits.Controls.Add(this.panel4);
             this.Credits.Controls.Add(this.label20);
             this.Credits.Controls.Add(this.label19);
@@ -645,6 +1225,19 @@
             this.Credits.Size = new System.Drawing.Size(1704, 1026);
             this.Credits.TabIndex = 8;
             this.Credits.Text = "Credits";
+            // 
+            // exitButtonCredits
+            // 
+            this.exitButtonCredits.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
+            this.exitButtonCredits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonCredits.Location = new System.Drawing.Point(1051, 728);
+            this.exitButtonCredits.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exitButtonCredits.Name = "exitButtonCredits";
+            this.exitButtonCredits.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonCredits.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.exitButtonCredits.TabIndex = 32;
+            this.exitButtonCredits.TabStop = false;
+            this.exitButtonCredits.Click += new System.EventHandler(this.exitButtonCredits_Click);
             // 
             // panel4
             // 
@@ -732,6 +1325,7 @@
             // SettingsPage
             // 
             this.SettingsPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.SettingsPage.Controls.Add(this.exitButtonSettings);
             this.SettingsPage.Controls.Add(this.panel5);
             this.SettingsPage.Controls.Add(this.label30);
             this.SettingsPage.Location = new System.Drawing.Point(4, 25);
@@ -740,6 +1334,19 @@
             this.SettingsPage.Size = new System.Drawing.Size(1704, 1026);
             this.SettingsPage.TabIndex = 7;
             this.SettingsPage.Text = "settings";
+            // 
+            // exitButtonSettings
+            // 
+            this.exitButtonSettings.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
+            this.exitButtonSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonSettings.Location = new System.Drawing.Point(1038, 674);
+            this.exitButtonSettings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exitButtonSettings.Name = "exitButtonSettings";
+            this.exitButtonSettings.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonSettings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.exitButtonSettings.TabIndex = 31;
+            this.exitButtonSettings.TabStop = false;
+            this.exitButtonSettings.Click += new System.EventHandler(this.exitButtonSettings_Click);
             // 
             // panel5
             // 
@@ -803,6 +1410,7 @@
             // LoadGamePage
             // 
             this.LoadGamePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.LoadGamePage.Controls.Add(this.exitButtonLoadGame);
             this.LoadGamePage.Controls.Add(this.panel6);
             this.LoadGamePage.Location = new System.Drawing.Point(4, 25);
             this.LoadGamePage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -810,6 +1418,19 @@
             this.LoadGamePage.Size = new System.Drawing.Size(1704, 1026);
             this.LoadGamePage.TabIndex = 6;
             this.LoadGamePage.Text = "loadgame";
+            // 
+            // exitButtonLoadGame
+            // 
+            this.exitButtonLoadGame.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
+            this.exitButtonLoadGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonLoadGame.Location = new System.Drawing.Point(3, 2);
+            this.exitButtonLoadGame.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exitButtonLoadGame.Name = "exitButtonLoadGame";
+            this.exitButtonLoadGame.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonLoadGame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.exitButtonLoadGame.TabIndex = 30;
+            this.exitButtonLoadGame.TabStop = false;
+            this.exitButtonLoadGame.Click += new System.EventHandler(this.exitButtonLoadGame_Click);
             // 
             // panel6
             // 
@@ -912,6 +1533,7 @@
             // NewGameMonster
             // 
             this.NewGameMonster.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.NewGameMonster.Controls.Add(this.exitButtonNewGameMonster);
             this.NewGameMonster.Controls.Add(this.panelNextMonsterName);
             this.NewGameMonster.Controls.Add(this.panelMonsterName);
             this.NewGameMonster.Controls.Add(this.sirenselect);
@@ -930,6 +1552,19 @@
             this.NewGameMonster.Size = new System.Drawing.Size(1704, 1026);
             this.NewGameMonster.TabIndex = 1;
             this.NewGameMonster.Text = "newgameMonster";
+            // 
+            // exitButtonNewGameMonster
+            // 
+            this.exitButtonNewGameMonster.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
+            this.exitButtonNewGameMonster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonNewGameMonster.Location = new System.Drawing.Point(3, 2);
+            this.exitButtonNewGameMonster.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exitButtonNewGameMonster.Name = "exitButtonNewGameMonster";
+            this.exitButtonNewGameMonster.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonNewGameMonster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.exitButtonNewGameMonster.TabIndex = 30;
+            this.exitButtonNewGameMonster.TabStop = false;
+            this.exitButtonNewGameMonster.Click += new System.EventHandler(this.exitButtonNewGameMonster_Click);
             // 
             // panelNextMonsterName
             // 
@@ -1104,9 +1739,62 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Pick your poison!";
             // 
+            // grifo
+            // 
+            this.grifo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
+            this.grifo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.grifo.Image = global::Monster.Properties.Resources.grifobabysmall;
+            this.grifo.Location = new System.Drawing.Point(685, 207);
+            this.grifo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grifo.Name = "grifo";
+            this.grifo.Size = new System.Drawing.Size(209, 209);
+            this.grifo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.grifo.TabIndex = 17;
+            this.grifo.TabStop = false;
+            // 
+            // tauro
+            // 
+            this.tauro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
+            this.tauro.BackgroundImage = global::Monster.Properties.Resources.taurobabysmall;
+            this.tauro.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tauro.Location = new System.Drawing.Point(1069, 207);
+            this.tauro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tauro.Name = "tauro";
+            this.tauro.Size = new System.Drawing.Size(217, 206);
+            this.tauro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.tauro.TabIndex = 2;
+            this.tauro.TabStop = false;
+            // 
+            // siren
+            // 
+            this.siren.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
+            this.siren.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.siren.Image = global::Monster.Properties.Resources.sirenbabysmall;
+            this.siren.Location = new System.Drawing.Point(1443, 207);
+            this.siren.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.siren.Name = "siren";
+            this.siren.Size = new System.Drawing.Size(209, 209);
+            this.siren.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.siren.TabIndex = 1;
+            this.siren.TabStop = false;
+            // 
+            // draco
+            // 
+            this.draco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
+            this.draco.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.draco.Image = global::Monster.Properties.Resources.dracobabysmall;
+            this.draco.Location = new System.Drawing.Point(323, 207);
+            this.draco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.draco.Name = "draco";
+            this.draco.Size = new System.Drawing.Size(209, 209);
+            this.draco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.draco.TabIndex = 0;
+            this.draco.TabStop = false;
+            // 
             // NewGamePlayer
             // 
             this.NewGamePlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.NewGamePlayer.Controls.Add(this.exitButtonNewGamePlayer);
             this.NewGamePlayer.Controls.Add(this.nextRegister);
             this.NewGamePlayer.Controls.Add(this.panelFirstRegister);
             this.NewGamePlayer.Controls.Add(this.PlayerGirl);
@@ -1120,6 +1808,19 @@
             this.NewGamePlayer.Size = new System.Drawing.Size(1704, 1026);
             this.NewGamePlayer.TabIndex = 13;
             this.NewGamePlayer.Text = "NewGamePlayer";
+            // 
+            // exitButtonNewGamePlayer
+            // 
+            this.exitButtonNewGamePlayer.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
+            this.exitButtonNewGamePlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonNewGamePlayer.Location = new System.Drawing.Point(3, 2);
+            this.exitButtonNewGamePlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exitButtonNewGamePlayer.Name = "exitButtonNewGamePlayer";
+            this.exitButtonNewGamePlayer.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonNewGamePlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.exitButtonNewGamePlayer.TabIndex = 29;
+            this.exitButtonNewGamePlayer.TabStop = false;
+            this.exitButtonNewGamePlayer.Click += new System.EventHandler(this.exitButtonNewGamePlayer_Click);
             // 
             // nextRegister
             // 
@@ -1154,7 +1855,7 @@
             this.usernameRegisterMessage.AutoSize = true;
             this.usernameRegisterMessage.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameRegisterMessage.ForeColor = System.Drawing.Color.Peru;
-            this.usernameRegisterMessage.Location = new System.Drawing.Point(67, 182);
+            this.usernameRegisterMessage.Location = new System.Drawing.Point(125, 195);
             this.usernameRegisterMessage.Name = "usernameRegisterMessage";
             this.usernameRegisterMessage.Size = new System.Drawing.Size(0, 30);
             this.usernameRegisterMessage.TabIndex = 29;
@@ -1233,6 +1934,32 @@
             this.PlayerBoy.UseVisualStyleBackColor = true;
             this.PlayerBoy.CheckedChanged += new System.EventHandler(this.PlayerBoy_CheckedChanged);
             // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
+            this.pictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox13.Image = global::Monster.Properties.Resources.playergirlgrandesembacksmall1;
+            this.pictureBox13.Location = new System.Drawing.Point(1065, 207);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(209, 209);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox13.TabIndex = 19;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
+            this.pictureBox14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.Location = new System.Drawing.Point(701, 207);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(209, 209);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox14.TabIndex = 18;
+            this.pictureBox14.TabStop = false;
+            // 
             // label37
             // 
             this.label37.AutoSize = true;
@@ -1255,6 +1982,9 @@
             this.Monsters.Controls.Add(this.SettingsPage);
             this.Monsters.Controls.Add(this.Credits);
             this.Monsters.Controls.Add(this.Player);
+            this.Monsters.Controls.Add(this.miniGames);
+            this.Monsters.Controls.Add(this.inventory);
+            this.Monsters.Controls.Add(this.battleMode);
             this.Monsters.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Monsters.Location = new System.Drawing.Point(0, 0);
             this.Monsters.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1374,532 +2104,123 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Monsters";
             // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
-            this.pictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox13.Image = global::Monster.Properties.Resources.playergirlgrandesembacksmall1;
-            this.pictureBox13.Location = new System.Drawing.Point(1065, 207);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(209, 209);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox13.TabIndex = 19;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
-            this.pictureBox14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(701, 207);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(209, 209);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox14.TabIndex = 18;
-            this.pictureBox14.TabStop = false;
-            // 
-            // grifo
-            // 
-            this.grifo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
-            this.grifo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.grifo.Image = global::Monster.Properties.Resources.grifobabysmall;
-            this.grifo.Location = new System.Drawing.Point(685, 207);
-            this.grifo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grifo.Name = "grifo";
-            this.grifo.Size = new System.Drawing.Size(209, 209);
-            this.grifo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.grifo.TabIndex = 17;
-            this.grifo.TabStop = false;
-            // 
-            // tauro
-            // 
-            this.tauro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
-            this.tauro.BackgroundImage = global::Monster.Properties.Resources.taurobabysmall;
-            this.tauro.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tauro.Location = new System.Drawing.Point(1069, 207);
-            this.tauro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tauro.Name = "tauro";
-            this.tauro.Size = new System.Drawing.Size(217, 206);
-            this.tauro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.tauro.TabIndex = 2;
-            this.tauro.TabStop = false;
-            // 
-            // siren
-            // 
-            this.siren.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
-            this.siren.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.siren.Image = global::Monster.Properties.Resources.sirenbabysmall;
-            this.siren.Location = new System.Drawing.Point(1443, 207);
-            this.siren.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.siren.Name = "siren";
-            this.siren.Size = new System.Drawing.Size(209, 209);
-            this.siren.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.siren.TabIndex = 1;
-            this.siren.TabStop = false;
-            // 
-            // draco
-            // 
-            this.draco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
-            this.draco.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.draco.Image = global::Monster.Properties.Resources.dracobabysmall;
-            this.draco.Location = new System.Drawing.Point(323, 207);
-            this.draco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.draco.Name = "draco";
-            this.draco.Size = new System.Drawing.Size(209, 209);
-            this.draco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.draco.TabIndex = 0;
-            this.draco.TabStop = false;
-            // 
-            // boyPicturemall
-            // 
-            this.boyPicturemall.BackgroundImage = global::Monster.Properties.Resources.playerboy;
-            this.boyPicturemall.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.boyPicturemall.Location = new System.Drawing.Point(4, 2);
-            this.boyPicturemall.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.boyPicturemall.Name = "boyPicturemall";
-            this.boyPicturemall.Size = new System.Drawing.Size(134, 138);
-            this.boyPicturemall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.boyPicturemall.TabIndex = 9;
-            this.boyPicturemall.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::Monster.Properties.Resources.playergirl;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox5.Location = new System.Drawing.Point(7, 5);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(134, 138);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox5.TabIndex = 10;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackgroundImage = global::Monster.Properties.Resources.botaoLvl;
-            this.pictureBox15.Location = new System.Drawing.Point(35, 214);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox15.TabIndex = 14;
-            this.pictureBox15.TabStop = false;
-            // 
-            // expButtonPicture
-            // 
-            this.expButtonPicture.BackgroundImage = global::Monster.Properties.Resources.botaoExp;
-            this.expButtonPicture.Location = new System.Drawing.Point(35, 149);
-            this.expButtonPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.expButtonPicture.Name = "expButtonPicture";
-            this.expButtonPicture.Size = new System.Drawing.Size(50, 50);
-            this.expButtonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.expButtonPicture.TabIndex = 13;
-            this.expButtonPicture.TabStop = false;
-            // 
-            // staminaButtonPicture
-            // 
-            this.staminaButtonPicture.BackgroundImage = global::Monster.Properties.Resources.botaoStamina;
-            this.staminaButtonPicture.Location = new System.Drawing.Point(35, 81);
-            this.staminaButtonPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.staminaButtonPicture.Name = "staminaButtonPicture";
-            this.staminaButtonPicture.Size = new System.Drawing.Size(50, 50);
-            this.staminaButtonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.staminaButtonPicture.TabIndex = 12;
-            this.staminaButtonPicture.TabStop = false;
-            // 
-            // hpButtonPicture
-            // 
-            this.hpButtonPicture.BackgroundImage = global::Monster.Properties.Resources.botaoHP;
-            this.hpButtonPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.hpButtonPicture.Location = new System.Drawing.Point(35, 18);
-            this.hpButtonPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.hpButtonPicture.Name = "hpButtonPicture";
-            this.hpButtonPicture.Size = new System.Drawing.Size(50, 50);
-            this.hpButtonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.hpButtonPicture.TabIndex = 11;
-            this.hpButtonPicture.TabStop = false;
-            // 
-            // exitButtonPicture
-            // 
-            this.exitButtonPicture.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
-            this.exitButtonPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.exitButtonPicture.Location = new System.Drawing.Point(228, 659);
-            this.exitButtonPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.exitButtonPicture.Name = "exitButtonPicture";
-            this.exitButtonPicture.Size = new System.Drawing.Size(88, 87);
-            this.exitButtonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.exitButtonPicture.TabIndex = 10;
-            this.exitButtonPicture.TabStop = false;
-            // 
-            // saveButtonPicture
-            // 
-            this.saveButtonPicture.BackgroundImage = global::Monster.Properties.Resources.botaoSave;
-            this.saveButtonPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.saveButtonPicture.Location = new System.Drawing.Point(93, 659);
-            this.saveButtonPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.saveButtonPicture.Name = "saveButtonPicture";
-            this.saveButtonPicture.Size = new System.Drawing.Size(88, 87);
-            this.saveButtonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.saveButtonPicture.TabIndex = 9;
-            this.saveButtonPicture.TabStop = false;
-            // 
-            // backpackPicture
-            // 
-            this.backpackPicture.BackgroundImage = global::Monster.Properties.Resources.backpack;
-            this.backpackPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.backpackPicture.Location = new System.Drawing.Point(228, 456);
-            this.backpackPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.backpackPicture.Name = "backpackPicture";
-            this.backpackPicture.Size = new System.Drawing.Size(134, 138);
-            this.backpackPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.backpackPicture.TabIndex = 8;
-            this.backpackPicture.TabStop = false;
-            // 
-            // controllerPicture
-            // 
-            this.controllerPicture.BackgroundImage = global::Monster.Properties.Resources.controller1;
-            this.controllerPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.controllerPicture.Location = new System.Drawing.Point(298, 291);
-            this.controllerPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.controllerPicture.Name = "controllerPicture";
-            this.controllerPicture.Size = new System.Drawing.Size(88, 87);
-            this.controllerPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.controllerPicture.TabIndex = 6;
-            this.controllerPicture.TabStop = false;
-            // 
-            // sleepPicture
-            // 
-            this.sleepPicture.BackgroundImage = global::Monster.Properties.Resources.bed;
-            this.sleepPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.sleepPicture.Location = new System.Drawing.Point(165, 291);
-            this.sleepPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.sleepPicture.Name = "sleepPicture";
-            this.sleepPicture.Size = new System.Drawing.Size(88, 87);
-            this.sleepPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.sleepPicture.TabIndex = 5;
-            this.sleepPicture.TabStop = false;
-            // 
-            // foodPicture
-            // 
-            this.foodPicture.BackgroundImage = global::Monster.Properties.Resources.noodles;
-            this.foodPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.foodPicture.Location = new System.Drawing.Point(25, 291);
-            this.foodPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.foodPicture.Name = "foodPicture";
-            this.foodPicture.Size = new System.Drawing.Size(88, 87);
-            this.foodPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.foodPicture.TabIndex = 4;
-            this.foodPicture.TabStop = false;
-            this.foodPicture.Click += new System.EventHandler(this.foodPicture_Click);
-            // 
-            // dracoBabyPicture
-            // 
-            this.dracoBabyPicture.Image = global::Monster.Properties.Resources.dragao2_1sem_back;
-            this.dracoBabyPicture.Location = new System.Drawing.Point(0, 0);
-            this.dracoBabyPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dracoBabyPicture.Name = "dracoBabyPicture";
-            this.dracoBabyPicture.Size = new System.Drawing.Size(410, 410);
-            this.dracoBabyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.dracoBabyPicture.TabIndex = 1;
-            this.dracoBabyPicture.TabStop = false;
-            // 
-            // dracoTeenPicture
-            // 
-            this.dracoTeenPicture.BackgroundImage = global::Monster.Properties.Resources.dracoteenmedium;
-            this.dracoTeenPicture.Location = new System.Drawing.Point(1, 0);
-            this.dracoTeenPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dracoTeenPicture.Name = "dracoTeenPicture";
-            this.dracoTeenPicture.Size = new System.Drawing.Size(410, 410);
-            this.dracoTeenPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.dracoTeenPicture.TabIndex = 2;
-            this.dracoTeenPicture.TabStop = false;
-            // 
-            // dracoAdultPicture
-            // 
-            this.dracoAdultPicture.BackgroundImage = global::Monster.Properties.Resources.dracoAdultMedium;
-            this.dracoAdultPicture.Location = new System.Drawing.Point(1, 0);
-            this.dracoAdultPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dracoAdultPicture.Name = "dracoAdultPicture";
-            this.dracoAdultPicture.Size = new System.Drawing.Size(410, 410);
-            this.dracoAdultPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.dracoAdultPicture.TabIndex = 3;
-            this.dracoAdultPicture.TabStop = false;
-            // 
-            // grifoBabyPicture
-            // 
-            this.grifoBabyPicture.BackgroundImage = global::Monster.Properties.Resources.GrifoGrandeSemBackSmall;
-            this.grifoBabyPicture.Location = new System.Drawing.Point(3, 2);
-            this.grifoBabyPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grifoBabyPicture.Name = "grifoBabyPicture";
-            this.grifoBabyPicture.Size = new System.Drawing.Size(423, 418);
-            this.grifoBabyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.grifoBabyPicture.TabIndex = 1;
-            this.grifoBabyPicture.TabStop = false;
-            // 
-            // grifoTeenPicture
-            // 
-            this.grifoTeenPicture.BackgroundImage = global::Monster.Properties.Resources.grifoteenmedium;
-            this.grifoTeenPicture.Location = new System.Drawing.Point(3, 2);
-            this.grifoTeenPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grifoTeenPicture.Name = "grifoTeenPicture";
-            this.grifoTeenPicture.Size = new System.Drawing.Size(423, 418);
-            this.grifoTeenPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.grifoTeenPicture.TabIndex = 1;
-            this.grifoTeenPicture.TabStop = false;
-            // 
-            // grifoAdultPicture
-            // 
-            this.grifoAdultPicture.BackgroundImage = global::Monster.Properties.Resources.grifoadultmedium;
-            this.grifoAdultPicture.Location = new System.Drawing.Point(3, 2);
-            this.grifoAdultPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grifoAdultPicture.Name = "grifoAdultPicture";
-            this.grifoAdultPicture.Size = new System.Drawing.Size(423, 418);
-            this.grifoAdultPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.grifoAdultPicture.TabIndex = 1;
-            this.grifoAdultPicture.TabStop = false;
-            // 
-            // tauroBabyPicture
-            // 
-            this.tauroBabyPicture.BackgroundImage = global::Monster.Properties.Resources.TauroGrandeSemBacksmall;
-            this.tauroBabyPicture.Location = new System.Drawing.Point(3, 2);
-            this.tauroBabyPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tauroBabyPicture.Name = "tauroBabyPicture";
-            this.tauroBabyPicture.Size = new System.Drawing.Size(423, 418);
-            this.tauroBabyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.tauroBabyPicture.TabIndex = 1;
-            this.tauroBabyPicture.TabStop = false;
-            // 
-            // tauroTeenPicture
-            // 
-            this.tauroTeenPicture.BackgroundImage = global::Monster.Properties.Resources.tauroteenmedium;
-            this.tauroTeenPicture.Location = new System.Drawing.Point(3, 2);
-            this.tauroTeenPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tauroTeenPicture.Name = "tauroTeenPicture";
-            this.tauroTeenPicture.Size = new System.Drawing.Size(423, 418);
-            this.tauroTeenPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.tauroTeenPicture.TabIndex = 1;
-            this.tauroTeenPicture.TabStop = false;
-            // 
-            // tauroAdultPicture
-            // 
-            this.tauroAdultPicture.BackgroundImage = global::Monster.Properties.Resources.tauroadultmedium;
-            this.tauroAdultPicture.Location = new System.Drawing.Point(3, 2);
-            this.tauroAdultPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tauroAdultPicture.Name = "tauroAdultPicture";
-            this.tauroAdultPicture.Size = new System.Drawing.Size(423, 418);
-            this.tauroAdultPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.tauroAdultPicture.TabIndex = 1;
-            this.tauroAdultPicture.TabStop = false;
-            // 
-            // sirenBabyPicture
-            // 
-            this.sirenBabyPicture.BackgroundImage = global::Monster.Properties.Resources.SirenGrandeSemBacksmall;
-            this.sirenBabyPicture.Location = new System.Drawing.Point(3, 2);
-            this.sirenBabyPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.sirenBabyPicture.Name = "sirenBabyPicture";
-            this.sirenBabyPicture.Size = new System.Drawing.Size(423, 418);
-            this.sirenBabyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.sirenBabyPicture.TabIndex = 1;
-            this.sirenBabyPicture.TabStop = false;
-            // 
-            // sirenTeenPicture
-            // 
-            this.sirenTeenPicture.BackgroundImage = global::Monster.Properties.Resources.sirenteenmedium;
-            this.sirenTeenPicture.Location = new System.Drawing.Point(3, 2);
-            this.sirenTeenPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.sirenTeenPicture.Name = "sirenTeenPicture";
-            this.sirenTeenPicture.Size = new System.Drawing.Size(423, 418);
-            this.sirenTeenPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.sirenTeenPicture.TabIndex = 1;
-            this.sirenTeenPicture.TabStop = false;
-            // 
-            // sirenAdultPicture
-            // 
-            this.sirenAdultPicture.BackgroundImage = global::Monster.Properties.Resources.sirentadultmedium;
-            this.sirenAdultPicture.Location = new System.Drawing.Point(3, 2);
-            this.sirenAdultPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.sirenAdultPicture.Name = "sirenAdultPicture";
-            this.sirenAdultPicture.Size = new System.Drawing.Size(423, 418);
-            this.sirenAdultPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.sirenAdultPicture.TabIndex = 1;
-            this.sirenAdultPicture.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(423, 418);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Location = new System.Drawing.Point(228, 23);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(134, 138);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
-            // 
-            // monsterPlayerRoomPic
-            // 
-            this.monsterPlayerRoomPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.monsterPlayerRoomPic.Location = new System.Drawing.Point(49, 23);
-            this.monsterPlayerRoomPic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.monsterPlayerRoomPic.Name = "monsterPlayerRoomPic";
-            this.monsterPlayerRoomPic.Size = new System.Drawing.Size(134, 138);
-            this.monsterPlayerRoomPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.monsterPlayerRoomPic.TabIndex = 11;
-            this.monsterPlayerRoomPic.TabStop = false;
-            // 
-            // exitPlayerMenuPicture
-            // 
-            this.exitPlayerMenuPicture.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
-            this.exitPlayerMenuPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.exitPlayerMenuPicture.Location = new System.Drawing.Point(228, 613);
-            this.exitPlayerMenuPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.exitPlayerMenuPicture.Name = "exitPlayerMenuPicture";
-            this.exitPlayerMenuPicture.Size = new System.Drawing.Size(88, 87);
-            this.exitPlayerMenuPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.exitPlayerMenuPicture.TabIndex = 10;
-            this.exitPlayerMenuPicture.TabStop = false;
-            // 
-            // dracoPixelPicture
-            // 
-            this.dracoPixelPicture.BackgroundImage = global::Monster.Properties.Resources.dragao1sembackpequeno1;
-            this.dracoPixelPicture.Location = new System.Drawing.Point(0, 0);
-            this.dracoPixelPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dracoPixelPicture.Name = "dracoPixelPicture";
-            this.dracoPixelPicture.Size = new System.Drawing.Size(88, 87);
-            this.dracoPixelPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.dracoPixelPicture.TabIndex = 9;
-            this.dracoPixelPicture.TabStop = false;
-            // 
-            // playerRoomPicBoy
-            // 
-            this.playerRoomPicBoy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.playerRoomPicBoy.Image = global::Monster.Properties.Resources.playergrandesemback;
-            this.playerRoomPicBoy.Location = new System.Drawing.Point(0, 0);
-            this.playerRoomPicBoy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.playerRoomPicBoy.Name = "playerRoomPicBoy";
-            this.playerRoomPicBoy.Size = new System.Drawing.Size(410, 410);
-            this.playerRoomPicBoy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.playerRoomPicBoy.TabIndex = 1;
-            this.playerRoomPicBoy.TabStop = false;
-            // 
-            // playerRoomPicGirl
-            // 
-            this.playerRoomPicGirl.BackgroundImage = global::Monster.Properties.Resources.playergirlgmedium;
-            this.playerRoomPicGirl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.playerRoomPicGirl.Location = new System.Drawing.Point(3, 2);
-            this.playerRoomPicGirl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.playerRoomPicGirl.Name = "playerRoomPicGirl";
-            this.playerRoomPicGirl.Size = new System.Drawing.Size(423, 418);
-            this.playerRoomPicGirl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.playerRoomPicGirl.TabIndex = 1;
-            this.playerRoomPicGirl.TabStop = false;
-            // 
-            // pictureBox34
-            // 
-            this.pictureBox34.Location = new System.Drawing.Point(3, 2);
-            this.pictureBox34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(423, 418);
-            this.pictureBox34.TabIndex = 0;
-            this.pictureBox34.TabStop = false;
-            // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.dracoPixel);
-            this.tabControl2.Controls.Add(this.grifoPixel);
-            this.tabControl2.Controls.Add(this.tauroPixel);
-            this.tabControl2.Controls.Add(this.sirenPixel);
-            this.tabControl2.Location = new System.Drawing.Point(63, 577);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(149, 158);
-            this.tabControl2.TabIndex = 13;
-            // 
-            // dracoPixel
-            // 
-            this.dracoPixel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
-            this.dracoPixel.Controls.Add(this.dracoPixelPicture);
-            this.dracoPixel.Location = new System.Drawing.Point(4, 25);
-            this.dracoPixel.Name = "dracoPixel";
-            this.dracoPixel.Padding = new System.Windows.Forms.Padding(3);
-            this.dracoPixel.Size = new System.Drawing.Size(141, 129);
-            this.dracoPixel.TabIndex = 0;
-            this.dracoPixel.Text = "dracoPixel";
-            // 
-            // grifoPixel
-            // 
-            this.grifoPixel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
-            this.grifoPixel.Controls.Add(this.grifoPixelPicture);
-            this.grifoPixel.Location = new System.Drawing.Point(4, 25);
-            this.grifoPixel.Name = "grifoPixel";
-            this.grifoPixel.Padding = new System.Windows.Forms.Padding(3);
-            this.grifoPixel.Size = new System.Drawing.Size(141, 129);
-            this.grifoPixel.TabIndex = 1;
-            this.grifoPixel.Text = "grifoPixel";
-            // 
-            // tauroPixel
-            // 
-            this.tauroPixel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
-            this.tauroPixel.Controls.Add(this.tauroPixelPicture);
-            this.tauroPixel.Location = new System.Drawing.Point(4, 25);
-            this.tauroPixel.Name = "tauroPixel";
-            this.tauroPixel.Size = new System.Drawing.Size(141, 129);
-            this.tauroPixel.TabIndex = 2;
-            this.tauroPixel.Text = "tauroPixel";
-            // 
-            // sirenPixel
-            // 
-            this.sirenPixel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
-            this.sirenPixel.Controls.Add(this.sirenPixelPicture);
-            this.sirenPixel.Location = new System.Drawing.Point(4, 25);
-            this.sirenPixel.Name = "sirenPixel";
-            this.sirenPixel.Size = new System.Drawing.Size(141, 129);
-            this.sirenPixel.TabIndex = 3;
-            this.sirenPixel.Text = "sirenPixel";
-            // 
-            // grifoPixelPicture
-            // 
-            this.grifoPixelPicture.BackgroundImage = global::Monster.Properties.Resources.GrifopequenoSemBackExtraSmall;
-            this.grifoPixelPicture.Location = new System.Drawing.Point(0, 2);
-            this.grifoPixelPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grifoPixelPicture.Name = "grifoPixelPicture";
-            this.grifoPixelPicture.Size = new System.Drawing.Size(88, 87);
-            this.grifoPixelPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.grifoPixelPicture.TabIndex = 10;
-            this.grifoPixelPicture.TabStop = false;
-            // 
-            // tauroPixelPicture
-            // 
-            this.tauroPixelPicture.BackgroundImage = global::Monster.Properties.Resources.TauropequenoSemBackextrasmall;
-            this.tauroPixelPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.tauroPixelPicture.Location = new System.Drawing.Point(0, 0);
-            this.tauroPixelPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tauroPixelPicture.Name = "tauroPixelPicture";
-            this.tauroPixelPicture.Size = new System.Drawing.Size(100, 99);
-            this.tauroPixelPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.tauroPixelPicture.TabIndex = 10;
-            this.tauroPixelPicture.TabStop = false;
-            // 
-            // sirenPixelPicture
-            // 
-            this.sirenPixelPicture.BackgroundImage = global::Monster.Properties.Resources.sirenpequenoSemBackextrasmall;
-            this.sirenPixelPicture.Location = new System.Drawing.Point(3, 2);
-            this.sirenPixelPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.sirenPixelPicture.Name = "sirenPixelPicture";
-            this.sirenPixelPicture.Size = new System.Drawing.Size(88, 87);
-            this.sirenPixelPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.sirenPixelPicture.TabIndex = 10;
-            this.sirenPixelPicture.TabStop = false;
+            // miniGames
+            // 
+            this.miniGames.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.miniGames.Controls.Add(this.panel9);
+            this.miniGames.Location = new System.Drawing.Point(4, 25);
+            this.miniGames.Name = "miniGames";
+            this.miniGames.Size = new System.Drawing.Size(1704, 1026);
+            this.miniGames.TabIndex = 14;
+            this.miniGames.Text = "miniGames";
+            // 
+            // inventory
+            // 
+            this.inventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.inventory.Location = new System.Drawing.Point(4, 25);
+            this.inventory.Name = "inventory";
+            this.inventory.Size = new System.Drawing.Size(1704, 1026);
+            this.inventory.TabIndex = 15;
+            this.inventory.Text = "inventory";
+            // 
+            // battleMode
+            // 
+            this.battleMode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.battleMode.Location = new System.Drawing.Point(4, 25);
+            this.battleMode.Name = "battleMode";
+            this.battleMode.Size = new System.Drawing.Size(1704, 1026);
+            this.battleMode.TabIndex = 16;
+            this.battleMode.Text = "BattleMode";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.label5.Location = new System.Drawing.Point(22, 69);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(297, 27);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "aqui ficarao as conquistas de jogos ganhos";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.label6.Location = new System.Drawing.Point(28, 106);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(315, 27);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "aqui ficarao as conquistas de batalhas ganhas";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(131)))), ((int)(((byte)(91)))));
+            this.panel9.Controls.Add(this.label7);
+            this.panel9.Controls.Add(this.label8);
+            this.panel9.Controls.Add(this.pictureBox2);
+            this.panel9.Controls.Add(this.pictureBox4);
+            this.panel9.Controls.Add(this.miniGamesTitleLabel);
+            this.panel9.Location = new System.Drawing.Point(525, 122);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(814, 564);
+            this.panel9.TabIndex = 0;
+            // 
+            // miniGamesTitleLabel
+            // 
+            this.miniGamesTitleLabel.AutoSize = true;
+            this.miniGamesTitleLabel.Font = new System.Drawing.Font("Myanmar Text", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.miniGamesTitleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.miniGamesTitleLabel.Location = new System.Drawing.Point(160, 24);
+            this.miniGamesTitleLabel.Name = "miniGamesTitleLabel";
+            this.miniGamesTitleLabel.Size = new System.Drawing.Size(514, 142);
+            this.miniGamesTitleLabel.TabIndex = 3;
+            this.miniGamesTitleLabel.Text = "Mini-Games";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.label7.Location = new System.Drawing.Point(275, 328);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 30);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "miniJogo2";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.label8.Location = new System.Drawing.Point(104, 328);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(98, 30);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "miniJogo1";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(239, 168);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(134, 138);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox4.Location = new System.Drawing.Point(60, 168);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(134, 138);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 16;
+            this.pictureBox4.TabStop = false;
             // 
             // StartupForm
             // 
@@ -1915,124 +2236,143 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.TutorialTab.ResumeLayout(false);
             this.TutorialTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButtonTutorial)).EndInit();
             this.myMonster.ResumeLayout(false);
+            this.myMonster.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.battleButtonPic)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.boy.ResumeLayout(false);
             this.boy.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.boyPixelPic)).EndInit();
             this.girl.ResumeLayout(false);
             this.girl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.girlPixelPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.expButtonPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staminaButtonPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hpButtonPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButtonMyMonster)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saveButtonMyMonster)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backpackPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.miniGamesPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sleepPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foodPicture)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tabImagensMonster.ResumeLayout(false);
             this.dracoBaby.ResumeLayout(false);
             this.dracoBaby.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dracoBabyPicture)).EndInit();
             this.dracoTeen.ResumeLayout(false);
             this.dracoTeen.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dracoTeenPicture)).EndInit();
             this.dracoAdult.ResumeLayout(false);
             this.dracoAdult.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dracoAdultPicture)).EndInit();
             this.grifoBaby.ResumeLayout(false);
             this.grifoBaby.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grifoBabyPicture)).EndInit();
             this.grifoTeen.ResumeLayout(false);
             this.grifoTeen.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grifoTeenPicture)).EndInit();
             this.grifoAdult.ResumeLayout(false);
             this.grifoAdult.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grifoAdultPicture)).EndInit();
             this.tauroBaby.ResumeLayout(false);
             this.tauroBaby.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tauroBabyPicture)).EndInit();
             this.tauroTeen.ResumeLayout(false);
             this.tauroTeen.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tauroTeenPicture)).EndInit();
             this.tauroAdult.ResumeLayout(false);
             this.tauroAdult.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tauroAdultPicture)).EndInit();
             this.sirenBaby.ResumeLayout(false);
             this.sirenBaby.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sirenBabyPicture)).EndInit();
             this.sirenTeen.ResumeLayout(false);
             this.sirenTeen.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sirenTeenPicture)).EndInit();
             this.sirenAdult.ResumeLayout(false);
             this.sirenAdult.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sirenAdultPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Player.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.tabControl4.ResumeLayout(false);
+            this.achievGames.ResumeLayout(false);
+            this.achievGames.PerformLayout();
+            this.achievBattle.ResumeLayout(false);
+            this.achievBattle.PerformLayout();
+            this.tabControl2.ResumeLayout(false);
+            this.dracoPixel.ResumeLayout(false);
+            this.dracoPixel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dracoPixelPicture)).EndInit();
+            this.grifoPixel.ResumeLayout(false);
+            this.grifoPixel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grifoPixelPicture)).EndInit();
+            this.tauroPixel.ResumeLayout(false);
+            this.tauroPixel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tauroPixelPicture)).EndInit();
+            this.sirenPixel.ResumeLayout(false);
+            this.sirenPixel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sirenPixelPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.monsterPlayerRoomPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exitPlayerMenuPicture)).EndInit();
             this.panel8.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
             this.playerBoyPicTab.ResumeLayout(false);
             this.playerBoyPicTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.playerRoomPicBoy)).EndInit();
             this.playerGirlPicTab.ResumeLayout(false);
             this.playerGirlPicTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.playerRoomPicGirl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
             this.Credits.ResumeLayout(false);
             this.Credits.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButtonCredits)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.SettingsPage.ResumeLayout(false);
             this.SettingsPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButtonSettings)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.LoadGamePage.ResumeLayout(false);
+            this.LoadGamePage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButtonLoadGame)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.NewGameMonster.ResumeLayout(false);
             this.NewGameMonster.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButtonNewGameMonster)).EndInit();
             this.panelNextMonsterName.ResumeLayout(false);
             this.panelMonsterName.ResumeLayout(false);
             this.panelMonsterName.PerformLayout();
-            this.NewGamePlayer.ResumeLayout(false);
-            this.NewGamePlayer.PerformLayout();
-            this.panelFirstRegister.ResumeLayout(false);
-            this.panelFirstRegister.PerformLayout();
-            this.Monsters.ResumeLayout(false);
-            this.Home.ResumeLayout(false);
-            this.Home.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grifo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tauro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.siren)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.draco)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.boyPicturemall)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.expButtonPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.staminaButtonPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hpButtonPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exitButtonPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.saveButtonPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.backpackPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.controllerPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sleepPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.foodPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dracoBabyPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dracoTeenPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dracoAdultPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grifoBabyPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grifoTeenPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grifoAdultPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tauroBabyPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tauroTeenPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tauroAdultPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sirenBabyPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sirenTeenPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sirenAdultPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.monsterPlayerRoomPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exitPlayerMenuPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dracoPixelPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerRoomPicBoy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerRoomPicGirl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
-            this.tabControl2.ResumeLayout(false);
-            this.dracoPixel.ResumeLayout(false);
-            this.dracoPixel.PerformLayout();
-            this.grifoPixel.ResumeLayout(false);
-            this.grifoPixel.PerformLayout();
-            this.tauroPixel.ResumeLayout(false);
-            this.tauroPixel.PerformLayout();
-            this.sirenPixel.ResumeLayout(false);
-            this.sirenPixel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grifoPixelPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tauroPixelPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sirenPixelPicture)).EndInit();
+            this.NewGamePlayer.ResumeLayout(false);
+            this.NewGamePlayer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButtonNewGamePlayer)).EndInit();
+            this.panelFirstRegister.ResumeLayout(false);
+            this.panelFirstRegister.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            this.Monsters.ResumeLayout(false);
+            this.Home.ResumeLayout(false);
+            this.Home.PerformLayout();
+            this.miniGames.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2133,19 +2473,19 @@
         private System.Windows.Forms.ProgressBar hpBar;
         private System.Windows.Forms.PictureBox staminaButtonPicture;
         private System.Windows.Forms.PictureBox hpButtonPicture;
-        private System.Windows.Forms.PictureBox exitButtonPicture;
-        private System.Windows.Forms.PictureBox saveButtonPicture;
-        private System.Windows.Forms.PictureBox backpackPicture;
-        private System.Windows.Forms.PictureBox controllerPicture;
+        private System.Windows.Forms.PictureBox exitButtonMyMonster;
+        private System.Windows.Forms.PictureBox saveButtonMyMonster;
+        private System.Windows.Forms.PictureBox backpackPic;
+        private System.Windows.Forms.PictureBox miniGamesPic;
         private System.Windows.Forms.PictureBox sleepPicture;
         private System.Windows.Forms.PictureBox foodPicture;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox expButtonPicture;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage boy;
-        private System.Windows.Forms.PictureBox boyPicturemall;
+        private System.Windows.Forms.PictureBox boyPixelPic;
         private System.Windows.Forms.TabPage girl;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox girlPixelPic;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -2172,6 +2512,29 @@
         private System.Windows.Forms.PictureBox grifoPixelPicture;
         private System.Windows.Forms.PictureBox tauroPixelPicture;
         private System.Windows.Forms.PictureBox sirenPixelPicture;
+        private System.Windows.Forms.PictureBox battleButtonPic;
+        private System.Windows.Forms.TabPage miniGames;
+        private System.Windows.Forms.TabPage inventory;
+        private System.Windows.Forms.PictureBox exitButtonNewGamePlayer;
+        private System.Windows.Forms.PictureBox exitButtonNewGameMonster;
+        private System.Windows.Forms.PictureBox exitButtonTutorial;
+        private System.Windows.Forms.PictureBox exitButtonLoadGame;
+        private System.Windows.Forms.PictureBox exitButtonSettings;
+        private System.Windows.Forms.PictureBox exitButtonCredits;
+        private System.Windows.Forms.TabPage battleMode;
+        private System.Windows.Forms.TabControl tabControl4;
+        private System.Windows.Forms.TabPage achievGames;
+        private System.Windows.Forms.TabPage achievBattle;
+        private System.Windows.Forms.Label monsterNamePlayerMenu2;
+        private System.Windows.Forms.Label monsterNamePlayerMenu;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label miniGamesTitleLabel;
     }
 }
 

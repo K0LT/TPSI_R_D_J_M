@@ -38,6 +38,11 @@ namespace Monster
 
             // Bind monster progress to the progress bar
             MonsterBarProgressManager.UpdateMonsterProgressBar(expBar, _monsterProgress);
+
+
+            panelFirstRegister.Visible = false;  // registo player escondido
+            nextRegister.Visible = false;   // botao de next em registo de player
+            panelNextMonsterName.Visible = false; // botao next depois de colocar nome do monstro
         }
 
         // Main menu button handlers
@@ -66,7 +71,14 @@ namespace Monster
             TabNavigator.SwitchTo(Monsters, Credits);
         }
 
+
+
         // New game player menu handlers
+        private void exitButtonNewGamePlayer_Click(object sender, EventArgs e)
+        {
+            TabNavigator.SwitchTo(Monsters, Home);
+
+        }
         private void PlayerBoy_CheckedChanged(object sender, EventArgs e)
         {
             panelFirstRegister.Visible = PlayerBoy.Checked;
@@ -105,6 +117,9 @@ namespace Monster
             {
                 usernameRegisterMessage.Text = "[ERROR] This username already exists or is invalid.";
             }
+
+            nextRegister.Visible = true;
+            registerplayer.Enabled = false;
         }
 
         private string GetSelectedPlayerType()
@@ -143,6 +158,8 @@ namespace Monster
         {
             TabNavigator.SwitchTo(Monsters, NewGameMonster);
         }
+
+
 
         // General Purpose Type Selector
         private void monsterTypeSelect(object sender, EventArgs e)
@@ -206,12 +223,70 @@ namespace Monster
             TabNavigator.SwitchTo(Monsters, TutorialTab);
             MonsterRegister_Click(this, EventArgs.Empty);
         }
+        private void exitButtonNewGameMonster_Click(object sender, EventArgs e)
+        {
+            TabNavigator.SwitchTo(Monsters, Home);
+        }
+
 
         // Tutorial navigation
+        private void exitButtonTutorial_Click(object sender, EventArgs e)
+        {
+            TabNavigator.SwitchTo(Monsters, Home);
+        }
         private void letsPlay_Click(object sender, EventArgs e)
         {
             TabNavigator.SwitchTo(Monsters, myMonster);
         }
+
+
+
+        // Monster page handlers
+
+        private void exitButtonMyMonster_Click(object sender, EventArgs e)
+        {
+            TabNavigator.SwitchTo(Monsters, Home);
+        }
+
+        private void saveButtonMyMonster_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void boyPicturemall_Click(object sender, EventArgs e)
+        {
+            TabNavigator.SwitchTo(Monsters, Player);
+        }
+
+        private void girlPixelPic_Click(object sender, EventArgs e)
+        {
+            TabNavigator.SwitchTo(Monsters, Player);
+        }
+        
+        private void controllerPicture_Click(object sender, EventArgs e)
+        {
+            TabNavigator.SwitchTo(Monsters, miniGames);
+
+        }
+        private void backpackPic_Click(object sender, EventArgs e)
+        {
+            TabNavigator.SwitchTo(Monsters, inventory);
+        }
+
+        private void battleButtonPic_Click(object sender, EventArgs e)
+        {
+            TabNavigator.SwitchTo(Monsters, battleMode);
+        }
+
+        private void foodPicture_Click(object sender, EventArgs e)
+        {
+            // TODO: Implement food interaction logic
+        }
+
+
+
+
+
 
         // Load game handlers
         private void usernameEnterLoad_TextChanged(object sender, EventArgs e)
@@ -219,7 +294,10 @@ namespace Monster
             // TODO: Implement logic for loading game based on username input
         }
 
-       
+        private void exitButtonLoadGame_Click(object sender, EventArgs e)
+        {
+            TabNavigator.SwitchTo(Monsters, Home);
+        }
 
         private void Player1_Click(object sender, EventArgs e)
         {
@@ -231,7 +309,13 @@ namespace Monster
             TabNavigator.SwitchTo(Monsters, Home);
         }
 
+        
+        
+        
         // Player menu handlers
+
+
+
     
 
         private void Inventory1_Click(object sender, EventArgs e)
@@ -259,9 +343,21 @@ namespace Monster
             TabNavigator.SwitchTo(Monsters, Home);
         }
 
-        private void foodPicture_Click(object sender, EventArgs e)
+      
+
+
+        // Settings handles
+        private void exitButtonSettings_Click(object sender, EventArgs e)
         {
-            // TODO: Implement food interaction logic
+            TabNavigator.SwitchTo(Monsters, Home);
         }
+
+        // Credit handles
+        private void exitButtonCredits_Click(object sender, EventArgs e)
+        {
+            TabNavigator.SwitchTo(Monsters, Home);
+        }
+
+        
     }
 }
