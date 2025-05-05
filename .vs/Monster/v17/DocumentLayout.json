@@ -1,42 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\",
+  "WorkspaceRootPath": "C:\\Users\\marci\\Desktop\\MonsterProject\\monster05.05\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|c:\\users\\rui\\source\\repos\\k0lt\\tpsi_r_d_j_m\\startupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|solutionrelative:startupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|c:\\users\\rui\\source\\repos\\k0lt\\tpsi_r_d_j_m\\uistyler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|solutionrelative:uistyler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\formuiinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|solutionrelative:formuiinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\startupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|c:\\users\\marci\\desktop\\monsterproject\\monster05.05\\startupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|solutionrelative:startupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|solutionrelative:usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\monstermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|solutionrelative:monstermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\monsterprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|solutionrelative:monsterprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|c:\\users\\rui\\source\\repos\\k0lt\\tpsi_r_d_j_m\\currentuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|solutionrelative:currentuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\startupform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|solutionrelative:startupform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|c:\\users\\marci\\desktop\\monsterproject\\monster05.05\\startupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|solutionrelative:startupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,32 +18,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 14,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UIStyler.cs",
-              "DocumentMoniker": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\UIStyler.cs",
-              "RelativeDocumentMoniker": "UIStyler.cs",
-              "ToolTip": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\UIStyler.cs",
-              "RelativeToolTip": "UIStyler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T18:37:52.3Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -79,7 +54,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -87,138 +66,36 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CurrentUser.cs",
-              "DocumentMoniker": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\CurrentUser.cs",
-              "RelativeDocumentMoniker": "CurrentUser.cs",
-              "ToolTip": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\CurrentUser.cs",
-              "RelativeToolTip": "CurrentUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "StartupForm.cs",
+              "DocumentMoniker": "C:\\Users\\marci\\Desktop\\MonsterProject\\monster05.05\\StartupForm.cs",
+              "RelativeDocumentMoniker": "StartupForm.cs",
+              "ToolTip": "C:\\Users\\marci\\Desktop\\MonsterProject\\monster05.05\\StartupForm.cs",
+              "RelativeToolTip": "StartupForm.cs",
+              "ViewState": "AgIAANsAAAAAAAAAAAAawOoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T16:24:56.147Z",
+              "WhenOpened": "2025-05-05T19:54:03.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StartupForm.cs",
-              "DocumentMoniker": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\StartupForm.cs",
-              "RelativeDocumentMoniker": "StartupForm.cs",
-              "ToolTip": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\StartupForm.cs*",
-              "RelativeToolTip": "StartupForm.cs*",
-              "ViewState": "AgIAABQAAAAAAAAAAAAuwCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T16:14:33.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserManager.cs",
-              "DocumentMoniker": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\UserManager.cs",
-              "RelativeDocumentMoniker": "UserManager.cs",
-              "ToolTip": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\UserManager.cs",
-              "RelativeToolTip": "UserManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T14:00:37.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "StartupForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\StartupForm.cs",
+              "DocumentMoniker": "C:\\Users\\marci\\Desktop\\MonsterProject\\monster05.05\\StartupForm.cs",
               "RelativeDocumentMoniker": "StartupForm.cs",
-              "ToolTip": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\StartupForm.cs [Design]*",
-              "RelativeToolTip": "StartupForm.cs [Design]*",
+              "ToolTip": "C:\\Users\\marci\\Desktop\\MonsterProject\\monster05.05\\StartupForm.cs [Design]",
+              "RelativeToolTip": "StartupForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T13:47:31.139Z",
+              "WhenOpened": "2025-05-05T19:30:19.763Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MonsterManager.cs",
-              "DocumentMoniker": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\MonsterManager.cs",
-              "RelativeDocumentMoniker": "MonsterManager.cs",
-              "ToolTip": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\MonsterManager.cs",
-              "RelativeToolTip": "MonsterManager.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAewCYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:53:13.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormUIInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\FormUIInitializer.cs",
-              "RelativeDocumentMoniker": "FormUIInitializer.cs",
-              "ToolTip": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\FormUIInitializer.cs",
-              "RelativeToolTip": "FormUIInitializer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:53:08.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MonsterProgress.cs",
-              "DocumentMoniker": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\MonsterProgress.cs",
-              "RelativeDocumentMoniker": "MonsterProgress.cs",
-              "ToolTip": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\MonsterProgress.cs",
-              "RelativeToolTip": "MonsterProgress.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:53:00.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "StartupForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\StartupForm.Designer.cs",
-              "RelativeDocumentMoniker": "StartupForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\StartupForm.Designer.cs",
-              "RelativeToolTip": "StartupForm.Designer.cs",
-              "ViewState": "AgIAAMAFAAAAAAAAAAAlwNAFAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:52:47.647Z",
-              "EditorCaption": ""
             }
           ]
         }
