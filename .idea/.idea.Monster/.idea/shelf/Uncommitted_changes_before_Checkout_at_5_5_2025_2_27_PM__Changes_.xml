@@ -1,0 +1,32 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_5_5_2025_2_27_PM_[Changes]" date="1746451886843" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.Monster/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_5_2025_2_27_PM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 5/5/2025 2:27 PM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value=".vs/Monster/FileContentIndex/14273031-dc69-4d6e-9bdb-50971d214271.vsidx" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".vs/slnx.sqlite" />
+    <option name="AFTER_PATH" value=".vs/slnx.sqlite" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Monster/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_5_2025_2_27_PM_[Changes]/slnx.sqlite" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".vs/Monster/v17/.suo" />
+    <option name="AFTER_PATH" value=".vs/Monster/v17/.suo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Monster/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_5_2025_2_27_PM_[Changes]/.suo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" />
+    <option name="AFTER_PATH" value="obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Monster/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_5_2025_2_27_PM_[Changes]/DesignTimeResolveAssemblyReferencesInput.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".vs/TPSI_R_D_J_M/v17/.wsuo" />
+    <option name="AFTER_PATH" value=".vs/TPSI_R_D_J_M/v17/.wsuo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Monster/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_5_2025_2_27_PM_[Changes]/.wsuo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="obj/Debug/Monster.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="obj/Debug/Monster.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Monster/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_5_2025_2_27_PM_[Changes]/Monster.csproj.AssemblyReference.cache" />
+  </binary>
+</changelist>

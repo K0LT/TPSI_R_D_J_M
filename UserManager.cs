@@ -2,26 +2,80 @@
 using System.Linq;
 using System.Text.Json;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace Monster.Core
 {
+    // Represents the collection of all users
     public class UserData
     {
         public List<User> Users { get; set; } = new List<User>();
     }
 
-    public class User
+    // Represents a single user with property change notifications
+    public class User : INotifyPropertyChanged
     {
-        public string Username { get; set; }
-        public string PlayerType { get; set; }
+        private string _username;
+        private string _playerType;
+
+        public string Username
+        {
+            get => _username;
+            set
+            {
+                if (_username != value)
+                {
+                    _username = value;
+                    OnPropertyChanged(nameof(Username));
+                }
+            }
+        }
+
+        public string PlayerType
+        {
+            get => _playerType;
+            set
+            {
+                if (_playerType != value)
+                {
+                    _playerType = value;
+                    OnPropertyChanged(nameof(PlayerType));
+                }
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 
+    // Manages user-related operations
     public static class UserManager
     {
         private static readonly string ResourcesPath = Path.Combine(Application.StartupPath, "Resources");
         private static readonly string JsonFilePath = Path.Combine(ResourcesPath, "users.json");
 
+        /// <summary>
+        /// Registers a new user and returns the created User object.
+        /// </summary>
+        public static User RegisterUserAndReturn(string username, string playerType)
+        {
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(playerType))
+                return null;
+
+            if (!RegisterUser(username, playerType))
+                return null;
+
+            return new User { Username = username, PlayerType = playerType };
+        }
+
+        /// <summary>
+        /// Registers a new user by saving their data to persistent storage.
+        /// </summary>
         public static bool RegisterUser(string username, string playerType)
         {
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(playerType))
@@ -31,28 +85,38 @@ namespace Monster.Core
 
             var usersData = LoadUsersData();
             if (usersData.Users.Any(u => u.Username == username))
-                return false;
+                return false; // Username already exists
 
+            // Add the new user and save the data
             usersData.Users.Add(new User { Username = username, PlayerType = playerType });
             SaveUsersData(usersData);
 
-            string userDirectoryPath = Path.Combine(ResourcesPath, username);
-            Directory.CreateDirectory(userDirectoryPath);
+            // Create a directory for the user
+            CreateUserDirectory(username);
 
             return true;
         }
 
+        /// <summary>
+        /// Loads the player type for a given username.
+        /// </summary>
         public static string LoadPlayerType(string username)
         {
             EnsureJsonFileExists();
 
             var usersData = LoadUsersData();
             var user = usersData.Users.FirstOrDefault(u => u.Username == username);
-            return user?.PlayerType ?? "";
+            return user?.PlayerType ?? string.Empty;
         }
 
+        /// <summary>
+        /// Updates and saves the player type for a given username.
+        /// </summary>
         public static void SavePlayerType(string username, string playerType)
         {
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(playerType))
+                return;
+
             EnsureJsonFileExists();
 
             var usersData = LoadUsersData();
@@ -64,6 +128,9 @@ namespace Monster.Core
             }
         }
 
+        /// <summary>
+        /// Ensures the JSON file and resources directory exist.
+        /// </summary>
         private static void EnsureJsonFileExists()
         {
             if (!Directory.Exists(ResourcesPath))
@@ -73,16 +140,32 @@ namespace Monster.Core
                 SaveUsersData(new UserData());
         }
 
+        /// <summary>
+        /// Loads all user data from the JSON file.
+        /// </summary>
         private static UserData LoadUsersData()
         {
             var json = File.ReadAllText(JsonFilePath);
             return JsonSerializer.Deserialize<UserData>(json) ?? new UserData();
         }
 
+        /// <summary>
+        /// Saves all user data to the JSON file.
+        /// </summary>
         private static void SaveUsersData(UserData data)
         {
             var json = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(JsonFilePath, json);
+        }
+
+        /// <summary>
+        /// Creates a directory for the user if it doesn't already exist.
+        /// </summary>
+        private static void CreateUserDirectory(string username)
+        {
+            string userDirectoryPath = Path.Combine(ResourcesPath, username);
+            if (!Directory.Exists(userDirectoryPath))
+                Directory.CreateDirectory(userDirectoryPath);
         }
     }
 
