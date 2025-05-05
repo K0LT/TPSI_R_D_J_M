@@ -169,6 +169,8 @@
     <None Include="Resources\controller1.png" />
     <None Include="Resources\backpack1.png" />
     <None Include="Resources\bed.png" />
+    <None Include="Resources\botaoExit.png" />
+    <None Include="Resources\botaoSave.png" />
     <Content Include="Resources\GrifoGrandeSemBackSmall.png" />
     <Content Include="Resources\GrifopequenoSemBackExtraSmall.png" />
     <Content Include="Resources\GrifopequenoSemBackSmall.png" />

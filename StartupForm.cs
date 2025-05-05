@@ -219,10 +219,7 @@ namespace Monster
             // TODO: Implement logic for loading game based on username input
         }
 
-        private void myMonsters1_Click(object sender, EventArgs e)
-        {
-            TabNavigator.SwitchTo(Monsters, monsterColection);
-        }
+       
 
         private void Player1_Click(object sender, EventArgs e)
         {
@@ -235,10 +232,7 @@ namespace Monster
         }
 
         // Player menu handlers
-        private void MyMonsters2_Click(object sender, EventArgs e)
-        {
-            TabNavigator.SwitchTo(Monsters, monsterColection);
-        }
+    
 
         private void Inventory1_Click(object sender, EventArgs e)
         {

@@ -103,6 +103,16 @@ namespace Monster.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap botaoExit {
+            get {
+                object obj = ResourceManager.GetObject("botaoExit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap botaoExp {
             get {
                 object obj = ResourceManager.GetObject("botaoExp", resourceCulture);
@@ -126,6 +136,16 @@ namespace Monster.Properties {
         internal static System.Drawing.Bitmap botaoLvl {
             get {
                 object obj = ResourceManager.GetObject("botaoLvl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap botaoSave {
+            get {
+                object obj = ResourceManager.GetObject("botaoSave", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
