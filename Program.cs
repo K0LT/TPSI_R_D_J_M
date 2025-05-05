@@ -16,7 +16,7 @@ namespace Monster
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InicialPage());
+            Application.Run(new StartupForm());
         }
     }
 }

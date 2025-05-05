@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 // We MUST include our class library
 using Monster.Core;
+using static System.Collections.Specialized.BitVector32;
 
 namespace Monster
 {
@@ -13,7 +15,6 @@ namespace Monster
         {
             InitializeComponent();
 
-            // Including our class model, where we will gather and store data from
             monsterProgress = new MonsterProgress();
         }
 
@@ -23,20 +24,11 @@ namespace Monster
 
             FormUIInitializer.InitMainMenuButtons(newgame, loadgame, settings, exit, credit);
             FormUIInitializer.InitMonsterMenuButtons(changeName2, feed2, play2, sleep1, inventory2, save2, exitbutton2, evolve, status, MyMonsters2, MyBackpack1, Games1, Shop1, Achievements, Save1, Exit2);
-
-            UIStyler.InitializeUI(this, Monsters);
-
-            UIStyler.InitializeVisibilityAndSecurity(descricao1, panelFirstRegister, nextRegister, panelNextMonsterName, textBoxPassword);
-
-            ImageDescriptionBinder.Bind(draco, descricao1);
-            ImageDescriptionBinder.Bind(grifo, descricao2);
-            ImageDescriptionBinder.Bind(tauro, descricao3);
-            ImageDescriptionBinder.Bind(siren, descricao4);
-
-            // Example of how we can generalize the progress bar logic to fit any monster object/ progress bar
             MonsterBarProgressManager.UpdateMonsterProgressBar(progressBarDraco, monsterProgress);
         }
 
+        
+        
         //voids botoes de menu principal
         private void newgame_Click(object sender, EventArgs e)
         {
@@ -63,6 +55,8 @@ namespace Monster
             TabNavigator.SwitchTo(Monsters, Credits);
         }
 
+        
+        
         //voids botoes de menu new game player
 
         private void PlayerBoy_CheckedChanged(object sender, EventArgs e)
@@ -76,6 +70,35 @@ namespace Monster
             panelFirstRegister.Visible = PlayerGirl.Checked;
 
         }
+
+        private void registerplayer_Click(object sender, EventArgs e)
+        {
+            string user = usernameRegisterMessage.Text.Trim();
+            string playerType = "";
+
+            if (PlayerBoy.Checked)
+            {
+                playerType = "boy";
+            }
+            else if (PlayerGirl.Checked)
+            {
+                playerType = "girl";
+            }
+
+            if (UserManager.RegisterUser(user, playerType))
+            {
+                usernameRegisterMessage.Text = "User registered successfully!";
+
+                nextRegister.Visible = true;
+                registerplayer.Enabled = false;
+                Session.CurrentUser = user;
+            }
+            else
+            {
+                usernameRegisterMessage.Text = "[ERROR] This username already exists or is invalid";
+            }
+        }
+
 
         private void nextRegister_Click(object sender, EventArgs e)
         {
@@ -108,25 +131,58 @@ namespace Monster
             panelMonsterName.Visible = true;
         }
 
+        private string user;
+        private void buttonRegisterMonster_Click(object sender, EventArgs e)
+        {
+            string monsterName = monsterNameBox.Text.Trim();
+            string currentUser = Session.CurrentUser;
+
+            if (string.IsNullOrWhiteSpace(monsterName) || string.IsNullOrWhiteSpace(selectedMonsterType))
+            {
+                return; 
+            }
+
+  
+            MonsterManager.RegisterMonster(currentUser, selectedMonsterType, monsterName);
+        }
+
         private void nextMonsterName_Click(object sender, EventArgs e)
         {
-            TabNavigator.SwitchTo(Monsters, Beginning);
-
+            TabNavigator.SwitchTo(Monsters, TutorialTab);
 
         }
 
-        private void Next_Click(object sender, EventArgs e)
+
+
+
+        // void tutorial
+
+        private void letsPlay_Click(object sender, EventArgs e)
         {
-            TabNavigator.SwitchTo(Monsters, Beginning);
+            TabNavigator.SwitchTo(Monsters, myMonster);
 
         }
 
-        // voids menu First Monster
+
+
+        // void pagina load game
+
+        private void usernameEnterLoad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
+
+
+
 
         //voids botoes Load Game
         private void myMonsters1_Click(object sender, EventArgs e)
         {
-            TabNavigator.SwitchTo(Monsters, MyMonsters);
+            TabNavigator.SwitchTo(Monsters, monsterColection);
         }
 
         private void Player1_Click(object sender, EventArgs e)
@@ -140,10 +196,18 @@ namespace Monster
             TabNavigator.SwitchTo(Monsters, Home);
         }
 
+        
+        
+        
+        
+        
+        
+        
+        
         //voids botoes menu Player
         private void MyMonsters2_Click(object sender, EventArgs e)
         {
-            TabNavigator.SwitchTo(Monsters, MyMonsters);
+            TabNavigator.SwitchTo(Monsters, monsterColection);
         }
 
         private void Inventory1_Click(object sender, EventArgs e)
@@ -177,27 +241,8 @@ namespace Monster
 
         //voids para a imagem / descricao funcionarem
 
-        private void UpdateTextBoxVisibility(bool isVisible)
-        {
-            descricao1.Visible = isVisible;
-        }
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            UpdateTextBoxVisibility(false);
-        }
-        private void draco_MouseEnter(object sender, EventArgs e)
-        {
-            UpdateTextBoxVisibility(true);
-        }
-        private void draco_MouseLeave(object sender, EventArgs e)
-        {
-            UpdateTextBoxVisibility(false);
-        }
-        private void tabPage1_Click_1(object sender, EventArgs e)
-        {
-
-
-        }
+       
+        
 
         // calcular o progresso
         
@@ -211,6 +256,8 @@ namespace Monster
             lblStamina.Text = "Stamina: " + monsterProgress.Stamina;
             lblAttack.Text = "Attack: " + monsterProgress.Attack;
             lblExp.Text = "Exp: " + monsterProgress.Exp;
-        }  
+        }
+
+        
     }
 }

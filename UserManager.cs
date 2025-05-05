@@ -1,44 +1,90 @@
-﻿using System.Windows.Forms;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
+using System.Text.Json;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace Monster.Core
 {
+    public class UserData
+    {
+        public List<User> Users { get; set; } = new List<User>();
+    }
+
+    public class User
+    {
+        public string Username { get; set; }
+        public string PlayerType { get; set; }
+    }
+
     public static class UserManager
     {
-        private static string ResourcesPath = Path.Combine(Application.StartupPath, "Resources");
+        private static readonly string ResourcesPath = Path.Combine(Application.StartupPath, "Resources");
+        private static readonly string JsonFilePath = Path.Combine(ResourcesPath, "users.json");
 
-        public static bool RegisterUser(string username, string password)
+        public static bool RegisterUser(string username, string playerType)
         {
-            string usernameFilePath = Path.Combine(ResourcesPath, "username.txt");
-            string passwordFilePath = Path.Combine(ResourcesPath, "password.txt");
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(playerType))
+                return false;
+
+            EnsureJsonFileExists();
+
+            var usersData = LoadUsersData();
+            if (usersData.Users.Any(u => u.Username == username))
+                return false;
+
+            usersData.Users.Add(new User { Username = username, PlayerType = playerType });
+            SaveUsersData(usersData);
+
             string userDirectoryPath = Path.Combine(ResourcesPath, username);
-
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password)) return false;
-
-            var existingUsers = File.Exists(usernameFilePath) ? File.ReadAllLines(usernameFilePath) : new string[0];
-            if (existingUsers.Contains(username)) return false;
-
-            using (StreamWriter swUser = File.AppendText(usernameFilePath))
-                swUser.WriteLine(username);
-
-            using (StreamWriter swPass = File.AppendText(passwordFilePath))
-                swPass.WriteLine(password);
-
             Directory.CreateDirectory(userDirectoryPath);
+
             return true;
         }
 
-        public static void LoadPlayerType(string user)
+        public static string LoadPlayerType(string username)
         {
-            string userDirectoryPath = Path.Combine(ResourcesPath, user);
-            string playerTypeFilePath = Path.Combine(userDirectoryPath, "playerType.txt");
+            EnsureJsonFileExists();
 
-            if (File.Exists(playerTypeFilePath))
+            var usersData = LoadUsersData();
+            var user = usersData.Users.FirstOrDefault(u => u.Username == username);
+            return user?.PlayerType ?? "";
+        }
+
+        public static void SavePlayerType(string username, string playerType)
+        {
+            EnsureJsonFileExists();
+
+            var usersData = LoadUsersData();
+            var user = usersData.Users.FirstOrDefault(u => u.Username == username);
+            if (user != null)
             {
-                string playerType = File.ReadAllText(playerTypeFilePath).Trim();
-                // Logic to set player type
+                user.PlayerType = playerType;
+                SaveUsersData(usersData);
             }
         }
+
+        private static void EnsureJsonFileExists()
+        {
+            if (!Directory.Exists(ResourcesPath))
+                Directory.CreateDirectory(ResourcesPath);
+
+            if (!File.Exists(JsonFilePath))
+                SaveUsersData(new UserData());
+        }
+
+        private static UserData LoadUsersData()
+        {
+            var json = File.ReadAllText(JsonFilePath);
+            return JsonSerializer.Deserialize<UserData>(json) ?? new UserData();
+        }
+
+        private static void SaveUsersData(UserData data)
+        {
+            var json = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(JsonFilePath, json);
+        }
     }
+
 }
+

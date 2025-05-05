@@ -111,7 +111,7 @@ namespace Monster.Core
         {
             int progress = 0;
 
-            // calcula o progresso com base naquiolo que foi feito, em percentagem
+            // calcula o progresso com base naquilo que foi feito, em percentagem
             if (FeedCount > 0)
             {
                 progress += (FeedCount * 100 / 5);
