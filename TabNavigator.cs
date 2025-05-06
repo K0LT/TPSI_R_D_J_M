@@ -6,7 +6,11 @@ namespace Monster.Core
     {
         public static void SwitchTo(TabControl tabControl, TabPage tabPage)
         {
+
+            tabControl.SuspendLayout();
             tabControl.SelectedTab = tabPage;
+            tabControl.ResumeLayout();
         }
+
     }
 }
