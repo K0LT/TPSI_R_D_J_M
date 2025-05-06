@@ -9,12 +9,14 @@
   <component name="ChangeListManager">
     <list default="true" id="0ae30d53-8ff5-4a41-81fe-5946157f9f2c" name="Changes" comment="Refactor workspace and project files configuration&#10;&#10;Cleaned up redundant metadata and adjusted highlighting settings. Simplified resource files by removing unnecessary comments and ensuring consistency. This enhances maintainability and aligns configurations with recent updates.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Monster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Monster/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/App.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Monster.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Monster.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MonsterSelection.resx" beforeDir="false" afterPath="$PROJECT_DIR$/MonsterSelection.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/Resources.resx" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Resources.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Monster/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Monster/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/TPSI_R_D_J_M/v17/.wsuo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/TPSI_R_D_J_M/v17/.wsuo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/TPSI_R_D_J_M/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/TPSI_R_D_J_M/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StartupForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StartupForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StartupForm.resx" beforeDir="false" afterPath="$PROJECT_DIR$/StartupForm.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Monster.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Monster.csproj.AssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,22 +63,22 @@
       </list>
     </option>
   </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/K0LT/TPSI_R_D_J_M&quot;,
-    &quot;accountId&quot;: &quot;8d6a4703-2374-48fd-ab1d-f7c0c5fadc02&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/K0LT/TPSI_R_D_J_M.git",
+    "accountId": "4cbd02f1-7e5f-41ff-bea3-4e98e6cbad11"
   },
-  &quot;recentNewPullRequestHead&quot;: {
-    &quot;server&quot;: {
-      &quot;useHttp&quot;: false,
-      &quot;host&quot;: &quot;github.com&quot;,
-      &quot;port&quot;: null,
-      &quot;suffix&quot;: null
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
     },
-    &quot;owner&quot;: &quot;K0LT&quot;,
-    &quot;repository&quot;: &quot;TPSI_R_D_J_M&quot;
+    "owner": "K0LT",
+    "repository": "TPSI_R_D_J_M"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
@@ -106,6 +108,10 @@
     <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -171,6 +177,7 @@
       <updated>1746414848381</updated>
       <workItem from="1746414849886" duration="10600000" />
       <workItem from="1746473921193" duration="8630000" />
+      <workItem from="1746499064505" duration="614000" />
     </task>
     <task id="LOCAL-00001" summary="Simplify .gitignore for IDEs and build artifacts&#10;&#10;Consolidated and streamlined the .gitignore file by removing redundant entries and focusing on key patterns for Rider, Visual Studio, and related tools. This improves maintainability and ensures relevant files are ignored without unnecessary bloat.">
       <option name="closed" value="true" />

@@ -5,6 +5,7 @@ using Monster.Core;
 
 namespace Monster
 {
+    
     public partial class StartupForm : Form
     {
         // Consts we can use in more than one try-catch block consistently
@@ -22,6 +23,12 @@ namespace Monster
         public StartupForm()
         {
             InitializeComponent();
+            this.DoubleBuffered = true;
+            SetStyle(ControlStyles.OptimizedDoubleBuffer |
+                     ControlStyles.AllPaintingInWmPaint |
+                     ControlStyles.UserPaint,
+                true);
+
 
             _userBindingSource = new BindingSource();
 
@@ -37,7 +44,6 @@ namespace Monster
         private void Form1_Load(object sender, EventArgs e)
         {
             // Initialize UI components
-            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
 
             MonsterBarProgressManager.InitializeMonsterProgressBar(expBar);
             FormUIInitializer.InitMainMenuButtons(newgame, loadgame, settings, exit, credit);
@@ -53,6 +59,21 @@ namespace Monster
             nextRegister.Visible = false; // botao de next em registo de player
             panelNextMonsterName.Visible = false; // botao next depois de colocar nome do monstro
         }
+        
+        /// <summary>
+        /// Enables WS_EX_COMPOSITED style for automatic double-buffering of all child controls,
+        /// preventing flickering during UI updates by performing off-screen rendering
+        /// </summary>
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;
+                return cp;
+            }
+        }
+
 
         // Main menu button handlers
         private void newgame_Click(object sender, EventArgs e)
@@ -420,4 +441,5 @@ namespace Monster
             }
         }
     }
+    
 }
