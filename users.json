@@ -1,0 +1,9 @@
+// JavaScript source code
+{
+  "users": [
+    {
+      "username": "Marcia",
+      "playerType": "Girl"
+    }
+  ]
+}

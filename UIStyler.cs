@@ -66,10 +66,7 @@ namespace Monster.Core
             button.FlatAppearance.MouseOverBackColor = Color.FromArgb(114, 99, 82);
             button.ForeColor = Color.Peru;
 
-            button.MouseHover += (s, e) =>
-            {
-                button.BackColor = Color.FromArgb(114, 99, 82);
-            };
+            button.MouseHover += (s, e) => { button.BackColor = Color.FromArgb(114, 99, 82); };
 
             button.MouseLeave += (s, e) =>
             {

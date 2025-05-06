@@ -1,0 +1,17 @@
+{
+  "monsters": [
+    {
+      "User": "Marcia",
+      "Name": "Dragão",
+      "Type": "Fire",
+      "Level": 0,
+      "MaxLevel": 10,
+      "HP": 15,
+      "MaxHP": 15,
+      "Stamina": 20,
+      "MaxStamina": 20,
+      "Exp": 0,
+      "MaxExp": 100
+    }
+  ]
+}
