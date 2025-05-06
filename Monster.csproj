@@ -1,202 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
-    <PropertyGroup>
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}</ProjectGuid>
-        <OutputType>WinExe</OutputType>
-        <RootNamespace>Monster</RootNamespace>
-        <AssemblyName>Monster</AssemblyName>
-        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-        <FileAlignment>512</FileAlignment>
-        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-        <Deterministic>true</Deterministic>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-        <PlatformTarget>AnyCPU</PlatformTarget>
-        <DebugSymbols>true</DebugSymbols>
-        <DebugType>full</DebugType>
-        <Optimize>false</Optimize>
-        <OutputPath>bin\Debug\</OutputPath>
-        <DefineConstants>DEBUG;TRACE</DefineConstants>
-        <ErrorReport>prompt</ErrorReport>
-        <WarningLevel>4</WarningLevel>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-        <PlatformTarget>AnyCPU</PlatformTarget>
-        <DebugType>pdbonly</DebugType>
-        <Optimize>true</Optimize>
-        <OutputPath>bin\Release\</OutputPath>
-        <DefineConstants>TRACE</DefineConstants>
-        <ErrorReport>prompt</ErrorReport>
-        <WarningLevel>4</WarningLevel>
-    </PropertyGroup>
-    <ItemGroup>
-        <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-            <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.9.0.4\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
-        </Reference>
-        <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-            <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-        </Reference>
-        <Reference Include="System"/>
-        <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-            <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
-        </Reference>
-        <Reference Include="System.Core"/>
-        <Reference Include="System.DirectoryServices"/>
-        <Reference Include="System.IO.Pipelines, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-            <HintPath>packages\System.IO.Pipelines.9.0.4\lib\net462\System.IO.Pipelines.dll</HintPath>
-        </Reference>
-        <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-            <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
-        </Reference>
-        <Reference Include="System.Numerics"/>
-        <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-            <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
-        </Reference>
-        <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-            <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-        </Reference>
-        <Reference Include="System.Text.Encodings.Web, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-            <HintPath>packages\System.Text.Encodings.Web.9.0.4\lib\net462\System.Text.Encodings.Web.dll</HintPath>
-        </Reference>
-        <Reference Include="System.Text.Json, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-            <HintPath>packages\System.Text.Json.9.0.4\lib\net462\System.Text.Json.dll</HintPath>
-        </Reference>
-        <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-            <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
-        </Reference>
-        <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-            <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
-        </Reference>
-        <Reference Include="System.Xml.Linq"/>
-        <Reference Include="System.Data.DataSetExtensions"/>
-        <Reference Include="Microsoft.CSharp"/>
-        <Reference Include="System.Data"/>
-        <Reference Include="System.Deployment"/>
-        <Reference Include="System.Drawing"/>
-        <Reference Include="System.Net.Http"/>
-        <Reference Include="System.Windows.Forms"/>
-        <Reference Include="System.Xml"/>
-    </ItemGroup>
-    <ItemGroup>
-        <Compile Include="CurrentUser.cs"/>
-        <Compile Include="FormUIInitializer.cs"/>
-        <Compile Include="ImageDescriptionBinder.cs"/>
-        <Compile Include="MonsterBarProgressManager.cs"/>
-        <Compile Include="MonsterManager.cs"/>
-        <Compile Include="MonsterProgress.cs"/>
-        <Compile Include="MonsterSelection.Designer.cs">
-            <AutoGen>True</AutoGen>
-            <DesignTime>True</DesignTime>
-            <DependentUpon>MonsterSelection.resx</DependentUpon>
-        </Compile>
-        <Compile Include="Program.cs"/>
-        <Compile Include="Properties\AssemblyInfo.cs"/>
-        <Compile Include="Properties\Resources.Designer.cs">
-            <AutoGen>True</AutoGen>
-            <DesignTime>True</DesignTime>
-            <DependentUpon>Resources.resx</DependentUpon>
-        </Compile>
-        <Compile Include="StartupForm.cs">
-            <SubType>Form</SubType>
-        </Compile>
-        <Compile Include="StartupForm.Designer.cs">
-            <DependentUpon>StartupForm.cs</DependentUpon>
-        </Compile>
-        <Compile Include="TabNavigator.cs"/>
-        <Compile Include="UIStyler.cs"/>
-        <Compile Include="UserManager.cs"/>
-        <EmbeddedResource Include="MonsterSelection.resx">
-            <Generator>ResXFileCodeGenerator</Generator>
-            <LastGenOutput>MonsterSelection.Designer.cs</LastGenOutput>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Properties\Resources.resx">
-            <Generator>ResXFileCodeGenerator</Generator>
-            <SubType>Designer</SubType>
-            <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-        </EmbeddedResource>
-        <EmbeddedResource Include="StartupForm.resx">
-            <DependentUpon>StartupForm.cs</DependentUpon>
-        </EmbeddedResource>
-        <None Include="packages.config"/>
-        <None Include="Properties\README.md"/>
-        <None Include="Properties\Settings.settings">
-            <Generator>SettingsSingleFileGenerator</Generator>
-            <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-        </None>
-        <Compile Include="Properties\Settings.Designer.cs">
-            <AutoGen>True</AutoGen>
-            <DependentUpon>Settings.settings</DependentUpon>
-            <DesignTimeSharedInput>True</DesignTimeSharedInput>
-        </Compile>
-    </ItemGroup>
-    <ItemGroup>
-        <None Include="App.config"/>
-    </ItemGroup>
-    <ItemGroup>
-        <None Include="Resources\c61a36e9-a982-4c28-97e9-ba90dea83ce2.png"/>
-    </ItemGroup>
-    <ItemGroup>
-        <None Include="Resources\dragao1semback.png"/>
-    </ItemGroup>
-    <ItemGroup>
-        <None Include="Resources\dragao1sembackpequeno1.png"/>
-    </ItemGroup>
-    <ItemGroup>
-        <None Include="Resources\dragao1sembackpequeno11.png"/>
-    </ItemGroup>
-    <ItemGroup>
-        <None Include="Resources\dragao1sembackpequeno.png"/>
-    </ItemGroup>
-    <ItemGroup>
-        <None Include="Resources\dragao2.1sem back.png"/>
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include=".gitignore"/>
-        <Content Include="Resources\1744993266826%281%29.jpg"/>
-        <None Include="Resources\tauroteenmedium.png"/>
-        <None Include="Resources\dracobabysmall.png"/>
-        <None Include="Resources\grifobabysmall.png"/>
-        <None Include="Resources\dracoAdultMedium.png"/>
-        <None Include="Resources\dracoteenmedium.png"/>
-        <None Include="Resources\grifoadultmedium.png"/>
-        <None Include="Resources\botaoHP.png"/>
-        <None Include="Resources\botaoStamina.png"/>
-        <None Include="Resources\botaoExp.png"/>
-        <None Include="Resources\botaoLvl.png"/>
-        <None Include="Resources\backpack.png"/>
-        <None Include="Resources\controller1.png"/>
-        <None Include="Resources\backpack1.png"/>
-        <None Include="Resources\bed.png"/>
-        <Content Include="Resources\GrifoGrandeSemBackSmall.png"/>
-        <Content Include="Resources\GrifopequenoSemBackExtraSmall.png"/>
-        <Content Include="Resources\GrifopequenoSemBackSmall.png"/>
-        <None Include="Resources\grifoteenmedium.png"/>
-        <None Include="Resources\hpButton.png"/>
-        <None Include="Resources\playerboy.png"/>
-        <None Include="Resources\playergirl.png"/>
-        <None Include="Resources\noodles.png"/>
-        <None Include="Resources\playergirlgmedium.png"/>
-        <Content Include="Resources\playergirlgrandesembacksmall.png"/>
-        <None Include="Resources\playergirlgrandesembacksmall1.png"/>
-        <Content Include="Resources\playergrandesemback.png"/>
-        <Content Include="Resources\playergrandesembacksmall.png"/>
-        <None Include="Resources\playergrandesembacksmall1.png"/>
-        <Content Include="Resources\playersembackextrasmall.png"/>
-        <Content Include="Resources\playersembackpage.png"/>
-        <None Include="Resources\sirenbabysmall.png"/>
-        <Content Include="Resources\SirenGrandeSemBacksmall.png"/>
-        <Content Include="Resources\sirenpequenoSemBackextrasmall.png"/>
-        <Content Include="Resources\sirenpequenoSemBacksmall.png"/>
-        <None Include="Resources\taurobabysmall.png"/>
-        <None Include="Resources\tauroadultmedium.png"/>
-        <None Include="Resources\sirentadultmedium.png"/>
-        <None Include="Resources\sirenteenmedium.png"/>
-        <Content Include="Resources\TauroGrandeSemBacksmall.png"/>
-        <Content Include="Resources\TauropequenoSemBackextrasmall.png"/>
-        <Content Include="Resources\TauropequenoSemBacksmall.png"/>
-    </ItemGroup>
-    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Monster</RootNamespace>
+    <AssemblyName>Monster</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.9.0.4\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IO.Pipelines, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Pipelines.9.0.4\lib\net462\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.9.0.4\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Json.9.0.4\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CurrentUser.cs" />
+    <Compile Include="FormUIInitializer.cs" />
+    <Compile Include="ImageDescriptionBinder.cs" />
+    <Compile Include="MonsterBarProgressManager.cs" />
+    <Compile Include="MonsterManager.cs" />
+    <Compile Include="MonsterProgress.cs" />
+    <Compile Include="MonsterSelection.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MonsterSelection.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StartupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartupForm.Designer.cs">
+      <DependentUpon>StartupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabNavigator.cs" />
+    <Compile Include="UIStyler.cs" />
+    <Compile Include="UserManager.cs" />
+    <EmbeddedResource Include="MonsterSelection.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MonsterSelection.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartupForm.resx">
+      <DependentUpon>StartupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\README.md" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c61a36e9-a982-4c28-97e9-ba90dea83ce2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragao1semback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragao1sembackpequeno1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragao1sembackpequeno11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragao1sembackpequeno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragao2.1sem back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="Resources\1744993266826%281%29.jpg" />
+    <None Include="Resources\tauroteenmedium.png" />
+    <None Include="Resources\dracobabysmall.png" />
+    <None Include="Resources\grifobabysmall.png" />
+    <None Include="Resources\dracoAdultMedium.png" />
+    <None Include="Resources\dracoteenmedium.png" />
+    <None Include="Resources\grifoadultmedium.png" />
+    <None Include="Resources\botaoHP.png" />
+    <None Include="Resources\botaoStamina.png" />
+    <None Include="Resources\botaoExp.png" />
+    <None Include="Resources\botaoLvl.png" />
+    <None Include="Resources\backpack.png" />
+    <None Include="Resources\controller1.png" />
+    <None Include="Resources\backpack1.png" />
+    <None Include="Resources\bed.png" />
+    <Content Include="Resources\botaoBattle.png" />
+    <Content Include="Resources\botaoExit.png" />
+    <None Include="Resources\botaoSave.png" />
+    <Content Include="Resources\GrifoGrandeSemBackSmall.png" />
+    <Content Include="Resources\GrifopequenoSemBackExtraSmall.png" />
+    <Content Include="Resources\GrifopequenoSemBackSmall.png" />
+    <None Include="Resources\grifoteenmedium.png" />
+    <None Include="Resources\hpButton.png" />
+    <None Include="Resources\playerboy.png" />
+    <None Include="Resources\playergirl.png" />
+    <None Include="Resources\noodles.png" />
+    <None Include="Resources\playergirlgmedium.png" />
+    <Content Include="Resources\playergirlgrandesembacksmall.png" />
+    <None Include="Resources\playergirlgrandesembacksmall1.png" />
+    <Content Include="Resources\playergrandesemback.png" />
+    <Content Include="Resources\playergrandesembacksmall.png" />
+    <None Include="Resources\playergrandesembacksmall1.png" />
+    <Content Include="Resources\playersembackextrasmall.png" />
+    <Content Include="Resources\playersembackpage.png" />
+    <None Include="Resources\sirenbabysmall.png" />
+    <Content Include="Resources\SirenGrandeSemBacksmall.png" />
+    <Content Include="Resources\sirenpequenoSemBackextrasmall.png" />
+    <Content Include="Resources\sirenpequenoSemBacksmall.png" />
+    <None Include="Resources\taurobabysmall.png" />
+    <None Include="Resources\tauroadultmedium.png" />
+    <None Include="Resources\sirentadultmedium.png" />
+    <None Include="Resources\sirenteenmedium.png" />
+    <Content Include="Resources\TauroGrandeSemBacksmall.png" />
+    <Content Include="Resources\TauropequenoSemBackextrasmall.png" />
+    <Content Include="Resources\TauropequenoSemBacksmall.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

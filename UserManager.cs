@@ -57,7 +57,7 @@ namespace Monster.Core
     public static class UserManager
     {
         private static readonly string ResourcesPath = Path.Combine(Application.StartupPath, "Resources");
-        private static readonly string JsonFilePath = Path.Combine(ResourcesPath, "users.json");
+        private static readonly string usersFilePath = Path.Combine(ResourcesPath, "users.json");
 
         /// <summary>
         ///     Registers a new user and returns the created User object.
@@ -136,16 +136,16 @@ namespace Monster.Core
             if (!Directory.Exists(ResourcesPath))
                 Directory.CreateDirectory(ResourcesPath);
 
-            if (!File.Exists(JsonFilePath))
+            if (!File.Exists(usersFilePath))
                 SaveUsersData(new UserData());
         }
 
         /// <summary>
         ///     Loads all user data from the JSON file.
         /// </summary>
-        private static UserData LoadUsersData()
+        public static UserData LoadUsersData()
         {
-            var json = File.ReadAllText(JsonFilePath);
+            var json = File.ReadAllText(usersFilePath);
             return JsonSerializer.Deserialize<UserData>(json) ?? new UserData();
         }
 
@@ -155,7 +155,7 @@ namespace Monster.Core
         private static void SaveUsersData(UserData data)
         {
             var json = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(JsonFilePath, json);
+            File.WriteAllText(usersFilePath, json);
         }
 
         /// <summary>

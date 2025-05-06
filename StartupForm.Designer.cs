@@ -129,7 +129,6 @@
             this.usernameEnterLoadLabel = new System.Windows.Forms.Label();
             this.NewGameMonster = new System.Windows.Forms.TabPage();
             this.exitButtonNewGameMonster = new System.Windows.Forms.PictureBox();
-            this.panelNextMonsterName = new System.Windows.Forms.Panel();
             this.nextMonsterName = new System.Windows.Forms.Button();
             this.panelMonsterName = new System.Windows.Forms.Panel();
             this.messageMonster = new System.Windows.Forms.Label();
@@ -259,7 +258,6 @@
             this.panel6.SuspendLayout();
             this.NewGameMonster.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButtonNewGameMonster)).BeginInit();
-            this.panelNextMonsterName.SuspendLayout();
             this.panelMonsterName.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grifo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tauro)).BeginInit();
@@ -302,12 +300,12 @@
             // 
             // exitButtonTutorial
             // 
-            this.exitButtonTutorial.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonTutorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonTutorial.Image = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonTutorial.Location = new System.Drawing.Point(3, 2);
             this.exitButtonTutorial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButtonTutorial.Name = "exitButtonTutorial";
-            this.exitButtonTutorial.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonTutorial.Size = new System.Drawing.Size(86, 86);
             this.exitButtonTutorial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.exitButtonTutorial.TabIndex = 31;
             this.exitButtonTutorial.TabStop = false;
@@ -367,12 +365,12 @@
             // 
             // battleButtonPic
             // 
-            this.battleButtonPic.BackgroundImage = global::Monster.Properties.Resources.botaoBattle;
             this.battleButtonPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.battleButtonPic.Location = new System.Drawing.Point(1097, 672);
+            this.battleButtonPic.Image = global::Monster.Properties.Resources.botaoBattle;
+            this.battleButtonPic.Location = new System.Drawing.Point(1147, 687);
             this.battleButtonPic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.battleButtonPic.Name = "battleButtonPic";
-            this.battleButtonPic.Size = new System.Drawing.Size(134, 138);
+            this.battleButtonPic.Size = new System.Drawing.Size(85, 85);
             this.battleButtonPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.battleButtonPic.TabIndex = 16;
             this.battleButtonPic.TabStop = false;
@@ -511,12 +509,12 @@
             // 
             // exitButtonMyMonster
             // 
-            this.exitButtonMyMonster.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonMyMonster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonMyMonster.Image = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonMyMonster.Location = new System.Drawing.Point(228, 659);
             this.exitButtonMyMonster.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButtonMyMonster.Name = "exitButtonMyMonster";
-            this.exitButtonMyMonster.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonMyMonster.Size = new System.Drawing.Size(86, 86);
             this.exitButtonMyMonster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.exitButtonMyMonster.TabIndex = 10;
             this.exitButtonMyMonster.TabStop = false;
@@ -524,12 +522,12 @@
             // 
             // saveButtonMyMonster
             // 
-            this.saveButtonMyMonster.BackgroundImage = global::Monster.Properties.Resources.botaoSave;
             this.saveButtonMyMonster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.saveButtonMyMonster.Image = global::Monster.Properties.Resources.botaoSave;
             this.saveButtonMyMonster.Location = new System.Drawing.Point(93, 659);
             this.saveButtonMyMonster.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveButtonMyMonster.Name = "saveButtonMyMonster";
-            this.saveButtonMyMonster.Size = new System.Drawing.Size(88, 87);
+            this.saveButtonMyMonster.Size = new System.Drawing.Size(86, 86);
             this.saveButtonMyMonster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.saveButtonMyMonster.TabIndex = 9;
             this.saveButtonMyMonster.TabStop = false;
@@ -1059,12 +1057,12 @@
             // 
             // exitPlayerMenuPicture
             // 
-            this.exitPlayerMenuPicture.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
             this.exitPlayerMenuPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitPlayerMenuPicture.Image = global::Monster.Properties.Resources.botaoExit;
             this.exitPlayerMenuPicture.Location = new System.Drawing.Point(159, 606);
             this.exitPlayerMenuPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitPlayerMenuPicture.Name = "exitPlayerMenuPicture";
-            this.exitPlayerMenuPicture.Size = new System.Drawing.Size(88, 87);
+            this.exitPlayerMenuPicture.Size = new System.Drawing.Size(86, 86);
             this.exitPlayerMenuPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.exitPlayerMenuPicture.TabIndex = 10;
             this.exitPlayerMenuPicture.TabStop = false;
@@ -1165,12 +1163,12 @@
             // 
             // exitButtonCredits
             // 
-            this.exitButtonCredits.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonCredits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonCredits.Image = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonCredits.Location = new System.Drawing.Point(1018, 728);
             this.exitButtonCredits.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButtonCredits.Name = "exitButtonCredits";
-            this.exitButtonCredits.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonCredits.Size = new System.Drawing.Size(86, 86);
             this.exitButtonCredits.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.exitButtonCredits.TabIndex = 32;
             this.exitButtonCredits.TabStop = false;
@@ -1274,12 +1272,12 @@
             // 
             // exitButtonSettings
             // 
-            this.exitButtonSettings.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonSettings.Image = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonSettings.Location = new System.Drawing.Point(1018, 674);
             this.exitButtonSettings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButtonSettings.Name = "exitButtonSettings";
-            this.exitButtonSettings.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonSettings.Size = new System.Drawing.Size(86, 86);
             this.exitButtonSettings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.exitButtonSettings.TabIndex = 31;
             this.exitButtonSettings.TabStop = false;
@@ -1358,12 +1356,12 @@
             // 
             // exitButtonLoadGame
             // 
-            this.exitButtonLoadGame.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonLoadGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonLoadGame.Image = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonLoadGame.Location = new System.Drawing.Point(3, 2);
             this.exitButtonLoadGame.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButtonLoadGame.Name = "exitButtonLoadGame";
-            this.exitButtonLoadGame.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonLoadGame.Size = new System.Drawing.Size(86, 86);
             this.exitButtonLoadGame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.exitButtonLoadGame.TabIndex = 30;
             this.exitButtonLoadGame.TabStop = false;
@@ -1434,8 +1432,8 @@
             // NewGameMonster
             // 
             this.NewGameMonster.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(39)))), ((int)(((byte)(22)))));
+            this.NewGameMonster.Controls.Add(this.nextMonsterName);
             this.NewGameMonster.Controls.Add(this.exitButtonNewGameMonster);
-            this.NewGameMonster.Controls.Add(this.panelNextMonsterName);
             this.NewGameMonster.Controls.Add(this.panelMonsterName);
             this.NewGameMonster.Controls.Add(this.sirenselect);
             this.NewGameMonster.Controls.Add(this.tauroselect);
@@ -1456,26 +1454,16 @@
             // 
             // exitButtonNewGameMonster
             // 
-            this.exitButtonNewGameMonster.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonNewGameMonster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonNewGameMonster.Image = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonNewGameMonster.Location = new System.Drawing.Point(3, 2);
             this.exitButtonNewGameMonster.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButtonNewGameMonster.Name = "exitButtonNewGameMonster";
-            this.exitButtonNewGameMonster.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonNewGameMonster.Size = new System.Drawing.Size(86, 86);
             this.exitButtonNewGameMonster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.exitButtonNewGameMonster.TabIndex = 30;
             this.exitButtonNewGameMonster.TabStop = false;
             this.exitButtonNewGameMonster.Click += new System.EventHandler(this.exitButtonNewGameMonster_Click);
-            // 
-            // panelNextMonsterName
-            // 
-            this.panelNextMonsterName.Controls.Add(this.nextMonsterName);
-            this.panelNextMonsterName.Location = new System.Drawing.Point(929, 795);
-            this.panelNextMonsterName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelNextMonsterName.Name = "panelNextMonsterName";
-            this.panelNextMonsterName.Size = new System.Drawing.Size(251, 70);
-            this.panelNextMonsterName.TabIndex = 19;
-            this.panelNextMonsterName.Visible = false;
             // 
             // nextMonsterName
             // 
@@ -1483,7 +1471,7 @@
             this.nextMonsterName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nextMonsterName.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextMonsterName.ForeColor = System.Drawing.Color.Peru;
-            this.nextMonsterName.Location = new System.Drawing.Point(17, 14);
+            this.nextMonsterName.Location = new System.Drawing.Point(947, 829);
             this.nextMonsterName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nextMonsterName.Name = "nextMonsterName";
             this.nextMonsterName.Size = new System.Drawing.Size(216, 46);
@@ -1712,12 +1700,12 @@
             // 
             // exitButtonNewGamePlayer
             // 
-            this.exitButtonNewGamePlayer.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonNewGamePlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonNewGamePlayer.Image = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonNewGamePlayer.Location = new System.Drawing.Point(3, 2);
             this.exitButtonNewGamePlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButtonNewGamePlayer.Name = "exitButtonNewGamePlayer";
-            this.exitButtonNewGamePlayer.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonNewGamePlayer.Size = new System.Drawing.Size(86, 86);
             this.exitButtonNewGamePlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.exitButtonNewGamePlayer.TabIndex = 29;
             this.exitButtonNewGamePlayer.TabStop = false;
@@ -2018,12 +2006,12 @@
             // 
             // exitButtonMiniGames
             // 
-            this.exitButtonMiniGames.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonMiniGames.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonMiniGames.Image = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonMiniGames.Location = new System.Drawing.Point(3, 2);
             this.exitButtonMiniGames.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButtonMiniGames.Name = "exitButtonMiniGames";
-            this.exitButtonMiniGames.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonMiniGames.Size = new System.Drawing.Size(86, 86);
             this.exitButtonMiniGames.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.exitButtonMiniGames.TabIndex = 31;
             this.exitButtonMiniGames.TabStop = false;
@@ -2110,12 +2098,12 @@
             // 
             // exitButtonIventory
             // 
-            this.exitButtonIventory.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonIventory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonIventory.Image = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonIventory.Location = new System.Drawing.Point(3, 2);
             this.exitButtonIventory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButtonIventory.Name = "exitButtonIventory";
-            this.exitButtonIventory.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonIventory.Size = new System.Drawing.Size(86, 86);
             this.exitButtonIventory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.exitButtonIventory.TabIndex = 33;
             this.exitButtonIventory.TabStop = false;
@@ -2211,12 +2199,12 @@
             // 
             // exitButtonBattleMode
             // 
-            this.exitButtonBattleMode.BackgroundImage = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonBattleMode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonBattleMode.Image = global::Monster.Properties.Resources.botaoExit;
             this.exitButtonBattleMode.Location = new System.Drawing.Point(359, 425);
             this.exitButtonBattleMode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButtonBattleMode.Name = "exitButtonBattleMode";
-            this.exitButtonBattleMode.Size = new System.Drawing.Size(88, 87);
+            this.exitButtonBattleMode.Size = new System.Drawing.Size(86, 86);
             this.exitButtonBattleMode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.exitButtonBattleMode.TabIndex = 35;
             this.exitButtonBattleMode.TabStop = false;
@@ -2347,7 +2335,6 @@
             this.NewGameMonster.ResumeLayout(false);
             this.NewGameMonster.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButtonNewGameMonster)).EndInit();
-            this.panelNextMonsterName.ResumeLayout(false);
             this.panelMonsterName.ResumeLayout(false);
             this.panelMonsterName.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grifo)).EndInit();
@@ -2410,7 +2397,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label selectUserLabel;
         protected internal System.Windows.Forms.TabPage NewGameMonster;
-        private System.Windows.Forms.Panel panelNextMonsterName;
         private System.Windows.Forms.Button nextMonsterName;
         private System.Windows.Forms.Panel panelMonsterName;
         private System.Windows.Forms.Label Message1;

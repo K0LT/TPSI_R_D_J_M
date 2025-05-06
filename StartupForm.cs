@@ -57,22 +57,23 @@ namespace Monster
 
             panelFirstRegister.Visible = false; // registo player escondido
             nextRegister.Visible = false; // botao de next em registo de player
-            panelNextMonsterName.Visible = false; // botao next depois de colocar nome do monstro
+            nextMonsterName.Visible = false; //Botao next em escolher primeiro monstro escondido
         }
         
         /// <summary>
         /// Enables WS_EX_COMPOSITED style for automatic double-buffering of all child controls,
         /// preventing flickering during UI updates by performing off-screen rendering
         /// </summary>
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                CreateParams cp = base.CreateParams;
-                cp.ExStyle |= 0x02000000;
-                return cp;
-            }
-        }
+       
+        //protected override CreateParams CreateParams
+        //{
+        //    get
+        //    {
+        //        CreateParams cp = base.CreateParams;
+        //        cp.ExStyle |= 0x02000000;
+        //        return cp;
+        //    }
+        //}
 
 
         // Main menu button handlers
@@ -109,6 +110,8 @@ namespace Monster
         private void exitButtonNewGamePlayer_Click(object sender, EventArgs e)
         {
             TabNavigator.SwitchTo(Monsters, Home);
+            PlayerBoy_CheckedChanged(this, EventArgs.Empty);
+            PlayerGirl_CheckedChanged(this, EventArgs.Empty);
         }
 
         private void PlayerBoy_CheckedChanged(object sender, EventArgs e)
@@ -201,9 +204,9 @@ namespace Monster
             }
         }
 
+
+
         // Monster selection handlers
-        // TODO: Não esta a dar para selecionar e registar o nome do monster.
-        //TODO: colocar messageBox em vez de textBox nas mensagens de erro/sucesso
 
         private void dracoselect_Click(object sender, EventArgs e)
         {
@@ -257,11 +260,13 @@ namespace Monster
             var successMessage = $"Monster '{monsterName}' of type '{monsterType}' has been successfully registered!";
             MessageBox.Show(successMessage, SuccessTitle,
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+            nextMonsterName.Visible = true;
         }
 
         private void nextMonsterName_Click(object sender, EventArgs e)
         {
-            MonsterRegister_Click(this, EventArgs.Empty);
+            
+
             TabNavigator.SwitchTo(Monsters, TutorialTab);
         }
 
@@ -338,6 +343,15 @@ namespace Monster
         private void usernameEnterLoad_TextChanged(object sender, EventArgs e)
         {
             // TODO: Implement logic for loading game based on username input
+            var username = usernameEnterLoad.Text.Trim();
+            var currentUser = UserManager.LoadUsersData();
+            if (currentUser != null)
+            {
+                BindUserToUI();
+                
+            }
+            
+
         }
 
         private void exitButtonLoadGame_Click(object sender, EventArgs e)
