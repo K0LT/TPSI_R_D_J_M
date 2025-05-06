@@ -7,17 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ae30d53-8ff5-4a41-81fe-5946157f9f2c" name="Changes" comment="Refactor workspace and project files configuration&#10;&#10;Cleaned up redundant metadata and adjusted highlighting settings. Simplified resource files by removing unnecessary comments and ensuring consistency. This enhances maintainability and aligns configurations with recent updates.">
+    <list default="true" id="0ae30d53-8ff5-4a41-81fe-5946157f9f2c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Monster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Monster/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Monster/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Monster/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/TPSI_R_D_J_M/v17/.wsuo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/TPSI_R_D_J_M/v17/.wsuo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/TPSI_R_D_J_M/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/TPSI_R_D_J_M/v17/DocumentLayout.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StartupForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StartupForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Monster.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Monster.csproj.AssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,31 +74,18 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/.vs/VSWorkspaceState.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/App.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/App.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/CurrentUser.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/32c22f7c1b7049ccad5f07031bb43bf35b8590/01/35d9c974/Control.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/32c22f7c1b7049ccad5f07031bb43bf35b8590/72/bf793159/Application.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/32c22f7c1b7049ccad5f07031bb43bf35b8590/8d/6d515b3a/NativeWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/32c22f7c1b7049ccad5f07031bb43bf35b8590/e1/6a45e179/Button.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/32c22f7c1b7049ccad5f07031bb43bf35b8590/ea/75af056a/ButtonBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FormUIInitializer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/FormUIInitializer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/ImageDescriptionBinder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/MonsterBarProgressManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MonsterManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/MonsterProgress.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MonsterProgress.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/Properties/AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/StartupForm.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/StartupForm.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/StartupForm.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/StartupForm.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/monsters.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -125,24 +104,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.Monster.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.33835617&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#5 on SecondVisual&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.Monster.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "XThreadsFramesViewSplitterKey": "0.33835617",
+    "git-widget-placeholder": "#5 on SecondVisual",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Monster" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -177,7 +156,7 @@
       <updated>1746414848381</updated>
       <workItem from="1746414849886" duration="10600000" />
       <workItem from="1746473921193" duration="8630000" />
-      <workItem from="1746499064505" duration="614000" />
+      <workItem from="1746499064505" duration="2533000" />
     </task>
     <task id="LOCAL-00001" summary="Simplify .gitignore for IDEs and build artifacts&#10;&#10;Consolidated and streamlined the .gitignore file by removing redundant entries and focusing on key patterns for Rider, Visual Studio, and related tools. This improves maintainability and ensures relevant files are ignored without unnecessary bloat.">
       <option name="closed" value="true" />
@@ -195,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746475051450</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="enhance UI performance (eliminate flickering)">
+      <option name="closed" value="true" />
+      <created>1746499718878</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746499718878</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +206,9 @@
     <MESSAGE value="Separated functionality away from main form and into a class library (stored in namespace Monster.Core).&#10;&#10;# Conflicts:&#10;#&#9;.vs/TPSI_R_D_J_M/v17/.wsuo&#10;#&#9;.vs/TPSI_R_D_J_M/v17/DocumentLayout.json&#10;#&#9;obj/Debug/Monster.csproj.AssemblyReference.cache" />
     <MESSAGE value="Simplify .gitignore for IDEs and build artifacts&#10;&#10;Consolidated and streamlined the .gitignore file by removing redundant entries and focusing on key patterns for Rider, Visual Studio, and related tools. This improves maintainability and ensures relevant files are ignored without unnecessary bloat." />
     <MESSAGE value="Refactor FormUIInitializer and cleanup unused files&#10;&#10;Removed unnecessary whitespace in FormUIInitializer and ensured proper formatting. Updated workspace and project-related files to sync with recent changes, cleaning up metadata and redundant entries. Applied minor refinements across related resource and UI files for consistency." />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Refactor workspace and project files configuration&#10;&#10;Cleaned up redundant metadata and adjusted highlighting settings. Simplified resource files by removing unnecessary comments and ensuring consistency. This enhances maintainability and aligns configurations with recent updates." />
+    <MESSAGE value="enhance UI performance (eliminate flickering)" />
+    <option name="LAST_COMMIT_MESSAGE" value="enhance UI performance (eliminate flickering)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -236,6 +225,32 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MonsterManager.cs</url>
+          <line>40</line>
+          <properties documentPath="D:\dev\c#\TPSI_R_D_J_M\MonsterManager.cs" containingFunctionPresentation="Method 'RegisterMonster'">
+            <startOffsets>
+              <option value="1182" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1275" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/StartupForm.cs</url>
+          <line>195</line>
+          <properties documentPath="D:\dev\c#\TPSI_R_D_J_M\StartupForm.cs" containingFunctionPresentation="Method 'monsterTypeSelect'">
+            <startOffsets>
+              <option value="6408" />
+            </startOffsets>
+            <endOffsets>
+              <option value="6474" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

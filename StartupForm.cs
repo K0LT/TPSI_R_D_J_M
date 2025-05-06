@@ -13,12 +13,12 @@ namespace Monster
         private const string SuccessTitle = "Registration Successful";
         private const string ValidationErrorMessage = "Please provide a monster name and select a monster type.";
 
-        private readonly MonsterCreationState _monsterCreationState;
-        private readonly MonsterProgress _monsterProgress;
+        private  MonsterCreationState _monsterCreationState;
+        private  MonsterProgress _monsterProgress;
 
-        private readonly BindingSource _monsterTypeBindingSource;
+        private  BindingSource _monsterTypeBindingSource;
 
-        private readonly BindingSource _userBindingSource;
+        private  BindingSource _userBindingSource;
 
         public StartupForm()
         {
@@ -193,9 +193,9 @@ namespace Monster
         {
             if (sender is Button button)
             {
-                var monsterType = button.Text.Trim().ToLower();
+                _monsterCreationState.SelectedType = button.Text.Trim().ToLower();
 
-                _monsterTypeBindingSource.DataSource = monsterType;
+                _monsterTypeBindingSource.DataSource = _monsterCreationState.SelectedType;
 
                 panelMonsterName.Visible = true;
             }
@@ -224,32 +224,21 @@ namespace Monster
         {
             monsterTypeSelect(sender, EventArgs.Empty);
         }
-
-
-        private void SelectMonsterType(string monsterType)
-        {
-            if (string.IsNullOrEmpty(monsterType))
-                throw new ArgumentNullException(nameof(monsterType));
-
-            _monsterCreationState.SelectedType = monsterType;
-            panelMonsterName.Visible = true;
-        }
-
-
+        
         private void MonsterRegister_Click(object sender, EventArgs e)
         {
             var monsterName = monsterNameBox.Text.Trim();
-            var selectedMonsterType = _monsterTypeBindingSource.Current as string;
+            var selectedMonsterType = _monsterTypeBindingSource.Current;
             var currentUser = Session.CurrentUser;
 
-            if (!IsValidMonsterInput(monsterName, selectedMonsterType))
+            if (!IsValidMonsterInput(monsterName, selectedMonsterType.ToString()))
             {
                 ShowValidationError();
                 return;
             }
 
-            MonsterManager.RegisterMonster(currentUser, selectedMonsterType, monsterName);
-            ShowRegistrationSuccess(monsterName, selectedMonsterType);
+            MonsterManager.RegisterMonster(currentUser, selectedMonsterType.ToString(), monsterName);
+            ShowRegistrationSuccess(monsterName, selectedMonsterType.ToString());
         }
 
         private bool IsValidMonsterInput(string monsterName, string monsterType)
@@ -272,8 +261,8 @@ namespace Monster
 
         private void nextMonsterName_Click(object sender, EventArgs e)
         {
-            TabNavigator.SwitchTo(Monsters, TutorialTab);
             MonsterRegister_Click(this, EventArgs.Empty);
+            TabNavigator.SwitchTo(Monsters, TutorialTab);
         }
 
         private void exitButtonNewGameMonster_Click(object sender, EventArgs e)
