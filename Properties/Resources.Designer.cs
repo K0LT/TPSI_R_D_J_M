@@ -93,9 +93,9 @@ namespace Monster.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bed {
+        internal static System.Drawing.Bitmap badMonsterRedHurtMedium {
             get {
-                object obj = ResourceManager.GetObject("bed", resourceCulture);
+                object obj = ResourceManager.GetObject("badMonsterRedHurtMedium", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,49 @@ namespace Monster.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap botaoBattle {
+        internal static System.Drawing.Bitmap badMonsterRedMedium {
             get {
-                object obj = ResourceManager.GetObject("botaoBattle", resourceCulture);
+                object obj = ResourceManager.GetObject("badMonsterRedMedium", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap badMonsterSkullHurtMedium {
+            get {
+                object obj = ResourceManager.GetObject("badMonsterSkullHurtMedium", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap badMonsterSkullMedium {
+            get {
+                object obj = ResourceManager.GetObject("badMonsterSkullMedium", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap battleBackground {
+            get {
+                object obj = ResourceManager.GetObject("battleBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bed {
+            get {
+                object obj = ResourceManager.GetObject("bed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,6 +243,36 @@ namespace Monster.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dracoBackHeadSmall {
+            get {
+                object obj = ResourceManager.GetObject("dracoBackHeadSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dracoFaceXSmall {
+            get {
+                object obj = ResourceManager.GetObject("dracoFaceXSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dracoHurtSmall {
+            get {
+                object obj = ResourceManager.GetObject("dracoHurtSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dracoteenmedium {
             get {
                 object obj = ResourceManager.GetObject("dracoteenmedium", resourceCulture);
@@ -253,9 +323,39 @@ namespace Monster.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap grifoBackHeadSmall {
+            get {
+                object obj = ResourceManager.GetObject("grifoBackHeadSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grifoFaceXSmall {
+            get {
+                object obj = ResourceManager.GetObject("grifoFaceXSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GrifoGrandeSemBackSmall {
             get {
                 object obj = ResourceManager.GetObject("GrifoGrandeSemBackSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grifoHurtSmall {
+            get {
+                object obj = ResourceManager.GetObject("grifoHurtSmall", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,9 +513,39 @@ namespace Monster.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sirenBackHeadSmall {
+            get {
+                object obj = ResourceManager.GetObject("sirenBackHeadSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sirenFaceXSmall {
+            get {
+                object obj = ResourceManager.GetObject("sirenFaceXSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SirenGrandeSemBacksmall {
             get {
                 object obj = ResourceManager.GetObject("SirenGrandeSemBacksmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sirenHurtSmall {
+            get {
+                object obj = ResourceManager.GetObject("sirenHurtSmall", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -483,9 +613,39 @@ namespace Monster.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap tauroBackHeadSmall {
+            get {
+                object obj = ResourceManager.GetObject("tauroBackHeadSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tauroFaceXSmall {
+            get {
+                object obj = ResourceManager.GetObject("tauroFaceXSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TauroGrandeSemBacksmall {
             get {
                 object obj = ResourceManager.GetObject("TauroGrandeSemBacksmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tauroHurtSmall {
+            get {
+                object obj = ResourceManager.GetObject("tauroHurtSmall", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
