@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
-using Monster.Core;
+
 // We MUST include our class library
+using Monster.Core;
+
+using static System.Collections.Specialized.BitVector32;
 
 namespace Monster
 {
@@ -34,6 +38,9 @@ namespace Monster
 
             // Bind monster progress to the progress bar
             MonsterBarProgressManager.UpdateMonsterProgressBar(expBar, _monsterProgress);
+
+            
+            //TODO: Colocar estas pre-definiçoes no form initializer 
 
 
             panelFirstRegister.Visible = false;  // registo player escondido
@@ -70,6 +77,9 @@ namespace Monster
 
 
         // New game player menu handlers
+              
+        //TODO: colocar messageBox em vez de textBox nas mensagens de erro/sucesso
+
         private void exitButtonNewGamePlayer_Click(object sender, EventArgs e)
         {
             TabNavigator.SwitchTo(Monsters, Home);
@@ -171,6 +181,9 @@ namespace Monster
         }
 
         // Monster selection handlers
+        // TODO: Não esta a dar para selecionar e registar o nome do monster.
+        //TODO: colocar messageBox em vez de textBox nas mensagens de erro/sucesso
+
         private void dracoselect_Click(object sender, EventArgs e)
         {
             monsterTypeSelect(sender, EventArgs.Empty);
@@ -227,7 +240,12 @@ namespace Monster
         }
 
 
-        // Tutorial navigation
+
+
+        // Tutorial handlers
+        // TODO: fazer todo o tutorial
+
+
         private void exitButtonTutorial_Click(object sender, EventArgs e)
         {
             TabNavigator.SwitchTo(Monsters, Home);
@@ -240,15 +258,20 @@ namespace Monster
 
 
         // Monster page handlers
+        //TODO: Colocar o icon de noodles e sleep a cumprir as suas funçoes;
+        //TODO: Atualizar as progress bars, tanto a nivel de status como a nivel de design;
+        //TODO: Atualizar a imagem e nome do monster que foi selecionado e que esta a jogar atualmente;
+        
 
         private void exitButtonMyMonster_Click(object sender, EventArgs e)
         {
+            // TODO: Colocar pop up de confirmaçao que quer sair pois irá sair do jogo por completo
             TabNavigator.SwitchTo(Monsters, Home);
         }
 
         private void saveButtonMyMonster_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void boyPicturemall_Click(object sender, EventArgs e)
@@ -287,6 +310,7 @@ namespace Monster
 
 
         // Load game handlers
+        // TODO: Editar melhor esteticamente, colocar o botão a funcionar para ir buscar ao ficheiro json o user ja existente
         private void usernameEnterLoad_TextChanged(object sender, EventArgs e)
         {
             // TODO: Implement logic for loading game based on username input
@@ -297,33 +321,38 @@ namespace Monster
             TabNavigator.SwitchTo(Monsters, Home);
         }
 
-        private void Player1_Click(object sender, EventArgs e)
+
+        //Player Menu Handlers
+        //TODO: Atualizar os achievements e ao selecionar o monstro, confirmar se aparece com os status / Nome /imagem atualizados
+       
+        private void exitPlayerMenuPicture_Click(object sender, EventArgs e)
         {
-            TabNavigator.SwitchTo(Monsters, Player);
+            TabNavigator.SwitchTo(Monsters, myMonster);
+
         }
 
-        private void Exit1_Click(object sender, EventArgs e)
-        {
-            TabNavigator.SwitchTo(Monsters, Home);
-        }
 
-        
-        
-        
-        // Player menu handlers
+
+
 
 
 
     
 
-        private void Inventory1_Click(object sender, EventArgs e)
+        // Mini Games handlers
+        // TODO: Inserir mini jogos
+
+        private void exitButtonMiniGames_Click(object sender, EventArgs e)
         {
-            // TODO: Implement inventory logic
+            TabNavigator.SwitchTo(Monsters, myMonster);
         }
 
-        private void Games1_Click(object sender, EventArgs e)
+
+        // Iventory handlers
+        //TODO: Criar inventario / imagens 
+        private void exitButtonIventory_Click_1(object sender, EventArgs e)
         {
-            // TODO: Implement games logic
+            TabNavigator.SwitchTo(Monsters, myMonster);
         }
 
         private void Shop1_Click(object sender, EventArgs e)
@@ -336,12 +365,13 @@ namespace Monster
             // TODO: Implement save logic
         }
 
-        private void Exit2_Click(object sender, EventArgs e)
+        // Battle Mode Handlers
+        //TODO: Criar battle mode / imagens 
+        private void exitButtonBattleMode_Click(object sender, EventArgs e)
         {
-            TabNavigator.SwitchTo(Monsters, Home);
+            TabNavigator.SwitchTo(Monsters, myMonster);
         }
-
-      
+       
 
 
         // Settings handles
@@ -349,6 +379,8 @@ namespace Monster
         {
             TabNavigator.SwitchTo(Monsters, Home);
         }
+
+
 
         // Credit handles
         private void exitButtonCredits_Click(object sender, EventArgs e)
