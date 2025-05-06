@@ -1,5 +1,4 @@
 ﻿using System.Drawing;
-using System.Security.Cryptography;
 using System.Windows.Forms;
 
 namespace Monster.Core
@@ -74,16 +73,6 @@ namespace Monster.Core
                 button.BackColor = Color.FromArgb(74, 59, 42);
                 button.ForeColor = Color.Peru;
             };
-        }
-
-        public static void HideTabControls(params TabControl[] tabControls)
-        {
-            foreach (TabControl tb in tabControls)
-            {
-                tb.Appearance = TabAppearance.FlatButtons;
-                tb.ItemSize = new Size(0, 0);
-                tb.SizeMode = TabSizeMode.Fixed;
-            }
         }
     }
 }

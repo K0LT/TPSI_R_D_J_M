@@ -1,9 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
-using System.Drawing;
 using System.Windows.Forms;
 using Monster.Core;
-using Monster.Properties;
 
 namespace Monster
 {
@@ -22,20 +20,9 @@ namespace Monster
 
         private  BindingSource _userBindingSource;
 
-
-        private Image exemploImage = Resources.backpack;
-
         public StartupForm()
         {
-
-            // The program won't start fullscreen without this for now
-            this.WindowState = FormWindowState.Maximized;
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.Bounds = Screen.PrimaryScreen.Bounds;
-            this.StartPosition = FormStartPosition.Manual;
-
             InitializeComponent();
-
             this.DoubleBuffered = true;
             SetStyle(ControlStyles.OptimizedDoubleBuffer |
                      ControlStyles.AllPaintingInWmPaint |
@@ -57,7 +44,6 @@ namespace Monster
         private void Form1_Load(object sender, EventArgs e)
         {
             // Initialize UI components
-            //UIStyler.HideTabControls(tabControl1,tabControl3,tabControl4,tabImagensMonster,Monsters);
 
             MonsterBarProgressManager.InitializeMonsterProgressBar(expBar);
             FormUIInitializer.InitMainMenuButtons(newgame, loadgame, settings, exit, credit);
@@ -79,15 +65,15 @@ namespace Monster
         /// preventing flickering during UI updates by performing off-screen rendering
         /// </summary>
        
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                CreateParams cp = base.CreateParams;
-                cp.ExStyle |= 0x02000000;
-                return cp;
-            }
-        }
+        //protected override CreateParams CreateParams
+        //{
+        //    get
+        //    {
+        //        CreateParams cp = base.CreateParams;
+        //        cp.ExStyle |= 0x02000000;
+        //        return cp;
+        //    }
+        //}
 
 
         // Main menu button handlers
@@ -361,7 +347,7 @@ namespace Monster
             var currentUser = UserManager.LoadUsersData();
             if (currentUser != null)
             {
-                //BindUserToUI();
+               
                 
             }
             
