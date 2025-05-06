@@ -170,7 +170,7 @@
     <None Include="Resources\controller1.png" />
     <None Include="Resources\backpack1.png" />
     <None Include="Resources\bed.png" />
-    <Content Include="Resources\botaoBattle.png" />
+    <None Include="Resources\botaoBattle.png" />
     <Content Include="Resources\botaoExit.png" />
     <None Include="Resources\botaoSave.png" />
     <Content Include="Resources\GrifoGrandeSemBackSmall.png" />

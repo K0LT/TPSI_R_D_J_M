@@ -128,8 +128,8 @@
             this.loadButton = new System.Windows.Forms.Button();
             this.usernameEnterLoadLabel = new System.Windows.Forms.Label();
             this.NewGameMonster = new System.Windows.Forms.TabPage();
-            this.exitButtonNewGameMonster = new System.Windows.Forms.PictureBox();
             this.nextMonsterName = new System.Windows.Forms.Button();
+            this.exitButtonNewGameMonster = new System.Windows.Forms.PictureBox();
             this.panelMonsterName = new System.Windows.Forms.Panel();
             this.messageMonster = new System.Windows.Forms.Label();
             this.Message1 = new System.Windows.Forms.Label();
@@ -1452,19 +1452,6 @@
             this.NewGameMonster.TabIndex = 1;
             this.NewGameMonster.Text = "newgameMonster";
             // 
-            // exitButtonNewGameMonster
-            // 
-            this.exitButtonNewGameMonster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.exitButtonNewGameMonster.Image = global::Monster.Properties.Resources.botaoExit;
-            this.exitButtonNewGameMonster.Location = new System.Drawing.Point(3, 2);
-            this.exitButtonNewGameMonster.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.exitButtonNewGameMonster.Name = "exitButtonNewGameMonster";
-            this.exitButtonNewGameMonster.Size = new System.Drawing.Size(86, 86);
-            this.exitButtonNewGameMonster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.exitButtonNewGameMonster.TabIndex = 30;
-            this.exitButtonNewGameMonster.TabStop = false;
-            this.exitButtonNewGameMonster.Click += new System.EventHandler(this.exitButtonNewGameMonster_Click);
-            // 
             // nextMonsterName
             // 
             this.nextMonsterName.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -1479,6 +1466,19 @@
             this.nextMonsterName.Text = "Next";
             this.nextMonsterName.UseVisualStyleBackColor = true;
             this.nextMonsterName.Click += new System.EventHandler(this.nextMonsterName_Click);
+            // 
+            // exitButtonNewGameMonster
+            // 
+            this.exitButtonNewGameMonster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitButtonNewGameMonster.Image = global::Monster.Properties.Resources.botaoExit;
+            this.exitButtonNewGameMonster.Location = new System.Drawing.Point(3, 2);
+            this.exitButtonNewGameMonster.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exitButtonNewGameMonster.Name = "exitButtonNewGameMonster";
+            this.exitButtonNewGameMonster.Size = new System.Drawing.Size(86, 86);
+            this.exitButtonNewGameMonster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.exitButtonNewGameMonster.TabIndex = 30;
+            this.exitButtonNewGameMonster.TabStop = false;
+            this.exitButtonNewGameMonster.Click += new System.EventHandler(this.exitButtonNewGameMonster_Click);
             // 
             // panelMonsterName
             // 

@@ -134,6 +134,10 @@
     <value>..\Resources\botaoExp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GrifoGrandeSemBackSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrifoGrandeSemBackSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+            Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sirenpequenoSemBackextrasmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sirenpequenoSemBackextrasmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -242,9 +246,8 @@
     <value>..\Resources\sirenteenmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GrifoGrandeSemBackSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GrifoGrandeSemBackSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
-            Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="botaoExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\botaoExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sirenpequenoSemBacksmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sirenpequenoSemBacksmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
@@ -290,13 +293,10 @@
     <value>..\Resources\playerboy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="botaoBattle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\botaoBattle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="botaoExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\botaoExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="botaoSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botaoSave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="botaoBattle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\botaoBattle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

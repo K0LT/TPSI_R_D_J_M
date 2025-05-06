@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\marci\\Desktop\\MonsterProject\\monster06.05\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|c:\\users\\marci\\desktop\\monsterproject\\monster06.05\\startupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|c:\\users\\marci\\desktop\\monsterproject\\monster06.05\\startupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|solutionrelative:startupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|C:\\Users\\marci\\Desktop\\MonsterProject\\monster06.05\\startupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|solutionrelative:startupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|c:\\users\\marci\\desktop\\monsterproject\\monster06.05\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|C:\\Users\\marci\\Desktop\\MonsterProject\\monster06.05\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|solutionrelative:usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|c:\\users\\marci\\desktop\\monsterproject\\monster06.05\\startupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4EC8E74A-B2EF-4552-A9D9-E837FAD1AFF1}|Monster.csproj|solutionrelative:startupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserManager.cs",
               "DocumentMoniker": "C:\\Users\\marci\\Desktop\\MonsterProject\\monster06.05\\UserManager.cs",
               "RelativeDocumentMoniker": "UserManager.cs",
@@ -86,25 +86,24 @@
               "RelativeToolTip": "UserManager.cs",
               "ViewState": "AgIAAIQAAAAAAAAAAAAIwJUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T17:12:30.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T17:12:30.53Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "StartupForm.cs",
               "DocumentMoniker": "C:\\Users\\marci\\Desktop\\MonsterProject\\monster06.05\\StartupForm.cs",
               "RelativeDocumentMoniker": "StartupForm.cs",
               "ToolTip": "C:\\Users\\marci\\Desktop\\MonsterProject\\monster06.05\\StartupForm.cs",
               "RelativeToolTip": "StartupForm.cs",
-              "ViewState": "AgIAAEQBAAAAAAAAAAAhwFoBAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAABYBAAAAAAAAAAAgwFoBAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T17:03:17.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "StartupForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\marci\\Desktop\\MonsterProject\\monster06.05\\StartupForm.cs",
               "RelativeDocumentMoniker": "StartupForm.cs",
