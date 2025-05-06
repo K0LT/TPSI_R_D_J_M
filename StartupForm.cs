@@ -1,16 +1,18 @@
 ﻿using System;
-using System.Drawing;
+using System.ComponentModel;
 using System.Windows.Forms;
-
-// We MUST include our class library
 using Monster.Core;
-
-using static System.Collections.Specialized.BitVector32;
 
 namespace Monster
 {
     public partial class StartupForm : Form
     {
+        // Consts we can use in more than one try-catch block consistently
+        private const string ErrorTitle = "Error";
+        private const string SuccessTitle = "Registration Successful";
+        private const string ValidationErrorMessage = "Please provide a monster name and select a monster type.";
+
+        private readonly MonsterCreationState _monsterCreationState;
         private readonly MonsterProgress _monsterProgress;
 
         private readonly BindingSource _monsterTypeBindingSource;
@@ -26,6 +28,10 @@ namespace Monster
             _monsterTypeBindingSource = new BindingSource();
 
             _monsterProgress = new MonsterProgress();
+
+            _monsterCreationState = new MonsterCreationState();
+
+            _monsterTypeBindingSource.DataSource = _monsterCreationState;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -39,12 +45,12 @@ namespace Monster
             // Bind monster progress to the progress bar
             MonsterBarProgressManager.UpdateMonsterProgressBar(expBar, _monsterProgress);
 
-            
+
             //TODO: Colocar estas pre-definiçoes no form initializer 
 
 
-            panelFirstRegister.Visible = false;  // registo player escondido
-            nextRegister.Visible = false;   // botao de next em registo de player
+            panelFirstRegister.Visible = false; // registo player escondido
+            nextRegister.Visible = false; // botao de next em registo de player
             panelNextMonsterName.Visible = false; // botao next depois de colocar nome do monstro
         }
 
@@ -75,16 +81,15 @@ namespace Monster
         }
 
 
-
         // New game player menu handlers
-              
+
         //TODO: colocar messageBox em vez de textBox nas mensagens de erro/sucesso
 
         private void exitButtonNewGamePlayer_Click(object sender, EventArgs e)
         {
             TabNavigator.SwitchTo(Monsters, Home);
-
         }
+
         private void PlayerBoy_CheckedChanged(object sender, EventArgs e)
         {
             panelFirstRegister.Visible = PlayerBoy.Checked;
@@ -123,9 +128,6 @@ namespace Monster
             {
                 usernameRegisterMessage.Text = "[ERROR] This username already exists or is invalid.";
             }
-
-            nextRegister.Visible = true;
-            registerplayer.Enabled = false;
         }
 
         private string GetSelectedPlayerType()
@@ -155,7 +157,7 @@ namespace Monster
             // Bind UI controls to the user properties
             usernameRegister.DataBindings.Clear();
             usernameRegister.DataBindings.Add("Text", _userBindingSource, "Username");
-
+            // TODO: tabs myMonster (gender) | playerMenu bindings 
             // Example: Bind other UI elements if needed
             // playerTypeLabel.DataBindings.Add("Text", _userBindingSource, "PlayerType");
         }
@@ -164,8 +166,6 @@ namespace Monster
         {
             TabNavigator.SwitchTo(Monsters, NewGameMonster);
         }
-
-
 
         // General Purpose Type Selector
         private void monsterTypeSelect(object sender, EventArgs e)
@@ -204,11 +204,16 @@ namespace Monster
             monsterTypeSelect(sender, EventArgs.Empty);
         }
 
+
         private void SelectMonsterType(string monsterType)
         {
-            _monsterTypeBindingSource.DataSource = monsterType; // Update the BindingSource
-            panelMonsterName.Visible = true; // Show the panel for entering the monster name
+            if (string.IsNullOrEmpty(monsterType))
+                throw new ArgumentNullException(nameof(monsterType));
+
+            _monsterCreationState.SelectedType = monsterType;
+            panelMonsterName.Visible = true;
         }
+
 
         private void MonsterRegister_Click(object sender, EventArgs e)
         {
@@ -216,17 +221,32 @@ namespace Monster
             var selectedMonsterType = _monsterTypeBindingSource.Current as string;
             var currentUser = Session.CurrentUser;
 
-            if (string.IsNullOrWhiteSpace(monsterName) || string.IsNullOrWhiteSpace(selectedMonsterType))
+            if (!IsValidMonsterInput(monsterName, selectedMonsterType))
             {
-                MessageBox.Show("Please provide a monster name and select a monster type.", "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ShowValidationError();
                 return;
             }
 
             MonsterManager.RegisterMonster(currentUser, selectedMonsterType, monsterName);
-            MessageBox.Show(
-                $"Monster '{monsterName}' of type '{selectedMonsterType}' has been successfully registered!",
-                "Registration Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ShowRegistrationSuccess(monsterName, selectedMonsterType);
+        }
+
+        private bool IsValidMonsterInput(string monsterName, string monsterType)
+        {
+            return !string.IsNullOrWhiteSpace(monsterName) && !string.IsNullOrWhiteSpace(monsterType);
+        }
+
+        private void ShowValidationError()
+        {
+            MessageBox.Show(ValidationErrorMessage, ErrorTitle,
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void ShowRegistrationSuccess(string monsterName, string monsterType)
+        {
+            var successMessage = $"Monster '{monsterName}' of type '{monsterType}' has been successfully registered!";
+            MessageBox.Show(successMessage, SuccessTitle,
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void nextMonsterName_Click(object sender, EventArgs e)
@@ -234,12 +254,11 @@ namespace Monster
             TabNavigator.SwitchTo(Monsters, TutorialTab);
             MonsterRegister_Click(this, EventArgs.Empty);
         }
+
         private void exitButtonNewGameMonster_Click(object sender, EventArgs e)
         {
             TabNavigator.SwitchTo(Monsters, Home);
         }
-
-
 
 
         // Tutorial handlers
@@ -250,18 +269,18 @@ namespace Monster
         {
             TabNavigator.SwitchTo(Monsters, Home);
         }
+
         private void letsPlay_Click(object sender, EventArgs e)
         {
             TabNavigator.SwitchTo(Monsters, myMonster);
         }
 
 
-
         // Monster page handlers
         //TODO: Colocar o icon de noodles e sleep a cumprir as suas funçoes;
         //TODO: Atualizar as progress bars, tanto a nivel de status como a nivel de design;
         //TODO: Atualizar a imagem e nome do monster que foi selecionado e que esta a jogar atualmente;
-        
+
 
         private void exitButtonMyMonster_Click(object sender, EventArgs e)
         {
@@ -271,7 +290,6 @@ namespace Monster
 
         private void saveButtonMyMonster_Click(object sender, EventArgs e)
         {
-
         }
 
         private void boyPicturemall_Click(object sender, EventArgs e)
@@ -283,12 +301,12 @@ namespace Monster
         {
             TabNavigator.SwitchTo(Monsters, Player);
         }
-        
+
         private void controllerPicture_Click(object sender, EventArgs e)
         {
             TabNavigator.SwitchTo(Monsters, miniGames);
-
         }
+
         private void backpackPic_Click(object sender, EventArgs e)
         {
             TabNavigator.SwitchTo(Monsters, inventory);
@@ -303,10 +321,6 @@ namespace Monster
         {
             // TODO: Implement food interaction logic
         }
-
-
-
-
 
 
         // Load game handlers
@@ -324,20 +338,15 @@ namespace Monster
 
         //Player Menu Handlers
         //TODO: Atualizar os achievements e ao selecionar o monstro, confirmar se aparece com os status / Nome /imagem atualizados
-       
+
         private void exitPlayerMenuPicture_Click(object sender, EventArgs e)
         {
             TabNavigator.SwitchTo(Monsters, myMonster);
-
         }
 
 
+        // Player menu handlers
 
-
-
-
-
-    
 
         // Mini Games handlers
         // TODO: Inserir mini jogos
@@ -371,7 +380,6 @@ namespace Monster
         {
             TabNavigator.SwitchTo(Monsters, myMonster);
         }
-       
 
 
         // Settings handles
@@ -381,13 +389,35 @@ namespace Monster
         }
 
 
-
         // Credit handles
         private void exitButtonCredits_Click(object sender, EventArgs e)
         {
             TabNavigator.SwitchTo(Monsters, Home);
         }
 
-        
+        public class MonsterCreationState : INotifyPropertyChanged
+        {
+            private string _selectedType;
+
+            public string SelectedType
+            {
+                get => _selectedType;
+                set
+                {
+                    if (_selectedType != value)
+                    {
+                        _selectedType = value;
+                        OnPropertyChanged(nameof(SelectedType));
+                    }
+                }
+            }
+
+            public event PropertyChangedEventHandler PropertyChanged;
+
+            protected virtual void OnPropertyChanged(string propertyName)
+            {
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
 }

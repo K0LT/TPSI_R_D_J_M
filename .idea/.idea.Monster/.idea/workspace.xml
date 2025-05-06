@@ -7,31 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ae30d53-8ff5-4a41-81fe-5946157f9f2c" name="Changes" comment="Separated functionality away from main form and into a class library (stored in namespace Monster.Core).&#10;&#10;# Conflicts:&#10;#&#9;.vs/TPSI_R_D_J_M/v17/.wsuo&#10;#&#9;.vs/TPSI_R_D_J_M/v17/DocumentLayout.json&#10;#&#9;obj/Debug/Monster.csproj.AssemblyReference.cache">
+    <list default="true" id="0ae30d53-8ff5-4a41-81fe-5946157f9f2c" name="Changes" comment="Refactor workspace and project files configuration&#10;&#10;Cleaned up redundant metadata and adjusted highlighting settings. Simplified resource files by removing unnecessary comments and ensuring consistency. This enhances maintainability and aligns configurations with recent updates.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Monster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Monster/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/App.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrentUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrentUser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FormUIInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FormUIInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageDescriptionBinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDescriptionBinder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Monster.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Monster.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MonsterBarProgressManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MonsterBarProgressManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MonsterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MonsterManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MonsterProgress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MonsterProgress.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MonsterSelection.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MonsterSelection.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MonsterSelection.resx" beforeDir="false" afterPath="$PROJECT_DIR$/MonsterSelection.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Resources.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Properties/Resources.resx" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Resources.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/Settings.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Settings.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/Settings.settings" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Settings.settings" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StartupForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StartupForm.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StartupForm.resx" beforeDir="false" afterPath="$PROJECT_DIR$/StartupForm.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TabNavigator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TabNavigator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UIStyler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UIStyler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Monster.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Monster.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/packages.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,27 +33,27 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN"
+      &quot;state&quot;: &quot;OPEN&quot;
     }
   ],
-  "lastFilter": {
-    "state": "OPEN"
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
-  <component name="GitHubPullRequestState"><![CDATA[{
-  "prStates": [
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
     {
-      "id": {
-        "id": "PR_kwDOOZo47s6U-4sb",
-        "number": 4
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOOZo47s6U-4sb&quot;,
+        &quot;number&quot;: 4
       },
-      "lastSeen": 1746473971965
+      &quot;lastSeen&quot;: 1746473971965
     }
   ]
-}]]></component>
+}</component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
       <list>
@@ -94,20 +78,37 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/.vs/VSWorkspaceState.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/App.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/App.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/CurrentUser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FormUIInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/FormUIInitializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/ImageDescriptionBinder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/MonsterBarProgressManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MonsterManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/MonsterProgress.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MonsterProgress.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/Properties/AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/StartupForm.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/StartupForm.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/StartupForm.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/StartupForm.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/monsters.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Rui/source/repos/K0LT/TPSI_R_D_J_M/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="SWEA" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -118,24 +119,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.Monster.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "XThreadsFramesViewSplitterKey": "0.33835617",
-    "git-widget-placeholder": "#5 on SecondVisual",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.Monster.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.33835617&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#5 on SecondVisual&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Monster" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -169,8 +170,25 @@
       <option name="presentableId" value="Default" />
       <updated>1746414848381</updated>
       <workItem from="1746414849886" duration="10600000" />
-      <workItem from="1746473921193" duration="739000" />
+      <workItem from="1746473921193" duration="8630000" />
     </task>
+    <task id="LOCAL-00001" summary="Simplify .gitignore for IDEs and build artifacts&#10;&#10;Consolidated and streamlined the .gitignore file by removing redundant entries and focusing on key patterns for Rider, Visual Studio, and related tools. This improves maintainability and ensures relevant files are ignored without unnecessary bloat.">
+      <option name="closed" value="true" />
+      <created>1746474829999</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746474829999</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Refactor FormUIInitializer and cleanup unused files&#10;&#10;Removed unnecessary whitespace in FormUIInitializer and ensured proper formatting. Updated workspace and project-related files to sync with recent changes, cleaning up metadata and redundant entries. Applied minor refinements across related resource and UI files for consistency.">
+      <option name="closed" value="true" />
+      <created>1746475051450</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746475051450</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +209,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Separated functionality away from main form and into a class library (stored in namespace Monster.Core).&#10;&#10;# Conflicts:&#10;#&#9;.vs/TPSI_R_D_J_M/v17/.wsuo&#10;#&#9;.vs/TPSI_R_D_J_M/v17/DocumentLayout.json&#10;#&#9;obj/Debug/Monster.csproj.AssemblyReference.cache" />
+    <MESSAGE value="Simplify .gitignore for IDEs and build artifacts&#10;&#10;Consolidated and streamlined the .gitignore file by removing redundant entries and focusing on key patterns for Rider, Visual Studio, and related tools. This improves maintainability and ensures relevant files are ignored without unnecessary bloat." />
+    <MESSAGE value="Refactor FormUIInitializer and cleanup unused files&#10;&#10;Removed unnecessary whitespace in FormUIInitializer and ensured proper formatting. Updated workspace and project-related files to sync with recent changes, cleaning up metadata and redundant entries. Applied minor refinements across related resource and UI files for consistency." />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

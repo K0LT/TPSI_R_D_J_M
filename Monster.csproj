@@ -154,7 +154,7 @@
         <None Include="Resources\dragao2.1sem back.png"/>
     </ItemGroup>
     <ItemGroup>
-        <Content Include=".gitignore" />
+        <Content Include=".gitignore"/>
         <Content Include="Resources\1744993266826%281%29.jpg"/>
         <None Include="Resources\tauroteenmedium.png"/>
         <None Include="Resources\dracobabysmall.png"/>
