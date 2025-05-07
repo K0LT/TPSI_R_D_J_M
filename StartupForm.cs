@@ -28,35 +28,44 @@ namespace Monster
         public StartupForm()
         {
 
-            // The program won't start fullscreen without this for now
+
+            InitialUIConfigurations();
+            InitializeComponent();
+
+
+
+
+
+
+        }
+
+        private void InitialUIConfigurations()
+        {
             this.WindowState = FormWindowState.Maximized;
             this.FormBorderStyle = FormBorderStyle.None;
             this.Bounds = Screen.PrimaryScreen.Bounds;
             this.StartPosition = FormStartPosition.Manual;
-
-            InitializeComponent();
-
             this.DoubleBuffered = true;
             SetStyle(ControlStyles.OptimizedDoubleBuffer |
                      ControlStyles.AllPaintingInWmPaint |
-                     ControlStyles.UserPaint,
-                true);
+                     ControlStyles.UserPaint, true);
+        }
 
-
+        private void InitializeBindings()
+        {
             _userBindingSource = new BindingSource();
-
             _monsterTypeBindingSource = new BindingSource();
-
             _monsterProgress = new MonsterProgress();
 
+            // TODO: (k0lt) Come back and refactor once the Monster/User classes are setup properly
             _monsterCreationState = new MonsterCreationState();
-
             _monsterTypeBindingSource.DataSource = _monsterCreationState;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             // Initialize UI components
+
             //UIStyler.HideTabControls(tabControl1,tabControl3,tabControl4,tabImagensMonster,Monsters);
 
             MonsterBarProgressManager.InitializeMonsterProgressBar(expBar);

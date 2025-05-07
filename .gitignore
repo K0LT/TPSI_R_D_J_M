@@ -56,3 +56,5 @@ artifacts/
 # Local application data
 Resources
 /GitIgnoreRules.md
+/.vs/Monster/v17/.suo
+/.vs/Monster/v17/DocumentLayout.json
