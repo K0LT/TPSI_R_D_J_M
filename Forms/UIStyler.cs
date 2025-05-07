@@ -1,8 +1,7 @@
 ﻿using System.Drawing;
-using System.Security.Cryptography;
 using System.Windows.Forms;
 
-namespace Monster.Core
+namespace Monster.UI.Forms
 {
     public static class UIStyler
     {
@@ -16,20 +15,6 @@ namespace Monster.Core
             tabControl.Appearance = TabAppearance.FlatButtons;
             tabControl.ItemSize = new Size(0, 1);
             tabControl.SizeMode = TabSizeMode.Fixed;
-        }
-
-        public static void InitializeVisibilityAndSecurity(
-            TextBox descricao,
-            Panel panelFirstRegister,
-            Button nextRegister,
-            Panel panelNextMonsterName,
-            TextBox textBoxPassword)
-        {
-            descricao.Visible = false;
-            panelFirstRegister.Visible = false;
-            nextRegister.Visible = false;
-            panelNextMonsterName.Visible = false;
-            textBoxPassword.PasswordChar = '*';
         }
 
         public static void StyleMainMenuButton(Button button)
@@ -74,16 +59,6 @@ namespace Monster.Core
                 button.BackColor = Color.FromArgb(74, 59, 42);
                 button.ForeColor = Color.Peru;
             };
-        }
-
-        public static void HideTabControls(params TabControl[] tabControls)
-        {
-            foreach (TabControl tb in tabControls)
-            {
-                tb.Appearance = TabAppearance.FlatButtons;
-                tb.ItemSize = new Size(0, 0);
-                tb.SizeMode = TabSizeMode.Fixed;
-            }
         }
     }
 }

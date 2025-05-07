@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using Monster.UI.Forms;
 
-namespace Monster
+namespace Monster.UI
 {
     internal static class Program
     {

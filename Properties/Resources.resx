@@ -119,184 +119,232 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="backpack1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backpack1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+    <value>..\..\Monster.Interface\Resources\backpack1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="badMonsterRedHurtMedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\badMonsterRedHurtMedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="SirenGrandeSemBacksmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SirenGrandeSemBacksmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\SirenGrandeSemBacksmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="playergirl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playergirl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+    <value>..\..\Monster.Interface\Resources\playergirl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="botaoExp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\botaoExp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+    <value>..\..\Monster.Interface\Resources\botaoExp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GrifoGrandeSemBackSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GrifoGrandeSemBackSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
-            Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="badMonsterSkullMedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\badMonsterSkullMedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sirenpequenoSemBackextrasmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sirenpequenoSemBackextrasmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\sirenpequenoSemBackextrasmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TauropequenoSemBacksmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TauropequenoSemBacksmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\TauropequenoSemBacksmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tauroFaceXSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\tauroFaceXSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="taurobabysmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\taurobabysmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+    <value>..\..\Monster.Interface\Resources\taurobabysmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="grifoFaceXSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\grifoFaceXSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="playersembackpage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playersembackpage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\playersembackpage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="playergirlgmedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playergirlgmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
-            Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tauroHurtSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\tauroHurtSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grifoBackHeadSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\grifoBackHeadSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GrifopequenoSemBackSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GrifopequenoSemBackSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\GrifopequenoSemBackSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tauroadultmedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tauroadultmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
-            Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dracoFaceXSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\dracoFaceXSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sirenbabysmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sirenbabysmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+    <value>..\..\Monster.Interface\Resources\sirenbabysmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="playergrandesemback" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playergrandesemback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\playergrandesemback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="playergrandesembacksmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playergrandesembacksmall1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\playergrandesembacksmall1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="grifoadultmedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grifoadultmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\grifoadultmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="botaoHP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\botaoHP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+    <value>..\..\Monster.Interface\Resources\botaoHP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dracoHurtSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\dracoHurtSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="grifoteenmedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grifoteenmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+    <value>..\..\Monster.Interface\Resources\bed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1744993266826(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1744993266826(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\1744993266826(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="badMonsterRedMedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\badMonsterRedMedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dracoteenmedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dracoteenmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+    <value>..\..\Monster.Interface\Resources\dracoteenmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="botaoLvl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\botaoLvl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+    <value>..\..\Monster.Interface\Resources\botaoLvl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tauroBackHeadSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\tauroBackHeadSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TauropequenoSemBackextrasmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TauropequenoSemBackextrasmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\TauropequenoSemBackextrasmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="noodles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\noodles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TauroGrandeSemBacksmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TauroGrandeSemBacksmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\TauroGrandeSemBacksmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dragao1sembackpequeno1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dragao1sembackpequeno1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\dragao1sembackpequeno1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="grifobabysmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grifobabysmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+    <value>..\..\Monster.Interface\Resources\grifobabysmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="noodles" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\noodles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dracoAdultMedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dracoAdultMedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
-            Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="botaoStamina" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\botaoStamina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="playergirlgrandesembacksmall1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playergirlgrandesembacksmall1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
-            Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tauroteenmedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tauroteenmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sirenteenmedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sirenteenmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+  <data name="grifoteenmedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\grifoteenmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="botaoExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\botaoExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\Monster.Interface\Resources\botaoExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sirenpequenoSemBacksmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sirenpequenoSemBacksmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+  <data name="dracoAdultMedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\dracoAdultMedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dracobabysmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dracobabysmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+  <data name="playergirlgrandesembacksmall1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\playergirlgrandesembacksmall1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+            Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dracoBackHeadSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\dracoBackHeadSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="botaoStamina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\botaoStamina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="playergirlgmedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\playergirlgmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+            Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tauroteenmedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\tauroteenmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sirenHurtSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\sirenHurtSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sirenteenmedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\sirenteenmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GrifoGrandeSemBackSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\GrifoGrandeSemBackSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+            Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sirenFaceXSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\sirenFaceXSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sirenpequenoSemBacksmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\sirenpequenoSemBacksmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+            Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badMonsterSkullHurtMedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\badMonsterSkullHurtMedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="backpack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backpack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+    <value>..\..\Monster.Interface\Resources\backpack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="playersembackextrasmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playersembackextrasmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\playersembackextrasmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grifoHurtSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\grifoHurtSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="playergirlgrandesembacksmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playergirlgrandesembacksmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\playergirlgrandesembacksmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sirenBackHeadSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\sirenBackHeadSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GrifopequenoSemBackExtraSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GrifopequenoSemBackExtraSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\GrifopequenoSemBackExtraSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="controller1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\controller1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+    <value>..\..\Monster.Interface\Resources\controller1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dracobabysmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\dracobabysmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hpButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hpButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+    <value>..\..\Monster.Interface\Resources\hpButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dragao2.1sem back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dragao2.1sem back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\dragao2.1sem back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+            Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tauroadultmedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\tauroadultmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sirentadultmedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sirentadultmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
+    <value>..\..\Monster.Interface\Resources\sirentadultmedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0,
             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="playerboy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playerboy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
+    <value>..\..\Monster.Interface\Resources\playerboy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral,
             PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="botaoSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\botaoSave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\Monster.Interface\Resources\botaoSave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="botaoBattle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\botaoBattle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="battleBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Monster.Interface\Resources\battleBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
