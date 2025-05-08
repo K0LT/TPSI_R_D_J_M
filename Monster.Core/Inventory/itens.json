@@ -2,19 +2,19 @@
   {
     "Name": "water",
     "Description": "Restores 10 HP",
-    "Effects": { "Health": 10 },
+    "Effects": { "HP": 10 },
     "MaxQuantity": 10
   },
   {
     "Name": "soda",
     "Description": "Restores 20 HP",
-    "Effects": { "Health": 20 },
+    "Effects": { "HP": 20 },
     "MaxQuantity": 10
   },
   {
     "Name": "beer",
     "Description": "Restores 50 HP",
-    "Effects": { "Health": 50 },
+    "Effects": { "HP": 50 },
     "MaxQuantity": 10
   },
   {
@@ -36,7 +36,7 @@
     "MaxQuantity": 10
   },
   {
-    "Name": "monster energy",
+    "Name": "energy drink",
     "Description": "Fully restores all stats",
     "Effects": {
       "HP": 100,

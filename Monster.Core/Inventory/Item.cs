@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Text.Json.Serialization;
 using Newtonsoft.Json;
 
 namespace Monster.Core.Models
@@ -11,6 +10,7 @@ namespace Monster.Core.Models
         private string _name = "defaultItemName";
         private string _description = "defaultItemDescription";
         private Dictionary<string, int> _effects = new Dictionary<string, int>();
+        private int _quantity = 1;
 
         public string Name
         {
@@ -51,7 +51,20 @@ namespace Monster.Core.Models
             }
         }
 
-        
+        public int Quantity
+        {
+            get => _quantity;
+            set
+            {
+                if (_quantity != value)
+                {
+                    _quantity = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        [JsonIgnore]
         public string EffectsJson
         {
             get => JsonConvert.SerializeObject(_effects);
@@ -67,14 +80,31 @@ namespace Monster.Core.Models
 
         public void ApplyEffects(Monster monster)
         {
-            if (Effects.ContainsKey(nameof(Monster.Stamina)))
-                monster.Stamina += Effects[nameof(Monster.Stamina)];
+            foreach (var effect in Effects)
+            {
+                switch (effect.Key.ToLower())
+                {
+                    case "hp":
+                        monster.HP += effect.Value;
+                        if (monster.HP > monster.MaxHP) monster.HP = monster.MaxHP;
+                        break;
+                    case "stamina":
+                        monster.Stamina += effect.Value;
+                        if (monster.Stamina > monster.MaxStamina) monster.Stamina = monster.MaxStamina;
+                        break;
+                }
+            }
+        }
 
-            if (Effects.ContainsKey(nameof(Monster.HP)))
-                monster.HP += Effects[nameof(Monster.HP)];
-
-           
-        
+        public Item Clone()
+        {
+            return new Item
+            {
+                Name = this.Name,
+                Description = this.Description,
+                Effects = new Dictionary<string, int>(this.Effects),
+                Quantity = 1
+            };
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Monster.Core.Models;
 using Newtonsoft.Json;
 
@@ -8,6 +9,7 @@ namespace Monster.Core.Managers
     public static class Inventory
     {
         private static string _itemsFile = "itens.json";
+        private static List<Item> _playerItems = new List<Item>();
 
         public static List<Item> LoadItems()
         {
@@ -24,30 +26,69 @@ namespace Monster.Core.Managers
             File.WriteAllText(_itemsFile, json);
         }
 
-        public static void SaveItem(Item item)
+        public static void AddItem(Item item)
         {
-            var items = LoadItems();
-            int index = items.FindIndex(i => i.Name == item.Name);
+            var items = _playerItems;
+            var existing = items.FirstOrDefault(i => i.Name == item.Name);
 
-            if (index >= 0)
-                items[index] = item;
+            if (existing != null)
+            {
+                existing.Quantity += item.Quantity;
+            }
             else
+            {
                 items.Add(item);
+            }
 
-            SaveItems(items);
+            SavePlayerInventory();
         }
 
-        public static void RemoveItem(string itemName)
+        public static void RemoveItem(string itemName, int quantity = 1)
         {
-            var items = LoadItems();
-            items.RemoveAll(i => i.Name == itemName);
-            SaveItems(items);
+            var item = _playerItems.FirstOrDefault(i => i.Name == itemName);
+
+            if (item != null)
+            {
+                item.Quantity -= quantity;
+                if (item.Quantity <= 0)
+                {
+                    _playerItems.Remove(item);
+                }
+                SavePlayerInventory();
+            }
         }
 
         public static Item GetItem(string itemName)
         {
-            var items = LoadItems();
-            return items.Find(i => i.Name == itemName);
+            return _playerItems.FirstOrDefault(i => i.Name == itemName);
+        }
+
+        public static List<Item> GetPlayerItems()
+        {
+            return _playerItems;
+        }
+
+        public static void LoadPlayerInventory()
+        {
+            if (File.Exists("player_inventory.json"))
+            {
+                string json = File.ReadAllText("player_inventory.json");
+                _playerItems = JsonConvert.DeserializeObject<List<Item>>(json) ?? new List<Item>();
+            }
+        }
+
+        public static void SavePlayerInventory()
+        {
+            string json = JsonConvert.SerializeObject(_playerItems, Formatting.Indented);
+            File.WriteAllText("player_inventory.json", json);
+        }
+
+        public static void AddRewards(List<Item> rewards)
+        {
+            foreach (var reward in rewards)
+            {
+                AddItem(reward);
+            }
         }
     }
 }
