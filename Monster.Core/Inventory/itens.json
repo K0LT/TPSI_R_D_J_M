@@ -1,0 +1,46 @@
+﻿[
+  {
+    "Name": "water",
+    "Description": "Restores 10 HP",
+    "Effects": { "Health": 10 },
+    "MaxQuantity": 10
+  },
+  {
+    "Name": "soda",
+    "Description": "Restores 20 HP",
+    "Effects": { "Health": 20 },
+    "MaxQuantity": 10
+  },
+  {
+    "Name": "beer",
+    "Description": "Restores 50 HP",
+    "Effects": { "Health": 50 },
+    "MaxQuantity": 10
+  },
+  {
+    "Name": "nachos",
+    "Description": "Restores 10 Stamina",
+    "Effects": { "Stamina": 10 },
+    "MaxQuantity": 10
+  },
+  {
+    "Name": "hamburguer",
+    "Description": "Restores 20 Stamina",
+    "Effects": { "Stamina": 20 },
+    "MaxQuantity": 10
+  },
+  {
+    "Name": "ramen",
+    "Description": "Restores 50 Stamina",
+    "Effects": { "Stamina": 50 },
+    "MaxQuantity": 10
+  },
+  {
+    "Name": "monster energy",
+    "Description": "Fully restores all stats",
+    "Effects": {
+      "HP": 100,
+      "Stamina": 100,   
+      "MaxQuantity": 2
+  }
+]
