@@ -3,12 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monster.Core", "..\Monster.Core\Monster.Core.csproj", "{6007ED9A-94DA-4F0D-BA48-5D329D8151A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monster.Game", "Monster.Game\Monster.Game.csproj", "{8CC00B2F-374B-6A81-D061-DFB93F35FDED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monster.Game", "..\Monster.Game\Monster.Game.csproj", "{9092C948-6F28-4E2A-A543-A3611B52C060}"
-	ProjectSection(ProjectDependencies) = postProject
-		{6007ED9A-94DA-4F0D-BA48-5D329D8151A7} = {6007ED9A-94DA-4F0D-BA48-5D329D8151A7}
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monster.Core", "Monster.Core\Monster.Core.csproj", "{1C637714-81E8-BCBF-1E27-64F17E7BD05F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monster.UI", "Monster.UI\Monster.UI.csproj", "{03C94617-73E5-455D-BBC2-1CD262827850}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,14 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6007ED9A-94DA-4F0D-BA48-5D329D8151A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6007ED9A-94DA-4F0D-BA48-5D329D8151A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6007ED9A-94DA-4F0D-BA48-5D329D8151A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6007ED9A-94DA-4F0D-BA48-5D329D8151A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9092C948-6F28-4E2A-A543-A3611B52C060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9092C948-6F28-4E2A-A543-A3611B52C060}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9092C948-6F28-4E2A-A543-A3611B52C060}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9092C948-6F28-4E2A-A543-A3611B52C060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CC00B2F-374B-6A81-D061-DFB93F35FDED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CC00B2F-374B-6A81-D061-DFB93F35FDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CC00B2F-374B-6A81-D061-DFB93F35FDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CC00B2F-374B-6A81-D061-DFB93F35FDED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C637714-81E8-BCBF-1E27-64F17E7BD05F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C637714-81E8-BCBF-1E27-64F17E7BD05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C637714-81E8-BCBF-1E27-64F17E7BD05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C637714-81E8-BCBF-1E27-64F17E7BD05F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03C94617-73E5-455D-BBC2-1CD262827850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03C94617-73E5-455D-BBC2-1CD262827850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03C94617-73E5-455D-BBC2-1CD262827850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03C94617-73E5-455D-BBC2-1CD262827850}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

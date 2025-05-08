@@ -10,8 +10,8 @@ namespace Monster.Game.GameState
     public class GameState
     {
         public User CurrentUser { get; set; }
-        public Monster ActiveMonster { get; set; }
-        public List<Monster> OwnedMonsters { get; set; }
+        //public Monster ActiveMonster { get; set; }
+        // public List<Monster> OwnedMonsters { get; set; }
         public Dictionary<string, int> Inventory { get; set; }
         public int Currency { get; set; }
 
