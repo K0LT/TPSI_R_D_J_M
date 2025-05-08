@@ -8,6 +8,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monster.Core", "Monster.Core\Monster.Core.csproj", "{1C637714-81E8-BCBF-1E27-64F17E7BD05F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monster.UI", "Monster.UI\Monster.UI.csproj", "{03C94617-73E5-455D-BBC2-1CD262827850}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1C637714-81E8-BCBF-1E27-64F17E7BD05F} = {1C637714-81E8-BCBF-1E27-64F17E7BD05F}
+		{8CC00B2F-374B-6A81-D061-DFB93F35FDED} = {8CC00B2F-374B-6A81-D061-DFB93F35FDED}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

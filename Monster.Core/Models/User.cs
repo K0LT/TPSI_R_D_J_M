@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,7 +21,7 @@ namespace Monster.Core.Models
                 if (_username != value)
                 {
                     _username = value;
-                    OnPropertyChanged(nameof(Username));
+                    OnPropertyChanged();
                 }
             }
         }
@@ -33,14 +34,14 @@ namespace Monster.Core.Models
                 if (_userType != value)
                 {
                     _userType = value;
-                    OnPropertyChanged(nameof(UserType));
+                    OnPropertyChanged();
                 }
             }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected virtual void OnPropertyChanged(string propertyName)
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
