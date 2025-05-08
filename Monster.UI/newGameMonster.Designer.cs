@@ -37,10 +37,6 @@
             pictureBox_newGameMonster_Tauro = new PictureBox();
             pictureBox_newGameMonster_Grifo = new PictureBox();
             pictureBox_newGameMonster_Siren = new PictureBox();
-            this.button_newGameMonster_SelectDraco = new Button();
-            button_newGameMonster_SelectGrifo = new Button();
-            button_newGameMonster_SelectTauro = new Button();
-            button_newGameMonster_SelectSiren = new Button();
             panel_newGameMonster_BackgroundNameAndSave = new Panel();
             label_newGameMonster_NameText = new Label();
             textBox1 = new TextBox();
@@ -131,42 +127,6 @@
             pictureBox_newGameMonster_Siren.TabIndex = 0;
             pictureBox_newGameMonster_Siren.TabStop = false;
             // 
-            // button_newGameMonster_SelectDraco
-            // 
-            this.button_newGameMonster_SelectDraco.Location = new Point(402, 350);
-            this.button_newGameMonster_SelectDraco.Name = "button_newGameMonster_SelectDraco";
-            this.button_newGameMonster_SelectDraco.Size = new Size(75, 23);
-            this.button_newGameMonster_SelectDraco.TabIndex = 4;
-            this.button_newGameMonster_SelectDraco.Text = "Draco";
-            this.button_newGameMonster_SelectDraco.UseVisualStyleBackColor = true;
-            // 
-            // button_newGameMonster_SelectGrifo
-            // 
-            button_newGameMonster_SelectGrifo.Location = new Point(629, 350);
-            button_newGameMonster_SelectGrifo.Name = "button_newGameMonster_SelectGrifo";
-            button_newGameMonster_SelectGrifo.Size = new Size(75, 23);
-            button_newGameMonster_SelectGrifo.TabIndex = 5;
-            button_newGameMonster_SelectGrifo.Text = "Grifo";
-            button_newGameMonster_SelectGrifo.UseVisualStyleBackColor = true;
-            // 
-            // button_newGameMonster_SelectTauro
-            // 
-            button_newGameMonster_SelectTauro.Location = new Point(890, 350);
-            button_newGameMonster_SelectTauro.Name = "button_newGameMonster_SelectTauro";
-            button_newGameMonster_SelectTauro.Size = new Size(75, 23);
-            button_newGameMonster_SelectTauro.TabIndex = 6;
-            button_newGameMonster_SelectTauro.Text = "Tauro";
-            button_newGameMonster_SelectTauro.UseVisualStyleBackColor = true;
-            // 
-            // button_newGameMonster_SelectSiren
-            // 
-            button_newGameMonster_SelectSiren.Location = new Point(1137, 350);
-            button_newGameMonster_SelectSiren.Name = "button_newGameMonster_SelectSiren";
-            button_newGameMonster_SelectSiren.Size = new Size(75, 23);
-            button_newGameMonster_SelectSiren.TabIndex = 7;
-            button_newGameMonster_SelectSiren.Text = "Siren";
-            button_newGameMonster_SelectSiren.UseVisualStyleBackColor = true;
-            // 
             // panel_newGameMonster_BackgroundNameAndSave
             // 
             panel_newGameMonster_BackgroundNameAndSave.BackColor = Color.FromArgb(164, 131, 91);
@@ -230,10 +190,6 @@
             BackColor = Color.FromArgb(54, 39, 22);
             Controls.Add(pictureBox_newGameMonster_Exit);
             Controls.Add(panel_newGameMonster_BackgroundNameAndSave);
-            Controls.Add(button_newGameMonster_SelectSiren);
-            Controls.Add(button_newGameMonster_SelectTauro);
-            Controls.Add(button_newGameMonster_SelectGrifo);
-            Controls.Add(this.button_newGameMonster_SelectDraco);
             Controls.Add(panel_newGameMonster_BackgroundSiren);
             Controls.Add(panel_newGameMonster_BackgroundTauro);
             Controls.Add(panel_newGameMonster_GrifoBackground);
@@ -266,9 +222,6 @@
         private PictureBox pictureBox_newGameMonster_Siren;
         private PictureBox pictureBox2;
         private Button button1;
-        private Button button_newGameMonster_SelectGrifo;
-        private Button button_newGameMonster_SelectTauro;
-        private Button button_newGameMonster_SelectSiren;
         private Panel panel_newGameMonster_BackgroundNameAndSave;
         private TextBox textBox1;
         private Label label_newGameMonster_NameText;
