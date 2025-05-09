@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(settings));
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox_settings_settingsText = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_settings_settingsText).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBox_settings_settingsText
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(55, 14);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(500, 133);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            pictureBox_settings_settingsText.BackColor = Color.Transparent;
+            pictureBox_settings_settingsText.Image = (Image)resources.GetObject("pictureBox_settings_settingsText.Image");
+            pictureBox_settings_settingsText.Location = new Point(55, 14);
+            pictureBox_settings_settingsText.Name = "pictureBox_settings_settingsText";
+            pictureBox_settings_settingsText.Size = new Size(500, 133);
+            pictureBox_settings_settingsText.TabIndex = 0;
+            pictureBox_settings_settingsText.TabStop = false;
             // 
             // settings
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox_settings_settingsText);
             Name = "settings";
             Size = new Size(600, 900);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_settings_settingsText).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox pictureBox_settings_settingsText;
     }
 }

@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(miniGamesMenu));
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox_miniGamesMenu_MiniGamesText = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_miniGamesMenu_MiniGamesText).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBox_miniGamesMenu_MiniGamesText
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(45, 22);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(500, 133);
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
+            pictureBox_miniGamesMenu_MiniGamesText.BackColor = Color.Transparent;
+            pictureBox_miniGamesMenu_MiniGamesText.Image = (Image)resources.GetObject("pictureBox_miniGamesMenu_MiniGamesText.Image");
+            pictureBox_miniGamesMenu_MiniGamesText.Location = new Point(45, 22);
+            pictureBox_miniGamesMenu_MiniGamesText.Name = "pictureBox_miniGamesMenu_MiniGamesText";
+            pictureBox_miniGamesMenu_MiniGamesText.Size = new Size(500, 133);
+            pictureBox_miniGamesMenu_MiniGamesText.TabIndex = 4;
+            pictureBox_miniGamesMenu_MiniGamesText.TabStop = false;
             // 
             // miniGamesMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox_miniGamesMenu_MiniGamesText);
             Name = "miniGamesMenu";
             Size = new Size(600, 900);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_miniGamesMenu_MiniGamesText).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox pictureBox_miniGamesMenu_MiniGamesText;
     }
 }

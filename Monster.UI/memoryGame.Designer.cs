@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(memoryGame));
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox_memoryGames_MemoryGameText = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_memoryGames_MemoryGameText).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBox_memoryGames_MemoryGameText
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(40, 31);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(500, 133);
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
+            pictureBox_memoryGames_MemoryGameText.BackColor = Color.Transparent;
+            pictureBox_memoryGames_MemoryGameText.Image = (Image)resources.GetObject("pictureBox_memoryGames_MemoryGameText.Image");
+            pictureBox_memoryGames_MemoryGameText.Location = new Point(40, 31);
+            pictureBox_memoryGames_MemoryGameText.Name = "pictureBox_memoryGames_MemoryGameText";
+            pictureBox_memoryGames_MemoryGameText.Size = new Size(500, 133);
+            pictureBox_memoryGames_MemoryGameText.TabIndex = 6;
+            pictureBox_memoryGames_MemoryGameText.TabStop = false;
             // 
             // memoryGame
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox_memoryGames_MemoryGameText);
             Name = "memoryGame";
             Size = new Size(600, 900);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_memoryGames_MemoryGameText).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox pictureBox_memoryGames_MemoryGameText;
     }
 }

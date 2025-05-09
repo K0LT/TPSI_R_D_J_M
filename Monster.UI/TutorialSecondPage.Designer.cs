@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TutorialSecondPage));
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox_tutorialSecondPage_tutorial = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_tutorialSecondPage_tutorial).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBox_tutorialSecondPage_tutorial
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(38, 27);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(500, 133);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
+            pictureBox_tutorialSecondPage_tutorial.BackColor = Color.Transparent;
+            pictureBox_tutorialSecondPage_tutorial.Image = (Image)resources.GetObject("pictureBox_tutorialSecondPage_tutorial.Image");
+            pictureBox_tutorialSecondPage_tutorial.Location = new Point(38, 27);
+            pictureBox_tutorialSecondPage_tutorial.Name = "pictureBox_tutorialSecondPage_tutorial";
+            pictureBox_tutorialSecondPage_tutorial.Size = new Size(500, 133);
+            pictureBox_tutorialSecondPage_tutorial.TabIndex = 2;
+            pictureBox_tutorialSecondPage_tutorial.TabStop = false;
             // 
             // TutorialSecondPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox_tutorialSecondPage_tutorial);
             Name = "TutorialSecondPage";
             Size = new Size(600, 900);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_tutorialSecondPage_tutorial).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox pictureBox_tutorialSecondPage_tutorial;
     }
 }

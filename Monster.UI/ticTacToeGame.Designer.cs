@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ticTacToeGame));
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox_ticTacToeGame_TicTacToeText = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_ticTacToeGame_TicTacToeText).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBox_ticTacToeGame_TicTacToeText
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(50, 41);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(500, 133);
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
+            pictureBox_ticTacToeGame_TicTacToeText.BackColor = Color.Transparent;
+            pictureBox_ticTacToeGame_TicTacToeText.Image = (Image)resources.GetObject("pictureBox_ticTacToeGame_TicTacToeText.Image");
+            pictureBox_ticTacToeGame_TicTacToeText.Location = new Point(50, 41);
+            pictureBox_ticTacToeGame_TicTacToeText.Name = "pictureBox_ticTacToeGame_TicTacToeText";
+            pictureBox_ticTacToeGame_TicTacToeText.Size = new Size(500, 133);
+            pictureBox_ticTacToeGame_TicTacToeText.TabIndex = 5;
+            pictureBox_ticTacToeGame_TicTacToeText.TabStop = false;
             // 
             // ticTacToeGame
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox_ticTacToeGame_TicTacToeText);
             Name = "ticTacToeGame";
             Size = new Size(600, 900);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_ticTacToeGame_TicTacToeText).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox pictureBox_ticTacToeGame_TicTacToeText;
     }
 }
