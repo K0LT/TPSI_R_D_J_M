@@ -49,6 +49,7 @@
             pictureBox_inventory_CurrentMonster = new PictureBox();
             label_inventory_HP = new Label();
             label_inventory_Stamina = new Label();
+            button_inventory_ReturnToMyMonster = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_InventoryText).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_BeerIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_BurguerIcon).BeginInit();
@@ -245,11 +246,22 @@
             label_inventory_Stamina.TabIndex = 20;
             label_inventory_Stamina.Text = "Stamina:";
             // 
+            // button_inventory_ReturnToMyMonster
+            // 
+            button_inventory_ReturnToMyMonster.BackColor = Color.Transparent;
+            button_inventory_ReturnToMyMonster.BackgroundImage = (Image)resources.GetObject("button_inventory_ReturnToMyMonster.BackgroundImage");
+            button_inventory_ReturnToMyMonster.Location = new Point(292, 776);
+            button_inventory_ReturnToMyMonster.Name = "button_inventory_ReturnToMyMonster";
+            button_inventory_ReturnToMyMonster.Size = new Size(33, 43);
+            button_inventory_ReturnToMyMonster.TabIndex = 21;
+            button_inventory_ReturnToMyMonster.UseVisualStyleBackColor = false;
+            // 
             // inventory
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            Controls.Add(button_inventory_ReturnToMyMonster);
             Controls.Add(label_inventory_Stamina);
             Controls.Add(label_inventory_HP);
             Controls.Add(pictureBox_inventory_CurrentMonster);
@@ -307,5 +319,6 @@
         private PictureBox pictureBox_inventory_CurrentMonster;
         private Label label_inventory_HP;
         private Label label_inventory_Stamina;
+        private Button button_inventory_ReturnToMyMonster;
     }
 }

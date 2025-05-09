@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tutorialThirdPage));
             pictureBox_tutorialThirdPage_tutorialText = new PictureBox();
+            button_tutorialThirdPage_ReturnToMainMenu = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox_tutorialThirdPage_tutorialText).BeginInit();
             SuspendLayout();
             // 
@@ -43,11 +44,22 @@
             pictureBox_tutorialThirdPage_tutorialText.TabIndex = 3;
             pictureBox_tutorialThirdPage_tutorialText.TabStop = false;
             // 
+            // button_tutorialThirdPage_ReturnToMainMenu
+            // 
+            button_tutorialThirdPage_ReturnToMainMenu.BackColor = Color.Transparent;
+            button_tutorialThirdPage_ReturnToMainMenu.BackgroundImage = (Image)resources.GetObject("button_tutorialThirdPage_ReturnToMainMenu.BackgroundImage");
+            button_tutorialThirdPage_ReturnToMainMenu.Location = new Point(271, 768);
+            button_tutorialThirdPage_ReturnToMainMenu.Name = "button_tutorialThirdPage_ReturnToMainMenu";
+            button_tutorialThirdPage_ReturnToMainMenu.Size = new Size(33, 43);
+            button_tutorialThirdPage_ReturnToMainMenu.TabIndex = 22;
+            button_tutorialThirdPage_ReturnToMainMenu.UseVisualStyleBackColor = false;
+            // 
             // tutorialThirdPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            Controls.Add(button_tutorialThirdPage_ReturnToMainMenu);
             Controls.Add(pictureBox_tutorialThirdPage_tutorialText);
             Name = "tutorialThirdPage";
             Size = new Size(600, 900);
@@ -58,5 +70,6 @@
         #endregion
 
         private PictureBox pictureBox_tutorialThirdPage_tutorialText;
+        private Button button_tutorialThirdPage_ReturnToMainMenu;
     }
 }

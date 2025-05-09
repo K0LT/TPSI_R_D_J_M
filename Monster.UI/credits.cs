@@ -16,5 +16,10 @@ namespace Monster.UI
         {
             InitializeComponent();
         }
+
+        private void label_credits_Marcia_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

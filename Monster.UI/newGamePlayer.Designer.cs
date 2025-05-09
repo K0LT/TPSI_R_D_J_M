@@ -48,7 +48,7 @@
             // 
             // button_newGamePlayer_RegisterText
             // 
-            button_newGamePlayer_RegisterText.Location = new Point(235, 698);
+            button_newGamePlayer_RegisterText.Location = new Point(235, 673);
             button_newGamePlayer_RegisterText.Name = "button_newGamePlayer_RegisterText";
             button_newGamePlayer_RegisterText.Size = new Size(75, 37);
             button_newGamePlayer_RegisterText.TabIndex = 2;
@@ -57,7 +57,7 @@
             // 
             // button_newGamePlayer_Next
             // 
-            button_newGamePlayer_Next.Location = new Point(235, 778);
+            button_newGamePlayer_Next.Location = new Point(235, 725);
             button_newGamePlayer_Next.Name = "button_newGamePlayer_Next";
             button_newGamePlayer_Next.Size = new Size(75, 23);
             button_newGamePlayer_Next.TabIndex = 3;
@@ -66,7 +66,7 @@
             // 
             // textBox_newGamePlayer_InputForUsername
             // 
-            textBox_newGamePlayer_InputForUsername.Location = new Point(288, 594);
+            textBox_newGamePlayer_InputForUsername.Location = new Point(285, 594);
             textBox_newGamePlayer_InputForUsername.Name = "textBox_newGamePlayer_InputForUsername";
             textBox_newGamePlayer_InputForUsername.Size = new Size(183, 23);
             textBox_newGamePlayer_InputForUsername.TabIndex = 1;
@@ -75,11 +75,11 @@
             // 
             label_newGamePlayer_UsernameText.AutoSize = true;
             label_newGamePlayer_UsernameText.BackColor = Color.White;
-            label_newGamePlayer_UsernameText.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_newGamePlayer_UsernameText.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label_newGamePlayer_UsernameText.ForeColor = Color.FromArgb(54, 39, 22);
-            label_newGamePlayer_UsernameText.Location = new Point(91, 594);
+            label_newGamePlayer_UsernameText.Location = new Point(161, 594);
             label_newGamePlayer_UsernameText.Name = "label_newGamePlayer_UsernameText";
-            label_newGamePlayer_UsernameText.Size = new Size(160, 37);
+            label_newGamePlayer_UsernameText.Size = new Size(106, 25);
             label_newGamePlayer_UsernameText.TabIndex = 0;
             label_newGamePlayer_UsernameText.Text = "Username: ";
             // 

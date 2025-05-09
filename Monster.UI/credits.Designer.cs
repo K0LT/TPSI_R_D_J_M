@@ -38,6 +38,7 @@
             label_credits_Marcia = new Label();
             label_credits_Diogo = new Label();
             label_credits_Joao = new Label();
+            button_credits_ReturnToMainMenu = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox_credits_creditsText).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_credits_RuiIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_credits_DiogoIcon).BeginInit();
@@ -112,6 +113,7 @@
             label_credits_Marcia.Size = new Size(71, 15);
             label_credits_Marcia.TabIndex = 7;
             label_credits_Marcia.Text = "Márcia Leite";
+            label_credits_Marcia.Click += label_credits_Marcia_Click;
             // 
             // label_credits_Diogo
             // 
@@ -131,11 +133,22 @@
             label_credits_Joao.TabIndex = 9;
             label_credits_Joao.Text = "João Pimentel";
             // 
+            // button_credits_ReturnToMainMenu
+            // 
+            button_credits_ReturnToMainMenu.BackColor = Color.Transparent;
+            button_credits_ReturnToMainMenu.BackgroundImage = (Image)resources.GetObject("button_credits_ReturnToMainMenu.BackgroundImage");
+            button_credits_ReturnToMainMenu.Location = new Point(272, 763);
+            button_credits_ReturnToMainMenu.Name = "button_credits_ReturnToMainMenu";
+            button_credits_ReturnToMainMenu.Size = new Size(33, 43);
+            button_credits_ReturnToMainMenu.TabIndex = 21;
+            button_credits_ReturnToMainMenu.UseVisualStyleBackColor = false;
+            // 
             // credits
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            Controls.Add(button_credits_ReturnToMainMenu);
             Controls.Add(label_credits_Joao);
             Controls.Add(label_credits_Diogo);
             Controls.Add(label_credits_Marcia);
@@ -167,5 +180,6 @@
         private Label label_credits_Marcia;
         private Label label_credits_Diogo;
         private Label label_credits_Joao;
+        private Button button_credits_ReturnToMainMenu;
     }
 }

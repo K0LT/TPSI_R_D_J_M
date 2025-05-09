@@ -37,7 +37,7 @@
             // 
             pictureBox_memoryGames_MemoryGameText.BackColor = Color.Transparent;
             pictureBox_memoryGames_MemoryGameText.Image = (Image)resources.GetObject("pictureBox_memoryGames_MemoryGameText.Image");
-            pictureBox_memoryGames_MemoryGameText.Location = new Point(40, 31);
+            pictureBox_memoryGames_MemoryGameText.Location = new Point(47, 30);
             pictureBox_memoryGames_MemoryGameText.Name = "pictureBox_memoryGames_MemoryGameText";
             pictureBox_memoryGames_MemoryGameText.Size = new Size(500, 133);
             pictureBox_memoryGames_MemoryGameText.TabIndex = 6;

@@ -42,9 +42,10 @@
             button_myMonster_Inventory = new Button();
             button_myMonster_Player = new Button();
             button_myMonster_Save = new Button();
-            button_myMonster_Exit = new Button();
+            button_myMonster_ReturnToMainMenu = new Button();
             button_myMonster_Battle = new Button();
             button_myMonster_MiniGames = new Button();
+            button_playerMenu_ReturnToMyMonster = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_EXPicon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_STicon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_HPicon).BeginInit();
@@ -113,6 +114,7 @@
             // 
             // pictureBox_myMonster_Draco
             // 
+            pictureBox_myMonster_Draco.Anchor = AnchorStyles.None;
             pictureBox_myMonster_Draco.BackColor = Color.Transparent;
             pictureBox_myMonster_Draco.Image = (Image)resources.GetObject("pictureBox_myMonster_Draco.Image");
             pictureBox_myMonster_Draco.Location = new Point(134, 23);
@@ -166,14 +168,14 @@
             button_myMonster_Save.TabIndex = 11;
             button_myMonster_Save.UseVisualStyleBackColor = true;
             // 
-            // button_myMonster_Exit
+            // button_myMonster_ReturnToMainMenu
             // 
-            button_myMonster_Exit.BackgroundImage = (Image)resources.GetObject("button_myMonster_Exit.BackgroundImage");
-            button_myMonster_Exit.Location = new Point(155, 825);
-            button_myMonster_Exit.Name = "button_myMonster_Exit";
-            button_myMonster_Exit.Size = new Size(50, 50);
-            button_myMonster_Exit.TabIndex = 12;
-            button_myMonster_Exit.UseVisualStyleBackColor = true;
+            button_myMonster_ReturnToMainMenu.BackgroundImage = (Image)resources.GetObject("button_myMonster_ReturnToMainMenu.BackgroundImage");
+            button_myMonster_ReturnToMainMenu.Location = new Point(155, 825);
+            button_myMonster_ReturnToMainMenu.Name = "button_myMonster_ReturnToMainMenu";
+            button_myMonster_ReturnToMainMenu.Size = new Size(50, 50);
+            button_myMonster_ReturnToMainMenu.TabIndex = 12;
+            button_myMonster_ReturnToMainMenu.UseVisualStyleBackColor = true;
             // 
             // button_myMonster_Battle
             // 
@@ -193,15 +195,26 @@
             button_myMonster_MiniGames.TabIndex = 14;
             button_myMonster_MiniGames.UseVisualStyleBackColor = true;
             // 
+            // button_playerMenu_ReturnToMyMonster
+            // 
+            button_playerMenu_ReturnToMyMonster.BackColor = Color.Transparent;
+            button_playerMenu_ReturnToMyMonster.BackgroundImage = (Image)resources.GetObject("button_playerMenu_ReturnToMyMonster.BackgroundImage");
+            button_playerMenu_ReturnToMyMonster.Location = new Point(284, 429);
+            button_playerMenu_ReturnToMyMonster.Name = "button_playerMenu_ReturnToMyMonster";
+            button_playerMenu_ReturnToMyMonster.Size = new Size(33, 43);
+            button_playerMenu_ReturnToMyMonster.TabIndex = 21;
+            button_playerMenu_ReturnToMyMonster.UseVisualStyleBackColor = false;
+            // 
             // myMonster
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(54, 39, 22);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            Controls.Add(button_playerMenu_ReturnToMyMonster);
             Controls.Add(button_myMonster_MiniGames);
             Controls.Add(button_myMonster_Battle);
-            Controls.Add(button_myMonster_Exit);
+            Controls.Add(button_myMonster_ReturnToMainMenu);
             Controls.Add(button_myMonster_Save);
             Controls.Add(button_myMonster_Player);
             Controls.Add(button_myMonster_Inventory);
@@ -239,8 +252,9 @@
         private Button button_myMonster_Inventory;
         private Button button_myMonster_Player;
         private Button button_myMonster_Save;
-        private Button button_myMonster_Exit;
+        private Button button_myMonster_ReturnToMainMenu;
         private Button button_myMonster_Battle;
         private Button button_myMonster_MiniGames;
+        private Button button_playerMenu_ReturnToMyMonster;
     }
 }

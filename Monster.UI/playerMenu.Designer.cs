@@ -49,6 +49,7 @@
             button_playerMenu_ChangeSlot2 = new Button();
             button_playerMenu_ChangeSlot3 = new Button();
             button_playerMenu_ChangeSlot4 = new Button();
+            button_playerMenu_ReturnToMyMonster = new Button();
             tabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot3).BeginInit();
@@ -61,7 +62,7 @@
             // 
             tabControl1.Controls.Add(tabPage_playerMenu_BattleArchivements);
             tabControl1.Controls.Add(tabPage_playerMenu_GameArchivements);
-            tabControl1.Location = new Point(16, 635);
+            tabControl1.Location = new Point(28, 604);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(561, 150);
@@ -82,7 +83,7 @@
             tabPage_playerMenu_GameArchivements.Location = new Point(4, 24);
             tabPage_playerMenu_GameArchivements.Name = "tabPage_playerMenu_GameArchivements";
             tabPage_playerMenu_GameArchivements.Padding = new Padding(3);
-            tabPage_playerMenu_GameArchivements.Size = new Size(428, 122);
+            tabPage_playerMenu_GameArchivements.Size = new Size(553, 122);
             tabPage_playerMenu_GameArchivements.TabIndex = 1;
             tabPage_playerMenu_GameArchivements.Text = "Game Archivements";
             tabPage_playerMenu_GameArchivements.UseVisualStyleBackColor = true;
@@ -246,12 +247,23 @@
             button_playerMenu_ChangeSlot4.Text = "Change";
             button_playerMenu_ChangeSlot4.UseVisualStyleBackColor = true;
             // 
+            // button_playerMenu_ReturnToMyMonster
+            // 
+            button_playerMenu_ReturnToMyMonster.BackColor = Color.Transparent;
+            button_playerMenu_ReturnToMyMonster.BackgroundImage = (Image)resources.GetObject("button_playerMenu_ReturnToMyMonster.BackgroundImage");
+            button_playerMenu_ReturnToMyMonster.Location = new Point(288, 771);
+            button_playerMenu_ReturnToMyMonster.Name = "button_playerMenu_ReturnToMyMonster";
+            button_playerMenu_ReturnToMyMonster.Size = new Size(33, 43);
+            button_playerMenu_ReturnToMyMonster.TabIndex = 20;
+            button_playerMenu_ReturnToMyMonster.UseVisualStyleBackColor = false;
+            // 
             // playerMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(54, 39, 22);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            Controls.Add(button_playerMenu_ReturnToMyMonster);
             Controls.Add(button_playerMenu_ChangeSlot4);
             Controls.Add(button_playerMenu_ChangeSlot3);
             Controls.Add(button_playerMenu_ChangeSlot2);
@@ -303,5 +315,6 @@
         private Button button_playerMenu_ChangeSlot2;
         private Button button_playerMenu_ChangeSlot3;
         private Button button_playerMenu_ChangeSlot4;
+        private Button button_playerMenu_ReturnToMyMonster;
     }
 }
