@@ -29,15 +29,25 @@
         private void InitializeComponent()
         {
             newGamePlayer = new Panel();
+            MainPanel = new Panel();
+            newGamePlayer.SuspendLayout();
             SuspendLayout();
             // 
             // newGamePlayer
             // 
+            newGamePlayer.Controls.Add(MainPanel);
             newGamePlayer.Dock = DockStyle.Fill;
             newGamePlayer.Location = new Point(0, 0);
             newGamePlayer.Name = "newGamePlayer";
             newGamePlayer.Size = new Size(1584, 861);
             newGamePlayer.TabIndex = 0;
+            // 
+            // MainPanel
+            // 
+            MainPanel.Location = new Point(0, 0);
+            MainPanel.Name = "MainPanel";
+            MainPanel.Size = new Size(1584, 861);
+            MainPanel.TabIndex = 0;
             // 
             // Form1
             // 
@@ -49,11 +59,13 @@
             MinimumSize = new Size(1600, 900);
             Name = "Form1";
             Text = "Form1";
+            newGamePlayer.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel newGamePlayer;
+        private Panel MainPanel;
     }
 }

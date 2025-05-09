@@ -2,15 +2,16 @@
 using System.Runtime.CompilerServices;
 namespace Monster.Core.Models
 {
-    public class Monster : INotifyPropertyChanged
+    public class MonsterClass : INotifyPropertyChanged
     {
         // TODO: ADD DATE_TIME IMPLEMENTATION
 
-        private string _name = "defaultMonsterName";
+        private string _name = "defaultMonsterType";
         private string _type = "defaultMonsterType";
-        private int _experiencePoints;
-        private int _level;
-        private int _energy;
+        private int _healthPoints = 10;
+        private int _experiencePoints = 0;
+        private int _level = 1;
+        private int _energy = 100;
         
         public string Name
         {
@@ -20,6 +21,71 @@ namespace Monster.Core.Models
                 if (_name != value)
                 {
                     _name = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public string Type
+        {
+            get => _type;
+            set
+            {
+                if (_name != value)
+                {
+                    _type = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        
+        public int HealthPoints
+        {
+            get => _healthPoints;
+            set
+            {
+                if (_healthPoints != value)
+                {
+                    _healthPoints = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public int ExperiencePoints
+        {
+            get => _experiencePoints;
+            set
+            {
+                if (_experiencePoints != value)
+                {
+                    _experiencePoints = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        
+        public int Level
+        {
+            get => _level;
+            set
+            {
+                if (_level != value)
+                {
+                    _level = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        
+        public int Energy
+        {
+            get => _energy;
+            set
+            {
+                if (_energy != value)
+                {
+                    _energy = value;
                     OnPropertyChanged();
                 }
             }

@@ -1,45 +1,107 @@
 using System.Runtime.CompilerServices;
 using Monster.Game.GameState;
-
 namespace Monster.UI
 {
     public partial class Form1 : Form
     {
+        // Binding Sources
+        private BindingSource _bsMonster = new BindingSource();
+        
+        // Game State / Game Data
+        private GameState _gameState = new GameState();
+        private GameDataService _gameDataService = new GameDataService();
 
+        // Dictionary to track all our UserControls
+        private Dictionary<string, UserControl> _userControls = new Dictionary<string, UserControl>();
 
         public Form1()
         {
-            Console.WriteLine(@"[DEBUG] Form1 Init.");
-
-            var gameState = new GameState();
-            Console.WriteLine(@"[DEBUG] GameState Init.");
-            var gameDataService = new GameDataService();
-            Console.WriteLine(@"[DEBUG] GameDataService Init.");
-
-            BindingSource _bsMonster = new BindingSource();
-
-            Console.WriteLine(@"[DEBUG] Monster Binding Source Init.");
-
+            System.Diagnostics.Debug.WriteLine(@"[DEBUG-Form1] Constructor Call");
             InitializeComponent();
-            Console.WriteLine(@"Form 1 Component Init Call.");
+            System.Diagnostics.Debug.WriteLine(@"Form 1 Component Init Call.");
 
-            UserControl myMonsterUC = new myMonster();
+            // Initialize all UserControls
+            InitializeUserControls();
 
-            BindingSourcesStateLink(gameState, _bsMonster);
-            Console.WriteLine(@"[DEBUG] Creating binding sources.");
+            // Set up global binding sources
+            SetupBindings(_gameState, _bsMonster);
 
-            LinkBindingsUI(_bsMonster, myMonsterUC);
-            
+            // Show initial UserControl
+            NavigateTo("Monster");
+
+            System.Diagnostics.Debug.WriteLine(@"[DEBUG-Form1] Bindings Setup.");
         }
 
-        public void BindingSourcesStateLink(GameState state, BindingSource bsMonster)
+        private void InitializeUserControls()
+        {
+            // Create and initialize each UserControl
+            myMonster monsterControl = new myMonster();
+            // Add other UserControls as needed
+            // inventoryControl = new InventoryControl();
+            // battleControl = new BattleControl();
+
+            // Add controls to dictionary with unique keys
+            _userControls.Add("Monster", monsterControl);
+            // _userControls.Add("Inventory", inventoryControl);
+            // _userControls.Add("Battle", battleControl);
+
+            // Set up bindings for each control
+            SetupUserControlBindings(_bsMonster, monsterControl, _gameState);
+            // Set up bindings for other controls as needed
+        }
+
+        public void NavigateTo(string controlKey)
+        {
+            // Clear the main panel
+            MainPanel.Controls.Clear();
+
+            // Get the requested UserControl
+            if (_userControls.TryGetValue(controlKey, out UserControl control))
+            {
+                // Configure control to fill panel
+                control.Dock = DockStyle.Fill;
+
+                // Refresh the control's data before showing (if needed)
+                RefreshControlData(controlKey, control);
+
+                // Add the control to the panel
+                MainPanel.Controls.Add(control);
+
+                System.Diagnostics.Debug.WriteLine($"[DEBUG-Form1] Navigated to {controlKey}");
+            }
+            else
+            {
+                System.Diagnostics.Debug.WriteLine($"[DEBUG-Form1] Control not found: {controlKey}");
+            }
+        }
+
+        private void RefreshControlData(string controlKey, UserControl control)
+        {
+            // Different controls might need different data refreshed
+            switch (controlKey)
+            {
+                case "Monster":
+                    var monsterControl = control as myMonster;
+                    if (monsterControl != null)
+                    {
+                        // Update with latest monster data
+                        monsterControl.bsDataSource = _gameState.ActiveMonster;
+                        monsterControl.HookBindings();
+                    }
+                    break;
+                    // Add cases for other controls as needed
+            }
+        }
+
+        public void SetupBindings(GameState state, BindingSource bsMonster)
         {
             bsMonster.DataSource = state.ActiveMonster;
         }
 
-        public void LinkBindingsUI(BindingSource bsMonster, myMonster myMonsterControl)
+        public void SetupUserControlBindings(BindingSource bSource, myMonster myMonsterControl, GameState state)
         {
-            bsMonster.DataMember = myMonsterControl.
+            myMonsterControl.bsDataSource = state.ActiveMonster;
+            myMonsterControl.HookBindings();
         }
     }
 }

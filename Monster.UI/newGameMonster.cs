@@ -16,5 +16,10 @@ namespace Monster.UI
         {
             InitializeComponent();
         }
+
+        private void button_newGameMonster_Save_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

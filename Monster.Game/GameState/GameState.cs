@@ -9,7 +9,7 @@ namespace Monster.Game.GameState
 {
     public class GameState
     {
-        private User _currentUser = new User();
+        private User _currentUser;
 
         public User CurrentUser
         {
@@ -39,6 +39,7 @@ namespace Monster.Game.GameState
         }
         public List<MonsterClass>? OwnedMonsters { get; set; }
         public Dictionary<string, int>? Inventory { get; set; }
+        
         public int Currency { get; set; }
 
         // Game progress, achievements, etc.
