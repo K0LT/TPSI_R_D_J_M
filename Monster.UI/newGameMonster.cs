@@ -19,7 +19,17 @@ namespace Monster.UI
 
         private void button_newGameMonster_Save_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

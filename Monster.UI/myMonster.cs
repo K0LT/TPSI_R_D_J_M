@@ -35,27 +35,35 @@ namespace Monster.UI
         {
             progressBar_myMonster_EXP.DataBindings.Clear();
             progressBar_myMonster_HP.DataBindings.Clear();
-            progressBar_myMonster_LVL.DataBindings.Clear();
+            //Eliminei a progressBar dos niveis
+            //progressBar_myMonster_LVL.DataBindings.Clear(); 
             progressBar_myMonster_ST.DataBindings.Clear();
-            
-            
-            label_myMonster_CurrentMonsterName.DataBindings.Clear();
-            
-            
+
+
+            //label_myMonster_CurrentMonsterName.DataBindings.Clear();
+
+
             progressBar_myMonster_EXP.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
                 nameof(MonsterClass.ExperiencePoints));
             progressBar_myMonster_HP.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
                 nameof(MonsterClass.HealthPoints));
-            progressBar_myMonster_LVL.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
-                nameof(MonsterClass.HealthPoints));
+            //Eliminei a progress bad dos niveis
+            //progressBar_myMonster_LVL.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
+               // nameof(MonsterClass.HealthPoints));
             progressBar_myMonster_ST.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
                 nameof(MonsterClass.HealthPoints));
-            label_myMonster_CurrentMonsterName.DataBindings.Add(nameof(Label.Text), bsDataSource,
-                nameof(MonsterClass.Name));
+            //Eliminei o label a dizer CurrentMonster mas deverei voltar a adicionar
+            //label_myMonster_CurrentMonsterName.DataBindings.Add(nameof(Label.Text), bsDataSource,
+                //nameof(MonsterClass.Name));
             System.Diagnostics.Debug.WriteLine(@"HookBindings exiting.");
         }
-        
+
         private void progressBar_myMonster_EXP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox_myMonster_CurrentMonster_Click(object sender, EventArgs e)
         {
 
         }

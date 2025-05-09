@@ -29,151 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(newGameMonster));
-            panel_newGameMonster_backgroundDraco = new Panel();
-            pictureBox_newGameMonster_Draco = new PictureBox();
-            panel_newGameMonster_GrifoBackground = new Panel();
-            pictureBox_newGameMonster_Grifo = new PictureBox();
-            panel_newGameMonster_BackgroundTauro = new Panel();
-            pictureBox_newGameMonster_Tauro = new PictureBox();
-            panel_newGameMonster_BackgroundSiren = new Panel();
-            pictureBox_newGameMonster_Siren = new PictureBox();
-            panel_newGameMonster_BackgroundNameAndSave = new Panel();
-            button_newGameMonster_Next = new Button();
-            button_newGameMonster_Save = new Button();
-            textBox1 = new TextBox();
-            label_newGameMonster_NameText = new Label();
             pictureBox_newGameMonster_Exit = new PictureBox();
-            panel_newGameMonster_backgroundDraco.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_newGameMonster_Draco).BeginInit();
-            panel_newGameMonster_GrifoBackground.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_newGameMonster_Grifo).BeginInit();
-            panel_newGameMonster_BackgroundTauro.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_newGameMonster_Tauro).BeginInit();
-            panel_newGameMonster_BackgroundSiren.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_newGameMonster_Siren).BeginInit();
-            panel_newGameMonster_BackgroundNameAndSave.SuspendLayout();
+            button_newGameMonster_Grifo = new Button();
+            button_newGameMonster_Tauro = new Button();
+            button_newGame_Monster_Draco = new Button();
+            textBox_newGameMonster_InputUsername = new TextBox();
+            label1 = new Label();
+            label2_newGameMonster_Next = new Label();
+            button_newGameMonster_Siren = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox_newGameMonster_Exit).BeginInit();
             SuspendLayout();
-            // 
-            // panel_newGameMonster_backgroundDraco
-            // 
-            panel_newGameMonster_backgroundDraco.BackColor = Color.FromArgb(164, 131, 91);
-            panel_newGameMonster_backgroundDraco.Controls.Add(pictureBox_newGameMonster_Draco);
-            panel_newGameMonster_backgroundDraco.Location = new Point(348, 132);
-            panel_newGameMonster_backgroundDraco.Name = "panel_newGameMonster_backgroundDraco";
-            panel_newGameMonster_backgroundDraco.Size = new Size(190, 199);
-            panel_newGameMonster_backgroundDraco.TabIndex = 0;
-            // 
-            // pictureBox_newGameMonster_Draco
-            // 
-            pictureBox_newGameMonster_Draco.Image = (Image)resources.GetObject("pictureBox_newGameMonster_Draco.Image");
-            pictureBox_newGameMonster_Draco.Location = new Point(-5, 4);
-            pictureBox_newGameMonster_Draco.Name = "pictureBox_newGameMonster_Draco";
-            pictureBox_newGameMonster_Draco.Size = new Size(190, 192);
-            pictureBox_newGameMonster_Draco.TabIndex = 0;
-            pictureBox_newGameMonster_Draco.TabStop = false;
-            // 
-            // panel_newGameMonster_GrifoBackground
-            // 
-            panel_newGameMonster_GrifoBackground.BackColor = Color.FromArgb(164, 131, 91);
-            panel_newGameMonster_GrifoBackground.Controls.Add(pictureBox_newGameMonster_Grifo);
-            panel_newGameMonster_GrifoBackground.Location = new Point(582, 132);
-            panel_newGameMonster_GrifoBackground.Name = "panel_newGameMonster_GrifoBackground";
-            panel_newGameMonster_GrifoBackground.Size = new Size(190, 199);
-            panel_newGameMonster_GrifoBackground.TabIndex = 1;
-            // 
-            // pictureBox_newGameMonster_Grifo
-            // 
-            pictureBox_newGameMonster_Grifo.Image = (Image)resources.GetObject("pictureBox_newGameMonster_Grifo.Image");
-            pictureBox_newGameMonster_Grifo.Location = new Point(-7, 4);
-            pictureBox_newGameMonster_Grifo.Name = "pictureBox_newGameMonster_Grifo";
-            pictureBox_newGameMonster_Grifo.Size = new Size(183, 192);
-            pictureBox_newGameMonster_Grifo.TabIndex = 4;
-            pictureBox_newGameMonster_Grifo.TabStop = false;
-            // 
-            // panel_newGameMonster_BackgroundTauro
-            // 
-            panel_newGameMonster_BackgroundTauro.BackColor = Color.FromArgb(164, 131, 91);
-            panel_newGameMonster_BackgroundTauro.Controls.Add(pictureBox_newGameMonster_Tauro);
-            panel_newGameMonster_BackgroundTauro.Location = new Point(830, 132);
-            panel_newGameMonster_BackgroundTauro.Name = "panel_newGameMonster_BackgroundTauro";
-            panel_newGameMonster_BackgroundTauro.Size = new Size(190, 199);
-            panel_newGameMonster_BackgroundTauro.TabIndex = 2;
-            // 
-            // pictureBox_newGameMonster_Tauro
-            // 
-            pictureBox_newGameMonster_Tauro.Image = (Image)resources.GetObject("pictureBox_newGameMonster_Tauro.Image");
-            pictureBox_newGameMonster_Tauro.Location = new Point(-9, 4);
-            pictureBox_newGameMonster_Tauro.Name = "pictureBox_newGameMonster_Tauro";
-            pictureBox_newGameMonster_Tauro.Size = new Size(189, 192);
-            pictureBox_newGameMonster_Tauro.TabIndex = 0;
-            pictureBox_newGameMonster_Tauro.TabStop = false;
-            // 
-            // panel_newGameMonster_BackgroundSiren
-            // 
-            panel_newGameMonster_BackgroundSiren.BackColor = Color.FromArgb(164, 131, 91);
-            panel_newGameMonster_BackgroundSiren.Controls.Add(pictureBox_newGameMonster_Siren);
-            panel_newGameMonster_BackgroundSiren.Location = new Point(1077, 132);
-            panel_newGameMonster_BackgroundSiren.Name = "panel_newGameMonster_BackgroundSiren";
-            panel_newGameMonster_BackgroundSiren.Size = new Size(190, 199);
-            panel_newGameMonster_BackgroundSiren.TabIndex = 2;
-            // 
-            // pictureBox_newGameMonster_Siren
-            // 
-            pictureBox_newGameMonster_Siren.Image = (Image)resources.GetObject("pictureBox_newGameMonster_Siren.Image");
-            pictureBox_newGameMonster_Siren.Location = new Point(-9, 3);
-            pictureBox_newGameMonster_Siren.Name = "pictureBox_newGameMonster_Siren";
-            pictureBox_newGameMonster_Siren.Size = new Size(185, 192);
-            pictureBox_newGameMonster_Siren.TabIndex = 0;
-            pictureBox_newGameMonster_Siren.TabStop = false;
-            // 
-            // panel_newGameMonster_BackgroundNameAndSave
-            // 
-            panel_newGameMonster_BackgroundNameAndSave.BackColor = Color.FromArgb(164, 131, 91);
-            panel_newGameMonster_BackgroundNameAndSave.Controls.Add(button_newGameMonster_Next);
-            panel_newGameMonster_BackgroundNameAndSave.Controls.Add(button_newGameMonster_Save);
-            panel_newGameMonster_BackgroundNameAndSave.Controls.Add(textBox1);
-            panel_newGameMonster_BackgroundNameAndSave.Controls.Add(label_newGameMonster_NameText);
-            panel_newGameMonster_BackgroundNameAndSave.Location = new Point(629, 490);
-            panel_newGameMonster_BackgroundNameAndSave.Name = "panel_newGameMonster_BackgroundNameAndSave";
-            panel_newGameMonster_BackgroundNameAndSave.Size = new Size(336, 159);
-            panel_newGameMonster_BackgroundNameAndSave.TabIndex = 8;
-            // 
-            // button_newGameMonster_Next
-            // 
-            button_newGameMonster_Next.Location = new Point(128, 110);
-            button_newGameMonster_Next.Name = "button_newGameMonster_Next";
-            button_newGameMonster_Next.Size = new Size(75, 23);
-            button_newGameMonster_Next.TabIndex = 3;
-            button_newGameMonster_Next.Text = "Next";
-            button_newGameMonster_Next.UseVisualStyleBackColor = true;
-            // 
-            // button_newGameMonster_Save
-            // 
-            button_newGameMonster_Save.Location = new Point(128, 72);
-            button_newGameMonster_Save.Name = "button_newGameMonster_Save";
-            button_newGameMonster_Save.Size = new Size(75, 23);
-            button_newGameMonster_Save.TabIndex = 2;
-            button_newGameMonster_Save.Text = "Save";
-            button_newGameMonster_Save.UseVisualStyleBackColor = true;
-            button_newGameMonster_Save.Click += button_newGameMonster_Save_Click;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(170, 30);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 1;
-            // 
-            // label_newGameMonster_NameText
-            // 
-            label_newGameMonster_NameText.AutoSize = true;
-            label_newGameMonster_NameText.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_newGameMonster_NameText.Location = new Point(64, 19);
-            label_newGameMonster_NameText.Name = "label_newGameMonster_NameText";
-            label_newGameMonster_NameText.Size = new Size(100, 37);
-            label_newGameMonster_NameText.TabIndex = 0;
-            label_newGameMonster_NameText.Text = "Name:";
             // 
             // pictureBox_newGameMonster_Exit
             // 
@@ -184,50 +49,109 @@
             pictureBox_newGameMonster_Exit.TabIndex = 7;
             pictureBox_newGameMonster_Exit.TabStop = false;
             // 
+            // button_newGameMonster_Grifo
+            // 
+            button_newGameMonster_Grifo.BackColor = Color.Transparent;
+            button_newGameMonster_Grifo.BackgroundImage = (Image)resources.GetObject("button_newGameMonster_Grifo.BackgroundImage");
+            button_newGameMonster_Grifo.Location = new Point(368, 293);
+            button_newGameMonster_Grifo.Name = "button_newGameMonster_Grifo";
+            button_newGameMonster_Grifo.Size = new Size(198, 249);
+            button_newGameMonster_Grifo.TabIndex = 10;
+            button_newGameMonster_Grifo.UseVisualStyleBackColor = false;
+            // 
+            // button_newGameMonster_Tauro
+            // 
+            button_newGameMonster_Tauro.BackColor = Color.Transparent;
+            button_newGameMonster_Tauro.BackgroundImage = (Image)resources.GetObject("button_newGameMonster_Tauro.BackgroundImage");
+            button_newGameMonster_Tauro.Location = new Point(372, 23);
+            button_newGameMonster_Tauro.Name = "button_newGameMonster_Tauro";
+            button_newGameMonster_Tauro.Size = new Size(194, 255);
+            button_newGameMonster_Tauro.TabIndex = 11;
+            button_newGameMonster_Tauro.UseVisualStyleBackColor = false;
+            // 
+            // button_newGame_Monster_Draco
+            // 
+            button_newGame_Monster_Draco.BackColor = Color.Transparent;
+            button_newGame_Monster_Draco.BackgroundImage = (Image)resources.GetObject("button_newGame_Monster_Draco.BackgroundImage");
+            button_newGame_Monster_Draco.Location = new Point(42, 293);
+            button_newGame_Monster_Draco.Name = "button_newGame_Monster_Draco";
+            button_newGame_Monster_Draco.Size = new Size(205, 249);
+            button_newGame_Monster_Draco.TabIndex = 12;
+            button_newGame_Monster_Draco.UseVisualStyleBackColor = false;
+            // 
+            // textBox_newGameMonster_InputUsername
+            // 
+            textBox_newGameMonster_InputUsername.BackColor = SystemColors.Control;
+            textBox_newGameMonster_InputUsername.ForeColor = SystemColors.MenuText;
+            textBox_newGameMonster_InputUsername.Location = new Point(203, 700);
+            textBox_newGameMonster_InputUsername.Name = "textBox_newGameMonster_InputUsername";
+            textBox_newGameMonster_InputUsername.ScrollBars = ScrollBars.Horizontal;
+            textBox_newGameMonster_InputUsername.Size = new Size(172, 23);
+            textBox_newGameMonster_InputUsername.TabIndex = 13;
+            textBox_newGameMonster_InputUsername.TextChanged += textBox1_TextChanged;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(224, 224, 224);
+            label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(217, 610);
+            label1.Name = "label1";
+            label1.Size = new Size(146, 37);
+            label1.TabIndex = 14;
+            label1.Text = "Username";
+            // 
+            // label2_newGameMonster_Next
+            // 
+            label2_newGameMonster_Next.AutoSize = true;
+            label2_newGameMonster_Next.BackColor = Color.FromArgb(224, 224, 224);
+            label2_newGameMonster_Next.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2_newGameMonster_Next.Location = new Point(251, 772);
+            label2_newGameMonster_Next.Name = "label2_newGameMonster_Next";
+            label2_newGameMonster_Next.Size = new Size(79, 37);
+            label2_newGameMonster_Next.TabIndex = 15;
+            label2_newGameMonster_Next.Text = "Next";
+            // 
+            // button_newGameMonster_Siren
+            // 
+            button_newGameMonster_Siren.BackColor = Color.Transparent;
+            button_newGameMonster_Siren.BackgroundImage = (Image)resources.GetObject("button_newGameMonster_Siren.BackgroundImage");
+            button_newGameMonster_Siren.Location = new Point(42, 23);
+            button_newGameMonster_Siren.Name = "button_newGameMonster_Siren";
+            button_newGameMonster_Siren.Size = new Size(194, 249);
+            button_newGameMonster_Siren.TabIndex = 9;
+            button_newGameMonster_Siren.UseVisualStyleBackColor = false;
+            // 
             // newGameMonster
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(54, 39, 22);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            Controls.Add(label2_newGameMonster_Next);
+            Controls.Add(label1);
+            Controls.Add(textBox_newGameMonster_InputUsername);
+            Controls.Add(button_newGame_Monster_Draco);
+            Controls.Add(button_newGameMonster_Tauro);
+            Controls.Add(button_newGameMonster_Grifo);
+            Controls.Add(button_newGameMonster_Siren);
             Controls.Add(pictureBox_newGameMonster_Exit);
-            Controls.Add(panel_newGameMonster_BackgroundNameAndSave);
-            Controls.Add(panel_newGameMonster_BackgroundSiren);
-            Controls.Add(panel_newGameMonster_BackgroundTauro);
-            Controls.Add(panel_newGameMonster_GrifoBackground);
-            Controls.Add(panel_newGameMonster_backgroundDraco);
             Name = "newGameMonster";
-            Size = new Size(1584, 861);
-            panel_newGameMonster_backgroundDraco.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox_newGameMonster_Draco).EndInit();
-            panel_newGameMonster_GrifoBackground.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox_newGameMonster_Grifo).EndInit();
-            panel_newGameMonster_BackgroundTauro.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox_newGameMonster_Tauro).EndInit();
-            panel_newGameMonster_BackgroundSiren.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox_newGameMonster_Siren).EndInit();
-            panel_newGameMonster_BackgroundNameAndSave.ResumeLayout(false);
-            panel_newGameMonster_BackgroundNameAndSave.PerformLayout();
+            Size = new Size(600, 900);
             ((System.ComponentModel.ISupportInitialize)pictureBox_newGameMonster_Exit).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private Panel panel_newGameMonster_backgroundDraco;
-        private PictureBox pictureBox_newGameMonster_Draco;
-        private Panel panel_newGameMonster_GrifoBackground;
-        private Panel panel_newGameMonster_BackgroundTauro;
-        private Panel panel_newGameMonster_BackgroundSiren;
-        private PictureBox pictureBox_newGameMonster_Grifo;
-        private PictureBox pictureBox_newGameMonster_Tauro;
-        private PictureBox pictureBox_newGameMonster_Siren;
         private PictureBox pictureBox2;
-        private Button button1;
-        private Panel panel_newGameMonster_BackgroundNameAndSave;
-        private TextBox textBox1;
-        private Label label_newGameMonster_NameText;
-        private Button button_newGameMonster_Next;
-        private Button button_newGameMonster_Save;
         private PictureBox pictureBox_newGameMonster_Exit;
+        private Button button_newGameMonster_Grifo;
+        private Button button_newGameMonster_Tauro;
+        private Button button_newGame_Monster_Draco;
+        private TextBox textBox_newGameMonster_InputUsername;
+        private Label label1;
+        private Label label2_newGameMonster_Next;
+        private Button button_newGameMonster_Siren;
     }
 }
