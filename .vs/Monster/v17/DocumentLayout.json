@@ -1,7 +1,112 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Rui\\source\\repos\\K0LT\\TPSI_R_D_J_M\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\quickclickform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\quickclickform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\quickclickform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\quickclickform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\memorygameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\memorygameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\memorygameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\memorygameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\tictactoeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\tictactoeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\tictactoeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\tictactoeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\minigameselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\minigameselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\minigameselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\minigameselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\playermenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\playermenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\newgameplayer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\newgameplayer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\newgamemonster.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\newgamemonster.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\newgamemonster.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\newgamemonster.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\newgamemonster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\newgamemonster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\newgamemonster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\newgamemonster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\mymonster.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\mymonster.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\mymonster.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\mymonster.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\mymonster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\mymonster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CC00B2F-374B-6A81-D061-DFB93F35FDED}|Monster.Game\\Monster.Game.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.game\\gamestate\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CC00B2F-374B-6A81-D061-DFB93F35FDED}|Monster.Game\\Monster.Game.csproj|solutionrelative:monster.game\\gamestate\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CC00B2F-374B-6A81-D061-DFB93F35FDED}|Monster.Game\\Monster.Game.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.game\\gamestate\\gamedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CC00B2F-374B-6A81-D061-DFB93F35FDED}|Monster.Game\\Monster.Game.csproj|solutionrelative:monster.game\\gamestate\\gamedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\newgameplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\newgameplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|c:\\users\\diogo\\source\\repos\\tpsi_r_d_j_m\\monster.ui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C94617-73E5-455D-BBC2-1CD262827850}|Monster.UI\\Monster.UI.csproj|solutionrelative:monster.ui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\UIStyler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UIStyler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +114,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -65,7 +166,333 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuickClickForm.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\QuickClickForm.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\QuickClickForm.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\QuickClickForm.cs",
+              "RelativeToolTip": "Monster.UI\\QuickClickForm.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAIwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T19:07:37.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuickClickForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\QuickClickForm.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\QuickClickForm.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\QuickClickForm.cs [Design]",
+              "RelativeToolTip": "Monster.UI\\QuickClickForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T19:04:18.362Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MemoryGameForm.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\MemoryGameForm.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\MemoryGameForm.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\MemoryGameForm.cs",
+              "RelativeToolTip": "Monster.UI\\MemoryGameForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T19:02:29.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MemoryGameForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\MemoryGameForm.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\MemoryGameForm.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\MemoryGameForm.cs [Design]",
+              "RelativeToolTip": "Monster.UI\\MemoryGameForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:56:44.875Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TicTacToeForm.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\TicTacToeForm.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\TicTacToeForm.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\TicTacToeForm.cs",
+              "RelativeToolTip": "Monster.UI\\TicTacToeForm.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:51:57.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TicTacToeForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\TicTacToeForm.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\TicTacToeForm.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\TicTacToeForm.cs [Design]",
+              "RelativeToolTip": "Monster.UI\\TicTacToeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:46:54.783Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "miniGameSelectionForm.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\miniGameSelectionForm.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\miniGameSelectionForm.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\miniGameSelectionForm.cs",
+              "RelativeToolTip": "Monster.UI\\miniGameSelectionForm.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAgwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:39:52.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "miniGameSelectionForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\miniGameSelectionForm.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\miniGameSelectionForm.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\miniGameSelectionForm.cs [Design]",
+              "RelativeToolTip": "Monster.UI\\miniGameSelectionForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:39:11.01Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "playerMenu.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\playerMenu.Designer.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\playerMenu.Designer.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\playerMenu.Designer.cs",
+              "RelativeToolTip": "Monster.UI\\playerMenu.Designer.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwBQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:29:35.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "newGamePlayer.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\newGamePlayer.Designer.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\newGamePlayer.Designer.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\newGamePlayer.Designer.cs",
+              "RelativeToolTip": "Monster.UI\\newGamePlayer.Designer.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwL4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:28:54.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "newGameMonster.resx",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\newGameMonster.resx",
+              "RelativeDocumentMoniker": "Monster.UI\\newGameMonster.resx",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\newGameMonster.resx",
+              "RelativeToolTip": "Monster.UI\\newGameMonster.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-10T18:28:50.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "newGameMonster.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\newGameMonster.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\newGameMonster.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\newGameMonster.cs",
+              "RelativeToolTip": "Monster.UI\\newGameMonster.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:17:58.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "newGameMonster.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\newGameMonster.Designer.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\newGameMonster.Designer.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\newGameMonster.Designer.cs",
+              "RelativeToolTip": "Monster.UI\\newGameMonster.Designer.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwOkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:17:50.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "newGameMonster.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\newGameMonster.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\newGameMonster.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\newGameMonster.cs [Design]",
+              "RelativeToolTip": "Monster.UI\\newGameMonster.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:28:13.714Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "myMonster.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\myMonster.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\myMonster.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\myMonster.cs [Design]",
+              "RelativeToolTip": "Monster.UI\\myMonster.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:15:50.147Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "myMonster.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\myMonster.Designer.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\myMonster.Designer.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\myMonster.Designer.cs",
+              "RelativeToolTip": "Monster.UI\\myMonster.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:17:39.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "myMonster.resx",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\myMonster.resx",
+              "RelativeDocumentMoniker": "Monster.UI\\myMonster.resx",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\myMonster.resx",
+              "RelativeToolTip": "Monster.UI\\myMonster.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-10T18:17:37.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\Form1.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\Form1.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\Form1.cs",
+              "RelativeToolTip": "Monster.UI\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:27:11.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GameState.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.Game\\GameState\\GameState.cs",
+              "RelativeDocumentMoniker": "Monster.Game\\GameState\\GameState.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.Game\\GameState\\GameState.cs",
+              "RelativeToolTip": "Monster.Game\\GameState\\GameState.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:26:08.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GameDataService.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.Game\\GameState\\GameDataService.cs",
+              "RelativeDocumentMoniker": "Monster.Game\\GameState\\GameDataService.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.Game\\GameState\\GameDataService.cs",
+              "RelativeToolTip": "Monster.Game\\GameState\\GameDataService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAADwvzkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:25:37.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\Form1.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\Form1.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\Form1.cs [Design]",
+              "RelativeToolTip": "Monster.UI\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:16:41.372Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "newGamePlayer.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\newGamePlayer.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\newGamePlayer.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\newGamePlayer.cs [Design]",
+              "RelativeToolTip": "Monster.UI\\newGamePlayer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:20:09.063Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\Program.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\Program.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\Program.cs",
+              "RelativeToolTip": "Monster.UI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:16:05.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Monster.UI\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Monster.UI\\Form1.Designer.cs",
+              "RelativeToolTip": "Monster.UI\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:17:32.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T19:27:32.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UIStyler.cs",
+              "DocumentMoniker": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\UIStyler.cs",
+              "RelativeDocumentMoniker": "UIStyler.cs",
+              "ToolTip": "C:\\Users\\Diogo\\source\\repos\\TPSI_R_D_J_M\\UIStyler.cs",
+              "RelativeToolTip": "UIStyler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T19:15:49.1Z"
             }
           ]
         }
