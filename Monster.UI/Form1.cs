@@ -6,7 +6,8 @@ namespace Monster.UI
     {
         // Binding Sources
         private BindingSource _bsMonster = new BindingSource();
-        
+        private BindingSource _bsUser = new BindingSource();
+
         // Game State / Game Data
         private GameState _gameState = new GameState();
         private GameDataService _gameDataService = new GameDataService();
@@ -24,7 +25,7 @@ namespace Monster.UI
             InitializeUserControls();
 
             // Set up global binding sources
-            SetupBindings(_gameState, _bsMonster);
+            SetupBindings(_gameState, _bsMonster, _bsUser);
 
             // Show initial UserControl
             NavigateTo("Monster");
@@ -36,18 +37,21 @@ namespace Monster.UI
         {
             // Create and initialize each UserControl
             myMonster monsterControl = new myMonster();
-            // Add other UserControls as needed
-            // inventoryControl = new InventoryControl();
-            // battleControl = new BattleControl();
+            inventory inventoryControl = new inventory();
+            ticTacToeGame ticTacToeControl = new ticTacToeGame();
+            memoryGame memoryGameControl = new memoryGame();
+            playerMenu playerMenuControl = new playerMenu();
 
             // Add controls to dictionary with unique keys
             _userControls.Add("Monster", monsterControl);
-            // _userControls.Add("Inventory", inventoryControl);
-            // _userControls.Add("Battle", battleControl);
+            _userControls.Add("Inventory", inventoryControl);
+            _userControls.Add("TicTacToe", ticTacToeControl);
+            _userControls.Add("MemoryGame", memoryGameControl);
+            _userControls.Add("Player", playerMenuControl);
 
             // Set up bindings for each control
             SetupUserControlBindings(_bsMonster, monsterControl, _gameState);
-            // Set up bindings for other controls as needed
+            // Additional bindings can be added for other controls if needed
         }
 
         public void NavigateTo(string controlKey)
@@ -89,19 +93,66 @@ namespace Monster.UI
                         monsterControl.HookBindings();
                     }
                     break;
+                case "Inventory":
+                    var inventoryControl = control as inventory;
+                    if (inventoryControl != null)
+                    {
+                        // Update inventory data
+                        //inventoryControl.InventoryData = _gameState.Inventory;
+                    }
+                    break;
+                case "Player":
+                    var playerControl = control as playerMenu;
+                    if (playerControl != null)
+                    {
+                        // Update player data
+                        //playerControl.userData = _gameState.currentUser;
+                    }
+                    break;
                     // Add cases for other controls as needed
             }
         }
 
-        public void SetupBindings(GameState state, BindingSource bsMonster)
+        public void SetupBindings(GameState state, BindingSource bsMonster, BindingSource bsUser)
         {
             bsMonster.DataSource = state.ActiveMonster;
+            bsUser.DataSource = state.CurrentUser;
         }
 
         public void SetupUserControlBindings(BindingSource bSource, myMonster myMonsterControl, GameState state)
         {
             myMonsterControl.bsDataSource = state.ActiveMonster;
             myMonsterControl.HookBindings();
+        }
+
+        // Event handler for Save button
+        private void SaveGame(string username)
+        {
+            try
+            {
+                _gameDataService.SaveGame(_gameState, username);
+                MessageBox.Show("Game saved successfully!", "Save Game", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error saving game: {ex.Message}", "Save Game", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // Event handler for Load button
+        private void LoadGame(string username)
+        {
+            try
+            {
+                _gameState = _gameDataService.LoadGame(username);
+                SetupBindings(_gameState, _bsMonster, _bsUser);
+                NavigateTo("Monster");
+                MessageBox.Show("Game loaded successfully!", "Load Game", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading game: {ex.Message}", "Load Game", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

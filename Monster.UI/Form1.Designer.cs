@@ -38,25 +38,28 @@
             newGamePlayer.Controls.Add(MainPanel);
             newGamePlayer.Dock = DockStyle.Fill;
             newGamePlayer.Location = new Point(0, 0);
+            newGamePlayer.Margin = new Padding(4, 5, 4, 5);
             newGamePlayer.Name = "newGamePlayer";
-            newGamePlayer.Size = new Size(1584, 861);
+            newGamePlayer.Size = new Size(2244, 1370);
             newGamePlayer.TabIndex = 0;
             // 
             // MainPanel
             // 
             MainPanel.Location = new Point(0, 0);
+            MainPanel.Margin = new Padding(4, 5, 4, 5);
             MainPanel.Name = "MainPanel";
-            MainPanel.Size = new Size(1584, 861);
+            MainPanel.Size = new Size(2263, 1435);
             MainPanel.TabIndex = 0;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1584, 861);
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            ClientSize = new Size(2244, 1370);
             Controls.Add(newGamePlayer);
-            MaximumSize = new Size(1600, 900);
-            MinimumSize = new Size(1600, 900);
+            Margin = new Padding(4, 5, 4, 5);
+            MaximumSize = new Size(3000, 3000);
             Name = "Form1";
             Text = "Form1";
             newGamePlayer.ResumeLayout(false);
