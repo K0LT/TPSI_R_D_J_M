@@ -160,6 +160,7 @@
             button_myMonster_Inventory.Size = new Size(71, 83);
             button_myMonster_Inventory.TabIndex = 9;
             button_myMonster_Inventory.UseVisualStyleBackColor = true;
+            button_myMonster_Inventory.Click += button_myMonster_Inventory_Click;
             // 
             // button_myMonster_Player
             // 

@@ -16,7 +16,7 @@ namespace Monster.UI
     {
         private BindingSource _bsMonster;
 
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        
         public object bsDataSource
         {
             get => _bsMonster.DataSource;
@@ -70,18 +70,7 @@ namespace Monster.UI
 
         private void button_myMonster_ReturnToMainMenu_Click(object sender, EventArgs e)
         {
-            // Get the parent form
-            Form1 parentForm = this.FindForm() as Form1;
-
-            if (parentForm != null)
-            {
-                // Call NavigateTo to switch to the Inventory control
-                parentForm.NavigateTo("Inventory");
-            }
-            else
-            {
-                System.Diagnostics.Debug.WriteLine("[DEBUG-myMonster] Parent form is null.");
-            }
+            
         }
 
         private void button_myMonster_Player_Click(object sender, EventArgs e)
@@ -93,6 +82,22 @@ namespace Monster.UI
             {
                 // Call NavigateTo to switch to the Inventory control
                 parentForm.NavigateTo("Player");
+            }
+            else
+            {
+                System.Diagnostics.Debug.WriteLine("[DEBUG-myMonster] Parent form is null.");
+            }
+        }
+
+        private void button_myMonster_Inventory_Click(object sender, EventArgs e)
+        {
+            // Get the parent form
+            Form1 parentForm = this.FindForm() as Form1;
+
+            if (parentForm != null)
+            {
+                // Call NavigateTo to switch to the Inventory control
+                parentForm.NavigateTo("Inventory");
             }
             else
             {

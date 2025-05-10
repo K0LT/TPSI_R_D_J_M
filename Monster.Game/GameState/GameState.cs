@@ -9,7 +9,7 @@ namespace Monster.Game.GameState
 {
     public class GameState
     {
-        private User _currentUser;
+        private User _currentUser = new User();
 
         public User CurrentUser
         {

@@ -14,28 +14,47 @@ namespace Monster.UI
 {
     public partial class playerMenu : UserControl
     {
-        BindingSource _playerData = new BindingSource();
-
+        private string _userType;
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public object PlayerData
+        public string UserType
         {
-            get => _playerData.DataSource;
-            set => _playerData.DataSource = value;
+            get => _userType;
+            set
+            {
+                _userType = value;
+                ApplyUserTypeImage();
+            }
         }
 
-        public playerMenu()
+        public playerMenu(string userType)
         {
             InitializeComponent();
+            UserType = userType;
         }
-        public void HookBindings()
-        {
-            //progressBar_myMonster_LVL.DataBindings.Clear(); 
-            pictureBox1.DataBindings.Clear();
-            //progressBar_myMonster_LVL.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
-            // nameof(MonsterClass.HealthPoints));
 
-            System.Diagnostics.Debug.WriteLine(@"HookBindings exiting.");
+        private void ApplyUserTypeImage()
+        {
+            switch (_userType?.ToLower())
+            {
+                case "boy":
+                    pictureBox1.Image = ConvertByteArrayToImage(Properties.Resources.playergrandesemback); // Replace with your actual resource
+                    break;
+                case "girl":
+                    pictureBox1.Image = ConvertByteArrayToImage(Properties.Resources.playergirlgrandesemback); // Replace with your actual resource
+                    break;
+                default:
+                    pictureBox1.Image = ConvertByteArrayToImage(Properties.Resources.defaultUserImage); // Fallback image
+                    break;
+            }
+        }
+
+        private Image ConvertByteArrayToImage(byte[] byteArray)
+        {
+            using (MemoryStream ms = new MemoryStream(byteArray))
+            {
+                return Image.FromStream(ms);
+            }
         }
     }
 }

@@ -28,7 +28,7 @@ namespace Monster.UI
             SetupBindings(_gameState, _bsMonster, _bsUser);
 
             // Show initial UserControl
-            NavigateTo("Monster");
+            NavigateTo("NewGame");
 
             System.Diagnostics.Debug.WriteLine(@"[DEBUG-Form1] Bindings Setup.");
         }
@@ -40,7 +40,9 @@ namespace Monster.UI
             inventory inventoryControl = new inventory();
             ticTacToeGame ticTacToeControl = new ticTacToeGame();
             memoryGame memoryGameControl = new memoryGame();
-            playerMenu playerMenuControl = new playerMenu();
+            playerMenu playerMenuControl = new playerMenu(_gameState.CurrentUser.UserType);
+            newGamePlayer newUserControl = new newGamePlayer();
+            newGameMonster newMonsterControl = new newGameMonster();
 
             // Add controls to dictionary with unique keys
             _userControls.Add("Monster", monsterControl);
@@ -48,9 +50,12 @@ namespace Monster.UI
             _userControls.Add("TicTacToe", ticTacToeControl);
             _userControls.Add("MemoryGame", memoryGameControl);
             _userControls.Add("Player", playerMenuControl);
+            _userControls.Add("NewGame", newUserControl);
+            _userControls.Add("NewMonster", newMonsterControl);
 
             // Set up bindings for each control
             SetupUserControlBindings(_bsMonster, monsterControl, _gameState);
+            SetUpNewMonsterControlBindings(_bsUser, newMonsterControl, _gameState);
             // Additional bindings can be added for other controls if needed
         }
 
@@ -113,6 +118,12 @@ namespace Monster.UI
             }
         }
 
+        public void SetupUser(string newUsername, string newType)
+        {
+            _gameState.CurrentUser.Username = newUsername;
+            _gameState.CurrentUser.UserType = newType;
+        }
+
         public void SetupBindings(GameState state, BindingSource bsMonster, BindingSource bsUser)
         {
             bsMonster.DataSource = state.ActiveMonster;
@@ -123,6 +134,12 @@ namespace Monster.UI
         {
             myMonsterControl.bsDataSource = state.ActiveMonster;
             myMonsterControl.HookBindings();
+        }
+
+        public void SetUpNewMonsterControlBindings(BindingSource bSource, newGameMonster control, GameState state)
+        {
+            control.bsUser = state.CurrentUser;
+            control.HookBindings();
         }
 
         // Event handler for Save button
