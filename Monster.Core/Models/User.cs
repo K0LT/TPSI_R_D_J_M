@@ -5,12 +5,13 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace Monster.Core.Models
 {
     public class User : INotifyPropertyChanged
     {
-        private string _userType = "defaultUserType";
+        private string _userType = "boy";
         private string _username = "defaultUserName";
 
         public string Username

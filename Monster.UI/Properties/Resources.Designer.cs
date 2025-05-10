@@ -59,5 +59,35 @@ namespace Monster.UI.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] defaultUserImage {
+            get {
+                object obj = ResourceManager.GetObject("defaultUserImage", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] playergirlgrandesemback {
+            get {
+                object obj = ResourceManager.GetObject("playergirlgrandesemback", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] playergrandesemback {
+            get {
+                object obj = ResourceManager.GetObject("playergrandesemback", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

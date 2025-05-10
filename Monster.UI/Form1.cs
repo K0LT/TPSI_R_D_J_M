@@ -40,7 +40,7 @@ namespace Monster.UI
             inventory inventoryControl = new inventory();
             ticTacToeGame ticTacToeControl = new ticTacToeGame();
             memoryGame memoryGameControl = new memoryGame();
-            playerMenu playerMenuControl = new playerMenu();
+            playerMenu playerMenuControl = new playerMenu(_gameState.CurrentUser.UserType);
 
             // Add controls to dictionary with unique keys
             _userControls.Add("Monster", monsterControl);

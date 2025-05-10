@@ -117,4 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="defaultUserImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ed4d4ed1-1032-44f8-9ae9-ca7c61211950.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="playergirlgrandesemback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playergirlgrandesemback.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="playergrandesemback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playergrandesemback.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
