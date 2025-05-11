@@ -83,7 +83,7 @@
             // 
             textBox_newGameMonster_InputUsername.BackColor = SystemColors.Control;
             textBox_newGameMonster_InputUsername.ForeColor = SystemColors.MenuText;
-            textBox_newGameMonster_InputUsername.Location = new Point(203, 700);
+            textBox_newGameMonster_InputUsername.Location = new Point(253, 663);
             textBox_newGameMonster_InputUsername.Name = "textBox_newGameMonster_InputUsername";
             textBox_newGameMonster_InputUsername.ScrollBars = ScrollBars.Horizontal;
             textBox_newGameMonster_InputUsername.Size = new Size(172, 23);
@@ -95,7 +95,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.FromArgb(224, 224, 224);
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(217, 610);
+            label1.Location = new Point(101, 649);
             label1.Name = "label1";
             label1.Size = new Size(146, 37);
             label1.TabIndex = 14;

@@ -45,7 +45,7 @@
             button_myMonster_ReturnToMainMenu = new Button();
             button_myMonster_Battle = new Button();
             button_myMonster_MiniGames = new Button();
-            button_playerMenu_ReturnToMyMonster = new Button();
+            label_myMonster_CurrentMonsterName = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_EXPicon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_STicon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_HPicon).BeginInit();
@@ -97,6 +97,7 @@
             // 
             // progressBar_myMonster_HP
             // 
+            progressBar_myMonster_HP.ForeColor = Color.DarkOrange;
             progressBar_myMonster_HP.Location = new Point(134, 459);
             progressBar_myMonster_HP.Name = "progressBar_myMonster_HP";
             progressBar_myMonster_HP.Size = new Size(377, 27);
@@ -195,15 +196,15 @@
             button_myMonster_MiniGames.TabIndex = 14;
             button_myMonster_MiniGames.UseVisualStyleBackColor = true;
             // 
-            // button_playerMenu_ReturnToMyMonster
+            // label_myMonster_CurrentMonsterName
             // 
-            button_playerMenu_ReturnToMyMonster.BackColor = Color.Transparent;
-            button_playerMenu_ReturnToMyMonster.BackgroundImage = (Image)resources.GetObject("button_playerMenu_ReturnToMyMonster.BackgroundImage");
-            button_playerMenu_ReturnToMyMonster.Location = new Point(284, 429);
-            button_playerMenu_ReturnToMyMonster.Name = "button_playerMenu_ReturnToMyMonster";
-            button_playerMenu_ReturnToMyMonster.Size = new Size(33, 43);
-            button_playerMenu_ReturnToMyMonster.TabIndex = 21;
-            button_playerMenu_ReturnToMyMonster.UseVisualStyleBackColor = false;
+            label_myMonster_CurrentMonsterName.AutoSize = true;
+            label_myMonster_CurrentMonsterName.BackColor = Color.WhiteSmoke;
+            label_myMonster_CurrentMonsterName.Location = new Point(255, 418);
+            label_myMonster_CurrentMonsterName.Name = "label_myMonster_CurrentMonsterName";
+            label_myMonster_CurrentMonsterName.Size = new Size(83, 15);
+            label_myMonster_CurrentMonsterName.TabIndex = 23;
+            label_myMonster_CurrentMonsterName.Text = "MonsterName";
             // 
             // myMonster
             // 
@@ -211,7 +212,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(54, 39, 22);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            Controls.Add(button_playerMenu_ReturnToMyMonster);
+            Controls.Add(label_myMonster_CurrentMonsterName);
             Controls.Add(button_myMonster_MiniGames);
             Controls.Add(button_myMonster_Battle);
             Controls.Add(button_myMonster_ReturnToMainMenu);
@@ -236,6 +237,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_Frame).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_Draco).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -255,6 +257,6 @@
         private Button button_myMonster_ReturnToMainMenu;
         private Button button_myMonster_Battle;
         private Button button_myMonster_MiniGames;
-        private Button button_playerMenu_ReturnToMyMonster;
+        private Label label_myMonster_CurrentMonsterName;
     }
 }
