@@ -32,7 +32,7 @@ namespace Monster.UI
             SetupBindings(_gameState, _bsMonster, _bsUser);
 
             // Show initial UserControl
-            NavigateTo("Monster");
+            NavigateTo("MainMenu");
 
             System.Diagnostics.Debug.WriteLine(@"[DEBUG-Form1] Bindings Setup.");
         }

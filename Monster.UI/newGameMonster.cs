@@ -54,7 +54,7 @@ namespace Monster.UI
         public void HookBindings()
         {
             labelUserName.DataBindings.Add(nameof(Label.Text), bsMonster, nameof(MonsterClass.Name));
-            textBox_newGameMonster_InputUsername.DataBindings.Add(nameof(TextBox.Text), bsMonster, nameof(MonsterClass.Name),true,DataSourceUpdateMode.OnPropertyChanged);
+            textBox_newGameMonster_InputUsername.DataBindings.Add(nameof(TextBox.Text), bsMonster, nameof(MonsterClass.Name), true, DataSourceUpdateMode.OnPropertyChanged);
         }
 
         private void button_newGame_Monster_Draco_Click(object sender, EventArgs e)
@@ -87,6 +87,13 @@ namespace Monster.UI
             {
                 System.Diagnostics.Debug.WriteLine("Binding source is not set or is not a MonsterClass object.");
             }
+        }
+
+        private void label2_newGameMonster_Next_Click(object sender, EventArgs e)
+        {
+            Form1 parentForm = this.FindForm() as Form1;
+
+            parentForm.NavigateTo("Monster");
         }
     }
 }

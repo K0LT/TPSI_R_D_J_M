@@ -37,10 +37,9 @@
             // button_mainMenu_NewGame
             // 
             button_mainMenu_NewGame.BackgroundImage = (Image)resources.GetObject("button_mainMenu_NewGame.BackgroundImage");
-            button_mainMenu_NewGame.Location = new Point(261, 912);
-            button_mainMenu_NewGame.Margin = new Padding(4, 5, 4, 5);
+            button_mainMenu_NewGame.Location = new Point(183, 547);
             button_mainMenu_NewGame.Name = "button_mainMenu_NewGame";
-            button_mainMenu_NewGame.Size = new Size(326, 75);
+            button_mainMenu_NewGame.Size = new Size(228, 45);
             button_mainMenu_NewGame.TabIndex = 0;
             button_mainMenu_NewGame.UseVisualStyleBackColor = true;
             button_mainMenu_NewGame.Click += button_mainMenu_NewGame_Click;
@@ -48,10 +47,9 @@
             // button_mainMenu_LoadGame
             // 
             button_mainMenu_LoadGame.BackgroundImage = (Image)resources.GetObject("button_mainMenu_LoadGame.BackgroundImage");
-            button_mainMenu_LoadGame.Location = new Point(261, 1087);
-            button_mainMenu_LoadGame.Margin = new Padding(4, 5, 4, 5);
+            button_mainMenu_LoadGame.Location = new Point(183, 652);
             button_mainMenu_LoadGame.Name = "button_mainMenu_LoadGame";
-            button_mainMenu_LoadGame.Size = new Size(326, 75);
+            button_mainMenu_LoadGame.Size = new Size(228, 45);
             button_mainMenu_LoadGame.TabIndex = 1;
             button_mainMenu_LoadGame.UseVisualStyleBackColor = true;
             button_mainMenu_LoadGame.Click += button_mainMenu_LoadGame_Click;
@@ -59,24 +57,23 @@
             // button_mainMenu_Exit
             // 
             button_mainMenu_Exit.BackgroundImage = (Image)resources.GetObject("button_mainMenu_Exit.BackgroundImage");
-            button_mainMenu_Exit.Location = new Point(261, 1258);
-            button_mainMenu_Exit.Margin = new Padding(4, 5, 4, 5);
+            button_mainMenu_Exit.Location = new Point(183, 755);
             button_mainMenu_Exit.Name = "button_mainMenu_Exit";
-            button_mainMenu_Exit.Size = new Size(326, 75);
+            button_mainMenu_Exit.Size = new Size(228, 45);
             button_mainMenu_Exit.TabIndex = 2;
             button_mainMenu_Exit.UseVisualStyleBackColor = true;
+            button_mainMenu_Exit.Click += button_mainMenu_Exit_Click;
             // 
             // mainMenu
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             Controls.Add(button_mainMenu_Exit);
             Controls.Add(button_mainMenu_LoadGame);
             Controls.Add(button_mainMenu_NewGame);
-            Margin = new Padding(4, 5, 4, 5);
             Name = "mainMenu";
-            Size = new Size(857, 1500);
+            Size = new Size(600, 900);
             ResumeLayout(false);
         }
 

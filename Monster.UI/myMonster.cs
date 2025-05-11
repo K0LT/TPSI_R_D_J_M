@@ -16,7 +16,7 @@ namespace Monster.UI
     {
         private BindingSource _bsMonster;
 
-        
+
         public object bsDataSource
         {
             get => _bsMonster.DataSource;
@@ -72,7 +72,7 @@ namespace Monster.UI
 
         private void button_myMonster_ReturnToMainMenu_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button_myMonster_Player_Click(object sender, EventArgs e)
@@ -105,6 +105,13 @@ namespace Monster.UI
             {
                 System.Diagnostics.Debug.WriteLine("[DEBUG-myMonster] Parent form is null.");
             }
+        }
+
+        private void button_myMonster_Save_Click(object sender, EventArgs e)
+        {
+            Form1 parentForm = this.FindForm() as Form1;
+
+            parentForm.SaveGame();
         }
     }
 }
