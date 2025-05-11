@@ -52,6 +52,8 @@ namespace Monster.UI
             // nameof(MonsterClass.HealthPoints));
             progressBar_myMonster_ST.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
                 nameof(MonsterClass.HealthPoints));
+
+            pictureBox_myMonster_Draco.DataBindings.Add(nameof(PictureBox.Image), bsDataSource, nameof(MonsterClass.MonsterImage));
             //Eliminei o label a dizer CurrentMonster mas deverei voltar a adicionar
             //label_myMonster_CurrentMonsterName.DataBindings.Add(nameof(Label.Text), bsDataSource,
             //nameof(MonsterClass.Name));

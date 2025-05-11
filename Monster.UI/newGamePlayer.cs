@@ -16,6 +16,7 @@ namespace Monster.UI
         private BindingSource _bsUserName = new BindingSource();
         private User _tempUser = new User();
         
+        // TODO: Implement newGameMonster binding pattern, this is outdated
 
         public newGamePlayer()
         {
@@ -47,7 +48,6 @@ namespace Monster.UI
 
             if (parentForm != null)
             {
-                // Call NavigateTo to switch to the Inventory control
                 parentForm.SetupUser(_tempUser.Username, _tempUser.UserType);
                 parentForm.NavigateTo("NewMonster");
             }

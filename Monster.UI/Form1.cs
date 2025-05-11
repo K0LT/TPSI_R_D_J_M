@@ -31,7 +31,7 @@ namespace Monster.UI
             SetupBindings(_gameState, _bsMonster, _bsUser);
 
             // Show initial UserControl
-            NavigateTo("NewGame");
+            NavigateTo("Monster");
 
             System.Diagnostics.Debug.WriteLine(@"[DEBUG-Form1] Bindings Setup.");
         }
@@ -46,6 +46,7 @@ namespace Monster.UI
             playerMenu playerMenuControl = new playerMenu(_gameState.CurrentUser.UserType);
             newGamePlayer newUserControl = new newGamePlayer();
             newGameMonster newMonsterControl = new newGameMonster();
+            mainMenu mainMenu = new mainMenu();
 
             // Add controls to dictionary with unique keys
             _userControls.Add("Monster", monsterControl);
@@ -53,13 +54,9 @@ namespace Monster.UI
             _userControls.Add("TicTacToe", ticTacToeControl);
             _userControls.Add("MemoryGame", memoryGameControl);
             _userControls.Add("Player", playerMenuControl);
-            _userControls.Add("NewGame", newUserControl);
+            _userControls.Add("NewUser", newUserControl);
             _userControls.Add("NewMonster", newMonsterControl);
-
-            // Set up bindings for each control
-            SetupUserControlBindings(_bsMonster, monsterControl, _gameState);
-            SetUpNewMonsterControlBindings(_bsUser, newMonsterControl, _gameState);
-            // Additional bindings can be added for other controls if needed
+            _userControls.Add("MainMenu", mainMenu);
         }
 
         public void NavigateTo(string controlKey)
@@ -92,6 +89,20 @@ namespace Monster.UI
             // Different controls might need different data refreshed
             switch (controlKey)
             {
+                case "MainMenu":
+                    var mainMenu = control as mainMenu;
+                    if (mainMenu != null)
+                    {
+                        // Nothing so far
+                    }
+                    break;
+                case "NewUser":
+                    var newUser = control as newGamePlayer;
+                    if(newUser != null)
+                    {
+                        // Nothing so far
+                    }
+                    break;
                 case "Monster":
                     var monsterControl = control as myMonster;
                     if (monsterControl != null)
@@ -122,13 +133,16 @@ namespace Monster.UI
                     if(newGameMonster != null)
                     {
                         int monsterCount = _gameState.OwnedMonsters.Count;
-                        if(monsterCount == 0)
+                        if(monsterCount == 1)
                         {
-                            newGameMonster.bsMonster = _gameState.ActiveMonster;
+                            newGameMonster.bsMonster = _gameState.OwnedMonsters.ElementAt(monsterCount - 1);
+                            newGameMonster.HookBindings();
                         }
                         else
                         {
-                            newGameMonster.bsMonster = _gameState.OwnedMonsters.ElementAt(monsterCount - 1);
+                            _gameState.OwnedMonsters.Add(new Core.Models.MonsterClass());
+                            newGameMonster.bsMonster = _gameState.OwnedMonsters.ElementAt(monsterCount);
+                            newGameMonster.HookBindings();
                         }
                     }
                     break;
@@ -161,11 +175,11 @@ namespace Monster.UI
         }
 
         // Event handler for Save button
-        private void SaveGame(string username)
+        public void SaveGame()
         {
             try
             {
-                _gameDataService.SaveGame(_gameState, username);
+                _gameDataService.SaveGame(_gameState);
                 MessageBox.Show("Game saved successfully!", "Save Game", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -175,7 +189,7 @@ namespace Monster.UI
         }
 
         // Event handler for Load button
-        private void LoadGame(string username)
+        public void LoadGame(string username)
         {
             try
             {
