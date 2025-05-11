@@ -49,11 +49,12 @@
             // 
             button_tutorialSecondPage_ReturnToMainMenu.BackColor = Color.Transparent;
             button_tutorialSecondPage_ReturnToMainMenu.BackgroundImage = (Image)resources.GetObject("button_tutorialSecondPage_ReturnToMainMenu.BackgroundImage");
-            button_tutorialSecondPage_ReturnToMainMenu.Location = new Point(270, 767);
+            button_tutorialSecondPage_ReturnToMainMenu.Location = new Point(364, 714);
             button_tutorialSecondPage_ReturnToMainMenu.Name = "button_tutorialSecondPage_ReturnToMainMenu";
-            button_tutorialSecondPage_ReturnToMainMenu.Size = new Size(33, 43);
+            button_tutorialSecondPage_ReturnToMainMenu.Size = new Size(58, 81);
             button_tutorialSecondPage_ReturnToMainMenu.TabIndex = 22;
             button_tutorialSecondPage_ReturnToMainMenu.UseVisualStyleBackColor = false;
+            button_tutorialSecondPage_ReturnToMainMenu.Click += button_tutorialSecondPage_ReturnToMainMenu_Click;
             // 
             // button_tutorialSecondPage_NextToTutorialThirdPage
             // 

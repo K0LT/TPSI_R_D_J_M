@@ -35,13 +35,13 @@
             progressBar_battleGame_MyMonsterHp = new ProgressBar();
             label_battleGame_BossHPtext = new Label();
             label_battleGame_MyMonsterHPText = new Label();
-            label_battleGame_myMonsterName = new Label();
             button_battleGame_FirstAttack = new Button();
             button_battleGame_SecondAttack = new Button();
             button_battleGame_ThirdAttack = new Button();
             label_battleGame_FirstAttack = new Label();
             label_battleGame_SecondAttack = new Label();
             label_battleGame_ThirdAttack = new Label();
+            label_battleGame_CurrentMonsterName = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_Draco).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_Boss).BeginInit();
             SuspendLayout();
@@ -98,15 +98,6 @@
             label_battleGame_MyMonsterHPText.TabIndex = 5;
             label_battleGame_MyMonsterHPText.Text = "HP";
             // 
-            // label_battleGame_myMonsterName
-            // 
-            label_battleGame_myMonsterName.AutoSize = true;
-            label_battleGame_myMonsterName.Location = new Point(238, 541);
-            label_battleGame_myMonsterName.Name = "label_battleGame_myMonsterName";
-            label_battleGame_myMonsterName.Size = new Size(100, 15);
-            label_battleGame_myMonsterName.TabIndex = 6;
-            label_battleGame_myMonsterName.Text = "myMonsterName";
-            // 
             // button_battleGame_FirstAttack
             // 
             button_battleGame_FirstAttack.Location = new Point(238, 623);
@@ -161,18 +152,28 @@
             label_battleGame_ThirdAttack.TabIndex = 12;
             label_battleGame_ThirdAttack.Text = "ThirdAttackName";
             // 
+            // label_battleGame_CurrentMonsterName
+            // 
+            label_battleGame_CurrentMonsterName.AutoSize = true;
+            label_battleGame_CurrentMonsterName.BackColor = Color.WhiteSmoke;
+            label_battleGame_CurrentMonsterName.Location = new Point(238, 547);
+            label_battleGame_CurrentMonsterName.Name = "label_battleGame_CurrentMonsterName";
+            label_battleGame_CurrentMonsterName.Size = new Size(83, 15);
+            label_battleGame_CurrentMonsterName.TabIndex = 24;
+            label_battleGame_CurrentMonsterName.Text = "MonsterName";
+            // 
             // battleGame
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            Controls.Add(label_battleGame_CurrentMonsterName);
             Controls.Add(label_battleGame_ThirdAttack);
             Controls.Add(label_battleGame_SecondAttack);
             Controls.Add(label_battleGame_FirstAttack);
             Controls.Add(button_battleGame_ThirdAttack);
             Controls.Add(button_battleGame_SecondAttack);
             Controls.Add(button_battleGame_FirstAttack);
-            Controls.Add(label_battleGame_myMonsterName);
             Controls.Add(label_battleGame_MyMonsterHPText);
             Controls.Add(label_battleGame_BossHPtext);
             Controls.Add(progressBar_battleGame_MyMonsterHp);
@@ -195,12 +196,12 @@
         private ProgressBar progressBar_battleGame_MyMonsterHp;
         private Label label_battleGame_BossHPtext;
         private Label label_battleGame_MyMonsterHPText;
-        private Label label_battleGame_myMonsterName;
         private Button button_battleGame_FirstAttack;
         private Button button_battleGame_SecondAttack;
         private Button button_battleGame_ThirdAttack;
         private Label label_battleGame_FirstAttack;
         private Label label_battleGame_SecondAttack;
         private Label label_battleGame_ThirdAttack;
+        private Label label_battleGame_CurrentMonsterName;
     }
 }
