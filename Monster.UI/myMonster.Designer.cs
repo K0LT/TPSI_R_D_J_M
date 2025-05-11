@@ -204,7 +204,7 @@
             // 
             label_myMonster_CurrentMonsterName.AutoSize = true;
             label_myMonster_CurrentMonsterName.BackColor = Color.WhiteSmoke;
-            label_myMonster_CurrentMonsterName.Location = new Point(255, 418);
+            label_myMonster_CurrentMonsterName.Location = new Point(269, 418);
             label_myMonster_CurrentMonsterName.Name = "label_myMonster_CurrentMonsterName";
             label_myMonster_CurrentMonsterName.Size = new Size(83, 15);
             label_myMonster_CurrentMonsterName.TabIndex = 23;
