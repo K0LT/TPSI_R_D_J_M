@@ -38,6 +38,7 @@
             newGamePlayer.Controls.Add(MainPanel);
             newGamePlayer.Dock = DockStyle.Fill;
             newGamePlayer.Location = new Point(0, 0);
+            newGamePlayer.Margin = new Padding(4, 5, 4, 5);
             newGamePlayer.Name = "newGamePlayer";
             newGamePlayer.Size = new Size(584, 911);
             newGamePlayer.TabIndex = 0;
@@ -53,7 +54,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(584, 911);
+            ClientSize = new Size(1584, 861);
             Controls.Add(newGamePlayer);
             MaximumSize = new Size(600, 950);
             MinimumSize = new Size(600, 900);
