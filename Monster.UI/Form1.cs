@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using System.Windows.Forms;
 using Monster.Game.GameState;
 namespace Monster.UI
 {
@@ -61,19 +62,20 @@ namespace Monster.UI
 
         public void NavigateTo(string controlKey)
         {
-            // Clear the main panel
+            
             MainPanel.Controls.Clear();
 
-            // Get the requested UserControl
+            
             if (_userControls.TryGetValue(controlKey, out UserControl control))
             {
-                // Configure control to fill panel
-                control.Dock = DockStyle.Fill;
+                control.Dock = DockStyle.None;
 
-                // Refresh the control's data before showing (if needed)
+                MainPanel.Size = control.Size;
+
+                this.ClientSize = MainPanel.Size;
+
                 RefreshControlData(controlKey, control);
 
-                // Add the control to the panel
                 MainPanel.Controls.Add(control);
 
                 System.Diagnostics.Debug.WriteLine($"[DEBUG-Form1] Navigated to {controlKey}");
@@ -201,6 +203,16 @@ namespace Monster.UI
             catch (Exception ex)
             {
                 MessageBox.Show($"Error loading game: {ex.Message}", "Load Game", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                var cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
             }
         }
     }
