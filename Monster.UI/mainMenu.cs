@@ -28,7 +28,7 @@ namespace Monster.UI
         {
             Form1 form = this.FindForm() as Form1;
 
-            //
+            //form.NavigateTo("LoadGame");
         }
     }
 }

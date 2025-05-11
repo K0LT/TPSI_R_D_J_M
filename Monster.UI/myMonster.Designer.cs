@@ -169,6 +169,7 @@
             button_myMonster_Save.Size = new Size(50, 50);
             button_myMonster_Save.TabIndex = 11;
             button_myMonster_Save.UseVisualStyleBackColor = true;
+            button_myMonster_Save.Click += button_myMonster_Save_Click;
             // 
             // button_myMonster_ReturnToMainMenu
             // 
