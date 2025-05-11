@@ -16,5 +16,10 @@ namespace Monster.UI
         {
             InitializeComponent();
         }
+
+        private void button_tutorialSecondPage_ReturnToMainMenu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -50,6 +50,7 @@
             label_inventory_HP = new Label();
             label_inventory_Stamina = new Label();
             button_inventory_ReturnToMyMonster = new Button();
+            label_inventory_CurrentMonsterName = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_InventoryText).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_BeerIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_BurguerIcon).BeginInit();
@@ -256,11 +257,21 @@
             button_inventory_ReturnToMyMonster.TabIndex = 21;
             button_inventory_ReturnToMyMonster.UseVisualStyleBackColor = false;
             // 
+            // label_inventory_CurrentMonsterName
+            // 
+            label_inventory_CurrentMonsterName.AutoSize = true;
+            label_inventory_CurrentMonsterName.Location = new Point(85, 419);
+            label_inventory_CurrentMonsterName.Name = "label_inventory_CurrentMonsterName";
+            label_inventory_CurrentMonsterName.Size = new Size(83, 15);
+            label_inventory_CurrentMonsterName.TabIndex = 22;
+            label_inventory_CurrentMonsterName.Text = "MonsterName";
+            // 
             // inventory
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            Controls.Add(label_inventory_CurrentMonsterName);
             Controls.Add(button_inventory_ReturnToMyMonster);
             Controls.Add(label_inventory_Stamina);
             Controls.Add(label_inventory_HP);
@@ -320,5 +331,6 @@
         private Label label_inventory_HP;
         private Label label_inventory_Stamina;
         private Button button_inventory_ReturnToMyMonster;
+        private Label label_inventory_CurrentMonsterName;
     }
 }
