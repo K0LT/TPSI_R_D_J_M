@@ -24,6 +24,9 @@ namespace Monster.UI
             // Initialize all UserControls
             InitializeUserControls();
 
+            // TESTING
+            _gameState.OwnedMonsters.Add(_gameState.ActiveMonster);
+
             // Set up global binding sources
             SetupBindings(_gameState, _bsMonster, _bsUser);
 
@@ -112,6 +115,21 @@ namespace Monster.UI
                     {
                         // Update player data
                         //playerControl.userData = _gameState.currentUser;
+                    }
+                    break;
+                case "NewMonster":
+                    var newGameMonster = control as newGameMonster;
+                    if(newGameMonster != null)
+                    {
+                        int monsterCount = _gameState.OwnedMonsters.Count;
+                        if(monsterCount == 0)
+                        {
+                            newGameMonster.bsMonster = _gameState.ActiveMonster;
+                        }
+                        else
+                        {
+                            newGameMonster.bsMonster = _gameState.OwnedMonsters.ElementAt(monsterCount - 1);
+                        }
                     }
                     break;
                     // Add cases for other controls as needed

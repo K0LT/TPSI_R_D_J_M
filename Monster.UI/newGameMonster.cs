@@ -14,6 +14,7 @@ namespace Monster.UI
     public partial class newGameMonster : UserControl
     {
         private BindingSource _bsUser = new BindingSource();
+        private BindingSource _bsMonster = new BindingSource();
 
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
@@ -21,6 +22,13 @@ namespace Monster.UI
         {
             get => _bsUser;
             set => _bsUser.DataSource = value;
+        }
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public object bsMonster
+        {
+            get => _bsMonster;
+            set => _bsMonster.DataSource = value;
         }
 
         public newGameMonster()
@@ -46,6 +54,11 @@ namespace Monster.UI
         public void HookBindings()
         {
             labelUserName.DataBindings.Add(nameof(Label.Text), bsUser, nameof(User.Username));
+        }
+
+        private void button_newGame_Monster_Draco_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

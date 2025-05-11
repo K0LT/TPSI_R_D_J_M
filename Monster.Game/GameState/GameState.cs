@@ -37,7 +37,7 @@ namespace Monster.Game.GameState
                 }
             }
         }
-        public List<MonsterClass>? OwnedMonsters { get; set; }
+        public List<MonsterClass>? OwnedMonsters { get; set; } = new List<MonsterClass>();
         public Dictionary<string, int>? Inventory { get; set; }
         
         public int Currency { get; set; }

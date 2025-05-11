@@ -82,6 +82,7 @@
             button_newGame_Monster_Draco.Size = new Size(293, 415);
             button_newGame_Monster_Draco.TabIndex = 12;
             button_newGame_Monster_Draco.UseVisualStyleBackColor = false;
+            button_newGame_Monster_Draco.Click += button_newGame_Monster_Draco_Click;
             // 
             // textBox_newGameMonster_InputUsername
             // 
