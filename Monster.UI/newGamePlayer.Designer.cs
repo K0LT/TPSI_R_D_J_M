@@ -48,27 +48,31 @@
             // 
             // button_newGamePlayer_RegisterText
             // 
-            button_newGamePlayer_RegisterText.Location = new Point(235, 673);
+            button_newGamePlayer_RegisterText.Location = new Point(336, 1122);
+            button_newGamePlayer_RegisterText.Margin = new Padding(4, 5, 4, 5);
             button_newGamePlayer_RegisterText.Name = "button_newGamePlayer_RegisterText";
-            button_newGamePlayer_RegisterText.Size = new Size(75, 37);
+            button_newGamePlayer_RegisterText.Size = new Size(107, 62);
             button_newGamePlayer_RegisterText.TabIndex = 2;
             button_newGamePlayer_RegisterText.Text = "Register";
             button_newGamePlayer_RegisterText.UseVisualStyleBackColor = true;
+            button_newGamePlayer_RegisterText.Click += button_newGamePlayer_RegisterText_Click;
             // 
             // button_newGamePlayer_Next
             // 
-            button_newGamePlayer_Next.Location = new Point(235, 725);
+            button_newGamePlayer_Next.Location = new Point(336, 1208);
+            button_newGamePlayer_Next.Margin = new Padding(4, 5, 4, 5);
             button_newGamePlayer_Next.Name = "button_newGamePlayer_Next";
-            button_newGamePlayer_Next.Size = new Size(75, 23);
+            button_newGamePlayer_Next.Size = new Size(107, 38);
             button_newGamePlayer_Next.TabIndex = 3;
             button_newGamePlayer_Next.Text = "Next";
             button_newGamePlayer_Next.UseVisualStyleBackColor = true;
             // 
             // textBox_newGamePlayer_InputForUsername
             // 
-            textBox_newGamePlayer_InputForUsername.Location = new Point(285, 594);
+            textBox_newGamePlayer_InputForUsername.Location = new Point(407, 990);
+            textBox_newGamePlayer_InputForUsername.Margin = new Padding(4, 5, 4, 5);
             textBox_newGamePlayer_InputForUsername.Name = "textBox_newGamePlayer_InputForUsername";
-            textBox_newGamePlayer_InputForUsername.Size = new Size(183, 23);
+            textBox_newGamePlayer_InputForUsername.Size = new Size(260, 31);
             textBox_newGamePlayer_InputForUsername.TabIndex = 1;
             // 
             // label_newGamePlayer_UsernameText
@@ -77,18 +81,20 @@
             label_newGamePlayer_UsernameText.BackColor = Color.White;
             label_newGamePlayer_UsernameText.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label_newGamePlayer_UsernameText.ForeColor = Color.FromArgb(54, 39, 22);
-            label_newGamePlayer_UsernameText.Location = new Point(161, 594);
+            label_newGamePlayer_UsernameText.Location = new Point(230, 990);
+            label_newGamePlayer_UsernameText.Margin = new Padding(4, 0, 4, 0);
             label_newGamePlayer_UsernameText.Name = "label_newGamePlayer_UsernameText";
-            label_newGamePlayer_UsernameText.Size = new Size(106, 25);
+            label_newGamePlayer_UsernameText.Size = new Size(159, 40);
             label_newGamePlayer_UsernameText.TabIndex = 0;
             label_newGamePlayer_UsernameText.Text = "Username: ";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(772, 795);
+            pictureBox1.Location = new Point(1103, 1325);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(44, 44);
+            pictureBox1.Size = new Size(63, 73);
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
             // 
@@ -96,9 +102,10 @@
             // 
             pictureBox_newGamePlayer_MaleIcon.BackColor = Color.Transparent;
             pictureBox_newGamePlayer_MaleIcon.Image = (Image)resources.GetObject("pictureBox_newGamePlayer_MaleIcon.Image");
-            pictureBox_newGamePlayer_MaleIcon.Location = new Point(253, 365);
+            pictureBox_newGamePlayer_MaleIcon.Location = new Point(361, 608);
+            pictureBox_newGamePlayer_MaleIcon.Margin = new Padding(4, 5, 4, 5);
             pictureBox_newGamePlayer_MaleIcon.Name = "pictureBox_newGamePlayer_MaleIcon";
-            pictureBox_newGamePlayer_MaleIcon.Size = new Size(90, 118);
+            pictureBox_newGamePlayer_MaleIcon.Size = new Size(129, 197);
             pictureBox_newGamePlayer_MaleIcon.TabIndex = 7;
             pictureBox_newGamePlayer_MaleIcon.TabStop = false;
             // 
@@ -106,9 +113,10 @@
             // 
             pictureBox_newGamePlayer_FemaleIcon.BackColor = Color.Transparent;
             pictureBox_newGamePlayer_FemaleIcon.Image = (Image)resources.GetObject("pictureBox_newGamePlayer_FemaleIcon.Image");
-            pictureBox_newGamePlayer_FemaleIcon.Location = new Point(91, 365);
+            pictureBox_newGamePlayer_FemaleIcon.Location = new Point(130, 608);
+            pictureBox_newGamePlayer_FemaleIcon.Margin = new Padding(4, 5, 4, 5);
             pictureBox_newGamePlayer_FemaleIcon.Name = "pictureBox_newGamePlayer_FemaleIcon";
-            pictureBox_newGamePlayer_FemaleIcon.Size = new Size(90, 118);
+            pictureBox_newGamePlayer_FemaleIcon.Size = new Size(129, 197);
             pictureBox_newGamePlayer_FemaleIcon.TabIndex = 8;
             pictureBox_newGamePlayer_FemaleIcon.TabStop = false;
             // 
@@ -116,42 +124,47 @@
             // 
             pictureBox_newGamePlayer_OtherIcon.BackColor = Color.Transparent;
             pictureBox_newGamePlayer_OtherIcon.Image = (Image)resources.GetObject("pictureBox_newGamePlayer_OtherIcon.Image");
-            pictureBox_newGamePlayer_OtherIcon.Location = new Point(405, 365);
+            pictureBox_newGamePlayer_OtherIcon.Location = new Point(579, 608);
+            pictureBox_newGamePlayer_OtherIcon.Margin = new Padding(4, 5, 4, 5);
             pictureBox_newGamePlayer_OtherIcon.Name = "pictureBox_newGamePlayer_OtherIcon";
-            pictureBox_newGamePlayer_OtherIcon.Size = new Size(90, 118);
+            pictureBox_newGamePlayer_OtherIcon.Size = new Size(129, 197);
             pictureBox_newGamePlayer_OtherIcon.TabIndex = 9;
             pictureBox_newGamePlayer_OtherIcon.TabStop = false;
             // 
             // button_newGamePlayer_ChooseFemale
             // 
-            button_newGamePlayer_ChooseFemale.Location = new Point(91, 496);
+            button_newGamePlayer_ChooseFemale.Location = new Point(130, 827);
+            button_newGamePlayer_ChooseFemale.Margin = new Padding(4, 5, 4, 5);
             button_newGamePlayer_ChooseFemale.Name = "button_newGamePlayer_ChooseFemale";
-            button_newGamePlayer_ChooseFemale.Size = new Size(90, 23);
+            button_newGamePlayer_ChooseFemale.Size = new Size(129, 38);
             button_newGamePlayer_ChooseFemale.TabIndex = 10;
             button_newGamePlayer_ChooseFemale.Text = "Female";
             button_newGamePlayer_ChooseFemale.UseVisualStyleBackColor = true;
+            button_newGamePlayer_ChooseFemale.Click += button_newGamePlayer_ChooseFemale_Click;
             // 
             // button_newGamePlayer_ChooseMale
             // 
-            button_newGamePlayer_ChooseMale.Location = new Point(253, 496);
+            button_newGamePlayer_ChooseMale.Location = new Point(361, 827);
+            button_newGamePlayer_ChooseMale.Margin = new Padding(4, 5, 4, 5);
             button_newGamePlayer_ChooseMale.Name = "button_newGamePlayer_ChooseMale";
-            button_newGamePlayer_ChooseMale.Size = new Size(90, 23);
+            button_newGamePlayer_ChooseMale.Size = new Size(129, 38);
             button_newGamePlayer_ChooseMale.TabIndex = 11;
             button_newGamePlayer_ChooseMale.Text = "Male";
             button_newGamePlayer_ChooseMale.UseVisualStyleBackColor = true;
             // 
             // button_newGamePlayer_ChooseOther
             // 
-            button_newGamePlayer_ChooseOther.Location = new Point(405, 496);
+            button_newGamePlayer_ChooseOther.Location = new Point(579, 827);
+            button_newGamePlayer_ChooseOther.Margin = new Padding(4, 5, 4, 5);
             button_newGamePlayer_ChooseOther.Name = "button_newGamePlayer_ChooseOther";
-            button_newGamePlayer_ChooseOther.Size = new Size(90, 23);
+            button_newGamePlayer_ChooseOther.Size = new Size(129, 38);
             button_newGamePlayer_ChooseOther.TabIndex = 12;
             button_newGamePlayer_ChooseOther.Text = "JoãoPimentel";
             button_newGamePlayer_ChooseOther.UseVisualStyleBackColor = true;
             // 
             // newGamePlayer
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(54, 39, 22);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
@@ -166,8 +179,9 @@
             Controls.Add(textBox_newGamePlayer_InputForUsername);
             Controls.Add(pictureBox1);
             Controls.Add(label_newGamePlayer_UsernameText);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "newGamePlayer";
-            Size = new Size(600, 900);
+            Size = new Size(857, 1500);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_newGamePlayer_MaleIcon).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_newGamePlayer_FemaleIcon).EndInit();

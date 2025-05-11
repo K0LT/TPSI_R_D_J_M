@@ -16,7 +16,7 @@ namespace Monster.UI
     {
         private BindingSource _bsMonster;
 
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        
         public object bsDataSource
         {
             get => _bsMonster.DataSource;
@@ -49,12 +49,14 @@ namespace Monster.UI
                 nameof(MonsterClass.HealthPoints));
             //Eliminei a progress bad dos niveis
             //progressBar_myMonster_LVL.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
-               // nameof(MonsterClass.HealthPoints));
+            // nameof(MonsterClass.HealthPoints));
             progressBar_myMonster_ST.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
                 nameof(MonsterClass.HealthPoints));
+
+            pictureBox_myMonster_Draco.DataBindings.Add(nameof(PictureBox.Image), bsDataSource, nameof(MonsterClass.MonsterImage));
             //Eliminei o label a dizer CurrentMonster mas deverei voltar a adicionar
             //label_myMonster_CurrentMonsterName.DataBindings.Add(nameof(Label.Text), bsDataSource,
-                //nameof(MonsterClass.Name));
+            //nameof(MonsterClass.Name));
             System.Diagnostics.Debug.WriteLine(@"HookBindings exiting.");
         }
 
@@ -66,6 +68,43 @@ namespace Monster.UI
         private void pictureBox_myMonster_CurrentMonster_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button_myMonster_ReturnToMainMenu_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button_myMonster_Player_Click(object sender, EventArgs e)
+        {
+            // Get the parent form
+            Form1 parentForm = this.FindForm() as Form1;
+
+            if (parentForm != null)
+            {
+                // Call NavigateTo to switch to the Inventory control
+                parentForm.NavigateTo("Player");
+            }
+            else
+            {
+                System.Diagnostics.Debug.WriteLine("[DEBUG-myMonster] Parent form is null.");
+            }
+        }
+
+        private void button_myMonster_Inventory_Click(object sender, EventArgs e)
+        {
+            // Get the parent form
+            Form1 parentForm = this.FindForm() as Form1;
+
+            if (parentForm != null)
+            {
+                // Call NavigateTo to switch to the Inventory control
+                parentForm.NavigateTo("Inventory");
+            }
+            else
+            {
+                System.Diagnostics.Debug.WriteLine("[DEBUG-myMonster] Parent form is null.");
+            }
         }
     }
 }

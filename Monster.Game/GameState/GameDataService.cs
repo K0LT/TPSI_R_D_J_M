@@ -20,9 +20,9 @@ namespace Monster.Game.GameState
             Directory.CreateDirectory(_saveDirectory);
         }
 
-        public void SaveGame(GameState state, string username)
+        public void SaveGame(GameState state)
         {
-            string filePath = GetSaveFilePath(username);
+            string filePath = GetSaveFilePath(state.CurrentUser.Username);
             string json = JsonSerializer.Serialize(state, new JsonSerializerOptions
             {
                 WriteIndented = true

@@ -9,7 +9,7 @@ namespace Monster.Game.GameState
 {
     public class GameState
     {
-        private User _currentUser;
+        private User _currentUser = new User();
 
         public User CurrentUser
         {
@@ -37,7 +37,7 @@ namespace Monster.Game.GameState
                 }
             }
         }
-        public List<MonsterClass>? OwnedMonsters { get; set; }
+        public List<MonsterClass>? OwnedMonsters { get; set; } = new List<MonsterClass>();
         public Dictionary<string, int>? Inventory { get; set; }
         
         public int Currency { get; set; }

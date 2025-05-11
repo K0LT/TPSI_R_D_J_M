@@ -115,12 +115,12 @@
             // 
             // pictureBox_myMonster_Draco
             // 
-            pictureBox_myMonster_Draco.Anchor = AnchorStyles.None;
             pictureBox_myMonster_Draco.BackColor = Color.Transparent;
             pictureBox_myMonster_Draco.Image = (Image)resources.GetObject("pictureBox_myMonster_Draco.Image");
-            pictureBox_myMonster_Draco.Location = new Point(134, 23);
+            pictureBox_myMonster_Draco.Location = new Point(101, 0);
             pictureBox_myMonster_Draco.Name = "pictureBox_myMonster_Draco";
-            pictureBox_myMonster_Draco.Size = new Size(366, 354);
+            pictureBox_myMonster_Draco.Size = new Size(410, 410);
+            pictureBox_myMonster_Draco.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox_myMonster_Draco.TabIndex = 3;
             pictureBox_myMonster_Draco.TabStop = false;
             // 
@@ -150,6 +150,7 @@
             button_myMonster_Inventory.Size = new Size(50, 50);
             button_myMonster_Inventory.TabIndex = 9;
             button_myMonster_Inventory.UseVisualStyleBackColor = true;
+            button_myMonster_Inventory.Click += button_myMonster_Inventory_Click;
             // 
             // button_myMonster_Player
             // 
@@ -159,6 +160,7 @@
             button_myMonster_Player.Size = new Size(50, 50);
             button_myMonster_Player.TabIndex = 10;
             button_myMonster_Player.UseVisualStyleBackColor = true;
+            button_myMonster_Player.Click += button_myMonster_Player_Click;
             // 
             // button_myMonster_Save
             // 
@@ -177,6 +179,7 @@
             button_myMonster_ReturnToMainMenu.Size = new Size(50, 50);
             button_myMonster_ReturnToMainMenu.TabIndex = 12;
             button_myMonster_ReturnToMainMenu.UseVisualStyleBackColor = true;
+            button_myMonster_ReturnToMainMenu.Click += button_myMonster_ReturnToMainMenu_Click;
             // 
             // button_myMonster_Battle
             // 

@@ -16,5 +16,19 @@ namespace Monster.UI
         {
             InitializeComponent();
         }
+
+        private void button_mainMenu_NewGame_Click(object sender, EventArgs e)
+        {
+            Form1 form = this.FindForm() as Form1;
+
+            form.NavigateTo("NewUser");
+        }
+
+        private void button_mainMenu_LoadGame_Click(object sender, EventArgs e)
+        {
+            Form1 form = this.FindForm() as Form1;
+
+            //
+        }
     }
 }

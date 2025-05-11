@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Monster.UI.Properties {
+namespace Monster.Core {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Monster.UI.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class monsterImages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal monsterImages() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Monster.UI.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Monster.UI.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Monster.Core.monsterImages", typeof(monsterImages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] defaultUserImage {
+        internal static byte[] draco_stage1 {
             get {
-                object obj = ResourceManager.GetObject("defaultUserImage", resourceCulture);
+                object obj = ResourceManager.GetObject("draco_stage1", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] playergirlgrandesemback {
+        internal static byte[] draco_stage2 {
             get {
-                object obj = ResourceManager.GetObject("playergirlgrandesemback", resourceCulture);
+                object obj = ResourceManager.GetObject("draco_stage2", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] playergrandesemback {
+        internal static byte[] draco_stage3 {
             get {
-                object obj = ResourceManager.GetObject("playergrandesemback", resourceCulture);
+                object obj = ResourceManager.GetObject("draco_stage3", resourceCulture);
                 return ((byte[])(obj));
             }
         }
