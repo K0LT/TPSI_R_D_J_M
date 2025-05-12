@@ -36,45 +36,38 @@ namespace Monster.UI
             InitializeComponent();
         }
 
-        private void button_newGameMonster_Save_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         public void HookBindings()
         {
-            labelUserName.DataBindings.Add(nameof(Label.Text), bsMonster, nameof(MonsterClass.Name));
+
+            //labelUserName.DataBindings.Add(nameof(Label.Text), bsMonster, nameof(MonsterClass.Name));
             textBox_newGameMonster_InputUsername.DataBindings.Add(nameof(TextBox.Text), bsMonster, nameof(MonsterClass.Name), true, DataSourceUpdateMode.OnPropertyChanged);
         }
-
-        private void button_newGame_Monster_Draco_Click(object sender, EventArgs e)
+        private void button_newGameMonster_Draco_Click(object sender, EventArgs e)
         {
             UpdateMonsterType("Draco");
+            panelNewMonsterName.Visible = true;
+
         }
 
         private void button_newGameMonster_Grifo_Click(object sender, EventArgs e)
         {
             UpdateMonsterType("Grifo");
-        }
+            panelNewMonsterName.Visible = true;
 
-        private void button_newGameMonster_Tauro_Click(object sender, EventArgs e)
+        }
+        private void button_newGame_Monster_Tauro_Click(object sender, EventArgs e)
         {
             UpdateMonsterType("Tauro");
+            panelNewMonsterName.Visible = true;
         }
+
 
         private void button_newGameMonster_Siren_Click(object sender, EventArgs e)
         {
             UpdateMonsterType("Siren");
+            panelNewMonsterName.Visible = true;
+
         }
 
         private void UpdateMonsterType(string newType)
@@ -96,19 +89,6 @@ namespace Monster.UI
             parentForm.NavigateTo("Monster");
         }
 
-        private void button_newGameMonster_Tauro_Click_1(object sender, EventArgs e)
-        {
-            UpdateMonsterType("Tauro");
-        }
-
-        private void button_newGameMonster_Siren_Click_1(object sender, EventArgs e)
-        {
-            UpdateMonsterType("Siren");
-        }
-
-        private void button_newGameMonster_Grifo_Click_1(object sender, EventArgs e)
-        {
-            UpdateMonsterType("Grifo");
-        }
+      
     }
 }

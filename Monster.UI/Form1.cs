@@ -48,6 +48,7 @@ namespace Monster.UI
             newGamePlayer newUserControl = new newGamePlayer();
             newGameMonster newMonsterControl = new newGameMonster();
             mainMenu mainMenu = new mainMenu();
+            loadGame loadGame = new loadGame();
 
             // Add controls to dictionary with unique keys
             _userControls.Add("Monster", monsterControl);
@@ -58,6 +59,7 @@ namespace Monster.UI
             _userControls.Add("NewUser", newUserControl);
             _userControls.Add("NewMonster", newMonsterControl);
             _userControls.Add("MainMenu", mainMenu);
+            _userControls.Add("LoadGame", mainMenu);
         }
 
         public void NavigateTo(string controlKey)

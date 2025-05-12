@@ -35,12 +35,24 @@ namespace Monster.UI
         private void button_newGamePlayer_ChooseFemale_Click(object sender, EventArgs e)
         {
             _tempUser.UserType = "girl";
+            panelNewUserRegister.Visible = true;
         }
 
-        private void button_newGamePlayer_ChooseMale_Click(object sender, EventArgs e)
+        private void button_newGamePlayer_ChooseMale_Click_1(object sender, EventArgs e)
         {
             _tempUser.UserType = "boy";
+            panelNewUserRegister.Visible = true;
+
         }
+
+        private void button_newGamePlayer_ChooseOther_Click(object sender, EventArgs e)
+        {
+            _tempUser.UserType = "jonnyBoy";
+            panelNewUserRegister.Visible = true;
+        }
+
+
+
 
         private void button_newGamePlayer_RegisterText_Click(object sender, EventArgs e)
         {
@@ -56,6 +68,12 @@ namespace Monster.UI
             {
                 System.Diagnostics.Debug.WriteLine("[DEBUG-myMonster] Parent form is null.");
             }
+
+        }
+
+        private void textBox_newGamePlayer_InputForUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

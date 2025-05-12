@@ -69,9 +69,13 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Zoom;
             Controls.Add(button_mainMenu_Exit);
             Controls.Add(button_mainMenu_LoadGame);
             Controls.Add(button_mainMenu_NewGame);
+            DoubleBuffered = true;
+            MaximumSize = new Size(600, 900);
+            MinimumSize = new Size(600, 900);
             Name = "mainMenu";
             Size = new Size(600, 900);
             ResumeLayout(false);

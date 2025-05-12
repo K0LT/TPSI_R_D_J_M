@@ -117,5 +117,10 @@ namespace Monster.UI
 
             parentForm.SaveGame();
         }
+
+        private void pictureBox_myMonster_Draco_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

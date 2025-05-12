@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             newGamePlayer = new Panel();
             MainPanel = new Panel();
             newGamePlayer.SuspendLayout();
@@ -38,30 +39,31 @@
             newGamePlayer.Controls.Add(MainPanel);
             newGamePlayer.Dock = DockStyle.Fill;
             newGamePlayer.Location = new Point(0, 0);
-            newGamePlayer.Margin = new Padding(4, 5, 4, 5);
             newGamePlayer.Name = "newGamePlayer";
-            newGamePlayer.Size = new Size(2244, 1370);
+            newGamePlayer.Size = new Size(584, 861);
             newGamePlayer.TabIndex = 0;
             // 
             // MainPanel
             // 
             MainPanel.Location = new Point(0, 0);
-            MainPanel.Margin = new Padding(4, 5, 4, 5);
             MainPanel.Name = "MainPanel";
-            MainPanel.Size = new Size(2263, 1435);
+            MainPanel.Size = new Size(600, 900);
             MainPanel.TabIndex = 0;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(2244, 1370);
+            ClientSize = new Size(584, 861);
             Controls.Add(newGamePlayer);
-            Margin = new Padding(4, 5, 4, 5);
-            MaximumSize = new Size(3000, 3000);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MaximumSize = new Size(600, 900);
+            MinimumSize = new Size(600, 900);
             Name = "Form1";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Monsters";
             newGamePlayer.ResumeLayout(false);
             ResumeLayout(false);
         }
