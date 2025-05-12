@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\REGISTER BUTTON.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Monster.Core\Monster.Core.csproj" />
     <ProjectReference Include="..\Monster.Game\Monster.Game.csproj" />
   </ItemGroup>

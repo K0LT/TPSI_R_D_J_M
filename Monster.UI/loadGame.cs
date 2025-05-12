@@ -21,7 +21,7 @@ namespace Monster.UI
         {
             Form1 form = new Form() as Form1;
            
-            form.LoadGame(textBox1.Text);
+            form.LoadGame(textBox1.Text.ToString());
         }
 
         

@@ -59,7 +59,7 @@ namespace Monster.UI
             _userControls.Add("NewUser", newUserControl);
             _userControls.Add("NewMonster", newMonsterControl);
             _userControls.Add("MainMenu", mainMenu);
-            _userControls.Add("LoadGame", mainMenu);
+            _userControls.Add("LoadGame", loadGame);
         }
 
         public void NavigateTo(string controlKey)
