@@ -58,6 +58,7 @@
             button_newGameMonster_Grifo.Size = new Size(198, 249);
             button_newGameMonster_Grifo.TabIndex = 10;
             button_newGameMonster_Grifo.UseVisualStyleBackColor = false;
+            button_newGameMonster_Grifo.Click += button_newGameMonster_Grifo_Click_1;
             // 
             // button_newGameMonster_Tauro
             // 
@@ -68,6 +69,7 @@
             button_newGameMonster_Tauro.Size = new Size(194, 255);
             button_newGameMonster_Tauro.TabIndex = 11;
             button_newGameMonster_Tauro.UseVisualStyleBackColor = false;
+            button_newGameMonster_Tauro.Click += button_newGameMonster_Tauro_Click_1;
             // 
             // button_newGame_Monster_Draco
             // 
@@ -123,6 +125,7 @@
             button_newGameMonster_Siren.Size = new Size(194, 249);
             button_newGameMonster_Siren.TabIndex = 9;
             button_newGameMonster_Siren.UseVisualStyleBackColor = false;
+            button_newGameMonster_Siren.Click += button_newGameMonster_Siren_Click_1;
             // 
             // newGameMonster
             // 

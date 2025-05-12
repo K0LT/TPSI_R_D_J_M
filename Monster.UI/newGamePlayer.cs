@@ -15,7 +15,7 @@ namespace Monster.UI
     {
         private BindingSource _bsUserName = new BindingSource();
         private User _tempUser = new User();
-        
+
         // TODO: Implement newGameMonster binding pattern, this is outdated
 
         public newGamePlayer()

@@ -1,5 +1,6 @@
 using System.Runtime.CompilerServices;
 using System.Windows.Forms;
+using Monster.Core.Models;
 using Monster.Game.GameState;
 namespace Monster.UI
 {
@@ -25,11 +26,10 @@ namespace Monster.UI
             // Initialize all UserControls
             InitializeUserControls();
 
-            // TESTING
-            _gameState.OwnedMonsters.Add(_gameState.ActiveMonster);
-
             // Set up global binding sources
             SetupBindings(_gameState, _bsMonster, _bsUser);
+
+            _gameState.OwnedMonsters.Add(_gameState.ActiveMonster);
 
             // Show initial UserControl
             NavigateTo("MainMenu");
@@ -110,7 +110,7 @@ namespace Monster.UI
                     if (monsterControl != null)
                     {
                         // Update with latest monster data
-                        monsterControl.bsDataSource = _gameState.ActiveMonster;
+                        monsterControl.bsDataSource = _bsMonster;
                         monsterControl.HookBindings();
                     }
                     break;
@@ -126,29 +126,36 @@ namespace Monster.UI
                     var playerControl = control as playerMenu;
                     if (playerControl != null)
                     {
-                        // Update player data
-                        //playerControl.userData = _gameState.currentUser;
+                        // Ensure the OwnedMonsters list has at least 4 entries
+                        while (_gameState.OwnedMonsters.Count < 4)
+                        {
+                            _gameState.OwnedMonsters.Add(new MonsterClass());
+                        }
+
+                        // Bind the first four monsters to the player control
+                        playerControl.bsFirstMonster = _gameState.OwnedMonsters.ElementAt(0);
+                        playerControl.bsSecondMonster = _gameState.OwnedMonsters.ElementAt(1);
+                        playerControl.bsThirdMonster = _gameState.OwnedMonsters.ElementAt(2);
+                        playerControl.bsFourthMonster = _gameState.OwnedMonsters.ElementAt(3);
+
+                        // Set the user type and hook up bindings
+                        playerControl.UserType = _gameState.CurrentUser.UserType;
+                        playerControl.HookBindings();
                     }
                     break;
                 case "NewMonster":
                     var newGameMonster = control as newGameMonster;
                     if(newGameMonster != null)
                     {
-                        int monsterCount = _gameState.OwnedMonsters.Count;
-                        if(monsterCount == 1)
-                        {
-                            newGameMonster.bsMonster = _gameState.OwnedMonsters.ElementAt(monsterCount - 1);
-                            newGameMonster.HookBindings();
-                        }
-                        else
-                        {
-                            _gameState.OwnedMonsters.Add(new Core.Models.MonsterClass());
-                            newGameMonster.bsMonster = _gameState.OwnedMonsters.ElementAt(monsterCount);
-                            newGameMonster.HookBindings();
-                        }
+                        var newMonster = new Core.Models.MonsterClass();
+                        _gameState.OwnedMonsters.Add(newMonster);
+                        _gameState.ActiveMonster = _gameState.OwnedMonsters.ElementAt(_gameState.OwnedMonsters.Count - 1);
+                        newGameMonster.bsMonster = _bsMonster.DataSource;
+
+                        newGameMonster.HookBindings();
                     }
                     break;
-                    // Add cases for other controls as needed
+                    
             }
         }
 
@@ -214,6 +221,11 @@ namespace Monster.UI
                 cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
                 return cp;
             }
+        }
+
+        public void SetActiveMonster(int index)
+        {
+            _gameState.ActiveMonster = _gameState.OwnedMonsters.ElementAt(index);
         }
     }
 }

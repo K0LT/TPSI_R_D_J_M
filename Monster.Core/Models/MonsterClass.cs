@@ -15,6 +15,7 @@ namespace Monster.Core.Models
         private int _level = 1;
         private int _energy = 100;
         private Image _monsterImage;
+        private Image _monsterIcon;
         
         public MonsterClass()
         {
@@ -43,6 +44,7 @@ namespace Monster.Core.Models
                 {
                     _type = value;
                     OnPropertyChanged();
+                    UpdateMonsterImage();
                 }
             }
         }
@@ -93,11 +95,15 @@ namespace Monster.Core.Models
             int stage = _level < 5 ? 1 : _level < 10 ? 2 : 3;
             string type = Type?.ToLower() ?? "default";
             string resourceName = $"{type}_stage{stage}";
+            string iconName = $"{type}_icon";
 
+            System.Diagnostics.Debug.WriteLine("UpdateMonsterImage call! iconName: " + iconName + " | resourceName: " + resourceName);
             // TODO: Add monster images as Monster.Core resources
             var imageObj = monsterImages.ResourceManager.GetObject(resourceName);
+            var iconObj = monsterImages.ResourceManager.GetObject(iconName);
             //Default
             MonsterImage = ConvertByteArrayToImage(imageObj as byte[]);
+            MonsterIcon = ConvertByteArrayToImage(iconObj as byte[]);
         }
         
         public int Energy
@@ -120,6 +126,19 @@ namespace Monster.Core.Models
                 if (_monsterImage != value)
                 {
                     _monsterImage = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public Image MonsterIcon
+        {
+            get => _monsterIcon;
+            private set
+            {
+                if(_monsterIcon != value)
+                {
+                    _monsterIcon = value;
                     OnPropertyChanged();
                 }
             }

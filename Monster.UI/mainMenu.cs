@@ -33,7 +33,9 @@ namespace Monster.UI
 
         private void button_mainMenu_Exit_Click(object sender, EventArgs e)
         {
+            Form1 form = this.FindForm() as Form1;
 
+            form.Close();
         }
     }
 }

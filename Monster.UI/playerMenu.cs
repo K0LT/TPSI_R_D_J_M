@@ -27,11 +27,73 @@ namespace Monster.UI
             }
         }
 
+        private BindingSource _bsFirstMonster = new BindingSource();
+        private BindingSource _bsSecondMonster = new BindingSource();
+        private BindingSource _bsThirdMonster = new BindingSource();
+        private BindingSource _bsFourthMonster = new BindingSource();
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public object bsFirstMonster
+        {
+            get => _bsFirstMonster.DataSource;
+            set => _bsFirstMonster.DataSource = value ?? _bsFirstMonster;
+        }
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public object bsSecondMonster
+        {
+            get => _bsSecondMonster.DataSource;
+            set => _bsSecondMonster.DataSource = value ?? _bsSecondMonster;
+        }
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public object bsThirdMonster
+        {
+            get => _bsThirdMonster.DataSource;
+            set => _bsThirdMonster.DataSource = value ?? _bsThirdMonster;
+        }
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public object bsFourthMonster
+        {
+            get => _bsFourthMonster.DataSource;
+            set => _bsFourthMonster.DataSource = value ?? _bsFourthMonster;
+        }
+
         public playerMenu(string userType)
         {
             InitializeComponent();
             UserType = userType;
         }
+
+        public void HookBindings()
+        {
+            if (bsFirstMonster != null)
+            {
+                pictureBox_playerMenu_Slot1.DataBindings.Clear();
+                pictureBox_playerMenu_Slot1.DataBindings.Add(nameof(PictureBox.Image), bsFirstMonster, nameof(MonsterClass.MonsterIcon));
+
+            }
+            if (bsSecondMonster != null)
+            {
+                pictureBox_playerMenu_Slot2.DataBindings.Clear();
+
+                pictureBox_playerMenu_Slot2.DataBindings.Add(nameof(PictureBox.Image), bsSecondMonster, nameof(MonsterClass.MonsterIcon));
+
+            }
+            if (bsThirdMonster != null)
+            {
+                pictureBox_playerMenu_Slot3.DataBindings.Clear();
+
+                pictureBox_playerMenu_Slot3.DataBindings.Add(nameof(PictureBox.Image), bsThirdMonster, nameof(MonsterClass.MonsterIcon));
+
+            }
+            if (bsFourthMonster != null)
+            {
+                pictureBox_playerMenu_Slot4.DataBindings.Clear();
+
+                pictureBox_playerMenu_Slot4.DataBindings.Add(nameof(PictureBox.Image), bsFourthMonster, nameof(MonsterClass.MonsterIcon));
+
+            }
+        }
+
 
         private void ApplyUserTypeImage()
         {
@@ -55,6 +117,27 @@ namespace Monster.UI
             {
                 return Image.FromStream(ms);
             }
+        }
+
+        private void button_playerMenu_ChangeMonsterSlot1_Click(object sender, EventArgs e)
+        {
+            Form1 parentForm = this.FindForm() as Form1;
+
+            parentForm.SetActiveMonster(0);
+        }
+
+        private void button_playerMenu_ChangeSlot4_Click(object sender, EventArgs e)
+        {
+            Form1 parentForm = this.FindForm() as Form1;
+
+            parentForm.SetActiveMonster(3);
+        }
+
+        private void button_playerMenu_ReturnToMyMonster_Click(object sender, EventArgs e)
+        {
+            Form1 parentForm = this.FindForm() as Form1;
+
+            parentForm.NavigateTo("Monster");
         }
     }
 }

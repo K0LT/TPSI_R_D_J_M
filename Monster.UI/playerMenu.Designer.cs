@@ -219,6 +219,7 @@
             button_playerMenu_ChangeMonsterSlot1.TabIndex = 14;
             button_playerMenu_ChangeMonsterSlot1.Text = "Change";
             button_playerMenu_ChangeMonsterSlot1.UseVisualStyleBackColor = true;
+            button_playerMenu_ChangeMonsterSlot1.Click += button_playerMenu_ChangeMonsterSlot1_Click;
             // 
             // button_playerMenu_ChangeSlot2
             // 
@@ -246,6 +247,7 @@
             button_playerMenu_ChangeSlot4.TabIndex = 19;
             button_playerMenu_ChangeSlot4.Text = "Change";
             button_playerMenu_ChangeSlot4.UseVisualStyleBackColor = true;
+            button_playerMenu_ChangeSlot4.Click += button_playerMenu_ChangeSlot4_Click;
             // 
             // button_playerMenu_ReturnToMyMonster
             // 
@@ -256,6 +258,7 @@
             button_playerMenu_ReturnToMyMonster.Size = new Size(33, 43);
             button_playerMenu_ReturnToMyMonster.TabIndex = 20;
             button_playerMenu_ReturnToMyMonster.UseVisualStyleBackColor = false;
+            button_playerMenu_ReturnToMyMonster.Click += button_playerMenu_ReturnToMyMonster_Click;
             // 
             // playerMenu
             // 

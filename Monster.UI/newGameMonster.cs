@@ -95,5 +95,20 @@ namespace Monster.UI
 
             parentForm.NavigateTo("Monster");
         }
+
+        private void button_newGameMonster_Tauro_Click_1(object sender, EventArgs e)
+        {
+            UpdateMonsterType("Tauro");
+        }
+
+        private void button_newGameMonster_Siren_Click_1(object sender, EventArgs e)
+        {
+            UpdateMonsterType("Siren");
+        }
+
+        private void button_newGameMonster_Grifo_Click_1(object sender, EventArgs e)
+        {
+            UpdateMonsterType("Grifo");
+        }
     }
 }

@@ -63,6 +63,16 @@ namespace Monster.Core {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] draco_icon {
+            get {
+                object obj = ResourceManager.GetObject("draco_icon", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] draco_stage1 {
             get {
                 object obj = ResourceManager.GetObject("draco_stage1", resourceCulture);
@@ -86,6 +96,66 @@ namespace Monster.Core {
         internal static byte[] draco_stage3 {
             get {
                 object obj = ResourceManager.GetObject("draco_stage3", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] grifo_icon {
+            get {
+                object obj = ResourceManager.GetObject("grifo_icon", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] grifo_stage1 {
+            get {
+                object obj = ResourceManager.GetObject("grifo_stage1", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] siren_icon {
+            get {
+                object obj = ResourceManager.GetObject("siren_icon", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] siren_stage1 {
+            get {
+                object obj = ResourceManager.GetObject("siren_stage1", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] tauro_icon {
+            get {
+                object obj = ResourceManager.GetObject("tauro_icon", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] tauro_stage1 {
+            get {
+                object obj = ResourceManager.GetObject("tauro_stage1", resourceCulture);
                 return ((byte[])(obj));
             }
         }

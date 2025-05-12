@@ -35,21 +35,14 @@ namespace Monster.UI
         {
             progressBar_myMonster_EXP.DataBindings.Clear();
             progressBar_myMonster_HP.DataBindings.Clear();
-            //Eliminei a progressBar dos niveis
-            //progressBar_myMonster_LVL.DataBindings.Clear(); 
             progressBar_myMonster_ST.DataBindings.Clear();
-
-
-            //label_myMonster_CurrentMonsterName.DataBindings.Clear();
+            pictureBox_myMonster_Draco.DataBindings.Clear();
 
 
             progressBar_myMonster_EXP.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
                 nameof(MonsterClass.ExperiencePoints));
             progressBar_myMonster_HP.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
                 nameof(MonsterClass.HealthPoints));
-            //Eliminei a progress bad dos niveis
-            //progressBar_myMonster_LVL.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
-            // nameof(MonsterClass.HealthPoints));
             progressBar_myMonster_ST.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
                 nameof(MonsterClass.HealthPoints));
 
@@ -72,7 +65,18 @@ namespace Monster.UI
 
         private void button_myMonster_ReturnToMainMenu_Click(object sender, EventArgs e)
         {
+            // Get the parent form
+            Form1 parentForm = this.FindForm() as Form1;
 
+            if (parentForm != null)
+            {
+                // Call NavigateTo to switch to the Inventory control
+                parentForm.NavigateTo("MainMenu");
+            }
+            else
+            {
+                System.Diagnostics.Debug.WriteLine("[DEBUG-myMonster] Parent form is null.");
+            }
         }
 
         private void button_myMonster_Player_Click(object sender, EventArgs e)
