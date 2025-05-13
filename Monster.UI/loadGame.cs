@@ -19,11 +19,11 @@ namespace Monster.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form() as Form1;
-           
-            form.LoadGame(textBox1.Text.ToString());
+            Form1 form = this.FindForm() as Form1;
+
+            form.LoadGame(textBox_LoadGame_InputForUsername.Text.ToString());
         }
 
-        
-     }
+       
+    }
 }

@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             newGamePlayer = new Panel();
             MainPanel = new Panel();
+            process1 = new System.Diagnostics.Process();
             newGamePlayer.SuspendLayout();
             SuspendLayout();
             // 
@@ -40,27 +41,39 @@
             newGamePlayer.Dock = DockStyle.Fill;
             newGamePlayer.Location = new Point(0, 0);
             newGamePlayer.Name = "newGamePlayer";
-            newGamePlayer.Size = new Size(584, 861);
+            newGamePlayer.Size = new Size(600, 857);
             newGamePlayer.TabIndex = 0;
             // 
             // MainPanel
             // 
             MainPanel.Location = new Point(0, 0);
             MainPanel.Name = "MainPanel";
-            MainPanel.Size = new Size(600, 900);
+            MainPanel.Size = new Size(604, 900);
             MainPanel.TabIndex = 0;
+            // 
+            // process1
+            // 
+            process1.StartInfo.Domain = "";
+            process1.StartInfo.LoadUserProfile = false;
+            process1.StartInfo.Password = null;
+            process1.StartInfo.StandardErrorEncoding = null;
+            process1.StartInfo.StandardInputEncoding = null;
+            process1.StartInfo.StandardOutputEncoding = null;
+            process1.StartInfo.UseCredentialsForNetworkingOnly = false;
+            process1.StartInfo.UserName = "";
+            process1.SynchronizingObject = this;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(584, 861);
+            ClientSize = new Size(620, 900);
             Controls.Add(newGamePlayer);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            MaximumSize = new Size(600, 900);
-            MinimumSize = new Size(600, 900);
+            MaximumSize = new Size(620, 900);
+            MinimumSize = new Size(620, 900);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Monsters";
@@ -72,5 +85,6 @@
 
         private Panel newGamePlayer;
         private Panel MainPanel;
+        private System.Diagnostics.Process process1;
     }
 }

@@ -139,5 +139,7 @@ namespace Monster.UI
 
             parentForm.NavigateTo("Monster");
         }
+
+       
     }
 }

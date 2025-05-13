@@ -41,6 +41,7 @@ namespace Monster.UI
         {
 
             //labelUserName.DataBindings.Add(nameof(Label.Text), bsMonster, nameof(MonsterClass.Name));
+            textBox_newGameMonster_InputUsername.DataBindings.Clear();
             textBox_newGameMonster_InputUsername.DataBindings.Add(nameof(TextBox.Text), bsMonster, nameof(MonsterClass.Name), true, DataSourceUpdateMode.OnPropertyChanged);
         }
         private void button_newGameMonster_Draco_Click(object sender, EventArgs e)

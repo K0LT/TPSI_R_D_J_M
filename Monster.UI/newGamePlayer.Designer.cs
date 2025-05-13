@@ -41,6 +41,7 @@
             label_newGamePlayer_UsernameText = new PictureBox();
             fontDialog1 = new FontDialog();
             panelNewUserRegister = new Panel();
+            selectPlayerLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_newGamePlayer_MaleIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_newGamePlayer_FemaleIcon).BeginInit();
@@ -84,7 +85,7 @@
             // 
             pictureBox_newGamePlayer_MaleIcon.BackColor = Color.Transparent;
             pictureBox_newGamePlayer_MaleIcon.Image = (Image)resources.GetObject("pictureBox_newGamePlayer_MaleIcon.Image");
-            pictureBox_newGamePlayer_MaleIcon.Location = new Point(252, 108);
+            pictureBox_newGamePlayer_MaleIcon.Location = new Point(254, 206);
             pictureBox_newGamePlayer_MaleIcon.Name = "pictureBox_newGamePlayer_MaleIcon";
             pictureBox_newGamePlayer_MaleIcon.Size = new Size(90, 118);
             pictureBox_newGamePlayer_MaleIcon.TabIndex = 7;
@@ -94,7 +95,7 @@
             // 
             pictureBox_newGamePlayer_FemaleIcon.BackColor = Color.Transparent;
             pictureBox_newGamePlayer_FemaleIcon.Image = (Image)resources.GetObject("pictureBox_newGamePlayer_FemaleIcon.Image");
-            pictureBox_newGamePlayer_FemaleIcon.Location = new Point(90, 108);
+            pictureBox_newGamePlayer_FemaleIcon.Location = new Point(92, 206);
             pictureBox_newGamePlayer_FemaleIcon.Name = "pictureBox_newGamePlayer_FemaleIcon";
             pictureBox_newGamePlayer_FemaleIcon.Size = new Size(90, 118);
             pictureBox_newGamePlayer_FemaleIcon.TabIndex = 8;
@@ -104,7 +105,7 @@
             // 
             pictureBox_newGamePlayer_OtherIcon.BackColor = Color.Transparent;
             pictureBox_newGamePlayer_OtherIcon.Image = (Image)resources.GetObject("pictureBox_newGamePlayer_OtherIcon.Image");
-            pictureBox_newGamePlayer_OtherIcon.Location = new Point(404, 108);
+            pictureBox_newGamePlayer_OtherIcon.Location = new Point(406, 206);
             pictureBox_newGamePlayer_OtherIcon.Name = "pictureBox_newGamePlayer_OtherIcon";
             pictureBox_newGamePlayer_OtherIcon.Size = new Size(90, 118);
             pictureBox_newGamePlayer_OtherIcon.TabIndex = 9;
@@ -116,7 +117,7 @@
             button_newGamePlayer_ChooseFemale.FlatStyle = FlatStyle.Flat;
             button_newGamePlayer_ChooseFemale.Font = new Font("VCR OSD Mono", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button_newGamePlayer_ChooseFemale.Image = (Image)resources.GetObject("button_newGamePlayer_ChooseFemale.Image");
-            button_newGamePlayer_ChooseFemale.Location = new Point(92, 260);
+            button_newGamePlayer_ChooseFemale.Location = new Point(94, 358);
             button_newGamePlayer_ChooseFemale.Name = "button_newGamePlayer_ChooseFemale";
             button_newGamePlayer_ChooseFemale.Size = new Size(80, 30);
             button_newGamePlayer_ChooseFemale.TabIndex = 10;
@@ -132,7 +133,7 @@
             button_newGamePlayer_ChooseMale.FlatStyle = FlatStyle.Flat;
             button_newGamePlayer_ChooseMale.Font = new Font("VCR OSD Mono", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button_newGamePlayer_ChooseMale.Image = (Image)resources.GetObject("button_newGamePlayer_ChooseMale.Image");
-            button_newGamePlayer_ChooseMale.Location = new Point(257, 260);
+            button_newGamePlayer_ChooseMale.Location = new Point(259, 358);
             button_newGamePlayer_ChooseMale.Name = "button_newGamePlayer_ChooseMale";
             button_newGamePlayer_ChooseMale.Size = new Size(80, 30);
             button_newGamePlayer_ChooseMale.TabIndex = 11;
@@ -146,7 +147,7 @@
             button_newGamePlayer_ChooseOther.FlatStyle = FlatStyle.Flat;
             button_newGamePlayer_ChooseOther.Font = new Font("VCR OSD Mono", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button_newGamePlayer_ChooseOther.Image = (Image)resources.GetObject("button_newGamePlayer_ChooseOther.Image");
-            button_newGamePlayer_ChooseOther.Location = new Point(408, 260);
+            button_newGamePlayer_ChooseOther.Location = new Point(410, 358);
             button_newGamePlayer_ChooseOther.Name = "button_newGamePlayer_ChooseOther";
             button_newGamePlayer_ChooseOther.Size = new Size(80, 30);
             button_newGamePlayer_ChooseOther.TabIndex = 12;
@@ -169,11 +170,23 @@
             panelNewUserRegister.Controls.Add(label_newGamePlayer_UsernameText);
             panelNewUserRegister.Controls.Add(button_newGamePlayer_RegisterText);
             panelNewUserRegister.Controls.Add(textBox_newGamePlayer_InputForUsername);
-            panelNewUserRegister.Location = new Point(127, 404);
+            panelNewUserRegister.Location = new Point(129, 502);
             panelNewUserRegister.Name = "panelNewUserRegister";
             panelNewUserRegister.Size = new Size(343, 194);
             panelNewUserRegister.TabIndex = 14;
             panelNewUserRegister.Visible = false;
+            // 
+            // selectPlayerLabel
+            // 
+            selectPlayerLabel.AutoSize = true;
+            selectPlayerLabel.BackColor = Color.Transparent;
+            selectPlayerLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            selectPlayerLabel.ForeColor = Color.DarkGoldenrod;
+            selectPlayerLabel.Location = new Point(45, 58);
+            selectPlayerLabel.Name = "selectPlayerLabel";
+            selectPlayerLabel.Size = new Size(521, 64);
+            selectPlayerLabel.TabIndex = 15;
+            selectPlayerLabel.Text = "Select Player";
             // 
             // newGamePlayer
             // 
@@ -181,6 +194,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(54, 39, 22);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            Controls.Add(selectPlayerLabel);
             Controls.Add(panelNewUserRegister);
             Controls.Add(button_newGamePlayer_ChooseOther);
             Controls.Add(button_newGamePlayer_ChooseMale);
@@ -199,6 +213,7 @@
             panelNewUserRegister.ResumeLayout(false);
             panelNewUserRegister.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -214,5 +229,6 @@
         private PictureBox label_newGamePlayer_UsernameText;
         private FontDialog fontDialog1;
         private Panel panelNewUserRegister;
+        private Label selectPlayerLabel;
     }
 }
