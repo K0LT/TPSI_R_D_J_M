@@ -16,5 +16,11 @@ namespace Monster.UI
         {
             InitializeComponent();
         }
+
+        private Form1 ParentForm => this.FindForm() as Form1;
+        private void button_inventory_ReturnToMyMonster_Click(object sender, EventArgs e)
+        {
+            ParentForm.NavigateTo("Monster");
+        }
     }
 }

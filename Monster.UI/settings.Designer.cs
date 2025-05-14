@@ -29,47 +29,51 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(settings));
-            pictureBox_settings_settingsText = new PictureBox();
-            button_settings_ReturnToMyMonster = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_settings_settingsText).BeginInit();
+            button_Settings_Exit = new Button();
+            settingsTitleLabel = new Label();
             SuspendLayout();
             // 
-            // pictureBox_settings_settingsText
+            // button_Settings_Exit
             // 
-            pictureBox_settings_settingsText.BackColor = Color.Transparent;
-            pictureBox_settings_settingsText.Image = (Image)resources.GetObject("pictureBox_settings_settingsText.Image");
-            pictureBox_settings_settingsText.Location = new Point(55, 14);
-            pictureBox_settings_settingsText.Name = "pictureBox_settings_settingsText";
-            pictureBox_settings_settingsText.Size = new Size(500, 133);
-            pictureBox_settings_settingsText.TabIndex = 0;
-            pictureBox_settings_settingsText.TabStop = false;
+            button_Settings_Exit.BackColor = Color.Transparent;
+            button_Settings_Exit.BackgroundImage = (Image)resources.GetObject("button_Settings_Exit.BackgroundImage");
+            button_Settings_Exit.FlatAppearance.BorderSize = 0;
+            button_Settings_Exit.FlatStyle = FlatStyle.Flat;
+            button_Settings_Exit.Location = new Point(555, 0);
+            button_Settings_Exit.Name = "button_Settings_Exit";
+            button_Settings_Exit.Size = new Size(45, 45);
+            button_Settings_Exit.TabIndex = 26;
+            button_Settings_Exit.UseVisualStyleBackColor = false;
+            button_Settings_Exit.Click += button_Settings_Exit_Click;
             // 
-            // button_settings_ReturnToMyMonster
+            // settingsTitleLabel
             // 
-            button_settings_ReturnToMyMonster.BackColor = Color.Transparent;
-            button_settings_ReturnToMyMonster.BackgroundImage = (Image)resources.GetObject("button_settings_ReturnToMyMonster.BackgroundImage");
-            button_settings_ReturnToMyMonster.Location = new Point(260, 756);
-            button_settings_ReturnToMyMonster.Name = "button_settings_ReturnToMyMonster";
-            button_settings_ReturnToMyMonster.Size = new Size(33, 43);
-            button_settings_ReturnToMyMonster.TabIndex = 21;
-            button_settings_ReturnToMyMonster.UseVisualStyleBackColor = false;
+            settingsTitleLabel.AutoSize = true;
+            settingsTitleLabel.BackColor = Color.Transparent;
+            settingsTitleLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            settingsTitleLabel.ForeColor = Color.DarkGoldenrod;
+            settingsTitleLabel.Location = new Point(157, 89);
+            settingsTitleLabel.Name = "settingsTitleLabel";
+            settingsTitleLabel.Size = new Size(331, 64);
+            settingsTitleLabel.TabIndex = 25;
+            settingsTitleLabel.Text = "Settings";
             // 
             // settings
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            Controls.Add(button_settings_ReturnToMyMonster);
-            Controls.Add(pictureBox_settings_settingsText);
+            Controls.Add(button_Settings_Exit);
+            Controls.Add(settingsTitleLabel);
             Name = "settings";
             Size = new Size(600, 900);
-            ((System.ComponentModel.ISupportInitialize)pictureBox_settings_settingsText).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox_settings_settingsText;
-        private Button button_settings_ReturnToMyMonster;
+        private Button button_Settings_Exit;
+        private Label settingsTitleLabel;
     }
 }

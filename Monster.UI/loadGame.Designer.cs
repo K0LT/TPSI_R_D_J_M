@@ -89,6 +89,7 @@
             button_LoadGame_Exit.Size = new Size(45, 45);
             button_LoadGame_Exit.TabIndex = 22;
             button_LoadGame_Exit.UseVisualStyleBackColor = false;
+            button_LoadGame_Exit.Click += button_LoadGame_Exit_Click;
             // 
             // loadGame
             // 

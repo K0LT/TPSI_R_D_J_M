@@ -17,6 +17,7 @@ namespace Monster.UI
         private BindingSource _bsMonster;
 
 
+        private Form1 ParentForm => this.FindForm() as Form1;
         public object bsDataSource
         {
             get => _bsMonster.DataSource;
@@ -66,12 +67,11 @@ namespace Monster.UI
         private void button_myMonster_ReturnToMainMenu_Click(object sender, EventArgs e)
         {
             // Get the parent form
-            Form1 parentForm = this.FindForm() as Form1;
 
-            if (parentForm != null)
+            if (ParentForm != null)
             {
                 // Call NavigateTo to switch to the Inventory control
-                parentForm.NavigateTo("MainMenu");
+                ParentForm.NavigateTo("MainMenu");
             }
             else
             {
@@ -82,12 +82,11 @@ namespace Monster.UI
         private void button_myMonster_Player_Click(object sender, EventArgs e)
         {
             // Get the parent form
-            Form1 parentForm = this.FindForm() as Form1;
 
-            if (parentForm != null)
+            if (ParentForm != null)
             {
                 // Call NavigateTo to switch to the Inventory control
-                parentForm.NavigateTo("Player");
+                ParentForm.NavigateTo("Player");
             }
             else
             {
@@ -97,13 +96,11 @@ namespace Monster.UI
 
         private void button_myMonster_Inventory_Click(object sender, EventArgs e)
         {
-            // Get the parent form
-            Form1 parentForm = this.FindForm() as Form1;
 
-            if (parentForm != null)
+            if (ParentForm != null)
             {
                 // Call NavigateTo to switch to the Inventory control
-                parentForm.NavigateTo("Inventory");
+                ParentForm.NavigateTo("Inventory");
             }
             else
             {
@@ -113,14 +110,25 @@ namespace Monster.UI
 
         private void button_myMonster_Save_Click(object sender, EventArgs e)
         {
-            Form1 parentForm = this.FindForm() as Form1;
 
-            parentForm.SaveGame();
+            ParentForm.SaveGame();
+        }
+
+        private void button_myMonster_MiniGames_Click(object sender, EventArgs e)
+        {
+
+            ParentForm.NavigateTo("MiniGames");
+
         }
 
         private void pictureBox_myMonster_Draco_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button_myMonster_Battle_Click(object sender, EventArgs e)
+        {
+            ParentForm.NavigateTo("BattleMenu");
         }
     }
 }

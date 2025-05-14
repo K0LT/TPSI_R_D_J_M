@@ -37,8 +37,8 @@
             label_credits_Marcia = new Label();
             label_credits_Diogo = new Label();
             label_credits_Joao = new Label();
-            miniGamesTitleLabel = new Label();
-            button_MiniGames_Exit = new Button();
+            creditsTitleLabel = new Label();
+            button_Credits_Exit = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox_credits_RuiIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_credits_DiogoIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_credits_MarciaIcon).BeginInit();
@@ -110,7 +110,6 @@
             label_credits_Marcia.Size = new Size(154, 22);
             label_credits_Marcia.TabIndex = 7;
             label_credits_Marcia.Text = "Márcia Leite";
-            label_credits_Marcia.Click += label_credits_Marcia_Click;
             // 
             // label_credits_Diogo
             // 
@@ -138,37 +137,38 @@
             label_credits_Joao.TabIndex = 9;
             label_credits_Joao.Text = "João Pimentel";
             // 
-            // miniGamesTitleLabel
+            // creditsTitleLabel
             // 
-            miniGamesTitleLabel.AutoSize = true;
-            miniGamesTitleLabel.BackColor = Color.Transparent;
-            miniGamesTitleLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            miniGamesTitleLabel.ForeColor = Color.DarkGoldenrod;
-            miniGamesTitleLabel.Location = new Point(162, 89);
-            miniGamesTitleLabel.Name = "miniGamesTitleLabel";
-            miniGamesTitleLabel.Size = new Size(293, 64);
-            miniGamesTitleLabel.TabIndex = 23;
-            miniGamesTitleLabel.Text = "Credits";
+            creditsTitleLabel.AutoSize = true;
+            creditsTitleLabel.BackColor = Color.Transparent;
+            creditsTitleLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            creditsTitleLabel.ForeColor = Color.DarkGoldenrod;
+            creditsTitleLabel.Location = new Point(162, 89);
+            creditsTitleLabel.Name = "creditsTitleLabel";
+            creditsTitleLabel.Size = new Size(293, 64);
+            creditsTitleLabel.TabIndex = 23;
+            creditsTitleLabel.Text = "Credits";
             // 
-            // button_MiniGames_Exit
+            // button_Credits_Exit
             // 
-            button_MiniGames_Exit.BackColor = Color.Transparent;
-            button_MiniGames_Exit.BackgroundImage = (Image)resources.GetObject("button_MiniGames_Exit.BackgroundImage");
-            button_MiniGames_Exit.FlatAppearance.BorderSize = 0;
-            button_MiniGames_Exit.FlatStyle = FlatStyle.Flat;
-            button_MiniGames_Exit.Location = new Point(555, 0);
-            button_MiniGames_Exit.Name = "button_MiniGames_Exit";
-            button_MiniGames_Exit.Size = new Size(45, 45);
-            button_MiniGames_Exit.TabIndex = 24;
-            button_MiniGames_Exit.UseVisualStyleBackColor = false;
+            button_Credits_Exit.BackColor = Color.Transparent;
+            button_Credits_Exit.BackgroundImage = (Image)resources.GetObject("button_Credits_Exit.BackgroundImage");
+            button_Credits_Exit.FlatAppearance.BorderSize = 0;
+            button_Credits_Exit.FlatStyle = FlatStyle.Flat;
+            button_Credits_Exit.Location = new Point(555, 0);
+            button_Credits_Exit.Name = "button_Credits_Exit";
+            button_Credits_Exit.Size = new Size(45, 45);
+            button_Credits_Exit.TabIndex = 24;
+            button_Credits_Exit.UseVisualStyleBackColor = false;
+            button_Credits_Exit.Click += button_MiniGames_Exit_Click;
             // 
             // credits
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            Controls.Add(button_MiniGames_Exit);
-            Controls.Add(miniGamesTitleLabel);
+            Controls.Add(button_Credits_Exit);
+            Controls.Add(creditsTitleLabel);
             Controls.Add(label_credits_Joao);
             Controls.Add(label_credits_Diogo);
             Controls.Add(label_credits_Marcia);
@@ -196,7 +196,7 @@
         private Label label_credits_Marcia;
         private Label label_credits_Diogo;
         private Label label_credits_Joao;
-        private Label miniGamesTitleLabel;
-        private Button button_MiniGames_Exit;
+        private Label creditsTitleLabel;
+        private Button button_Credits_Exit;
     }
 }

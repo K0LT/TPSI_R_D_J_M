@@ -12,7 +12,7 @@ namespace Monster.Core.Models
     public class User : INotifyPropertyChanged
     {
         private string _userType = "boy";
-        private string _username = "defaultUserName";
+        private string _username = "";
 
         public string Username
         {

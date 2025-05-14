@@ -251,6 +251,7 @@
             button_inventory_ReturnToMyMonster.Size = new Size(45, 45);
             button_inventory_ReturnToMyMonster.TabIndex = 21;
             button_inventory_ReturnToMyMonster.UseVisualStyleBackColor = false;
+            button_inventory_ReturnToMyMonster.Click += button_inventory_ReturnToMyMonster_Click;
             // 
             // inventoryLabel
             // 
@@ -258,7 +259,7 @@
             inventoryLabel.BackColor = Color.Transparent;
             inventoryLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             inventoryLabel.ForeColor = Color.DarkGoldenrod;
-            inventoryLabel.Location = new Point(126, 58);
+            inventoryLabel.Location = new Point(126, 49);
             inventoryLabel.Name = "inventoryLabel";
             inventoryLabel.Size = new Size(369, 64);
             inventoryLabel.TabIndex = 22;

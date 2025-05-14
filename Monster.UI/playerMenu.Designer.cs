@@ -46,7 +46,6 @@
             button_playerMenu_ChangeSlot2 = new Button();
             button_playerMenu_ChangeSlot3 = new Button();
             button_playerMenu_ChangeSlot4 = new Button();
-            button_playerMenu_ReturnToMyMonster = new Button();
             process1 = new System.Diagnostics.Process();
             usernamePlayerMenuLabel = new Label();
             button_PlayerMenu_Exit = new Button();
@@ -173,7 +172,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(164, 134);
+            pictureBox1.Location = new Point(165, 137);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(300, 300);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -218,17 +217,6 @@
             button_playerMenu_ChangeSlot4.UseVisualStyleBackColor = true;
             button_playerMenu_ChangeSlot4.Click += button_playerMenu_ChangeSlot4_Click;
             // 
-            // button_playerMenu_ReturnToMyMonster
-            // 
-            button_playerMenu_ReturnToMyMonster.BackColor = Color.Transparent;
-            button_playerMenu_ReturnToMyMonster.BackgroundImage = (Image)resources.GetObject("button_playerMenu_ReturnToMyMonster.BackgroundImage");
-            button_playerMenu_ReturnToMyMonster.Location = new Point(283, 825);
-            button_playerMenu_ReturnToMyMonster.Name = "button_playerMenu_ReturnToMyMonster";
-            button_playerMenu_ReturnToMyMonster.Size = new Size(33, 43);
-            button_playerMenu_ReturnToMyMonster.TabIndex = 20;
-            button_playerMenu_ReturnToMyMonster.UseVisualStyleBackColor = false;
-            button_playerMenu_ReturnToMyMonster.Click += button_playerMenu_ReturnToMyMonster_Click;
-            // 
             // process1
             // 
             process1.StartInfo.Domain = "";
@@ -247,7 +235,7 @@
             usernamePlayerMenuLabel.BackColor = Color.Transparent;
             usernamePlayerMenuLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             usernamePlayerMenuLabel.ForeColor = Color.DarkGoldenrod;
-            usernamePlayerMenuLabel.Location = new Point(152, 37);
+            usernamePlayerMenuLabel.Location = new Point(152, 49);
             usernamePlayerMenuLabel.Name = "usernamePlayerMenuLabel";
             usernamePlayerMenuLabel.Size = new Size(331, 64);
             usernamePlayerMenuLabel.TabIndex = 21;
@@ -264,6 +252,7 @@
             button_PlayerMenu_Exit.Size = new Size(45, 45);
             button_PlayerMenu_Exit.TabIndex = 22;
             button_PlayerMenu_Exit.UseVisualStyleBackColor = false;
+            button_PlayerMenu_Exit.Click += button_PlayerMenu_Exit_Click;
             // 
             // playerMenu
             // 
@@ -273,7 +262,6 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             Controls.Add(button_PlayerMenu_Exit);
             Controls.Add(usernamePlayerMenuLabel);
-            Controls.Add(button_playerMenu_ReturnToMyMonster);
             Controls.Add(button_playerMenu_ChangeSlot4);
             Controls.Add(button_playerMenu_ChangeSlot3);
             Controls.Add(button_playerMenu_ChangeSlot2);
@@ -320,7 +308,6 @@
         private Button button_playerMenu_ChangeSlot2;
         private Button button_playerMenu_ChangeSlot3;
         private Button button_playerMenu_ChangeSlot4;
-        private Button button_playerMenu_ReturnToMyMonster;
         private System.Diagnostics.Process process1;
         private Label usernamePlayerMenuLabel;
         private Button button_PlayerMenu_Exit;

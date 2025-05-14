@@ -193,6 +193,7 @@
             button_myMonster_Battle.Size = new Size(190, 91);
             button_myMonster_Battle.TabIndex = 13;
             button_myMonster_Battle.UseVisualStyleBackColor = true;
+            button_myMonster_Battle.Click += button_myMonster_Battle_Click;
             // 
             // button_myMonster_MiniGames
             // 
@@ -204,6 +205,7 @@
             button_myMonster_MiniGames.Size = new Size(190, 80);
             button_myMonster_MiniGames.TabIndex = 14;
             button_myMonster_MiniGames.UseVisualStyleBackColor = true;
+            button_myMonster_MiniGames.Click += button_myMonster_MiniGames_Click;
             // 
             // nameMyMonsterLabel
             // 

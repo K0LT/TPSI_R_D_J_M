@@ -26,6 +26,7 @@ namespace Monster.UI
                // ApplyUserTypeImage();
             }
         }
+        private Form1 ParentForm => this.FindForm() as Form1;
 
         private BindingSource _bsFirstMonster = new BindingSource();
         private BindingSource _bsSecondMonster = new BindingSource();
@@ -121,25 +122,25 @@ namespace Monster.UI
 
         private void button_playerMenu_ChangeMonsterSlot1_Click(object sender, EventArgs e)
         {
-            Form1 parentForm = this.FindForm() as Form1;
 
-            parentForm.SetActiveMonster(0);
+            ParentForm.SetActiveMonster(0);
         }
 
         private void button_playerMenu_ChangeSlot4_Click(object sender, EventArgs e)
         {
-            Form1 parentForm = this.FindForm() as Form1;
 
-            parentForm.SetActiveMonster(3);
+            ParentForm.SetActiveMonster(3);
         }
 
         private void button_playerMenu_ReturnToMyMonster_Click(object sender, EventArgs e)
         {
-            Form1 parentForm = this.FindForm() as Form1;
 
-            parentForm.NavigateTo("Monster");
+            ParentForm.NavigateTo("Monster");
         }
 
-       
+        private void button_PlayerMenu_Exit_Click(object sender, EventArgs e)
+        {
+            ParentForm.NavigateTo("Monster");
+        }
     }
 }

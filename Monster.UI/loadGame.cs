@@ -17,16 +17,20 @@ namespace Monster.UI
         {
             InitializeComponent();
         }
-
+        private Form1 ParentForm => this.FindForm() as Form1;
+        
         private void button1_Click(object sender, EventArgs e)
         {
             string temp = textBox_LoadGame_InputForUsername.Text;
-            Form1 form = this.FindForm() as Form1;
+           
 
-            form.LoadGame(temp);
-            form.NavigateTo("Monster");
+            ParentForm.LoadGame(temp);
+            ParentForm.NavigateTo("Monster");
         }
-
-
+        
+        private void button_LoadGame_Exit_Click(object sender, EventArgs e)
+        {
+            ParentForm.NavigateTo("MainMenu");
+        }
     }
 }

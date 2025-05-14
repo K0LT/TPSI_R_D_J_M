@@ -15,27 +15,39 @@ namespace Monster.UI
         public mainMenu()
         {
             InitializeComponent();
+
         }
+
+        private Form1 ParentForm => this.FindForm() as Form1;
+
 
         private void button_mainMenu_NewGame_Click(object sender, EventArgs e)
         {
-            Form1 form = this.FindForm() as Form1;
-
-            form.NavigateTo("NewUser");
+           
+            ParentForm.NavigateTo("NewUser");
         }
 
         private void button_mainMenu_LoadGame_Click(object sender, EventArgs e)
         {
-            Form1 form = this.FindForm() as Form1;
 
-            form.NavigateTo("LoadGame");
+            ParentForm.NavigateTo("LoadGame");
         }
 
         private void button_mainMenu_Exit_Click(object sender, EventArgs e)
         {
-            Form1 form = this.FindForm() as Form1;
 
-            form.Close();
+            ParentForm.Close();
+        }
+
+        private void button_mainMenu_Settings_Click(object sender, EventArgs e)
+        {
+
+            ParentForm.NavigateTo("Settings");
+        }
+
+        private void button_mainMenu_Credits_Click(object sender, EventArgs e)
+        {
+            ParentForm.NavigateTo("Credits");
         }
         private void button_mainMenu_Credits_Click(object sender, EventArgs e)
         {

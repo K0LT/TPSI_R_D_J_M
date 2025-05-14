@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Drawing;
+using System.Xml.Linq;
 
 namespace Monster.Core.Models
 {
@@ -8,7 +9,7 @@ namespace Monster.Core.Models
     {
         // TODO: ADD DATE_TIME IMPLEMENTATION
 
-        private string _name = "defaultMonsterType";
+        private string _name = "";
         private string _type = "draco";
         private int _healthPoints = 100;
         private int _experiencePoints = 0;
@@ -93,7 +94,7 @@ namespace Monster.Core.Models
         private void UpdateMonsterImage()
         {
             int stage = _level < 5 ? 1 : _level < 10 ? 2 : 3;
-            string type = Type?.ToLower() ?? "default";
+            string type = Type?.ToLower() ?? "";
             string resourceName = $"{type}_stage{stage}";
             string iconName = $"{type}_icon";
 
@@ -104,6 +105,7 @@ namespace Monster.Core.Models
             //Default
             MonsterImage = ConvertByteArrayToImage(imageObj as byte[]);
             MonsterIcon = ConvertByteArrayToImage(iconObj as byte[]);
+            
         }
         
         public int Energy
