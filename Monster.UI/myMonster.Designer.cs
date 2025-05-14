@@ -46,7 +46,6 @@
             button_myMonster_MiniGames = new Button();
             nameMyMonsterLabel = new Label();
             levelMyMonster = new Label();
-            button_MyMonster_Exit = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_EXPicon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_STicon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_HPicon).BeginInit();
@@ -230,25 +229,12 @@
             levelMyMonster.TabIndex = 23;
             levelMyMonster.Text = "LVL. #";
             // 
-            // button_MyMonster_Exit
-            // 
-            button_MyMonster_Exit.BackColor = Color.Transparent;
-            button_MyMonster_Exit.BackgroundImage = (Image)resources.GetObject("button_MyMonster_Exit.BackgroundImage");
-            button_MyMonster_Exit.FlatAppearance.BorderSize = 0;
-            button_MyMonster_Exit.FlatStyle = FlatStyle.Flat;
-            button_MyMonster_Exit.Location = new Point(555, 0);
-            button_MyMonster_Exit.Name = "button_MyMonster_Exit";
-            button_MyMonster_Exit.Size = new Size(45, 45);
-            button_MyMonster_Exit.TabIndex = 24;
-            button_MyMonster_Exit.UseVisualStyleBackColor = false;
-            // 
             // myMonster
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(54, 39, 22);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            Controls.Add(button_MyMonster_Exit);
             Controls.Add(levelMyMonster);
             Controls.Add(nameMyMonsterLabel);
             Controls.Add(button_myMonster_MiniGames);
@@ -294,6 +280,5 @@
         private Button button_myMonster_MiniGames;
         private Label nameMyMonsterLabel;
         private Label levelMyMonster;
-        private Button button_MyMonster_Exit;
     }
 }

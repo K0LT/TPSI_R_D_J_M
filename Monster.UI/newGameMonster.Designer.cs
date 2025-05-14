@@ -98,7 +98,7 @@
             textBox_newGameMonster_InputUsername.BackColor = SystemColors.Control;
             textBox_newGameMonster_InputUsername.Font = new Font("VCR OSD Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox_newGameMonster_InputUsername.ForeColor = SystemColors.MenuText;
-            textBox_newGameMonster_InputUsername.Location = new Point(174, 35);
+            textBox_newGameMonster_InputUsername.Location = new Point(174, 37);
             textBox_newGameMonster_InputUsername.Name = "textBox_newGameMonster_InputUsername";
             textBox_newGameMonster_InputUsername.ScrollBars = ScrollBars.Horizontal;
             textBox_newGameMonster_InputUsername.Size = new Size(172, 26);

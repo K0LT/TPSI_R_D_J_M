@@ -29,47 +29,50 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(miniGamesMenu));
-            pictureBox_miniGamesMenu_MiniGamesText = new PictureBox();
-            button_miniGamesMenu_ReturnToMyMonster = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_miniGamesMenu_MiniGamesText).BeginInit();
+            miniGamesTitleLabel = new Label();
+            button_MiniGames_Exit = new Button();
             SuspendLayout();
             // 
-            // pictureBox_miniGamesMenu_MiniGamesText
+            // miniGamesTitleLabel
             // 
-            pictureBox_miniGamesMenu_MiniGamesText.BackColor = Color.Transparent;
-            pictureBox_miniGamesMenu_MiniGamesText.Image = (Image)resources.GetObject("pictureBox_miniGamesMenu_MiniGamesText.Image");
-            pictureBox_miniGamesMenu_MiniGamesText.Location = new Point(45, 22);
-            pictureBox_miniGamesMenu_MiniGamesText.Name = "pictureBox_miniGamesMenu_MiniGamesText";
-            pictureBox_miniGamesMenu_MiniGamesText.Size = new Size(500, 133);
-            pictureBox_miniGamesMenu_MiniGamesText.TabIndex = 4;
-            pictureBox_miniGamesMenu_MiniGamesText.TabStop = false;
+            miniGamesTitleLabel.AutoSize = true;
+            miniGamesTitleLabel.BackColor = Color.Transparent;
+            miniGamesTitleLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            miniGamesTitleLabel.ForeColor = Color.DarkGoldenrod;
+            miniGamesTitleLabel.Location = new Point(110, 95);
+            miniGamesTitleLabel.Name = "miniGamesTitleLabel";
+            miniGamesTitleLabel.Size = new Size(407, 64);
+            miniGamesTitleLabel.TabIndex = 22;
+            miniGamesTitleLabel.Text = "Mini-Games";
             // 
-            // button_miniGamesMenu_ReturnToMyMonster
+            // button_MiniGames_Exit
             // 
-            button_miniGamesMenu_ReturnToMyMonster.BackColor = Color.Transparent;
-            button_miniGamesMenu_ReturnToMyMonster.BackgroundImage = (Image)resources.GetObject("button_miniGamesMenu_ReturnToMyMonster.BackgroundImage");
-            button_miniGamesMenu_ReturnToMyMonster.Location = new Point(278, 756);
-            button_miniGamesMenu_ReturnToMyMonster.Name = "button_miniGamesMenu_ReturnToMyMonster";
-            button_miniGamesMenu_ReturnToMyMonster.Size = new Size(33, 43);
-            button_miniGamesMenu_ReturnToMyMonster.TabIndex = 22;
-            button_miniGamesMenu_ReturnToMyMonster.UseVisualStyleBackColor = false;
+            button_MiniGames_Exit.BackColor = Color.Transparent;
+            button_MiniGames_Exit.BackgroundImage = (Image)resources.GetObject("button_MiniGames_Exit.BackgroundImage");
+            button_MiniGames_Exit.FlatAppearance.BorderSize = 0;
+            button_MiniGames_Exit.FlatStyle = FlatStyle.Flat;
+            button_MiniGames_Exit.Location = new Point(555, 0);
+            button_MiniGames_Exit.Name = "button_MiniGames_Exit";
+            button_MiniGames_Exit.Size = new Size(45, 45);
+            button_MiniGames_Exit.TabIndex = 23;
+            button_MiniGames_Exit.UseVisualStyleBackColor = false;
             // 
             // miniGamesMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            Controls.Add(button_miniGamesMenu_ReturnToMyMonster);
-            Controls.Add(pictureBox_miniGamesMenu_MiniGamesText);
+            Controls.Add(button_MiniGames_Exit);
+            Controls.Add(miniGamesTitleLabel);
             Name = "miniGamesMenu";
             Size = new Size(600, 900);
-            ((System.ComponentModel.ISupportInitialize)pictureBox_miniGamesMenu_MiniGamesText).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox_miniGamesMenu_MiniGamesText;
-        private Button button_miniGamesMenu_ReturnToMyMonster;
+        private Label miniGamesTitleLabel;
+        private Button button_MiniGames_Exit;
     }
 }
