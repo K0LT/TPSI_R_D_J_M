@@ -23,7 +23,7 @@ namespace Monster.UI
             set
             {
                 _userType = value;
-                ApplyUserTypeImage();
+               // ApplyUserTypeImage();
             }
         }
 
@@ -95,21 +95,21 @@ namespace Monster.UI
         }
 
 
-        private void ApplyUserTypeImage()
-        {
-            switch (_userType?.ToLower())
-            {
-                case "boy":
-                    pictureBox1.Image = ConvertByteArrayToImage(Properties.Resources.playergrandesemback); // Replace with your actual resource
-                    break;
-                case "girl":
-                    pictureBox1.Image = ConvertByteArrayToImage(Properties.Resources.playergirlgrandesemback); // Replace with your actual resource
-                    break;
-                default:
-                    pictureBox1.Image = ConvertByteArrayToImage(Properties.Resources.defaultUserImage); // Fallback image
-                    break;
-            }
-        }
+        //private void ApplyUserTypeImage()
+        //{
+        //    switch (_userType?.ToLower())
+        //    {
+        //        case "boy":
+        //            pictureBox1.Image = ConvertByteArrayToImage(Properties.Resources.playergrandesemback); // Replace with your actual resource
+        //            break;
+        //        case "girl":
+        //            pictureBox1.Image = ConvertByteArrayToImage(Properties.Resources.playergirlgrandesemback); // Replace with your actual resource
+        //            break;
+        //        default:
+        //            pictureBox1.Image = ConvertByteArrayToImage(Properties.Resources.defaultUserImage); // Fallback image
+        //            break;
+        //    }
+        //}
 
         private Image ConvertByteArrayToImage(byte[] byteArray)
         {
