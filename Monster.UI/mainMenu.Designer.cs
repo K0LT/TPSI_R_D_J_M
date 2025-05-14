@@ -86,5 +86,6 @@
         private Button button_mainMenu_NewGame;
         private Button button_mainMenu_LoadGame;
         private Button button_mainMenu_Exit;
+        private Button button_Credits;
     }
 }

@@ -51,6 +51,7 @@ namespace Monster.UI
             newGameMonster newMonsterControl = new newGameMonster();
             mainMenu mainMenu = new mainMenu();
             loadGame loadGame = new loadGame();
+            credits credits = new credits();
 
             // Add controls to dictionary with unique keys
             _userControls.Add("Monster", monsterControl);
@@ -62,6 +63,7 @@ namespace Monster.UI
             _userControls.Add("NewMonster", newMonsterControl);
             _userControls.Add("MainMenu", mainMenu);
             _userControls.Add("LoadGame", loadGame);
+            _userControls.Add("Credits", credits);
         }
 
         public void NavigateTo(string controlKey)
@@ -126,6 +128,7 @@ namespace Monster.UI
                         //inventoryControl.InventoryData = _gameState.Inventory;
                     }
                     break;
+
                 case "Player":
                     var playerControl = control as playerMenu;
                     if (playerControl != null)

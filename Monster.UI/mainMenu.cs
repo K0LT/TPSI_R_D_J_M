@@ -37,5 +37,13 @@ namespace Monster.UI
 
             form.Close();
         }
+        private void button_Credits(object sender, EventArgs e)
+        {
+            Form1 form = this.FindForm() as Form1;
+            form.NavigateTo("Credits");
+        }
+    
     }
+
+
 }
