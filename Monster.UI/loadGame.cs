@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,11 +20,13 @@ namespace Monster.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string temp = textBox_LoadGame_InputForUsername.Text;
             Form1 form = this.FindForm() as Form1;
 
-            form.LoadGame(textBox_LoadGame_InputForUsername.Text.ToString());
+            form.LoadGame(temp);
+            form.NavigateTo("Monster");
         }
 
-       
+
     }
 }

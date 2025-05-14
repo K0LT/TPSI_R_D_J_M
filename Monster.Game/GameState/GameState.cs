@@ -24,6 +24,8 @@ namespace Monster.Game.GameState
             }
         }
 
+
+
         private MonsterClass _activeMonster = new MonsterClass();
 
         public MonsterClass ActiveMonster
@@ -38,7 +40,7 @@ namespace Monster.Game.GameState
             }
         }
         public List<MonsterClass>? OwnedMonsters { get; set; } = new List<MonsterClass>();
-        public Dictionary<string, int>? Inventory { get; set; }
+        public List<Item> Inventory { get; set; } = new List<Item> { new HealthItem(), new EnergyItem() };
         
         public int Currency { get; set; }
 

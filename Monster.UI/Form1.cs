@@ -26,10 +26,12 @@ namespace Monster.UI
             // Initialize all UserControls
             InitializeUserControls();
 
+            _gameState.OwnedMonsters.Add(_gameState.ActiveMonster);
+
             // Set up global binding sources
             SetupBindings(_gameState, _bsMonster, _bsUser);
 
-            _gameState.OwnedMonsters.Add(_gameState.ActiveMonster);
+            
 
             // Show initial UserControl
             NavigateTo("MainMenu");
@@ -128,17 +130,32 @@ namespace Monster.UI
                     var playerControl = control as playerMenu;
                     if (playerControl != null)
                     {
-                        // Ensure the OwnedMonsters list has at least 4 entries
-                        while (_gameState.OwnedMonsters.Count < 4)
+                        int count = _gameState.OwnedMonsters.Count;
+                        switch (count)
                         {
-                            _gameState.OwnedMonsters.Add(new MonsterClass());
+                            default:
+                                // TODO: Add try-catch block
+                                throw new Exception("EMPTY_MONSTER_COLLECTION");
+                                break;
+                            case 1:
+                                playerControl.bsFirstMonster = _gameState.OwnedMonsters.ElementAt(0);
+                                break;
+                            case 2:
+                                playerControl.bsFirstMonster = _gameState.OwnedMonsters.ElementAt(0);
+                                playerControl.bsSecondMonster = _gameState.OwnedMonsters.ElementAt(1);
+                                break;
+                            case 3:
+                                playerControl.bsFirstMonster = _gameState.OwnedMonsters.ElementAt(0);
+                                playerControl.bsSecondMonster = _gameState.OwnedMonsters.ElementAt(1);
+                                playerControl.bsThirdMonster = _gameState.OwnedMonsters.ElementAt(2);
+                                break;
+                            case 4:
+                                playerControl.bsFirstMonster = _gameState.OwnedMonsters.ElementAt(0);
+                                playerControl.bsSecondMonster = _gameState.OwnedMonsters.ElementAt(1);
+                                playerControl.bsThirdMonster = _gameState.OwnedMonsters.ElementAt(2);
+                                playerControl.bsFourthMonster = _gameState.OwnedMonsters.ElementAt(3);
+                                break;
                         }
-
-                        // Bind the first four monsters to the player control
-                        playerControl.bsFirstMonster = _gameState.OwnedMonsters.ElementAt(0);
-                        playerControl.bsSecondMonster = _gameState.OwnedMonsters.ElementAt(1);
-                        playerControl.bsThirdMonster = _gameState.OwnedMonsters.ElementAt(2);
-                        playerControl.bsFourthMonster = _gameState.OwnedMonsters.ElementAt(3);
 
                         // Set the user type and hook up bindings
                         playerControl.UserType = _gameState.CurrentUser.UserType;
@@ -169,7 +186,7 @@ namespace Monster.UI
 
         public void SetupBindings(GameState state, BindingSource bsMonster, BindingSource bsUser)
         {
-            bsMonster.DataSource = state.ActiveMonster;
+            bsMonster.DataSource = state.OwnedMonsters.ElementAt(0);
             bsUser.DataSource = state.CurrentUser;
         }
 
