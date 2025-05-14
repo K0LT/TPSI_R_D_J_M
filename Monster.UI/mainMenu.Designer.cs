@@ -109,6 +109,28 @@
             button_mainMenu_Credits.TabIndex = 4;
             button_mainMenu_Credits.UseVisualStyleBackColor = true;
             // 
+            // button_mainMenu_Settings
+            // 
+            button_mainMenu_Settings.BackgroundImage = (Image)resources.GetObject("button_mainMenu_Settings.BackgroundImage");
+            button_mainMenu_Settings.FlatStyle = FlatStyle.Flat;
+            button_mainMenu_Settings.Location = new Point(183, 650);
+            button_mainMenu_Settings.Name = "button_mainMenu_Settings";
+            button_mainMenu_Settings.Size = new Size(228, 45);
+            button_mainMenu_Settings.TabIndex = 3;
+            button_mainMenu_Settings.UseVisualStyleBackColor = true;
+            button_mainMenu_Settings.Click += button_mainMenu_Settings_Click;
+            // 
+            // button_mainMenu_Credits
+            // 
+            button_mainMenu_Credits.BackgroundImage = (Image)resources.GetObject("button_mainMenu_Credits.BackgroundImage");
+            button_mainMenu_Credits.FlatStyle = FlatStyle.Flat;
+            button_mainMenu_Credits.Location = new Point(183, 781);
+            button_mainMenu_Credits.Name = "button_mainMenu_Credits";
+            button_mainMenu_Credits.Size = new Size(228, 45);
+            button_mainMenu_Credits.TabIndex = 4;
+            button_mainMenu_Credits.UseVisualStyleBackColor = true;
+            button_mainMenu_Credits.Click += button_mainMenu_Credits_Click;
+            // 
             // mainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
