@@ -49,13 +49,7 @@ namespace Monster.UI
         {
             ParentForm.NavigateTo("Credits");
         }
-        private void button_mainMenu_Credits_Click(object sender, EventArgs e)
-        {
-
-            var form = this.FindForm() as Form1;
-            form.NavigateTo("Credits");
-        }
-
+      
         private void mainMenu_Load(object sender, EventArgs e)
         {
 

@@ -108,7 +108,6 @@
             button_mainMenu_Credits.Size = new Size(228, 45);
             button_mainMenu_Credits.TabIndex = 4;
             button_mainMenu_Credits.UseVisualStyleBackColor = true;
-            button_mainMenu_Credits.Click += button_mainMenu_Credits_Click;
             // 
             // mainMenu
             // 
@@ -140,6 +139,5 @@
        
 
         private Button button_mainMenu_Settings;
-        private Button button_mainMenu_Credits;
     }
 }
