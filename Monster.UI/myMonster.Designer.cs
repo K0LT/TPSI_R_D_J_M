@@ -134,6 +134,7 @@
             button_myMonster_Sleep.Size = new Size(50, 50);
             button_myMonster_Sleep.TabIndex = 8;
             button_myMonster_Sleep.UseVisualStyleBackColor = true;
+            button_myMonster_Sleep.Click += button_myMonster_Sleep_Click;
             // 
             // button_myMonster_Inventory
             // 

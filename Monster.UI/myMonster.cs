@@ -60,13 +60,13 @@ namespace Monster.UI
             System.Diagnostics.Debug.WriteLine(@"HookBindings exiting.");
         }
 
-        
 
-       
+
+
 
         private void button_myMonster_ReturnToMainMenu_Click(object sender, EventArgs e)
         {
-            
+
             if (ParentForm != null)
             {
                 ParentForm.NavigateTo("MainMenu");
@@ -116,7 +116,7 @@ namespace Monster.UI
 
         }
 
-       
+
         private void button_myMonster_Battle_Click(object sender, EventArgs e)
         {
             ParentForm.NavigateTo("BattleMenu");
@@ -127,6 +127,10 @@ namespace Monster.UI
             ParentForm.AddExperience(50);
         }
 
-     
+        private void button_myMonster_Sleep_Click(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }

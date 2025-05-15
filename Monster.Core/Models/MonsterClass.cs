@@ -14,7 +14,7 @@ namespace Monster.Core.Models
         private int _healthPoints = 100;
         private int _experiencePoints = 0;
         private int _level = 1;
-        private int _energy = 100;
+        private int _stamina = 100;
         private Image _monsterImage;
         private Image _monsterIcon;
 
@@ -118,16 +118,16 @@ namespace Monster.Core.Models
 
         }
 
-        public int Energy
+        public int Stamina
         {
-            get => _energy;
+            get => _stamina;
             set
             {
-                if (_energy != value)
+                if (_stamina != value)
                 {
-                    _energy = value;
+                    _stamina = value;
                     OnPropertyChanged();
-                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass Energy Setter Call.");
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass Stamina Setter Call.");
                 }
             }
         }
