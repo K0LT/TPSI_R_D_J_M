@@ -57,7 +57,11 @@ namespace Monster.UI
             credits credits = new credits();
             BattleMenu battleMenu = new BattleMenu();
             battleGame battleGame = new battleGame();
-            
+            tutorialfirstPage tutorial1 = new tutorialfirstPage();
+            TutorialSecondPage tutorial2 = new TutorialSecondPage();
+            tutorialThirdPage tutorial3 = new tutorialThirdPage();
+
+
 
 
             // Add controls to dictionary with unique keys
@@ -75,6 +79,10 @@ namespace Monster.UI
             _userControls.Add("Credits", credits);
             _userControls.Add("BattleMenu", battleMenu);
             _userControls.Add("BattleGame", battleGame);
+            _userControls.Add("Tutorial1", tutorial1);
+            _userControls.Add("Tutorial2", tutorial2);
+            _userControls.Add("Tutorial3", tutorial3);
+
         }
 
         public void NavigateTo(string controlKey)

@@ -99,5 +99,15 @@ namespace Monster.UI.Properties {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        internal static byte[] jonnyBoyPlayerPic {
+            get {
+                object obj = ResourceManager.GetObject("jonnyBoyPlayerPic", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }
