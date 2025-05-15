@@ -181,39 +181,51 @@
             // 
             // button_playerMenu_ChangeMonsterSlot1
             // 
+            button_playerMenu_ChangeMonsterSlot1.FlatStyle = FlatStyle.Flat;
+            button_playerMenu_ChangeMonsterSlot1.Font = new Font("VCR OSD Mono", 12F);
+            button_playerMenu_ChangeMonsterSlot1.Image = (Image)resources.GetObject("button_playerMenu_ChangeMonsterSlot1.Image");
             button_playerMenu_ChangeMonsterSlot1.Location = new Point(76, 553);
             button_playerMenu_ChangeMonsterSlot1.Name = "button_playerMenu_ChangeMonsterSlot1";
-            button_playerMenu_ChangeMonsterSlot1.Size = new Size(75, 23);
+            button_playerMenu_ChangeMonsterSlot1.Size = new Size(80, 29);
             button_playerMenu_ChangeMonsterSlot1.TabIndex = 14;
-            button_playerMenu_ChangeMonsterSlot1.Text = "Change";
+            button_playerMenu_ChangeMonsterSlot1.Text = "Select";
             button_playerMenu_ChangeMonsterSlot1.UseVisualStyleBackColor = true;
             button_playerMenu_ChangeMonsterSlot1.Click += button_playerMenu_ChangeMonsterSlot1_Click;
             // 
             // button_playerMenu_ChangeSlot2
             // 
+            button_playerMenu_ChangeSlot2.FlatStyle = FlatStyle.Flat;
+            button_playerMenu_ChangeSlot2.Font = new Font("VCR OSD Mono", 12F);
+            button_playerMenu_ChangeSlot2.Image = (Image)resources.GetObject("button_playerMenu_ChangeSlot2.Image");
             button_playerMenu_ChangeSlot2.Location = new Point(375, 553);
             button_playerMenu_ChangeSlot2.Name = "button_playerMenu_ChangeSlot2";
-            button_playerMenu_ChangeSlot2.Size = new Size(75, 23);
+            button_playerMenu_ChangeSlot2.Size = new Size(80, 29);
             button_playerMenu_ChangeSlot2.TabIndex = 15;
-            button_playerMenu_ChangeSlot2.Text = "Change";
+            button_playerMenu_ChangeSlot2.Text = "Select";
             button_playerMenu_ChangeSlot2.UseVisualStyleBackColor = true;
             // 
             // button_playerMenu_ChangeSlot3
             // 
+            button_playerMenu_ChangeSlot3.FlatStyle = FlatStyle.Flat;
+            button_playerMenu_ChangeSlot3.Font = new Font("VCR OSD Mono", 12F);
+            button_playerMenu_ChangeSlot3.Image = (Image)resources.GetObject("button_playerMenu_ChangeSlot3.Image");
             button_playerMenu_ChangeSlot3.Location = new Point(76, 712);
             button_playerMenu_ChangeSlot3.Name = "button_playerMenu_ChangeSlot3";
-            button_playerMenu_ChangeSlot3.Size = new Size(75, 23);
+            button_playerMenu_ChangeSlot3.Size = new Size(80, 29);
             button_playerMenu_ChangeSlot3.TabIndex = 18;
-            button_playerMenu_ChangeSlot3.Text = "Change";
+            button_playerMenu_ChangeSlot3.Text = "Select";
             button_playerMenu_ChangeSlot3.UseVisualStyleBackColor = true;
             // 
             // button_playerMenu_ChangeSlot4
             // 
+            button_playerMenu_ChangeSlot4.FlatStyle = FlatStyle.Flat;
+            button_playerMenu_ChangeSlot4.Font = new Font("VCR OSD Mono", 12F);
+            button_playerMenu_ChangeSlot4.Image = (Image)resources.GetObject("button_playerMenu_ChangeSlot4.Image");
             button_playerMenu_ChangeSlot4.Location = new Point(375, 712);
             button_playerMenu_ChangeSlot4.Name = "button_playerMenu_ChangeSlot4";
-            button_playerMenu_ChangeSlot4.Size = new Size(75, 23);
+            button_playerMenu_ChangeSlot4.Size = new Size(80, 29);
             button_playerMenu_ChangeSlot4.TabIndex = 19;
-            button_playerMenu_ChangeSlot4.Text = "Change";
+            button_playerMenu_ChangeSlot4.Text = "Select";
             button_playerMenu_ChangeSlot4.UseVisualStyleBackColor = true;
             button_playerMenu_ChangeSlot4.Click += button_playerMenu_ChangeSlot4_Click;
             // 

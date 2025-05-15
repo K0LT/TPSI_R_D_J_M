@@ -104,10 +104,10 @@ namespace Monster.UI
             switch (_userType?.ToLower())
             {
                 case "boy":
-                    pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.boyPlayerPic); // Replace with your actual resource
+                    pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.boyPlayerPic); 
                     break;
                 case "girl":
-                    pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.girlPlayerPic); // Replace with your actual resource
+                    pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.girlPlayerPic);
                     break;
                     //default:
                     //    pictureBox1.Image = ConvertByteArrayToImage(Properties.Resources.defaultUserImage); // Fallback image
