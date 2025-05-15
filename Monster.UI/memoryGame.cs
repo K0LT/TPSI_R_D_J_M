@@ -18,14 +18,14 @@ namespace Monster.UI
 
 
             LoadCardImages();
-            var playerRes = new ComponentResourceManager(typeof(playerMenu));
-            this.BackgroundImage =
-               (Image)playerRes.GetObject("$this.BackgroundImage");
-            var mainRes = new ComponentResourceManager(typeof(mainMenu));
-            backImage =
-               (Image)mainRes.GetObject("$this.BackgroundImage");
+            //var playerRes = new ComponentResourceManager(typeof(playerMenu));
+            //this.BackgroundImage =
+            //   (Image)playerRes.GetObject("$this.BackgroundImage");
+            //var mainres = new componentresourcemanager(typeof(mainmenu));
+            //backimage =
+            //   (image)mainres.getobject("$this.backgroundimage");
 
-            timeLeft = 10;
+            timeLeft = 60;
             lblGameTimer.Text = TimeSpan.FromSeconds(timeLeft)
                                          .ToString(@"mm\:ss");
             gameTimer.Start();
@@ -53,14 +53,13 @@ namespace Monster.UI
     "eggdraco",
     "eggtauro"
   };
-     
 
             cardImages = new List<Image>();
-            foreach (var k in monsterKeys)
-                cardImages.Add((Image)res.GetObject(k));
-            
+            cardImages.AddRange(monsterKeys
+                                .Select(k => (Image)res.GetObject(k)));
 
-            backImage = (Image)res.GetObject("$verso");
+            
+            backImage = (Image)res.GetObject("verso");
         }
 
         private void InitializeCards()
@@ -196,5 +195,6 @@ namespace Monster.UI
         private PictureBox firstClicked, secondClicked;
         private int matched = 0;
         private int timeLeft; //seconds
+        
     }
 }
