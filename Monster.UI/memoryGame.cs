@@ -39,30 +39,28 @@ namespace Monster.UI
 
         private void LoadCardImages()
         {
-            var monsterRes = new ComponentResourceManager(typeof(newGameMonster));
-            var playerRes = new ComponentResourceManager(typeof(playerMenu));
+            var res = new ComponentResourceManager(typeof(memoryGame));
+            
 
 
             string[] monsterKeys = {
-    "button_newGameMonster_Draco.BackgroundImage",
-    "button_newGameMonster_Grifo.BackgroundImage",
-    "button_newGameMonster_Siren.BackgroundImage",
-    "button_newGame_Monster_Tauro.BackgroundImage"
+    "draco",
+    "grifo",
+    "siren",
+    "tauro",
+    "egggrifo",
+    "eggsiren",
+    "eggdraco",
+    "eggtauro"
   };
-            string[] playerKeys = {
-    "pictureBox_playerMenu_Slot1.Image",
-    "pictureBox_playerMenu_Slot2.Image",
-    "pictureBox_playerMenu_Slot3.Image",
-    "pictureBox_playerMenu_Slot4.Image"
-  };
+     
 
             cardImages = new List<Image>();
             foreach (var k in monsterKeys)
-                cardImages.Add((Image)monsterRes.GetObject(k));
-            foreach (var k in playerKeys)
-                cardImages.Add((Image)playerRes.GetObject(k));
+                cardImages.Add((Image)res.GetObject(k));
+            
 
-            backImage = (Image)monsterRes.GetObject("$this.BackgroundImage");
+            backImage = (Image)res.GetObject("$verso");
         }
 
         private void InitializeCards()
