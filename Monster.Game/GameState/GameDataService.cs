@@ -35,6 +35,7 @@ namespace Monster.Game.GameState
             string filePath = GetSaveFilePath(username);
             if (!File.Exists(filePath))
             {
+                System.Diagnostics.Debug.WriteLine($"[DEBUG-GDService]: LoadGame({username}): {filePath} not found, returning null to caller.");
                 return null;
             }
 

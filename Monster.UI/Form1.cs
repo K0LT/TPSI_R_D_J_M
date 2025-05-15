@@ -20,11 +20,13 @@ namespace Monster.UI
         public Form1()
         {
             System.Diagnostics.Debug.WriteLine(@"[DEBUG-Form1] Constructor Call");
+
             InitializeComponent();
-            System.Diagnostics.Debug.WriteLine(@"Form 1 Component Init Call.");
+            System.Diagnostics.Debug.WriteLine(@"Form 1 Component Init Passed.");
 
             // Initialize all UserControls
             InitializeUserControls();
+            System.Diagnostics.Debug.WriteLine(@"Initialize User Controlls Call Passed.");
 
             _gameState.OwnedMonsters.Add(_gameState.ActiveMonster);
 
@@ -36,7 +38,6 @@ namespace Monster.UI
             // Show initial UserControl
             NavigateTo("MainMenu");
 
-            System.Diagnostics.Debug.WriteLine(@"[DEBUG-Form1] Bindings Setup.");
         }
 
         private void InitializeUserControls()
@@ -123,8 +124,9 @@ namespace Monster.UI
                     var monsterControl = control as myMonster;
                     if (monsterControl != null)
                     {
+                        this.SaveGame(true);
                         // Update with latest monster data
-                        monsterControl.bsDataSource = _bsMonster;
+                        monsterControl.bsDataSource = _gameState.ActiveMonster;
                         monsterControl.HookBindings();
                     }
                     break;
@@ -177,11 +179,8 @@ namespace Monster.UI
                     var newGameMonster = control as newGameMonster;
                     if(newGameMonster != null)
                     {
-                        var newMonster = new Core.Models.MonsterClass();
-                        _gameState.OwnedMonsters.Add(newMonster);
-                        _gameState.ActiveMonster = _gameState.OwnedMonsters.ElementAt(_gameState.OwnedMonsters.Count - 1);
+                        _bsMonster.DataSource = _gameState.ActiveMonster;
                         newGameMonster.bsMonster = _bsMonster.DataSource;
-
                         newGameMonster.HookBindings();
                     }
                     break;
@@ -197,7 +196,7 @@ namespace Monster.UI
 
         public void SetupBindings(GameState state, BindingSource bsMonster, BindingSource bsUser)
         {
-            bsMonster.DataSource = state.OwnedMonsters.ElementAt(0);
+            bsMonster.DataSource = state.ActiveMonster;
             bsUser.DataSource = state.CurrentUser;
         }
 
@@ -214,12 +213,14 @@ namespace Monster.UI
         }
 
         // Event handler for Save button
-        public void SaveGame()
+        public void SaveGame(bool silentSave = false)
         {
             try
             {
                 _gameDataService.SaveGame(_gameState);
-                MessageBox.Show("Game saved successfully!", "Save Game", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (!silentSave) { MessageBox.Show("Game saved successfully!", "Save Game", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+                else { System.Diagnostics.Debug.WriteLine("[DEBUG-Form1]::SaveGame(): Game saved successfully!"); }
+
             }
             catch (Exception ex)
             {

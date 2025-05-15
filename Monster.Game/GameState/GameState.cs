@@ -18,13 +18,12 @@ namespace Monster.Game.GameState
             {
                 if (value != null)
                 {
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] GameState::CurrentUser setter call.");
                     _currentUser = value;
                 }
                 
             }
         }
-
-
 
         private MonsterClass _activeMonster = new MonsterClass();
 
@@ -35,6 +34,7 @@ namespace Monster.Game.GameState
             {
                 if (value != null)
                 {
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] GameState::ActiveMonster setter call.");
                     _activeMonster = value;
                 }
             }

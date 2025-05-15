@@ -20,6 +20,7 @@ namespace Monster.Core.Models
         
         public MonsterClass()
         {
+            System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass constructor call.");
             UpdateMonsterImage();
         }
 
@@ -32,6 +33,7 @@ namespace Monster.Core.Models
                 {
                     _name = value;
                     OnPropertyChanged();
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass Name Setter Call.");
                 }
             }
         }
@@ -46,6 +48,7 @@ namespace Monster.Core.Models
                     _type = value;
                     OnPropertyChanged();
                     UpdateMonsterImage();
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass Type Setter Call.");
                 }
             }
         }
@@ -58,6 +61,7 @@ namespace Monster.Core.Models
                 if (_healthPoints != value)
                 {
                     _healthPoints = value;
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass HealthPoints Setter Call.");
                     OnPropertyChanged();
                 }
             }
@@ -73,6 +77,7 @@ namespace Monster.Core.Models
                     _experiencePoints = 0;
                     _level += 1;
                     OnPropertyChanged();
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass ExperiencePoints Setter Call.");
                 }
             }
         }
@@ -87,6 +92,7 @@ namespace Monster.Core.Models
                     _level = value;
                     UpdateMonsterImage();
                     OnPropertyChanged();
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass Level Setter Call.");
                 }
             }
         }
@@ -117,6 +123,7 @@ namespace Monster.Core.Models
                 {
                     _energy = value;
                     OnPropertyChanged();
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass Energy Setter Call.");
                 }
             }
         }
@@ -129,6 +136,7 @@ namespace Monster.Core.Models
                 {
                     _monsterImage = value;
                     OnPropertyChanged();
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass MonsterImage Setter Call.");
                 }
             }
         }
@@ -142,6 +150,7 @@ namespace Monster.Core.Models
                 {
                     _monsterIcon = value;
                     OnPropertyChanged();
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass Image Setter Call.");
                 }
             }
         }

@@ -39,8 +39,6 @@ namespace Monster.UI
 
         public void HookBindings()
         {
-
-            //labelUserName.DataBindings.Add(nameof(Label.Text), bsMonster, nameof(MonsterClass.Name));
             textBox_newGameMonster_InputUsername.DataBindings.Clear();
             textBox_newGameMonster_InputUsername.DataBindings.Add(nameof(TextBox.Text), bsMonster, nameof(MonsterClass.Name), true, DataSourceUpdateMode.OnPropertyChanged);
         }
@@ -48,7 +46,6 @@ namespace Monster.UI
         {
             UpdateMonsterType("Draco");
             panelNewMonsterName.Visible = true;
-
         }
 
         private void button_newGameMonster_Grifo_Click(object sender, EventArgs e)

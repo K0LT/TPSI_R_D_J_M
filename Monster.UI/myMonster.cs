@@ -37,8 +37,11 @@ namespace Monster.UI
             progressBar_myMonster_EXP.DataBindings.Clear();
             progressBar_myMonster_HP.DataBindings.Clear();
             progressBar_myMonster_ST.DataBindings.Clear();
+
             pictureBox_myMonster_Draco.DataBindings.Clear();
 
+            levelMyMonster.DataBindings.Clear();
+            nameMyMonsterLabel.DataBindings.Clear();
 
             progressBar_myMonster_EXP.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
                 nameof(MonsterClass.ExperiencePoints));
@@ -48,6 +51,8 @@ namespace Monster.UI
                 nameof(MonsterClass.HealthPoints));
 
             pictureBox_myMonster_Draco.DataBindings.Add(nameof(PictureBox.Image), bsDataSource, nameof(MonsterClass.MonsterImage));
+            levelMyMonster.DataBindings.Add(nameof(Label.Text), bsDataSource, nameof(MonsterClass.Level));
+            nameMyMonsterLabel.DataBindings.Add(nameof(Label.Text), bsDataSource, nameof(MonsterClass.Name));
             //Eliminei o label a dizer CurrentMonster mas deverei voltar a adicionar
             //label_myMonster_CurrentMonsterName.DataBindings.Add(nameof(Label.Text), bsDataSource,
             //nameof(MonsterClass.Name));

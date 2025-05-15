@@ -13,23 +13,11 @@ namespace Monster.UI
 {
     public partial class newGamePlayer : UserControl
     {
-        private BindingSource _bsUserName = new BindingSource();
         private User _tempUser = new User();
-
-        // TODO: Implement newGameMonster binding pattern, this is outdated
 
         public newGamePlayer()
         {
             InitializeComponent();
-            HookBindings();
-        }
-
-        private void HookBindings()
-        {
-            _bsUserName.DataSource = _tempUser;
-
-            textBox_newGamePlayer_InputForUsername.DataBindings.Add(
-                nameof(TextBox.Text), _bsUserName, nameof(User.Username), true, DataSourceUpdateMode.OnPropertyChanged);
         }
 
         private void button_newGamePlayer_ChooseFemale_Click(object sender, EventArgs e)
@@ -51,16 +39,13 @@ namespace Monster.UI
             panelNewUserRegister.Visible = true;
         }
 
-
-
-
         private void button_newGamePlayer_RegisterText_Click(object sender, EventArgs e)
         {
             Form1 parentForm = this.FindForm() as Form1;
 
             if (parentForm != null)
             {
-                parentForm.SetupUser(_tempUser.Username, _tempUser.UserType);
+                parentForm.SetupUser(textBox_newGamePlayer_InputForUsername.Text, _tempUser.UserType);
                 parentForm.SaveGame();
                 parentForm.NavigateTo("NewMonster");
             }
@@ -73,7 +58,7 @@ namespace Monster.UI
 
         private void textBox_newGamePlayer_InputForUsername_TextChanged(object sender, EventArgs e)
         {
-
+            // Designer breaks on removal
         }
     }
 }
