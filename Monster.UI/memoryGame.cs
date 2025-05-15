@@ -17,7 +17,7 @@ namespace Monster.UI
             InitializeComponent();
             LoadCardImages();
 
-            this.Load += (s, e) => ResetGame();   // só depois de ter tamanho
+            this.Load += (s, e) => ResetGame();   
 
             panelGrid.Resize += (s, e) => PositionCards();
         }
@@ -134,7 +134,7 @@ namespace Monster.UI
                     {
                         gameTimer.Stop();
                         flipBackTimer.Stop();
-                        MessageBox.Show("Parabéns, você venceu!", "Fim de Jogo",
+                        MessageBox.Show("You won!", "End Game",
                                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ParentForm?.NavigateTo("Monster");
                     }
@@ -168,7 +168,7 @@ namespace Monster.UI
             {
                 gameTimer.Stop();
                 flipBackTimer.Stop();
-                MessageBox.Show("Tempo esgotado!", "Fim de Jogo",
+                MessageBox.Show("Time ended!", "Game Over",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
 
@@ -210,7 +210,7 @@ namespace Monster.UI
         {
             base.OnVisibleChanged(e);
 
-            if (this.Visible && this.IsHandleCreated)   // acabou de ficar visível
+            if (this.Visible && this.IsHandleCreated)  
                 ResetGame();
         }
     }

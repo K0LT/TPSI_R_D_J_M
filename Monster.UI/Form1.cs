@@ -237,27 +237,8 @@ namespace Monster.UI
         }
 
         // Event handler for Save button
-        public bool SaveGame(bool silentSave = false)
+        public void SaveGame(bool silentSave = false)
         {
-            //if gamestate is null return false and to the main menu
-            if (_gameState == null)
-            {
-                System.Diagnostics.Debug.WriteLine("[DEBUG-Form1]::SaveGame(): Game state was null");
-                return false;
-            }
-
-            // existingUsernames var, gets all the usernames for the save files, and currentUsername, is the current username.
-            var existingUsernames = _gameDataService.GetSavedGames();
-            string currentUsername = _gameState.CurrentUser?.Username;
-
-            //TODO: This will return to the main menu, we need to create a popup window asking if the user wants to override the save.
-            //existingUseranmes, verifies if there is a current username in the list of existing usernames, the stringComparer ignores case sensitivity stuff.
-            if (existingUsernames.Contains(currentUsername, StringComparer.OrdinalIgnoreCase))
-            {
-                MessageBox.Show("A save with this username already exists. Please choose another username.", "Save Game", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-
             try
             {
                 _gameDataService.SaveGame(_gameState);
@@ -274,7 +255,6 @@ namespace Monster.UI
             {
                 MessageBox.Show($"Error saving game: {ex.Message}", "Save Game", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            return true;
         }
 
 
