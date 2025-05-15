@@ -40,7 +40,7 @@ namespace Monster.Game.GameState
             }
         }
         public List<MonsterClass>? OwnedMonsters { get; set; } = new List<MonsterClass>();
-        public List<Item> Inventory { get; set; } = new List<Item> { new HealthItem(), new EnergyItem() };
+        public List<Item> Inventory { get; set; } = new List<Item> { new HealthItem(), new StaminaItem() };
         
         public int Currency { get; set; }
 

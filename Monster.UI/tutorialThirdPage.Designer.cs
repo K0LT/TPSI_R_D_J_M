@@ -29,47 +29,47 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tutorialThirdPage));
-            pictureBox_tutorialThirdPage_tutorialText = new PictureBox();
-            button_tutorialThirdPage_ReturnToMainMenu = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_tutorialThirdPage_tutorialText).BeginInit();
+            button_Tutorial1_Next = new Button();
+            pictureBox_Tutorial1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_Tutorial1).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox_tutorialThirdPage_tutorialText
+            // button_Tutorial1_Next
             // 
-            pictureBox_tutorialThirdPage_tutorialText.BackColor = Color.Transparent;
-            pictureBox_tutorialThirdPage_tutorialText.Image = (Image)resources.GetObject("pictureBox_tutorialThirdPage_tutorialText.Image");
-            pictureBox_tutorialThirdPage_tutorialText.Location = new Point(36, 23);
-            pictureBox_tutorialThirdPage_tutorialText.Name = "pictureBox_tutorialThirdPage_tutorialText";
-            pictureBox_tutorialThirdPage_tutorialText.Size = new Size(500, 133);
-            pictureBox_tutorialThirdPage_tutorialText.TabIndex = 3;
-            pictureBox_tutorialThirdPage_tutorialText.TabStop = false;
+            button_Tutorial1_Next.FlatStyle = FlatStyle.Flat;
+            button_Tutorial1_Next.Image = (Image)resources.GetObject("button_Tutorial1_Next.Image");
+            button_Tutorial1_Next.Location = new Point(255, 808);
+            button_Tutorial1_Next.Name = "button_Tutorial1_Next";
+            button_Tutorial1_Next.Size = new Size(106, 40);
+            button_Tutorial1_Next.TabIndex = 26;
+            button_Tutorial1_Next.UseVisualStyleBackColor = true;
+            button_Tutorial1_Next.Click += button_Tutorial1_Next_Click;
             // 
-            // button_tutorialThirdPage_ReturnToMainMenu
+            // pictureBox_Tutorial1
             // 
-            button_tutorialThirdPage_ReturnToMainMenu.BackColor = Color.Transparent;
-            button_tutorialThirdPage_ReturnToMainMenu.BackgroundImage = (Image)resources.GetObject("button_tutorialThirdPage_ReturnToMainMenu.BackgroundImage");
-            button_tutorialThirdPage_ReturnToMainMenu.Location = new Point(271, 768);
-            button_tutorialThirdPage_ReturnToMainMenu.Name = "button_tutorialThirdPage_ReturnToMainMenu";
-            button_tutorialThirdPage_ReturnToMainMenu.Size = new Size(33, 43);
-            button_tutorialThirdPage_ReturnToMainMenu.TabIndex = 22;
-            button_tutorialThirdPage_ReturnToMainMenu.UseVisualStyleBackColor = false;
+            pictureBox_Tutorial1.BackColor = Color.Transparent;
+            pictureBox_Tutorial1.Location = new Point(55, 36);
+            pictureBox_Tutorial1.Name = "pictureBox_Tutorial1";
+            pictureBox_Tutorial1.Size = new Size(500, 750);
+            pictureBox_Tutorial1.TabIndex = 25;
+            pictureBox_Tutorial1.TabStop = false;
             // 
             // tutorialThirdPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            Controls.Add(button_tutorialThirdPage_ReturnToMainMenu);
-            Controls.Add(pictureBox_tutorialThirdPage_tutorialText);
+            Controls.Add(button_Tutorial1_Next);
+            Controls.Add(pictureBox_Tutorial1);
             Name = "tutorialThirdPage";
             Size = new Size(600, 900);
-            ((System.ComponentModel.ISupportInitialize)pictureBox_tutorialThirdPage_tutorialText).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_Tutorial1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox pictureBox_tutorialThirdPage_tutorialText;
-        private Button button_tutorialThirdPage_ReturnToMainMenu;
+        private Button button_Tutorial1_Next;
+        private PictureBox pictureBox_Tutorial1;
     }
 }

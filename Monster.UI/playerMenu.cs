@@ -109,9 +109,9 @@ namespace Monster.UI
                 case "girl":
                     pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.girlPlayerPic);
                     break;
-                    //default:
-                    //    pictureBox1.Image = ConvertByteArrayToImage(Properties.Resources.defaultUserImage); // Fallback image
-                    //    break;
+                    default:
+                    pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.jonnyBoyPlayerPic);
+                    break;
             }
         }
 

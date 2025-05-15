@@ -29,60 +29,48 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tutorialfirstPage));
-            pictureBox_tutorialFirstPage_tutorialText = new PictureBox();
-            button_tutorialFirstPage_ReturnToMainMenu = new Button();
-            button_tutorialFirstPage_NextToTutorialSecondPage = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_tutorialFirstPage_tutorialText).BeginInit();
+            pictureBox_Tutorial1 = new PictureBox();
+            button_Tutorial1_Next = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_Tutorial1).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox_tutorialFirstPage_tutorialText
+            // pictureBox_Tutorial1
             // 
-            pictureBox_tutorialFirstPage_tutorialText.BackColor = Color.Transparent;
-            pictureBox_tutorialFirstPage_tutorialText.Image = (Image)resources.GetObject("pictureBox_tutorialFirstPage_tutorialText.Image");
-            pictureBox_tutorialFirstPage_tutorialText.Location = new Point(52, 24);
-            pictureBox_tutorialFirstPage_tutorialText.Name = "pictureBox_tutorialFirstPage_tutorialText";
-            pictureBox_tutorialFirstPage_tutorialText.Size = new Size(500, 133);
-            pictureBox_tutorialFirstPage_tutorialText.TabIndex = 1;
-            pictureBox_tutorialFirstPage_tutorialText.TabStop = false;
+            pictureBox_Tutorial1.BackColor = Color.Transparent;
+            pictureBox_Tutorial1.Image = (Image)resources.GetObject("pictureBox_Tutorial1.Image");
+            pictureBox_Tutorial1.Location = new Point(55, 36);
+            pictureBox_Tutorial1.Name = "pictureBox_Tutorial1";
+            pictureBox_Tutorial1.Size = new Size(500, 750);
+            pictureBox_Tutorial1.TabIndex = 0;
+            pictureBox_Tutorial1.TabStop = false;
             // 
-            // button_tutorialFirstPage_ReturnToMainMenu
+            // button_Tutorial1_Next
             // 
-            button_tutorialFirstPage_ReturnToMainMenu.BackColor = Color.Transparent;
-            button_tutorialFirstPage_ReturnToMainMenu.BackgroundImage = (Image)resources.GetObject("button_tutorialFirstPage_ReturnToMainMenu.BackgroundImage");
-            button_tutorialFirstPage_ReturnToMainMenu.Location = new Point(270, 764);
-            button_tutorialFirstPage_ReturnToMainMenu.Name = "button_tutorialFirstPage_ReturnToMainMenu";
-            button_tutorialFirstPage_ReturnToMainMenu.Size = new Size(33, 43);
-            button_tutorialFirstPage_ReturnToMainMenu.TabIndex = 21;
-            button_tutorialFirstPage_ReturnToMainMenu.UseVisualStyleBackColor = false;
-            // 
-            // button_tutorialFirstPage_NextToTutorialSecondPage
-            // 
-            button_tutorialFirstPage_NextToTutorialSecondPage.BackColor = Color.Transparent;
-            button_tutorialFirstPage_NextToTutorialSecondPage.BackgroundImage = (Image)resources.GetObject("button_tutorialFirstPage_NextToTutorialSecondPage.BackgroundImage");
-            button_tutorialFirstPage_NextToTutorialSecondPage.Location = new Point(245, 673);
-            button_tutorialFirstPage_NextToTutorialSecondPage.Name = "button_tutorialFirstPage_NextToTutorialSecondPage";
-            button_tutorialFirstPage_NextToTutorialSecondPage.Size = new Size(85, 75);
-            button_tutorialFirstPage_NextToTutorialSecondPage.TabIndex = 22;
-            button_tutorialFirstPage_NextToTutorialSecondPage.UseVisualStyleBackColor = false;
+            button_Tutorial1_Next.FlatStyle = FlatStyle.Flat;
+            button_Tutorial1_Next.Image = (Image)resources.GetObject("button_Tutorial1_Next.Image");
+            button_Tutorial1_Next.Location = new Point(255, 808);
+            button_Tutorial1_Next.Name = "button_Tutorial1_Next";
+            button_Tutorial1_Next.Size = new Size(106, 40);
+            button_Tutorial1_Next.TabIndex = 24;
+            button_Tutorial1_Next.UseVisualStyleBackColor = true;
+            button_Tutorial1_Next.Click += button_Tutorial1_Next_Click;
             // 
             // tutorialfirstPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            Controls.Add(button_tutorialFirstPage_NextToTutorialSecondPage);
-            Controls.Add(button_tutorialFirstPage_ReturnToMainMenu);
-            Controls.Add(pictureBox_tutorialFirstPage_tutorialText);
+            Controls.Add(button_Tutorial1_Next);
+            Controls.Add(pictureBox_Tutorial1);
             Name = "tutorialfirstPage";
             Size = new Size(600, 900);
-            ((System.ComponentModel.ISupportInitialize)pictureBox_tutorialFirstPage_tutorialText).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_Tutorial1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox pictureBox_tutorialFirstPage_tutorialText;
-        private Button button_tutorialFirstPage_ReturnToMainMenu;
-        private Button button_tutorialFirstPage_NextToTutorialSecondPage;
+        private PictureBox pictureBox_Tutorial1;
+        private Button button_Tutorial1_Next;
     }
 }

@@ -46,8 +46,7 @@ namespace Monster.UI
             // Create and initialize each UserControl
             myMonster monsterControl = new myMonster();
             inventory inventoryControl = new inventory();
-            ticTacToeGame ticTacToeControl = new ticTacToeGame();
-            memoryGame memoryGameControl = new memoryGame();
+            ticTacToeGame ticTacToeControl = new ticTacToeGame();            
             playerMenu playerMenuControl = new playerMenu(_gameState.CurrentUser.UserType);
             newGamePlayer newUserControl = new newGamePlayer();
             newGameMonster newMonsterControl = new newGameMonster();
@@ -58,14 +57,17 @@ namespace Monster.UI
             credits credits = new credits();
             BattleMenu battleMenu = new BattleMenu();
             battleGame battleGame = new battleGame();
+            tutorialfirstPage tutorial1 = new tutorialfirstPage();
+            TutorialSecondPage tutorial2 = new TutorialSecondPage();
+            tutorialThirdPage tutorial3 = new tutorialThirdPage();
+            memoryGame memoryGame = new memoryGame();
             
 
-
             // Add controls to dictionary with unique keys
+            _userControls.Add("MemoryGame", memoryGame);
             _userControls.Add("Monster", monsterControl);
             _userControls.Add("Inventory", inventoryControl);
             _userControls.Add("TicTacToe", ticTacToeControl);
-            _userControls.Add("MemoryGame", memoryGameControl);
             _userControls.Add("Player", playerMenuControl);
             _userControls.Add("NewUser", newUserControl);
             _userControls.Add("NewMonster", newMonsterControl);
@@ -76,6 +78,10 @@ namespace Monster.UI
             _userControls.Add("Credits", credits);
             _userControls.Add("BattleMenu", battleMenu);
             _userControls.Add("BattleGame", battleGame);
+            _userControls.Add("Tutorial1", tutorial1);
+            _userControls.Add("Tutorial2", tutorial2);
+            _userControls.Add("Tutorial3", tutorial3);
+
         }
 
         public void NavigateTo(string controlKey)
@@ -193,7 +199,16 @@ namespace Monster.UI
                         newGameMonster.HookBindings();
                     }
                     break;
-                    
+
+                case "MemoryGame":
+                    var memoryGame = control as memoryGame;
+                    memoryGame.StartGame();
+                    break;
+                
+
+
+
+
             }
         }
 

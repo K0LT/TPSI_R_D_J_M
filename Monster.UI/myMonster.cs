@@ -60,13 +60,13 @@ namespace Monster.UI
             System.Diagnostics.Debug.WriteLine(@"HookBindings exiting.");
         }
 
-        
 
-       
+
+
 
         private void button_myMonster_ReturnToMainMenu_Click(object sender, EventArgs e)
         {
-            
+
             if (ParentForm != null)
             {
                 ParentForm.NavigateTo("MainMenu");
@@ -116,7 +116,7 @@ namespace Monster.UI
 
         }
 
-       
+
         private void button_myMonster_Battle_Click(object sender, EventArgs e)
         {
             ParentForm.NavigateTo("BattleMenu");
@@ -127,6 +127,72 @@ namespace Monster.UI
             ParentForm.AddExperience(50);
         }
 
-     
+        private void button_myMonster_Sleep_Click(object sender, EventArgs e)
+        {
+            if (!(_bsMonster.DataSource is MonsterClass monster))
+            {
+                MessageBox.Show("Monster data not loaded.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            Form countdownForm = new Form()
+            {
+                Width = 320,
+                Height = 140,
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                StartPosition = FormStartPosition.CenterParent,
+                Text = "Sleeping...",
+                ControlBox = false,
+                MinimizeBox = false,
+                MaximizeBox = false,
+                BackColor = System.Drawing.Color.Black 
+            };
+
+            Label labelCountdown = new Label()
+            {
+                Dock = DockStyle.Fill,
+                TextAlign = System.Drawing.ContentAlignment.MiddleCenter,
+                Font = new System.Drawing.Font("VCR OSD Mono", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point),
+                ForeColor = System.Drawing.Color.Goldenrod,
+                BackColor = System.Drawing.Color.Black,
+                Text = "15 seconds remaining..."
+            };
+
+
+            countdownForm.Controls.Add(labelCountdown);
+
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+            int countdown = 15;
+
+            timer.Interval = 1000;
+            timer.Tick += (s, args) =>
+            {
+                countdown--;
+                if (countdown > 0)
+                {
+                    labelCountdown.Text = $"{countdown} seconds remaining...";
+                }
+                else
+                {
+                    timer.Stop();
+
+
+                    if (monster.HealthPoints < 100) monster.HealthPoints = 100;
+                    if (monster.Stamina < 100) monster.Stamina = 100;
+
+
+                    _bsMonster.ResetBindings(false);
+
+                    countdownForm.Close();
+                }
+            };
+
+            timer.Start();
+            countdownForm.ShowDialog();
+        }
+
+
+
     }
 }
+

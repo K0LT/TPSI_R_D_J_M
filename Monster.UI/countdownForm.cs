@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Monster.UI
 {
-    public partial class TutorialSecondPage : UserControl
+    public partial class countdownForm : Form
     {
-        public TutorialSecondPage()
+        public countdownForm()
         {
             InitializeComponent();
-        }
-
-        private Form1 ParentForm => this.FindForm() as Form1;
-
-
-  
-
-        private void button_Tutorial2_Next_Click(object sender, EventArgs e)
-        {
-            ParentForm.NavigateTo("Tutorial3");
         }
     }
 }

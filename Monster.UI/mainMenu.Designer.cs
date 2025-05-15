@@ -62,7 +62,7 @@
             // 
             button_mainMenu_Exit.BackgroundImage = (Image)resources.GetObject("button_mainMenu_Exit.BackgroundImage");
             button_mainMenu_Exit.FlatStyle = FlatStyle.Flat;
-            button_mainMenu_Exit.Location = new Point(183, 599);
+            button_mainMenu_Exit.Location = new Point(183, 675);
             button_mainMenu_Exit.Name = "button_mainMenu_Exit";
             button_mainMenu_Exit.Size = new Size(228, 45);
             button_mainMenu_Exit.TabIndex = 3;
@@ -73,7 +73,7 @@
             // 
             button_mainMenu_Credits.BackgroundImage = (Image)resources.GetObject("button_mainMenu_Credits.BackgroundImage");
             button_mainMenu_Credits.FlatStyle = FlatStyle.Flat;
-            button_mainMenu_Credits.Location = new Point(183, 666);
+            button_mainMenu_Credits.Location = new Point(183, 606);
             button_mainMenu_Credits.Name = "button_mainMenu_Credits";
             button_mainMenu_Credits.Size = new Size(228, 45);
             button_mainMenu_Credits.TabIndex = 4;

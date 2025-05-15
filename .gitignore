@@ -58,3 +58,5 @@ Resources
 /GitIgnoreRules.md
 /.vs/Monster/v17/.suo
 /.vs/Monster/v17/DocumentLayout.json
+/.vs/VSWorkspaceState.json
+/Monster.UI/mainMenu.Designer.cs
