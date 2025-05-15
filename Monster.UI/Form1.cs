@@ -258,5 +258,10 @@ namespace Monster.UI
         {
             _gameState.ActiveMonster = _gameState.OwnedMonsters.ElementAt(index);
         }
+
+        public void AddExperience(int amount)
+        {
+            _gameState.AddExperience(amount);
+        }
     }
 }
