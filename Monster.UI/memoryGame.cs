@@ -162,6 +162,7 @@ namespace Monster.UI
             }
         }
 
+        
         private void flipBackTimer_Tick(object sender, EventArgs e)
         {
             flipBackTimer.Stop();

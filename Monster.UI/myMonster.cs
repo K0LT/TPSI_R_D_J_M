@@ -129,8 +129,70 @@ namespace Monster.UI
 
         private void button_myMonster_Sleep_Click(object sender, EventArgs e)
         {
+            if (!(_bsMonster.DataSource is MonsterClass monster))
+            {
+                MessageBox.Show("Monster data not loaded.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
+            Form countdownForm = new Form()
+            {
+                Width = 320,
+                Height = 140,
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                StartPosition = FormStartPosition.CenterParent,
+                Text = "Sleeping...",
+                ControlBox = false,
+                MinimizeBox = false,
+                MaximizeBox = false
+            };
 
+            Label labelCountdown = new Label()
+            {
+                Dock = DockStyle.Fill,
+                TextAlign = System.Drawing.ContentAlignment.MiddleCenter,
+                Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point),
+                Text = "15 seconds remaining..."
+            };
+
+            countdownForm.Controls.Add(labelCountdown);
+
+            // Use the full namespace to avoid ambiguity
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+            int countdown = 15;
+
+            timer.Interval = 1000; // 1 second intervals
+            timer.Tick += (s, args) =>
+            {
+                countdown--;
+                if (countdown > 0)
+                {
+                    labelCountdown.Text = $"{countdown} seconds remaining...";
+                }
+                else
+                {
+                    timer.Stop();
+
+                    // Increase HP and Stamina by an example amount (adjust as needed)
+                    monster.HealthPoints += 20;
+                    monster.Stamina += 20;
+
+                    // Optionally clamp values to max HP and max Stamina if your MonsterClass supports those properties
+                    // e.g., monster.HealthPoints = Math.Min(monster.HealthPoints, monster.MaxHealthPoints);
+
+                    // Refresh the bindings to update UI progress bars
+                    _bsMonster.ResetBindings(false);
+
+                    countdownForm.Close();
+                }
+            };
+
+            timer.Start();
+            countdownForm.ShowDialog();
         }
+
+
+
     }
 }
+
