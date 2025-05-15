@@ -46,8 +46,7 @@ namespace Monster.UI
             // Create and initialize each UserControl
             myMonster monsterControl = new myMonster();
             inventory inventoryControl = new inventory();
-            ticTacToeGame ticTacToeControl = new ticTacToeGame();
-            memoryGame memoryGameControl = new memoryGame();
+            ticTacToeGame ticTacToeControl = new ticTacToeGame();            
             playerMenu playerMenuControl = new playerMenu(_gameState.CurrentUser.UserType);
             newGamePlayer newUserControl = new newGamePlayer();
             newGameMonster newMonsterControl = new newGameMonster();
@@ -58,14 +57,17 @@ namespace Monster.UI
             credits credits = new credits();
             BattleMenu battleMenu = new BattleMenu();
             battleGame battleGame = new battleGame();
+            tutorialfirstPage tutorial1 = new tutorialfirstPage();
+            TutorialSecondPage tutorial2 = new TutorialSecondPage();
+            tutorialThirdPage tutorial3 = new tutorialThirdPage();
+            memoryGame memoryGame = new memoryGame();
             
 
-
             // Add controls to dictionary with unique keys
+            _userControls.Add("MemoryGame", memoryGame);
             _userControls.Add("Monster", monsterControl);
             _userControls.Add("Inventory", inventoryControl);
             _userControls.Add("TicTacToe", ticTacToeControl);
-            _userControls.Add("MemoryGame", memoryGameControl);
             _userControls.Add("Player", playerMenuControl);
             _userControls.Add("NewUser", newUserControl);
             _userControls.Add("NewMonster", newMonsterControl);
@@ -76,6 +78,10 @@ namespace Monster.UI
             _userControls.Add("Credits", credits);
             _userControls.Add("BattleMenu", battleMenu);
             _userControls.Add("BattleGame", battleGame);
+            _userControls.Add("Tutorial1", tutorial1);
+            _userControls.Add("Tutorial2", tutorial2);
+            _userControls.Add("Tutorial3", tutorial3);
+
         }
 
         public void NavigateTo(string controlKey)
@@ -193,7 +199,16 @@ namespace Monster.UI
                         newGameMonster.HookBindings();
                     }
                     break;
-                    
+
+                case "MemoryGame":
+                    var memoryGame = control as memoryGame;
+                    memoryGame.StartGame();
+                    break;
+                
+
+
+
+
             }
         }
 
@@ -222,27 +237,8 @@ namespace Monster.UI
         }
 
         // Event handler for Save button
-        public bool SaveGame(bool silentSave = false)
+        public void SaveGame(bool silentSave = false)
         {
-            //if gamestate is null return false and to the main menu
-            if (_gameState == null)
-            {
-                System.Diagnostics.Debug.WriteLine("[DEBUG-Form1]::SaveGame(): Game state was null");
-                return false;
-            }
-
-            // existingUsernames var, gets all the usernames for the save files, and currentUsername, is the current username.
-            var existingUsernames = _gameDataService.GetSavedGames();
-            string currentUsername = _gameState.CurrentUser?.Username;
-
-            //TODO: This will return to the main menu, we need to create a popup window asking if the user wants to override the save.
-            //existingUseranmes, verifies if there is a current username in the list of existing usernames, the stringComparer ignores case sensitivity stuff.
-            if (existingUsernames.Contains(currentUsername, StringComparer.OrdinalIgnoreCase))
-            {
-                MessageBox.Show("A save with this username already exists. Please choose another username.", "Save Game", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-
             try
             {
                 _gameDataService.SaveGame(_gameState);
@@ -259,7 +255,6 @@ namespace Monster.UI
             {
                 MessageBox.Show($"Error saving game: {ex.Message}", "Save Game", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            return true;
         }
 
 
