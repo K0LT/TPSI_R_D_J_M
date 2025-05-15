@@ -15,24 +15,9 @@ namespace Monster.UI
         public memoryGame()
         {
             InitializeComponent();
-
-
             LoadCardImages();
-            //var playerRes = new ComponentResourceManager(typeof(playerMenu));
-            //this.BackgroundImage =
-            //   (Image)playerRes.GetObject("$this.BackgroundImage");
-            //var mainres = new componentresourcemanager(typeof(mainmenu));
-            //backimage =
-            //   (image)mainres.getobject("$this.backgroundimage");
 
-            timeLeft = 60;
-            lblGameTimer.Text = TimeSpan.FromSeconds(timeLeft)
-                                         .ToString(@"mm\:ss");
-        
-
-
-            InitializeCards();
-
+            this.Load += (s, e) => ResetGame();   // só depois de ter tamanho
 
             panelGrid.Resize += (s, e) => PositionCards();
         }
@@ -89,6 +74,7 @@ namespace Monster.UI
 
             PositionCards();
         }
+
 
         private void PositionCards()
         {
@@ -189,6 +175,25 @@ namespace Monster.UI
                 ParentForm.NavigateTo("Monster");
             }
         }
+
+        public void ResetGame()
+        {
+            flipBackTimer.Stop();
+            gameTimer.Stop();
+
+            firstClicked = null;
+            secondClicked = null;
+            matched = 0;
+
+            timeLeft = 60;
+            lblGameTimer.Text = TimeSpan
+                    .FromSeconds(timeLeft)
+                    .ToString(@"mm\:ss");
+
+            InitializeCards();
+            gameTimer.Start();
+        }
+
         public void StartGame()
         {
             gameTimer.Start();
@@ -199,6 +204,14 @@ namespace Monster.UI
         private PictureBox firstClicked, secondClicked;
         private int matched = 0;
         private int timeLeft; //seconds
-        
+        private readonly Random rnd = new();
+
+        protected override void OnVisibleChanged(EventArgs e)
+        {
+            base.OnVisibleChanged(e);
+
+            if (this.Visible && this.IsHandleCreated)   // acabou de ficar visível
+                ResetGame();
+        }
     }
 }
