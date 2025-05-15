@@ -23,7 +23,7 @@ namespace Monster.UI
             set
             {
                 _userType = value;
-               // ApplyUserTypeImage();
+                ApplyUserTypeImage();
             }
         }
         private Form1 ParentForm => this.FindForm() as Form1;
@@ -93,24 +93,27 @@ namespace Monster.UI
                 pictureBox_playerMenu_Slot4.DataBindings.Add(nameof(PictureBox.Image), bsFourthMonster, nameof(MonsterClass.MonsterIcon));
 
             }
+
+
+
         }
 
 
-        //private void ApplyUserTypeImage()
-        //{
-        //    switch (_userType?.ToLower())
-        //    {
-        //        case "boy":
-        //            pictureBox1.Image = ConvertByteArrayToImage(Properties.Resources.playergrandesemback); // Replace with your actual resource
-        //            break;
-        //        case "girl":
-        //            pictureBox1.Image = ConvertByteArrayToImage(Properties.Resources.playergirlgrandesemback); // Replace with your actual resource
-        //            break;
-        //        default:
-        //            pictureBox1.Image = ConvertByteArrayToImage(Properties.Resources.defaultUserImage); // Fallback image
-        //            break;
-        //    }
-        //}
+        private void ApplyUserTypeImage()
+        {
+            switch (_userType?.ToLower())
+            {
+                case "boy":
+                    pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.boyPlayerPic); 
+                    break;
+                case "girl":
+                    pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.girlPlayerPic);
+                    break;
+                    //default:
+                    //    pictureBox1.Image = ConvertByteArrayToImage(Properties.Resources.defaultUserImage); // Fallback image
+                    //    break;
+            }
+        }
 
         private Image ConvertByteArrayToImage(byte[] byteArray)
         {
@@ -142,5 +145,7 @@ namespace Monster.UI
         {
             ParentForm.NavigateTo("Monster");
         }
+
+        
     }
 }

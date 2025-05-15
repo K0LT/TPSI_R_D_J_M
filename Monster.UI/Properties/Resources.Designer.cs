@@ -63,9 +63,13 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+<<<<<<< HEAD
         public static byte[] defaultUserImage {
+=======
+        internal static byte[] boyPlayerPic {
+>>>>>>> 1b2030759533bc70b8258507023197036bd5b341
             get {
-                object obj = ResourceManager.GetObject("defaultUserImage", resourceCulture);
+                object obj = ResourceManager.GetObject("boyPlayerPic", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -73,6 +77,7 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+<<<<<<< HEAD
         public static byte[] playergirlgrandesemback {
             get {
                 object obj = ResourceManager.GetObject("playergirlgrandesemback", resourceCulture);
@@ -86,6 +91,11 @@ namespace Monster.UI.Properties {
         public static byte[] playergrandesemback {
             get {
                 object obj = ResourceManager.GetObject("playergrandesemback", resourceCulture);
+=======
+        internal static byte[] girlPlayerPic {
+            get {
+                object obj = ResourceManager.GetObject("girlPlayerPic", resourceCulture);
+>>>>>>> 1b2030759533bc70b8258507023197036bd5b341
                 return ((byte[])(obj));
             }
         }

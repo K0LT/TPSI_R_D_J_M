@@ -17,9 +17,10 @@ namespace Monster.Core.Models
         private int _energy = 100;
         private Image _monsterImage;
         private Image _monsterIcon;
-        
+
         public MonsterClass()
         {
+            System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass constructor call.");
             UpdateMonsterImage();
         }
 
@@ -32,6 +33,7 @@ namespace Monster.Core.Models
                 {
                     _name = value;
                     OnPropertyChanged();
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass Name Setter Call.");
                 }
             }
         }
@@ -46,10 +48,11 @@ namespace Monster.Core.Models
                     _type = value;
                     OnPropertyChanged();
                     UpdateMonsterImage();
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass Type Setter Call.");
                 }
             }
         }
-        
+
         public int HealthPoints
         {
             get => _healthPoints;
@@ -58,6 +61,7 @@ namespace Monster.Core.Models
                 if (_healthPoints != value)
                 {
                     _healthPoints = value;
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass HealthPoints Setter Call.");
                     OnPropertyChanged();
                 }
             }
@@ -73,20 +77,26 @@ namespace Monster.Core.Models
                     _experiencePoints = 0;
                     _level += 1;
                     OnPropertyChanged();
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass ExperiencePoints Setter Call. Level incremented by 1 to : " + Level);
+                    return;
                 }
+                _experiencePoints += value;
+                OnPropertyChanged();
+                System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass ExperiencePoints Setter Call.");
             }
         }
-        
+
         public int Level
         {
             get => _level;
             set
             {
-                if (_level != value)
+                if (value != null)
                 {
-                    _level = value;
+                    _level += value;
                     UpdateMonsterImage();
                     OnPropertyChanged();
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass Level Setter Call.");
                 }
             }
         }
@@ -105,9 +115,9 @@ namespace Monster.Core.Models
             //Default
             MonsterImage = ConvertByteArrayToImage(imageObj as byte[]);
             MonsterIcon = ConvertByteArrayToImage(iconObj as byte[]);
-            
+
         }
-        
+
         public int Energy
         {
             get => _energy;
@@ -117,6 +127,7 @@ namespace Monster.Core.Models
                 {
                     _energy = value;
                     OnPropertyChanged();
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass Energy Setter Call.");
                 }
             }
         }
@@ -129,6 +140,7 @@ namespace Monster.Core.Models
                 {
                     _monsterImage = value;
                     OnPropertyChanged();
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass MonsterImage Setter Call.");
                 }
             }
         }
@@ -138,10 +150,11 @@ namespace Monster.Core.Models
             get => _monsterIcon;
             private set
             {
-                if(_monsterIcon != value)
+                if (_monsterIcon != value)
                 {
                     _monsterIcon = value;
                     OnPropertyChanged();
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass Image Setter Call.");
                 }
             }
         }
@@ -161,5 +174,18 @@ namespace Monster.Core.Models
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+        public void AddExperience(int amount)
+        {
+            System.Diagnostics.Debug.WriteLine(@"[DEBUG] AddExperience call, current experience: " + ExperiencePoints);
+            if (amount <= 0)
+            {
+                System.Diagnostics.Debug.WriteLine(@"[DEBUG] AddExperience call, value: " + amount);
+                return;
+            }
+            ExperiencePoints += amount;
+            System.Diagnostics.Debug.WriteLine(@"[DEBUG] AddExperience call, value: " + amount + " | current experience: " + ExperiencePoints);
+        }
+
+
     }
 }

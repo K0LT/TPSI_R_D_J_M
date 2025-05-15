@@ -17,10 +17,11 @@ namespace Monster.UI
         {
             InitializeComponent();
         }
-        private Form1 ParentForm => this.FindForm() as Form1;
         
         private void button1_Click(object sender, EventArgs e)
         {
+            Form1 ParentForm = this.FindForm() as Form1;
+
             string temp = textBox_LoadGame_InputForUsername.Text;
            
 
@@ -30,6 +31,8 @@ namespace Monster.UI
         
         private void button_LoadGame_Exit_Click(object sender, EventArgs e)
         {
+            Form1 ParentForm = this.FindForm() as Form1;
+
             ParentForm.NavigateTo("MainMenu");
         }
     }

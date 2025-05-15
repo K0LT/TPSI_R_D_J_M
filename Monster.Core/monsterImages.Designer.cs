@@ -63,6 +63,16 @@ namespace Monster.Core {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        internal static byte[] defaultXsmallMonster {
+            get {
+                object obj = ResourceManager.GetObject("defaultXsmallMonster", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         internal static byte[] draco_icon {
             get {
                 object obj = ResourceManager.GetObject("draco_icon", resourceCulture);

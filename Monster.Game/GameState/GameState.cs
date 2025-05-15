@@ -18,13 +18,12 @@ namespace Monster.Game.GameState
             {
                 if (value != null)
                 {
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] GameState::CurrentUser setter call.");
                     _currentUser = value;
                 }
                 
             }
         }
-
-
 
         private MonsterClass _activeMonster = new MonsterClass();
 
@@ -35,6 +34,7 @@ namespace Monster.Game.GameState
             {
                 if (value != null)
                 {
+                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] GameState::ActiveMonster setter call.");
                     _activeMonster = value;
                 }
             }
@@ -47,5 +47,10 @@ namespace Monster.Game.GameState
         // Game progress, achievements, etc.
 
         public static GameState Current { get; private set; } = new GameState();
+
+        public void AddExperience(int amount)
+        {
+            _activeMonster.AddExperience(amount);
+        }
     }
 }

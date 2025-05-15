@@ -34,6 +34,7 @@
             pictureBox1 = new PictureBox();
             nameMyMonsterLabel = new Label();
             label1 = new Label();
+            button_Battle_Exit = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox_miniGames_Memory).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -52,21 +53,25 @@
             // 
             // pictureBox_miniGames_Memory
             // 
+            pictureBox_miniGames_Memory.BackColor = Color.Transparent;
             pictureBox_miniGames_Memory.Image = (Image)resources.GetObject("pictureBox_miniGames_Memory.Image");
-            pictureBox_miniGames_Memory.Location = new Point(36, 172);
+            pictureBox_miniGames_Memory.Location = new Point(36, 230);
             pictureBox_miniGames_Memory.Name = "pictureBox_miniGames_Memory";
-            pictureBox_miniGames_Memory.Size = new Size(250, 587);
+            pictureBox_miniGames_Memory.Size = new Size(250, 375);
             pictureBox_miniGames_Memory.TabIndex = 25;
             pictureBox_miniGames_Memory.TabStop = false;
+            pictureBox_miniGames_Memory.Click += pictureBox_miniGames_Memory_Click;
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(308, 172);
+            pictureBox1.Location = new Point(308, 230);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(250, 587);
+            pictureBox1.Size = new Size(250, 375);
             pictureBox1.TabIndex = 26;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // nameMyMonsterLabel
             // 
@@ -74,7 +79,7 @@
             nameMyMonsterLabel.BackColor = Color.Transparent;
             nameMyMonsterLabel.Font = new Font("VCR OSD Mono", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             nameMyMonsterLabel.ForeColor = Color.DarkGoldenrod;
-            nameMyMonsterLabel.Location = new Point(60, 788);
+            nameMyMonsterLabel.Location = new Point(57, 663);
             nameMyMonsterLabel.Name = "nameMyMonsterLabel";
             nameMyMonsterLabel.Size = new Size(213, 29);
             nameMyMonsterLabel.TabIndex = 27;
@@ -86,11 +91,24 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("VCR OSD Mono", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.DarkGoldenrod;
-            label1.Location = new Point(322, 788);
+            label1.Location = new Point(323, 663);
             label1.Name = "label1";
             label1.Size = new Size(216, 29);
             label1.TabIndex = 28;
             label1.Text = "Skull Lvl. 7";
+            // 
+            // button_Battle_Exit
+            // 
+            button_Battle_Exit.BackColor = Color.Transparent;
+            button_Battle_Exit.BackgroundImage = (Image)resources.GetObject("button_Battle_Exit.BackgroundImage");
+            button_Battle_Exit.FlatAppearance.BorderSize = 0;
+            button_Battle_Exit.FlatStyle = FlatStyle.Flat;
+            button_Battle_Exit.Location = new Point(555, 0);
+            button_Battle_Exit.Name = "button_Battle_Exit";
+            button_Battle_Exit.Size = new Size(45, 45);
+            button_Battle_Exit.TabIndex = 29;
+            button_Battle_Exit.UseVisualStyleBackColor = false;
+            button_Battle_Exit.Click += button_Battle_Exit_Click;
             // 
             // BattleMenu
             // 
@@ -98,6 +116,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Center;
+            Controls.Add(button_Battle_Exit);
             Controls.Add(label1);
             Controls.Add(nameMyMonsterLabel);
             Controls.Add(pictureBox1);
@@ -119,5 +138,6 @@
         private PictureBox pictureBox1;
         private Label nameMyMonsterLabel;
         private Label label1;
+        private Button button_Battle_Exit;
     }
 }

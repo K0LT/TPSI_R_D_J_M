@@ -37,8 +37,11 @@ namespace Monster.UI
             progressBar_myMonster_EXP.DataBindings.Clear();
             progressBar_myMonster_HP.DataBindings.Clear();
             progressBar_myMonster_ST.DataBindings.Clear();
-            pictureBox_myMonster_Draco.DataBindings.Clear();
 
+            pictureBox_myMonster.DataBindings.Clear();
+
+            levelMyMonster.DataBindings.Clear();
+            nameMyMonsterLabel.DataBindings.Clear();
 
             progressBar_myMonster_EXP.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
                 nameof(MonsterClass.ExperiencePoints));
@@ -47,30 +50,25 @@ namespace Monster.UI
             progressBar_myMonster_ST.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
                 nameof(MonsterClass.HealthPoints));
 
-            pictureBox_myMonster_Draco.DataBindings.Add(nameof(PictureBox.Image), bsDataSource, nameof(MonsterClass.MonsterImage));
+            pictureBox_myMonster.DataBindings.Add(nameof(PictureBox.Image), bsDataSource, nameof(MonsterClass.MonsterImage), true, DataSourceUpdateMode.OnPropertyChanged);
+
+            levelMyMonster.DataBindings.Add(nameof(Label.Text), bsDataSource, nameof(MonsterClass.Level));
+            nameMyMonsterLabel.DataBindings.Add(nameof(Label.Text), bsDataSource, nameof(MonsterClass.Name));
             //Eliminei o label a dizer CurrentMonster mas deverei voltar a adicionar
             //label_myMonster_CurrentMonsterName.DataBindings.Add(nameof(Label.Text), bsDataSource,
             //nameof(MonsterClass.Name));
             System.Diagnostics.Debug.WriteLine(@"HookBindings exiting.");
         }
 
-        private void progressBar_myMonster_EXP_Click(object sender, EventArgs e)
-        {
+        
 
-        }
-
-        private void pictureBox_myMonster_CurrentMonster_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button_myMonster_ReturnToMainMenu_Click(object sender, EventArgs e)
         {
-            // Get the parent form
-
+            
             if (ParentForm != null)
             {
-                // Call NavigateTo to switch to the Inventory control
                 ParentForm.NavigateTo("MainMenu");
             }
             else
@@ -81,11 +79,9 @@ namespace Monster.UI
 
         private void button_myMonster_Player_Click(object sender, EventArgs e)
         {
-            // Get the parent form
 
             if (ParentForm != null)
             {
-                // Call NavigateTo to switch to the Inventory control
                 ParentForm.NavigateTo("Player");
             }
             else
@@ -99,7 +95,6 @@ namespace Monster.UI
 
             if (ParentForm != null)
             {
-                // Call NavigateTo to switch to the Inventory control
                 ParentForm.NavigateTo("Inventory");
             }
             else
@@ -121,14 +116,17 @@ namespace Monster.UI
 
         }
 
-        private void pictureBox_myMonster_Draco_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void button_myMonster_Battle_Click(object sender, EventArgs e)
         {
             ParentForm.NavigateTo("BattleMenu");
         }
+
+        private void button_myMonster_Food_Click(object sender, EventArgs e)
+        {
+            ParentForm.AddExperience(50);
+        }
+
+     
     }
 }

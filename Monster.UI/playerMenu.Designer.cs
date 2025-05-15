@@ -41,7 +41,7 @@
             pictureBox_playerMenu_Slot3 = new PictureBox();
             pictureBox_playerMenu_Slot2 = new PictureBox();
             pictureBox_playerMenu_Slot1 = new PictureBox();
-            pictureBox1 = new PictureBox();
+            pictureBox_playerMenu = new PictureBox();
             button_playerMenu_ChangeMonsterSlot1 = new Button();
             button_playerMenu_ChangeSlot2 = new Button();
             button_playerMenu_ChangeSlot3 = new Button();
@@ -53,7 +53,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu).BeginInit();
             SuspendLayout();
             // 
             // label_playerMenu_Slot4
@@ -168,52 +168,64 @@
             pictureBox_playerMenu_Slot1.TabIndex = 0;
             pictureBox_playerMenu_Slot1.TabStop = false;
             // 
-            // pictureBox1
+            // pictureBox_playerMenu
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(165, 137);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(300, 300);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            pictureBox_playerMenu.BackColor = Color.Transparent;
+            pictureBox_playerMenu.Image = (Image)resources.GetObject("pictureBox_playerMenu.Image");
+            pictureBox_playerMenu.Location = new Point(165, 137);
+            pictureBox_playerMenu.Name = "pictureBox_playerMenu";
+            pictureBox_playerMenu.Size = new Size(300, 300);
+            pictureBox_playerMenu.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox_playerMenu.TabIndex = 1;
+            pictureBox_playerMenu.TabStop = false;
             // 
             // button_playerMenu_ChangeMonsterSlot1
             // 
+            button_playerMenu_ChangeMonsterSlot1.FlatStyle = FlatStyle.Flat;
+            button_playerMenu_ChangeMonsterSlot1.Font = new Font("VCR OSD Mono", 12F);
+            button_playerMenu_ChangeMonsterSlot1.Image = (Image)resources.GetObject("button_playerMenu_ChangeMonsterSlot1.Image");
             button_playerMenu_ChangeMonsterSlot1.Location = new Point(76, 553);
             button_playerMenu_ChangeMonsterSlot1.Name = "button_playerMenu_ChangeMonsterSlot1";
-            button_playerMenu_ChangeMonsterSlot1.Size = new Size(75, 23);
+            button_playerMenu_ChangeMonsterSlot1.Size = new Size(80, 29);
             button_playerMenu_ChangeMonsterSlot1.TabIndex = 14;
-            button_playerMenu_ChangeMonsterSlot1.Text = "Change";
+            button_playerMenu_ChangeMonsterSlot1.Text = "Select";
             button_playerMenu_ChangeMonsterSlot1.UseVisualStyleBackColor = true;
             button_playerMenu_ChangeMonsterSlot1.Click += button_playerMenu_ChangeMonsterSlot1_Click;
             // 
             // button_playerMenu_ChangeSlot2
             // 
+            button_playerMenu_ChangeSlot2.FlatStyle = FlatStyle.Flat;
+            button_playerMenu_ChangeSlot2.Font = new Font("VCR OSD Mono", 12F);
+            button_playerMenu_ChangeSlot2.Image = (Image)resources.GetObject("button_playerMenu_ChangeSlot2.Image");
             button_playerMenu_ChangeSlot2.Location = new Point(375, 553);
             button_playerMenu_ChangeSlot2.Name = "button_playerMenu_ChangeSlot2";
-            button_playerMenu_ChangeSlot2.Size = new Size(75, 23);
+            button_playerMenu_ChangeSlot2.Size = new Size(80, 29);
             button_playerMenu_ChangeSlot2.TabIndex = 15;
-            button_playerMenu_ChangeSlot2.Text = "Change";
+            button_playerMenu_ChangeSlot2.Text = "Select";
             button_playerMenu_ChangeSlot2.UseVisualStyleBackColor = true;
             // 
             // button_playerMenu_ChangeSlot3
             // 
+            button_playerMenu_ChangeSlot3.FlatStyle = FlatStyle.Flat;
+            button_playerMenu_ChangeSlot3.Font = new Font("VCR OSD Mono", 12F);
+            button_playerMenu_ChangeSlot3.Image = (Image)resources.GetObject("button_playerMenu_ChangeSlot3.Image");
             button_playerMenu_ChangeSlot3.Location = new Point(76, 712);
             button_playerMenu_ChangeSlot3.Name = "button_playerMenu_ChangeSlot3";
-            button_playerMenu_ChangeSlot3.Size = new Size(75, 23);
+            button_playerMenu_ChangeSlot3.Size = new Size(80, 29);
             button_playerMenu_ChangeSlot3.TabIndex = 18;
-            button_playerMenu_ChangeSlot3.Text = "Change";
+            button_playerMenu_ChangeSlot3.Text = "Select";
             button_playerMenu_ChangeSlot3.UseVisualStyleBackColor = true;
             // 
             // button_playerMenu_ChangeSlot4
             // 
+            button_playerMenu_ChangeSlot4.FlatStyle = FlatStyle.Flat;
+            button_playerMenu_ChangeSlot4.Font = new Font("VCR OSD Mono", 12F);
+            button_playerMenu_ChangeSlot4.Image = (Image)resources.GetObject("button_playerMenu_ChangeSlot4.Image");
             button_playerMenu_ChangeSlot4.Location = new Point(375, 712);
             button_playerMenu_ChangeSlot4.Name = "button_playerMenu_ChangeSlot4";
-            button_playerMenu_ChangeSlot4.Size = new Size(75, 23);
+            button_playerMenu_ChangeSlot4.Size = new Size(80, 29);
             button_playerMenu_ChangeSlot4.TabIndex = 19;
-            button_playerMenu_ChangeSlot4.Text = "Change";
+            button_playerMenu_ChangeSlot4.Text = "Select";
             button_playerMenu_ChangeSlot4.UseVisualStyleBackColor = true;
             button_playerMenu_ChangeSlot4.Click += button_playerMenu_ChangeSlot4_Click;
             // 
@@ -266,7 +278,7 @@
             Controls.Add(button_playerMenu_ChangeSlot3);
             Controls.Add(button_playerMenu_ChangeSlot2);
             Controls.Add(button_playerMenu_ChangeMonsterSlot1);
-            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox_playerMenu);
             Controls.Add(pictureBox_playerMenu_Slot1);
             Controls.Add(progressBar_playerMenu_Slot1);
             Controls.Add(label_playerMenu_Slot4);
@@ -285,7 +297,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -303,7 +315,7 @@
         private PictureBox pictureBox_playerMenu_Slot3;
         private PictureBox pictureBox_playerMenu_Slot2;
         private PictureBox pictureBox_playerMenu_Slot1;
-        private PictureBox pictureBox1;
+        private PictureBox pictureBox_playerMenu;
         private Button button_playerMenu_ChangeMonsterSlot1;
         private Button button_playerMenu_ChangeSlot2;
         private Button button_playerMenu_ChangeSlot3;
