@@ -16,6 +16,7 @@ namespace Monster.UI
 
         // Dictionary to track all our UserControls
         private Dictionary<string, UserControl> _userControls = new Dictionary<string, UserControl>();
+        private bool _isNewUser = true;
 
         public Form1()
         {
@@ -127,6 +128,12 @@ namespace Monster.UI
                     if (monsterControl != null)
                     {
                         this.SaveGame(true);
+                        if (_gameState == null)
+                        {
+                            MessageBox.Show("User not found","Load Game", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            NavigateTo("LoadGame");
+                            return;
+                        }
                         // Update with latest monster data
                         monsterControl.bsDataSource = _gameState.ActiveMonster;
                         monsterControl.HookBindings();
@@ -215,36 +222,76 @@ namespace Monster.UI
         }
 
         // Event handler for Save button
-        public void SaveGame(bool silentSave = false)
+        public bool SaveGame(bool silentSave = false)
         {
+            //if gamestate is null return false and to the main menu
+            if (_gameState == null)
+            {
+                System.Diagnostics.Debug.WriteLine("[DEBUG-Form1]::SaveGame(): Game state was null");
+                return false;
+            }
+
+            // existingUsernames var, gets all the usernames for the save files, and currentUsername, is the current username.
+            var existingUsernames = _gameDataService.GetSavedGames();
+            string currentUsername = _gameState.CurrentUser?.Username;
+
+            //TODO: This will return to the main menu, we need to create a popup window asking if the user wants to override the save.
+            //existingUseranmes, verifies if there is a current username in the list of existing usernames, the stringComparer ignores case sensitivity stuff.
+            if (existingUsernames.Contains(currentUsername, StringComparer.OrdinalIgnoreCase))
+            {
+                MessageBox.Show("A save with this username already exists. Please choose another username.", "Save Game", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
             try
             {
                 _gameDataService.SaveGame(_gameState);
-                if (!silentSave) { MessageBox.Show("Game saved successfully!", "Save Game", MessageBoxButtons.OK, MessageBoxIcon.Information); }
-                else { System.Diagnostics.Debug.WriteLine("[DEBUG-Form1]::SaveGame(): Game saved successfully!"); }
-
+                if (!silentSave)
+                {
+                    MessageBox.Show("Game saved successfully!", "Save Game", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    System.Diagnostics.Debug.WriteLine("[DEBUG-Form1]::SaveGame(): Game saved successfully!");
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error saving game: {ex.Message}", "Save Game", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            return true;
         }
 
-        // Event handler for Load button
-        public void LoadGame(string username)
+
+        public bool LoadGame(string username)
         {
-            try
+            //Get the username
+            var loadedState = _gameDataService.LoadGame(username);
+
+            //Check if the loadedStats are null, if they are I return false to go to the main menu.
+            if (loadedState == null || loadedState.CurrentUser == null || loadedState.ActiveMonster == null)
             {
-                _gameState = _gameDataService.LoadGame(username);
-                SetupBindings(_gameState, _bsMonster, _bsUser);
-                NavigateTo("Monster");
-                MessageBox.Show("Game loaded successfully!", "Load Game", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("No save was found.", "Load Game", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
             }
-            catch (Exception ex)
+
+            else
             {
-                MessageBox.Show($"Error loading game: {ex.Message}", "Load Game", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                try
+                {
+                    _gameState = _gameDataService.LoadGame(username);
+                    SetupBindings(_gameState, _bsMonster, _bsUser);
+                    NavigateTo("Monster");
+                    MessageBox.Show("Game loaded successfully!", "Load Game", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error loading game: {ex.Message}", "Load Game", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-        }
+            return true;
+          }
+        
 
         protected override CreateParams CreateParams
         {

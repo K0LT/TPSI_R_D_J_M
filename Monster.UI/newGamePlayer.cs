@@ -41,13 +41,21 @@ namespace Monster.UI
 
         private void button_newGamePlayer_RegisterText_Click(object sender, EventArgs e)
         {
+            bool flag;
             Form1 parentForm = this.FindForm() as Form1;
 
             if (parentForm != null)
             {
                 parentForm.SetupUser(textBox_newGamePlayer_InputForUsername.Text, _tempUser.UserType);
-                parentForm.SaveGame();
-                parentForm.NavigateTo("NewMonster");
+                flag = parentForm.SaveGame();
+                if (!flag)
+                {
+                    parentForm.NavigateTo("MainMenu");
+                }
+                else
+                {
+                    parentForm.NavigateTo("NewMonster");
+                }
             }
             else
             {

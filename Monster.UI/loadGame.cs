@@ -8,7 +8,7 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Monster.Game.GameState;
 namespace Monster.UI
 {
     public partial class loadGame : UserControl
@@ -20,13 +20,21 @@ namespace Monster.UI
         
         private void button1_Click(object sender, EventArgs e)
         {
+            bool flag;
             Form1 ParentForm = this.FindForm() as Form1;
 
             string temp = textBox_LoadGame_InputForUsername.Text;
-           
 
-            ParentForm.LoadGame(temp);
-            ParentForm.NavigateTo("Monster");
+            
+            flag = ParentForm.LoadGame(temp);
+            if (flag)
+            {
+                ParentForm.NavigateTo("Monster");
+            }
+            else
+            {
+                ParentForm.NavigateTo("MainMenu");
+            }
         }
         
         private void button_LoadGame_Exit_Click(object sender, EventArgs e)
