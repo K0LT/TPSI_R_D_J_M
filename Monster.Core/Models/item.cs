@@ -18,8 +18,8 @@ namespace Monster.Core.Models
     {
         public int hpPoints { get; set; } = 15;
     }
-    public class EnergyItem : Item
+    public class StaminaItem : Item
     {
-        public int energyResto { get; set; } = 15;
+        public int staminaPoints { get; set; } = 15;
     }
 }
