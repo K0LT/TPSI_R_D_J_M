@@ -123,6 +123,7 @@
             button_myMonster_Food.Size = new Size(50, 50);
             button_myMonster_Food.TabIndex = 7;
             button_myMonster_Food.UseVisualStyleBackColor = true;
+            button_myMonster_Food.Click += button_myMonster_Food_Click;
             // 
             // button_myMonster_Sleep
             // 
@@ -211,11 +212,11 @@
             // 
             nameMyMonsterLabel.AutoSize = true;
             nameMyMonsterLabel.BackColor = Color.Transparent;
-            nameMyMonsterLabel.Font = new Font("VCR OSD Mono", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            nameMyMonsterLabel.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             nameMyMonsterLabel.ForeColor = Color.DarkGoldenrod;
             nameMyMonsterLabel.Location = new Point(174, 411);
             nameMyMonsterLabel.Name = "nameMyMonsterLabel";
-            nameMyMonsterLabel.Size = new Size(80, 29);
+            nameMyMonsterLabel.Size = new Size(93, 33);
             nameMyMonsterLabel.TabIndex = 22;
             nameMyMonsterLabel.Text = "Name";
             // 
@@ -223,11 +224,11 @@
             // 
             levelMyMonster.AutoSize = true;
             levelMyMonster.BackColor = Color.Transparent;
-            levelMyMonster.Font = new Font("VCR OSD Mono", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            levelMyMonster.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             levelMyMonster.ForeColor = Color.DarkGoldenrod;
             levelMyMonster.Location = new Point(331, 411);
             levelMyMonster.Name = "levelMyMonster";
-            levelMyMonster.Size = new Size(115, 29);
+            levelMyMonster.Size = new Size(98, 33);
             levelMyMonster.TabIndex = 23;
             levelMyMonster.Text = "LVL. #";
             // 

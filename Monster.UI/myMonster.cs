@@ -50,7 +50,8 @@ namespace Monster.UI
             progressBar_myMonster_ST.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource,
                 nameof(MonsterClass.HealthPoints));
 
-            pictureBox_myMonster_Draco.DataBindings.Add(nameof(PictureBox.Image), bsDataSource, nameof(MonsterClass.MonsterImage));
+            pictureBox_myMonster_Draco.DataBindings.Add(nameof(PictureBox.Image), bsDataSource, nameof(MonsterClass.MonsterImage), true, DataSourceUpdateMode.OnPropertyChanged);
+
             levelMyMonster.DataBindings.Add(nameof(Label.Text), bsDataSource, nameof(MonsterClass.Level));
             nameMyMonsterLabel.DataBindings.Add(nameof(Label.Text), bsDataSource, nameof(MonsterClass.Name));
             //Eliminei o label a dizer CurrentMonster mas deverei voltar a adicionar
@@ -134,6 +135,11 @@ namespace Monster.UI
         private void button_myMonster_Battle_Click(object sender, EventArgs e)
         {
             ParentForm.NavigateTo("BattleMenu");
+        }
+
+        private void button_myMonster_Food_Click(object sender, EventArgs e)
+        {
+            ParentForm.AddExperience(50);
         }
     }
 }

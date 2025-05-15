@@ -47,5 +47,10 @@ namespace Monster.Game.GameState
         // Game progress, achievements, etc.
 
         public static GameState Current { get; private set; } = new GameState();
+
+        public void AddExperience(int amount)
+        {
+            _activeMonster.AddExperience(amount);
+        }
     }
 }
