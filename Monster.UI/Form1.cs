@@ -61,11 +61,9 @@ namespace Monster.UI
             tutorialThirdPage tutorial3 = new tutorialThirdPage();
             memoryGame memoryGame = new memoryGame();
             
-            
-            
 
             // Add controls to dictionary with unique keys
-            _userControls.Add("MemoryGame", memoryGame); 
+            _userControls.Add("MemoryGame", memoryGame);
             _userControls.Add("Monster", monsterControl);
             _userControls.Add("Inventory", inventoryControl);
             _userControls.Add("TicTacToe", ticTacToeControl);
@@ -196,7 +194,8 @@ namespace Monster.UI
                     break;
 
                 case "MemoryGame":
-                   
+                    var memoryGame = control as memoryGame;
+                    memoryGame.StartGame();
                     break;
                 
 

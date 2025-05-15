@@ -144,24 +144,27 @@ namespace Monster.UI
                 Text = "Sleeping...",
                 ControlBox = false,
                 MinimizeBox = false,
-                MaximizeBox = false
+                MaximizeBox = false,
+                BackColor = System.Drawing.Color.Black 
             };
 
             Label labelCountdown = new Label()
             {
                 Dock = DockStyle.Fill,
                 TextAlign = System.Drawing.ContentAlignment.MiddleCenter,
-                Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point),
+                Font = new System.Drawing.Font("VCR OSD Mono", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point),
+                ForeColor = System.Drawing.Color.Goldenrod,
+                BackColor = System.Drawing.Color.Black,
                 Text = "15 seconds remaining..."
             };
 
+
             countdownForm.Controls.Add(labelCountdown);
 
-            // Use the full namespace to avoid ambiguity
             System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
             int countdown = 15;
 
-            timer.Interval = 1000; // 1 second intervals
+            timer.Interval = 1000;
             timer.Tick += (s, args) =>
             {
                 countdown--;
@@ -173,14 +176,11 @@ namespace Monster.UI
                 {
                     timer.Stop();
 
-                    // Increase HP and Stamina by an example amount (adjust as needed)
-                    monster.HealthPoints += 20;
-                    monster.Stamina += 20;
 
-                    // Optionally clamp values to max HP and max Stamina if your MonsterClass supports those properties
-                    // e.g., monster.HealthPoints = Math.Min(monster.HealthPoints, monster.MaxHealthPoints);
+                    if (monster.HealthPoints < 100) monster.HealthPoints = 100;
+                    if (monster.Stamina < 100) monster.Stamina = 100;
 
-                    // Refresh the bindings to update UI progress bars
+
                     _bsMonster.ResetBindings(false);
 
                     countdownForm.Close();
