@@ -22,7 +22,7 @@ namespace Monster.UI
      
         private void button_Tutorial1_Next_Click(object sender, EventArgs e)
         {
-            ParentForm.NavigateTo("Tutorial1");
+            ParentForm.NavigateTo("Tutorial2");
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Monster.UI
     {
         private BindingSource _bsUser = new BindingSource();
         private BindingSource _bsMonster = new BindingSource();
-
+        private Form1 ParentForm => this.FindForm() as Form1;
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public object bsUser
@@ -82,11 +82,22 @@ namespace Monster.UI
 
         private void label2_newGameMonster_Next_Click(object sender, EventArgs e)
         {
-            Form1 parentForm = this.FindForm() as Form1;
-
-            parentForm.NavigateTo("Monster");
+            DialogResult result = MessageBox.Show(
+                "Do you want to skip the tutorial?",
+                "Skip Tutorial",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+          
+            if (result == DialogResult.Yes)
+            {
+                ParentForm.NavigateTo("Monster");
+            }
+            else
+            {
+                ParentForm.NavigateTo("Tutorial1");
+            }
         }
 
-      
+
     }
 }
