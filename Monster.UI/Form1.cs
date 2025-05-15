@@ -56,6 +56,7 @@ namespace Monster.UI
             settings settings = new settings();
             credits credits = new credits();
             BattleMenu battleMenu = new BattleMenu();
+            battleGame battleGame = new battleGame();
             
 
 
@@ -73,6 +74,7 @@ namespace Monster.UI
             _userControls.Add("Settings", settings);
             _userControls.Add("Credits", credits);
             _userControls.Add("BattleMenu", battleMenu);
+            _userControls.Add("BattleGame", battleGame);
         }
 
         public void NavigateTo(string controlKey)

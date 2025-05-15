@@ -63,9 +63,9 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
-        internal static byte[] defaultUserImage {
+        internal static byte[] boyPlayerPic {
             get {
-                object obj = ResourceManager.GetObject("defaultUserImage", resourceCulture);
+                object obj = ResourceManager.GetObject("boyPlayerPic", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -73,19 +73,9 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
-        internal static byte[] playergirlgrandesemback {
+        internal static byte[] girlPlayerPic {
             get {
-                object obj = ResourceManager.GetObject("playergirlgrandesemback", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
-        /// </summary>
-        internal static byte[] playergrandesemback {
-            get {
-                object obj = ResourceManager.GetObject("playergrandesemback", resourceCulture);
+                object obj = ResourceManager.GetObject("girlPlayerPic", resourceCulture);
                 return ((byte[])(obj));
             }
         }
