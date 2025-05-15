@@ -25,7 +25,7 @@ namespace Monster.UI
             backImage =
                (Image)mainRes.GetObject("$this.BackgroundImage");
 
-            timeLeft = 60;
+            timeLeft = 10;
             lblGameTimer.Text = TimeSpan.FromSeconds(timeLeft)
                                          .ToString(@"mm\:ss");
             gameTimer.Start();

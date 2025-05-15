@@ -45,8 +45,7 @@ namespace Monster.UI
             // Create and initialize each UserControl
             myMonster monsterControl = new myMonster();
             inventory inventoryControl = new inventory();
-            ticTacToeGame ticTacToeControl = new ticTacToeGame();
-            memoryGame memoryGameControl = new memoryGame();
+            ticTacToeGame ticTacToeControl = new ticTacToeGame();            
             playerMenu playerMenuControl = new playerMenu(_gameState.CurrentUser.UserType);
             newGamePlayer newUserControl = new newGamePlayer();
             newGameMonster newMonsterControl = new newGameMonster();
@@ -68,7 +67,6 @@ namespace Monster.UI
             _userControls.Add("Monster", monsterControl);
             _userControls.Add("Inventory", inventoryControl);
             _userControls.Add("TicTacToe", ticTacToeControl);
-            _userControls.Add("MemoryGame", memoryGameControl);
             _userControls.Add("Player", playerMenuControl);
             _userControls.Add("NewUser", newUserControl);
             _userControls.Add("NewMonster", newMonsterControl);
@@ -194,7 +192,16 @@ namespace Monster.UI
                         newGameMonster.HookBindings();
                     }
                     break;
-                    
+
+                case "MemoryGame":
+                    memoryGame memoryGameControl = new memoryGame();
+                    _userControls.Add("MemoryGame", memoryGameControl);
+                    break;
+                
+
+
+
+
             }
         }
 
