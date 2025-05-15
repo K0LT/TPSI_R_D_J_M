@@ -28,7 +28,7 @@ namespace Monster.UI
             timeLeft = 60;
             lblGameTimer.Text = TimeSpan.FromSeconds(timeLeft)
                                          .ToString(@"mm\:ss");
-            gameTimer.Start();
+        
 
 
             InitializeCards();
@@ -188,6 +188,10 @@ namespace Monster.UI
 
                 ParentForm.NavigateTo("Monster");
             }
+        }
+        public void StartGame()
+        {
+            gameTimer.Start();
         }
 
         private List<Image> cardImages;

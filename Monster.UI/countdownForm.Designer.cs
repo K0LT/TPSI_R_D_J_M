@@ -28,12 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "countdownForm";
+            labelCountdown = new Label();
+            SuspendLayout();
+            // 
+            // labelCountdown
+            // 
+            labelCountdown.AutoSize = true;
+            labelCountdown.Dock = DockStyle.Fill;
+            labelCountdown.Font = new Font("VCR OSD Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelCountdown.Location = new Point(0, 0);
+            labelCountdown.Margin = new Padding(4, 0, 4, 0);
+            labelCountdown.Name = "labelCountdown";
+            labelCountdown.Size = new Size(261, 19);
+            labelCountdown.TabIndex = 0;
+            labelCountdown.Text = "15 seconds remaining...";
+            labelCountdown.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // countdownForm
+            // 
+            AutoScaleDimensions = new SizeF(9F, 17F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
+            ClientSize = new Size(391, 132);
+            ControlBox = false;
+            Controls.Add(labelCountdown);
+            Font = new Font("VCR OSD Mono", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ForeColor = Color.Goldenrod;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "countdownForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Sleeping...";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label labelCountdown;
     }
 }
