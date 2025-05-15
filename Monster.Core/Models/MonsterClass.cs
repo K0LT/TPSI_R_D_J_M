@@ -93,7 +93,7 @@ namespace Monster.Core.Models
             {
                 if (value != null)
                 {
-                    _level += value;
+                    _level = value;
                     UpdateMonsterImage();
                     OnPropertyChanged();
                     System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass Level Setter Call.");

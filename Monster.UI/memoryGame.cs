@@ -153,7 +153,7 @@ namespace Monster.UI
                         flipBackTimer.Stop();
                         MessageBox.Show("Parabéns, você venceu!", "Fim de Jogo",
                                         MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ParentForm?.NavigateTo("myMonster");
+                        ParentForm?.NavigateTo("Monster");
                     }
                 }
             
@@ -188,7 +188,7 @@ namespace Monster.UI
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
 
-                ParentForm.NavigateTo("myMonster");
+                ParentForm.NavigateTo("Monster");
             }
         }
 

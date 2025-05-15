@@ -82,6 +82,9 @@ namespace Monster.UI
 
         private void label2_newGameMonster_Next_Click(object sender, EventArgs e)
         {
+            textBox_newGameMonster_InputUsername.DataBindings.Clear();
+            textBox_newGameMonster_InputUsername.Clear();
+
             DialogResult result = MessageBox.Show(
                 "Do you want to skip the tutorial?",
                 "Skip Tutorial",
@@ -90,10 +93,12 @@ namespace Monster.UI
           
             if (result == DialogResult.Yes)
             {
+              
                 ParentForm.NavigateTo("Monster");
             }
             else
             {
+             
                 ParentForm.NavigateTo("Tutorial1");
             }
         }

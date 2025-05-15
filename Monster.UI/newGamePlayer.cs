@@ -47,7 +47,9 @@ namespace Monster.UI
             {
                 parentForm.SetupUser(textBox_newGamePlayer_InputForUsername.Text, _tempUser.UserType);
                 parentForm.SaveGame();
+                textBox_newGamePlayer_InputForUsername.Text = "";
                 parentForm.NavigateTo("NewMonster");
+
             }
             else
             {
