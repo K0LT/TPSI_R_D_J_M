@@ -163,6 +163,7 @@ namespace Monster.UI
 
             System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
             int countdown = 15;
+            int missingHealth = 100 - monster.HealthPoints;
 
             timer.Interval = 1000;
             timer.Tick += (s, args) =>
@@ -171,6 +172,7 @@ namespace Monster.UI
                 if (countdown > 0)
                 {
                     labelCountdown.Text = $"{countdown} seconds remaining...";
+                    monster.HealthPoints += missingHealth / 15;
                 }
                 else
                 {
