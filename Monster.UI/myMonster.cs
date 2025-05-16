@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -54,15 +55,15 @@ namespace Monster.UI
 
             levelMyMonster.DataBindings.Add(nameof(Label.Text), bsDataSource, nameof(MonsterClass.Level));
             nameMyMonsterLabel.DataBindings.Add(nameof(Label.Text), bsDataSource, nameof(MonsterClass.Name));
-            //Eliminei o label a dizer CurrentMonster mas deverei voltar a adicionar
-            //label_myMonster_CurrentMonsterName.DataBindings.Add(nameof(Label.Text), bsDataSource,
-            //nameof(MonsterClass.Name));
             System.Diagnostics.Debug.WriteLine(@"HookBindings exiting.");
         }
 
+        public event PropertyChangedEventHandler PropertyChanged;
 
-
-
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         private void button_myMonster_ReturnToMainMenu_Click(object sender, EventArgs e)
         {

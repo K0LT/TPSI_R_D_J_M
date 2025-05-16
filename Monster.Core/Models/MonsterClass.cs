@@ -2,6 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Drawing;
 using System.Xml.Linq;
+using System.Diagnostics;
 
 namespace Monster.Core.Models
 {
@@ -17,9 +18,17 @@ namespace Monster.Core.Models
         private int _stamina = 50;
         private Image _monsterImage;
         private Image _monsterIcon;
-
         public MonsterClass()
         {
+            var stackTrace = new StackTrace(true);
+            var frame = stackTrace.GetFrame(1);
+
+            string callerMethod = frame.GetMethod().Name;
+            string callerClass = frame.GetMethod().DeclaringType.Name;
+            string callerFile = frame.GetFileName();
+            int callerLine = frame.GetFileLineNumber();
+
+            Debug.WriteLine($"[DEBUG] Monster created by {callerClass}.{callerMethod} in {callerFile}:{callerLine}");
             System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass constructor call.");
             UpdateMonsterImage();
         }
@@ -75,7 +84,7 @@ namespace Monster.Core.Models
                 if (_experiencePoints + value > 100)
                 {
                     _experiencePoints = 0;
-                    _level += 1;
+                    Level += 1;
                     OnPropertyChanged();
                     System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass ExperiencePoints Setter Call. Level incremented by 1 to : " + Level);
                     return;
