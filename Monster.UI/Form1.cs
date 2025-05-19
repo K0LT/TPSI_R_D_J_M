@@ -18,7 +18,6 @@ namespace Monster.UI
         // Dictionary to track all our UserControls
         private Dictionary<string, UserControl> _userControls = new Dictionary<string, UserControl>();
         private bool _isNewUser = true;
-        public bool InventoryVisited = false;
         public Form1()
         {
             System.Diagnostics.Debug.WriteLine(@"[DEBUG-Form1] Constructor Call");
@@ -45,7 +44,7 @@ namespace Monster.UI
         public void InitState()
         {
             _gameState.OwnedMonsters.Add(_gameState.ActiveMonster);
-
+            _gameState.InventoryVisited = false;
         }
 
         private void InitializeUserControls()
@@ -165,7 +164,7 @@ namespace Monster.UI
                         }
                         inventoryControl.bsInventory = _gameState.Inventory;
                         inventoryControl.HookBindings();
-                        InventoryVisited = true;
+                        _gameState.InventoryVisited = true;
                     }
                     break;
 
@@ -199,9 +198,7 @@ namespace Monster.UI
                                 playerControl.bsFourthMonster = _gameState.OwnedMonsters.ElementAt(3);
                                 break;
                         }
-
-                        // Set the user type and hook up bindings
-                        playerControl.UserType = _gameState.CurrentUser.UserType;
+                        playerControl.bsUser = _gameState.CurrentUser;
                         playerControl.HookBindings();
                     }
                     break;
@@ -349,6 +346,10 @@ namespace Monster.UI
             item.Quantity += rewardAmount;
 
             MessageBox.Show($"Congratulations! You won {rewardAmount}x {itemName}!", "Reward", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        public bool GetInventoryVisited() {
+            return _gameState.InventoryVisited;
         }
     }
 }

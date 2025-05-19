@@ -111,7 +111,7 @@ namespace Monster.UI
 
         private void button_myMonster_MiniGames_Click(object sender, EventArgs e)
         {
-            if (ParentForm.InventoryVisited)
+            if (ParentForm.GetInventoryVisited())
             {
                 if (bsDataSource is MonsterClass monster)
                 {

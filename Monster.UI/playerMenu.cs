@@ -14,18 +14,15 @@ namespace Monster.UI
 {
     public partial class playerMenu : UserControl
     {
-        private string _userType;
+        private BindingSource _bsUser = new BindingSource();
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public string UserType
+        public object bsUser
         {
-            get => _userType;
-            set
-            {
-                _userType = value;
-                ApplyUserTypeImage();
-            }
+            get => _bsUser.DataSource;
+            set => _bsUser.DataSource = value;
         }
+
         private Form1 ParentForm => this.FindForm() as Form1;
 
         private BindingSource _bsFirstMonster = new BindingSource();
@@ -61,7 +58,6 @@ namespace Monster.UI
         public playerMenu(string userType)
         {
             InitializeComponent();
-            UserType = userType;
         }
 
         public void HookBindings()
@@ -93,28 +89,31 @@ namespace Monster.UI
                 pictureBox_playerMenu_Slot4.DataBindings.Add(nameof(PictureBox.Image), bsFourthMonster, nameof(MonsterClass.MonsterIcon));
 
             }
+            usernamePlayerMenuLabel.DataBindings.Clear();
+            usernamePlayerMenuLabel.DataBindings.Add(nameof(Label.Text), bsUser, nameof(User.Username));
 
-
-
+            ApplyUserTypeImage();
         }
 
 
         private void ApplyUserTypeImage()
         {
-            switch (_userType?.ToLower())
+            if (bsUser is User user)
             {
-                case "boy":
-                    pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.boyPlayerPic); 
-                    break;
-                case "girl":
-                    pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.girlPlayerPic);
-                    break;
+                switch (user.UserType.ToLower())
+                {
+                    case "boy":
+                        pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.boyPlayerPic);
+                        break;
+                    case "girl":
+                        pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.girlPlayerPic);
+                        break;
                     default:
-                    pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.jonnyBoyPlayerPic);
-                    break;
+                        pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.jonnyBoyPlayerPic);
+                        break;
+                }
             }
         }
-
         private Image ConvertByteArrayToImage(byte[] byteArray)
         {
             using (MemoryStream ms = new MemoryStream(byteArray))

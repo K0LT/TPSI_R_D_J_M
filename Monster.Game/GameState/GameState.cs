@@ -47,6 +47,8 @@ namespace Monster.Game.GameState
 
         public static GameState Current { get; private set; } = new GameState();
 
+        public bool InventoryVisited { get; set; }
+
         public void AddExperience(int amount)
         {
             _activeMonster.AddExperience(amount);
