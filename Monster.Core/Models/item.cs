@@ -16,7 +16,7 @@ namespace Monster.Core.Models
     [JsonDerivedType(typeof(StaminaItem), "Stamina Item")]
     [JsonDerivedType(typeof(ExperienceItem), "Experience Item")]
     [JsonDerivedType(typeof(FullRestoreItem), "FullRestoreItem")]
-    public abstract class Item : INotifyPropertyChanged
+    public abstract class Item : INotifyPropertyChanged 
     {
         private string _name;
         private int _quantity;

@@ -73,6 +73,16 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        public static byte[] dracoBackHeadSmall {
+            get {
+                object obj = ResourceManager.GetObject("dracoBackHeadSmall", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         public static byte[] girlPlayerPic {
             get {
                 object obj = ResourceManager.GetObject("girlPlayerPic", resourceCulture);
@@ -83,9 +93,39 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        public static byte[] grifoBackHeadSmall {
+            get {
+                object obj = ResourceManager.GetObject("grifoBackHeadSmall", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         public static byte[] jonnyBoyPlayerPic {
             get {
                 object obj = ResourceManager.GetObject("jonnyBoyPlayerPic", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] sirenBackHeadSmall {
+            get {
+                object obj = ResourceManager.GetObject("sirenBackHeadSmall", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] tauroBackHeadSmall {
+            get {
+                object obj = ResourceManager.GetObject("tauroBackHeadSmall", resourceCulture);
                 return ((byte[])(obj));
             }
         }

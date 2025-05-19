@@ -112,9 +112,15 @@ namespace Monster.UI
 
         private void button_myMonster_MiniGames_Click(object sender, EventArgs e)
         {
-
-            ParentForm.NavigateTo("MiniGames");
-
+            if(bsDataSource is MonsterClass monster)
+            {
+                if(monster.Stamina < 25)
+                {
+                    MessageBox.Show("Not enough stamina!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else ParentForm.NavigateTo("MiniGames");
+            }
         }
 
 

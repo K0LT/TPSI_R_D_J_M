@@ -132,7 +132,7 @@ namespace Monster.UI
                     {
                         gameTimer.Stop();
                         flipBackTimer.Stop();
-                        ParentForm.MemoryReward();
+                        ParentForm.GameReward();
                         //MessageBox.Show("You won!", "End Game",
                         //                MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ParentForm?.NavigateTo("Monster");

@@ -35,7 +35,7 @@ namespace Monster.UI
             // Set up global binding sources
             SetupBindings(_gameState, _bsMonster, _bsUser);
 
-            
+
 
             // Show initial UserControl
             NavigateTo("MainMenu");
@@ -47,7 +47,7 @@ namespace Monster.UI
             // Create and initialize each UserControl
             myMonster monsterControl = new myMonster();
             inventory inventoryControl = new inventory();
-            ticTacToeGame ticTacToeControl = new ticTacToeGame();            
+            ticTacToeGame ticTacToeControl = new ticTacToeGame();
             playerMenu playerMenuControl = new playerMenu(_gameState.CurrentUser.UserType);
             newGamePlayer newUserControl = new newGamePlayer();
             newGameMonster newMonsterControl = new newGameMonster();
@@ -62,13 +62,14 @@ namespace Monster.UI
             TutorialSecondPage tutorial2 = new TutorialSecondPage();
             tutorialThirdPage tutorial3 = new tutorialThirdPage();
             memoryGame memoryGame = new memoryGame();
-            
+            PatternGame patternGame = new PatternGame();
+
 
             // Add controls to dictionary with unique keys
             _userControls.Add("MemoryGame", memoryGame);
             _userControls.Add("Monster", monsterControl);
             _userControls.Add("Inventory", inventoryControl);
-            _userControls.Add("TicTacToe", ticTacToeControl);
+            _userControls.Add("PatternGame", patternGame);
             _userControls.Add("Player", playerMenuControl);
             _userControls.Add("NewUser", newUserControl);
             _userControls.Add("NewMonster", newMonsterControl);
@@ -87,10 +88,10 @@ namespace Monster.UI
 
         public void NavigateTo(string controlKey)
         {
-            
+
             MainPanel.Controls.Clear();
 
-            
+
             if (_userControls.TryGetValue(controlKey, out UserControl control))
             {
                 control.Dock = DockStyle.None;
@@ -125,7 +126,7 @@ namespace Monster.UI
                     break;
                 case "NewUser":
                     var newUser = control as newGamePlayer;
-                    if(newUser != null)
+                    if (newUser != null)
                     {
                         // Nothing so far
                     }
@@ -137,7 +138,7 @@ namespace Monster.UI
                         this.SaveGame(true);
                         if (_gameState == null)
                         {
-                            MessageBox.Show("User not found","Load Game", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("User not found", "Load Game", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             NavigateTo("LoadGame");
                             return;
                         }
@@ -200,7 +201,7 @@ namespace Monster.UI
                     break;
                 case "NewMonster":
                     var newGameMonster = control as newGameMonster;
-                    if(newGameMonster != null)
+                    if (newGameMonster != null)
                     {
                         _bsMonster.DataSource = _gameState.ActiveMonster;
                         newGameMonster.bsMonster = _bsMonster.DataSource;
@@ -212,6 +213,19 @@ namespace Monster.UI
                     var memoryGame = control as memoryGame;
                     _gameState.ActiveMonster.Stamina -= 25;
                     memoryGame.StartGame();
+                    break;
+
+
+                case "PatternGame":
+                    var patternGame = control as PatternGame;
+                    _gameState.ActiveMonster.Stamina -= 25;
+                    patternGame.StartGame();
+                    break;
+
+                case "BattleGame":
+                    var battleGame = control as battleGame;
+                    battleGame.bsMonster = _gameState.ActiveMonster;
+                    battleGame.HookBindings();
                     break;
             }
         }
@@ -289,8 +303,8 @@ namespace Monster.UI
                 }
             }
             return true;
-          }
-        
+        }
+
 
         protected override CreateParams CreateParams
         {
@@ -312,11 +326,11 @@ namespace Monster.UI
             _gameState.AddExperience(amount);
         }
 
-        public void MemoryReward()
+        public void GameReward()
         {
             if (_gameState.Inventory == null || _gameState.Inventory.Count == 0)
             {
-                MessageBox.Show("No items in inventory to reward.", "Memory Reward", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("No items in inventory to reward.", "Game Reward", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -328,7 +342,7 @@ namespace Monster.UI
 
             item.Quantity += rewardAmount;
 
-            MessageBox.Show($"Congratulations! You won {rewardAmount}x {itemName}!", "Memory Reward", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"Congratulations! You won {rewardAmount}x {itemName}!", "Reward", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -69,7 +69,7 @@ namespace Monster.UI
             var res = new ComponentResourceManager(typeof(PatternGame));
 
             
-            backImage = (Image)res.GetObject("cardBack");
+            backImage = (Image)res.GetObject("cardback");
 
             patternImages = new Image[8];
             highlightImages = new Image[8];

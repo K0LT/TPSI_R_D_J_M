@@ -18,9 +18,9 @@ namespace Monster.UI
 
 
             pictureBox_miniGames_Memory.Click += pictureBox_miniGames_Memory_Click;
-            pictureBox_miniGames_ticTac.Click += pictureBox_miniGames_ticTac_Click;
+            pictureBox_miniGames_ticTac.Click += pictureBox_miniGames_Pattern_Click;
 
-           
+
             pictureBox_miniGames_Memory.Cursor = Cursors.Hand;
             pictureBox_miniGames_ticTac.Cursor = Cursors.Hand;
 
@@ -30,13 +30,12 @@ namespace Monster.UI
 
         private void pictureBox_miniGames_Memory_Click(object sender, EventArgs e)
         {
-            
             ParentForm.NavigateTo("MemoryGame");
         }
 
-        private void pictureBox_miniGames_ticTac_Click(object sender, EventArgs e)
+        private void pictureBox_miniGames_Pattern_Click(object sender, EventArgs e)
         {
-            ParentForm.NavigateTo("TicTacToe");
+            ParentForm.NavigateTo("PatternGame");
         }
 
         private void button_MiniGames_Exit_Click(object sender, EventArgs e)
@@ -44,6 +43,6 @@ namespace Monster.UI
             ParentForm.NavigateTo("Monster");
         }
 
-        
+
     }
 }

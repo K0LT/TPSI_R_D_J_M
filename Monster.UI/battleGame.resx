@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!--
-    Microsoft ResX Schema
-
+  <!-- 
+    Microsoft ResX Schema 
+    
     Version 2.0
-
-    The primary goals of this format is to allow a simple XML format
-    that is mostly human readable. The generation and parsing of the
-    various data types are done through the TypeConverter classes
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
     associated with the data types.
-
+    
     Example:
-
+    
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-
-    There are any number of "resheader" rows that contain simple
+                
+    There are any number of "resheader" rows that contain simple 
     name/value pairs.
-
-    Each data row contains a name, and value. The row also contains a
-    type or mimetype. Type corresponds to a .NET class that support
-    text/value conversion through the TypeConverter architecture.
-    Classes that don't support this are serialized and stored with the
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
     mimetype set.
-
-    The mimetype is used for serialized objects, and tells the
-    ResXResourceReader how to depersist the object. This is currently not
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
     extensible. For a given mimetype the value must be set accordingly:
-
-    Note - application/x-microsoft.net.object.binary.base64 is the format
-    that the ResXResourceWriter will generate, however the reader can
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
     read any of the formats listed below.
-
+    
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with
+    value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-
+    
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with
+    value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array
+    value   : The object must be serialized into a byte array 
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -121,7 +121,7 @@
   <data name="pictureBox_battleGame_Draco.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAM0AAADNCAYAAAAbvPRpAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAWMRJREFUeF7tvQmYFsW1P3y/L/fe3JubzLvvbAMDM8PMMDD7zrDOPsM6G/uiIiAC
+        wAAADsABataJCQAAWMRJREFUeF7tvQmYFsW1P3y/L/fe3JubzLvvbAMDM8PMMDD7zrDOPsM6G/uiIiAC
         rrihIILKrqKAC+IOkU3AuAWj0UTFuISoMTEmLjEKCLjAADN9/s+p6uq3+rzVA0EFlT7Pc57urq6urq46
         vzqnTlVX/cd/2GSTTTbZZJNNNtlkk0022WSTTTbZZJNNNtlkk0022WSTTTbZZJNNNtlkk0022WSTTTbZ
         ZJNNNtlkk0022WSTTTbZZJNNNtlkk0022fRt0K5du/7n4jENzUOz+zxVntLj95W9ev52QnX5NctuvDER
@@ -506,7 +506,7 @@
   <data name="pictureBox_battleGame_Boss.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCCAYAAAB8GMlFAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAA/7JJREFUeF7svQeYnWW1Nvz///d956iQzOz61t3b7KnpBUJvoXepgRAIJATSCykU
+        wQAADsEBuJFr7QAA/7JJREFUeF7svQeYnWW1Nvz///d956iQzOz61t3b7KnpBUJvoXepgRAIJATSCykU
         6b0moSckEHoTESSgoQgCoqKCShOpKiAiICWZedd/3fd6npmc+Y7noAYFz36ua66Z2bPb7Pd5VrnXve71
         //w/jdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVY
         jdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVYjdVY
@@ -4692,7 +4692,7 @@
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAlgAAAOECAYAAAB97U88AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF5c/deWXEe2bIvy8a5iFQmttSIoQV1Ve5/z/58Vt/XezSNznQc0AJkR
+        EAAACxABrSO9dQAA/7JJREFUeF5c/deWXEe2bIvy8a5iFQmttSIoQV1Ve5/z/58Vt/XezSNznQc0AJkR
         U/gUw9zMhvlX/7z37vLPO+8u/3rw/vLPu28v//j27eVf9z9cvr3/4fL13XeXf919d/nnvbeXb+69v/zr
         7ofL1/feXv519+3lX/c+XP714MPln/f5zFv//ufdd5ev+f/9D5dvtr2v2fa995dv7r6/fMPP77/vu/z7
         3ofLP9ku/2dfd95e/nH37eXbh58u3/r59+2Xv++/c5vfPvxw+eedfvavezfH9y/3++7yz/vt1/3zHX52
@@ -18620,5 +18620,18 @@
         pfYctWwCuGWQOqAnSxYrla1G84R3n3kg0If9+6L30PN/k/ZJO4Vd76VhMy3tmmJOA2Kc32rDpQexZXDz
         MBsTW+jMzJT3Qy3jNiyANcXt843z2Qu2AHwZmfJ/rps58P8GQQAG7SV0jOQAAAAASUVORK5CYII=
 </value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tauroBackHeadSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\tauroBackHeadSmall.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sirenBackHeadSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\sirenBackHeadSmall.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="grifoBackHeadSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\grifoBackHeadSmall.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dracoBackHeadSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\dracoBackHeadSmall.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
