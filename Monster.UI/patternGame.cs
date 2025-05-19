@@ -277,6 +277,7 @@ namespace Monster.UI
             statusLabel.Text = message;
 
             FlashBackground(victory ? Color.Green : Color.Red);
+            ParentForm.GameReward();
 
             Task.Delay(3000).ContinueWith(_ => this.Invoke((Action)(() =>
             {
