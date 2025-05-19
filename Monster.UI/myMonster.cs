@@ -135,7 +135,14 @@ namespace Monster.UI
 
         private void button_myMonster_Food_Click(object sender, EventArgs e)
         {
-            ParentForm.AddExperience(50);
+            if(bsDataSource is MonsterClass monster)
+            {
+                if(monster.Level >= 20)
+                {
+                    ParentForm.NavigateTo("NewMonster");
+                }
+                else MessageBox.Show("Your monster needs to be level 20 or higher!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button_myMonster_Sleep_Click(object sender, EventArgs e)

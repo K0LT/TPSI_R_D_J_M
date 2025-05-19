@@ -58,6 +58,23 @@ namespace Monster.UI
         public playerMenu(string userType)
         {
             InitializeComponent();
+            HideControls();
+        }
+
+        public void HideControls()
+        {
+            label_playerMenu_Slot2.Hide();
+            label_playerMenu_Slot3.Hide();
+            label_playerMenu_Slot4.Hide();
+            progressBar_playerMenu_Slot2.Hide();
+            progressBar_playerMenu_Slot3.Hide();
+            progressBar_playerMenu_Slot4.Hide();
+            button_playerMenu_ChangeSlot2.Hide();
+            button_playerMenu_ChangeSlot3.Hide();
+            button_playerMenu_ChangeSlot4.Hide();
+            pictureBox_playerMenu_Slot2.Hide();
+            pictureBox_playerMenu_Slot3.Hide();
+            pictureBox_playerMenu_Slot4.Hide();
         }
 
         public void HookBindings()
@@ -74,6 +91,11 @@ namespace Monster.UI
 
                 pictureBox_playerMenu_Slot2.DataBindings.Add(nameof(PictureBox.Image), bsSecondMonster, nameof(MonsterClass.MonsterIcon));
 
+                label_playerMenu_Slot2.Show();
+                progressBar_playerMenu_Slot2.Show();
+                button_playerMenu_ChangeSlot2.Show();
+                pictureBox_playerMenu_Slot2.Show();
+
             }
             if (bsThirdMonster != null)
             {
@@ -81,12 +103,22 @@ namespace Monster.UI
 
                 pictureBox_playerMenu_Slot3.DataBindings.Add(nameof(PictureBox.Image), bsThirdMonster, nameof(MonsterClass.MonsterIcon));
 
+                label_playerMenu_Slot3.Show();
+                progressBar_playerMenu_Slot3.Show();
+                button_playerMenu_ChangeSlot3.Show();
+                pictureBox_playerMenu_Slot3.Show();
+
             }
             if (bsFourthMonster != null)
             {
                 pictureBox_playerMenu_Slot4.DataBindings.Clear();
 
                 pictureBox_playerMenu_Slot4.DataBindings.Add(nameof(PictureBox.Image), bsFourthMonster, nameof(MonsterClass.MonsterIcon));
+
+                label_playerMenu_Slot4.Show();
+                progressBar_playerMenu_Slot4.Show();
+                button_playerMenu_ChangeSlot4.Show();
+                pictureBox_playerMenu_Slot4.Show();
 
             }
             usernamePlayerMenuLabel.DataBindings.Clear();

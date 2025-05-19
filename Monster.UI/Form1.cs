@@ -34,11 +34,8 @@ namespace Monster.UI
             // Set up global binding sources
             SetupBindings(_gameState, _bsMonster, _bsUser);
 
-
-
             // Show initial UserControl
             NavigateTo("MainMenu");
-
         }
 
         public void InitState()
@@ -204,6 +201,14 @@ namespace Monster.UI
                     break;
                 case "NewMonster":
                     var newGameMonster = control as newGameMonster;
+                    if(_gameState.ActiveMonster.Level >= 20)
+                    {
+                        _gameState.OwnedMonsters.Add(new MonsterClass());
+                        _gameState.ActiveMonster = _gameState.OwnedMonsters.ElementAt(_gameState.OwnedMonsters.Count - 1);
+                        _bsMonster.DataSource = _gameState.ActiveMonster;
+                        newGameMonster.bsMonster = _gameState.ActiveMonster;
+                        newGameMonster.HookBindings();
+                    }
                     if (newGameMonster != null)
                     {
                         _bsMonster.DataSource = _gameState.ActiveMonster;
