@@ -20,15 +20,15 @@ namespace Monster.Core.Models
         private Image _monsterIcon;
         public MonsterClass()
         {
-            var stackTrace = new StackTrace(true);
-            var frame = stackTrace.GetFrame(1);
+            //var stackTrace = new StackTrace(true);
+            //var frame = stackTrace.GetFrame(1);
 
-            string callerMethod = frame.GetMethod().Name;
-            string callerClass = frame.GetMethod().DeclaringType.Name;
-            string callerFile = frame.GetFileName();
-            int callerLine = frame.GetFileLineNumber();
+            //string callerMethod = frame.GetMethod().Name;
+            //string callerClass = frame.GetMethod().DeclaringType.Name;
+            //string callerFile = frame.GetFileName();
+            //int callerLine = frame.GetFileLineNumber();
 
-            Debug.WriteLine($"[DEBUG] Monster created by {callerClass}.{callerMethod} in {callerFile}:{callerLine}");
+            //Debug.WriteLine($"[DEBUG] Monster created by {callerClass}.{callerMethod} in {callerFile}:{callerLine}");
             System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass constructor call.");
             UpdateMonsterImage();
         }

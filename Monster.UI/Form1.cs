@@ -2,6 +2,7 @@ using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 using Monster.Core.Models;
 using Monster.Game.GameState;
+using static System.Windows.Forms.AxHost;
 namespace Monster.UI
 {
     public partial class Form1 : Form
@@ -149,8 +150,11 @@ namespace Monster.UI
                     var inventoryControl = control as inventory;
                     if (inventoryControl != null)
                     {
-                        // Update inventory data
-                        //inventoryControl.InventoryData = _gameState.Inventory;
+                        inventoryControl.bsDataSource = _gameState.ActiveMonster;
+                        inventoryControl.State = _gameState;
+                        inventoryControl.bsInventory = _gameState.Inventory;
+                        _gameState.Inventory = inventoryControl.InitializeInventory();
+                        inventoryControl.HookBindings();
                     }
                     break;
 
@@ -204,11 +208,6 @@ namespace Monster.UI
                     var memoryGame = control as memoryGame;
                     memoryGame.StartGame();
                     break;
-                
-
-
-
-
             }
         }
 

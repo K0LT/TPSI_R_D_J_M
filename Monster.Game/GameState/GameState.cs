@@ -21,7 +21,7 @@ namespace Monster.Game.GameState
                     System.Diagnostics.Debug.WriteLine(@"[DEBUG] GameState::CurrentUser setter call.");
                     _currentUser = value;
                 }
-                
+
             }
         }
 
@@ -40,8 +40,8 @@ namespace Monster.Game.GameState
             }
         }
         public List<MonsterClass>? OwnedMonsters { get; set; } = new List<MonsterClass>();
-        public List<Item> Inventory { get; set; } = new List<Item> { new HealthItem(), new StaminaItem() };
-        
+        public List<Item> Inventory { get; set; } = new List<Item> { };
+
         public int Currency { get; set; }
 
         // Game progress, achievements, etc.
@@ -51,6 +51,38 @@ namespace Monster.Game.GameState
         public void AddExperience(int amount)
         {
             _activeMonster.AddExperience(amount);
+        }
+
+        public void UseItemAtIndex(int index)
+        {
+            if (index < 0 || index >= Inventory.Count)
+                return;
+
+            var item = Inventory[index];
+            if (item == null || item.Quantity <= 0)
+                return;
+
+            var monster = ActiveMonster;
+
+            switch (item)
+            {
+                case HealthItem healthItem:
+                    monster.HealthPoints = Math.Min(monster.HealthPoints + healthItem.HealthRestore, 100);
+                    break;
+                case StaminaItem staminaItem:
+                    monster.Stamina = Math.Min(monster.Stamina + staminaItem.StaminaRestore, 100);
+                    break;
+                case ExperienceItem expItem:
+                    AddExperience(expItem.ExperienceGain);
+                    break;
+                case FullRestoreItem fullItem:
+                    monster.HealthPoints = Math.Min(monster.HealthPoints + fullItem.HealthRestore, 100);
+                    monster.Stamina = Math.Min(monster.Stamina + fullItem.StaminaRestore, 100);
+                    AddExperience(fullItem.ExperienceGain);
+                    break;
+            }
+
+            item.Quantity--;
         }
     }
 }
