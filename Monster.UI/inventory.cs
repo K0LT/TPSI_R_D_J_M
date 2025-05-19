@@ -31,13 +31,7 @@ namespace Monster.UI
         public object bsInventory
         {
             get => _bsInventory.DataSource;
-            set
-            {
-                if (value != null)
-                {
-                    _bsInventory.DataSource = value;
-                }
-            }
+            set => _bsInventory.DataSource = value;
         }
 
         private Form1 ParentForm => this.FindForm() as Form1;
@@ -62,6 +56,7 @@ namespace Monster.UI
 
                 firstHook = true;
             }
+            UpdateInventory();
             return;
         }
 
@@ -78,7 +73,7 @@ namespace Monster.UI
 
             var inventory = new List<Item>
             {
-            new StaminaItem("Water", waterIcon, 10, 2),
+            new StaminaItem("Water", waterIcon, 10, 3),
             new ExperienceItem("Soda", sodaIcon, 10, 2),
             new ExperienceItem("Beer", beerIcon, 20, 2),
             new StaminaItem("Energy Drink", energyDrinkIcon, 20, 2),
@@ -87,6 +82,20 @@ namespace Monster.UI
             new FullRestoreItem("Ramen", ramenIcon, 20, 20, 20, 2)
             };
             return inventory;
+        }
+
+        private void UpdateInventory()
+        {
+            if (bsInventory is List<Item> list && list.Count >= 7)
+            {
+                label_inventory_water.Text = list[0].Quantity.ToString();
+                label_inventory_Soda.Text = list[1].Quantity.ToString();
+                label_inventory_Beer.Text = list[2].Quantity.ToString();
+                label_inventory_Monster.Text = list[3].Quantity.ToString();
+                label_inventory_Nachos.Text = list[4].Quantity.ToString();
+                label_inventory_Burguer.Text = list[5].Quantity.ToString();
+                label_inventory_Ramen.Text = list[6].Quantity.ToString();
+            }
         }
 
         private void button_inventory_ReturnToMyMonster_Click(object sender, EventArgs e)
@@ -101,6 +110,7 @@ namespace Monster.UI
             if (State is GameState game)
             {
                 game.UseItemAtIndex(0);
+                UpdateInventory();
             }
         }
 
@@ -109,6 +119,7 @@ namespace Monster.UI
             if (State is GameState game)
             {
                 game.UseItemAtIndex(1);
+                UpdateInventory();
             }
         }
 
@@ -117,6 +128,7 @@ namespace Monster.UI
             if (State is GameState game)
             {
                 game.UseItemAtIndex(2);
+                UpdateInventory();
             }
         }
 
@@ -125,6 +137,7 @@ namespace Monster.UI
             if (State is GameState game)
             {
                 game.UseItemAtIndex(3);
+                UpdateInventory();
             }
         }
 
@@ -133,6 +146,7 @@ namespace Monster.UI
             if (State is GameState game)
             {
                 game.UseItemAtIndex(4);
+                UpdateInventory();
             }
         }
 
@@ -141,6 +155,7 @@ namespace Monster.UI
             if (State is GameState game)
             {
                 game.UseItemAtIndex(5);
+                UpdateInventory();
             }
         }
 
@@ -149,6 +164,7 @@ namespace Monster.UI
             if (State is GameState game)
             {
                 game.UseItemAtIndex(6);
+                UpdateInventory();
             }
         }
     }

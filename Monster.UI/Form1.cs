@@ -152,8 +152,12 @@ namespace Monster.UI
                     {
                         inventoryControl.bsDataSource = _gameState.ActiveMonster;
                         inventoryControl.State = _gameState;
+                        if (_gameState.Inventory == null || _gameState.Inventory.Count == 0)
+                        {
+                            _gameState.Inventory = inventoryControl.InitializeInventory();
+                        }
                         inventoryControl.bsInventory = _gameState.Inventory;
-                        _gameState.Inventory = inventoryControl.InitializeInventory();
+                        inventoryControl.HookBindings();
                         inventoryControl.HookBindings();
                     }
                     break;
