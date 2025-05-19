@@ -206,6 +206,7 @@ namespace Monster.UI
 
                 case "MemoryGame":
                     var memoryGame = control as memoryGame;
+                    _gameState.ActiveMonster.Stamina -= 25;
                     memoryGame.StartGame();
                     break;
             }
@@ -305,6 +306,25 @@ namespace Monster.UI
         public void AddExperience(int amount)
         {
             _gameState.AddExperience(amount);
+        }
+
+        public void MemoryReward()
+        {
+            if (_gameState.Inventory == null || _gameState.Inventory.Count == 0)
+            {
+                MessageBox.Show("No items in inventory to reward.", "Memory Reward", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            Random rand = new Random();
+            int itemIndex = rand.Next(0, Math.Min(7, _gameState.Inventory.Count));
+            var item = _gameState.Inventory[itemIndex];
+            string itemName = item.Name;
+            int rewardAmount = rand.Next(1, 4);
+
+            item.Quantity += rewardAmount;
+
+            MessageBox.Show($"Congratulations! You won {rewardAmount}x {itemName}!", "Memory Reward", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

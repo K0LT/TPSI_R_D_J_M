@@ -29,21 +29,19 @@ namespace Monster.UI
 
 
             string[] monsterKeys = {
-    "draco",
-    "grifo",
-    "siren",
-    "tauro",
-    "egggrifo",
-    "eggsiren",
-    "eggdraco",
-    "eggtauro"
-  };
+                "draco",
+                "grifo",
+                "siren",
+                "tauro",
+                "egggrifo",
+                "eggsiren",
+                "eggdraco",
+                "eggtauro"
+             };
 
             cardImages = new List<Image>();
-            cardImages.AddRange(monsterKeys
-                                .Select(k => (Image)res.GetObject(k)));
+            cardImages.AddRange(monsterKeys.Select(k => (Image)res.GetObject(k)));
 
-            
             backImage = (Image)res.GetObject("verso");
         }
 
@@ -134,8 +132,9 @@ namespace Monster.UI
                     {
                         gameTimer.Stop();
                         flipBackTimer.Stop();
-                        MessageBox.Show("You won!", "End Game",
-                                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ParentForm.MemoryReward();
+                        //MessageBox.Show("You won!", "End Game",
+                        //                MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ParentForm?.NavigateTo("Monster");
                     }
                 }
