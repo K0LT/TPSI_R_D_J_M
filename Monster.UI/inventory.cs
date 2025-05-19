@@ -34,7 +34,6 @@ namespace Monster.UI
             set => _bsInventory.DataSource = value;
         }
 
-        private Form1 ParentForm => this.FindForm() as Form1;
         public object bsDataSource
         {
             get => _bsMonster.DataSource;

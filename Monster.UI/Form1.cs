@@ -18,7 +18,7 @@ namespace Monster.UI
         // Dictionary to track all our UserControls
         private Dictionary<string, UserControl> _userControls = new Dictionary<string, UserControl>();
         private bool _isNewUser = true;
-
+        public bool InventoryVisited = false;
         public Form1()
         {
             System.Diagnostics.Debug.WriteLine(@"[DEBUG-Form1] Constructor Call");
@@ -30,7 +30,7 @@ namespace Monster.UI
             InitializeUserControls();
             System.Diagnostics.Debug.WriteLine(@"Initialize User Controlls Call Passed.");
 
-            _gameState.OwnedMonsters.Add(_gameState.ActiveMonster);
+            InitState();
 
             // Set up global binding sources
             SetupBindings(_gameState, _bsMonster, _bsUser);
@@ -39,6 +39,12 @@ namespace Monster.UI
 
             // Show initial UserControl
             NavigateTo("MainMenu");
+
+        }
+
+        public void InitState()
+        {
+            _gameState.OwnedMonsters.Add(_gameState.ActiveMonster);
 
         }
 
@@ -159,7 +165,7 @@ namespace Monster.UI
                         }
                         inventoryControl.bsInventory = _gameState.Inventory;
                         inventoryControl.HookBindings();
-                        inventoryControl.HookBindings();
+                        InventoryVisited = true;
                     }
                     break;
 

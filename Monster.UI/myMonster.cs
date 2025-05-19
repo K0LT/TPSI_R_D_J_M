@@ -17,7 +17,6 @@ namespace Monster.UI
     {
         private BindingSource _bsMonster;
 
-
         private Form1 ParentForm => this.FindForm() as Form1;
         public object bsDataSource
         {
@@ -112,15 +111,20 @@ namespace Monster.UI
 
         private void button_myMonster_MiniGames_Click(object sender, EventArgs e)
         {
-            if(bsDataSource is MonsterClass monster)
+            if (ParentForm.InventoryVisited)
             {
-                if(monster.Stamina < 25)
+                if (bsDataSource is MonsterClass monster)
                 {
-                    MessageBox.Show("Not enough stamina!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    if (monster.Stamina < 25)
+                    {
+                        MessageBox.Show("Not enough stamina!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    else ParentForm.NavigateTo("MiniGames");
                 }
-                else ParentForm.NavigateTo("MiniGames");
             }
+            else MessageBox.Show("Please visit your inventory first!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return;
         }
 
 
