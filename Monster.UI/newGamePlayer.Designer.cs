@@ -65,12 +65,13 @@
             // textBox_newGamePlayer_InputForUsername
             // 
             textBox_newGamePlayer_InputForUsername.Cursor = Cursors.IBeam;
-            textBox_newGamePlayer_InputForUsername.Font = new Font("VCR OSD Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox_newGamePlayer_InputForUsername.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox_newGamePlayer_InputForUsername.Location = new Point(140, 22);
             textBox_newGamePlayer_InputForUsername.Name = "textBox_newGamePlayer_InputForUsername";
-            textBox_newGamePlayer_InputForUsername.Size = new Size(183, 26);
+            textBox_newGamePlayer_InputForUsername.Size = new Size(183, 29);
             textBox_newGamePlayer_InputForUsername.TabIndex = 1;
             textBox_newGamePlayer_InputForUsername.TextChanged += textBox_newGamePlayer_InputForUsername_TextChanged;
+            textBox_newGamePlayer_InputForUsername.KeyDown += textBox_newGamePlayer_InputForUsername_KeyDown;
             // 
             // pictureBox1
             // 
@@ -115,7 +116,7 @@
             // 
             button_newGamePlayer_ChooseFemale.Cursor = Cursors.Hand;
             button_newGamePlayer_ChooseFemale.FlatStyle = FlatStyle.Flat;
-            button_newGamePlayer_ChooseFemale.Font = new Font("VCR OSD Mono", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button_newGamePlayer_ChooseFemale.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button_newGamePlayer_ChooseFemale.Image = (Image)resources.GetObject("button_newGamePlayer_ChooseFemale.Image");
             button_newGamePlayer_ChooseFemale.Location = new Point(94, 358);
             button_newGamePlayer_ChooseFemale.Name = "button_newGamePlayer_ChooseFemale";
@@ -131,7 +132,7 @@
             button_newGamePlayer_ChooseMale.BackgroundImageLayout = ImageLayout.Center;
             button_newGamePlayer_ChooseMale.Cursor = Cursors.Hand;
             button_newGamePlayer_ChooseMale.FlatStyle = FlatStyle.Flat;
-            button_newGamePlayer_ChooseMale.Font = new Font("VCR OSD Mono", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button_newGamePlayer_ChooseMale.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button_newGamePlayer_ChooseMale.Image = (Image)resources.GetObject("button_newGamePlayer_ChooseMale.Image");
             button_newGamePlayer_ChooseMale.Location = new Point(259, 358);
             button_newGamePlayer_ChooseMale.Name = "button_newGamePlayer_ChooseMale";
@@ -145,7 +146,7 @@
             // 
             button_newGamePlayer_ChooseOther.Cursor = Cursors.Hand;
             button_newGamePlayer_ChooseOther.FlatStyle = FlatStyle.Flat;
-            button_newGamePlayer_ChooseOther.Font = new Font("VCR OSD Mono", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button_newGamePlayer_ChooseOther.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button_newGamePlayer_ChooseOther.Image = (Image)resources.GetObject("button_newGamePlayer_ChooseOther.Image");
             button_newGamePlayer_ChooseOther.Location = new Point(410, 358);
             button_newGamePlayer_ChooseOther.Name = "button_newGamePlayer_ChooseOther";
@@ -180,11 +181,11 @@
             // 
             selectPlayerLabel.AutoSize = true;
             selectPlayerLabel.BackColor = Color.Transparent;
-            selectPlayerLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            selectPlayerLabel.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             selectPlayerLabel.ForeColor = Color.DarkGoldenrod;
             selectPlayerLabel.Location = new Point(45, 58);
             selectPlayerLabel.Name = "selectPlayerLabel";
-            selectPlayerLabel.Size = new Size(521, 64);
+            selectPlayerLabel.Size = new Size(410, 73);
             selectPlayerLabel.TabIndex = 15;
             selectPlayerLabel.Text = "Select Player";
             // 

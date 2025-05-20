@@ -58,9 +58,20 @@ namespace Monster.UI
 
         }
 
+
+
         private void textBox_newGamePlayer_InputForUsername_TextChanged(object sender, EventArgs e)
         {
             // Designer breaks on removal
+        }
+        private void textBox_newGamePlayer_InputForUsername_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button_newGamePlayer_RegisterText_Click(sender, e);
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
         }
     }
 }

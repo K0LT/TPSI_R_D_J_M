@@ -90,19 +90,27 @@ namespace Monster.UI
                 "Skip Tutorial",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
-          
+
             if (result == DialogResult.Yes)
             {
-              
+
                 ParentForm.NavigateTo("Monster");
             }
             else
             {
-             
+
                 ParentForm.NavigateTo("Tutorial1");
             }
         }
 
-
+        private void textBox_newGameMonster_InputUsername_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                label2_newGameMonster_Next_Click(sender, e);
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
+        }
     }
 }

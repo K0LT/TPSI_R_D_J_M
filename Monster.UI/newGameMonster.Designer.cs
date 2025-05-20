@@ -96,13 +96,14 @@
             // textBox_newGameMonster_InputUsername
             // 
             textBox_newGameMonster_InputUsername.BackColor = SystemColors.Control;
-            textBox_newGameMonster_InputUsername.Font = new Font("VCR OSD Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox_newGameMonster_InputUsername.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox_newGameMonster_InputUsername.ForeColor = SystemColors.MenuText;
             textBox_newGameMonster_InputUsername.Location = new Point(174, 37);
             textBox_newGameMonster_InputUsername.Name = "textBox_newGameMonster_InputUsername";
             textBox_newGameMonster_InputUsername.ScrollBars = ScrollBars.Horizontal;
-            textBox_newGameMonster_InputUsername.Size = new Size(172, 26);
+            textBox_newGameMonster_InputUsername.Size = new Size(172, 29);
             textBox_newGameMonster_InputUsername.TabIndex = 13;
+            textBox_newGameMonster_InputUsername.KeyDown += textBox_newGameMonster_InputUsername_KeyDown;
             // 
             // label2_newGameMonster_Next
             // 
@@ -143,7 +144,7 @@
             // 
             // label1
             // 
-            label1.Font = new Font("VCR OSD Mono", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Image = (Image)resources.GetObject("label1.Image");
             label1.Location = new Point(44, 28);
             label1.Name = "label1";
