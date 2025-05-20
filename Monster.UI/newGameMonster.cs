@@ -15,7 +15,7 @@ namespace Monster.UI
     {
         private Form1 ParentForm => this.FindForm() as Form1;
 
-        public MonsterClass? newMonster = new MonsterClass();
+        public MonsterClass? newMonster;
 
         public newGameMonster()
         {
@@ -24,18 +24,21 @@ namespace Monster.UI
 
         private void button_newGameMonster_Draco_Click(object sender, EventArgs e)
         {
+            newMonster = new MonsterClass();
             newMonster.Type = "draco";
             panelNewMonsterName.Visible = true;
         }
 
         private void button_newGameMonster_Grifo_Click(object sender, EventArgs e)
         {
+            newMonster = new MonsterClass();
             newMonster.Type = "grifo";
             panelNewMonsterName.Visible = true;
 
         }
         private void button_newGame_Monster_Tauro_Click(object sender, EventArgs e)
         {
+            newMonster = new MonsterClass();
             newMonster.Type = "tauro"; ;
             panelNewMonsterName.Visible = true;
         }
@@ -43,6 +46,7 @@ namespace Monster.UI
 
         private void button_newGameMonster_Siren_Click(object sender, EventArgs e)
         {
+            newMonster = new MonsterClass();
             newMonster.Type = "siren";
             panelNewMonsterName.Visible = true;
 

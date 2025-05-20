@@ -39,6 +39,7 @@ namespace Monster.Game.GameState
             }
         }
         public List<MonsterClass>? OwnedMonsters { get; set; } = new List<MonsterClass>();
+
         public List<Item> Inventory { get; set; } = new List<Item> { };
 
         public int Currency { get; set; }

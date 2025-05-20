@@ -40,7 +40,6 @@ namespace Monster.UI
 
         public void InitState()
         {
-            //_gameState.OwnedMonsters.Add(_gameState.ActiveMonster);
             _gameState.InventoryVisited = false;
         }
 
@@ -144,7 +143,6 @@ namespace Monster.UI
                             NavigateTo("LoadGame");
                             return;
                         }
-                        // Update with latest monster data
                         monsterControl.bsDataSource = _gameState.ActiveMonster;
                         monsterControl.HookBindings();
                     }
@@ -169,33 +167,8 @@ namespace Monster.UI
                     var playerControl = control as playerMenu;
                     if (playerControl != null)
                     {
-                        int count = _gameState.OwnedMonsters.Count;
-                        switch (count)
-                        {
-                            default:
-                                // TODO: Add try-catch block
-                                throw new Exception("EMPTY_MONSTER_COLLECTION");
-                                break;
-                            case 1:
-                                playerControl.bsFirstMonster = _gameState.OwnedMonsters.ElementAt(0);
-                                break;
-                            case 2:
-                                playerControl.bsFirstMonster = _gameState.OwnedMonsters.ElementAt(0);
-                                playerControl.bsSecondMonster = _gameState.OwnedMonsters.ElementAt(1);
-                                break;
-                            case 3:
-                                playerControl.bsFirstMonster = _gameState.OwnedMonsters.ElementAt(0);
-                                playerControl.bsSecondMonster = _gameState.OwnedMonsters.ElementAt(1);
-                                playerControl.bsThirdMonster = _gameState.OwnedMonsters.ElementAt(2);
-                                break;
-                            case 4:
-                                playerControl.bsFirstMonster = _gameState.OwnedMonsters.ElementAt(0);
-                                playerControl.bsSecondMonster = _gameState.OwnedMonsters.ElementAt(1);
-                                playerControl.bsThirdMonster = _gameState.OwnedMonsters.ElementAt(2);
-                                playerControl.bsFourthMonster = _gameState.OwnedMonsters.ElementAt(3);
-                                break;
-                        }
                         playerControl.bsUser = _gameState.CurrentUser;
+                        playerControl.OwnedMonstersRef = _gameState.OwnedMonsters;
                         playerControl.HookBindings();
                     }
                     break;
@@ -242,7 +215,15 @@ namespace Monster.UI
             myMonsterControl.HookBindings();
         }
 
+        public void SetActiveMonster(int index)
+        {
+            _gameState.ActiveMonster = _gameState.OwnedMonsters.ElementAt(index);
+        }
 
+        public List<MonsterClass> GetOwnedMonsters()
+        {
+            return _gameState.OwnedMonsters;
+        }
         public void SaveGame(bool silentSave = false)
         {
             try

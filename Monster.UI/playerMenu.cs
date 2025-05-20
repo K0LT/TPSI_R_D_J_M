@@ -1,4 +1,5 @@
 ﻿using Monster.Core.Models;
+using Monster.UI.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,110 +24,114 @@ namespace Monster.UI
             set => _bsUser.DataSource = value;
         }
 
-        private Form1 ParentForm => this.FindForm() as Form1;
-
-        private BindingSource _bsFirstMonster = new BindingSource();
-        private BindingSource _bsSecondMonster = new BindingSource();
-        private BindingSource _bsThirdMonster = new BindingSource();
-        private BindingSource _bsFourthMonster = new BindingSource();
-
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public object bsFirstMonster
+        public List<MonsterClass> OwnedMonstersRef
         {
-            get => _bsFirstMonster.DataSource;
-            set => _bsFirstMonster.DataSource = value ?? _bsFirstMonster;
-        }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public object bsSecondMonster
-        {
-            get => _bsSecondMonster.DataSource;
-            set => _bsSecondMonster.DataSource = value ?? _bsSecondMonster;
-        }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public object bsThirdMonster
-        {
-            get => _bsThirdMonster.DataSource;
-            set => _bsThirdMonster.DataSource = value ?? _bsThirdMonster;
-        }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public object bsFourthMonster
-        {
-            get => _bsFourthMonster.DataSource;
-            set => _bsFourthMonster.DataSource = value ?? _bsFourthMonster;
+            get;
+            set;
         }
 
         public playerMenu(string userType)
         {
             InitializeComponent();
-            HideControls();
         }
 
         public void HideControls()
         {
-            label_playerMenu_Slot2.Hide();
-            label_playerMenu_Slot3.Hide();
-            label_playerMenu_Slot4.Hide();
-            progressBar_playerMenu_Slot2.Hide();
-            progressBar_playerMenu_Slot3.Hide();
-            progressBar_playerMenu_Slot4.Hide();
-            button_playerMenu_ChangeSlot2.Hide();
-            button_playerMenu_ChangeSlot3.Hide();
-            button_playerMenu_ChangeSlot4.Hide();
-            pictureBox_playerMenu_Slot2.Hide();
-            pictureBox_playerMenu_Slot3.Hide();
-            pictureBox_playerMenu_Slot4.Hide();
+            Slot2Label.Hide();
+            Slot3Label.Hide();
+            Slot4Label.Hide();
+            Slot3ProgressBar.Hide();
+            Slot2ProgressBar.Hide();
+            Slot4ProgressBar.Hide();
+            Slot2Button.Hide();
+            Slot3Button.Hide();
+            Slot4Button.Hide();
+            Slot3PictureBox.Hide();
+            Slot2PictureBox.Hide();
+            Slot4PictureBox.Hide();
         }
 
         public void HookBindings()
         {
             HideControls();
 
-            if (bsFirstMonster != null)
-            {
-                pictureBox_playerMenu_Slot1.DataBindings.Clear();
-                pictureBox_playerMenu_Slot1.DataBindings.Add(nameof(PictureBox.Image), bsFirstMonster, nameof(MonsterClass.MonsterIcon));
-
-            }
-            if (bsSecondMonster != null)
-            {
-                pictureBox_playerMenu_Slot2.DataBindings.Clear();
-
-                pictureBox_playerMenu_Slot2.DataBindings.Add(nameof(PictureBox.Image), bsSecondMonster, nameof(MonsterClass.MonsterIcon));
-
-                label_playerMenu_Slot2.Show();
-                progressBar_playerMenu_Slot2.Show();
-                button_playerMenu_ChangeSlot2.Show();
-                pictureBox_playerMenu_Slot2.Show();
-
-            }
-            if (bsThirdMonster != null)
-            {
-                pictureBox_playerMenu_Slot3.DataBindings.Clear();
-
-                pictureBox_playerMenu_Slot3.DataBindings.Add(nameof(PictureBox.Image), bsThirdMonster, nameof(MonsterClass.MonsterIcon));
-
-                label_playerMenu_Slot3.Show();
-                progressBar_playerMenu_Slot3.Show();
-                button_playerMenu_ChangeSlot3.Show();
-                pictureBox_playerMenu_Slot3.Show();
-
-            }
-            if (bsFourthMonster != null)
-            {
-                pictureBox_playerMenu_Slot4.DataBindings.Clear();
-
-                pictureBox_playerMenu_Slot4.DataBindings.Add(nameof(PictureBox.Image), bsFourthMonster, nameof(MonsterClass.MonsterIcon));
-
-                label_playerMenu_Slot4.Show();
-                progressBar_playerMenu_Slot4.Show();
-                button_playerMenu_ChangeSlot4.Show();
-                pictureBox_playerMenu_Slot4.Show();
-
-            }
             usernamePlayerMenuLabel.DataBindings.Clear();
             usernamePlayerMenuLabel.DataBindings.Add(nameof(Label.Text), bsUser, nameof(User.Username));
 
+            ShowControls();
+
             ApplyUserTypeImage();
+        }
+
+        private void ShowControls()
+        {
+            switch (OwnedMonstersRef.Count())
+            {
+                case 1:
+                    Slot1ProgressBar.Value = OwnedMonstersRef.ElementAt(0).HealthPoints;
+                    Slot1PictureBox.Image = OwnedMonstersRef.ElementAt(0).MonsterIcon;
+                    Slot1Label.Text = OwnedMonstersRef.ElementAt(0).Name;
+                    break;
+                case 2:
+                    Slot1ProgressBar.Value = OwnedMonstersRef.ElementAt(0).HealthPoints;
+                    Slot1PictureBox.Image = OwnedMonstersRef.ElementAt(0).MonsterIcon;
+                    Slot1Label.Text = OwnedMonstersRef.ElementAt(0).Name;
+                    Slot2Label.Show();
+                    Slot2Label.Text = OwnedMonstersRef.ElementAt(1).Name;
+                    Slot2ProgressBar.Show();
+                    Slot2ProgressBar.Value = OwnedMonstersRef.ElementAt(1).HealthPoints;
+                    Slot2Button.Show();
+                    Slot2PictureBox.Show();
+                    Slot2PictureBox.Image = OwnedMonstersRef.ElementAt(1).MonsterIcon;
+                    break;
+                case 3:
+                    Slot1ProgressBar.Value = OwnedMonstersRef.ElementAt(0).HealthPoints;
+                    Slot1PictureBox.Image = OwnedMonstersRef.ElementAt(0).MonsterIcon;
+                    Slot1Label.Text = OwnedMonstersRef.ElementAt(0).Name;
+                    Slot2Label.Show();
+                    Slot2Label.Text = OwnedMonstersRef.ElementAt(1).Name;
+                    Slot2ProgressBar.Show();
+                    Slot2ProgressBar.Value = OwnedMonstersRef.ElementAt(1).HealthPoints;
+                    Slot2Button.Show();
+                    Slot2PictureBox.Show();
+                    Slot2PictureBox.Image = OwnedMonstersRef.ElementAt(1).MonsterIcon;
+                    Slot3Label.Show();
+                    Slot3Label.Text = OwnedMonstersRef.ElementAt(2).Name;
+                    Slot3ProgressBar.Show();
+                    Slot3ProgressBar.Value = OwnedMonstersRef.ElementAt(2).HealthPoints;
+                    Slot3Button.Show();
+                    Slot3PictureBox.Show();
+                    Slot3PictureBox.Image = OwnedMonstersRef.ElementAt(2).MonsterIcon;
+                    break;
+                case 4:
+                    Slot1ProgressBar.Value = OwnedMonstersRef.ElementAt(0).HealthPoints;
+                    Slot1PictureBox.Image = OwnedMonstersRef.ElementAt(0).MonsterIcon;
+                    Slot1Label.Text = OwnedMonstersRef.ElementAt(0).Name;
+                    Slot2Label.Show();
+                    Slot2Label.Text = OwnedMonstersRef.ElementAt(1).Name;
+                    Slot2ProgressBar.Show();
+                    Slot2ProgressBar.Value = OwnedMonstersRef.ElementAt(1).HealthPoints;
+                    Slot2Button.Show();
+                    Slot2PictureBox.Show();
+                    Slot2PictureBox.Image = OwnedMonstersRef.ElementAt(1).MonsterIcon;
+                    Slot3Label.Show();
+                    Slot3Label.Text = OwnedMonstersRef.ElementAt(2).Name;
+                    Slot3ProgressBar.Show();
+                    Slot3ProgressBar.Value = OwnedMonstersRef.ElementAt(2).HealthPoints;
+                    Slot3Button.Show();
+                    Slot3PictureBox.Show();
+                    Slot3PictureBox.Image = OwnedMonstersRef.ElementAt(2).MonsterIcon;
+                    Slot4Label.Show();
+                    Slot4Label.Text = OwnedMonstersRef.ElementAt(2).Name;
+                    Slot4ProgressBar.Show();
+                    Slot4ProgressBar.Value = OwnedMonstersRef.ElementAt(3).HealthPoints;
+                    Slot4Button.Show();
+                    Slot4PictureBox.Show();
+                    Slot4PictureBox.Image = OwnedMonstersRef.ElementAt(3).MonsterIcon;
+                    break;
+                default:
+                    break;
+            }
         }
 
 
@@ -158,27 +163,32 @@ namespace Monster.UI
 
         private void button_playerMenu_ChangeMonsterSlot1_Click(object sender, EventArgs e)
         {
+            Form1 ParentForm = this.FindForm() as Form1;
+            ParentForm.SetActiveMonster(0);
+        }
 
-            //ParentForm.SetActiveMonster(0);
+        private void button_playerMenu_ChangeSlot2_Click(object sender, EventArgs e)
+        {
+            Form1 ParentForm = this.FindForm() as Form1;
+            ParentForm.SetActiveMonster(1);
         }
 
         private void button_playerMenu_ChangeSlot4_Click(object sender, EventArgs e)
         {
-
-            //ParentForm.SetActiveMonster(3);
+            Form1 ParentForm = this.FindForm() as Form1;
+            ParentForm.SetActiveMonster(3);
         }
 
         private void button_playerMenu_ReturnToMyMonster_Click(object sender, EventArgs e)
         {
-
+            Form1 ParentForm = this.FindForm() as Form1;
             ParentForm.NavigateTo("Monster");
         }
 
         private void button_PlayerMenu_Exit_Click(object sender, EventArgs e)
         {
+            Form1 ParentForm = this.FindForm() as Form1;
             ParentForm.NavigateTo("Monster");
         }
-
-        
     }
 }

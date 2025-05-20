@@ -137,11 +137,19 @@ namespace Monster.UI
         {
             if(bsDataSource is MonsterClass monster)
             {
-                if(monster.Level >= 20)
+                int totalMonstersLevel = 0;
+                List<MonsterClass> tempOwnedMonsters = ParentForm.GetOwnedMonsters();
+
+                foreach (MonsterClass m in tempOwnedMonsters)
+                {
+                    totalMonstersLevel += m.Level;
+                }
+                if (totalMonstersLevel >= tempOwnedMonsters.Count() * 10)
                 {
                     ParentForm.NavigateTo("NewMonster");
                 }
-                else MessageBox.Show("Your monster needs to be level 20 or higher!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else 
+                  MessageBox.Show($"You need a total Monster level of {tempOwnedMonsters.Count() * 10} to acquire another Monster!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
