@@ -12,12 +12,13 @@ namespace Monster.Core.Models
 
         private string _name = "";
         private string _type = "draco";
-        private int _healthPoints = 50;
+        private int _healthPoints = 100;
         private int _experiencePoints = 0;
-        private int _level = 21;
-        private int _stamina = 50;
+        private int _level = 1;
+        private int _stamina = 100;
         private Image _monsterImage;
         private Image _monsterIcon;
+
         public MonsterClass()
         {
             //var stackTrace = new StackTrace(true);
@@ -118,7 +119,6 @@ namespace Monster.Core.Models
             string iconName = $"{type}_icon";
 
             System.Diagnostics.Debug.WriteLine("UpdateMonsterImage call! iconName: " + iconName + " | resourceName: " + resourceName);
-            // TODO: Add monster images as Monster.Core resources
             var imageObj = monsterImages.ResourceManager.GetObject(resourceName);
             var iconObj = monsterImages.ResourceManager.GetObject(iconName);
             //Default
@@ -167,6 +167,8 @@ namespace Monster.Core.Models
                 }
             }
         }
+
+
 
         private Image ConvertByteArrayToImage(byte[] bytes)
         {

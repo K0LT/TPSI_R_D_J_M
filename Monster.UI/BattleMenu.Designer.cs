@@ -54,6 +54,7 @@
             // pictureBox_miniGames_Memory
             // 
             pictureBox_miniGames_Memory.BackColor = Color.Transparent;
+            pictureBox_miniGames_Memory.Cursor = Cursors.Hand;
             pictureBox_miniGames_Memory.Image = (Image)resources.GetObject("pictureBox_miniGames_Memory.Image");
             pictureBox_miniGames_Memory.Location = new Point(36, 230);
             pictureBox_miniGames_Memory.Name = "pictureBox_miniGames_Memory";
@@ -65,6 +66,7 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(308, 230);
             pictureBox1.Name = "pictureBox1";
@@ -101,6 +103,7 @@
             // 
             button_Battle_Exit.BackColor = Color.Transparent;
             button_Battle_Exit.BackgroundImage = (Image)resources.GetObject("button_Battle_Exit.BackgroundImage");
+            button_Battle_Exit.Cursor = Cursors.Hand;
             button_Battle_Exit.FlatAppearance.BorderSize = 0;
             button_Battle_Exit.FlatStyle = FlatStyle.Flat;
             button_Battle_Exit.Location = new Point(555, 0);

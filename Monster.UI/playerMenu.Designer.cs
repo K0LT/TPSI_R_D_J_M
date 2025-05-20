@@ -33,10 +33,10 @@
             label_playerMenu_Slot3 = new Label();
             label_playerMenu_Slot2 = new Label();
             label_playerMenu_Slot1 = new Label();
-            progressBar_playerMenu_Slot4 = new ProgressBar();
-            progressBar_playerMenu_Slot3 = new ProgressBar();
-            progressBar_playerMenu_Slot2 = new ProgressBar();
-            progressBar_playerMenu_Slot1 = new ProgressBar();
+            progressBar_playerMenu_Slot4 = new GoldProgressBar();
+            progressBar_playerMenu_Slot3 = new GoldProgressBar();
+            progressBar_playerMenu_Slot2 = new GoldProgressBar();
+            progressBar_playerMenu_Slot1 = new GoldProgressBar();
             pictureBox_playerMenu_Slot4 = new PictureBox();
             pictureBox_playerMenu_Slot3 = new PictureBox();
             pictureBox_playerMenu_Slot2 = new PictureBox();
@@ -171,7 +171,6 @@
             // pictureBox_playerMenu
             // 
             pictureBox_playerMenu.BackColor = Color.Transparent;
-            pictureBox_playerMenu.Image = (Image)resources.GetObject("pictureBox_playerMenu.Image");
             pictureBox_playerMenu.Location = new Point(165, 137);
             pictureBox_playerMenu.Name = "pictureBox_playerMenu";
             pictureBox_playerMenu.Size = new Size(300, 300);
@@ -243,15 +242,17 @@
             // 
             // usernamePlayerMenuLabel
             // 
+            usernamePlayerMenuLabel.Anchor = AnchorStyles.None;
             usernamePlayerMenuLabel.AutoSize = true;
             usernamePlayerMenuLabel.BackColor = Color.Transparent;
             usernamePlayerMenuLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             usernamePlayerMenuLabel.ForeColor = Color.DarkGoldenrod;
-            usernamePlayerMenuLabel.Location = new Point(152, 49);
+            usernamePlayerMenuLabel.Location = new Point(148, 32);
             usernamePlayerMenuLabel.Name = "usernamePlayerMenuLabel";
             usernamePlayerMenuLabel.Size = new Size(331, 64);
             usernamePlayerMenuLabel.TabIndex = 21;
             usernamePlayerMenuLabel.Text = "username";
+            usernamePlayerMenuLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button_PlayerMenu_Exit
             // 
@@ -307,10 +308,10 @@
         private Label label_playerMenu_Slot3;
         private Label label_playerMenu_Slot2;
         private Label label_playerMenu_Slot1;
-        private ProgressBar progressBar_playerMenu_Slot4;
-        private ProgressBar progressBar_playerMenu_Slot3;
-        private ProgressBar progressBar_playerMenu_Slot2;
-        private ProgressBar progressBar_playerMenu_Slot1;
+        private GoldProgressBar progressBar_playerMenu_Slot4;
+        private GoldProgressBar progressBar_playerMenu_Slot3;
+        private GoldProgressBar progressBar_playerMenu_Slot2;
+        private GoldProgressBar progressBar_playerMenu_Slot1;
         private PictureBox pictureBox_playerMenu_Slot4;
         private PictureBox pictureBox_playerMenu_Slot3;
         private PictureBox pictureBox_playerMenu_Slot2;

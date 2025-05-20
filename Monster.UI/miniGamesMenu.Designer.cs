@@ -53,6 +53,7 @@
             // 
             button_MiniGames_Exit.BackColor = Color.Transparent;
             button_MiniGames_Exit.BackgroundImage = (Image)resources.GetObject("button_MiniGames_Exit.BackgroundImage");
+            button_MiniGames_Exit.Cursor = Cursors.Hand;
             button_MiniGames_Exit.FlatAppearance.BorderSize = 0;
             button_MiniGames_Exit.FlatStyle = FlatStyle.Flat;
             button_MiniGames_Exit.Location = new Point(555, 0);
@@ -64,19 +65,21 @@
             // 
             // pictureBox_miniGames_Memory
             // 
+            pictureBox_miniGames_Memory.Cursor = Cursors.Hand;
             pictureBox_miniGames_Memory.Image = (Image)resources.GetObject("pictureBox_miniGames_Memory.Image");
             pictureBox_miniGames_Memory.Location = new Point(36, 172);
             pictureBox_miniGames_Memory.Name = "pictureBox_miniGames_Memory";
-            pictureBox_miniGames_Memory.Size = new Size(250, 587);
+            pictureBox_miniGames_Memory.Size = new Size(250, 620);
             pictureBox_miniGames_Memory.TabIndex = 24;
             pictureBox_miniGames_Memory.TabStop = false;
             // 
             // pictureBox_miniGames_ticTac
             // 
+            pictureBox_miniGames_ticTac.Cursor = Cursors.Hand;
             pictureBox_miniGames_ticTac.Image = (Image)resources.GetObject("pictureBox_miniGames_ticTac.Image");
             pictureBox_miniGames_ticTac.Location = new Point(308, 172);
             pictureBox_miniGames_ticTac.Name = "pictureBox_miniGames_ticTac";
-            pictureBox_miniGames_ticTac.Size = new Size(250, 587);
+            pictureBox_miniGames_ticTac.Size = new Size(250, 620);
             pictureBox_miniGames_ticTac.TabIndex = 25;
             pictureBox_miniGames_ticTac.TabStop = false;
             // 

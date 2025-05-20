@@ -143,7 +143,7 @@ namespace Monster.UI
                         pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.girlPlayerPic);
                         break;
                     default:
-                        pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.jonnyBoyPlayerPic);
+                        pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.otherPlayerPic);
                         break;
                 }
             }

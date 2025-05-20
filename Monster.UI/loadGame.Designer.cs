@@ -39,9 +39,10 @@
             // 
             // buttonLoadGameNext
             // 
+            buttonLoadGameNext.Cursor = Cursors.Hand;
             buttonLoadGameNext.FlatStyle = FlatStyle.Flat;
             buttonLoadGameNext.Image = (Image)resources.GetObject("buttonLoadGameNext.Image");
-            buttonLoadGameNext.Location = new Point(258, 508);
+            buttonLoadGameNext.Location = new Point(248, 508);
             buttonLoadGameNext.Name = "buttonLoadGameNext";
             buttonLoadGameNext.Size = new Size(106, 40);
             buttonLoadGameNext.TabIndex = 1;
@@ -82,6 +83,7 @@
             // 
             button_LoadGame_Exit.BackColor = Color.Transparent;
             button_LoadGame_Exit.BackgroundImage = (Image)resources.GetObject("button_LoadGame_Exit.BackgroundImage");
+            button_LoadGame_Exit.Cursor = Cursors.Hand;
             button_LoadGame_Exit.FlatAppearance.BorderSize = 0;
             button_LoadGame_Exit.FlatStyle = FlatStyle.Flat;
             button_LoadGame_Exit.Location = new Point(555, 0);

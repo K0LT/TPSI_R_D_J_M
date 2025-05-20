@@ -146,13 +146,13 @@
             // 
             button_newGamePlayer_ChooseOther.Cursor = Cursors.Hand;
             button_newGamePlayer_ChooseOther.FlatStyle = FlatStyle.Flat;
-            button_newGamePlayer_ChooseOther.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button_newGamePlayer_ChooseOther.Font = new Font("VCR OSD Mono", 12F);
             button_newGamePlayer_ChooseOther.Image = (Image)resources.GetObject("button_newGamePlayer_ChooseOther.Image");
             button_newGamePlayer_ChooseOther.Location = new Point(410, 358);
             button_newGamePlayer_ChooseOther.Name = "button_newGamePlayer_ChooseOther";
             button_newGamePlayer_ChooseOther.Size = new Size(80, 30);
             button_newGamePlayer_ChooseOther.TabIndex = 12;
-            button_newGamePlayer_ChooseOther.Text = "JonnyBoy";
+            button_newGamePlayer_ChooseOther.Text = "Other";
             button_newGamePlayer_ChooseOther.UseVisualStyleBackColor = true;
             button_newGamePlayer_ChooseOther.Click += button_newGamePlayer_ChooseOther_Click;
             // 

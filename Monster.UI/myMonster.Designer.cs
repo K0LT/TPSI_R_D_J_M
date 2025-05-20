@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(myMonster));
             pictureBox_myMonster_EXPicon = new PictureBox();
             pictureBox_myMonster_STicon = new PictureBox();
-            progressBar_myMonster_EXP = new ProgressBar();
-            progressBar_myMonster_ST = new ProgressBar();
+            progressBar_myMonster_EXP = new GoldProgressBar();
+            progressBar_myMonster_ST = new GoldProgressBar();
             pictureBox_myMonster_HPicon = new PictureBox();
-            progressBar_myMonster_HP = new ProgressBar();
+            progressBar_myMonster_HP = new GoldProgressBar();
             pictureBox_myMonster = new PictureBox();
             button_myMonster_Food = new Button();
             button_myMonster_Sleep = new Button();
@@ -73,6 +73,8 @@
             // 
             // progressBar_myMonster_EXP
             // 
+            progressBar_myMonster_EXP.BackColor = Color.AntiqueWhite;
+            progressBar_myMonster_EXP.ForeColor = Color.Gold;
             progressBar_myMonster_EXP.Location = new Point(134, 575);
             progressBar_myMonster_EXP.Name = "progressBar_myMonster_EXP";
             progressBar_myMonster_EXP.Size = new Size(377, 27);
@@ -80,6 +82,8 @@
             // 
             // progressBar_myMonster_ST
             // 
+            progressBar_myMonster_ST.BackColor = Color.AntiqueWhite;
+            progressBar_myMonster_ST.ForeColor = Color.Gold;
             progressBar_myMonster_ST.Location = new Point(134, 515);
             progressBar_myMonster_ST.Name = "progressBar_myMonster_ST";
             progressBar_myMonster_ST.Size = new Size(377, 27);
@@ -96,6 +100,8 @@
             // 
             // progressBar_myMonster_HP
             // 
+            progressBar_myMonster_HP.BackColor = Color.AntiqueWhite;
+            progressBar_myMonster_HP.ForeColor = Color.Gold;
             progressBar_myMonster_HP.Location = new Point(134, 456);
             progressBar_myMonster_HP.Name = "progressBar_myMonster_HP";
             progressBar_myMonster_HP.Size = new Size(377, 27);
@@ -115,6 +121,7 @@
             // button_myMonster_Food
             // 
             button_myMonster_Food.BackgroundImage = (Image)resources.GetObject("button_myMonster_Food.BackgroundImage");
+            button_myMonster_Food.Cursor = Cursors.Hand;
             button_myMonster_Food.FlatAppearance.BorderSize = 0;
             button_myMonster_Food.FlatStyle = FlatStyle.Flat;
             button_myMonster_Food.Location = new Point(66, 630);
@@ -127,6 +134,7 @@
             // button_myMonster_Sleep
             // 
             button_myMonster_Sleep.BackgroundImage = (Image)resources.GetObject("button_myMonster_Sleep.BackgroundImage");
+            button_myMonster_Sleep.Cursor = Cursors.Hand;
             button_myMonster_Sleep.FlatAppearance.BorderSize = 0;
             button_myMonster_Sleep.FlatStyle = FlatStyle.Flat;
             button_myMonster_Sleep.Location = new Point(155, 630);
@@ -139,6 +147,7 @@
             // button_myMonster_Inventory
             // 
             button_myMonster_Inventory.BackgroundImage = (Image)resources.GetObject("button_myMonster_Inventory.BackgroundImage");
+            button_myMonster_Inventory.Cursor = Cursors.Hand;
             button_myMonster_Inventory.FlatAppearance.BorderSize = 0;
             button_myMonster_Inventory.FlatStyle = FlatStyle.Flat;
             button_myMonster_Inventory.Location = new Point(66, 707);
@@ -151,6 +160,7 @@
             // button_myMonster_Player
             // 
             button_myMonster_Player.BackgroundImage = (Image)resources.GetObject("button_myMonster_Player.BackgroundImage");
+            button_myMonster_Player.Cursor = Cursors.Hand;
             button_myMonster_Player.FlatAppearance.BorderSize = 0;
             button_myMonster_Player.FlatStyle = FlatStyle.Flat;
             button_myMonster_Player.Location = new Point(155, 707);
@@ -163,6 +173,7 @@
             // button_myMonster_Save
             // 
             button_myMonster_Save.BackgroundImage = (Image)resources.GetObject("button_myMonster_Save.BackgroundImage");
+            button_myMonster_Save.Cursor = Cursors.Hand;
             button_myMonster_Save.FlatAppearance.BorderSize = 0;
             button_myMonster_Save.FlatStyle = FlatStyle.Flat;
             button_myMonster_Save.Location = new Point(66, 783);
@@ -175,6 +186,7 @@
             // button_myMonster_ReturnToMainMenu
             // 
             button_myMonster_ReturnToMainMenu.BackgroundImage = (Image)resources.GetObject("button_myMonster_ReturnToMainMenu.BackgroundImage");
+            button_myMonster_ReturnToMainMenu.Cursor = Cursors.Hand;
             button_myMonster_ReturnToMainMenu.FlatAppearance.BorderSize = 0;
             button_myMonster_ReturnToMainMenu.FlatStyle = FlatStyle.Flat;
             button_myMonster_ReturnToMainMenu.Location = new Point(155, 783);
@@ -187,6 +199,7 @@
             // button_myMonster_Battle
             // 
             button_myMonster_Battle.BackgroundImage = (Image)resources.GetObject("button_myMonster_Battle.BackgroundImage");
+            button_myMonster_Battle.Cursor = Cursors.Hand;
             button_myMonster_Battle.FlatAppearance.BorderSize = 0;
             button_myMonster_Battle.FlatStyle = FlatStyle.Flat;
             button_myMonster_Battle.Location = new Point(321, 630);
@@ -199,6 +212,7 @@
             // button_myMonster_MiniGames
             // 
             button_myMonster_MiniGames.BackgroundImage = (Image)resources.GetObject("button_myMonster_MiniGames.BackgroundImage");
+            button_myMonster_MiniGames.Cursor = Cursors.Hand;
             button_myMonster_MiniGames.FlatAppearance.BorderSize = 0;
             button_myMonster_MiniGames.FlatStyle = FlatStyle.Flat;
             button_myMonster_MiniGames.Location = new Point(321, 753);
@@ -212,11 +226,11 @@
             // 
             nameMyMonsterLabel.AutoSize = true;
             nameMyMonsterLabel.BackColor = Color.Transparent;
-            nameMyMonsterLabel.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            nameMyMonsterLabel.Font = new Font("VCR OSD Mono", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             nameMyMonsterLabel.ForeColor = Color.DarkGoldenrod;
             nameMyMonsterLabel.Location = new Point(174, 411);
             nameMyMonsterLabel.Name = "nameMyMonsterLabel";
-            nameMyMonsterLabel.Size = new Size(93, 33);
+            nameMyMonsterLabel.Size = new Size(80, 29);
             nameMyMonsterLabel.TabIndex = 22;
             nameMyMonsterLabel.Text = "Name";
             // 
@@ -224,11 +238,11 @@
             // 
             levelMyMonster.AutoSize = true;
             levelMyMonster.BackColor = Color.Transparent;
-            levelMyMonster.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            levelMyMonster.Font = new Font("VCR OSD Mono", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             levelMyMonster.ForeColor = Color.DarkGoldenrod;
-            levelMyMonster.Location = new Point(432, 411);
+            levelMyMonster.Location = new Point(433, 412);
             levelMyMonster.Name = "levelMyMonster";
-            levelMyMonster.Size = new Size(31, 33);
+            levelMyMonster.Size = new Size(30, 29);
             levelMyMonster.TabIndex = 23;
             levelMyMonster.Text = "#";
             // 
@@ -236,11 +250,11 @@
             // 
             label_MyMonster_LVL.AutoSize = true;
             label_MyMonster_LVL.BackColor = Color.Transparent;
-            label_MyMonster_LVL.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label_MyMonster_LVL.Font = new Font("VCR OSD Mono", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label_MyMonster_LVL.ForeColor = Color.DarkGoldenrod;
-            label_MyMonster_LVL.Location = new Point(351, 411);
+            label_MyMonster_LVL.Location = new Point(351, 412);
             label_MyMonster_LVL.Name = "label_MyMonster_LVL";
-            label_MyMonster_LVL.Size = new Size(61, 33);
+            label_MyMonster_LVL.Size = new Size(81, 29);
             label_MyMonster_LVL.TabIndex = 24;
             label_MyMonster_LVL.Text = "Lvl.";
             // 
@@ -280,9 +294,9 @@
 
         #endregion
         private PictureBox pictureBox_myMonster_HPicon;
-        private ProgressBar progressBar_myMonster_EXP;
-        private ProgressBar progressBar_myMonster_ST;
-        private ProgressBar progressBar_myMonster_HP;
+        private GoldProgressBar progressBar_myMonster_EXP;
+        private GoldProgressBar progressBar_myMonster_ST;
+        private GoldProgressBar progressBar_myMonster_HP;
         private PictureBox pictureBox_myMonster_EXPicon;
         private PictureBox pictureBox_myMonster_STicon;
         private PictureBox pictureBox_myMonster;
@@ -297,5 +311,6 @@
         private Label nameMyMonsterLabel;
         private Label levelMyMonster;
         private Label label_MyMonster_LVL;
+
     }
 }

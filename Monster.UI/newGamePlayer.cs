@@ -35,7 +35,7 @@ namespace Monster.UI
 
         private void button_newGamePlayer_ChooseOther_Click(object sender, EventArgs e)
         {
-            _tempUser.UserType = "jonnyBoy";
+            _tempUser.UserType = "other";
             panelNewUserRegister.Visible = true;
         }
 

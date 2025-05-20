@@ -111,6 +111,7 @@
             // button_Battle_Attack1
             // 
             button_Battle_Attack1.BackgroundImage = (Image)resources.GetObject("button_Battle_Attack1.BackgroundImage");
+            button_Battle_Attack1.Cursor = Cursors.Hand;
             button_Battle_Attack1.FlatStyle = FlatStyle.Flat;
             button_Battle_Attack1.Font = new Font("VCR OSD Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button_Battle_Attack1.Location = new Point(282, 739);
@@ -123,6 +124,7 @@
             // button_Battle_Attack2
             // 
             button_Battle_Attack2.BackgroundImage = (Image)resources.GetObject("button_Battle_Attack2.BackgroundImage");
+            button_Battle_Attack2.Cursor = Cursors.Hand;
             button_Battle_Attack2.FlatStyle = FlatStyle.Flat;
             button_Battle_Attack2.Font = new Font("VCR OSD Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button_Battle_Attack2.Location = new Point(429, 739);
