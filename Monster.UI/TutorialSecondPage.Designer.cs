@@ -36,6 +36,7 @@
             // 
             // button_Tutorial2_Next
             // 
+            button_Tutorial2_Next.Cursor = Cursors.Hand;
             button_Tutorial2_Next.FlatStyle = FlatStyle.Flat;
             button_Tutorial2_Next.Image = (Image)resources.GetObject("button_Tutorial2_Next.Image");
             button_Tutorial2_Next.Location = new Point(255, 808);
@@ -48,6 +49,7 @@
             // pictureBox_Tutorial2
             // 
             pictureBox_Tutorial2.BackColor = Color.Transparent;
+            pictureBox_Tutorial2.Image = (Image)resources.GetObject("pictureBox_Tutorial2.Image");
             pictureBox_Tutorial2.Location = new Point(55, 36);
             pictureBox_Tutorial2.Name = "pictureBox_Tutorial2";
             pictureBox_Tutorial2.Size = new Size(500, 750);
