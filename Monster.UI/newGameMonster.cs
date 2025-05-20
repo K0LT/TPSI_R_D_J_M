@@ -13,78 +13,46 @@ namespace Monster.UI
 {
     public partial class newGameMonster : UserControl
     {
-        private BindingSource _bsUser = new BindingSource();
-        private BindingSource _bsMonster = new BindingSource();
         private Form1 ParentForm => this.FindForm() as Form1;
 
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public object bsUser
-        {
-            get => _bsUser;
-            set => _bsUser.DataSource = value;
-        }
-
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public object bsMonster
-        {
-            get => _bsMonster;
-            set => _bsMonster.DataSource = value;
-        }
+        public MonsterClass? newMonster = new MonsterClass();
 
         public newGameMonster()
         {
             InitializeComponent();
         }
 
-
-        public void HookBindings()
-        {
-            textBox_newGameMonster_InputUsername.DataBindings.Clear();
-            textBox_newGameMonster_InputUsername.DataBindings.Add(nameof(TextBox.Text), bsMonster, nameof(MonsterClass.Name), true, DataSourceUpdateMode.OnPropertyChanged);
-        }
         private void button_newGameMonster_Draco_Click(object sender, EventArgs e)
         {
-            UpdateMonsterType("Draco");
+            newMonster.Type = "draco";
             panelNewMonsterName.Visible = true;
         }
 
         private void button_newGameMonster_Grifo_Click(object sender, EventArgs e)
         {
-            UpdateMonsterType("Grifo");
+            newMonster.Type = "grifo";
             panelNewMonsterName.Visible = true;
 
         }
         private void button_newGame_Monster_Tauro_Click(object sender, EventArgs e)
         {
-            UpdateMonsterType("Tauro");
+            newMonster.Type = "tauro"; ;
             panelNewMonsterName.Visible = true;
         }
 
 
         private void button_newGameMonster_Siren_Click(object sender, EventArgs e)
         {
-            UpdateMonsterType("Siren");
+            newMonster.Type = "siren";
             panelNewMonsterName.Visible = true;
 
         }
 
-        private void UpdateMonsterType(string newType)
-        {
-            if (_bsMonster.DataSource is MonsterClass monster)
-            {
-                monster.Type = newType.ToLower();
-            }
-            else
-            {
-                System.Diagnostics.Debug.WriteLine("Binding source is not set or is not a MonsterClass object.");
-            }
-        }
-
         private void label2_newGameMonster_Next_Click(object sender, EventArgs e)
         {
-            textBox_newGameMonster_InputUsername.DataBindings.Clear();
+            newMonster.Name = textBox_newGameMonster_InputUsername.Text;
             textBox_newGameMonster_InputUsername.Clear();
-
+            ParentForm.AddMonster(newMonster);
             DialogResult result = MessageBox.Show(
                 "Do you want to skip the tutorial?",
                 "Skip Tutorial",

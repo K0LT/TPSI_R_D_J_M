@@ -40,7 +40,7 @@ namespace Monster.UI
 
         public void InitState()
         {
-            _gameState.OwnedMonsters.Add(_gameState.ActiveMonster);
+            //_gameState.OwnedMonsters.Add(_gameState.ActiveMonster);
             _gameState.InventoryVisited = false;
         }
 
@@ -200,21 +200,7 @@ namespace Monster.UI
                     }
                     break;
                 case "NewMonster":
-                    var newGameMonster = control as newGameMonster;
-                    if(_gameState.ActiveMonster.Level >= 20)
-                    {
-                        _gameState.OwnedMonsters.Add(new MonsterClass());
-                        _gameState.ActiveMonster = _gameState.OwnedMonsters.ElementAt(_gameState.OwnedMonsters.Count - 1);
-                        _bsMonster.DataSource = _gameState.ActiveMonster;
-                        newGameMonster.bsMonster = _gameState.ActiveMonster;
-                        newGameMonster.HookBindings();
-                    }
-                    if (newGameMonster != null)
-                    {
-                        _bsMonster.DataSource = _gameState.ActiveMonster;
-                        newGameMonster.bsMonster = _bsMonster.DataSource;
-                        newGameMonster.HookBindings();
-                    }
+                    // Nothing for now
                     break;
 
                 case "MemoryGame":
@@ -256,13 +242,7 @@ namespace Monster.UI
             myMonsterControl.HookBindings();
         }
 
-        public void SetUpNewMonsterControlBindings(BindingSource bSource, newGameMonster control, GameState state)
-        {
-            control.bsUser = state.CurrentUser;
-            control.HookBindings();
-        }
 
-        // Event handler for Save button
         public void SaveGame(bool silentSave = false)
         {
             try
@@ -324,9 +304,10 @@ namespace Monster.UI
             }
         }
 
-        public void SetActiveMonster(int index)
+        public void AddMonster(MonsterClass monster)
         {
-            _gameState.ActiveMonster = _gameState.OwnedMonsters.ElementAt(index);
+            _gameState.OwnedMonsters.Add(monster);
+            _gameState.ActiveMonster = monster;
         }
 
         public void AddExperience(int amount)

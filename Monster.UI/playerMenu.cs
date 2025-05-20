@@ -79,6 +79,8 @@ namespace Monster.UI
 
         public void HookBindings()
         {
+            HideControls();
+
             if (bsFirstMonster != null)
             {
                 pictureBox_playerMenu_Slot1.DataBindings.Clear();
@@ -157,13 +159,13 @@ namespace Monster.UI
         private void button_playerMenu_ChangeMonsterSlot1_Click(object sender, EventArgs e)
         {
 
-            ParentForm.SetActiveMonster(0);
+            //ParentForm.SetActiveMonster(0);
         }
 
         private void button_playerMenu_ChangeSlot4_Click(object sender, EventArgs e)
         {
 
-            ParentForm.SetActiveMonster(3);
+            //ParentForm.SetActiveMonster(3);
         }
 
         private void button_playerMenu_ReturnToMyMonster_Click(object sender, EventArgs e)

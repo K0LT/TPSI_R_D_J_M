@@ -14,7 +14,7 @@ namespace Monster.Core.Models
         private string _type = "draco";
         private int _healthPoints = 50;
         private int _experiencePoints = 0;
-        private int _level = 1;
+        private int _level = 21;
         private int _stamina = 50;
         private Image _monsterImage;
         private Image _monsterIcon;
