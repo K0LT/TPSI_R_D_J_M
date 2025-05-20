@@ -37,6 +37,7 @@
             // 
             button_Settings_Exit.BackColor = Color.Transparent;
             button_Settings_Exit.BackgroundImage = (Image)resources.GetObject("button_Settings_Exit.BackgroundImage");
+            button_Settings_Exit.Cursor = Cursors.Hand;
             button_Settings_Exit.FlatAppearance.BorderSize = 0;
             button_Settings_Exit.FlatStyle = FlatStyle.Flat;
             button_Settings_Exit.Location = new Point(555, 0);

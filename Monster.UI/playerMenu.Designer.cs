@@ -102,6 +102,8 @@
             // 
             // progressBar_playerMenu_Slot4
             // 
+            progressBar_playerMenu_Slot4.BackColor = Color.AntiqueWhite;
+            progressBar_playerMenu_Slot4.ForeColor = Color.Gold;
             progressBar_playerMenu_Slot4.Location = new Point(375, 683);
             progressBar_playerMenu_Slot4.Name = "progressBar_playerMenu_Slot4";
             progressBar_playerMenu_Slot4.Size = new Size(198, 23);
@@ -109,6 +111,8 @@
             // 
             // progressBar_playerMenu_Slot3
             // 
+            progressBar_playerMenu_Slot3.BackColor = Color.AntiqueWhite;
+            progressBar_playerMenu_Slot3.ForeColor = Color.Gold;
             progressBar_playerMenu_Slot3.Location = new Point(375, 524);
             progressBar_playerMenu_Slot3.Name = "progressBar_playerMenu_Slot3";
             progressBar_playerMenu_Slot3.Size = new Size(198, 23);
@@ -116,6 +120,8 @@
             // 
             // progressBar_playerMenu_Slot2
             // 
+            progressBar_playerMenu_Slot2.BackColor = Color.AntiqueWhite;
+            progressBar_playerMenu_Slot2.ForeColor = Color.Gold;
             progressBar_playerMenu_Slot2.Location = new Point(76, 683);
             progressBar_playerMenu_Slot2.Name = "progressBar_playerMenu_Slot2";
             progressBar_playerMenu_Slot2.Size = new Size(198, 23);
@@ -123,6 +129,8 @@
             // 
             // progressBar_playerMenu_Slot1
             // 
+            progressBar_playerMenu_Slot1.BackColor = Color.AntiqueWhite;
+            progressBar_playerMenu_Slot1.ForeColor = Color.Gold;
             progressBar_playerMenu_Slot1.Location = new Point(76, 524);
             progressBar_playerMenu_Slot1.Name = "progressBar_playerMenu_Slot1";
             progressBar_playerMenu_Slot1.Size = new Size(198, 23);
@@ -180,6 +188,7 @@
             // 
             // button_playerMenu_ChangeMonsterSlot1
             // 
+            button_playerMenu_ChangeMonsterSlot1.Cursor = Cursors.Hand;
             button_playerMenu_ChangeMonsterSlot1.FlatStyle = FlatStyle.Flat;
             button_playerMenu_ChangeMonsterSlot1.Font = new Font("VCR OSD Mono", 12F);
             button_playerMenu_ChangeMonsterSlot1.Image = (Image)resources.GetObject("button_playerMenu_ChangeMonsterSlot1.Image");
@@ -193,6 +202,7 @@
             // 
             // button_playerMenu_ChangeSlot2
             // 
+            button_playerMenu_ChangeSlot2.Cursor = Cursors.Hand;
             button_playerMenu_ChangeSlot2.FlatStyle = FlatStyle.Flat;
             button_playerMenu_ChangeSlot2.Font = new Font("VCR OSD Mono", 12F);
             button_playerMenu_ChangeSlot2.Image = (Image)resources.GetObject("button_playerMenu_ChangeSlot2.Image");
@@ -205,6 +215,7 @@
             // 
             // button_playerMenu_ChangeSlot3
             // 
+            button_playerMenu_ChangeSlot3.Cursor = Cursors.Hand;
             button_playerMenu_ChangeSlot3.FlatStyle = FlatStyle.Flat;
             button_playerMenu_ChangeSlot3.Font = new Font("VCR OSD Mono", 12F);
             button_playerMenu_ChangeSlot3.Image = (Image)resources.GetObject("button_playerMenu_ChangeSlot3.Image");
@@ -217,6 +228,7 @@
             // 
             // button_playerMenu_ChangeSlot4
             // 
+            button_playerMenu_ChangeSlot4.Cursor = Cursors.Hand;
             button_playerMenu_ChangeSlot4.FlatStyle = FlatStyle.Flat;
             button_playerMenu_ChangeSlot4.Font = new Font("VCR OSD Mono", 12F);
             button_playerMenu_ChangeSlot4.Image = (Image)resources.GetObject("button_playerMenu_ChangeSlot4.Image");
@@ -258,6 +270,7 @@
             // 
             button_PlayerMenu_Exit.BackColor = Color.Transparent;
             button_PlayerMenu_Exit.BackgroundImage = (Image)resources.GetObject("button_PlayerMenu_Exit.BackgroundImage");
+            button_PlayerMenu_Exit.Cursor = Cursors.Hand;
             button_PlayerMenu_Exit.FlatAppearance.BorderSize = 0;
             button_PlayerMenu_Exit.FlatStyle = FlatStyle.Flat;
             button_PlayerMenu_Exit.Location = new Point(555, 0);
