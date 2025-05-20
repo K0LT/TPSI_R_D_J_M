@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -18,6 +19,9 @@ namespace Monster.UI
         private BindingSource _bsMonster;
 
         private Form1 ParentForm => this.FindForm() as Form1;
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+
         public object bsDataSource
         {
             get => _bsMonster.DataSource;
@@ -218,9 +222,8 @@ namespace Monster.UI
             timer.Start();
             countdownForm.ShowDialog();
         }
-
-
-
     }
 }
+
+
 

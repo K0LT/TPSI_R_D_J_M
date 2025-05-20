@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
@@ -22,42 +23,64 @@ namespace Monster.UI
 
         private BindingSource _state = new BindingSource();
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+
         public object State
         {
             get => _state.DataSource;
             set => _state.DataSource = value;
         }
         private BindingSource _bsInventory = new BindingSource();
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+
         public object bsInventory
         {
             get => _bsInventory.DataSource;
             set => _bsInventory.DataSource = value;
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+
         public object bsDataSource
         {
             get => _bsMonster.DataSource;
-            set => _bsMonster.DataSource = value;
+            set
+            {
+                _bsMonster.DataSource = value;
+                UpdateMonsterImageInventory(); // Update the image whenever the data source is set
+            }
+
         }
 
         public inventory()
         {
-            InitializeComponent();
+            InitializeComponent();   
+            UpdateMonsterImageInventory(); // Call to set the default image
+            DesignUI.SetToolTip(pictureBox_inventory_waterIcon, "+10 St.");
+            DesignUI.SetToolTip(pictureBox_inventory_SodaIcon, "+10 EXP");
+            DesignUI.SetToolTip(pictureBox_inventory_BeerIcon, "+20 EXP");
+            DesignUI.SetToolTip(pictureBox_inventory_MonsterIcon, "+20 EXP, HP, St.");
+            DesignUI.SetToolTip(pictureBox_inventory_NachosIcon, "+10 HP");
+            DesignUI.SetToolTip(pictureBox_inventory_BurguerIcon, "+20 HP");
+            DesignUI.SetToolTip(pictureBox_inventory_Ramen, "+20 Stm");
         }
+       
+
 
         public void HookBindings()
         {
             if (!firstHook)
             {
-                pictureBox_inventory_CurrentMonster.DataBindings.Add(nameof(PictureBox.Image), bsDataSource, nameof(MonsterClass.MonsterImage));
-                progressBar_inventory_HP.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource, nameof(MonsterClass.HealthPoints));
-                progressBar_inventory_Stamina.DataBindings.Add(nameof(ProgressBar.Value), bsDataSource, nameof(MonsterClass.Stamina));
-
+                progressBar_inventory_HP.DataBindings.Add(nameof(GoldProgressBar.Value), bsDataSource, nameof(MonsterClass.HealthPoints));
+                progressBar_inventory_Stamina.DataBindings.Add(nameof(GoldProgressBar.Value), bsDataSource, nameof(MonsterClass.Stamina));
                 firstHook = true;
             }
             UpdateInventory();
             return;
         }
+
+        private ToolTip toolTip = new ToolTip();
 
         public List<Item> InitializeInventory()
         {
@@ -72,13 +95,13 @@ namespace Monster.UI
 
             var inventory = new List<Item>
             {
-            new StaminaItem("Water", waterIcon, 10, 3),
+            new StaminaItem("Water", waterIcon, 10, 3), 
+            new StaminaItem("Ramen", ramenIcon, 20, 2),
             new ExperienceItem("Soda", sodaIcon, 10, 2),
-            new ExperienceItem("Beer", beerIcon, 20, 2),
-            new StaminaItem("Energy Drink", energyDrinkIcon, 20, 2),
+            new ExperienceItem("Beer", beerIcon, 20, 2),           
             new HealthItem("Nachos", nachosIcon, 10, 2),
             new HealthItem("Burguer", burguerIcon, 20, 2),
-            new FullRestoreItem("Ramen", ramenIcon, 20, 20, 20, 2)
+            new FullRestoreItem("Energy Drink", energyDrinkIcon, 20, 20, 20, 2)
             };
             return inventory;
         }
@@ -120,6 +143,7 @@ namespace Monster.UI
                 game.UseItemAtIndex(1);
                 UpdateInventory();
             }
+
         }
 
         private void pictureBox_inventory_BeerIcon_Click(object sender, EventArgs e)
@@ -129,6 +153,7 @@ namespace Monster.UI
                 game.UseItemAtIndex(2);
                 UpdateInventory();
             }
+
         }
 
         private void pictureBox_inventory_MonsterIcon_Click(object sender, EventArgs e)
@@ -165,6 +190,57 @@ namespace Monster.UI
                 game.UseItemAtIndex(6);
                 UpdateInventory();
             }
+
         }
+
+
+        private void UpdateMonsterImageInventory()
+        {
+            var myMonster = bsDataSource as Monster.Core.Models.MonsterClass;
+            if (myMonster == null)
+            {
+                pictureBox_inventory_Monster.Image = null; // Clear the image if no monster data
+                return;
+            }
+
+            byte[] imgBytes = null;
+
+            switch (myMonster.Type?.ToLower())
+            {
+                case "draco":
+                    imgBytes = Monster.UI.Properties.Resources.dracoInventory;
+                    break;
+                case "grifo":
+                    imgBytes = Monster.UI.Properties.Resources.grifoInventory;
+                    break;
+                case "tauro":
+                    imgBytes = Monster.UI.Properties.Resources.tauroInventory;
+                    break;
+                case "siren":
+                    imgBytes = Monster.UI.Properties.Resources.sirenInventory;
+                    break;
+                default:
+                    MessageBox.Show("Unknown monster type.");
+                    return;
+            }
+
+            if (imgBytes != null)
+            {
+                try
+                {
+                    using (MemoryStream ms = new MemoryStream(imgBytes))
+                    {
+                        pictureBox_inventory_Monster.Image = Image.FromStream(ms);
+                        pictureBox_inventory_Monster.Invalidate(); // Refresh the PictureBox
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error loading image: {ex.Message}");
+                }
+            }
+        }
+
+
     }
 }

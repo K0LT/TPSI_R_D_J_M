@@ -39,6 +39,7 @@
             // button_mainMenu_NewGame
             // 
             button_mainMenu_NewGame.BackgroundImage = (Image)resources.GetObject("button_mainMenu_NewGame.BackgroundImage");
+            button_mainMenu_NewGame.Cursor = Cursors.Hand;
             button_mainMenu_NewGame.FlatStyle = FlatStyle.Flat;
             button_mainMenu_NewGame.Location = new Point(183, 400);
             button_mainMenu_NewGame.Name = "button_mainMenu_NewGame";
@@ -50,6 +51,7 @@
             // button_mainMenu_LoadGame
             // 
             button_mainMenu_LoadGame.BackgroundImage = (Image)resources.GetObject("button_mainMenu_LoadGame.BackgroundImage");
+            button_mainMenu_LoadGame.Cursor = Cursors.Hand;
             button_mainMenu_LoadGame.FlatStyle = FlatStyle.Flat;
             button_mainMenu_LoadGame.Location = new Point(183, 470);
             button_mainMenu_LoadGame.Name = "button_mainMenu_LoadGame";
@@ -102,6 +104,7 @@
             Controls.Add(button_mainMenu_Credits);
             Controls.Add(button_mainMenu_LoadGame);
             Controls.Add(button_mainMenu_NewGame);
+            Cursor = Cursors.Hand;
             DoubleBuffered = true;
             MaximumSize = new Size(600, 900);
             MinimumSize = new Size(600, 900);

@@ -153,6 +153,7 @@
             // 
             button_Credits_Exit.BackColor = Color.Transparent;
             button_Credits_Exit.BackgroundImage = (Image)resources.GetObject("button_Credits_Exit.BackgroundImage");
+            button_Credits_Exit.Cursor = Cursors.Hand;
             button_Credits_Exit.FlatAppearance.BorderSize = 0;
             button_Credits_Exit.FlatStyle = FlatStyle.Flat;
             button_Credits_Exit.Location = new Point(555, 0);
