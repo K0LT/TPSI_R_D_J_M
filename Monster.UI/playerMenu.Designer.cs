@@ -29,149 +29,156 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(playerMenu));
-            Slot4Label = new Label();
-            Slot3Label = new Label();
-            Slot2Label = new Label();
-            Slot1Label = new Label();
-            Slot4ProgressBar = new ProgressBar();
-            Slot2ProgressBar = new ProgressBar();
-            Slot3ProgressBar = new ProgressBar();
-            Slot1ProgressBar = new ProgressBar();
-            Slot4PictureBox = new PictureBox();
-            Slot2PictureBox = new PictureBox();
-            Slot3PictureBox = new PictureBox();
-            Slot1PictureBox = new PictureBox();
+            label_playerMenu_Slot4 = new Label();
+            label_playerMenu_Slot3 = new Label();
+            label_playerMenu_Slot2 = new Label();
+            label_playerMenu_Slot1 = new Label();
+            progressBar_playerMenu_Slot4 = new GoldProgressBar();
+            progressBar_playerMenu_Slot2 = new GoldProgressBar();
+            progressBar_playerMenu_Slot3 = new GoldProgressBar();
+            progressBar_playerMenu_Slot1 = new GoldProgressBar();
+            pictureBox_playerMenu_Slot4 = new PictureBox();
+            pictureBox_playerMenu_Slot2 = new PictureBox();
+            pictureBox_playerMenu_Slot3 = new PictureBox();
+            pictureBox_playerMenu_Slot1 = new PictureBox();
             pictureBox_playerMenu = new PictureBox();
-            Slot1Button = new Button();
-            Slot2Button = new Button();
-            Slot3Button = new Button();
-            Slot4Button = new Button();
+            button_playerMenu_ChangeMonsterSlot1 = new Button();
+            button_playerMenu_ChangeSlot2 = new Button();
+            button_playerMenu_ChangeSlot3 = new Button();
+            button_playerMenu_ChangeSlot4 = new Button();
             process1 = new System.Diagnostics.Process();
             usernamePlayerMenuLabel = new Label();
             button_PlayerMenu_Exit = new Button();
-            ((System.ComponentModel.ISupportInitialize)Slot4PictureBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Slot2PictureBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Slot3PictureBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Slot1PictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu).BeginInit();
             SuspendLayout();
             // 
-            // Slot4Label
+            // label_playerMenu_Slot4
             // 
-            Slot4Label.AutoSize = true;
-            Slot4Label.BackColor = Color.FromArgb(255, 128, 0);
-            Slot4Label.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Slot4Label.Location = new Point(375, 665);
-            Slot4Label.Name = "Slot4Label";
-            Slot4Label.Size = new Size(36, 15);
-            Slot4Label.TabIndex = 11;
-            Slot4Label.Text = "Slot4";
+            label_playerMenu_Slot4.AutoSize = true;
+            label_playerMenu_Slot4.BackColor = Color.FromArgb(255, 128, 0);
+            label_playerMenu_Slot4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_playerMenu_Slot4.Location = new Point(375, 665);
+            label_playerMenu_Slot4.Name = "label_playerMenu_Slot4";
+            label_playerMenu_Slot4.Size = new Size(36, 15);
+            label_playerMenu_Slot4.TabIndex = 11;
+            label_playerMenu_Slot4.Text = "Slot4";
             // 
-            // Slot3Label
+            // label_playerMenu_Slot3
             // 
-            Slot3Label.AutoSize = true;
-            Slot3Label.BackColor = Color.FromArgb(255, 128, 0);
-            Slot3Label.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Slot3Label.Location = new Point(76, 665);
-            Slot3Label.Name = "Slot3Label";
-            Slot3Label.Size = new Size(36, 15);
-            Slot3Label.TabIndex = 10;
-            Slot3Label.Text = "Slot3";
+            label_playerMenu_Slot3.AutoSize = true;
+            label_playerMenu_Slot3.BackColor = Color.FromArgb(255, 128, 0);
+            label_playerMenu_Slot3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_playerMenu_Slot3.Location = new Point(76, 665);
+            label_playerMenu_Slot3.Name = "label_playerMenu_Slot3";
+            label_playerMenu_Slot3.Size = new Size(36, 15);
+            label_playerMenu_Slot3.TabIndex = 10;
+            label_playerMenu_Slot3.Text = "Slot3";
             // 
-            // Slot2Label
+            // label_playerMenu_Slot2
             // 
-            Slot2Label.AutoSize = true;
-            Slot2Label.BackColor = Color.FromArgb(255, 128, 0);
-            Slot2Label.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Slot2Label.Location = new Point(375, 506);
-            Slot2Label.Name = "Slot2Label";
-            Slot2Label.Size = new Size(36, 15);
-            Slot2Label.TabIndex = 9;
-            Slot2Label.Text = "Slot2";
+            label_playerMenu_Slot2.AutoSize = true;
+            label_playerMenu_Slot2.BackColor = Color.FromArgb(255, 128, 0);
+            label_playerMenu_Slot2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_playerMenu_Slot2.Location = new Point(375, 506);
+            label_playerMenu_Slot2.Name = "label_playerMenu_Slot2";
+            label_playerMenu_Slot2.Size = new Size(36, 15);
+            label_playerMenu_Slot2.TabIndex = 9;
+            label_playerMenu_Slot2.Text = "Slot2";
             // 
-            // Slot1Label
+            // label_playerMenu_Slot1
             // 
-            Slot1Label.AutoSize = true;
-            Slot1Label.BackColor = Color.FromArgb(255, 128, 0);
-            Slot1Label.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Slot1Label.Location = new Point(76, 506);
-            Slot1Label.Name = "Slot1Label";
-            Slot1Label.Size = new Size(36, 15);
-            Slot1Label.TabIndex = 8;
-            Slot1Label.Text = "Slot1";
+            label_playerMenu_Slot1.AutoSize = true;
+            label_playerMenu_Slot1.BackColor = Color.FromArgb(255, 128, 0);
+            label_playerMenu_Slot1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_playerMenu_Slot1.Location = new Point(76, 506);
+            label_playerMenu_Slot1.Name = "label_playerMenu_Slot1";
+            label_playerMenu_Slot1.Size = new Size(36, 15);
+            label_playerMenu_Slot1.TabIndex = 8;
+            label_playerMenu_Slot1.Text = "Slot1";
             // 
-            // Slot4ProgressBar
+            // progressBar_playerMenu_Slot4
             // 
-            Slot4ProgressBar.Location = new Point(375, 683);
-            Slot4ProgressBar.Name = "Slot4ProgressBar";
-            Slot4ProgressBar.Size = new Size(198, 23);
-            Slot4ProgressBar.TabIndex = 7;
+            progressBar_playerMenu_Slot4.BackColor = Color.AntiqueWhite;
+            progressBar_playerMenu_Slot4.ForeColor = Color.Gold;
+            progressBar_playerMenu_Slot4.Location = new Point(375, 683);
+            progressBar_playerMenu_Slot4.Name = "progressBar_playerMenu_Slot4";
+            progressBar_playerMenu_Slot4.Size = new Size(198, 23);
+            progressBar_playerMenu_Slot4.TabIndex = 7;
             // 
-            // Slot2ProgressBar
+            // progressBar_playerMenu_Slot2
             // 
-            Slot2ProgressBar.Location = new Point(375, 524);
-            Slot2ProgressBar.Name = "Slot2ProgressBar";
-            Slot2ProgressBar.Size = new Size(198, 23);
-            Slot2ProgressBar.TabIndex = 6;
+            progressBar_playerMenu_Slot2.BackColor = Color.AntiqueWhite;
+            progressBar_playerMenu_Slot2.ForeColor = Color.Gold;
+            progressBar_playerMenu_Slot2.Location = new Point(375, 524);
+            progressBar_playerMenu_Slot2.Name = "progressBar_playerMenu_Slot2";
+            progressBar_playerMenu_Slot2.Size = new Size(198, 23);
+            progressBar_playerMenu_Slot2.TabIndex = 6;
             // 
-            // Slot3ProgressBar
+            // progressBar_playerMenu_Slot3
             // 
-            Slot3ProgressBar.Location = new Point(76, 683);
-            Slot3ProgressBar.Name = "Slot3ProgressBar";
-            Slot3ProgressBar.Size = new Size(198, 23);
-            Slot3ProgressBar.TabIndex = 5;
+            progressBar_playerMenu_Slot3.BackColor = Color.AntiqueWhite;
+            progressBar_playerMenu_Slot3.ForeColor = Color.Gold;
+            progressBar_playerMenu_Slot3.Location = new Point(76, 683);
+            progressBar_playerMenu_Slot3.Name = "progressBar_playerMenu_Slot3";
+            progressBar_playerMenu_Slot3.Size = new Size(198, 23);
+            progressBar_playerMenu_Slot3.TabIndex = 5;
             // 
-            // Slot1ProgressBar
+            // progressBar_playerMenu_Slot1
             // 
-            Slot1ProgressBar.Location = new Point(76, 524);
-            Slot1ProgressBar.Name = "Slot1ProgressBar";
-            Slot1ProgressBar.Size = new Size(198, 23);
-            Slot1ProgressBar.TabIndex = 4;
+            progressBar_playerMenu_Slot1.BackColor = Color.AntiqueWhite;
+            progressBar_playerMenu_Slot1.ForeColor = Color.Gold;
+            progressBar_playerMenu_Slot1.Location = new Point(76, 524);
+            progressBar_playerMenu_Slot1.Name = "progressBar_playerMenu_Slot1";
+            progressBar_playerMenu_Slot1.Size = new Size(198, 23);
+            progressBar_playerMenu_Slot1.TabIndex = 4;
             // 
-            // Slot4PictureBox
+            // pictureBox_playerMenu_Slot4
             // 
-            Slot4PictureBox.BackColor = Color.Transparent;
-            Slot4PictureBox.Image = (Image)resources.GetObject("Slot4PictureBox.Image");
-            Slot4PictureBox.Location = new Point(328, 669);
-            Slot4PictureBox.Name = "Slot4PictureBox";
-            Slot4PictureBox.Size = new Size(41, 50);
-            Slot4PictureBox.TabIndex = 3;
-            Slot4PictureBox.TabStop = false;
+            pictureBox_playerMenu_Slot4.BackColor = Color.Transparent;
+            pictureBox_playerMenu_Slot4.Image = (Image)resources.GetObject("pictureBox_playerMenu_Slot4.Image");
+            pictureBox_playerMenu_Slot4.Location = new Point(328, 669);
+            pictureBox_playerMenu_Slot4.Name = "pictureBox_playerMenu_Slot4";
+            pictureBox_playerMenu_Slot4.Size = new Size(41, 50);
+            pictureBox_playerMenu_Slot4.TabIndex = 3;
+            pictureBox_playerMenu_Slot4.TabStop = false;
             // 
-            // Slot2PictureBox
+            // pictureBox_playerMenu_Slot2
             // 
-            Slot2PictureBox.BackColor = Color.Transparent;
-            Slot2PictureBox.Image = (Image)resources.GetObject("Slot2PictureBox.Image");
-            Slot2PictureBox.Location = new Point(328, 511);
-            Slot2PictureBox.Name = "Slot2PictureBox";
-            Slot2PictureBox.Size = new Size(41, 50);
-            Slot2PictureBox.TabIndex = 2;
-            Slot2PictureBox.TabStop = false;
+            pictureBox_playerMenu_Slot2.BackColor = Color.Transparent;
+            pictureBox_playerMenu_Slot2.Image = (Image)resources.GetObject("pictureBox_playerMenu_Slot2.Image");
+            pictureBox_playerMenu_Slot2.Location = new Point(328, 511);
+            pictureBox_playerMenu_Slot2.Name = "pictureBox_playerMenu_Slot2";
+            pictureBox_playerMenu_Slot2.Size = new Size(41, 50);
+            pictureBox_playerMenu_Slot2.TabIndex = 2;
+            pictureBox_playerMenu_Slot2.TabStop = false;
             // 
-            // Slot3PictureBox
+            // pictureBox_playerMenu_Slot3
             // 
-            Slot3PictureBox.BackColor = Color.Transparent;
-            Slot3PictureBox.Image = (Image)resources.GetObject("Slot3PictureBox.Image");
-            Slot3PictureBox.Location = new Point(24, 669);
-            Slot3PictureBox.Name = "Slot3PictureBox";
-            Slot3PictureBox.Size = new Size(41, 50);
-            Slot3PictureBox.TabIndex = 1;
-            Slot3PictureBox.TabStop = false;
+            pictureBox_playerMenu_Slot3.BackColor = Color.Transparent;
+            pictureBox_playerMenu_Slot3.Image = (Image)resources.GetObject("pictureBox_playerMenu_Slot3.Image");
+            pictureBox_playerMenu_Slot3.Location = new Point(24, 669);
+            pictureBox_playerMenu_Slot3.Name = "pictureBox_playerMenu_Slot3";
+            pictureBox_playerMenu_Slot3.Size = new Size(41, 50);
+            pictureBox_playerMenu_Slot3.TabIndex = 1;
+            pictureBox_playerMenu_Slot3.TabStop = false;
             // 
-            // Slot1PictureBox
+            // pictureBox_playerMenu_Slot1
             // 
-            Slot1PictureBox.BackColor = Color.Transparent;
-            Slot1PictureBox.Image = (Image)resources.GetObject("Slot1PictureBox.Image");
-            Slot1PictureBox.Location = new Point(24, 511);
-            Slot1PictureBox.Name = "Slot1PictureBox";
-            Slot1PictureBox.Size = new Size(41, 50);
-            Slot1PictureBox.TabIndex = 0;
-            Slot1PictureBox.TabStop = false;
+            pictureBox_playerMenu_Slot1.BackColor = Color.Transparent;
+            pictureBox_playerMenu_Slot1.Image = (Image)resources.GetObject("pictureBox_playerMenu_Slot1.Image");
+            pictureBox_playerMenu_Slot1.Location = new Point(24, 511);
+            pictureBox_playerMenu_Slot1.Name = "pictureBox_playerMenu_Slot1";
+            pictureBox_playerMenu_Slot1.Size = new Size(41, 50);
+            pictureBox_playerMenu_Slot1.TabIndex = 0;
+            pictureBox_playerMenu_Slot1.TabStop = false;
             // 
             // pictureBox_playerMenu
             // 
             pictureBox_playerMenu.BackColor = Color.Transparent;
-            pictureBox_playerMenu.Image = (Image)resources.GetObject("pictureBox_playerMenu.Image");
             pictureBox_playerMenu.Location = new Point(165, 137);
             pictureBox_playerMenu.Name = "pictureBox_playerMenu";
             pictureBox_playerMenu.Size = new Size(300, 300);
@@ -179,56 +186,61 @@
             pictureBox_playerMenu.TabIndex = 1;
             pictureBox_playerMenu.TabStop = false;
             // 
-            // Slot1Button
+            // button_playerMenu_ChangeMonsterSlot1
             // 
-            Slot1Button.FlatStyle = FlatStyle.Flat;
-            Slot1Button.Font = new Font("Microsoft Sans Serif", 12F);
-            Slot1Button.Image = (Image)resources.GetObject("Slot1Button.Image");
-            Slot1Button.Location = new Point(76, 553);
-            Slot1Button.Name = "Slot1Button";
-            Slot1Button.Size = new Size(80, 29);
-            Slot1Button.TabIndex = 14;
-            Slot1Button.Text = "Select";
-            Slot1Button.UseVisualStyleBackColor = true;
-            Slot1Button.Click += button_playerMenu_ChangeMonsterSlot1_Click;
+            button_playerMenu_ChangeMonsterSlot1.Cursor = Cursors.Hand;
+            button_playerMenu_ChangeMonsterSlot1.FlatStyle = FlatStyle.Flat;
+            button_playerMenu_ChangeMonsterSlot1.Font = new Font("Microsoft Sans Serif", 12F);
+            button_playerMenu_ChangeMonsterSlot1.Image = (Image)resources.GetObject("button_playerMenu_ChangeMonsterSlot1.Image");
+            button_playerMenu_ChangeMonsterSlot1.Location = new Point(76, 553);
+            button_playerMenu_ChangeMonsterSlot1.Name = "button_playerMenu_ChangeMonsterSlot1";
+            button_playerMenu_ChangeMonsterSlot1.Size = new Size(80, 29);
+            button_playerMenu_ChangeMonsterSlot1.TabIndex = 14;
+            button_playerMenu_ChangeMonsterSlot1.Text = "Select";
+            button_playerMenu_ChangeMonsterSlot1.UseVisualStyleBackColor = true;
+            button_playerMenu_ChangeMonsterSlot1.Click += button_playerMenu_ChangeMonsterSlot1_Click;
             // 
-            // Slot2Button
+            // button_playerMenu_ChangeSlot2
             // 
-            Slot2Button.FlatStyle = FlatStyle.Flat;
-            Slot2Button.Font = new Font("Microsoft Sans Serif", 12F);
-            Slot2Button.Image = (Image)resources.GetObject("Slot2Button.Image");
-            Slot2Button.Location = new Point(375, 553);
-            Slot2Button.Name = "Slot2Button";
-            Slot2Button.Size = new Size(80, 29);
-            Slot2Button.TabIndex = 15;
-            Slot2Button.Text = "Select";
-            Slot2Button.UseVisualStyleBackColor = true;
-            Slot2Button.Click += button_playerMenu_ChangeSlot2_Click;
+            button_playerMenu_ChangeSlot2.Cursor = Cursors.Hand;
+            button_playerMenu_ChangeSlot2.FlatStyle = FlatStyle.Flat;
+            button_playerMenu_ChangeSlot2.Font = new Font("Microsoft Sans Serif", 12F);
+            button_playerMenu_ChangeSlot2.Image = (Image)resources.GetObject("button_playerMenu_ChangeSlot2.Image");
+            button_playerMenu_ChangeSlot2.Location = new Point(375, 553);
+            button_playerMenu_ChangeSlot2.Name = "button_playerMenu_ChangeSlot2";
+            button_playerMenu_ChangeSlot2.Size = new Size(80, 29);
+            button_playerMenu_ChangeSlot2.TabIndex = 15;
+            button_playerMenu_ChangeSlot2.Text = "Select";
+            button_playerMenu_ChangeSlot2.UseVisualStyleBackColor = true;
+            button_playerMenu_ChangeSlot2.Click += button_playerMenu_ChangeSlot2_Click_1;
             // 
-            // Slot3Button
+            // button_playerMenu_ChangeSlot3
             // 
-            Slot3Button.FlatStyle = FlatStyle.Flat;
-            Slot3Button.Font = new Font("Microsoft Sans Serif", 12F);
-            Slot3Button.Image = (Image)resources.GetObject("Slot3Button.Image");
-            Slot3Button.Location = new Point(76, 712);
-            Slot3Button.Name = "Slot3Button";
-            Slot3Button.Size = new Size(80, 29);
-            Slot3Button.TabIndex = 18;
-            Slot3Button.Text = "Select";
-            Slot3Button.UseVisualStyleBackColor = true;
+            button_playerMenu_ChangeSlot3.Cursor = Cursors.Hand;
+            button_playerMenu_ChangeSlot3.FlatStyle = FlatStyle.Flat;
+            button_playerMenu_ChangeSlot3.Font = new Font("Microsoft Sans Serif", 12F);
+            button_playerMenu_ChangeSlot3.Image = (Image)resources.GetObject("button_playerMenu_ChangeSlot3.Image");
+            button_playerMenu_ChangeSlot3.Location = new Point(76, 712);
+            button_playerMenu_ChangeSlot3.Name = "button_playerMenu_ChangeSlot3";
+            button_playerMenu_ChangeSlot3.Size = new Size(80, 29);
+            button_playerMenu_ChangeSlot3.TabIndex = 18;
+            button_playerMenu_ChangeSlot3.Text = "Select";
+            button_playerMenu_ChangeSlot3.UseVisualStyleBackColor = true;
+            button_playerMenu_ChangeSlot3.Click += button_playerMenu_ChangeSlot3_Click;
             // 
-            // Slot4Button
+            // button_playerMenu_ChangeSlot4
             // 
-            Slot4Button.FlatStyle = FlatStyle.Flat;
-            Slot4Button.Font = new Font("Microsoft Sans Serif", 12F);
-            Slot4Button.Image = (Image)resources.GetObject("Slot4Button.Image");
-            Slot4Button.Location = new Point(375, 712);
-            Slot4Button.Name = "Slot4Button";
-            Slot4Button.Size = new Size(80, 29);
-            Slot4Button.TabIndex = 19;
-            Slot4Button.Text = "Select";
-            Slot4Button.UseVisualStyleBackColor = true;
-            Slot4Button.Click += button_playerMenu_ChangeSlot4_Click;
+            button_playerMenu_ChangeSlot4.Cursor = Cursors.Hand;
+            button_playerMenu_ChangeSlot4.FlatStyle = FlatStyle.Flat;
+            button_playerMenu_ChangeSlot4.Font = new Font("Microsoft Sans Serif", 12F);
+            button_playerMenu_ChangeSlot4.Image = (Image)resources.GetObject("button_playerMenu_ChangeSlot4.Image");
+            button_playerMenu_ChangeSlot4.Location = new Point(375, 712);
+            button_playerMenu_ChangeSlot4.Name = "button_playerMenu_ChangeSlot4";
+            button_playerMenu_ChangeSlot4.Size = new Size(80, 29);
+            button_playerMenu_ChangeSlot4.TabIndex = 19;
+            button_playerMenu_ChangeSlot4.Text = "Select";
+            button_playerMenu_ChangeSlot4.UseVisualStyleBackColor = true;
+            button_playerMenu_ChangeSlot4.Click += button_playerMenu_ChangeSlot4_Click;
             // 
             // process1
             // 
@@ -244,20 +256,23 @@
             // 
             // usernamePlayerMenuLabel
             // 
+            usernamePlayerMenuLabel.Anchor = AnchorStyles.None;
             usernamePlayerMenuLabel.AutoSize = true;
             usernamePlayerMenuLabel.BackColor = Color.Transparent;
             usernamePlayerMenuLabel.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             usernamePlayerMenuLabel.ForeColor = Color.DarkGoldenrod;
-            usernamePlayerMenuLabel.Location = new Point(152, 49);
+            usernamePlayerMenuLabel.Location = new Point(148, 32);
             usernamePlayerMenuLabel.Name = "usernamePlayerMenuLabel";
             usernamePlayerMenuLabel.Size = new Size(318, 73);
             usernamePlayerMenuLabel.TabIndex = 21;
             usernamePlayerMenuLabel.Text = "username";
+            usernamePlayerMenuLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button_PlayerMenu_Exit
             // 
             button_PlayerMenu_Exit.BackColor = Color.Transparent;
             button_PlayerMenu_Exit.BackgroundImage = (Image)resources.GetObject("button_PlayerMenu_Exit.BackgroundImage");
+            button_PlayerMenu_Exit.Cursor = Cursors.Hand;
             button_PlayerMenu_Exit.FlatAppearance.BorderSize = 0;
             button_PlayerMenu_Exit.FlatStyle = FlatStyle.Flat;
             button_PlayerMenu_Exit.Location = new Point(555, 0);
@@ -275,52 +290,52 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             Controls.Add(button_PlayerMenu_Exit);
             Controls.Add(usernamePlayerMenuLabel);
-            Controls.Add(Slot4Button);
-            Controls.Add(Slot3Button);
-            Controls.Add(Slot2Button);
-            Controls.Add(Slot1Button);
+            Controls.Add(button_playerMenu_ChangeSlot4);
+            Controls.Add(button_playerMenu_ChangeSlot3);
+            Controls.Add(button_playerMenu_ChangeSlot2);
+            Controls.Add(button_playerMenu_ChangeMonsterSlot1);
             Controls.Add(pictureBox_playerMenu);
-            Controls.Add(Slot1PictureBox);
-            Controls.Add(Slot1ProgressBar);
-            Controls.Add(Slot4Label);
-            Controls.Add(Slot1Label);
-            Controls.Add(Slot4ProgressBar);
-            Controls.Add(Slot3Label);
-            Controls.Add(Slot4PictureBox);
-            Controls.Add(Slot3PictureBox);
-            Controls.Add(Slot2Label);
-            Controls.Add(Slot2ProgressBar);
-            Controls.Add(Slot3ProgressBar);
-            Controls.Add(Slot2PictureBox);
+            Controls.Add(pictureBox_playerMenu_Slot1);
+            Controls.Add(progressBar_playerMenu_Slot1);
+            Controls.Add(label_playerMenu_Slot4);
+            Controls.Add(label_playerMenu_Slot1);
+            Controls.Add(progressBar_playerMenu_Slot4);
+            Controls.Add(label_playerMenu_Slot3);
+            Controls.Add(pictureBox_playerMenu_Slot4);
+            Controls.Add(pictureBox_playerMenu_Slot3);
+            Controls.Add(label_playerMenu_Slot2);
+            Controls.Add(progressBar_playerMenu_Slot2);
+            Controls.Add(progressBar_playerMenu_Slot3);
+            Controls.Add(pictureBox_playerMenu_Slot2);
             Name = "playerMenu";
             Size = new Size(600, 900);
-            ((System.ComponentModel.ISupportInitialize)Slot4PictureBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Slot2PictureBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Slot3PictureBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Slot1PictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu_Slot1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_playerMenu).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Label Slot4Label;
-        private Label Slot3Label;
-        private Label Slot2Label;
-        private Label Slot1Label;
-        private ProgressBar Slot4ProgressBar;
-        private ProgressBar Slot2ProgressBar;
-        private ProgressBar Slot3ProgressBar;
-        private ProgressBar Slot1ProgressBar;
-        private PictureBox Slot4PictureBox;
-        private PictureBox Slot2PictureBox;
-        private PictureBox Slot3PictureBox;
-        private PictureBox Slot1PictureBox;
+        private Label label_playerMenu_Slot4;
+        private Label label_playerMenu_Slot3;
+        private Label label_playerMenu_Slot2;
+        private Label label_playerMenu_Slot1;
+        private GoldProgressBar progressBar_playerMenu_Slot4;
+        private GoldProgressBar progressBar_playerMenu_Slot2;
+        private GoldProgressBar progressBar_playerMenu_Slot3;
+        private GoldProgressBar progressBar_playerMenu_Slot1;
+        private PictureBox pictureBox_playerMenu_Slot4;
+        private PictureBox pictureBox_playerMenu_Slot2;
+        private PictureBox pictureBox_playerMenu_Slot3;
+        private PictureBox pictureBox_playerMenu_Slot1;
         private PictureBox pictureBox_playerMenu;
-        private Button Slot1Button;
-        private Button Slot2Button;
-        private Button Slot3Button;
-        private Button Slot4Button;
+        private Button button_playerMenu_ChangeMonsterSlot1;
+        private Button button_playerMenu_ChangeSlot2;
+        private Button button_playerMenu_ChangeSlot3;
+        private Button button_playerMenu_ChangeSlot4;
         private System.Diagnostics.Process process1;
         private Label usernamePlayerMenuLabel;
         private Button button_PlayerMenu_Exit;

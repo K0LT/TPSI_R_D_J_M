@@ -58,7 +58,7 @@
             button_newGameMonster_Siren.BackgroundImageLayout = ImageLayout.Center;
             button_newGameMonster_Siren.Cursor = Cursors.Hand;
             button_newGameMonster_Siren.FlatStyle = FlatStyle.Flat;
-            button_newGameMonster_Siren.Location = new Point(319, 293);
+            button_newGameMonster_Siren.Location = new Point(318, 294);
             button_newGameMonster_Siren.Name = "button_newGameMonster_Siren";
             button_newGameMonster_Siren.Size = new Size(250, 250);
             button_newGameMonster_Siren.TabIndex = 10;
@@ -72,7 +72,7 @@
             button_newGameMonster_Grifo.BackgroundImageLayout = ImageLayout.Center;
             button_newGameMonster_Grifo.Cursor = Cursors.Hand;
             button_newGameMonster_Grifo.FlatStyle = FlatStyle.Flat;
-            button_newGameMonster_Grifo.Location = new Point(319, 23);
+            button_newGameMonster_Grifo.Location = new Point(318, 24);
             button_newGameMonster_Grifo.Name = "button_newGameMonster_Grifo";
             button_newGameMonster_Grifo.Size = new Size(250, 250);
             button_newGameMonster_Grifo.TabIndex = 11;
@@ -86,7 +86,7 @@
             button_newGame_Monster_Tauro.BackgroundImageLayout = ImageLayout.Center;
             button_newGame_Monster_Tauro.Cursor = Cursors.Hand;
             button_newGame_Monster_Tauro.FlatStyle = FlatStyle.Flat;
-            button_newGame_Monster_Tauro.Location = new Point(54, 293);
+            button_newGame_Monster_Tauro.Location = new Point(53, 294);
             button_newGame_Monster_Tauro.Name = "button_newGame_Monster_Tauro";
             button_newGame_Monster_Tauro.Size = new Size(250, 250);
             button_newGame_Monster_Tauro.TabIndex = 12;
@@ -96,6 +96,7 @@
             // textBox_newGameMonster_InputUsername
             // 
             textBox_newGameMonster_InputUsername.BackColor = SystemColors.Control;
+            textBox_newGameMonster_InputUsername.Cursor = Cursors.IBeam;
             textBox_newGameMonster_InputUsername.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox_newGameMonster_InputUsername.ForeColor = SystemColors.MenuText;
             textBox_newGameMonster_InputUsername.Location = new Point(174, 37);
@@ -108,6 +109,7 @@
             // label2_newGameMonster_Next
             // 
             label2_newGameMonster_Next.BackColor = Color.FromArgb(224, 224, 224);
+            label2_newGameMonster_Next.Cursor = Cursors.Hand;
             label2_newGameMonster_Next.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2_newGameMonster_Next.Image = (Image)resources.GetObject("label2_newGameMonster_Next.Image");
             label2_newGameMonster_Next.Location = new Point(145, 145);
@@ -123,7 +125,7 @@
             button_newGameMonster_Draco.BackgroundImageLayout = ImageLayout.Center;
             button_newGameMonster_Draco.Cursor = Cursors.Hand;
             button_newGameMonster_Draco.FlatStyle = FlatStyle.Flat;
-            button_newGameMonster_Draco.Location = new Point(54, 23);
+            button_newGameMonster_Draco.Location = new Point(53, 24);
             button_newGameMonster_Draco.Name = "button_newGameMonster_Draco";
             button_newGameMonster_Draco.Size = new Size(250, 250);
             button_newGameMonster_Draco.TabIndex = 9;
