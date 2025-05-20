@@ -59,6 +59,7 @@ namespace Monster.UI
         {
             InitializeComponent();
             HideControls();
+
         }
 
         public void HideControls()
@@ -179,6 +180,16 @@ namespace Monster.UI
             ParentForm.NavigateTo("Monster");
         }
 
-        
+        private void usernamePlayerMenuLabel_Load(object sender, EventArgs e)
+        {
+            usernamePlayerMenuLabel.Dock = DockStyle.Top;
+            usernamePlayerMenuLabel.Height = 40;
+            usernamePlayerMenuLabel.AutoSize = false;
+            usernamePlayerMenuLabel.Width = this.ClientSize.Width;
+            usernamePlayerMenuLabel.Top = 50;
+            usernamePlayerMenuLabel.TextAlign = ContentAlignment.MiddleCenter;
+        }
+
+
     }
 }
