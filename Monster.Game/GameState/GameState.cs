@@ -50,10 +50,7 @@ namespace Monster.Game.GameState
 
         public bool InventoryVisited { get; set; }
 
-        //public void AddExperience(int amount)
-        //{
-        //    _activeMonster.AddExperience(amount);
-        //}
+      
 
         public void UseItemAtIndex(int index)
         {
@@ -74,13 +71,10 @@ namespace Monster.Game.GameState
                 case StaminaItem staminaItem:
                     monster.Stamina = Math.Min(monster.Stamina + staminaItem.StaminaRestore, 100);
                     break;
-                //case ExperienceItem expItem:
-                //    AddExperience(expItem.ExperienceGain);
-                //    break;
+           
                 case FullRestoreItem fullItem:
                     monster.HealthPoints = Math.Min(monster.HealthPoints + fullItem.HealthRestore, 100);
                     monster.Stamina = Math.Min(monster.Stamina + fullItem.StaminaRestore, 100);
-                    //AddExperience(fullItem.ExperienceGain);
                     break;
             }
 

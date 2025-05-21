@@ -164,7 +164,10 @@ namespace Monster.UI
                     ParentForm.NavigateTo("NewMonster");
                 }
                 else
-                    MessageBox.Show($"You need a total Monster level of {tempOwnedMonsters.Count() * 10} to acquire another Monster!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                {
+                    string monsterName = monster.Name;
+                    MessageBox.Show($"You need {monsterName} to be at level 10 before acquiring another Monster!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -206,6 +209,8 @@ namespace Monster.UI
             System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
             int countdown = 15;
             int missingHealth = 100 - monster.HealthPoints;
+            int missingStamina = 100 - monster.Stamina;
+
 
             timer.Interval = 1000;
             timer.Tick += (s, args) =>
@@ -215,11 +220,14 @@ namespace Monster.UI
                 {
                     labelCountdown.Text = $"{countdown} seconds remaining...";
                     monster.HealthPoints += missingHealth / 15;
+                    monster.Stamina += missingStamina / 15;
+
                 }
                 else
                 {
                     timer.Stop();
 
+                    
 
                     if (monster.HealthPoints < 100) monster.HealthPoints = 100;
                     if (monster.Stamina < 100) monster.Stamina = 100;
@@ -235,7 +243,7 @@ namespace Monster.UI
             countdownForm.ShowDialog();
         }
 
-        
+       
     }
 }
 

@@ -74,15 +74,13 @@ namespace Monster.UI
 
         public void HookBindings()
         {
-            if (!firstHook)
-            {
-                progressBar_inventory_HP.DataBindings.Add(nameof(GoldProgressBar.Value), bsDataSource, nameof(MonsterClass.HealthPoints));
-                progressBar_inventory_Stamina.DataBindings.Add(nameof(GoldProgressBar.Value), bsDataSource, nameof(MonsterClass.Stamina));
-                firstHook = true;
-                GetMonsterImageInventory();
-
-
-            }
+            
+            progressBar_inventory_HP.DataBindings.Clear();
+            progressBar_inventory_Stamina.DataBindings.Clear();
+            pictureBox_inventory_Monster.DataBindings.Clear();
+            progressBar_inventory_HP.DataBindings.Add(nameof(GoldProgressBar.Value), bsDataSource, nameof(MonsterClass.HealthPoints));
+            progressBar_inventory_Stamina.DataBindings.Add(nameof(GoldProgressBar.Value), bsDataSource, nameof(MonsterClass.Stamina));
+            GetMonsterImageInventory();
             UpdateInventory();
             return;
         }

@@ -63,6 +63,46 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        public static byte[] badGuyRed {
+            get {
+                object obj = ResourceManager.GetObject("badGuyRed", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] badGuyRedHit {
+            get {
+                object obj = ResourceManager.GetObject("badGuyRedHit", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] badGuySkull {
+            get {
+                object obj = ResourceManager.GetObject("badGuySkull", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] badGuySkullHit {
+            get {
+                object obj = ResourceManager.GetObject("badGuySkullHit", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         public static byte[] boyPlayerPic {
             get {
                 object obj = ResourceManager.GetObject("boyPlayerPic", resourceCulture);

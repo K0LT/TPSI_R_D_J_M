@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BattleMenu));
             battleMenuTitleLabel = new Label();
-            pictureBox_miniGames_Memory = new PictureBox();
-            pictureBox1 = new PictureBox();
+            pictureBox_battleMenu_Red = new PictureBox();
+            pictureBox_battleMenu_Skull = new PictureBox();
             nameMyMonsterLabel = new Label();
             label1 = new Label();
             button_Battle_Exit = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_miniGames_Memory).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_battleMenu_Red).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_battleMenu_Skull).BeginInit();
             SuspendLayout();
             // 
             // battleMenuTitleLabel
@@ -51,29 +51,29 @@
             battleMenuTitleLabel.Text = "Choose Battle";
             battleMenuTitleLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // pictureBox_miniGames_Memory
+            // pictureBox_battleMenu_Red
             // 
-            pictureBox_miniGames_Memory.BackColor = Color.Transparent;
-            pictureBox_miniGames_Memory.Cursor = Cursors.Hand;
-            pictureBox_miniGames_Memory.Image = (Image)resources.GetObject("pictureBox_miniGames_Memory.Image");
-            pictureBox_miniGames_Memory.Location = new Point(36, 230);
-            pictureBox_miniGames_Memory.Name = "pictureBox_miniGames_Memory";
-            pictureBox_miniGames_Memory.Size = new Size(250, 375);
-            pictureBox_miniGames_Memory.TabIndex = 25;
-            pictureBox_miniGames_Memory.TabStop = false;
-            pictureBox_miniGames_Memory.Click += pictureBox_miniGames_Memory_Click;
+            pictureBox_battleMenu_Red.BackColor = Color.Transparent;
+            pictureBox_battleMenu_Red.Cursor = Cursors.Hand;
+            pictureBox_battleMenu_Red.Image = (Image)resources.GetObject("pictureBox_battleMenu_Red.Image");
+            pictureBox_battleMenu_Red.Location = new Point(36, 230);
+            pictureBox_battleMenu_Red.Name = "pictureBox_battleMenu_Red";
+            pictureBox_battleMenu_Red.Size = new Size(250, 375);
+            pictureBox_battleMenu_Red.TabIndex = 25;
+            pictureBox_battleMenu_Red.TabStop = false;
+            pictureBox_battleMenu_Red.Click += pictureBox_battleMenu_Red_Click;
             // 
-            // pictureBox1
+            // pictureBox_battleMenu_Skull
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Cursor = Cursors.Hand;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(308, 230);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(250, 375);
-            pictureBox1.TabIndex = 26;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            pictureBox_battleMenu_Skull.BackColor = Color.Transparent;
+            pictureBox_battleMenu_Skull.Cursor = Cursors.Hand;
+            pictureBox_battleMenu_Skull.Image = (Image)resources.GetObject("pictureBox_battleMenu_Skull.Image");
+            pictureBox_battleMenu_Skull.Location = new Point(308, 230);
+            pictureBox_battleMenu_Skull.Name = "pictureBox_battleMenu_Skull";
+            pictureBox_battleMenu_Skull.Size = new Size(250, 375);
+            pictureBox_battleMenu_Skull.TabIndex = 26;
+            pictureBox_battleMenu_Skull.TabStop = false;
+            pictureBox_battleMenu_Skull.Click += pictureBox_battleMenu_Skull_Click;
             // 
             // nameMyMonsterLabel
             // 
@@ -122,14 +122,14 @@
             Controls.Add(button_Battle_Exit);
             Controls.Add(label1);
             Controls.Add(nameMyMonsterLabel);
-            Controls.Add(pictureBox1);
-            Controls.Add(pictureBox_miniGames_Memory);
+            Controls.Add(pictureBox_battleMenu_Skull);
+            Controls.Add(pictureBox_battleMenu_Red);
             Controls.Add(battleMenuTitleLabel);
             DoubleBuffered = true;
             Name = "BattleMenu";
             Size = new Size(600, 900);
-            ((System.ComponentModel.ISupportInitialize)pictureBox_miniGames_Memory).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_battleMenu_Red).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_battleMenu_Skull).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -137,8 +137,8 @@
         #endregion
 
         private Label battleMenuTitleLabel;
-        private PictureBox pictureBox_miniGames_Memory;
-        private PictureBox pictureBox1;
+        private PictureBox pictureBox_battleMenu_Red;
+        private PictureBox pictureBox_battleMenu_Skull;
         private Label nameMyMonsterLabel;
         private Label label1;
         private Button button_Battle_Exit;

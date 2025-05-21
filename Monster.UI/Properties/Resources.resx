@@ -118,6 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="badGuyRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\badGuyRed.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="badGuyRedHit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\badGuyRedHit.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="badGuySkull" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\badGuySkull.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="badGuySkullHit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\badGuySkullHit.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="boyPlayerPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boyPlayerPic.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
