@@ -34,7 +34,7 @@
             pictureBox_inventory_SodaIcon = new PictureBox();
             pictureBox_inventory_Ramen = new PictureBox();
             pictureBox_inventory_waterIcon = new PictureBox();
-            pictureBox_inventory_MonsterIcon = new PictureBox();
+            pictureBox_inventory_EnergyDrink = new PictureBox();
             pictureBox_inventory_NachosIcon = new PictureBox();
             label_inventory_water = new Label();
             label_inventory_Soda = new Label();
@@ -42,7 +42,7 @@
             label_inventory_Nachos = new Label();
             label_inventory_Burguer = new Label();
             label_inventory_Ramen = new Label();
-            label_inventory_Monster = new Label();
+            label_inventory_EnergyDrink = new Label();
             progressBar_inventory_HP = new GoldProgressBar();
             progressBar_inventory_Stamina = new GoldProgressBar();
             pictureBox_inventory_Monster = new PictureBox();
@@ -62,7 +62,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_SodaIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_Ramen).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_waterIcon).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_MonsterIcon).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_EnergyDrink).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_NachosIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_Monster).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_Inventory_HPicon).BeginInit();
@@ -134,17 +134,17 @@
             pictureBox_inventory_waterIcon.TabStop = false;
             pictureBox_inventory_waterIcon.Click += pictureBox_inventory_waterIcon_Click;
             // 
-            // pictureBox_inventory_MonsterIcon
+            // pictureBox_inventory_EnergyDrink
             // 
-            pictureBox_inventory_MonsterIcon.BackColor = Color.Transparent;
-            pictureBox_inventory_MonsterIcon.Cursor = Cursors.Hand;
-            pictureBox_inventory_MonsterIcon.Image = (Image)resources.GetObject("pictureBox_inventory_MonsterIcon.Image");
-            pictureBox_inventory_MonsterIcon.Location = new Point(261, 577);
-            pictureBox_inventory_MonsterIcon.Name = "pictureBox_inventory_MonsterIcon";
-            pictureBox_inventory_MonsterIcon.Size = new Size(80, 80);
-            pictureBox_inventory_MonsterIcon.TabIndex = 7;
-            pictureBox_inventory_MonsterIcon.TabStop = false;
-            pictureBox_inventory_MonsterIcon.Click += pictureBox_inventory_MonsterIcon_Click;
+            pictureBox_inventory_EnergyDrink.BackColor = Color.Transparent;
+            pictureBox_inventory_EnergyDrink.Cursor = Cursors.Hand;
+            pictureBox_inventory_EnergyDrink.Image = (Image)resources.GetObject("pictureBox_inventory_EnergyDrink.Image");
+            pictureBox_inventory_EnergyDrink.Location = new Point(261, 577);
+            pictureBox_inventory_EnergyDrink.Name = "pictureBox_inventory_EnergyDrink";
+            pictureBox_inventory_EnergyDrink.Size = new Size(80, 80);
+            pictureBox_inventory_EnergyDrink.TabIndex = 7;
+            pictureBox_inventory_EnergyDrink.TabStop = false;
+            pictureBox_inventory_EnergyDrink.Click += pictureBox_inventory_MonsterIcon_Click;
             // 
             // pictureBox_inventory_NachosIcon
             // 
@@ -237,18 +237,18 @@
             label_inventory_Ramen.Text = "#";
             label_inventory_Ramen.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label_inventory_Monster
+            // label_inventory_EnergyDrink
             // 
-            label_inventory_Monster.AutoSize = true;
-            label_inventory_Monster.BackColor = Color.Transparent;
-            label_inventory_Monster.Font = new Font("VCR OSD Mono", 18F);
-            label_inventory_Monster.ForeColor = Color.Goldenrod;
-            label_inventory_Monster.Location = new Point(321, 671);
-            label_inventory_Monster.Name = "label_inventory_Monster";
-            label_inventory_Monster.Size = new Size(26, 25);
-            label_inventory_Monster.TabIndex = 15;
-            label_inventory_Monster.Text = "#";
-            label_inventory_Monster.TextAlign = ContentAlignment.MiddleCenter;
+            label_inventory_EnergyDrink.AutoSize = true;
+            label_inventory_EnergyDrink.BackColor = Color.Transparent;
+            label_inventory_EnergyDrink.Font = new Font("VCR OSD Mono", 18F);
+            label_inventory_EnergyDrink.ForeColor = Color.Goldenrod;
+            label_inventory_EnergyDrink.Location = new Point(321, 671);
+            label_inventory_EnergyDrink.Name = "label_inventory_EnergyDrink";
+            label_inventory_EnergyDrink.Size = new Size(26, 25);
+            label_inventory_EnergyDrink.TabIndex = 15;
+            label_inventory_EnergyDrink.Text = "#";
+            label_inventory_EnergyDrink.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // progressBar_inventory_HP
             // 
@@ -295,15 +295,15 @@
             // 
             // inventoryLabel
             // 
-            inventoryLabel.AutoSize = true;
             inventoryLabel.BackColor = Color.Transparent;
             inventoryLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             inventoryLabel.ForeColor = Color.DarkGoldenrod;
-            inventoryLabel.Location = new Point(126, 51);
+            inventoryLabel.Location = new Point(0, 51);
             inventoryLabel.Name = "inventoryLabel";
-            inventoryLabel.Size = new Size(369, 64);
+            inventoryLabel.Size = new Size(600, 64);
             inventoryLabel.TabIndex = 22;
             inventoryLabel.Text = "Inventory";
+            inventoryLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox_Inventory_HPicon
             // 
@@ -435,7 +435,7 @@
             Controls.Add(pictureBox_inventory_Monster);
             Controls.Add(progressBar_inventory_Stamina);
             Controls.Add(progressBar_inventory_HP);
-            Controls.Add(label_inventory_Monster);
+            Controls.Add(label_inventory_EnergyDrink);
             Controls.Add(label_inventory_Ramen);
             Controls.Add(label_inventory_Burguer);
             Controls.Add(label_inventory_Nachos);
@@ -443,7 +443,7 @@
             Controls.Add(label_inventory_Soda);
             Controls.Add(label_inventory_water);
             Controls.Add(pictureBox_inventory_NachosIcon);
-            Controls.Add(pictureBox_inventory_MonsterIcon);
+            Controls.Add(pictureBox_inventory_EnergyDrink);
             Controls.Add(pictureBox_inventory_waterIcon);
             Controls.Add(pictureBox_inventory_Ramen);
             Controls.Add(pictureBox_inventory_SodaIcon);
@@ -456,7 +456,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_SodaIcon).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_Ramen).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_waterIcon).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_MonsterIcon).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_EnergyDrink).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_NachosIcon).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_inventory_Monster).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_Inventory_HPicon).EndInit();
@@ -471,7 +471,7 @@
         private PictureBox pictureBox_inventory_SodaIcon;
         private PictureBox pictureBox_inventory_Ramen;
         private PictureBox pictureBox_inventory_waterIcon;
-        private PictureBox pictureBox_inventory_MonsterIcon;
+        private PictureBox pictureBox_inventory_EnergyDrink;
         private PictureBox pictureBox_inventory_NachosIcon;
         private Label label_inventory_water;
         private Label label_inventory_Soda;
@@ -479,7 +479,7 @@
         private Label label_inventory_Nachos;
         private Label label_inventory_Burguer;
         private Label label_inventory_Ramen;
-        private Label label_inventory_Monster;
+        private Label label_inventory_EnergyDrink;
         private GoldProgressBar progressBar_inventory_HP;
         private GoldProgressBar progressBar_inventory_Stamina;
         private PictureBox pictureBox_inventory_Monster;

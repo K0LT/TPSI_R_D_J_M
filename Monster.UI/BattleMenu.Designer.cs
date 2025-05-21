@@ -41,15 +41,15 @@
             // 
             // battleMenuTitleLabel
             // 
-            battleMenuTitleLabel.AutoSize = true;
             battleMenuTitleLabel.BackColor = Color.Transparent;
             battleMenuTitleLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             battleMenuTitleLabel.ForeColor = Color.DarkGoldenrod;
-            battleMenuTitleLabel.Location = new Point(36, 49);
+            battleMenuTitleLabel.Location = new Point(0, 51);
             battleMenuTitleLabel.Name = "battleMenuTitleLabel";
-            battleMenuTitleLabel.Size = new Size(521, 64);
+            battleMenuTitleLabel.Size = new Size(600, 64);
             battleMenuTitleLabel.TabIndex = 23;
             battleMenuTitleLabel.Text = "Choose Battle";
+            battleMenuTitleLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox_miniGames_Memory
             // 
