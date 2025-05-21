@@ -38,9 +38,9 @@ namespace Monster.UI
             label_battle_Name.DataBindings.Add(nameof(Label.Text), _bsMonster, nameof(MonsterClass.Name));
             GetMonsterImage();
 
-            _battleStamina = 100;
-            progressBar_battleGame_MyMonsterStamina.Maximum = 100;
-            progressBar_battleGame_MyMonsterStamina.Value = _battleStamina;
+            _battleEnergy = 100;
+            progressBar_battleGame_MyMonsterEnergy.Maximum = 100;
+            progressBar_battleGame_MyMonsterEnergy.Value = _battleEnergy;
         }
 
         public void GetMonsterImage()
@@ -123,20 +123,20 @@ namespace Monster.UI
         }
 
         private readonly Random _rng = new Random();
-        private int _battleStamina = 100;
+        private int _battleEnergy = 100;
 
         private void button_Battle_Attack1_Click(object sender, EventArgs e)
         {
-            const int staminaCost = 10;
-            if (_battleStamina < staminaCost)
+            const int energyCost = 10;
+            if (_battleEnergy < energyCost)
             {
                 DoBossCounterAttack();
-                IncreasePlayerStamina(20);
-                ShowMessage("Not enough stamina! The boss attacks you for 10 HP.", "Warning");
+                IncreasePlayerEnergy(20);
+                ShowMessage("Not enough energy! The boss attacks you for 10 HP.", "Warning");
                 return;
             }
-            _battleStamina -= staminaCost;
-            progressBar_battleGame_MyMonsterStamina.Value = _battleStamina;
+            _battleEnergy -= energyCost;
+            progressBar_battleGame_MyMonsterEnergy.Value = _battleEnergy;
 
             if (_rng.NextDouble() <= 0.80)
             {
@@ -163,16 +163,16 @@ namespace Monster.UI
 
         private void button_Battle_Attack2_Click(object sender, EventArgs e)
         {
-            const int staminaCost = 25;
-            if (_battleStamina < staminaCost)
+            const int energyCost = 25;
+            if (_battleEnergy < energyCost)
             {
                 DoBossCounterAttack();
-                IncreasePlayerStamina(50);
-                ShowMessage("Not enough stamina! The boss attacks you for 10 HP.", "Warning");
+                IncreasePlayerEnergy(50);
+                ShowMessage("Not enough energy! The boss attacks you for 10 HP.", "Warning");
                 return;
             }
-            _battleStamina -= staminaCost;
-            progressBar_battleGame_MyMonsterStamina.Value = _battleStamina;
+            _battleEnergy -= energyCost;
+            progressBar_battleGame_MyMonsterEnergy.Value = _battleEnergy;
 
             if (_rng.NextDouble() <= 0.80)
             {
@@ -197,11 +197,11 @@ namespace Monster.UI
             }
         }
 
-        private void IncreasePlayerStamina(int amount)
+        private void IncreasePlayerEnergy(int amount)
         {
-            _battleStamina += amount;
-            if (_battleStamina > 100) _battleStamina = 100;
-            progressBar_battleGame_MyMonsterStamina.Value = _battleStamina;
+            _battleEnergy += amount;
+            if (_battleEnergy > 100) _battleEnergy = 100;
+            progressBar_battleGame_MyMonsterEnergy.Value = _battleEnergy;
         }
 
         private int GetAttackDamage(int baseDamage)

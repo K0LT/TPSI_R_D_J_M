@@ -38,7 +38,7 @@
             label_battle_Name = new Label();
             button_Battle_Attack1 = new Button();
             button_Battle_Attack2 = new Button();
-            progressBar_battleGame_MyMonsterStamina = new GoldProgressBar();
+            progressBar_battleGame_MyMonsterEnergy = new GoldProgressBar();
             pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_myMonster).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_Boss).BeginInit();
@@ -143,14 +143,14 @@
             button_Battle_Attack2.UseVisualStyleBackColor = true;
             button_Battle_Attack2.Click += button_Battle_Attack2_Click;
             // 
-            // progressBar_battleGame_MyMonsterStamina
+            // progressBar_battleGame_MyMonsterEnergy
             // 
-            progressBar_battleGame_MyMonsterStamina.BackColor = Color.AntiqueWhite;
-            progressBar_battleGame_MyMonsterStamina.ForeColor = Color.Gold;
-            progressBar_battleGame_MyMonsterStamina.Location = new Point(320, 655);
-            progressBar_battleGame_MyMonsterStamina.Name = "progressBar_battleGame_MyMonsterStamina";
-            progressBar_battleGame_MyMonsterStamina.Size = new Size(235, 23);
-            progressBar_battleGame_MyMonsterStamina.TabIndex = 18;
+            progressBar_battleGame_MyMonsterEnergy.BackColor = Color.AntiqueWhite;
+            progressBar_battleGame_MyMonsterEnergy.ForeColor = Color.Gold;
+            progressBar_battleGame_MyMonsterEnergy.Location = new Point(320, 655);
+            progressBar_battleGame_MyMonsterEnergy.Name = "progressBar_battleGame_MyMonsterEnergy";
+            progressBar_battleGame_MyMonsterEnergy.Size = new Size(235, 23);
+            progressBar_battleGame_MyMonsterEnergy.TabIndex = 18;
             // 
             // pictureBox2
             // 
@@ -168,7 +168,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             Controls.Add(pictureBox2);
-            Controls.Add(progressBar_battleGame_MyMonsterStamina);
+            Controls.Add(progressBar_battleGame_MyMonsterEnergy);
             Controls.Add(button_Battle_Attack2);
             Controls.Add(button_Battle_Attack1);
             Controls.Add(label_battle_Name);
@@ -200,7 +200,7 @@
         private Label label_battle_Name;
         private Button button_Battle_Attack1;
         private Button button_Battle_Attack2;
-        private GoldProgressBar progressBar_battleGame_MyMonsterStamina;
+        private GoldProgressBar progressBar_battleGame_MyMonsterEnergy;
         private PictureBox pictureBox2;
     }
 }
