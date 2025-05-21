@@ -159,30 +159,30 @@ namespace Monster.UI
         {
             if (bsDataSource is MonsterClass monster)
             {
-                int totalMonstersLevel = 0;
-                List<MonsterClass> tempOwnedMonsters = ParentForm.GetOwnedMonsters();
+                List<MonsterClass> ownedMonsters = ParentForm.GetOwnedMonsters();
 
-                if (tempOwnedMonsters.Count >= 4)
+                // Limit to 4 total monsters
+                if (ownedMonsters.Count >= 4)
                 {
                     MessageBox.Show("You already have 4 Monsters!", "Maximum Monsters Reached", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                foreach (MonsterClass m in tempOwnedMonsters)
-                {
-                    totalMonstersLevel += m.Level;
-                }
-                if (totalMonstersLevel >= tempOwnedMonsters.Count() * 10)
+                // Check if all existing monsters are at least level 10
+                bool allMonstersMaxed = ownedMonsters.All(m => m.Level >= 10);
+
+                if (allMonstersMaxed)
                 {
                     ParentForm.NavigateTo("NewMonster");
                 }
                 else
                 {
-                    string monsterName = monster.Name;
-                    MessageBox.Show($"You need {monsterName} to be at level 10 before acquiring another Monster!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("All your current monsters must be at least level 10 before you can create a new one.",
+                        "Level Requirement Not Met", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
+
 
 
         private void button_myMonster_Sleep_Click(object sender, EventArgs e)

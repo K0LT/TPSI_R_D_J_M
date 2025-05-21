@@ -61,7 +61,7 @@ namespace Monster.UI
 
             usernamePlayerMenuLabel.DataBindings.Clear();
             usernamePlayerMenuLabel.DataBindings.Add(nameof(Label.Text), bsUser, nameof(User.Username));
-
+            
             ShowControls();
 
             ApplyUserTypeImage();

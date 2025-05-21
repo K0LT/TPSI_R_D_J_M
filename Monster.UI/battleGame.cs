@@ -28,6 +28,7 @@ namespace Monster.UI
         {
             InitializeComponent();
             InitializeBoss("red");
+
         }
 
         public void HookBindings()
@@ -37,7 +38,7 @@ namespace Monster.UI
             progressBar_battleGame_MyMonsterHp.DataBindings.Add(nameof(ProgressBar.Value), _bsMonster, nameof(MonsterClass.HealthPoints));
             label_battle_Name.DataBindings.Add(nameof(Label.Text), _bsMonster, nameof(MonsterClass.Name));
             GetMonsterImage();
-
+            UpdateAttackButtonLabels();
             _battleEnergy = 100;
             progressBar_battleGame_MyMonsterEnergy.Maximum = 100;
             progressBar_battleGame_MyMonsterEnergy.Value = _battleEnergy;
@@ -68,13 +69,29 @@ namespace Monster.UI
                 return Image.FromStream(ms);
             }
         }
-
-        public async void FlashMonsterHurtImageBoss()
+        public void UpdateMonsterImage(bool isHurt)
         {
-            //UpdateBossImage(true);
-            // await Task.Delay(1000);
+            if (Monster == null)
+                return;
 
-            //UpdateBossImage(false);
+            int stage = Monster.Level < 5 ? 1 : Monster.Level < 10 ? 2 : 3;
+            string type = Monster.Type?.ToLower() ?? "";
+            string state = isHurt ? "hurt" : "battle";
+            string resourceName = $"{type}_stage{stage}_{state}";
+
+            var imageObj = Resources.ResourceManager.GetObject(resourceName);
+            pictureBox_battleGame_myMonster.Image = ConvertByteArrayToImage(imageObj as byte[]);
+        }
+
+
+
+
+        public async void FlashHurtImageMonster()
+        {
+            UpdateMonsterImage(true);
+            await Task.Delay(1000);
+
+            UpdateMonsterImage(false);
         }
 
 
@@ -120,6 +137,7 @@ namespace Monster.UI
             await Task.Delay(1000);
             UpdateBossImage(false);
         }
+
 
         public void UpdateBossImage(bool isHurt)
         {
@@ -254,6 +272,8 @@ namespace Monster.UI
             {
                 Monster.HealthPoints -= damage;
                 if (Monster.HealthPoints < 0) Monster.HealthPoints = 0;
+                FlashHurtImageMonster();
+
 
                 if (Monster.HealthPoints == 0)
                 {
@@ -265,6 +285,82 @@ namespace Monster.UI
                 }
             }
         }
+
+
+        private void UpdateAttackButtonLabels()
+        {
+            if (Monster == null)
+                return;
+
+            int stage = Monster.Level < 5 ? 1 : Monster.Level < 10 ? 2 : 3;
+            string type = Monster.Type?.ToLower() ?? "";
+            string typeStage = $"{type}_stage{stage}";
+
+            string attack1 = "Attack 1";
+            string attack2 = "Attack 2";
+
+            switch (typeStage)
+            {
+                case "draco_stage1":
+                    attack1 = "Roar";
+                    attack2 = "Flame Burst";
+                    break;
+                case "draco_stage2":
+                    attack1 = "Fire Bitte";
+                    attack2 = "Blaze";
+                    break;
+                case "draco_stage3":
+                    attack1 = "Giga Flame";
+                    attack2 = "Golden Flame";
+                    break;
+                case "grifo_stage1":
+                    attack1 = "Peek";
+                    attack2 = "Scratch";
+                    break;
+                case "grifo_stage2":
+                    attack1 = "Fly";
+                    attack2 = "Whip";
+                    break;
+                case "grifo_stage3":
+                    attack1 = "Tornado";
+                    attack2 = "Suicide Dive";
+                    break;
+                case "tauro_stage1":
+                    attack1 = "Head Butt";
+                    attack2 = "Moo";
+                    break;
+                case "tauro_stage2":
+                    attack1 = "Iron Horn";
+                    attack2 = "Stomp";
+                    break;
+                case "tauro_stage3":
+                    attack1 = "Iron Tackle";
+                    attack2 = "Meteor Spear";
+                    break;
+                case "siren_stage1":
+                    attack1 = "Frost Bite";
+                    attack2 = "Bubbles";
+                    break;
+                case "siren_stage2":
+                    attack1 = "Surf";
+                    attack2 = "Blizzard";
+                    break;
+                case "siren_stage3":
+                    attack1 = "Tsunami";
+                    attack2 = "Scream";
+                    break;
+                default:
+                    attack1 = "Quick Strike";
+                    attack2 = "Power Hit";
+                    break;
+            }
+
+            button_Battle_Attack1.Text = attack1;
+            button_Battle_Attack2.Text = attack2;
+        }
+
+
+
 
         private void ShowMessageAndNavigate(string text, string caption)
         {

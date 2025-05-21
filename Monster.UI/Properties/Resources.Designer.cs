@@ -83,6 +83,16 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        public static byte[] draco_stage1_hurt {
+            get {
+                object obj = ResourceManager.GetObject("draco_stage1_hurt", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         public static byte[] draco_stage1_inventory {
             get {
                 object obj = ResourceManager.GetObject("draco_stage1_inventory", resourceCulture);
@@ -103,6 +113,16 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        public static byte[] draco_stage2_hurt {
+            get {
+                object obj = ResourceManager.GetObject("draco_stage2_hurt", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         public static byte[] draco_stage2_inventory {
             get {
                 object obj = ResourceManager.GetObject("draco_stage2_inventory", resourceCulture);
@@ -116,6 +136,16 @@ namespace Monster.UI.Properties {
         public static byte[] draco_stage3_battle {
             get {
                 object obj = ResourceManager.GetObject("draco_stage3_battle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] draco_stage3_hurt {
+            get {
+                object obj = ResourceManager.GetObject("draco_stage3_hurt", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -153,6 +183,16 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        public static byte[] grifo_stage1_hurt {
+            get {
+                object obj = ResourceManager.GetObject("grifo_stage1_hurt", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         public static byte[] grifo_stage1_inventory {
             get {
                 object obj = ResourceManager.GetObject("grifo_stage1_inventory", resourceCulture);
@@ -173,6 +213,16 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        public static byte[] grifo_stage2_hurt {
+            get {
+                object obj = ResourceManager.GetObject("grifo_stage2_hurt", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         public static byte[] grifo_stage2_inventory {
             get {
                 object obj = ResourceManager.GetObject("grifo_stage2_inventory", resourceCulture);
@@ -186,6 +236,16 @@ namespace Monster.UI.Properties {
         public static byte[] grifo_stage3_battle {
             get {
                 object obj = ResourceManager.GetObject("grifo_stage3_battle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] grifo_stage3_hurt {
+            get {
+                object obj = ResourceManager.GetObject("grifo_stage3_hurt", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -243,6 +303,16 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        public static byte[] siren_stage1_hurt {
+            get {
+                object obj = ResourceManager.GetObject("siren_stage1_hurt", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         public static byte[] siren_stage1_inventory {
             get {
                 object obj = ResourceManager.GetObject("siren_stage1_inventory", resourceCulture);
@@ -263,6 +333,16 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        public static byte[] siren_stage2_hurt {
+            get {
+                object obj = ResourceManager.GetObject("siren_stage2_hurt", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         public static byte[] siren_stage2_inventory {
             get {
                 object obj = ResourceManager.GetObject("siren_stage2_inventory", resourceCulture);
@@ -276,6 +356,16 @@ namespace Monster.UI.Properties {
         public static byte[] siren_stage3_battle {
             get {
                 object obj = ResourceManager.GetObject("siren_stage3_battle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] siren_stage3_hurt {
+            get {
+                object obj = ResourceManager.GetObject("siren_stage3_hurt", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -323,6 +413,16 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        public static byte[] tauro_stage1_hurt {
+            get {
+                object obj = ResourceManager.GetObject("tauro_stage1_hurt", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         public static byte[] tauro_stage1_inventory {
             get {
                 object obj = ResourceManager.GetObject("tauro_stage1_inventory", resourceCulture);
@@ -343,6 +443,16 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        public static byte[] tauro_stage2_hurt {
+            get {
+                object obj = ResourceManager.GetObject("tauro_stage2_hurt", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         public static byte[] tauro_stage2_inventory {
             get {
                 object obj = ResourceManager.GetObject("tauro_stage2_inventory", resourceCulture);
@@ -356,6 +466,16 @@ namespace Monster.UI.Properties {
         public static byte[] tauro_stage3_battle {
             get {
                 object obj = ResourceManager.GetObject("tauro_stage3_battle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] tauro_stage3_hurt {
+            get {
+                object obj = ResourceManager.GetObject("tauro_stage3_hurt", resourceCulture);
                 return ((byte[])(obj));
             }
         }

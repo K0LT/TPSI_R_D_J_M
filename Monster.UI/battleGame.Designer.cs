@@ -79,7 +79,7 @@
             // 
             progressBar_battleGame_MyMonsterHp.BackColor = Color.AntiqueWhite;
             progressBar_battleGame_MyMonsterHp.ForeColor = Color.Gold;
-            progressBar_battleGame_MyMonsterHp.Location = new Point(320, 722);
+            progressBar_battleGame_MyMonsterHp.Location = new Point(320, 668);
             progressBar_battleGame_MyMonsterHp.Name = "progressBar_battleGame_MyMonsterHp";
             progressBar_battleGame_MyMonsterHp.Size = new Size(235, 23);
             progressBar_battleGame_MyMonsterHp.TabIndex = 3;
@@ -98,7 +98,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(254, 695);
+            pictureBox1.Location = new Point(254, 641);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(50, 50);
             pictureBox1.TabIndex = 14;
@@ -118,10 +118,11 @@
             // 
             // button_Battle_Attack1
             // 
+            button_Battle_Attack1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button_Battle_Attack1.BackgroundImage = (Image)resources.GetObject("button_Battle_Attack1.BackgroundImage");
             button_Battle_Attack1.Cursor = Cursors.Hand;
             button_Battle_Attack1.FlatStyle = FlatStyle.Flat;
-            button_Battle_Attack1.Font = new Font("VCR OSD Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button_Battle_Attack1.Font = new Font("VCR OSD Mono", 12F);
             button_Battle_Attack1.Location = new Point(281, 764);
             button_Battle_Attack1.Name = "button_Battle_Attack1";
             button_Battle_Attack1.Size = new Size(106, 39);
@@ -132,10 +133,11 @@
             // 
             // button_Battle_Attack2
             // 
+            button_Battle_Attack2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button_Battle_Attack2.BackgroundImage = (Image)resources.GetObject("button_Battle_Attack2.BackgroundImage");
             button_Battle_Attack2.Cursor = Cursors.Hand;
             button_Battle_Attack2.FlatStyle = FlatStyle.Flat;
-            button_Battle_Attack2.Font = new Font("VCR OSD Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button_Battle_Attack2.Font = new Font("VCR OSD Mono", 12F);
             button_Battle_Attack2.Location = new Point(428, 764);
             button_Battle_Attack2.Name = "button_Battle_Attack2";
             button_Battle_Attack2.Size = new Size(106, 39);
@@ -148,7 +150,7 @@
             // 
             progressBar_battleGame_MyMonsterEnergy.BackColor = Color.AntiqueWhite;
             progressBar_battleGame_MyMonsterEnergy.ForeColor = Color.Gold;
-            progressBar_battleGame_MyMonsterEnergy.Location = new Point(320, 655);
+            progressBar_battleGame_MyMonsterEnergy.Location = new Point(320, 723);
             progressBar_battleGame_MyMonsterEnergy.Name = "progressBar_battleGame_MyMonsterEnergy";
             progressBar_battleGame_MyMonsterEnergy.Size = new Size(235, 23);
             progressBar_battleGame_MyMonsterEnergy.TabIndex = 18;
@@ -157,7 +159,7 @@
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(254, 640);
+            pictureBox2.Location = new Point(254, 708);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(50, 50);
             pictureBox2.TabIndex = 19;

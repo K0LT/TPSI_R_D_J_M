@@ -124,17 +124,26 @@
   <data name="draco_stage1_battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\draco_stage1_battle.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="draco_stage1_hurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draco_stage1_hurt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="draco_stage1_inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\draco_stage1_inventory.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="draco_stage2_battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\draco_stage2_battle.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="draco_stage2_hurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draco_stage2_hurt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="draco_stage2_inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\draco_stage2_inventory.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="draco_stage3_battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\draco_stage3_battle.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="draco_stage3_hurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draco_stage3_hurt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="draco_stage3_inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\draco_stage3_inventory.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -145,17 +154,26 @@
   <data name="grifo_stage1_battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grifo_stage1_battle.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="grifo_stage1_hurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grifo_stage1_hurt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="grifo_stage1_inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grifo_stage1_inventory.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="grifo_stage2_battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grifo_stage2_battle.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="grifo_stage2_hurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grifo_stage2_hurt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="grifo_stage2_inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grifo_stage2_inventory.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="grifo_stage3_battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grifo_stage3_battle.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="grifo_stage3_hurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grifo_stage3_hurt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="grifo_stage3_inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grifo_stage3_inventory.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -172,17 +190,26 @@
   <data name="siren_stage1_battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\siren_stage1_battle.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="siren_stage1_hurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\siren_stage1_hurt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="siren_stage1_inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\siren_stage1_inventory.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="siren_stage2_battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\siren_stage2_battle.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="siren_stage2_hurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\siren_stage2_hurt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="siren_stage2_inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\siren_stage2_inventory.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="siren_stage3_battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\siren_stage3_battle.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="siren_stage3_hurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\siren_stage3_hurt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="siren_stage3_inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\siren_stage3_inventory.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -196,17 +223,26 @@
   <data name="tauro_stage1_battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tauro_stage1_battle.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="tauro_stage1_hurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tauro_stage1_hurt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="tauro_stage1_inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tauro_stage1_inventory.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tauro_stage2_battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tauro_stage2_battle.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="tauro_stage2_hurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tauro_stage2_hurt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="tauro_stage2_inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tauro_stage2_inventory.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tauro_stage3_battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tauro_stage3_battle.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tauro_stage3_hurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tauro_stage3_hurt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tauro_stage3_inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tauro_stage3_inventory.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
