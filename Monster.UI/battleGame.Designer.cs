@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(battleGame));
-            pictureBox_battleGame_Draco = new PictureBox();
+            pictureBox_battleGame_myMonster = new PictureBox();
             pictureBox_battleGame_Boss = new PictureBox();
             progressBar_battleGame_BossHP = new ProgressBar();
             progressBar_battleGame_MyMonsterHp = new ProgressBar();
@@ -38,21 +38,20 @@
             label_battle_Name = new Label();
             button_Battle_Attack1 = new Button();
             button_Battle_Attack2 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_Draco).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_myMonster).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_Boss).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_HPicon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox_battleGame_Draco
+            // pictureBox_battleGame_myMonster
             // 
-            pictureBox_battleGame_Draco.BackColor = Color.Transparent;
-            pictureBox_battleGame_Draco.Image = (Image)resources.GetObject("pictureBox_battleGame_Draco.Image");
-            pictureBox_battleGame_Draco.Location = new Point(19, 603);
-            pictureBox_battleGame_Draco.Name = "pictureBox_battleGame_Draco";
-            pictureBox_battleGame_Draco.Size = new Size(197, 199);
-            pictureBox_battleGame_Draco.TabIndex = 0;
-            pictureBox_battleGame_Draco.TabStop = false;
+            pictureBox_battleGame_myMonster.BackColor = Color.Transparent;
+            pictureBox_battleGame_myMonster.Location = new Point(19, 603);
+            pictureBox_battleGame_myMonster.Name = "pictureBox_battleGame_myMonster";
+            pictureBox_battleGame_myMonster.Size = new Size(200, 200);
+            pictureBox_battleGame_myMonster.TabIndex = 0;
+            pictureBox_battleGame_myMonster.TabStop = false;
             // 
             // pictureBox_battleGame_Boss
             // 
@@ -147,10 +146,10 @@
             Controls.Add(progressBar_battleGame_MyMonsterHp);
             Controls.Add(progressBar_battleGame_BossHP);
             Controls.Add(pictureBox_battleGame_Boss);
-            Controls.Add(pictureBox_battleGame_Draco);
+            Controls.Add(pictureBox_battleGame_myMonster);
             Name = "battleGame";
             Size = new Size(600, 900);
-            ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_Draco).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_myMonster).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_Boss).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_HPicon).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -160,7 +159,7 @@
 
         #endregion
 
-        private PictureBox pictureBox_battleGame_Draco;
+        private PictureBox pictureBox_battleGame_myMonster;
         private PictureBox pictureBox_battleGame_Boss;
         private ProgressBar progressBar_battleGame_BossHP;
         private ProgressBar progressBar_battleGame_MyMonsterHp;

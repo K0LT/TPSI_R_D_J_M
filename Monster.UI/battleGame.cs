@@ -40,29 +40,28 @@ namespace Monster.UI
             GetMonsterImage();
         }
 
+
+
         public void GetMonsterImage()
         {
             if (bsMonster is MonsterClass monster)
             {
-                switch (monster.Type)
-                {
-                    case "draco":
-                        pictureBox_battleGame_Draco.Image = ConvertByteArrayToImage(Resources.dracoBackHeadSmall);
-                        break;
-                    case "siren":
-                        pictureBox_battleGame_Draco.Image = ConvertByteArrayToImage(Resources.sirenBackHeadSmall);
-                        break;
-                    case "grifo":
-                        pictureBox_battleGame_Draco.Image = ConvertByteArrayToImage(Resources.grifoBackHeadSmall);
-                        break;
-                    case "tauro":
-                        pictureBox_battleGame_Draco.Image = ConvertByteArrayToImage(Resources.tauroBackHeadSmall);
-                        break;
-                    default:
-                        throw new Exception();
-                }
+                int stage = monster.Level < 5 ? 1 : monster.Level < 10 ? 2 : 3;
+                string type = monster.Type?.ToLower() ?? "";
+
+                string resourceName = $"{type}_stage{stage}_battle";
+                string iconName = $"{type}_icon";
+
+                System.Diagnostics.Debug.WriteLine("GetMonsterImageInventory call! iconName: " + iconName + " | resourceName: " + resourceName);
+
+                var imageObj = Monster.UI.Properties.Resources.ResourceManager.GetObject(resourceName);
+                var iconObj = Monster.UI.Properties.Resources.ResourceManager.GetObject(iconName);
+
+                pictureBox_battleGame_myMonster.Image = ConvertByteArrayToImage(imageObj as byte[]);
+
             }
         }
+
 
         private Image ConvertByteArrayToImage(byte[] bytes)
         {

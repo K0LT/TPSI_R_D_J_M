@@ -55,7 +55,6 @@ namespace Monster.UI
             mainMenu mainMenu = new mainMenu();
             loadGame loadGame = new loadGame();
             miniGamesMenu miniGames = new miniGamesMenu();
-            settings settings = new settings();
             credits credits = new credits();
             BattleMenu battleMenu = new BattleMenu();
             battleGame battleGame = new battleGame();
@@ -77,7 +76,6 @@ namespace Monster.UI
             _userControls.Add("MainMenu", mainMenu);
             _userControls.Add("LoadGame", loadGame);
             _userControls.Add("MiniGames", miniGames);
-            _userControls.Add("Settings", settings);
             _userControls.Add("Credits", credits);
             _userControls.Add("BattleMenu", battleMenu);
             _userControls.Add("BattleGame", battleGame);
@@ -160,6 +158,7 @@ namespace Monster.UI
                         inventoryControl.bsInventory = _gameState.Inventory;
                         inventoryControl.HookBindings();
                         _gameState.InventoryVisited = true;
+                        inventoryControl.bsMonster = _gameState.ActiveMonster;
                     }
                     break;
 

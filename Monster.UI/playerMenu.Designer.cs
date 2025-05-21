@@ -257,13 +257,12 @@
             // usernamePlayerMenuLabel
             // 
             usernamePlayerMenuLabel.Anchor = AnchorStyles.None;
-            usernamePlayerMenuLabel.AutoSize = true;
             usernamePlayerMenuLabel.BackColor = Color.Transparent;
-            usernamePlayerMenuLabel.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            usernamePlayerMenuLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             usernamePlayerMenuLabel.ForeColor = Color.DarkGoldenrod;
-            usernamePlayerMenuLabel.Location = new Point(148, 32);
+            usernamePlayerMenuLabel.Location = new Point(0, 51);
             usernamePlayerMenuLabel.Name = "usernamePlayerMenuLabel";
-            usernamePlayerMenuLabel.Size = new Size(318, 73);
+            usernamePlayerMenuLabel.Size = new Size(600, 64);
             usernamePlayerMenuLabel.TabIndex = 21;
             usernamePlayerMenuLabel.Text = "username";
             usernamePlayerMenuLabel.TextAlign = ContentAlignment.MiddleCenter;

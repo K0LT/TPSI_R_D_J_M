@@ -202,5 +202,6 @@ namespace Monster.UI
             Form1 ParentForm = this.FindForm() as Form1;
             ParentForm.SetActiveMonster(1);
         }
+
     }
 }

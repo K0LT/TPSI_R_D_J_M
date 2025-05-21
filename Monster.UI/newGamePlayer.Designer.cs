@@ -116,7 +116,7 @@
             // 
             button_newGamePlayer_ChooseFemale.Cursor = Cursors.Hand;
             button_newGamePlayer_ChooseFemale.FlatStyle = FlatStyle.Flat;
-            button_newGamePlayer_ChooseFemale.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button_newGamePlayer_ChooseFemale.Font = new Font("VCR OSD Mono", 12F);
             button_newGamePlayer_ChooseFemale.Image = (Image)resources.GetObject("button_newGamePlayer_ChooseFemale.Image");
             button_newGamePlayer_ChooseFemale.Location = new Point(94, 358);
             button_newGamePlayer_ChooseFemale.Name = "button_newGamePlayer_ChooseFemale";
@@ -132,7 +132,7 @@
             button_newGamePlayer_ChooseMale.BackgroundImageLayout = ImageLayout.Center;
             button_newGamePlayer_ChooseMale.Cursor = Cursors.Hand;
             button_newGamePlayer_ChooseMale.FlatStyle = FlatStyle.Flat;
-            button_newGamePlayer_ChooseMale.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button_newGamePlayer_ChooseMale.Font = new Font("VCR OSD Mono", 12F);
             button_newGamePlayer_ChooseMale.Image = (Image)resources.GetObject("button_newGamePlayer_ChooseMale.Image");
             button_newGamePlayer_ChooseMale.Location = new Point(259, 358);
             button_newGamePlayer_ChooseMale.Name = "button_newGamePlayer_ChooseMale";

@@ -48,15 +48,18 @@ namespace Monster.UI
             set
             {
                 _bsMonster.DataSource = value;
-                UpdateMonsterImageInventory(); // Update the image whenever the data source is set
             }
 
+        }
+        public object bsMonster
+        {
+            get => _bsMonster.DataSource;
+            set => _bsMonster.DataSource = value;
         }
 
         public inventory()
         {
             InitializeComponent();   
-            UpdateMonsterImageInventory(); // Call to set the default image
             DesignUI.SetToolTip(pictureBox_inventory_waterIcon, "+10 St.");
             DesignUI.SetToolTip(pictureBox_inventory_SodaIcon, "+10 EXP");
             DesignUI.SetToolTip(pictureBox_inventory_BeerIcon, "+20 EXP");
@@ -65,7 +68,7 @@ namespace Monster.UI
             DesignUI.SetToolTip(pictureBox_inventory_BurguerIcon, "+20 HP");
             DesignUI.SetToolTip(pictureBox_inventory_Ramen, "+20 Stm");
         }
-       
+
 
 
         public void HookBindings()
@@ -75,10 +78,13 @@ namespace Monster.UI
                 progressBar_inventory_HP.DataBindings.Add(nameof(GoldProgressBar.Value), bsDataSource, nameof(MonsterClass.HealthPoints));
                 progressBar_inventory_Stamina.DataBindings.Add(nameof(GoldProgressBar.Value), bsDataSource, nameof(MonsterClass.Stamina));
                 firstHook = true;
+                GetMonsterImageInventory();
+
+
             }
             UpdateInventory();
             return;
-        }
+            }
 
         private ToolTip toolTip = new ToolTip();
 
@@ -194,53 +200,35 @@ namespace Monster.UI
         }
 
 
-        private void UpdateMonsterImageInventory()
+        public void GetMonsterImageInventory()
         {
-            var myMonster = bsDataSource as Monster.Core.Models.MonsterClass;
-            if (myMonster == null)
+            if (bsMonster is MonsterClass monster) 
             {
-                pictureBox_inventory_Monster.Image = null; // Clear the image if no monster data
-                return;
-            }
+                int stage = monster.Level < 5 ? 1 : monster.Level < 10 ? 2 : 3;
+                string type = monster.Type?.ToLower() ?? "";
 
-            byte[] imgBytes = null;
+                string resourceName = $"{type}_stage{stage}_inventory";
+                string iconName = $"{type}_icon";
 
-            switch (myMonster.Type?.ToLower())
-            {
-                case "draco":
-                    imgBytes = Monster.UI.Properties.Resources.dracoInventory;
-                    break;
-                case "grifo":
-                    imgBytes = Monster.UI.Properties.Resources.grifoInventory;
-                    break;
-                case "tauro":
-                    imgBytes = Monster.UI.Properties.Resources.tauroInventory;
-                    break;
-                case "siren":
-                    imgBytes = Monster.UI.Properties.Resources.sirenInventory;
-                    break;
-                default:
-                    MessageBox.Show("Unknown monster type.");
-                    return;
-            }
+                System.Diagnostics.Debug.WriteLine("GetMonsterImageInventory call! iconName: " + iconName + " | resourceName: " + resourceName);
 
-            if (imgBytes != null)
-            {
-                try
-                {
-                    using (MemoryStream ms = new MemoryStream(imgBytes))
-                    {
-                        pictureBox_inventory_Monster.Image = Image.FromStream(ms);
-                        pictureBox_inventory_Monster.Invalidate(); // Refresh the PictureBox
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Error loading image: {ex.Message}");
-                }
+                var imageObj = Monster.UI.Properties.Resources.ResourceManager.GetObject(resourceName);
+                var iconObj = Monster.UI.Properties.Resources.ResourceManager.GetObject(iconName);
+
+                pictureBox_inventory_Monster.Image = ConvertByteArrayToImage(imageObj as byte[]);
+
+               
             }
         }
 
 
+        private Image ConvertByteArrayToImage(byte[] bytes)
+        {
+            using (var ms = new MemoryStream(bytes))
+            {
+                return Image.FromStream(ms);
+            }
+        }
+    
     }
 }

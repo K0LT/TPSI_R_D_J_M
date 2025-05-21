@@ -297,16 +297,17 @@
             // 
             inventoryLabel.AutoSize = true;
             inventoryLabel.BackColor = Color.Transparent;
-            inventoryLabel.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            inventoryLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             inventoryLabel.ForeColor = Color.DarkGoldenrod;
-            inventoryLabel.Location = new Point(160, 49);
+            inventoryLabel.Location = new Point(126, 51);
             inventoryLabel.Name = "inventoryLabel";
-            inventoryLabel.Size = new Size(297, 73);
+            inventoryLabel.Size = new Size(369, 64);
             inventoryLabel.TabIndex = 22;
             inventoryLabel.Text = "Inventory";
             // 
             // pictureBox_Inventory_HPicon
             // 
+            pictureBox_Inventory_HPicon.BackColor = Color.Transparent;
             pictureBox_Inventory_HPicon.Image = (Image)resources.GetObject("pictureBox_Inventory_HPicon.Image");
             pictureBox_Inventory_HPicon.Location = new Point(309, 164);
             pictureBox_Inventory_HPicon.Name = "pictureBox_Inventory_HPicon";
@@ -316,6 +317,7 @@
             // 
             // pictureBox_Inventory_STicon
             // 
+            pictureBox_Inventory_STicon.BackColor = Color.Transparent;
             pictureBox_Inventory_STicon.Image = (Image)resources.GetObject("pictureBox_Inventory_STicon.Image");
             pictureBox_Inventory_STicon.Location = new Point(309, 278);
             pictureBox_Inventory_STicon.Name = "pictureBox_Inventory_STicon";
