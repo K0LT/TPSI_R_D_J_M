@@ -193,9 +193,19 @@ namespace Monster.UI
                     var battleGame = control as battleGame;
                     battleGame.bsMonster = _gameState.ActiveMonster;
                     battleGame.HookBindings();
+                    battleGame.InitializeBoss(_selectedBossType);
                     break;
             }
         }
+
+
+        private string _selectedBossType = "red"; // default
+        public void SetSelectedBossType(string bossType)
+        {
+            _selectedBossType = bossType.ToLower(); // "red" or "skull"
+        }
+
+
 
         public void SetupUser(string newUsername, string newType)
         {
@@ -396,13 +406,13 @@ namespace Monster.UI
             int maxExperiencePoints;
 
           
-            if (bossType == "Red")
+            if (bossType == "red")
             {
                 maxTotalItems = rand.Next(1, 5);
                 minExperiencePoints = 10;
                 maxExperiencePoints = 50;
             }
-            else if (bossType == "Skull")
+            else if (bossType == "skull")
             {
                 maxTotalItems = 10; 
                 minExperiencePoints = 90;

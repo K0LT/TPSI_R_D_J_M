@@ -63,46 +63,6 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
-        public static byte[] badGuyRed {
-            get {
-                object obj = ResourceManager.GetObject("badGuyRed", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
-        /// </summary>
-        public static byte[] badGuyRedHit {
-            get {
-                object obj = ResourceManager.GetObject("badGuyRedHit", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
-        /// </summary>
-        public static byte[] badGuySkull {
-            get {
-                object obj = ResourceManager.GetObject("badGuySkull", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
-        /// </summary>
-        public static byte[] badGuySkullHit {
-            get {
-                object obj = ResourceManager.GetObject("badGuySkullHit", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
-        /// </summary>
         public static byte[] boyPlayerPic {
             get {
                 object obj = ResourceManager.GetObject("boyPlayerPic", resourceCulture);
@@ -253,6 +213,26 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        public static byte[] red_hurt {
+            get {
+                object obj = ResourceManager.GetObject("red_hurt", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] red_normal {
+            get {
+                object obj = ResourceManager.GetObject("red_normal", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         public static byte[] siren_stage1_battle {
             get {
                 object obj = ResourceManager.GetObject("siren_stage1_battle", resourceCulture);
@@ -306,6 +286,26 @@ namespace Monster.UI.Properties {
         public static byte[] siren_stage3_inventory {
             get {
                 object obj = ResourceManager.GetObject("siren_stage3_inventory", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] skull_hurt {
+            get {
+                object obj = ResourceManager.GetObject("skull_hurt", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] skull_normal {
+            get {
+                object obj = ResourceManager.GetObject("skull_normal", resourceCulture);
                 return ((byte[])(obj));
             }
         }

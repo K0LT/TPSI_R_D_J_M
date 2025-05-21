@@ -125,6 +125,7 @@
             button_Battle_Attack1.TabIndex = 16;
             button_Battle_Attack1.Text = "Attack 1";
             button_Battle_Attack1.UseVisualStyleBackColor = true;
+            button_Battle_Attack1.Click += button_Battle_Attack1_Click;
             // 
             // button_Battle_Attack2
             // 
@@ -138,6 +139,7 @@
             button_Battle_Attack2.TabIndex = 17;
             button_Battle_Attack2.Text = "Attack 2";
             button_Battle_Attack2.UseVisualStyleBackColor = true;
+            button_Battle_Attack2.Click += button_Battle_Attack2_Click;
             // 
             // progressBar_battleGame_MyMonsterStamina
             // 

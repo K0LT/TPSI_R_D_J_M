@@ -19,14 +19,17 @@ namespace Monster.UI
 
         private void pictureBox_battleMenu_Red_Click(object sender, EventArgs e)
         {
-
+            ParentForm.SetSelectedBossType("red");
             ParentForm.NavigateTo("BattleGame");
         }
+
 
         private void pictureBox_battleMenu_Skull_Click(object sender, EventArgs e)
         {
 
+            ParentForm.SetSelectedBossType("skull");
             ParentForm.NavigateTo("BattleGame");
+
         }
     }
 }

@@ -58,14 +58,15 @@ namespace Monster.Core.Models
             get => _healthPoints;
             set
             {
-                if (_healthPoints != value)
+                int newValue = value < 0 ? 0 : value;
+                if (_healthPoints != newValue)
                 {
-                    _healthPoints = value;
-                    System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass HealthPoints Setter Call.");
-                    OnPropertyChanged();
+                    _healthPoints = newValue;
+                    OnPropertyChanged(nameof(HealthPoints));
                 }
             }
         }
+
 
         public int ExperiencePoints
         {
