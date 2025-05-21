@@ -40,6 +40,7 @@
             button_Battle_Attack2 = new Button();
             progressBar_battleGame_MyMonsterEnergy = new GoldProgressBar();
             pictureBox2 = new PictureBox();
+            label_Message = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_myMonster).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_Boss).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_HPicon).BeginInit();
@@ -162,11 +163,23 @@
             pictureBox2.TabIndex = 19;
             pictureBox2.TabStop = false;
             // 
+            // label_Message
+            // 
+            label_Message.BackColor = Color.Transparent;
+            label_Message.Font = new Font("VCR OSD Mono", 14.25F);
+            label_Message.ForeColor = Color.Gold;
+            label_Message.Location = new Point(0, 447);
+            label_Message.Name = "label_Message";
+            label_Message.Size = new Size(283, 153);
+            label_Message.TabIndex = 20;
+            label_Message.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // battleGame
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            Controls.Add(label_Message);
             Controls.Add(pictureBox2);
             Controls.Add(progressBar_battleGame_MyMonsterEnergy);
             Controls.Add(button_Battle_Attack2);
@@ -202,5 +215,6 @@
         private Button button_Battle_Attack2;
         private GoldProgressBar progressBar_battleGame_MyMonsterEnergy;
         private PictureBox pictureBox2;
+        private Label label_Message;
     }
 }

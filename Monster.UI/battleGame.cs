@@ -54,7 +54,7 @@ namespace Monster.UI
                 var imageObj = Resources.ResourceManager.GetObject(resourceName);
 
                 var image = ConvertByteArrayToImage(imageObj as byte[]);
-                pictureBox_battleGame_myMonster.Image = image;  
+                pictureBox_battleGame_myMonster.Image = image;
             }
         }
 
@@ -69,6 +69,13 @@ namespace Monster.UI
             }
         }
 
+        public async void FlashMonsterHurtImageBoss()
+        {
+            //UpdateBossImage(true);
+            // await Task.Delay(1000);
+
+            //UpdateBossImage(false);
+        }
 
 
 
@@ -132,7 +139,7 @@ namespace Monster.UI
             {
                 DoBossCounterAttack();
                 IncreasePlayerEnergy(20);
-                ShowMessage("Not enough energy! The boss attacks you for 10 HP.", "Warning");
+                ShowTemporaryMessage("Not enough energy! The boss attacks you for 10 HP!");
                 return;
             }
             _battleEnergy -= energyCost;
@@ -145,7 +152,7 @@ namespace Monster.UI
                 if (boss.HealthPoints < 0) boss.HealthPoints = 0;
                 progressBar_battleGame_BossHP.Value = boss.HealthPoints;
 
-                if (boss.HealthPoints == 0 && Monster != null)
+                if (boss.HealthPoints == 0 && Monster != null && Monster.HealthPoints!=0)
                 {
                     ParentForm.BattleReward(Monster, boss.Type);
                     ParentForm.NavigateTo("Monster");
@@ -157,7 +164,7 @@ namespace Monster.UI
             }
             else
             {
-                ShowMessage("Your attack missed!", "Miss");
+                ShowTemporaryMessage("Your attack missed!");
             }
         }
 
@@ -168,7 +175,7 @@ namespace Monster.UI
             {
                 DoBossCounterAttack();
                 IncreasePlayerEnergy(50);
-                ShowMessage("Not enough energy! The boss attacks you for 10 HP.", "Warning");
+                ShowTemporaryMessage ("Not enough energy! The boss attacks you for 10 HP.");
                 return;
             }
             _battleEnergy -= energyCost;
@@ -181,7 +188,7 @@ namespace Monster.UI
                 if (boss.HealthPoints < 0) boss.HealthPoints = 0;
                 progressBar_battleGame_BossHP.Value = boss.HealthPoints;
 
-                if (boss.HealthPoints == 0 && Monster != null)
+                if (boss.HealthPoints == 0 && Monster != null && Monster.HealthPoints != 0)
                 {
                     ParentForm.BattleReward(Monster, boss.Type);
                     ParentForm.NavigateTo("Monster");
@@ -193,7 +200,7 @@ namespace Monster.UI
             }
             else
             {
-                ShowMessage("Your attack missed!", "Miss");
+                ShowTemporaryMessage ("Your attack missed!");
             }
         }
 
@@ -243,7 +250,7 @@ namespace Monster.UI
 
         private void DealDamageToPlayer(int damage, bool showMessage = false)
         {
-            if (Monster != null)
+            if (Monster != null && boss.HealthPoints!=0)
             {
                 Monster.HealthPoints -= damage;
                 if (Monster.HealthPoints < 0) Monster.HealthPoints = 0;
@@ -254,7 +261,7 @@ namespace Monster.UI
                 }
                 else if (showMessage)
                 {
-                    ShowMessage($"The boss counterattacked and dealt {damage} damage to your monster!", "Counterattack");
+                    ShowTemporaryMessage(($"The boss counterattacked and dealt {damage} damage to your monster!"));
                 }
             }
         }
@@ -277,12 +284,17 @@ namespace Monster.UI
         }
 
 
-        private void ShowMessage(string text, string caption)
+       
+    
+
+    private async void ShowTemporaryMessage(string text)
         {
-            if (InvokeRequired)
-                Invoke(new Action(() => MessageBox.Show(text, caption, MessageBoxButtons.OK, MessageBoxIcon.Information)));
-            else
-                MessageBox.Show(text, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            label_Message.Text = text;
+            label_Message.Visible = true;
+
+            await Task.Delay(2500); 
+
+            label_Message.Visible = false;
         }
     }
 }
