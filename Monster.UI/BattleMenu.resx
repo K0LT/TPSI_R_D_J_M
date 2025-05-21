@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox_miniGames_Memory.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox_battleMenu_Red.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPoAAAF3CAYAAACMtVaPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAA/7JJREFUeF7s/Qe4Z1V1/4/vfe7A3Pvp7d47w1BEEbAkRk1MTMMau1iwBltENIqI
+        DAAACwwBP0AiyAAA/7JJREFUeF7s/Qe4Z1V1/4/vfe7A3Pvp7d47w1BEEbAkRk1MTMMau1iwBltENIqI
         AlKEoffeYSgDQy+D9A5D70MviiLEJCYBY4wkRkXY/+e1yvnse+YOnRl/3/+c59nP+XxO2WeX9d6r7LXX
         DmHFseJYcaw4VhwrjhXH/0PHJ0JY+aerjnzkN6uOfORXs0c+8qtVRz7yv55mcw56Lb/Hb+6tMfKR/5Jn
         PK2c/R4meVaeW1m+49eG37L31tDvDfNf+SO/mh3K9/mt+VTyz8o1pZzZfdJvyNufl2eHeXu+ZV2za1OT
@@ -1845,10 +1845,10 @@
         zUXD4WO0CflDt9SLPp81Ej49448tbll5rDxWHiuPlcfKY+XxAjv+Pz7MYh4CbbOFAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox_battleMenu_Skull.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPoAAAF3CAYAAACMtVaPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAA/7JJREFUeF7svQWYnMeRNy6HnFgyCU2xDDLJtpiXaWBRK4YlLWm1zMw0tMOwu0PL
+        DAAACwwBP0AiyAAA/7JJREFUeF7svQWYnMeRNy6HnFgyCU2xDDLJtpiXaWBRK4YlLWm1zMw0tMOwu0PL
         pJW0YtkCW2ZmlJO7S3KBkyHgJHYuuXX9n1/1vLJuvwOz/f0/9fPMMzPv21BdXdVdXV1VPW3apXQpXUr/
         b6XxiZEAna7FY7FovRZLh9ds1ni7us1uu10vntm0Xk+P3eN0W7xut83r7DZ6e3o6vQN93fh2OZ0mz+CA
         0zs05HL39zs9PT0OL/4PDHR7Bwac3t7+Lg+eDw243PjgeV9ft7e3t8uDb+mzf/+AY3DQ7R0a8nhGRno8

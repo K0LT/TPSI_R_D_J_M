@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using System.Text;
 using System.Windows.Forms;
 using Monster.Core.Models;
 using Monster.Game.GameState;
@@ -49,14 +50,12 @@ namespace Monster.UI
             // Create and initialize each UserControl
             myMonster monsterControl = new myMonster();
             inventory inventoryControl = new inventory();
-            ticTacToeGame ticTacToeControl = new ticTacToeGame();
             playerMenu playerMenuControl = new playerMenu(_gameState.CurrentUser.UserType);
             newGamePlayer newUserControl = new newGamePlayer();
             newGameMonster newMonsterControl = new newGameMonster();
             mainMenu mainMenu = new mainMenu();
             loadGame loadGame = new loadGame();
             miniGamesMenu miniGames = new miniGamesMenu();
-            settings settings = new settings();
             credits credits = new credits();
             BattleMenu battleMenu = new BattleMenu();
             battleGame battleGame = new battleGame();
@@ -78,7 +77,6 @@ namespace Monster.UI
             _userControls.Add("MainMenu", mainMenu);
             _userControls.Add("LoadGame", loadGame);
             _userControls.Add("MiniGames", miniGames);
-            _userControls.Add("Settings", settings);
             _userControls.Add("Credits", credits);
             _userControls.Add("BattleMenu", battleMenu);
             _userControls.Add("BattleGame", battleGame);
@@ -161,6 +159,7 @@ namespace Monster.UI
                         inventoryControl.bsInventory = _gameState.Inventory;
                         inventoryControl.HookBindings();
                         _gameState.InventoryVisited = true;
+                        inventoryControl.bsMonster = _gameState.ActiveMonster;
                     }
                     break;
 
@@ -298,32 +297,173 @@ namespace Monster.UI
             _gameState.ActiveMonster = monster;
         }
 
-        public void AddExperience(int amount)
-        {
-            _gameState.AddExperience(amount);
-        }
+       
+
+
+
 
         public void GameReward()
         {
-            if (_gameState.Inventory == null || _gameState.Inventory.Count == 0)
+           Random rand = new Random();
+
+            var itemProbabilities = new Dictionary<string, int>
             {
-                MessageBox.Show("No items in inventory to reward.", "Game Reward", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                { "Water", 80 },
+                { "Ramen", 80 },
+                { "Soda", 50 },
+                { "Burguer", 50 },
+                { "Beer", 30 },
+                { "Nachos", 30 },
+                { "Energy Drink", 10 }
+            };
+
+            var inventoryItems = _gameState.Inventory.Where(i => itemProbabilities.ContainsKey(i.Name)).ToList();
+
+            inventoryItems = inventoryItems.OrderBy(x => rand.Next()).ToList();
+
+            int maxTotalItems = rand.Next(1, 5);
+
+            int totalRewardQuantity = 0;
+
+            var rewards = new List<(string Name, int Quantity)>();
+
+            foreach (var item in inventoryItems)
+            {
+                if (totalRewardQuantity >= maxTotalItems)
+                    break;
+
+                int probability = itemProbabilities[item.Name];
+                int roll = rand.Next(1, 101);
+
+                if (roll <= probability)
+                {
+                    int maxQuantityForItem = maxTotalItems - totalRewardQuantity;
+
+                    int rewardQuantity = rand.Next(1, maxQuantityForItem + 1);
+
+                    item.Quantity += rewardQuantity;
+
+                    rewards.Add((item.Name, rewardQuantity));
+                    totalRewardQuantity += rewardQuantity;
+                }
             }
 
-            Random rand = new Random();
-            int itemIndex = rand.Next(0, Math.Min(7, _gameState.Inventory.Count));
-            var item = _gameState.Inventory[itemIndex];
-            string itemName = item.Name;
-            int rewardAmount = rand.Next(1, 4);
+            if (rewards.Count == 0)
+            {
+                var randomItem = inventoryItems[rand.Next(inventoryItems.Count)];
+                int rewardQuantity = rand.Next(1, maxTotalItems + 1);
 
-            item.Quantity += rewardAmount;
+                randomItem.Quantity += rewardQuantity;
 
-            MessageBox.Show($"Congratulations! You won {rewardAmount}x {itemName}!", "Reward", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                rewards.Add((randomItem.Name, rewardQuantity));
+                totalRewardQuantity += rewardQuantity;
+            }
+
+            var rewardMessage = new System.Text.StringBuilder($"Congratulations! You won:\n");
+            foreach (var reward in rewards)
+            {
+                rewardMessage.AppendLine($"{reward.Quantity}x {reward.Name}");
+            }
+
+            MessageBox.Show(rewardMessage.ToString(), "Reward", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+
+
+
+
+
+        public void BattleReward(MonsterClass monster, string bossType)
+        {
+            Random rand = new Random();
+
+            var itemProbabilities = new Dictionary<string, int>
+            {
+                { "Water", 80 },
+                { "Ramen", 80 },
+                { "Soda", 50 },
+                { "Burguer", 50 },
+                { "Beer", 30 },
+                { "Nachos", 30 },
+                { "Energy Drink", 10 }
+            };
+
+            var inventoryItems = _gameState.Inventory.Where(i => itemProbabilities.ContainsKey(i.Name)).ToList();
+            inventoryItems = inventoryItems.OrderBy(x => rand.Next()).ToList();
+
+            int maxTotalItems;
+            int minExperiencePoints;
+            int maxExperiencePoints;
+
+          
+            if (bossType == "Red")
+            {
+                maxTotalItems = rand.Next(1, 5);
+                minExperiencePoints = 10;
+                maxExperiencePoints = 50;
+            }
+            else if (bossType == "Skull")
+            {
+                maxTotalItems = 10; 
+                minExperiencePoints = 90;
+                maxExperiencePoints = 150;
+            }
+            else
+            {
+                throw new ArgumentException("Invalid boss type");
+            }
+
+            int totalRewardQuantity = 0;
+            var rewards = new List<(string Name, int Quantity)>();
+
+            foreach (var item in inventoryItems)
+            {
+                if (totalRewardQuantity >= maxTotalItems)
+                    break;
+
+                int probability = itemProbabilities[item.Name];
+                int roll = rand.Next(1, 101);
+
+                if (roll <= probability)
+                {
+                    int maxQuantityForItem = maxTotalItems - totalRewardQuantity;
+                    int rewardQuantity = rand.Next(1, maxQuantityForItem + 1);
+
+                    item.Quantity += rewardQuantity;
+                    rewards.Add((item.Name, rewardQuantity));
+                    totalRewardQuantity += rewardQuantity;
+                }
+            }
+
+            if (rewards.Count == 0)
+            {
+                var randomItem = inventoryItems[rand.Next(inventoryItems.Count)];
+                int rewardQuantity = rand.Next(1, maxTotalItems + 1);
+
+                randomItem.Quantity += rewardQuantity;
+                rewards.Add((randomItem.Name, rewardQuantity));
+                totalRewardQuantity += rewardQuantity;
+            }
+
+            int experiencePoints = rand.Next(minExperiencePoints, maxExperiencePoints + 1);
+            monster.AddExperience(experiencePoints);
+
+            var rewardMessage = new System.Text.StringBuilder($"Congratulations! You won:\n");
+            foreach (var reward in rewards)
+            {
+                rewardMessage.AppendLine($"{reward.Quantity}x {reward.Name}");
+            }
+            rewardMessage.AppendLine($"And gained {experiencePoints} experience points!");
+
+            MessageBox.Show(rewardMessage.ToString(), "Battle Reward", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+
+
 
         public bool GetInventoryVisited() {
             return _gameState.InventoryVisited;
         }
     }
+
 }

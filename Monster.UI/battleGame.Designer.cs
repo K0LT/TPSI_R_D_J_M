@@ -29,35 +29,36 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(battleGame));
-            pictureBox_battleGame_Draco = new PictureBox();
+            pictureBox_battleGame_myMonster = new PictureBox();
             pictureBox_battleGame_Boss = new PictureBox();
-            progressBar_battleGame_BossHP = new ProgressBar();
-            progressBar_battleGame_MyMonsterHp = new ProgressBar();
+            progressBar_battleGame_BossHP = new GoldProgressBar();
+            progressBar_battleGame_MyMonsterHp = new GoldProgressBar();
             pictureBox_myMonster_HPicon = new PictureBox();
             pictureBox1 = new PictureBox();
             label_battle_Name = new Label();
             button_Battle_Attack1 = new Button();
             button_Battle_Attack2 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_Draco).BeginInit();
+            progressBar_battleGame_MyMonsterStamina = new GoldProgressBar();
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_myMonster).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_Boss).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_HPicon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox_battleGame_Draco
+            // pictureBox_battleGame_myMonster
             // 
-            pictureBox_battleGame_Draco.BackColor = Color.Transparent;
-            pictureBox_battleGame_Draco.Image = (Image)resources.GetObject("pictureBox_battleGame_Draco.Image");
-            pictureBox_battleGame_Draco.Location = new Point(19, 603);
-            pictureBox_battleGame_Draco.Name = "pictureBox_battleGame_Draco";
-            pictureBox_battleGame_Draco.Size = new Size(197, 199);
-            pictureBox_battleGame_Draco.TabIndex = 0;
-            pictureBox_battleGame_Draco.TabStop = false;
+            pictureBox_battleGame_myMonster.BackColor = Color.Transparent;
+            pictureBox_battleGame_myMonster.Location = new Point(19, 603);
+            pictureBox_battleGame_myMonster.Name = "pictureBox_battleGame_myMonster";
+            pictureBox_battleGame_myMonster.Size = new Size(200, 200);
+            pictureBox_battleGame_myMonster.TabIndex = 0;
+            pictureBox_battleGame_myMonster.TabStop = false;
             // 
             // pictureBox_battleGame_Boss
             // 
             pictureBox_battleGame_Boss.BackColor = Color.Transparent;
-            pictureBox_battleGame_Boss.BackgroundImage = (Image)resources.GetObject("pictureBox_battleGame_Boss.BackgroundImage");
             pictureBox_battleGame_Boss.Location = new Point(147, 4);
             pictureBox_battleGame_Boss.Name = "pictureBox_battleGame_Boss";
             pictureBox_battleGame_Boss.Size = new Size(450, 450);
@@ -66,6 +67,8 @@
             // 
             // progressBar_battleGame_BossHP
             // 
+            progressBar_battleGame_BossHP.BackColor = Color.AntiqueWhite;
+            progressBar_battleGame_BossHP.ForeColor = Color.Gold;
             progressBar_battleGame_BossHP.Location = new Point(355, 476);
             progressBar_battleGame_BossHP.Name = "progressBar_battleGame_BossHP";
             progressBar_battleGame_BossHP.Size = new Size(235, 23);
@@ -73,7 +76,9 @@
             // 
             // progressBar_battleGame_MyMonsterHp
             // 
-            progressBar_battleGame_MyMonsterHp.Location = new Point(320, 670);
+            progressBar_battleGame_MyMonsterHp.BackColor = Color.AntiqueWhite;
+            progressBar_battleGame_MyMonsterHp.ForeColor = Color.Gold;
+            progressBar_battleGame_MyMonsterHp.Location = new Point(320, 722);
             progressBar_battleGame_MyMonsterHp.Name = "progressBar_battleGame_MyMonsterHp";
             progressBar_battleGame_MyMonsterHp.Size = new Size(235, 23);
             progressBar_battleGame_MyMonsterHp.TabIndex = 3;
@@ -90,7 +95,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(254, 655);
+            pictureBox1.Location = new Point(254, 695);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(50, 50);
             pictureBox1.TabIndex = 14;
@@ -102,7 +107,7 @@
             label_battle_Name.BackColor = Color.Transparent;
             label_battle_Name.Font = new Font("VCR OSD Mono", 14.25F);
             label_battle_Name.ForeColor = Color.Goldenrod;
-            label_battle_Name.Location = new Point(254, 618);
+            label_battle_Name.Location = new Point(254, 603);
             label_battle_Name.Name = "label_battle_Name";
             label_battle_Name.Size = new Size(54, 19);
             label_battle_Name.TabIndex = 15;
@@ -114,7 +119,7 @@
             button_Battle_Attack1.Cursor = Cursors.Hand;
             button_Battle_Attack1.FlatStyle = FlatStyle.Flat;
             button_Battle_Attack1.Font = new Font("VCR OSD Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button_Battle_Attack1.Location = new Point(282, 739);
+            button_Battle_Attack1.Location = new Point(281, 764);
             button_Battle_Attack1.Name = "button_Battle_Attack1";
             button_Battle_Attack1.Size = new Size(106, 39);
             button_Battle_Attack1.TabIndex = 16;
@@ -127,18 +132,38 @@
             button_Battle_Attack2.Cursor = Cursors.Hand;
             button_Battle_Attack2.FlatStyle = FlatStyle.Flat;
             button_Battle_Attack2.Font = new Font("VCR OSD Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button_Battle_Attack2.Location = new Point(429, 739);
+            button_Battle_Attack2.Location = new Point(428, 764);
             button_Battle_Attack2.Name = "button_Battle_Attack2";
             button_Battle_Attack2.Size = new Size(106, 39);
             button_Battle_Attack2.TabIndex = 17;
             button_Battle_Attack2.Text = "Attack 2";
             button_Battle_Attack2.UseVisualStyleBackColor = true;
             // 
+            // progressBar_battleGame_MyMonsterStamina
+            // 
+            progressBar_battleGame_MyMonsterStamina.BackColor = Color.AntiqueWhite;
+            progressBar_battleGame_MyMonsterStamina.ForeColor = Color.Gold;
+            progressBar_battleGame_MyMonsterStamina.Location = new Point(320, 655);
+            progressBar_battleGame_MyMonsterStamina.Name = "progressBar_battleGame_MyMonsterStamina";
+            progressBar_battleGame_MyMonsterStamina.Size = new Size(235, 23);
+            progressBar_battleGame_MyMonsterStamina.TabIndex = 18;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(254, 640);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(50, 50);
+            pictureBox2.TabIndex = 19;
+            pictureBox2.TabStop = false;
+            // 
             // battleGame
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            Controls.Add(pictureBox2);
+            Controls.Add(progressBar_battleGame_MyMonsterStamina);
             Controls.Add(button_Battle_Attack2);
             Controls.Add(button_Battle_Attack1);
             Controls.Add(label_battle_Name);
@@ -147,27 +172,30 @@
             Controls.Add(progressBar_battleGame_MyMonsterHp);
             Controls.Add(progressBar_battleGame_BossHP);
             Controls.Add(pictureBox_battleGame_Boss);
-            Controls.Add(pictureBox_battleGame_Draco);
+            Controls.Add(pictureBox_battleGame_myMonster);
             Name = "battleGame";
             Size = new Size(600, 900);
-            ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_Draco).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_myMonster).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_battleGame_Boss).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_myMonster_HPicon).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox_battleGame_Draco;
+        private PictureBox pictureBox_battleGame_myMonster;
         private PictureBox pictureBox_battleGame_Boss;
-        private ProgressBar progressBar_battleGame_BossHP;
-        private ProgressBar progressBar_battleGame_MyMonsterHp;
+        private GoldProgressBar progressBar_battleGame_BossHP;
+        private GoldProgressBar progressBar_battleGame_MyMonsterHp;
         private PictureBox pictureBox_myMonster_HPicon;
         private PictureBox pictureBox1;
         private Label label_battle_Name;
         private Button button_Battle_Attack1;
         private Button button_Battle_Attack2;
+        private GoldProgressBar progressBar_battleGame_MyMonsterStamina;
+        private PictureBox pictureBox2;
     }
 }

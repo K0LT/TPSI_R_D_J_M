@@ -11,10 +11,15 @@ namespace Monster.UI
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
+            if (disposing)
+            {
+                gameTimer?.Dispose();
+                flipBackTimer?.Dispose();
+            components?.Dispose();
                 components.Dispose();
             base.Dispose(disposing);
         }
+            }
 
         private void InitializeComponent()
         {

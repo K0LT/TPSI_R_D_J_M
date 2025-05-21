@@ -176,7 +176,7 @@
   <data name="pictureBox_miniGames_Memory.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPoAAAJtCAYAAAAfEG3vAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAA/7JJREFUeF50/XW4XdW1Po7vtc+JnhMDQvy4xOXEDdp7e1sggRaXuKHBCe7BIUhw
+        wQAADsEBuJFr7QAA/7JJREFUeF50/XW4XdW1Po7vtc+JnhMDQvy4xOXEDdp7e1sggRaXuKHBCe7BIUhw
         QvDiUgolkBAoFUqhpYKHoCFC3EN77/2N3/O+7xhrreRzv3+sZ++99lpzzjXXfIePMQu/GVlinx9Tbp8d
         WWbLDm9tnxzWyj4+vLV9elgr++TwMvvk8Na27MhWtuzI1vbZEa3ssyNb6fPw1jw+PaK1fe7/LTuitS07
         qsyWHYXP1va5f//0iFZ+XZl95tfrwD0t7Qt8P6KVfuPAfce0smXHtLZlx5TZ50eX22feDvpfdhQOjKs1
@@ -5068,7 +5068,7 @@
   <data name="pictureBox_miniGames_ticTac.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPoAAAJsCAYAAADUTL5KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAA/7JJREFUeF50/XW4HceVNYyfcy5IurqSnO97JyaxdFFkBpETMzPIYjKKyRSzxbbM
+        wQAADsEBuJFr7QAA/7JJREFUeF50/XW4HceVNYyfcy5IurqSnO97JyaxdFFkBpETMzPIYjKKyRSzxbbM
         sixzwE7MMoRnMpPJTCZgii1jTGLJQnPizPvt37PW2ru6rmZ+f/TT5zRUV1fX2rx3lV44tGKrDq7Yc4eU
         uX/Wt2cOLtvTB/l2cMWeOqhsTx2IrWJPYn9QxZ46uOLXVOyJg8r2JI7xmrI9cxDOoS38LrM9tIHr2TaP
         l9JznsFz+Sw/dwj+V+yZA70PfGa0VSqO4VneFq9ne22fm97F3w3nec7b5/vi/4Fx3PuT2sDxkj+jbKvQ

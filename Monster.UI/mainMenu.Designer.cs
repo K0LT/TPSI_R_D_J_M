@@ -33,7 +33,6 @@
             button_mainMenu_LoadGame = new Button();
             button_mainMenu_Exit = new Button();
             button_mainMenu_Credits = new Button();
-            button_mainMenu_Settings = new Button();
             SuspendLayout();
             // 
             // button_mainMenu_NewGame
@@ -53,7 +52,7 @@
             button_mainMenu_LoadGame.BackgroundImage = (Image)resources.GetObject("button_mainMenu_LoadGame.BackgroundImage");
             button_mainMenu_LoadGame.Cursor = Cursors.Hand;
             button_mainMenu_LoadGame.FlatStyle = FlatStyle.Flat;
-            button_mainMenu_LoadGame.Location = new Point(183, 470);
+            button_mainMenu_LoadGame.Location = new Point(183, 489);
             button_mainMenu_LoadGame.Name = "button_mainMenu_LoadGame";
             button_mainMenu_LoadGame.Size = new Size(228, 45);
             button_mainMenu_LoadGame.TabIndex = 1;
@@ -63,8 +62,9 @@
             // button_mainMenu_Exit
             // 
             button_mainMenu_Exit.BackgroundImage = (Image)resources.GetObject("button_mainMenu_Exit.BackgroundImage");
+            button_mainMenu_Exit.Cursor = Cursors.Hand;
             button_mainMenu_Exit.FlatStyle = FlatStyle.Flat;
-            button_mainMenu_Exit.Location = new Point(183, 675);
+            button_mainMenu_Exit.Location = new Point(183, 669);
             button_mainMenu_Exit.Name = "button_mainMenu_Exit";
             button_mainMenu_Exit.Size = new Size(228, 45);
             button_mainMenu_Exit.TabIndex = 3;
@@ -74,24 +74,14 @@
             // button_mainMenu_Credits
             // 
             button_mainMenu_Credits.BackgroundImage = (Image)resources.GetObject("button_mainMenu_Credits.BackgroundImage");
+            button_mainMenu_Credits.Cursor = Cursors.Hand;
             button_mainMenu_Credits.FlatStyle = FlatStyle.Flat;
-            button_mainMenu_Credits.Location = new Point(183, 606);
+            button_mainMenu_Credits.Location = new Point(183, 584);
             button_mainMenu_Credits.Name = "button_mainMenu_Credits";
             button_mainMenu_Credits.Size = new Size(228, 45);
             button_mainMenu_Credits.TabIndex = 4;
             button_mainMenu_Credits.UseVisualStyleBackColor = true;
             button_mainMenu_Credits.Click += button_mainMenu_Credits_Click;
-            // 
-            // button_mainMenu_Settings
-            // 
-            button_mainMenu_Settings.BackgroundImage = (Image)resources.GetObject("button_mainMenu_Settings.BackgroundImage");
-            button_mainMenu_Settings.FlatStyle = FlatStyle.Flat;
-            button_mainMenu_Settings.Location = new Point(183, 535);
-            button_mainMenu_Settings.Name = "button_mainMenu_Settings";
-            button_mainMenu_Settings.Size = new Size(228, 45);
-            button_mainMenu_Settings.TabIndex = 3;
-            button_mainMenu_Settings.UseVisualStyleBackColor = true;
-            button_mainMenu_Settings.Click += button_mainMenu_Settings_Click;
             // 
             // mainMenu
             // 
@@ -99,12 +89,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
-            Controls.Add(button_mainMenu_Settings);
             Controls.Add(button_mainMenu_Exit);
             Controls.Add(button_mainMenu_Credits);
             Controls.Add(button_mainMenu_LoadGame);
             Controls.Add(button_mainMenu_NewGame);
-            Cursor = Cursors.Hand;
             DoubleBuffered = true;
             MaximumSize = new Size(600, 900);
             MinimumSize = new Size(600, 900);
@@ -120,6 +108,5 @@
         private Button button_mainMenu_LoadGame;
         private Button button_mainMenu_Credits;
         private Button button_mainMenu_Exit;
-        private Button button_mainMenu_Settings;
     }
 }

@@ -27,6 +27,9 @@ namespace Monster.UI
             get => _bsMonster.DataSource;
             set => _bsMonster.DataSource = value;
         }
+
+
+
         public myMonster()
         {
             System.Diagnostics.Debug.WriteLine(@"myMonster Constructor call.");
@@ -137,12 +140,20 @@ namespace Monster.UI
             ParentForm.NavigateTo("BattleMenu");
         }
 
-        private void button_myMonster_Food_Click(object sender, EventArgs e)
+
+
+        private void button_myMonster_AddMonsters_Click(object sender, EventArgs e)
         {
-            if(bsDataSource is MonsterClass monster)
+            if (bsDataSource is MonsterClass monster)
             {
                 int totalMonstersLevel = 0;
                 List<MonsterClass> tempOwnedMonsters = ParentForm.GetOwnedMonsters();
+
+                if (tempOwnedMonsters.Count >= 4)
+                {
+                    MessageBox.Show("You already have 4 Monsters!", "Maximum Monsters Reached", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
                 foreach (MonsterClass m in tempOwnedMonsters)
                 {
@@ -152,10 +163,14 @@ namespace Monster.UI
                 {
                     ParentForm.NavigateTo("NewMonster");
                 }
-                else 
-                  MessageBox.Show($"You need a total Monster level of {tempOwnedMonsters.Count() * 10} to acquire another Monster!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else
+                {
+                    string monsterName = monster.Name;
+                    MessageBox.Show($"You need {monsterName} to be at level 10 before acquiring another Monster!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
+
 
         private void button_myMonster_Sleep_Click(object sender, EventArgs e)
         {
@@ -175,7 +190,7 @@ namespace Monster.UI
                 ControlBox = false,
                 MinimizeBox = false,
                 MaximizeBox = false,
-                BackColor = System.Drawing.Color.Black 
+                BackColor = System.Drawing.Color.Black
             };
 
             Label labelCountdown = new Label()
@@ -194,6 +209,8 @@ namespace Monster.UI
             System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
             int countdown = 15;
             int missingHealth = 100 - monster.HealthPoints;
+            int missingStamina = 100 - monster.Stamina;
+
 
             timer.Interval = 1000;
             timer.Tick += (s, args) =>
@@ -203,11 +220,14 @@ namespace Monster.UI
                 {
                     labelCountdown.Text = $"{countdown} seconds remaining...";
                     monster.HealthPoints += missingHealth / 15;
+                    monster.Stamina += missingStamina / 15;
+
                 }
                 else
                 {
                     timer.Stop();
 
+                    
 
                     if (monster.HealthPoints < 100) monster.HealthPoints = 100;
                     if (monster.Stamina < 100) monster.Stamina = 100;
@@ -222,6 +242,8 @@ namespace Monster.UI
             timer.Start();
             countdownForm.ShowDialog();
         }
+
+       
     }
 }
 

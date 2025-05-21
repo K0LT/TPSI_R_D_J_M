@@ -16,7 +16,6 @@ namespace Monster.Game.GameState
 
         public GameDataService()
         {
-            // Ensure save directory exists
             Directory.CreateDirectory(_saveDirectory);
         }
 

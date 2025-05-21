@@ -39,15 +39,15 @@
             // 
             // miniGamesTitleLabel
             // 
-            miniGamesTitleLabel.AutoSize = true;
             miniGamesTitleLabel.BackColor = Color.Transparent;
             miniGamesTitleLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             miniGamesTitleLabel.ForeColor = Color.DarkGoldenrod;
-            miniGamesTitleLabel.Location = new Point(109, 49);
+            miniGamesTitleLabel.Location = new Point(0, 51);
             miniGamesTitleLabel.Name = "miniGamesTitleLabel";
-            miniGamesTitleLabel.Size = new Size(407, 64);
+            miniGamesTitleLabel.Size = new Size(600, 64);
             miniGamesTitleLabel.TabIndex = 22;
             miniGamesTitleLabel.Text = "Mini-Games";
+            miniGamesTitleLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button_MiniGames_Exit
             // 
@@ -97,7 +97,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox_miniGames_Memory).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_miniGames_ticTac).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

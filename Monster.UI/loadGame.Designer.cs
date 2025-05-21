@@ -42,7 +42,7 @@
             buttonLoadGameNext.Cursor = Cursors.Hand;
             buttonLoadGameNext.FlatStyle = FlatStyle.Flat;
             buttonLoadGameNext.Image = (Image)resources.GetObject("buttonLoadGameNext.Image");
-            buttonLoadGameNext.Location = new Point(248, 508);
+            buttonLoadGameNext.Location = new Point(239, 508);
             buttonLoadGameNext.Name = "buttonLoadGameNext";
             buttonLoadGameNext.Size = new Size(106, 40);
             buttonLoadGameNext.TabIndex = 1;
@@ -51,20 +51,20 @@
             // 
             // loadGameLabel
             // 
-            loadGameLabel.AutoSize = true;
             loadGameLabel.BackColor = Color.Transparent;
             loadGameLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             loadGameLabel.ForeColor = Color.DarkGoldenrod;
-            loadGameLabel.Location = new Point(131, 118);
+            loadGameLabel.Location = new Point(0, 118);
             loadGameLabel.Name = "loadGameLabel";
-            loadGameLabel.Size = new Size(369, 64);
+            loadGameLabel.Size = new Size(600, 64);
             loadGameLabel.TabIndex = 2;
             loadGameLabel.Text = "Load Game";
+            loadGameLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label_newGamePlayer_UsernameText
             // 
             label_newGamePlayer_UsernameText.Image = (Image)resources.GetObject("label_newGamePlayer_UsernameText.Image");
-            label_newGamePlayer_UsernameText.Location = new Point(158, 346);
+            label_newGamePlayer_UsernameText.Location = new Point(145, 346);
             label_newGamePlayer_UsernameText.Name = "label_newGamePlayer_UsernameText";
             label_newGamePlayer_UsernameText.Size = new Size(106, 30);
             label_newGamePlayer_UsernameText.TabIndex = 15;
@@ -74,7 +74,7 @@
             // 
             textBox_LoadGame_InputForUsername.Cursor = Cursors.IBeam;
             textBox_LoadGame_InputForUsername.Font = new Font("VCR OSD Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox_LoadGame_InputForUsername.Location = new Point(275, 347);
+            textBox_LoadGame_InputForUsername.Location = new Point(262, 347);
             textBox_LoadGame_InputForUsername.Name = "textBox_LoadGame_InputForUsername";
             textBox_LoadGame_InputForUsername.Size = new Size(183, 26);
             textBox_LoadGame_InputForUsername.TabIndex = 14;

@@ -8,27 +8,18 @@ namespace Monster.Core.Models
 {
     public class MonsterClass : INotifyPropertyChanged
     {
-        // TODO: ADD DATE_TIME IMPLEMENTATION
 
         private string _name = "";
         private string _type = "draco";
-        private int _healthPoints = 100;
+        private int _healthPoints = 50;
         private int _experiencePoints = 0;
         private int _level = 10;
-        private int _stamina = 100;
+        private int _stamina = 50;
         private Image _monsterImage;
         private Image _monsterIcon;
         public MonsterClass()
         {
-            //var stackTrace = new StackTrace(true);
-            //var frame = stackTrace.GetFrame(1);
-
-            //string callerMethod = frame.GetMethod().Name;
-            //string callerClass = frame.GetMethod().DeclaringType.Name;
-            //string callerFile = frame.GetFileName();
-            //int callerLine = frame.GetFileLineNumber();
-
-            //Debug.WriteLine($"[DEBUG] Monster created by {callerClass}.{callerMethod} in {callerFile}:{callerLine}");
+            
             System.Diagnostics.Debug.WriteLine(@"[DEBUG] MonsterClass constructor call.");
             UpdateMonsterImage();
         }
@@ -116,12 +107,9 @@ namespace Monster.Core.Models
             string type = Type?.ToLower() ?? "";
             string resourceName = $"{type}_stage{stage}";
             string iconName = $"{type}_icon";
-
             System.Diagnostics.Debug.WriteLine("UpdateMonsterImage call! iconName: " + iconName + " | resourceName: " + resourceName);
-            // TODO: Add monster images as Monster.Core resources
             var imageObj = monsterImages.ResourceManager.GetObject(resourceName);
             var iconObj = monsterImages.ResourceManager.GetObject(iconName);
-            //Default
             MonsterImage = ConvertByteArrayToImage(imageObj as byte[]);
             MonsterIcon = ConvertByteArrayToImage(iconObj as byte[]);
 

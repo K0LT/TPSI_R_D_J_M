@@ -63,6 +63,46 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        public static byte[] badGuyRed {
+            get {
+                object obj = ResourceManager.GetObject("badGuyRed", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] badGuyRedHit {
+            get {
+                object obj = ResourceManager.GetObject("badGuyRedHit", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] badGuySkull {
+            get {
+                object obj = ResourceManager.GetObject("badGuySkull", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] badGuySkullHit {
+            get {
+                object obj = ResourceManager.GetObject("badGuySkullHit", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         public static byte[] boyPlayerPic {
             get {
                 object obj = ResourceManager.GetObject("boyPlayerPic", resourceCulture);
@@ -73,9 +113,9 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
-        public static byte[] dracoBackHeadSmall {
+        public static byte[] draco_stage1_battle {
             get {
-                object obj = ResourceManager.GetObject("dracoBackHeadSmall", resourceCulture);
+                object obj = ResourceManager.GetObject("draco_stage1_battle", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -83,9 +123,49 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
-        public static byte[] dracoInventory {
+        public static byte[] draco_stage1_inventory {
             get {
-                object obj = ResourceManager.GetObject("dracoInventory", resourceCulture);
+                object obj = ResourceManager.GetObject("draco_stage1_inventory", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] draco_stage2_battle {
+            get {
+                object obj = ResourceManager.GetObject("draco_stage2_battle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] draco_stage2_inventory {
+            get {
+                object obj = ResourceManager.GetObject("draco_stage2_inventory", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] draco_stage3_battle {
+            get {
+                object obj = ResourceManager.GetObject("draco_stage3_battle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] draco_stage3_inventory {
+            get {
+                object obj = ResourceManager.GetObject("draco_stage3_inventory", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -103,9 +183,9 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
-        public static byte[] grifoBackHeadSmall {
+        public static byte[] grifo_stage1_battle {
             get {
-                object obj = ResourceManager.GetObject("grifoBackHeadSmall", resourceCulture);
+                object obj = ResourceManager.GetObject("grifo_stage1_battle", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -113,9 +193,49 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
-        public static byte[] grifoInventory {
+        public static byte[] grifo_stage1_inventory {
             get {
-                object obj = ResourceManager.GetObject("grifoInventory", resourceCulture);
+                object obj = ResourceManager.GetObject("grifo_stage1_inventory", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] grifo_stage2_battle {
+            get {
+                object obj = ResourceManager.GetObject("grifo_stage2_battle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] grifo_stage2_inventory {
+            get {
+                object obj = ResourceManager.GetObject("grifo_stage2_inventory", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] grifo_stage3_battle {
+            get {
+                object obj = ResourceManager.GetObject("grifo_stage3_battle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] grifo_stage3_inventory {
+            get {
+                object obj = ResourceManager.GetObject("grifo_stage3_inventory", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -133,9 +253,9 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
-        public static byte[] sirenBackHeadSmall {
+        public static byte[] siren_stage1_battle {
             get {
-                object obj = ResourceManager.GetObject("sirenBackHeadSmall", resourceCulture);
+                object obj = ResourceManager.GetObject("siren_stage1_battle", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -143,9 +263,9 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
-        public static byte[] sirenInventory {
+        public static byte[] siren_stage1_inventory {
             get {
-                object obj = ResourceManager.GetObject("sirenInventory", resourceCulture);
+                object obj = ResourceManager.GetObject("siren_stage1_inventory", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -153,9 +273,9 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
-        public static byte[] tauroBackHeadSmall {
+        public static byte[] siren_stage2_battle {
             get {
-                object obj = ResourceManager.GetObject("tauroBackHeadSmall", resourceCulture);
+                object obj = ResourceManager.GetObject("siren_stage2_battle", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -163,9 +283,89 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
-        public static byte[] tauroInventory {
+        public static byte[] siren_stage2_inventory {
             get {
-                object obj = ResourceManager.GetObject("tauroInventory", resourceCulture);
+                object obj = ResourceManager.GetObject("siren_stage2_inventory", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] siren_stage3_battle {
+            get {
+                object obj = ResourceManager.GetObject("siren_stage3_battle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] siren_stage3_inventory {
+            get {
+                object obj = ResourceManager.GetObject("siren_stage3_inventory", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] tauro_stage1_battle {
+            get {
+                object obj = ResourceManager.GetObject("tauro_stage1_battle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] tauro_stage1_inventory {
+            get {
+                object obj = ResourceManager.GetObject("tauro_stage1_inventory", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] tauro_stage2_battle {
+            get {
+                object obj = ResourceManager.GetObject("tauro_stage2_battle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] tauro_stage2_inventory {
+            get {
+                object obj = ResourceManager.GetObject("tauro_stage2_inventory", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] tauro_stage3_battle {
+            get {
+                object obj = ResourceManager.GetObject("tauro_stage3_battle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] tauro_stage3_inventory {
+            get {
+                object obj = ResourceManager.GetObject("tauro_stage3_inventory", resourceCulture);
                 return ((byte[])(obj));
             }
         }
