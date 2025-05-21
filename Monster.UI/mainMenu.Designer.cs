@@ -52,7 +52,7 @@
             button_mainMenu_LoadGame.BackgroundImage = (Image)resources.GetObject("button_mainMenu_LoadGame.BackgroundImage");
             button_mainMenu_LoadGame.Cursor = Cursors.Hand;
             button_mainMenu_LoadGame.FlatStyle = FlatStyle.Flat;
-            button_mainMenu_LoadGame.Location = new Point(183, 485);
+            button_mainMenu_LoadGame.Location = new Point(183, 489);
             button_mainMenu_LoadGame.Name = "button_mainMenu_LoadGame";
             button_mainMenu_LoadGame.Size = new Size(228, 45);
             button_mainMenu_LoadGame.TabIndex = 1;
@@ -62,8 +62,9 @@
             // button_mainMenu_Exit
             // 
             button_mainMenu_Exit.BackgroundImage = (Image)resources.GetObject("button_mainMenu_Exit.BackgroundImage");
+            button_mainMenu_Exit.Cursor = Cursors.Hand;
             button_mainMenu_Exit.FlatStyle = FlatStyle.Flat;
-            button_mainMenu_Exit.Location = new Point(183, 668);
+            button_mainMenu_Exit.Location = new Point(183, 669);
             button_mainMenu_Exit.Name = "button_mainMenu_Exit";
             button_mainMenu_Exit.Size = new Size(228, 45);
             button_mainMenu_Exit.TabIndex = 3;
@@ -73,8 +74,9 @@
             // button_mainMenu_Credits
             // 
             button_mainMenu_Credits.BackgroundImage = (Image)resources.GetObject("button_mainMenu_Credits.BackgroundImage");
+            button_mainMenu_Credits.Cursor = Cursors.Hand;
             button_mainMenu_Credits.FlatStyle = FlatStyle.Flat;
-            button_mainMenu_Credits.Location = new Point(183, 578);
+            button_mainMenu_Credits.Location = new Point(183, 584);
             button_mainMenu_Credits.Name = "button_mainMenu_Credits";
             button_mainMenu_Credits.Size = new Size(228, 45);
             button_mainMenu_Credits.TabIndex = 4;
@@ -91,7 +93,6 @@
             Controls.Add(button_mainMenu_Credits);
             Controls.Add(button_mainMenu_LoadGame);
             Controls.Add(button_mainMenu_NewGame);
-            Cursor = Cursors.Hand;
             DoubleBuffered = true;
             MaximumSize = new Size(600, 900);
             MinimumSize = new Size(600, 900);

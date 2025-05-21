@@ -14,7 +14,7 @@ namespace Monster.Core.Models
     [JsonPolymorphic(TypeDiscriminatorPropertyName = "$type")]
     [JsonDerivedType(typeof(HealthItem), "Health Item")]
     [JsonDerivedType(typeof(StaminaItem), "Stamina Item")]
-    [JsonDerivedType(typeof(ExperienceItem), "Experience Item")]
+    //[JsonDerivedType(typeof(ExperienceItem), "Experience Item")]
     [JsonDerivedType(typeof(FullRestoreItem), "FullRestoreItem")]
     public abstract class Item : INotifyPropertyChanged 
     {
@@ -111,34 +111,32 @@ namespace Monster.Core.Models
         }
     }
 
-    public class ExperienceItem : Item
-    {
-        public int ExperienceGain { get; }
+    //public class ExperienceItem : Item
+    //{
+    //    public int ExperienceGain { get; }
 
-        public ExperienceItem(string name, Image icon, int experienceGain, int quantity = 0)
-            : base(name, icon, quantity)
-        {
-            ExperienceGain = experienceGain;
-        }
+    //    public ExperienceItem(string name, Image icon, int experienceGain, int quantity = 0)
+    //        : base(name, icon, quantity)
+    //    {
+    //        ExperienceGain = experienceGain;
+    //    }
 
-        public override int Use()
-        {
-            return ExperienceGain;
-        }
-    }
+    //    public override int Use()
+    //    {
+    //        return ExperienceGain;
+    //    }
+    //}
 
     public class FullRestoreItem : Item
     {
         public int HealthRestore { get; }
         public int StaminaRestore { get; }
-        public int ExperienceGain { get; }
 
-        public FullRestoreItem(string name, Image icon, int healthRestore, int staminaRestore, int experienceGain, int quantity = 0)
+        public FullRestoreItem(string name, Image icon, int healthRestore, int staminaRestore, int quantity = 0)
             : base(name, icon, quantity)
         {
             HealthRestore = healthRestore;
             StaminaRestore = staminaRestore;
-            ExperienceGain = experienceGain;
         }
 
         public override int Use()

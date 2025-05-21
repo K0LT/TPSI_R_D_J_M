@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using System.Text;
 using System.Windows.Forms;
 using Monster.Core.Models;
 using Monster.Game.GameState;
@@ -290,29 +291,82 @@ namespace Monster.UI
             _gameState.ActiveMonster = monster;
         }
 
-        public void AddExperience(int amount)
-        {
-            _gameState.AddExperience(amount);
-        }
+        //public void AddExperience(int amount)
+        //{
+        //    _gameState.AddExperience(amount);
+        //}
+
+
+
 
         public void GameReward()
         {
-            if (_gameState.Inventory == null || _gameState.Inventory.Count == 0)
+           Random rand = new Random();
+
+            var itemProbabilities = new Dictionary<string, int>
+    {
+        { "Water", 80 },
+        { "Ramen", 80 },
+        { "Soda", 50 },
+        { "Burguer", 50 },
+        { "Beer", 30 },
+        { "Nachos", 30 },
+        { "Energy Drink", 10 }
+    };
+
+            var inventoryItems = _gameState.Inventory.Where(i => itemProbabilities.ContainsKey(i.Name)).ToList();
+
+            inventoryItems = inventoryItems.OrderBy(x => rand.Next()).ToList();
+
+            int maxTotalItems = rand.Next(1, 5);
+
+            int totalRewardQuantity = 0;
+
+            var rewards = new List<(string Name, int Quantity)>();
+
+            foreach (var item in inventoryItems)
             {
-                MessageBox.Show("No items in inventory to reward.", "Game Reward", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                if (totalRewardQuantity >= maxTotalItems)
+                    break;
+
+                int probability = itemProbabilities[item.Name];
+                int roll = rand.Next(1, 101);
+
+                if (roll <= probability)
+                {
+                    int maxQuantityForItem = maxTotalItems - totalRewardQuantity;
+
+                    int rewardQuantity = rand.Next(1, maxQuantityForItem + 1);
+
+                    item.Quantity += rewardQuantity;
+
+                    rewards.Add((item.Name, rewardQuantity));
+                    totalRewardQuantity += rewardQuantity;
+                }
             }
 
-            Random rand = new Random();
-            int itemIndex = rand.Next(0, Math.Min(7, _gameState.Inventory.Count));
-            var item = _gameState.Inventory[itemIndex];
-            string itemName = item.Name;
-            int rewardAmount = rand.Next(1, 4);
+            if (rewards.Count == 0)
+            {
+                var randomItem = inventoryItems[rand.Next(inventoryItems.Count)];
+                int rewardQuantity = rand.Next(1, maxTotalItems + 1);
 
-            item.Quantity += rewardAmount;
+                randomItem.Quantity += rewardQuantity;
 
-            MessageBox.Show($"Congratulations! You won {rewardAmount}x {itemName}!", "Reward", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                rewards.Add((randomItem.Name, rewardQuantity));
+                totalRewardQuantity += rewardQuantity;
+            }
+
+            var rewardMessage = new System.Text.StringBuilder($"Congratulations! You won:\n");
+            foreach (var reward in rewards)
+            {
+                rewardMessage.AppendLine($"{reward.Quantity}x {reward.Name}");
+            }
+
+            MessageBox.Show(rewardMessage.ToString(), "Reward", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+
+
 
         public bool GetInventoryVisited() {
             return _gameState.InventoryVisited;

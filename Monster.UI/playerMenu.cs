@@ -122,7 +122,7 @@ namespace Monster.UI
                     pictureBox_playerMenu_Slot3.Show();
                     pictureBox_playerMenu_Slot3.Image = OwnedMonstersRef.ElementAt(2).MonsterIcon;
                     label_playerMenu_Slot4.Show();
-                    label_playerMenu_Slot4.Text = OwnedMonstersRef.ElementAt(2).Name;
+                    label_playerMenu_Slot4.Text = OwnedMonstersRef.ElementAt(3).Name;
                     progressBar_playerMenu_Slot4.Show();
                     progressBar_playerMenu_Slot4.Value = OwnedMonstersRef.ElementAt(3).HealthPoints;
                     button_playerMenu_ChangeSlot4.Show();
@@ -148,7 +148,7 @@ namespace Monster.UI
                         pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.girlPlayerPic);
                         break;
                     default:
-                        pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.boyPlayerPic);
+                        pictureBox_playerMenu.Image = ConvertByteArrayToImage(Properties.Resources.otherPlayerPic);
                         break;
                 }
             }
@@ -161,29 +161,51 @@ namespace Monster.UI
             }
         }
 
-        private void button_playerMenu_ChangeMonsterSlot1_Click(object sender, EventArgs e)
+        private void ConfirmAndSetActiveMonster(int index)
         {
             Form1 ParentForm = this.FindForm() as Form1;
-            ParentForm.SetActiveMonster(0);
+            if (ParentForm == null || OwnedMonstersRef == null || index >= OwnedMonstersRef.Count) return;
+
+            string monsterName = OwnedMonstersRef[index].Name;
+
+            DialogResult result = MessageBox.Show(
+                $"Are you sure you want to change to {monsterName}?",
+                "Confirm Monster Change",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                ParentForm.SetActiveMonster(index);
+                ParentForm.NavigateTo("Monster");
+            }
+        }
+                
+
+        private void button_playerMenu_ChangeMonsterSlot1_Click(object sender, EventArgs e)
+        {
+            ConfirmAndSetActiveMonster(0);
         }
 
         private void button_playerMenu_ChangeSlot2_Click(object sender, EventArgs e)
         {
-            Form1 ParentForm = this.FindForm() as Form1;
-            ParentForm.SetActiveMonster(1);
+            ConfirmAndSetActiveMonster(1);
         }
 
         private void button_playerMenu_ChangeSlot3_Click(object sender, EventArgs e)
         {
-            Form1 ParentForm = this.FindForm() as Form1;
-            ParentForm.SetActiveMonster(2);
+            ConfirmAndSetActiveMonster(2);
         }
 
         private void button_playerMenu_ChangeSlot4_Click(object sender, EventArgs e)
         {
-            Form1 ParentForm = this.FindForm() as Form1;
-            ParentForm.SetActiveMonster(3);
+            ConfirmAndSetActiveMonster(3);
         }
+
+
+
+
 
         private void button_playerMenu_ReturnToMyMonster_Click(object sender, EventArgs e)
         {
@@ -197,11 +219,6 @@ namespace Monster.UI
             ParentForm.NavigateTo("Monster");
         }
 
-        private void button_playerMenu_ChangeSlot2_Click_1(object sender, EventArgs e)
-        {
-            Form1 ParentForm = this.FindForm() as Form1;
-            ParentForm.SetActiveMonster(1);
-        }
 
     }
 }

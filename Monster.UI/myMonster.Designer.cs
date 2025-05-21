@@ -36,7 +36,7 @@
             pictureBox_myMonster_HPicon = new PictureBox();
             progressBar_myMonster_HP = new GoldProgressBar();
             pictureBox_myMonster = new PictureBox();
-            button_myMonster_Food = new Button();
+            button_myMonster_AddMonsters = new Button();
             button_myMonster_Sleep = new Button();
             button_myMonster_Inventory = new Button();
             button_myMonster_Player = new Button();
@@ -118,18 +118,18 @@
             pictureBox_myMonster.TabIndex = 3;
             pictureBox_myMonster.TabStop = false;
             // 
-            // button_myMonster_Food
+            // button_myMonster_AddMonsters
             // 
-            button_myMonster_Food.BackgroundImage = (Image)resources.GetObject("button_myMonster_Food.BackgroundImage");
-            button_myMonster_Food.Cursor = Cursors.Hand;
-            button_myMonster_Food.FlatAppearance.BorderSize = 0;
-            button_myMonster_Food.FlatStyle = FlatStyle.Flat;
-            button_myMonster_Food.Location = new Point(66, 630);
-            button_myMonster_Food.Name = "button_myMonster_Food";
-            button_myMonster_Food.Size = new Size(50, 50);
-            button_myMonster_Food.TabIndex = 7;
-            button_myMonster_Food.UseVisualStyleBackColor = true;
-            button_myMonster_Food.Click += button_myMonster_Food_Click;
+            button_myMonster_AddMonsters.BackgroundImage = (Image)resources.GetObject("button_myMonster_AddMonsters.BackgroundImage");
+            button_myMonster_AddMonsters.Cursor = Cursors.Hand;
+            button_myMonster_AddMonsters.FlatAppearance.BorderSize = 0;
+            button_myMonster_AddMonsters.FlatStyle = FlatStyle.Flat;
+            button_myMonster_AddMonsters.Location = new Point(66, 630);
+            button_myMonster_AddMonsters.Name = "button_myMonster_AddMonsters";
+            button_myMonster_AddMonsters.Size = new Size(50, 50);
+            button_myMonster_AddMonsters.TabIndex = 7;
+            button_myMonster_AddMonsters.UseVisualStyleBackColor = true;
+            button_myMonster_AddMonsters.Click += button_myMonster_AddMonsters_Click;
             // 
             // button_myMonster_Sleep
             // 
@@ -228,7 +228,7 @@
             nameMyMonsterLabel.BackColor = Color.Transparent;
             nameMyMonsterLabel.Font = new Font("VCR OSD Mono", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             nameMyMonsterLabel.ForeColor = Color.DarkGoldenrod;
-            nameMyMonsterLabel.Location = new Point(174, 411);
+            nameMyMonsterLabel.Location = new Point(134, 411);
             nameMyMonsterLabel.Name = "nameMyMonsterLabel";
             nameMyMonsterLabel.Size = new Size(80, 29);
             nameMyMonsterLabel.TabIndex = 22;
@@ -274,7 +274,7 @@
             Controls.Add(button_myMonster_Player);
             Controls.Add(button_myMonster_Inventory);
             Controls.Add(button_myMonster_Sleep);
-            Controls.Add(button_myMonster_Food);
+            Controls.Add(button_myMonster_AddMonsters);
             Controls.Add(pictureBox_myMonster);
             Controls.Add(progressBar_myMonster_EXP);
             Controls.Add(pictureBox_myMonster_HPicon);
@@ -300,7 +300,7 @@
         private PictureBox pictureBox_myMonster_EXPicon;
         private PictureBox pictureBox_myMonster_STicon;
         private PictureBox pictureBox_myMonster;
-        private Button button_myMonster_Food;
+        private Button button_myMonster_AddMonsters;
         private Button button_myMonster_Sleep;
         private Button button_myMonster_Inventory;
         private Button button_myMonster_Player;

@@ -65,10 +65,10 @@
             // textBox_newGamePlayer_InputForUsername
             // 
             textBox_newGamePlayer_InputForUsername.Cursor = Cursors.IBeam;
-            textBox_newGamePlayer_InputForUsername.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox_newGamePlayer_InputForUsername.Font = new Font("VCR OSD Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox_newGamePlayer_InputForUsername.Location = new Point(140, 22);
             textBox_newGamePlayer_InputForUsername.Name = "textBox_newGamePlayer_InputForUsername";
-            textBox_newGamePlayer_InputForUsername.Size = new Size(183, 29);
+            textBox_newGamePlayer_InputForUsername.Size = new Size(183, 26);
             textBox_newGamePlayer_InputForUsername.TabIndex = 1;
             textBox_newGamePlayer_InputForUsername.TextChanged += textBox_newGamePlayer_InputForUsername_TextChanged;
             textBox_newGamePlayer_InputForUsername.KeyDown += textBox_newGamePlayer_InputForUsername_KeyDown;
@@ -179,15 +179,15 @@
             // 
             // selectPlayerLabel
             // 
-            selectPlayerLabel.AutoSize = true;
             selectPlayerLabel.BackColor = Color.Transparent;
-            selectPlayerLabel.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            selectPlayerLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             selectPlayerLabel.ForeColor = Color.DarkGoldenrod;
-            selectPlayerLabel.Location = new Point(45, 58);
+            selectPlayerLabel.Location = new Point(0, 51);
             selectPlayerLabel.Name = "selectPlayerLabel";
-            selectPlayerLabel.Size = new Size(410, 73);
+            selectPlayerLabel.Size = new Size(600, 64);
             selectPlayerLabel.TabIndex = 15;
             selectPlayerLabel.Text = "Select Player";
+            selectPlayerLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // newGamePlayer
             // 
@@ -214,7 +214,6 @@
             panelNewUserRegister.ResumeLayout(false);
             panelNewUserRegister.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

@@ -61,12 +61,13 @@ namespace Monster.UI
         {
             InitializeComponent();   
             DesignUI.SetToolTip(pictureBox_inventory_waterIcon, "+10 St.");
-            DesignUI.SetToolTip(pictureBox_inventory_SodaIcon, "+10 EXP");
-            DesignUI.SetToolTip(pictureBox_inventory_BeerIcon, "+20 EXP");
-            DesignUI.SetToolTip(pictureBox_inventory_MonsterIcon, "+20 EXP, HP, St.");
+            DesignUI.SetToolTip(pictureBox_inventory_SodaIcon, "+30 St.");
+            DesignUI.SetToolTip(pictureBox_inventory_BeerIcon, "+50 St.");
             DesignUI.SetToolTip(pictureBox_inventory_NachosIcon, "+10 HP");
-            DesignUI.SetToolTip(pictureBox_inventory_BurguerIcon, "+20 HP");
-            DesignUI.SetToolTip(pictureBox_inventory_Ramen, "+20 Stm");
+            DesignUI.SetToolTip(pictureBox_inventory_BurguerIcon, "+30 HP");
+            DesignUI.SetToolTip(pictureBox_inventory_Ramen, "+50 HP");            
+            DesignUI.SetToolTip(pictureBox_inventory_EnergyDrink, "+100 HP & St.");
+
         }
 
 
@@ -84,7 +85,7 @@ namespace Monster.UI
             }
             UpdateInventory();
             return;
-            }
+        }
 
         private ToolTip toolTip = new ToolTip();
 
@@ -94,20 +95,22 @@ namespace Monster.UI
             var waterIcon = pictureBox_inventory_waterIcon.Image;
             var sodaIcon = pictureBox_inventory_SodaIcon.Image;
             var beerIcon = pictureBox_inventory_BeerIcon.Image;
-            var energyDrinkIcon = pictureBox_inventory_MonsterIcon.Image;
             var nachosIcon = pictureBox_inventory_NachosIcon.Image;
             var burguerIcon = pictureBox_inventory_BurguerIcon.Image;
-            var ramenIcon = pictureBox_inventory_Ramen.Image;
+            var ramenIcon = pictureBox_inventory_Ramen.Image;            
+            var energyDrinkIcon = pictureBox_inventory_EnergyDrink.Image;
+
 
             var inventory = new List<Item>
             {
+
             new StaminaItem("Water", waterIcon, 10, 3), 
-            new StaminaItem("Ramen", ramenIcon, 20, 2),
-            new ExperienceItem("Soda", sodaIcon, 10, 2),
-            new ExperienceItem("Beer", beerIcon, 20, 2),           
+            new StaminaItem("Soda", sodaIcon, 30, 2),
+            new StaminaItem("Beer", beerIcon, 50, 2),           
             new HealthItem("Nachos", nachosIcon, 10, 2),
-            new HealthItem("Burguer", burguerIcon, 20, 2),
-            new FullRestoreItem("Energy Drink", energyDrinkIcon, 20, 20, 20, 2)
+            new HealthItem("Burguer", burguerIcon, 30, 2),
+            new HealthItem("Ramen", ramenIcon, 50, 2),
+            new FullRestoreItem("Energy Drink", energyDrinkIcon, 100, 100, 2)
             };
             return inventory;
         }
@@ -119,10 +122,10 @@ namespace Monster.UI
                 label_inventory_water.Text = list[0].Quantity.ToString();
                 label_inventory_Soda.Text = list[1].Quantity.ToString();
                 label_inventory_Beer.Text = list[2].Quantity.ToString();
-                label_inventory_Monster.Text = list[3].Quantity.ToString();
-                label_inventory_Nachos.Text = list[4].Quantity.ToString();
-                label_inventory_Burguer.Text = list[5].Quantity.ToString();
-                label_inventory_Ramen.Text = list[6].Quantity.ToString();
+                label_inventory_Nachos.Text = list[3].Quantity.ToString();
+                label_inventory_Burguer.Text = list[4].Quantity.ToString();
+                label_inventory_Ramen.Text = list[5].Quantity.ToString();
+                label_inventory_EnergyDrink.Text = list[6].Quantity.ToString();
             }
         }
 
@@ -162,7 +165,9 @@ namespace Monster.UI
 
         }
 
-        private void pictureBox_inventory_MonsterIcon_Click(object sender, EventArgs e)
+        
+
+        private void pictureBox_inventory_NachosIcon_Click(object sender, EventArgs e)
         {
             if (State is GameState game)
             {
@@ -171,7 +176,7 @@ namespace Monster.UI
             }
         }
 
-        private void pictureBox_inventory_NachosIcon_Click(object sender, EventArgs e)
+        private void pictureBox_inventory_BurguerIcon_Click(object sender, EventArgs e)
         {
             if (State is GameState game)
             {
@@ -180,23 +185,23 @@ namespace Monster.UI
             }
         }
 
-        private void pictureBox_inventory_BurguerIcon_Click(object sender, EventArgs e)
+        private void pictureBox_inventory_Ramen_Click(object sender, EventArgs e)
         {
             if (State is GameState game)
             {
                 game.UseItemAtIndex(5);
                 UpdateInventory();
             }
+
         }
 
-        private void pictureBox_inventory_Ramen_Click(object sender, EventArgs e)
+        private void pictureBox_inventory_MonsterIcon_Click(object sender, EventArgs e)
         {
             if (State is GameState game)
             {
                 game.UseItemAtIndex(6);
                 UpdateInventory();
             }
-
         }
 
 

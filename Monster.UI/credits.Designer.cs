@@ -139,15 +139,15 @@
             // 
             // creditsTitleLabel
             // 
-            creditsTitleLabel.AutoSize = true;
             creditsTitleLabel.BackColor = Color.Transparent;
             creditsTitleLabel.Font = new Font("VCR OSD Mono", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             creditsTitleLabel.ForeColor = Color.DarkGoldenrod;
-            creditsTitleLabel.Location = new Point(162, 89);
+            creditsTitleLabel.Location = new Point(0, 51);
             creditsTitleLabel.Name = "creditsTitleLabel";
-            creditsTitleLabel.Size = new Size(293, 64);
+            creditsTitleLabel.Size = new Size(600, 64);
             creditsTitleLabel.TabIndex = 23;
             creditsTitleLabel.Text = "Credits";
+            creditsTitleLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button_Credits_Exit
             // 
