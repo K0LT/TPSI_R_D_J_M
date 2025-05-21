@@ -54,7 +54,7 @@ namespace Monster.UI
                 var imageObj = Resources.ResourceManager.GetObject(resourceName);
 
                 var image = ConvertByteArrayToImage(imageObj as byte[]);
-                pictureBox_battleGame_myMonster.Image = image;  // sem fallback para default_monster
+                pictureBox_battleGame_myMonster.Image = image;  
             }
         }
 
@@ -131,7 +131,7 @@ namespace Monster.UI
             if (_battleStamina < staminaCost)
             {
                 DoBossCounterAttack();
-                IncreasePlayerStamina(50);
+                IncreasePlayerStamina(20);
                 ShowMessage("Not enough stamina! The boss attacks you for 10 HP.", "Warning");
                 return;
             }

@@ -85,6 +85,7 @@
             // 
             // pictureBox_myMonster_HPicon
             // 
+            pictureBox_myMonster_HPicon.BackColor = Color.Transparent;
             pictureBox_myMonster_HPicon.Image = (Image)resources.GetObject("pictureBox_myMonster_HPicon.Image");
             pictureBox_myMonster_HPicon.Location = new Point(289, 462);
             pictureBox_myMonster_HPicon.Name = "pictureBox_myMonster_HPicon";
@@ -94,6 +95,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(254, 695);
             pictureBox1.Name = "pictureBox1";
@@ -152,6 +154,7 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(254, 640);
             pictureBox2.Name = "pictureBox2";

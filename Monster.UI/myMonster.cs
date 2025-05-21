@@ -137,15 +137,20 @@ namespace Monster.UI
 
         private void button_myMonster_Battle_Click(object sender, EventArgs e)
         {
-            if (bsDataSource is MonsterClass monster)
+            if (ParentForm.GetInventoryVisited())
             {
-                if (monster.HealthPoints ==0)
+                if (bsDataSource is MonsterClass monster)
                 {
-                    MessageBox.Show("You don't have enough HP!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    if (monster.HealthPoints == 0)
+                    {
+                        MessageBox.Show("You don't have enough HP!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
                 }
+                ParentForm.NavigateTo("BattleMenu");
             }
-            ParentForm.NavigateTo("BattleMenu");
+            else MessageBox.Show("Please visit your inventory first!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return;
         }
 
 

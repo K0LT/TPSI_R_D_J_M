@@ -194,6 +194,7 @@ namespace Monster.UI
                     battleGame.bsMonster = _gameState.ActiveMonster;
                     battleGame.HookBindings();
                     battleGame.InitializeBoss(_selectedBossType);
+                    _gameState.ActiveMonster.Stamina -= 30;
                     break;
             }
         }
