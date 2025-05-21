@@ -137,6 +137,14 @@ namespace Monster.UI
 
         private void button_myMonster_Battle_Click(object sender, EventArgs e)
         {
+            if (bsDataSource is MonsterClass monster)
+            {
+                if (monster.HealthPoints ==0)
+                {
+                    MessageBox.Show("You don't have enough HP!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
             ParentForm.NavigateTo("BattleMenu");
         }
 
