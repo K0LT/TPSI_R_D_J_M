@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using Monster.UI.Properties;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace Monster.UI
@@ -27,51 +28,80 @@ namespace Monster.UI
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            titlePictureBox = new PictureBox();
-            statusLabel = new Label();
-            countdownLabel = new Label();
-            gamePanel = new Panel();
             gameTimer = new System.Windows.Forms.Timer(components);
+            var resources = new ComponentResourceManager(typeof(PatternGame));
 
-            ((System.ComponentModel.ISupportInitialize)(titlePictureBox)).BeginInit();
-            SuspendLayout();
+          //raiz layout
+            var rootLayout = new TableLayoutPanel
+            {
+                Dock = DockStyle.Fill,
+                ColumnCount = 1,
+                RowCount = 4,
+                BackColor = Color.Transparent,
+                Margin = Padding.Empty,
+                Padding = Padding.Empty,
+            };
+            rootLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            rootLayout.RowStyles.Add(new RowStyle(SizeType.Absolute, 140F)); // título
+            rootLayout.RowStyles.Add(new RowStyle(SizeType.Absolute, 80F));  // status
+            rootLayout.RowStyles.Add(new RowStyle(SizeType.Absolute, 60F));  // contador
+            rootLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));  // painel jogo
 
-            // titlePictureBox 
-            titlePictureBox.Dock = DockStyle.Top;
-            titlePictureBox.Location = new System.Drawing.Point(0, 0);
-            titlePictureBox.Name = "titlePictureBox";
-            titlePictureBox.Size = new System.Drawing.Size(600, 80);
-            titlePictureBox.TabStop = false;
+            // titlePictureBox
+            titlePictureBox = new PictureBox
+            {
+                Dock = DockStyle.Fill,
+                SizeMode = PictureBoxSizeMode.Zoom,
+                Margin = new Padding(0, 20, 0, 0),
+                Image = (Image)resources.GetObject("pictureBox_patternGames_PatternGameText.Image")
+            };
+            rootLayout.Controls.Add(titlePictureBox, 0, 0);
 
             // statusLabel
-            statusLabel.Dock = DockStyle.Top;
-            statusLabel.Location = new System.Drawing.Point(0, 100); 
-            statusLabel.Name = "statusLabel";
-            statusLabel.Size = new System.Drawing.Size(600, 30); 
-            statusLabel.TextAlign = ContentAlignment.MiddleCenter;
+            statusLabel = new Label
+            {
+                Dock = DockStyle.Fill,
+                Margin = new Padding(0, 20, 0, 0),
+                Text = "Follow the pattern",
+                Font = new Font("Segoe UI", 14F, FontStyle.Bold),
+                TextAlign = ContentAlignment.MiddleCenter,
+                ForeColor = Color.DarkSlateBlue
+            };
+            rootLayout.Controls.Add(statusLabel, 0, 1);
 
-            // countdownLabel 
-            countdownLabel.Dock = DockStyle.Top; 
-            countdownLabel.Location = new System.Drawing.Point(0, 140); 
-            countdownLabel.Name = "countdownLabel";
-            countdownLabel.Size = new System.Drawing.Size(600, 20); 
-            countdownLabel.TextAlign = ContentAlignment.MiddleCenter;
+            // countdownLabel
+            countdownLabel = new Label
+            {
+                Dock = DockStyle.Fill,
+                Margin = new Padding(0, 10, 0, 0),
+                Text = "00:00",
+                Font = new Font("Consolas", 14F, FontStyle.Bold, GraphicsUnit.Point),
+                TextAlign = ContentAlignment.MiddleCenter,
+                ForeColor = Color.DarkGoldenrod
+            };
+            rootLayout.Controls.Add(countdownLabel, 0, 2);
 
-            // gamePanel 
-            gamePanel.Dock = DockStyle.Fill;
-            gamePanel.Location = new System.Drawing.Point(0, 130); 
-            gamePanel.Name = "gamePanel";
-            gamePanel.Size = new System.Drawing.Size(600, 770); 
+            // gamePanel
+            gamePanel = new Panel
+            {
+                Dock = DockStyle.Fill,
+                BackColor = Color.Transparent,
+                Margin = Padding.Empty, // margens simétricas
+                Padding = Padding.Empty
+            };
+            rootLayout.Controls.Add(gamePanel, 0, 3);
 
-           
-            Controls.Add(gamePanel);
-            Controls.Add(countdownLabel);
-            Controls.Add(statusLabel);
-            Controls.Add(titlePictureBox);
+
+      
+            Controls.Add(rootLayout);
+
+            // propriedades do UserControl
             Name = "PatternGame";
-            Size = new System.Drawing.Size(600, 900);
-            ((System.ComponentModel.ISupportInitialize)(titlePictureBox)).EndInit();
-            ResumeLayout(false);
+            Size = new Size(600, 900);
+
+            // configurar o timer
+            gameTimer.Interval = 1000;
+            
         }
     }
 }

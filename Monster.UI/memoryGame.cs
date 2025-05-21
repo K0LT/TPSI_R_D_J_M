@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace Monster.UI
@@ -17,7 +18,7 @@ namespace Monster.UI
             InitializeComponent();
             LoadCardImages();
 
-            this.Load += (s, e) => ResetGame();   
+            this.Load += (s, e) => ResetGame();
 
             panelGrid.Resize += (s, e) => PositionCards();
         }
@@ -25,7 +26,7 @@ namespace Monster.UI
         private void LoadCardImages()
         {
             var res = new ComponentResourceManager(typeof(memoryGame));
-            
+
 
 
             string[] monsterKeys = {
@@ -48,7 +49,7 @@ namespace Monster.UI
         private void InitializeCards()
         {
             panelGrid.Controls.Clear();
-            matched = 0;    
+            matched = 0;
 
 
             var indices = Enumerable.Range(0, cardImages.Count)
@@ -104,12 +105,12 @@ namespace Monster.UI
             }
         }
 
-        private void Card_Click(object sender, EventArgs e)
+        private async void Card_Click(object sender, EventArgs e)
         {
             if (flipBackTimer.Enabled) return;
+
             var clicked = (PictureBox)sender;
             if (clicked == firstClicked) return;
-
 
             clicked.Image = cardImages[(int)clicked.Tag];
 
@@ -123,6 +124,7 @@ namespace Monster.UI
 
                 if ((int)firstClicked.Tag == (int)secondClicked.Tag)
                 {
+                    // par encontrato
                     firstClicked.Click -= Card_Click;
                     secondClicked.Click -= Card_Click;
                     firstClicked = secondClicked = null;
@@ -132,21 +134,20 @@ namespace Monster.UI
                     {
                         gameTimer.Stop();
                         flipBackTimer.Stop();
+                        
+
                         ParentForm.GameReward();
-                        //MessageBox.Show("You won!", "End Game",
-                        //                MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ParentForm?.NavigateTo("Monster");
                     }
                 }
-            
                 else
                 {
-                    flipBackTimer.Start();
+                    flipBackTimer.Start();   
                 }
             }
         }
 
-        
+
         private void flipBackTimer_Tick(object sender, EventArgs e)
         {
             flipBackTimer.Stop();
@@ -158,18 +159,18 @@ namespace Monster.UI
             firstClicked = secondClicked = null;
         }
 
-        private void GameTimer_Tick(object sender, EventArgs e)
+        private async void GameTimer_Tick(object sender, EventArgs e)
         {
             timeLeft--;
-            lblGameTimer.Text = TimeSpan.FromSeconds(timeLeft)
-                                         .ToString(@"mm\:ss");
+            lblGameTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
+
             if (timeLeft <= 0)
             {
                 gameTimer.Stop();
                 flipBackTimer.Stop();
+             
                 MessageBox.Show("Time ended!", "Game Over",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Information);
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 ParentForm.NavigateTo("Monster");
             }
@@ -185,9 +186,7 @@ namespace Monster.UI
             matched = 0;
 
             timeLeft = 60;
-            lblGameTimer.Text = TimeSpan
-                    .FromSeconds(timeLeft)
-                    .ToString(@"mm\:ss");
+            lblGameTimer.Text = TimeSpan.FromSeconds(timeLeft).ToString(@"mm\:ss");
 
             InitializeCards();
             gameTimer.Start();
@@ -198,6 +197,10 @@ namespace Monster.UI
             gameTimer.Start();
         }
 
+    
+
+
+
         private List<Image> cardImages;
         private Image backImage;
         private PictureBox firstClicked, secondClicked;
@@ -205,12 +208,16 @@ namespace Monster.UI
         private int timeLeft; //seconds
         private readonly Random rnd = new();
 
-        protected override void OnVisibleChanged(EventArgs e)
+        protected override void OnParentChanged(EventArgs e)
         {
-            base.OnVisibleChanged(e);
+            base.OnParentChanged(e);
 
-            if (this.Visible && this.IsHandleCreated)  
-                ResetGame();
+            if (this.Parent == null)         
+            {
+                gameTimer.Stop();
+                flipBackTimer.Stop();
+            }
+            else { ResetGame(); } 
         }
     }
 }

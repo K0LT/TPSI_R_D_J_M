@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Media;
 using System.Threading.Tasks;
@@ -10,8 +11,8 @@ namespace Monster.UI
     public partial class PatternGame : UserControl
     {
         private const int SequenceShowDelay = 1200;
-        private const int PlayerResponseTime = 5000;
-        private const int HighlightDuration = 600;
+        private const int PlayerResponseTime = 10000;
+        private const int HighlightDuration = 300;
         private Form1 ParentForm => this.FindForm() as Form1;
         private int[] sequence;
         private int currentRound;
@@ -39,7 +40,7 @@ namespace Monster.UI
 
             
             statusLabel.Dock = DockStyle.Top;
-            statusLabel.Height = 25; 
+            statusLabel.Height = 30; 
             statusLabel.Font = new Font("Segoe UI", 18, FontStyle.Bold);
             statusLabel.ForeColor = Color.Gold;
             statusLabel.BackColor = Color.Transparent;
@@ -48,8 +49,8 @@ namespace Monster.UI
 
            
             countdownLabel.Dock = DockStyle.Top; 
-            countdownLabel.Height = 15; 
-            countdownLabel.Font = new Font("Segoe UI", 12, FontStyle.Bold); 
+            countdownLabel.Height = 30; 
+            countdownLabel.Font = new Font("Segoe UI", 18, FontStyle.Bold); 
             countdownLabel.ForeColor = Color.WhiteSmoke;
             countdownLabel.BackColor = Color.Transparent;
             countdownLabel.TextAlign = ContentAlignment.MiddleCenter;
@@ -58,11 +59,14 @@ namespace Monster.UI
            
             gamePanel.Dock = DockStyle.Fill;
             gamePanel.BackColor = Color.Transparent;
-            gamePanel.Padding = new Padding(0, 0, 0, 10);
+            gamePanel.Location = new Point(0, 150);
+            
+
 
             LoadResources();
             InitializeGameLogic();
         }
+    
 
         private void LoadResources()
         {
@@ -71,8 +75,8 @@ namespace Monster.UI
             
             backImage = (Image)res.GetObject("cardback");
 
-            patternImages = new Image[8];
-            highlightImages = new Image[8];
+            patternImages = new Image[9];
+            highlightImages = new Image[9];
 
             string[] patternKeys = {
                 "pattern1", "pattern2", "pattern3", "pattern4",
@@ -90,8 +94,8 @@ namespace Monster.UI
 
         private void InitializeGameLogic()
         {
-            patternButtons = new PictureBox[8];
-            for (int i = 0; i < 8; i++)
+            patternButtons = new PictureBox[9];
+            for (int i = 0; i < 9; i++)
             {
                 patternButtons[i] = new PictureBox
                 {
@@ -99,7 +103,7 @@ namespace Monster.UI
                     Image = backImage,
                     Tag = i,
                     BackColor = Color.Transparent,
-                    BorderStyle = BorderStyle.FixedSingle,
+                    BorderStyle = BorderStyle.None,
                     Size = new Size(120, 120)
                 };
 
@@ -121,7 +125,7 @@ namespace Monster.UI
             PositionButtons();
             this.HandleCreated += (s, e) =>
             {
-                Task.Delay(500).ContinueWith(_ =>
+                Task.Delay(100).ContinueWith(_ =>
                 {
                     if (!this.IsDisposed && this.IsHandleCreated)
                         this.Invoke((Action)StartGame);
@@ -131,31 +135,35 @@ namespace Monster.UI
 
         private void PositionButtons()
         {
-            int columns = 2;
-            int rows = 4;
+            int columns = 3;
+            int rows = 3;
             int margin = 10;
+            int bottomMargin = margin *2;
 
-         
-            int availableHeight = gamePanel.ClientSize.Height - 10;
-            int availableWidth = gamePanel.ClientSize.Width;
+            int panelWidth = gamePanel.ClientSize.Width;
+            int panelHeight = gamePanel.ClientSize.Height;
 
-            int buttonHeight = (availableHeight - (rows - 1) * margin) / rows;
-            int buttonWidth = (availableWidth - (columns - 1) * margin) / columns;
+            int buttonSize = Math.Min(
+                (panelWidth - (columns - 1) * margin) / columns,
+                (panelHeight - (rows - 1) * margin - bottomMargin) / rows
+            );
 
-            int buttonSize = Math.Min(buttonWidth, buttonHeight);
-            buttonSize = (int)(buttonSize * 0.95);
+            buttonSize = (int)(buttonSize * 0.9); 
+
+            int totalWidth = columns * buttonSize + (columns - 1) * margin;
             int totalHeight = rows * buttonSize + (rows - 1) * margin;
-            int startY = (availableHeight - totalHeight) / 2;
 
+            int startX = (panelWidth - totalWidth) / 2;
+            int startY = (panelHeight - totalHeight - bottomMargin) / 2;
 
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < 9; i++)
             {
                 int row = i / columns;
                 int col = i % columns;
 
                 patternButtons[i].Size = new Size(buttonSize, buttonSize);
                 patternButtons[i].Location = new Point(
-                    col * (buttonSize + margin),
+                    startX + col * (buttonSize + margin),
                     startY + row * (buttonSize + margin)
                 );
             }
@@ -165,11 +173,11 @@ namespace Monster.UI
         public void StartGame()
         {
             currentRound = 1;
-            sequence = new int[8];
+            sequence = new int[9];
             var rnd = new Random();
 
             for (int i = 0; i < sequence.Length; i++)
-                sequence[i] = rnd.Next(0, 8);
+                sequence[i] = rnd.Next(0, 9);
 
             sequencePosition = 0;
             statusLabel.Text = $"ROUND {currentRound}/8";
@@ -192,12 +200,12 @@ namespace Monster.UI
             }
 
             statusLabel.Text = "YOUR TURN!";
-            countdownLabel.Text = $"TIME: {PlayerResponseTime / 1000}s";
+            countdownLabel.Text = $"TIME: {PlayerResponseTime / 2000}s";
             countdownLabel.Visible = true;
 
-            this.BackColor = Color.FromArgb(50, 50, 70);
-            await Task.Delay(200);
-            this.BackColor = Color.FromArgb(30, 30, 40);
+            //this.BackColor = Color.FromArgb(50, 50, 70);
+            //await Task.Delay(200);
+            //this.BackColor = Color.FromArgb(30, 30, 40);
 
             gamePanel.Enabled = true;
             waitingForPlayer = true;
@@ -268,27 +276,33 @@ namespace Monster.UI
             }
         }
 
-        private void EndGame(bool victory)
+        private async void EndGame(bool victory)
         {
             waitingForPlayer = false;
             countdownLabel.Visible = false;
 
-            string message = victory ? "CONGRATULATIONS! YOU WON!" : "GAME OVER!";
-            statusLabel.Text = message;
+            
+            await ExecuteFlash(victory ? Color.Green : Color.Red);
 
-            FlashBackground(victory ? Color.Green : Color.Red);
-            ParentForm.GameReward();
-
-            Task.Delay(3000).ContinueWith(_ => this.Invoke((Action)(() =>
+            
+            if (victory)
             {
-                ParentForm?.NavigateTo("Monster");
-            })));
+                ParentForm.GameReward(); 
+            }
+            else
+            {
+                MessageBox.Show("    Game Over!    ","    Pattern Game    ");
+            }
+
+            ParentForm?.NavigateTo("Monster");
         }
 
-        private async void FlashBackground(Color flashColor)
+
+
+
+        private async Task ExecuteFlash(Color flashColor)
         {
             Color originalColor = this.BackColor;
-
             for (int i = 0; i < 3; i++)
             {
                 this.BackColor = flashColor;
