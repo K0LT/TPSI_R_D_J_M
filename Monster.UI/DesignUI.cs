@@ -1,5 +1,4 @@
-﻿// DesignUI.cs
-using System;
+﻿using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -96,23 +95,17 @@ namespace Monster.UI
 
             private static void ToolTip_Draw(object sender, DrawToolTipEventArgs e)
             {
-                // Custom background
                 e.Graphics.FillRectangle(Brushes.LightYellow, e.Bounds);
 
-                // Measure text size
                 SizeF textSize = e.Graphics.MeasureString(e.ToolTipText, _font);
-
-                // Calculate centered position
                 float x = e.Bounds.Left + (e.Bounds.Width - textSize.Width) / 2;
                 float y = e.Bounds.Top + (e.Bounds.Height - textSize.Height) / 2;
 
-                // Draw the text centered
                 e.Graphics.DrawString(e.ToolTipText, _font, Brushes.Black, x, y);
             }
 
             private static void ToolTip_Popup(object sender, PopupEventArgs e)
             {
-                // Adjust the size of the tooltip for the custom font
                 SizeF textSize;
                 using (Graphics g = e.AssociatedControl.CreateGraphics())
                 {
