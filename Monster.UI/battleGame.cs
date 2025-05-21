@@ -148,7 +148,7 @@ namespace Monster.UI
                 if (boss.HealthPoints == 0 && Monster != null)
                 {
                     ParentForm.BattleReward(Monster, boss.Type);
-                    ParentForm.NavigateTo("Monster");
+                    
                 }
 
                 FlashBossHurtImageBoss();
@@ -184,7 +184,7 @@ namespace Monster.UI
                 if (boss.HealthPoints == 0 && Monster != null)
                 {
                     ParentForm.BattleReward(Monster, boss.Type);
-                    ParentForm.NavigateTo("Monster");
+                 
                 }
 
                 FlashBossHurtImageBoss();
