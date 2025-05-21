@@ -24,10 +24,13 @@ namespace Monster.UI
             set => _bsUser.DataSource = value;
         }
 
+        private List<MonsterClass> _ownedMonstersRef;
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public List<MonsterClass> OwnedMonstersRef
         {
-            get;
-            set;
+            get => _ownedMonstersRef;
+            set => _ownedMonstersRef = value;
         }
 
         public playerMenu(string userType)
@@ -37,6 +40,7 @@ namespace Monster.UI
 
         public void HideControls()
         {
+            System.Diagnostics.Debug.WriteLine($"[DEBUG - playerMenu]: HideControls() call.");
             label_playerMenu_Slot2.Hide();
             label_playerMenu_Slot3.Hide();
             label_playerMenu_Slot4.Hide();
@@ -65,7 +69,9 @@ namespace Monster.UI
 
         private void ShowControls()
         {
-            switch (OwnedMonstersRef.Count())
+            int tempCount = _ownedMonstersRef.Count();
+            System.Diagnostics.Debug.WriteLine($"[DEBUG - playerMenu]: ShowControls() call, count: {tempCount}");
+            switch (tempCount)
             {
                 case 1:
                     progressBar_playerMenu_Slot1.Value = OwnedMonstersRef.ElementAt(0).HealthPoints;
@@ -122,7 +128,7 @@ namespace Monster.UI
                     pictureBox_playerMenu_Slot3.Show();
                     pictureBox_playerMenu_Slot3.Image = OwnedMonstersRef.ElementAt(2).MonsterIcon;
                     label_playerMenu_Slot4.Show();
-                    label_playerMenu_Slot4.Text = OwnedMonstersRef.ElementAt(2).Name;
+                    label_playerMenu_Slot4.Text = OwnedMonstersRef.ElementAt(3).Name;
                     progressBar_playerMenu_Slot4.Show();
                     progressBar_playerMenu_Slot4.Value = OwnedMonstersRef.ElementAt(3).HealthPoints;
                     button_playerMenu_ChangeSlot4.Show();

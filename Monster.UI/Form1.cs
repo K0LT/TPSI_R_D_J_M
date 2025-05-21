@@ -13,6 +13,7 @@ namespace Monster.UI
 
         // Game State / Game Data
         private GameState _gameState = new GameState();
+        
         private GameDataService _gameDataService = new GameDataService();
 
         // Dictionary to track all our UserControls
@@ -129,7 +130,7 @@ namespace Monster.UI
                     var newUser = control as newGamePlayer;
                     if (newUser != null)
                     {
-                        // Nothing so far
+                        _gameState = new GameState();
                     }
                     break;
                 case "Monster":
@@ -164,12 +165,12 @@ namespace Monster.UI
                     break;
 
                 case "Player":
-                    var playerControl = control as playerMenu;
-                    if (playerControl != null)
+                    var playerMenu = control as playerMenu;
+                    if (playerMenu != null)
                     {
-                        playerControl.bsUser = _gameState.CurrentUser;
-                        playerControl.OwnedMonstersRef = _gameState.OwnedMonsters;
-                        playerControl.HookBindings();
+                        playerMenu.bsUser = _gameState.CurrentUser;
+                        playerMenu.OwnedMonstersRef = _gameState.OwnedMonsters;
+                        playerMenu.HookBindings();
                     }
                     break;
                 case "NewMonster":
@@ -207,6 +208,7 @@ namespace Monster.UI
         {
             bsMonster.DataSource = state.ActiveMonster;
             bsUser.DataSource = state.CurrentUser;
+            _gameState = state;
         }
 
         public void SetupUserControlBindings(BindingSource bSource, myMonster myMonsterControl, GameState state)
@@ -287,6 +289,11 @@ namespace Monster.UI
 
         public void AddMonster(MonsterClass monster)
         {
+            System.Diagnostics.Debug.WriteLine($"[DEBUG - Form1]: AddMonster() call.");
+            if(_gameState.OwnedMonsters == null)
+            {
+                System.Diagnostics.Debug.WriteLine($"[DEBUG - Form1]: AddMonster(): _gameState.OwnedMonsters is NULL.");
+            }
             _gameState.OwnedMonsters.Add(monster);
             _gameState.ActiveMonster = monster;
         }
