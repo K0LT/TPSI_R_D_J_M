@@ -305,6 +305,10 @@ namespace Monster.UI
                 System.Diagnostics.Debug.WriteLine($"[DEBUG - Form1]: AddMonster(): _gameState.OwnedMonsters is NULL.");
             }
             _gameState.OwnedMonsters.Add(monster);
+            if(_userControls["Player"] is playerMenu playMenu)
+            {
+                playMenu.OwnedMonstersRef = _gameState.OwnedMonsters;
+            }
             _gameState.ActiveMonster = monster;
         }
 
