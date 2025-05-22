@@ -51,7 +51,7 @@
             // pictureBox_battleGame_myMonster
             // 
             pictureBox_battleGame_myMonster.BackColor = Color.Transparent;
-            pictureBox_battleGame_myMonster.Location = new Point(19, 603);
+            pictureBox_battleGame_myMonster.Location = new Point(33, 633);
             pictureBox_battleGame_myMonster.Name = "pictureBox_battleGame_myMonster";
             pictureBox_battleGame_myMonster.Size = new Size(200, 200);
             pictureBox_battleGame_myMonster.TabIndex = 0;
@@ -120,12 +120,13 @@
             // 
             button_Battle_Attack1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button_Battle_Attack1.BackgroundImage = (Image)resources.GetObject("button_Battle_Attack1.BackgroundImage");
+            button_Battle_Attack1.BackgroundImageLayout = ImageLayout.Center;
             button_Battle_Attack1.Cursor = Cursors.Hand;
             button_Battle_Attack1.FlatStyle = FlatStyle.Flat;
             button_Battle_Attack1.Font = new Font("VCR OSD Mono", 12F);
-            button_Battle_Attack1.Location = new Point(281, 764);
+            button_Battle_Attack1.Location = new Point(254, 782);
             button_Battle_Attack1.Name = "button_Battle_Attack1";
-            button_Battle_Attack1.Size = new Size(106, 39);
+            button_Battle_Attack1.Size = new Size(140, 51);
             button_Battle_Attack1.TabIndex = 16;
             button_Battle_Attack1.Text = "Attack 1";
             button_Battle_Attack1.UseVisualStyleBackColor = true;
@@ -135,12 +136,13 @@
             // 
             button_Battle_Attack2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button_Battle_Attack2.BackgroundImage = (Image)resources.GetObject("button_Battle_Attack2.BackgroundImage");
+            button_Battle_Attack2.BackgroundImageLayout = ImageLayout.Center;
             button_Battle_Attack2.Cursor = Cursors.Hand;
             button_Battle_Attack2.FlatStyle = FlatStyle.Flat;
             button_Battle_Attack2.Font = new Font("VCR OSD Mono", 12F);
-            button_Battle_Attack2.Location = new Point(428, 764);
+            button_Battle_Attack2.Location = new Point(415, 782);
             button_Battle_Attack2.Name = "button_Battle_Attack2";
-            button_Battle_Attack2.Size = new Size(106, 39);
+            button_Battle_Attack2.Size = new Size(140, 51);
             button_Battle_Attack2.TabIndex = 17;
             button_Battle_Attack2.Text = "Attack 2";
             button_Battle_Attack2.UseVisualStyleBackColor = true;
@@ -170,7 +172,7 @@
             label_Message.BackColor = Color.Transparent;
             label_Message.Font = new Font("VCR OSD Mono", 14.25F);
             label_Message.ForeColor = Color.Gold;
-            label_Message.Location = new Point(0, 447);
+            label_Message.Location = new Point(3, 441);
             label_Message.Name = "label_Message";
             label_Message.Size = new Size(283, 153);
             label_Message.TabIndex = 20;

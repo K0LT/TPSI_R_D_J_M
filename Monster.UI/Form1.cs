@@ -213,13 +213,18 @@ namespace Monster.UI
                     patternGame.StartGame();
                     break;
 
+                case "BattleMenu":
+                    var battleMenu = control as BattleMenu;
+                    battleMenu.bsMonster = _gameState.ActiveMonster;
+
+                
+                    break;
+
                 case "BattleGame":
                     var battleGame = control as battleGame;
                     battleGame.bsMonster = _gameState.ActiveMonster;
                     battleGame.HookBindings();
                     battleGame.InitializeBoss(_selectedBossType);
-                    // Higher stamina cost for battles
-                    _gameState.ActiveMonster.Stamina -= 30;
                     break;
             }
         }
@@ -230,7 +235,19 @@ namespace Monster.UI
 
         public void SetSelectedBossType(string bossType)
         {
+            
             _selectedBossType = bossType.ToLower(); // Normalize input for battle system
+
+            switch (_selectedBossType)                    // Higher stamina cost for battles
+            {
+                case "red":
+                    _gameState.ActiveMonster.Stamina -= 20;
+                    break;
+                case "skull":
+                    _gameState.ActiveMonster.Stamina -= 30;
+                    break;
+            }
+
         }
 
         public void SetupUser(string newUsername, string newType)

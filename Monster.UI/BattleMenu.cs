@@ -1,4 +1,7 @@
-﻿namespace Monster.UI
+﻿using Monster.Core.Models;
+using System.Data.Common;
+
+namespace Monster.UI
 {
     /// <summary>
     /// Represents the battle menu screen where the player selects a boss to fight.
@@ -11,9 +14,26 @@
         {
             InitializeComponent();
         }
+        private BindingSource _bsMonster = new BindingSource();
 
-        // Helper property to retrieve the main parent form (Form1)
+        // Accessor to get the parent form safely cast
         private Form1 ParentForm => this.FindForm() as Form1;
+
+        // Shortcut to access the currently selected monster
+        public MonsterClass Monster => _bsMonster.Current as MonsterClass;
+
+        // External access to bind a list to the internal binding source
+        public object bsMonster
+        {
+            get => _bsMonster.DataSource;
+            set => _bsMonster.DataSource = value;
+        }
+        public object bsDataSource
+        {
+            get => _bsMonster.DataSource;
+            set => _bsMonster.DataSource = value;
+        }
+
 
         /// <summary>
         /// Handles the "Exit" button click to return to the monster overview screen
@@ -29,8 +49,17 @@
         /// </summary>
         private void pictureBox_battleMenu_Red_Click(object sender, EventArgs e)
         {
+            if (bsDataSource is MonsterClass monster)
+            {
+                if (monster.Stamina < 20)
+                {
+                    MessageBox.Show("You don't have enough Stamina!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
             ParentForm.SetSelectedBossType("red");
             ParentForm.NavigateTo("BattleGame");
+
         }
 
         /// <summary>
@@ -39,6 +68,14 @@
         /// </summary>
         private void pictureBox_battleMenu_Skull_Click(object sender, EventArgs e)
         {
+            if (bsDataSource is MonsterClass monster)
+            {
+                if (monster.Stamina < 30)
+                {
+                    MessageBox.Show("You don't have enough Stamina!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
             ParentForm.SetSelectedBossType("skull");
             ParentForm.NavigateTo("BattleGame");
         }

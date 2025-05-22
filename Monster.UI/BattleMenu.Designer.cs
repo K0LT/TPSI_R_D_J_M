@@ -35,6 +35,8 @@
             nameMyMonsterLabel = new Label();
             label1 = new Label();
             button_Battle_Exit = new Button();
+            label2 = new Label();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox_battleMenu_Red).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_battleMenu_Skull).BeginInit();
             SuspendLayout();
@@ -113,12 +115,38 @@
             button_Battle_Exit.UseVisualStyleBackColor = false;
             button_Battle_Exit.Click += button_Battle_Exit_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("VCR OSD Mono", 12F);
+            label2.ForeColor = Color.DarkGoldenrod;
+            label2.Location = new Point(85, 714);
+            label2.Name = "label2";
+            label2.Size = new Size(154, 17);
+            label2.TabIndex = 30;
+            label2.Text = "Stamina Cost: 20";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("VCR OSD Mono", 12F);
+            label3.ForeColor = Color.DarkGoldenrod;
+            label3.Location = new Point(353, 714);
+            label3.Name = "label3";
+            label3.Size = new Size(154, 17);
+            label3.TabIndex = 31;
+            label3.Text = "Stamina Cost: 30";
+            // 
             // BattleMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Center;
+            Controls.Add(label3);
+            Controls.Add(label2);
             Controls.Add(button_Battle_Exit);
             Controls.Add(label1);
             Controls.Add(nameMyMonsterLabel);
@@ -142,5 +170,7 @@
         private Label nameMyMonsterLabel;
         private Label label1;
         private Button button_Battle_Exit;
+        private Label label2;
+        private Label label3;
     }
 }
