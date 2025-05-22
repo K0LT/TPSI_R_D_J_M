@@ -67,6 +67,17 @@ namespace Monster.UI
         // Navigates based on the user's choice to either the main monster screen or tutorial.
         private void label2_newGameMonster_Next_Click(object sender, EventArgs e)
         {
+            if (textBox_newGameMonster_InputUsername.Text == "")
+            {
+                MessageBox.Show("The monster name must not be empty!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (textBox_newGameMonster_InputUsername.Text.Count() > 8)
+            {
+                MessageBox.Show("The name must not exceed six(6) characters!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             newMonster.Name = textBox_newGameMonster_InputUsername.Text;
             textBox_newGameMonster_InputUsername.Clear();
             ParentForm.AddMonster(newMonster);

@@ -53,6 +53,17 @@ namespace Monster.UI
         {
             Form1 parentForm = this.FindForm() as Form1;
 
+            if(textBox_newGamePlayer_InputForUsername.Text == "")
+            {
+                MessageBox.Show("The name must not be empty!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if(textBox_newGamePlayer_InputForUsername.Text.Count() > 8)
+            {
+                MessageBox.Show("The name must not exceed eight(8) characters!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if (parentForm != null)
             {
                 parentForm.SetupUser(textBox_newGamePlayer_InputForUsername.Text, _tempUser.UserType);
