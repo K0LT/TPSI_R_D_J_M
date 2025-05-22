@@ -28,30 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            labelCountdown = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(countdownForm));
+            label_Zz = new Label();
+            label_Zz1 = new Label();
             SuspendLayout();
             // 
-            // labelCountdown
+            // label_Zz
             // 
-            labelCountdown.AutoSize = true;
-            labelCountdown.Dock = DockStyle.Fill;
-            labelCountdown.Font = new Font("VCR OSD Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelCountdown.Location = new Point(0, 0);
-            labelCountdown.Margin = new Padding(4, 0, 4, 0);
-            labelCountdown.Name = "labelCountdown";
-            labelCountdown.Size = new Size(261, 19);
-            labelCountdown.TabIndex = 0;
-            labelCountdown.Text = "15 seconds remaining...";
-            labelCountdown.TextAlign = ContentAlignment.MiddleCenter;
+            label_Zz.AutoSize = true;
+            label_Zz.BackColor = Color.Transparent;
+            label_Zz.Font = new Font("VCR OSD Mono", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label_Zz.ForeColor = Color.AntiqueWhite;
+            label_Zz.Location = new Point(41, 45);
+            label_Zz.Name = "label_Zz";
+            label_Zz.Size = new Size(58, 22);
+            label_Zz.TabIndex = 0;
+            label_Zz.Text = "ZzZz";
+            // 
+            // label_Zz1
+            // 
+            label_Zz1.AutoSize = true;
+            label_Zz1.BackColor = Color.Transparent;
+            label_Zz1.Font = new Font("VCR OSD Mono", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label_Zz1.ForeColor = Color.AntiqueWhite;
+            label_Zz1.Location = new Point(41, 45);
+            label_Zz1.Name = "label_Zz1";
+            label_Zz1.Size = new Size(58, 22);
+            label_Zz1.TabIndex = 1;
+            label_Zz1.Text = "zZzZ";
             // 
             // countdownForm
             // 
             AutoScaleDimensions = new SizeF(9F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackColor = Color.Black;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(391, 132);
             ControlBox = false;
-            Controls.Add(labelCountdown);
+            Controls.Add(label_Zz1);
+            Controls.Add(label_Zz);
+            DoubleBuffered = true;
             Font = new Font("VCR OSD Mono", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ForeColor = Color.Goldenrod;
             FormBorderStyle = FormBorderStyle.FixedDialog;
@@ -67,6 +85,7 @@
 
         #endregion
 
-        private Label labelCountdown;
+        private Label label_Zz;
+        private Label label_Zz1;
     }
 }

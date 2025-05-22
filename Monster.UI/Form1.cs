@@ -41,6 +41,10 @@ namespace Monster.UI
             NavigateTo("MainMenu");
         }
 
+
+        private Dictionary<string, Form> _forms = new Dictionary<string, Form>();
+
+
         /// <summary>
         /// Initialize game state flags that control UI behavior
         /// </summary>
@@ -72,7 +76,8 @@ namespace Monster.UI
             tutorialThirdPage tutorial3 = new tutorialThirdPage();
             memoryGame memoryGame = new memoryGame();
             PatternGame patternGame = new PatternGame();
-
+            countdownForm sleepCountdownForm = new countdownForm(); //sleep
+            
             // Store controls with string keys for easy navigation system
             _userControls.Add("MemoryGame", memoryGame);
             _userControls.Add("Monster", monsterControl);
@@ -90,6 +95,7 @@ namespace Monster.UI
             _userControls.Add("Tutorial1", tutorial1);
             _userControls.Add("Tutorial2", tutorial2);
             _userControls.Add("Tutorial3", tutorial3);
+            _forms.Add("SleepCountdown", sleepCountdownForm);
         }
 
         #endregion
@@ -226,6 +232,9 @@ namespace Monster.UI
                     battleGame.HookBindings();
                     battleGame.InitializeBoss(_selectedBossType);
                     break;
+                                   
+
+
             }
         }
 

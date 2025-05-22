@@ -275,11 +275,10 @@ namespace Monster.UI
             if (Monster != null)
             {
                 int level = Monster.Level;
-                if (level <= 4) return baseDamage;
-                if (level <= 9) return baseDamage + 5;
-                if (level <= 15) return baseDamage + 10;
-                if (level <= 20) return baseDamage + 15;
+                double multiplier = 1 + (0.02 * level);
+                return (int)(baseDamage * multiplier);
             }
+
             return baseDamage;
         }
 
@@ -287,11 +286,11 @@ namespace Monster.UI
         {
             int roll = _rng.Next(100);
 
-            if (roll < 70 && _rng.NextDouble() <= 0.70)
+            if (roll < 70)
                 DealDamageToPlayer(10, true);
-            else if (roll < 90 && _rng.NextDouble() <= 0.40)
+            else if (roll < 90)
                 DealDamageToPlayer(20, true);
-            else if (_rng.NextDouble() <= 0.10)
+            else
                 DealDamageToPlayer(30, true);
         }
 
@@ -299,12 +298,12 @@ namespace Monster.UI
         {
             int roll = _rng.Next(100);
 
-            if (roll < 60 && _rng.NextDouble() <= 0.50)
-                DealDamageToPlayer(20, true);
-            else if (roll < 90 && _rng.NextDouble() <= 0.30)
-                DealDamageToPlayer(35, true);
-            else if (_rng.NextDouble() <= 0.15)
-                DealDamageToPlayer(50, true);
+            if (roll < 60)
+                DealDamageToPlayer(20, true);     
+            else if (roll < 90)
+                DealDamageToPlayer(35, true);    
+            else
+                DealDamageToPlayer(50, true);    
         }
 
         private void DealDamageToPlayer(int damage, bool showMessage = false)

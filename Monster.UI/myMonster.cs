@@ -212,73 +212,26 @@ namespace Monster.UI
         /// Implements a "sleep" mechanic that gradually restores health and stamina over 15 seconds,
         /// showing a countdown dialog during the process.
         /// </summary>
+        /// 
+        public event EventHandler MonsterSlept;
+
         private void button_myMonster_Sleep_Click(object sender, EventArgs e)
         {
-            if (!(_bsMonster.DataSource is MonsterClass monster))
-            {
+            if(!(_bsMonster.DataSource is MonsterClass monster))
+    {
                 MessageBox.Show("Monster data not loaded.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            // Create a modal dialog showing the sleep countdown
-            Form countdownForm = new Form()
+            using (var sleepForm = new countdownForm(monster))
             {
-                Width = 320,
-                Height = 140,
-                FormBorderStyle = FormBorderStyle.FixedDialog,
-                StartPosition = FormStartPosition.CenterParent,
-                Text = "Sleeping...",
-                ControlBox = false,
-                MinimizeBox = false,
-                MaximizeBox = false,
-                BackColor = Color.Black
-            };
-
-            Label labelCountdown = new Label()
-            {
-                Dock = DockStyle.Fill,
-                TextAlign = ContentAlignment.MiddleCenter,
-                Font = new Font("VCR OSD Mono", 16F, FontStyle.Bold, GraphicsUnit.Point),
-                ForeColor = Color.Goldenrod,
-                BackColor = Color.Black,
-                Text = "15 seconds remaining..."
-            };
-
-            countdownForm.Controls.Add(labelCountdown);
-
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            int countdown = 15;
-            int missingHealth = 100 - monster.HealthPoints;
-            int missingStamina = 100 - monster.Stamina;
-
-            // Timer tick updates the countdown and restores health/stamina incrementally
-            timer.Interval = 1000;
-            timer.Tick += (s, args) =>
-            {
-                countdown--;
-                if (countdown > 0)
+                if (sleepForm.ShowDialog() == DialogResult.OK)
                 {
-                    labelCountdown.Text = $"{countdown} seconds remaining...";
-                    monster.HealthPoints += missingHealth / 15;
-                    monster.Stamina += missingStamina / 15;
+                    _bsMonster.ResetBindings(true);
+
+                    MonsterSlept?.Invoke(this, EventArgs.Empty);
                 }
-                else
-                {
-                    timer.Stop();
-
-                    // Ensure health and stamina are fully restored at the end
-                    if (monster.HealthPoints < 100) monster.HealthPoints = 100;
-                    if (monster.Stamina < 100) monster.Stamina = 100;
-
-                    // Refresh bindings to update UI
-                    _bsMonster.ResetBindings(false);
-
-                    countdownForm.Close();
-                }
-            };
-
-            timer.Start();
-            countdownForm.ShowDialog();
+            }
         }
     }
 }
