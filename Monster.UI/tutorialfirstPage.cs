@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace Monster.UI
 {
+    /// <summary>
+    /// UserControl representing the first tutorial page.
+    /// </summary>
     public partial class tutorialfirstPage : UserControl
     {
         public tutorialfirstPage()

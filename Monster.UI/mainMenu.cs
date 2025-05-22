@@ -15,7 +15,6 @@ namespace Monster.UI
         public mainMenu()
         {
             InitializeComponent();
-
         }
 
         private Form1 ParentForm => this.FindForm() as Form1;
@@ -23,7 +22,6 @@ namespace Monster.UI
 
         private void button_mainMenu_NewGame_Click(object sender, EventArgs e)
         {
-           
             ParentForm.NavigateTo("NewUser");
         }
 
