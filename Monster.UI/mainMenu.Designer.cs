@@ -64,7 +64,7 @@
             button_mainMenu_Exit.BackgroundImage = (Image)resources.GetObject("button_mainMenu_Exit.BackgroundImage");
             button_mainMenu_Exit.Cursor = Cursors.Hand;
             button_mainMenu_Exit.FlatStyle = FlatStyle.Flat;
-            button_mainMenu_Exit.Location = new Point(186, 604);
+            button_mainMenu_Exit.Location = new Point(186, 611);
             button_mainMenu_Exit.Name = "button_mainMenu_Exit";
             button_mainMenu_Exit.Size = new Size(228, 45);
             button_mainMenu_Exit.TabIndex = 3;
