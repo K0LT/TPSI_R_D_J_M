@@ -1,4 +1,4 @@
-# 🐲 MonsterRaiser
+# 🐲 Monsters
 
 A Windows Forms-based monster-raising game written in C#. Players can collect, feed, and train monsters while managing their stats, health, and experience. The project focuses on modular design and solid UI logic for handling multiple monsters in a player’s collection.
 
