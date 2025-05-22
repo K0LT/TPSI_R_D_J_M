@@ -1,25 +1,37 @@
 # 🐲 Monsters
 
-A Windows Forms-based monster-raising game written in C#. Players can collect, feed, and train monsters while managing their stats, health, and experience. The project focuses on modular design and solid UI logic for handling multiple monsters in a player’s collection.
+A Windows Forms-based monster-raising game written in C#. Players collect, train, and evolve monsters while engaging in mini-games, battling bosses, and managing health, experience, and inventory. The game features a clean, dynamic UI and modular architecture built with C# and WinForms.
 
 ---
 
 ## 🛠 Features
 
 - 🎮 **Player Monster Menu**  
-  Displays up to four owned monsters with real-time health, icons, and names. Includes options to switch the active monster.
+  Displays up to four owned monsters with real-time stats including name, health, and icon. Allows switching between monsters.
+
+- ⚔️ **Boss Battles**  
+  Fight powerful boss enemies as your monsters level up.
+
+- 🕹️ **Mini-Games**  
+  Play interactive mini-games to earn experience and rewards for your monsters.
+
+- 🧪 **Leveling System**  
+  Feed and train your monsters to level them up. Higher levels unlock tougher challenges.
+
+- 🎁 **Item & Inventory System**  
+  Collect items through mini-games or battles. Use them to restore your monsters’ health or stamina.
 
 - 📊 **Health and Stats Display**  
-  Progress bars show current health points for each monster.
+  Progress bars show real-time health. Future expansions may include experience, stamina, or attack bars.
 
 - 🔁 **Monster Switching System**  
-  Players can change their currently active monster via confirmation dialogs.
+  Seamlessly change your active monster using the in-game confirmation menu.
 
 - 👤 **Player Avatars**  
-  Dynamic avatar image based on user type (boy, girl, or other).
+  Dynamic avatar display based on user type: boy, girl, or other.
 
-- 🧠 **Binding-Driven UI Updates**  
-  Uses `BindingSource` to reflect live user data in the UI.
+- 🧠 **Data Binding**  
+  Uses `BindingSource` for responsive UI updates tied to user data and monster attributes.
 
 ---
 
@@ -27,26 +39,31 @@ A Windows Forms-based monster-raising game written in C#. Players can collect, f
 
 - C# (.NET)
 - Windows Forms (WinForms)
-- Custom data models (`User`, `MonsterClass`, etc.)
-- Embedded resources for icons and avatars
+- Custom models (`User`, `MonsterClass`, `Item`, etc.)
+- Embedded resources (images, icons)
+- Event-driven architecture
 
 ---
 
 ## 📂 Project Structure (Key Components)
 
 - `playerMenu.cs`:  
-  A custom `UserControl` that shows the player’s monsters and allows switching between them.
+  User control that manages monster display and switching logic.
 
-- `MonsterClass`:  
-  Represents a monster and contains its name, icon, health, and other stats.
+- `MonsterClass.cs`:  
+  Core class representing monsters with properties like name, health, icon, and stats.
 
-- `User`:  
-  Represents a player with fields like `Username`, `UserType`, and a list of owned monsters.
+- `User.cs`:  
+  Stores player information, including username, type, and owned monsters.
 
 - `Form1.cs`:  
-  The main form responsible for navigation and monster management.
+  Main form controller that handles screen transitions and global logic (navigation, active monster, etc.).
+  
+- `GameState.cs`:  
+  Class that holds the state of the game (user, current monster, total collection of items and monsters, etc.).
 
----
+- `GameDataServices.cs`:  
+  Class that handles saving and loading from JSON.
 
 ## 🚀 Getting Started
 
@@ -54,5 +71,6 @@ A Windows Forms-based monster-raising game written in C#. Players can collect, f
    ```bash
    git clone https://github.com/your-username/MonsterRaiser.git
    cd MonsterRaiser
+
 2. **Set the Startup Project to Monster.UI
 3. **Play!**
