@@ -16,9 +16,6 @@ namespace Monster.UI
         // Accessor to get the parent form safely cast
         private Form1 ParentForm => this.FindForm() as Form1;
 
-        // Shortcut to access the currently selected monster
-        public MonsterClass Monster => _bsMonster.Current as MonsterClass;
-
         // External access to bind a list to the internal binding source
         public object bsMonster
         {
@@ -60,16 +57,19 @@ namespace Monster.UI
         /// </summary>
         public void GetMonsterImage()
         {
-            if (Monster != null)
+            if (bsMonster is MonsterClass monster)
             {
-                int stage = Monster.Level < 5 ? 1 : Monster.Level < 10 ? 2 : 3;
-                string type = Monster.Type?.ToLower() ?? "";
+                if (monster != null)
+                {
+                    int stage = monster.Level < 5 ? 1 : monster.Level < 10 ? 2 : 3;
+                    string type = monster.Type?.ToLower() ?? "";
 
-                string resourceName = $"{type}_stage{stage}_battle";
-                var imageObj = Resources.ResourceManager.GetObject(resourceName);
+                    string resourceName = $"{type}_stage{stage}_battle";
+                    var imageObj = Resources.ResourceManager.GetObject(resourceName);
 
-                var image = ConvertByteArrayToImage(imageObj as byte[]);
-                pictureBox_battleGame_myMonster.Image = image;
+                    var image = ConvertByteArrayToImage(imageObj as byte[]);
+                    pictureBox_battleGame_myMonster.Image = image;
+                }
             }
         }
 
@@ -92,16 +92,19 @@ namespace Monster.UI
         /// </summary>
         public void UpdateMonsterImage(bool isHurt)
         {
-            if (Monster == null)
-                return;
+            if (bsMonster is MonsterClass monster)
+            {
+                if (monster == null)
+                    return;
 
-            int stage = Monster.Level < 5 ? 1 : Monster.Level < 10 ? 2 : 3;
-            string type = Monster.Type?.ToLower() ?? "";
-            string state = isHurt ? "hurt" : "battle";
-            string resourceName = $"{type}_stage{stage}_{state}";
+                int stage = monster.Level < 5 ? 1 : monster.Level < 10 ? 2 : 3;
+                string type = monster.Type?.ToLower() ?? "";
+                string state = isHurt ? "hurt" : "battle";
+                string resourceName = $"{type}_stage{stage}_{state}";
 
-            var imageObj = Resources.ResourceManager.GetObject(resourceName);
-            pictureBox_battleGame_myMonster.Image = ConvertByteArrayToImage(imageObj as byte[]);
+                var imageObj = Resources.ResourceManager.GetObject(resourceName);
+                pictureBox_battleGame_myMonster.Image = ConvertByteArrayToImage(imageObj as byte[]);
+            }
         }
 
         /// <summary>
@@ -192,26 +195,29 @@ namespace Monster.UI
 
             if (_rng.NextDouble() <= 0.80)
             {
-                int damage = GetAttackDamage(10);
+                int damage = GetAttackDamage(15);
                 boss.HealthPoints -= damage;
                 if (boss.HealthPoints < 0) boss.HealthPoints = 0;
                 progressBar_battleGame_BossHP.Value = boss.HealthPoints;
 
-                // Handle victory
-                if (boss.HealthPoints == 0 && Monster != null && Monster.HealthPoints != 0)
+                if (bsMonster is MonsterClass monster)
                 {
-                    ParentForm.BattleReward(Monster, boss.Type);
-                    ParentForm.NavigateTo("Monster");
+                    // Handle victory
+                    if (boss.HealthPoints == 0 && monster != null && monster.HealthPoints != 0)
+                    {
+                        ParentForm.BattleReward(monster, boss.Type);
+                        ParentForm.NavigateTo("Monster");
+                    }
+
+                    FlashBossHurtImageBoss();
+
+                    if (_rng.NextDouble() <= 1)
+                        DoBossCounterAttack();
                 }
-
-                FlashBossHurtImageBoss();
-
-                if (_rng.NextDouble() <= 1)
-                    DoBossCounterAttack();
-            }
-            else
-            {
-                ShowTemporaryMessage("Your attack missed!");
+                else
+                {
+                    ShowTemporaryMessage("Your attack missed!");
+                }
             }
         }
 
@@ -235,25 +241,28 @@ namespace Monster.UI
 
             if (_rng.NextDouble() <= 0.80)
             {
-                int damage = GetAttackDamage(25);
-                boss.HealthPoints -= damage;
-                if (boss.HealthPoints < 0) boss.HealthPoints = 0;
-                progressBar_battleGame_BossHP.Value = boss.HealthPoints;
-
-                if (boss.HealthPoints == 0 && Monster != null && Monster.HealthPoints != 0)
+                if (bsMonster is MonsterClass monster)
                 {
-                    ParentForm.BattleReward(Monster, boss.Type);
-                    ParentForm.NavigateTo("Monster");
+                    int damage = GetAttackDamage(25);
+                    boss.HealthPoints -= damage;
+                    if (boss.HealthPoints < 0) boss.HealthPoints = 0;
+                    progressBar_battleGame_BossHP.Value = boss.HealthPoints;
+
+                    if (boss.HealthPoints == 0 && monster != null && monster.HealthPoints != 0)
+                    {
+                        ParentForm.BattleReward(monster, boss.Type);
+                        ParentForm.NavigateTo("Monster");
+                    }
+
+                    FlashBossHurtImageBoss();
+
+                    if (_rng.NextDouble() <= 1)
+                        DoBossCounterAttackStrong();
                 }
-
-                FlashBossHurtImageBoss();
-
-                if (_rng.NextDouble() <= 1)
-                    DoBossCounterAttackStrong();
-            }
-            else
-            {
-                ShowTemporaryMessage("Your attack missed!");
+                else
+                {
+                    ShowTemporaryMessage("Your attack missed!");
+                }
             }
         }
 
@@ -272,26 +281,30 @@ namespace Monster.UI
         /// </summary>
         private int GetAttackDamage(int baseDamage)
         {
-            if (Monster != null)
+            if (bsMonster is MonsterClass monster)
             {
-                int level = Monster.Level;
-                double multiplier = 1 + (0.02 * level);
-                return (int)(baseDamage * multiplier);
-            }
+                if (bsMonster != null)
+                {
+                    int level = monster.Level;
+                    double multiplier = 1 + (0.03 * level);
+                    return (int)(baseDamage * multiplier);
+                }
 
+               
+            } 
             return baseDamage;
         }
 
         private void DoBossCounterAttack()
         {
-            int roll = _rng.Next(100);
+            int roll = _rng.Next(80);
 
-            if (roll < 70)
+            if (roll < 60)
                 DealDamageToPlayer(10, true);
             else if (roll < 90)
-                DealDamageToPlayer(20, true);
+                DealDamageToPlayer(15, true);
             else
-                DealDamageToPlayer(30, true);
+                DealDamageToPlayer(20, true);
         }
 
         private void DoBossCounterAttackStrong()
@@ -308,19 +321,23 @@ namespace Monster.UI
 
         private void DealDamageToPlayer(int damage, bool showMessage = false)
         {
-            if (Monster != null && boss.HealthPoints != 0)
+            if (bsMonster is MonsterClass monster)
             {
-                Monster.HealthPoints -= damage;
-                if (Monster.HealthPoints < 0) Monster.HealthPoints = 0;
-                FlashHurtImageMonster();
+                if (monster != null && boss.HealthPoints != 0)
+                {
+                    monster.HealthPoints -= damage;
+                    if (monster.HealthPoints < 0) monster.HealthPoints = 0;
+                    FlashHurtImageMonster();
 
-                if (Monster.HealthPoints == 0)
-                {
-                    ShowMessageAndNavigate("Your monster has been defeated!", "Defeat");
-                }
-                else if (showMessage)
-                {
-                    ShowTemporaryMessage($"The boss counterattacked and dealt {damage} damage to your monster!");
+                    if (monster.HealthPoints == 0)
+                    {
+                        ShowMessageAndNavigate("Your monster has been defeated!", "Defeat");
+                        
+                    }
+                    else if (showMessage)
+                    {
+                        ShowTemporaryMessage($"The boss counterattacked and dealt {damage} damage to your monster!");
+                    }
                 }
             }
         }
@@ -330,41 +347,45 @@ namespace Monster.UI
         /// </summary>
         private void UpdateAttackButtonLabels()
         {
-            if (Monster == null)
-                return;
-
-            int stage = Monster.Level < 5 ? 1 : Monster.Level < 10 ? 2 : 3;
-            string type = Monster.Type?.ToLower() ?? "";
-            string typeStage = $"{type}_stage{stage}";
-
-            // Default names
-            string attack1 = "Attack 1";
-            string attack2 = "Attack 2";
-
-            // Custom attacks per monster type and stage
-            switch (typeStage)
+            if (bsMonster is MonsterClass monster)
             {
-                case "draco_stage1": attack1 = "Roar"; attack2 = "Flame Burst"; break;
-                case "draco_stage2": attack1 = "Fire Bitte"; attack2 = "Blaze"; break;
-                case "draco_stage3": attack1 = "Giga Flame"; attack2 = "Golden Flame"; break;
 
-                case "grifo_stage1": attack1 = "Peek"; attack2 = "Scratch"; break;
-                case "grifo_stage2": attack1 = "Fly"; attack2 = "Whip"; break;
-                case "grifo_stage3": attack1 = "Tornado"; attack2 = "Suicide Dive"; break;
+                if (bsMonster == null)
+                    return;
 
-                case "tauro_stage1": attack1 = "Head Butt"; attack2 = "Moo"; break;
-                case "tauro_stage2": attack1 = "Iron Horn"; attack2 = "Stomp"; break;
-                case "tauro_stage3": attack1 = "Iron Tackle"; attack2 = "Meteor Spear"; break;
+                int stage = monster.Level < 5 ? 1 : monster.Level < 10 ? 2 : 3;
+                string type = monster.Type?.ToLower() ?? "";
+                string typeStage = $"{type}_stage{stage}";
 
-                case "siren_stage1": attack1 = "Frost Bite"; attack2 = "Bubbles"; break;
-                case "siren_stage2": attack1 = "Surf"; attack2 = "Blizzard"; break;
-                case "siren_stage3": attack1 = "Tsunami"; attack2 = "Scream"; break;
+                // Default names
+                string attack1 = "Attack 1";
+                string attack2 = "Attack 2";
 
-                default: attack1 = "Quick Strike"; attack2 = "Power Hit"; break;
+                // Custom attacks per monster type and stage
+                switch (typeStage)
+                {
+                    case "draco_stage1": attack1 = "Roar"; attack2 = "Flame Burst"; break;
+                    case "draco_stage2": attack1 = "Fire Bitte"; attack2 = "Blaze"; break;
+                    case "draco_stage3": attack1 = "Giga Flame"; attack2 = "Golden Flame"; break;
+
+                    case "grifo_stage1": attack1 = "Peek"; attack2 = "Scratch"; break;
+                    case "grifo_stage2": attack1 = "Fly"; attack2 = "Whip"; break;
+                    case "grifo_stage3": attack1 = "Tornado"; attack2 = "Suicide Dive"; break;
+
+                    case "tauro_stage1": attack1 = "Head Butt"; attack2 = "Moo"; break;
+                    case "tauro_stage2": attack1 = "Iron Horn"; attack2 = "Stomp"; break;
+                    case "tauro_stage3": attack1 = "Iron Tackle"; attack2 = "Meteor Spear"; break;
+
+                    case "siren_stage1": attack1 = "Frost Bite"; attack2 = "Bubbles"; break;
+                    case "siren_stage2": attack1 = "Surf"; attack2 = "Blizzard"; break;
+                    case "siren_stage3": attack1 = "Tsunami"; attack2 = "Scream"; break;
+
+                    default: attack1 = "Quick Strike"; attack2 = "Power Hit"; break;
+                }
+
+                button_Battle_Attack1.Text = attack1;
+                button_Battle_Attack2.Text = attack2;
             }
-
-            button_Battle_Attack1.Text = attack1;
-            button_Battle_Attack2.Text = attack2;
         }
 
         /// <summary>

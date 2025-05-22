@@ -155,7 +155,7 @@ namespace Monster.UI
                     {
                         // Auto-save when viewing monster (prevent data loss)
                         this.SaveGame(true);
-
+                        _gameState.ActiveMonster = _gameState.OwnedMonsters.ElementAt(0);
                         // Safety check for corrupted state
                         if (_gameState == null)
                         {
@@ -384,12 +384,13 @@ namespace Monster.UI
             var itemProbabilities = new Dictionary<string, int>
             {
                 { "Water", 80 },
-                { "Ramen", 80 },
+                { "Nachos", 80 },
                 { "Soda", 50 },
                 { "Burguer", 50 },
                 { "Beer", 30 },
-                { "Nachos", 30 },
+                { "Ramen", 30 },
                 { "Energy Drink", 10 }
+
             };
 
             var inventoryItems = _gameState.Inventory.Where(i => itemProbabilities.ContainsKey(i.Name)).ToList();
@@ -450,11 +451,11 @@ namespace Monster.UI
             var itemProbabilities = new Dictionary<string, int>
             {
                 { "Water", 80 },
-                { "Ramen", 80 },
+                { "Nachos", 80 },
                 { "Soda", 50 },
                 { "Burguer", 50 },
                 { "Beer", 30 },
-                { "Nachos", 30 },
+                { "Ramen", 30 },
                 { "Energy Drink", 10 }
             };
 
@@ -527,7 +528,6 @@ namespace Monster.UI
                 rewardMessage.AppendLine($"{reward.Quantity}x {reward.Name}");
             }
             rewardMessage.AppendLine($"And gained {experiencePoints} experience points!");
-
             MessageBox.Show(rewardMessage.ToString(), "Battle Reward", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

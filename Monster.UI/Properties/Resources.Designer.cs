@@ -383,6 +383,16 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        public static byte[] siren_stage1_sleeping {
+            get {
+                object obj = ResourceManager.GetObject("siren_stage1_sleeping", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         public static byte[] siren_stage2_battle {
             get {
                 object obj = ResourceManager.GetObject("siren_stage2_battle", resourceCulture);
@@ -413,6 +423,16 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        public static byte[] siren_stage2_sleeping {
+            get {
+                object obj = ResourceManager.GetObject("siren_stage2_sleeping", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         public static byte[] siren_stage3_battle {
             get {
                 object obj = ResourceManager.GetObject("siren_stage3_battle", resourceCulture);
@@ -436,6 +456,16 @@ namespace Monster.UI.Properties {
         public static byte[] siren_stage3_inventory {
             get {
                 object obj = ResourceManager.GetObject("siren_stage3_inventory", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] siren_stage3_sleeping {
+            get {
+                object obj = ResourceManager.GetObject("siren_stage3_sleeping", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -493,6 +523,16 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        public static byte[] tauro_stage1_sleeping {
+            get {
+                object obj = ResourceManager.GetObject("tauro_stage1_sleeping", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         public static byte[] tauro_stage2_battle {
             get {
                 object obj = ResourceManager.GetObject("tauro_stage2_battle", resourceCulture);
@@ -523,6 +563,16 @@ namespace Monster.UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        public static byte[] tauro_stage2_sleeping {
+            get {
+                object obj = ResourceManager.GetObject("tauro_stage2_sleeping", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         public static byte[] tauro_stage3_battle {
             get {
                 object obj = ResourceManager.GetObject("tauro_stage3_battle", resourceCulture);
@@ -546,6 +596,16 @@ namespace Monster.UI.Properties {
         public static byte[] tauro_stage3_inventory {
             get {
                 object obj = ResourceManager.GetObject("tauro_stage3_inventory", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        public static byte[] tauro_stage3_sleeping {
+            get {
+                object obj = ResourceManager.GetObject("tauro_stage3_sleeping", resourceCulture);
                 return ((byte[])(obj));
             }
         }

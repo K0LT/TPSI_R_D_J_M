@@ -229,7 +229,7 @@ namespace Monster.Core.Models
             int stage = _level < 5 ? 1 : _level < 10 ? 2 : 3;
             string type = Type?.ToLower() ?? "";
             string resourceName = $"{type}_stage{stage}";
-            string iconName = $"{type}_icon";
+            string iconName = $"{type}_stage{stage}_icon";
 
             System.Diagnostics.Debug.WriteLine("UpdateMonsterImage call! iconName: " + iconName + " | resourceName: " + resourceName);
 

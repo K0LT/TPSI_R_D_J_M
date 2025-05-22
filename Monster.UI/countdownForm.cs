@@ -39,14 +39,9 @@ namespace Monster.UI
         /// <summary>
         /// Exposes the data source for binding, linked to the internal BindingSource.
         /// </summary>
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
-        public object State
-        {
-            get => _state.DataSource;
-            set => _state.DataSource = value;
-        }
+    
 
-        // Binds inventory data (List<Item>)
+      
        
 
         // Binds monster object (for HP/Stamina and image)
@@ -153,7 +148,6 @@ namespace Monster.UI
 
         public void GetMonsterBack()
         {
-            // Get the current active monster from GameState
             
 
             if (_monster is MonsterClass monster)

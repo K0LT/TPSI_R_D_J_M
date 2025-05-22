@@ -121,52 +121,76 @@
   <data name="defaultXsmallMonster" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\defaultXsmallMonster.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="draco_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\dracoFaceXSmall.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="draco_stage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\draco_stage1.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="draco_stage1_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\draco_stage1_icon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="draco_stage2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\draco_stage2.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="draco_stage2_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\draco_stage2_icon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="draco_stage3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\draco_stage3.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="grifo_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\grifoFaceXSmall.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="draco_stage3_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\draco_stage3_icon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="grifo_stage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\grifo_stage1.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="grifo_stage1_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\grifo_stage1_icon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="grifo_stage2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\grifo_stage2.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="grifo_stage2_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\grifo_stage2_icon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="grifo_stage3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\grifo_stage3.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="siren_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\sirenFaceXSmall.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="grifo_stage3_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\grifo_stage3_icon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="siren_stage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\siren_stage1.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="siren_stage1_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\siren_stage1_icon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="siren_stage2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\siren_stage2.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="siren_stage2_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\siren_stage2_icon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="siren_stage3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\siren_stage3.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tauro_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\tauroFaceXSmall.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="siren_stage3_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\siren_stage3_icon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tauro_stage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\tauro_stage1.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="tauro_stage1_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\tauro_stage1_icon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="tauro_stage2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\tauro_stage2.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="tauro_stage2_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\tauro_stage2_icon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="tauro_stage3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\tauro_stage3.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tauro_stage3_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\tauro_stage3_icon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
