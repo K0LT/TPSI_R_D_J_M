@@ -217,13 +217,17 @@ namespace Monster.UI
 
         private void button_myMonster_Sleep_Click(object sender, EventArgs e)
         {
+           
+            
             if(!(_bsMonster.DataSource is MonsterClass monster))
     {
                 MessageBox.Show("Monster data not loaded.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            using (var sleepForm = new countdownForm(monster))
+            if (_bsMonster.DataSource is MonsterClass monsters)
+            { 
+                using (var sleepForm = new countdownForm(monsters))
             {
                 if (sleepForm.ShowDialog() == DialogResult.OK)
                 {
@@ -232,6 +236,9 @@ namespace Monster.UI
                     MonsterSlept?.Invoke(this, EventArgs.Empty);
                 }
             }
+               
+            }
+           
         }
     }
 }

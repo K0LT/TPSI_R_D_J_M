@@ -223,7 +223,7 @@ namespace Monster.UI
                 string resourceName = $"{type}_stage{stage}_inventory";
                 string iconName = $"{type}_icon";
 
-                System.Diagnostics.Debug.WriteLine("GetMonsterImageInventory call! iconName: " + iconName + " | resourceName: " + resourceName);
+                System.Diagnostics.Debug.WriteLine("GetMonsterBack call! iconName: " + iconName + " | resourceName: " + resourceName);
 
                 var imageObj = Monster.UI.Properties.Resources.ResourceManager.GetObject(resourceName);
                 var iconObj = Monster.UI.Properties.Resources.ResourceManager.GetObject(iconName);

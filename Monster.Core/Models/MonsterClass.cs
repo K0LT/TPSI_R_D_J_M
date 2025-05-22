@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Drawing;
+using System.Resources;
 
 namespace Monster.Core.Models
 {
@@ -239,6 +240,10 @@ namespace Monster.Core.Models
             MonsterImage = ConvertByteArrayToImage(imageObj as byte[]);
             MonsterIcon = ConvertByteArrayToImage(iconObj as byte[]);
         }
+
+    
+
+
 
         /// <summary>
         /// Convert embedded resource byte arrays to Image objects for UI display

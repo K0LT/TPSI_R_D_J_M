@@ -76,7 +76,7 @@ namespace Monster.UI
             tutorialThirdPage tutorial3 = new tutorialThirdPage();
             memoryGame memoryGame = new memoryGame();
             PatternGame patternGame = new PatternGame();
-            countdownForm sleepCountdownForm = new countdownForm(); //sleep
+            countdownForm sleep = new countdownForm(); //sleep
             
             // Store controls with string keys for easy navigation system
             _userControls.Add("MemoryGame", memoryGame);
@@ -95,7 +95,7 @@ namespace Monster.UI
             _userControls.Add("Tutorial1", tutorial1);
             _userControls.Add("Tutorial2", tutorial2);
             _userControls.Add("Tutorial3", tutorial3);
-            _forms.Add("SleepCountdown", sleepCountdownForm);
+            _forms.Add("Sleep", sleep);
         }
 
         #endregion
@@ -232,7 +232,9 @@ namespace Monster.UI
                     battleGame.HookBindings();
                     battleGame.InitializeBoss(_selectedBossType);
                     break;
-                                   
+
+
+           
 
 
             }

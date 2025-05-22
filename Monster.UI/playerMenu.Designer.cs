@@ -179,7 +179,7 @@
             // pictureBox_playerMenu
             // 
             pictureBox_playerMenu.BackColor = Color.Transparent;
-            pictureBox_playerMenu.Location = new Point(145, 158);
+            pictureBox_playerMenu.Location = new Point(139, 166);
             pictureBox_playerMenu.Name = "pictureBox_playerMenu";
             pictureBox_playerMenu.Size = new Size(300, 300);
             pictureBox_playerMenu.SizeMode = PictureBoxSizeMode.StretchImage;
